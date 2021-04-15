@@ -83,7 +83,7 @@ author:
   name             : "Suyog Garg"
   avatar           : "suyog_July2020.jpeg"
   bio              : "Project Associate at TIFR"
-  location         : "Mumbai, India"
+  location         : "Mandla, India"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=3co-LmUAAAAJ&hl=en"
@@ -115,8 +115,8 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  nasaADS          : "https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=AND&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FGarg%2C%20S%2FGarg%2C%20Suyog%22&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(author_facet_hier%3A%221%2FGarg%2C%20S%2FGarg%2C%20Suyog%22)&q=%22garg%2C%20suyog%22&sort=date%20desc%2C%20bibcode%20desc&p_=0"
   blogger          : "https://suyog20.blogspot.com/"
-
 
 # Reading Files
 include:
