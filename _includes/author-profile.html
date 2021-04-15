@@ -23,7 +23,8 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
-        <li><i class="fa fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
+        <!-- <li><i class="fa fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li> -->
+        <li><a href="https://www.google.com/maps/search/{{ author.location }}"><i class="fa fa-map-marker" aria-hidden="true"></i></li>
       {% endif %}
       {% if author.employer %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
@@ -119,7 +120,7 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
       {% if author.blogger %}
-        <li><a href="{{ author.blogger }}"><i class="fab fa-fw fa-blogger" aria-hidden="true"></i> Blogger</a></li>
+        <li><a href="{{ author.blogger }}"><i class="fab fa-blogger" aria-hidden="false"></i> Blogger</a></li>
 {% endif %}
     </ul>
   </div>
