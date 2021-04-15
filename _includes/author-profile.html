@@ -41,6 +41,12 @@
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       {% endif %}
+      {% if author.orcid %}
+        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+      {% endif %}
+      {% if author.nasaADS %}
+        <li><a href="{{ author.nasaADS }}"><i class="ai ai-ads-square ai-fw"></i> NASA ADS</a></li>
+      {% endif %}
        {% if author.researchgate %}
         <li><a href="{{ author.researchgate }}"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
       {% endif %}
@@ -116,15 +122,9 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
-      {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
-      {% endif %}
-      {% if author.nasaADS %}
-        <li><a href="{{ author.nasaADS }}"><i class="ai ai-ads-square ai-fw"></i> NASA ADS</a></li>
-      {% endif %}
       {% if author.blogger %}
         <li><a href="{{ author.blogger }}"><i class="fab fa-fw fa-blogger" aria-hidden="true"></i> Blogger</a></li>
-      {% endif %}
+{% endif %}
     </ul>
   </div>
 </div>
