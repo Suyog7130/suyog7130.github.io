@@ -11,7 +11,7 @@ title                    : "Suyog Garg"
 title_separator          : "-"
 name                     : &name "Suyog Garg"
 description              : &description "personal description"
-url                      : https://suyog7130.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://suyog7130.github.io 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Suyog7130/suyog7130.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -94,12 +94,12 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "https://www.facebook.com/suyog.garg.1/"
+  facebook         : "suyog.garg.1/"
   foursquare       :
   github           : "Suyog7130"
   google_plus      :
   keybase          :
-  instagram        : "https://www.instagram.com/suyog_garg/"
+  instagram        : "suyog_garg/"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
