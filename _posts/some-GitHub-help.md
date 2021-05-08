@@ -1,11 +1,9 @@
 ---
-title: 'Blog Post number 3'
-date: 2014-08-14
-permalink: /posts/2014/08/blog-post-3/
+title: 'Some Git help'
+date: 2021-05-09
+permalink: /posts/2021/05/some-git-help/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - git
 ---
 
 This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool. 
