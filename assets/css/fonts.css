@@ -27,6 +27,12 @@ src: url(../fonts/MISTRAL.woff) format('woff'),
   src: url(../fonts/LHANDW.TTF) format('truetype');
 }
 @font-face {
+  font-family: 'parchment';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/PARCHM.TTF) format('truetype');
+}
+@font-face {
   font-family: 'papyrus';
   font-style: normal;
   font-weight: 400;
