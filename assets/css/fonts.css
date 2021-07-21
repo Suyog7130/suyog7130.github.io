@@ -51,4 +51,13 @@ src: url(../fonts/MISTRAL.woff) format('woff'),
        url(../fonts/ARIALNI.TTF) format('truetype');
        url(../fonts/ARIALN.TTF) format('truetype');
 }
+@font-face {
+  font-family: 'times new roman';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/timesbd.ttf) format('truetype'),
+       url(../fonts/timesbi.ttf) format('truetype'),
+       url(../fonts/timesi.ttf) format('truetype'),
+       url(../fonts/times.ttf) format('truetype');
+}
 
