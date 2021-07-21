@@ -15,9 +15,9 @@ src: url(../fonts/MISTRAL.woff) format('woff'),
   font-family: 'verdana';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/verdata.ttf) format('truetype');
-       url(../fonts/verdatab.ttf) format('truetype');
-       url(../fonts/verdatai.ttf) format('truetype');
+  src: url(../fonts/verdata.ttf) format('truetype'),
+       url(../fonts/verdatab.ttf) format('truetype'),
+       url(../fonts/verdatai.ttf) format('truetype'),
        url(../fonts/verdataz.ttf) format('truetype');
 }
 @font-face {
