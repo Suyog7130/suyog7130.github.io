@@ -38,3 +38,17 @@ src: url(../fonts/MISTRAL.woff) format('woff'),
   font-weight: 400;
   src: url(../fonts/VIVALDII.TTF) format('truetype');
 }
+@font-face {
+  font-family: 'arial';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/arial.ttf) format('truetype');
+       url(../fonts/arialbd.ttf) format('truetype');
+       url(../fonts/arialbi.ttf) format('truetype');
+       url(../fonts/ariali.ttf) format('truetype');
+       url(../fonts/ARIALNBI.TTF) format('truetype');
+       url(../fonts/ARIALNB.TTF) format('truetype');
+       url(../fonts/ARIALNI.TTF) format('truetype');
+       url(../fonts/ARIALN.TTF) format('truetype');
+}
+
