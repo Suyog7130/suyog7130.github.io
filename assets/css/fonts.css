@@ -1,7 +1,40 @@
 @font-face {
-font-family: 'Mistral';
+font-family: 'mistral';
 font-style: normal;
 font-weight: normal;
 src: url(../fonts/MISTRAL.woff) format('woff'),
      url(../fonts/MISTRAL.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'monotype-corsiva';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MTCORSVA.TTF) format('truetype');
+}
+@font-face {
+  font-family: 'verdana';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/verdata.ttf) format('truetype');
+       url(../fonts/verdatab.ttf) format('truetype');
+       url(../fonts/verdatai.ttf) format('truetype');
+       url(../fonts/verdataz.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'lucida-handwriting';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/LHANDW.TTF) format('truetype');
+}
+@font-face {
+  font-family: 'papyrus';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/PAPYRUS.TTF) format('truetype');
+}
+@font-face {
+  font-family: 'vivaldi';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/VIVALDII.TTF) format('truetype');
 }
