@@ -10,7 +10,7 @@ redirect_from:
 ![](/images/IMG_3799-crop.jpeg)
 
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Tangerine&color=36454F&size=30&duration=5500&width=600&height=60&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Tangerine&color=36454F&size=50&duration=5500&width=600&height=75&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)](https://git.io/typing-svg)
 ---
 <h3> Here's some fun facts about me: </h3>
 
@@ -23,38 +23,36 @@ redirect_from:
 
 
 <style type="text/css" media="screen">
-        .gr_grid_container {
-          /* customize grid container div here. eg: width: 500px; */
-        }
-
-        .gr_grid_book_container {
-          /* customize book cover container div here */
-          float: left;
-          width: 98px;
-          height: 160px;
-          padding: 3px 3px;
-          overflow: hidden;
-        }
-      </style>
-      <div id="gr_grid_widget_1586958626">
-        <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
-            <h2>
-      <a style="text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/19982554-suyog-garg?shelf=read&utm_medium=api&utm_source=grid_widget">My recent Reads:</a>
-    </h2>
-  <div class="gr_grid_container">
-    <div class="gr_grid_book_container"><a title="Casino Royale (James Bond, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/15954464-casino-royale"><img alt="Casino Royale" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1352486576l/15954464._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Endless Night" rel="nofollow" href="https://www.goodreads.com/book/show/10296046-endless-night"><img alt="Endless Night" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327962624l/10296046._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="More Tales of the Black Widowers" rel="nofollow" href="https://www.goodreads.com/book/show/1980570.More_Tales_of_the_Black_Widowers"><img alt="More Tales of the Black Widowers" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1372023821l/1980570._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Elephants can Remember" rel="nofollow" href="https://www.goodreads.com/book/show/4758530-elephants-can-remember"><img alt="Elephants can Remember" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328289904l/4758530._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Tales of the Black Widowers (The Black Widowers, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/99248.Tales_of_the_Black_Widowers"><img alt="Tales of the Black Widowers" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1171434710l/99248._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="The Ocean at the End of the Lane" rel="nofollow" href="https://www.goodreads.com/book/show/16078221-the-ocean-at-the-end-of-the-lane"><img alt="The Ocean at the End of the Lane" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1361358833l/16078221._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="After the Funeral" rel="nofollow" href="https://www.goodreads.com/book/show/7819797-after-the-funeral"><img alt="After the Funeral" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327558667l/7819797._SX98_.jpg" /></a></div>
-    <br style="clear: both"/><br/><a class="gr_grid_branding" style="font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both" rel="nofollow" href="https://www.goodreads.com/user/show/19982554-suyog-garg">Suyog Garg's favorite books »</a>
-  <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Suyog, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
-  </div>
-  </div>
-  <script src="https://www.goodreads.com/review/grid_widget/19982554.My%20recent%20Reads:?cover_size=medium&hide_link=&hide_title=&num_books=7&order=d&shelf=read&sort=date_read&widget_id=1586958626" type="text/javascript" charset="utf-8">
-</script>
+   .gr_grid_container {
+   /* customize grid container div here. eg: width: 500px; */
+   }
+   .gr_grid_book_container {
+   /* customize book cover container div here */
+   float: left;
+   width: 98px;
+   height: 160px;
+   padding: 3px 3px;
+   overflow: hidden;
+   }
+</style>
+<div id="gr_grid_widget_1586958626">
+   <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
+   <h3>
+      <a style="text-decoration: none; color: black;" rel="nofollow" href="https://www.goodreads.com/review/list/19982554-suyog-garg?shelf=read&utm_medium=api&utm_source=grid_widget">My recent Reads:</a>
+   </h3>
+   <div class="gr_grid_container">
+      <div class="gr_grid_book_container"><a title="Casino Royale (James Bond, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/15954464-casino-royale"><img alt="Casino Royale" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1352486576l/15954464._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Endless Night" rel="nofollow" href="https://www.goodreads.com/book/show/10296046-endless-night"><img alt="Endless Night" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327962624l/10296046._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="More Tales of the Black Widowers" rel="nofollow" href="https://www.goodreads.com/book/show/1980570.More_Tales_of_the_Black_Widowers"><img alt="More Tales of the Black Widowers" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1372023821l/1980570._SY160_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Elephants can Remember" rel="nofollow" href="https://www.goodreads.com/book/show/4758530-elephants-can-remember"><img alt="Elephants can Remember" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328289904l/4758530._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Tales of the Black Widowers (The Black Widowers, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/99248.Tales_of_the_Black_Widowers"><img alt="Tales of the Black Widowers" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1171434710l/99248._SY160_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="The Ocean at the End of the Lane" rel="nofollow" href="https://www.goodreads.com/book/show/16078221-the-ocean-at-the-end-of-the-lane"><img alt="The Ocean at the End of the Lane" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1361358833l/16078221._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="After the Funeral" rel="nofollow" href="https://www.goodreads.com/book/show/7819797-after-the-funeral"><img alt="After the Funeral" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327558667l/7819797._SX98_.jpg" /></a></div>
+      <br style="clear: both"/><br/><a class="gr_grid_branding" style="font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both" rel="nofollow" href="https://www.goodreads.com/user/show/19982554-suyog-garg">Suyog Garg's favorite books »</a>
+      <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Suyog, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
+   </div>
+</div>
+<script src="https://www.goodreads.com/review/grid_widget/19982554.My%20recent%20Reads:?cover_size=medium&hide_link=&hide_title=&num_books=7&order=d&shelf=read&sort=date_read&widget_id=1586958626" type="text/javascript" charset="utf-8"></script>
 
 
 ### Thank you for visiting my page! :) 
