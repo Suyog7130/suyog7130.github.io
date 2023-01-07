@@ -10,7 +10,7 @@ redirect_from:
 ![](/images/IMG_3799-crop.jpeg)
 
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Tangerine&color=36454F&size=50&duration=5500&width=600&height=75&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)](https://git.io/typing-svg)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Tangerine&color=36454F&size=50&duration=5500&width=600&height=75&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)
 ---
 <h3> Here's some fun facts about me: </h3>
 
@@ -38,7 +38,7 @@ redirect_from:
 <div id="gr_grid_widget_1586958626">
    <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
    <h3>
-      <a style="text-decoration: none; color: black;" rel="nofollow" href="https://www.goodreads.com/review/list/19982554-suyog-garg?shelf=read&utm_medium=api&utm_source=grid_widget">My recent Reads:</a>
+      <a style="text-decoration: none; color: #382110;" rel="nofollow" href="https://www.goodreads.com/review/list/19982554-suyog-garg?shelf=read&utm_medium=api&utm_source=grid_widget">My recent Reads:</a>
    </h3>
    <div class="gr_grid_container">
       <div class="gr_grid_book_container"><a title="Casino Royale (James Bond, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/15954464-casino-royale"><img alt="Casino Royale" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1352486576l/15954464._SX98_.jpg" /></a></div>
