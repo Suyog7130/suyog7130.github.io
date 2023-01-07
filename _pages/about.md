@@ -21,7 +21,10 @@ redirect_from:
 - 💞️ Would be awesome to collaborate on a computational project.
 - 📫 Catch up about my work on this website.
 
-### Some of my Recent Reads:
+
+### Thank you for visiting my page! :) 
+
+### Have a look at some of my Recent Reads:
 
 <style type="text/css" media="screen">
    .gr_grid_container {
@@ -36,7 +39,7 @@ redirect_from:
    overflow: hidden;
    }
 </style>
-<div id="gr_grid_widget_1673110239">
+<div id="gr_grid_widget_1673110566">
    <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
    <div class="gr_grid_container">
       <div class="gr_grid_book_container"><a title="Twelve Years a Slave" rel="nofollow" href="https://www.goodreads.com/book/show/30150463-twelve-years-a-slave"><img alt="Twelve Years a Slave" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1462847763l/30150463._SX98_.jpg" /></a></div>
@@ -53,13 +56,9 @@ redirect_from:
       <div class="gr_grid_book_container"><a title="The Devotion of Suspect X (Detective Galileo, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/44803282-the-devotion-of-suspect-x"><img alt="The Devotion of Suspect X" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554622814l/44803282._SX98_.jpg" /></a></div>
       <div class="gr_grid_book_container"><a title="Ghosts of The Silent Hills" rel="nofollow" href="https://www.goodreads.com/book/show/50260404-ghosts-of-the-silent-hills"><img alt="Ghosts of The Silent Hills" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578054075l/50260404._SX98_.jpg" /></a></div>
       <div class="gr_grid_book_container"><a title="The Fool Who Though Too Much" rel="nofollow" href="https://www.goodreads.com/book/show/56328839-the-fool-who-though-too-much"><img alt="The Fool Who Though Too Much" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1608299836l/56328839._SX98_.jpg" /></a></div>
-      <div class="gr_grid_book_container"><a title="Satyajit Ray Ki Kahaniyan" rel="nofollow" href="https://www.goodreads.com/book/show/55135388-satyajit-ray-ki-kahaniyan"><img alt="Satyajit Ray Ki Kahaniyan" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1598481486l/55135388._SX98_.jpg" /></a></div>
-      <div class="gr_grid_book_container"><a title="Bookmarked: Reading My Way from Hollywood to Brooklyn" rel="nofollow" href="https://www.goodreads.com/book/show/22750170-bookmarked"><img alt="Bookmarked: Reading My Way from Hollywood to Brooklyn" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1424307666l/22750170._SX98_.jpg" /></a></div>
       <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Suyog, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
    </div>
 </div>
-<script src="https://www.goodreads.com/review/grid_widget/19982554.My%20Recent%20Reads:?cover_size=medium&hide_link=true&hide_title=true&num_books=16&order=d&shelf=read&sort=date_read&widget_id=1673110239" type="text/javascript" charset="utf-8"></script>
-
-### Thank you for visiting my page! :) 
+<script src="https://www.goodreads.com/review/grid_widget/19982554.My%20Recent%20Reads:?cover_size=medium&hide_link=true&hide_title=true&num_books=14&order=d&shelf=read&sort=date_read&widget_id=1673110566" type="text/javascript" charset="utf-8"></script>
 
 ------
