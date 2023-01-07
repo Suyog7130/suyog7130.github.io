@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Suyog Garg"
-  avatar           : "suyog_July2020.jpeg"
+  avatar           : "sg-favicon-crop-invert.png"  #"suyog_July2020.jpeg"
   bio              : "Project Associate at TIFR"
   location         : "Mandla, India"
   employer         :

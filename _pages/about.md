@@ -7,5 +7,6 @@ redirect_from:
   - /about.html
 ---
 
+![photo](suyog7130.github.io/images/IMG_3799.jpeg)
+
 It's a lovely day, isn't it?
-======
