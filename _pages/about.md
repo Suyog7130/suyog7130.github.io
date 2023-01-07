@@ -22,6 +22,6 @@ redirect_from:
 - 📫 Catch up about my work on this website.
 
 
-### Thank you for visiting my profile! :) 
+### Thank you for visiting my page! :) 
 
 ------
