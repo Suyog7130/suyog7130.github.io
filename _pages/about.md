@@ -10,19 +10,16 @@ redirect_from:
 ![](/images/IMG_3799-crop.jpeg)
 
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Pacifico&color=#36454F&size=30&duration=5500&width=600&height=60&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Tangerine&color=36454F&size=30&duration=5500&width=600&height=60&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)](https://git.io/typing-svg)
 ---
 <h3> Here's some fun facts about me: </h3>
 
-- 👋 Heya, this is @Suyog7130
+- 👋 Heya, this is Suyog.
 - 👀 I adore Books, Places and Astrophysics.
 - 🌱 I research on using Machine Learning for Gravitational-Wave detection.
 - 💻 I have experience in Data Analysis, Numerical Solvers and Deep Neural Nets.
 - 💞️ Would be awesome to collaborate on a computational project.
 - 📫 Catch up about my work on this website.
-
-
-### Thank you for visiting my page! :) 
 
 
 <style type="text/css" media="screen">
@@ -55,8 +52,11 @@ redirect_from:
     <br style="clear: both"/><br/><a class="gr_grid_branding" style="font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both" rel="nofollow" href="https://www.goodreads.com/user/show/19982554-suyog-garg">Suyog Garg's favorite books »</a>
   <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Suyog, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
   </div>
+  </div>
+  <script src="https://www.goodreads.com/review/grid_widget/19982554.My%20recent%20Reads:?cover_size=medium&hide_link=&hide_title=&num_books=7&order=d&shelf=read&sort=date_read&widget_id=1586958626" type="text/javascript" charset="utf-8">
+</script>
 
-      </div>
-      <script src="https://www.goodreads.com/review/grid_widget/19982554.My%20recent%20Reads:?cover_size=medium&hide_link=&hide_title=&num_books=7&order=d&shelf=read&sort=date_read&widget_id=1586958626" type="text/javascript" charset="utf-8"></script>
+
+### Thank you for visiting my page! :) 
 
 ------
