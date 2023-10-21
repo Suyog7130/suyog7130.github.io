@@ -72,6 +72,7 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
+  text-align: center;
   width: 72px;
   // set width only, for non-square avatars
   // height: 36px;
@@ -124,6 +125,7 @@
 
 .author__bio {
   margin: 0;
+  text-align: center;
 
   @include breakpoint($large) {
     margin-top: 10px;
