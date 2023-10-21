@@ -16,7 +16,6 @@
 }
 
 .page {
-  top: 0;
   padding-top: $masthead-height;
   @include breakpoint($large) {
     @include span(12 of 12 last);
