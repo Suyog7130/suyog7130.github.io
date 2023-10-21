@@ -7,7 +7,6 @@
   @include clearfix;
   margin-top: 2em;
   padding-left: 1em;
-  padding-top: $masthead-height;
   padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
@@ -19,10 +18,10 @@
 
 .page {
   @include breakpoint($large) {
-    float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    // float: right;
+    // width: calc(100% - #{$right-sidebar-width-narrow});
     @include span(12 of 12 last);
-    @include prefix(0.5 of 12);
+    @include prefix(2 of 12);
     @include suffix(0.5 of 12);
   }
 
@@ -394,11 +393,6 @@
   @include breakpoint($large) {
     @include pre(2.5 of 12);
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
-  }
-
-  @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
   }
 
   a {
