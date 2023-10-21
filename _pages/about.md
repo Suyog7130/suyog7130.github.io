@@ -23,9 +23,9 @@ redirect_from:
 - 📫 Catch up about my work on this website.
 
 <!-- News -->
-<h2> <p style="text-align: center;">News</p> </h2>
+<h2><p style="text-align: center;"> News </p></h2>
 
-- <p style="color: blue;">[Academic]</p> (2023年10月01日) Started PhD with Kipp-san at RESCEU, The University of Tokyo
+- <p style="color: blue;">[Academic](2023年10月01日) Started PhD with Kipp-san at RESCEU, The University of Tokyo </p> 
 
 <!-- Timeline -->
 
@@ -400,7 +400,6 @@ header h1{
 <style type="text/css" media="screen">
    .gr_grid_container {
    /* customize grid container div here. eg: width: 500px; */
-   width: 750px;
    }
    .gr_grid_book_container {
    /* customize book cover container div here */
