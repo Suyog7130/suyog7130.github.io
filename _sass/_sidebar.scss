@@ -7,7 +7,6 @@
    ========================================================================== */
 
 .sidebar {
-  padding-top: $masthead-height;
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
 
@@ -28,7 +27,6 @@
 
   @include breakpoint($x-large) {
     padding-right: 0;
-    padding-top: $masthead-height;
   }
 
   h2, h3, h4, h5, h6 {
