@@ -25,7 +25,7 @@ redirect_from:
 <!-- News -->
 <h2><p style="text-align: center;"> News </p></h2>
 
-- <p style="color: blue;">[Academic](2023年10月01日) Started PhD with Kipp-san at RESCEU, The University of Tokyo </p> 
+- <span style="color:blue">[Academic]</span> (2023年10月01日) Started PhD with Kipp-san at RESCEU, The University of Tokyo
 
 <!-- Timeline -->
 
@@ -400,10 +400,12 @@ header h1{
 <style type="text/css" media="screen">
    .gr_grid_container {
    /* customize grid container div here. eg: width: 500px; */
+   width: 750px;
+   height: 330px;
    }
    .gr_grid_book_container {
    /* customize book cover container div here */
-   float: center;
+   float: left;
    width: 98px;
    height: 160px;
    padding: 0px 0px;
