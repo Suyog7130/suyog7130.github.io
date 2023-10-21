@@ -25,6 +25,8 @@ redirect_from:
 <!-- News -->
 <h2> <p style="text-align: center;">News</p> </h2>
 
+- <p style="color: blue;">[Academic]</p> (2023年10月01日) Started PhD with Kipp-san at RESCEU, The University of Tokyo
+
 <!-- Timeline -->
 
 <style type="text/css" media="screen">
@@ -32,7 +34,7 @@ redirect_from:
 
 body{
   font-family: 'Raleway', sans-serif;
-  color: #333;
+  color: black;
 }
 
 header h1{
@@ -389,20 +391,20 @@ header h1{
 </ul>
 
 
-<!-- Goodreads Batch -->
+<!-- Goodreads Block -->
 
+<h3> <p style="text-align: center;"> Thank you for visiting my page! :) </p> </h3>
 
-### Thank you for visiting my page! :) 
-
-### Have a look at some of my Recent Reads:
+<h3> <p style="text-align: center;"> Have a look at some of my Recent Reads </p> </h3>
 
 <style type="text/css" media="screen">
    .gr_grid_container {
    /* customize grid container div here. eg: width: 500px; */
+   width: 750px;
    }
    .gr_grid_book_container {
    /* customize book cover container div here */
-   float: left;
+   float: center;
    width: 98px;
    height: 160px;
    padding: 0px 0px;
