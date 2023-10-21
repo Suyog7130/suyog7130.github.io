@@ -19,7 +19,6 @@
 
 .page {
   @include breakpoint($large) {
-    padding-top: $masthead-height;
     @include span(12 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(2 of 12);
