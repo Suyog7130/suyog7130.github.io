@@ -1,25 +1,352 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://suyog7130.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://suyog7130.github.io/" rel="alternate" type="text/html" /><updated>2021-04-15T20:36:47+05:30</updated><id>https://suyog7130.github.io/feed.xml</id><title type="html">Suyog Garg</title><subtitle>personal description</subtitle><author><name>Suyog Garg</name><email>suyog7130@gmail.com</email></author><entry><title type="html">Future Blog Post</title><link href="https://suyog7130.github.io/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Future Blog Post" /><published>2199-01-01T00:00:00+05:30</published><updated>2199-01-01T00:00:00+05:30</updated><id>https://suyog7130.github.io/posts/2012/08/future-post</id><content type="html" xml:base="https://suyog7130.github.io/posts/2012/08/blog-post-4/">&lt;p&gt;This post will show up by default. To disable scheduling of future posts, edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.yml&lt;/code&gt; and set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;future: false&lt;/code&gt;.&lt;/p&gt;</content><author><name>Suyog Garg</name><email>suyog7130@gmail.com</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This post will show up by default. To disable scheduling of future posts, edit config.yml and set future: false.</summary></entry><entry><title type="html">Blog Post number 4</title><link href="https://suyog7130.github.io/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Blog Post number 4" /><published>2015-08-14T00:00:00+05:30</published><updated>2015-08-14T00:00:00+05:30</updated><id>https://suyog7130.github.io/posts/2012/08/blog-post-4</id><content type="html" xml:base="https://suyog7130.github.io/posts/2012/08/blog-post-4/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://suyog7130.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://suyog7130.github.io/" rel="alternate" type="text/html" /><updated>2023-10-21T15:32:12+05:30</updated><id>https://suyog7130.github.io/feed.xml</id><title type="html">Suyog Garg</title><subtitle>personal description</subtitle><author><name>Suyog Garg</name></author><entry><title type="html">How to use Sphinx Documentation</title><link href="https://suyog7130.github.io/posts/2023/02/blog-post-4/" rel="alternate" type="text/html" title="How to use Sphinx Documentation" /><published>2023-02-13T00:00:00+05:30</published><updated>2023-02-13T00:00:00+05:30</updated><id>https://suyog7130.github.io/posts/2023/02/blog-post-4</id><content type="html" xml:base="https://suyog7130.github.io/posts/2023/02/blog-post-4/">&lt;p&gt;Sphinx documentation build also requires configuring the source pathname inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docs/conf.py&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;p&gt;So, the process for building documentation is:&lt;/p&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sphinx-quickstart&lt;/code&gt;, e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sphinx-quickstart docs/ -p xmmPipeline -a Suyog –ext-autodoc –ext-napolean –ext-doctest –ext-intersphinx –ext-todoint&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docs/conf.py&lt;/code&gt; file to have the correct documentation path.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;autodoc&lt;/code&gt; to automatically import the docstring from the code modules and scripts, e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sphinx-apidoc -o ./docs ../src/xmmPipeline/ –force&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make html&lt;/code&gt; for HTML, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make latex&lt;/code&gt; for LaTeX, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make latexpdf&lt;/code&gt; for PDF and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make epub&lt;/code&gt; for epub&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Suyog Garg</name><email>suyog7130@gmail.com</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry><entry><title type="html">Blog Post number 3</title><link href="https://suyog7130.github.io/posts/2014/08/blog-post-3/" rel="alternate" type="text/html" title="Blog Post number 3" /><published>2014-08-14T00:00:00+05:30</published><updated>2014-08-14T00:00:00+05:30</updated><id>https://suyog7130.github.io/posts/2014/08/blog-post-3</id><content type="html" xml:base="https://suyog7130.github.io/posts/2014/08/blog-post-3/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;p&gt;Example &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conf.py&lt;/code&gt; for Sphinx is as follows:&lt;/p&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Configuration file for the Sphinx documentation builder.
+#
+# For the full list of built-in configuration values, see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# -- Path setup --------------------------------------------------------------
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
+#
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abspath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'../src/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Suyog Garg</name><email>suyog7130@gmail.com</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry><entry><title type="html">Blog Post number 2</title><link href="https://suyog7130.github.io/posts/2013/08/blog-post-2/" rel="alternate" type="text/html" title="Blog Post number 2" /><published>2013-08-14T00:00:00+05:30</published><updated>2013-08-14T00:00:00+05:30</updated><id>https://suyog7130.github.io/posts/2013/08/blog-post-2</id><content type="html" xml:base="https://suyog7130.github.io/posts/2013/08/blog-post-2/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;span class=&quot;c1&quot;&gt;# -- Project information -----------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;project&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'xmmPipeline'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;copyright&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'2023, Suyog'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Suyog'&lt;/span&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
+&lt;span class=&quot;c1&quot;&gt;# -- General configuration ---------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;extensions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'sphinx.ext.autodoc'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'sphinx.ext.doctest'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'sphinx.ext.intersphinx'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'sphinx.ext.napoleon'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'sphinx.ext.todo'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Suyog Garg</name><email>suyog7130@gmail.com</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry><entry><title type="html">Blog Post number 1</title><link href="https://suyog7130.github.io/posts/2012/08/blog-post-1/" rel="alternate" type="text/html" title="Blog Post number 1" /><published>2012-08-14T00:00:00+05:30</published><updated>2012-08-14T00:00:00+05:30</updated><id>https://suyog7130.github.io/posts/2012/08/blog-post-1</id><content type="html" xml:base="https://suyog7130.github.io/posts/2012/08/blog-post-1/">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;span class=&quot;c1&quot;&gt;# Add any paths that contain templates here, relative to this directory.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;templates_path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'_templates'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 
-&lt;h1 id=&quot;headings-are-cool&quot;&gt;Headings are cool&lt;/h1&gt;
 
-&lt;h1 id=&quot;you-can-have-many-headings&quot;&gt;You can have many headings&lt;/h1&gt;
+&lt;span class=&quot;c1&quot;&gt;# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exclude_patterns&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'_build'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Thumbs.db'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'.DS_Store'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 
-&lt;h2 id=&quot;arent-headings-cool&quot;&gt;Aren’t headings cool?&lt;/h2&gt;</content><author><name>Suyog Garg</name><email>suyog7130@gmail.com</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html">This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</summary></entry></feed>
+
+
+&lt;span class=&quot;c1&quot;&gt;# -- Options for HTML output -------------------------------------------------
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;html_theme&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'alabaster'&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named &quot;default.css&quot; will overwrite the builtin &quot;default.css&quot;.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html_static_path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'_static'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# -- Options for intersphinx extension ---------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#configuration
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;intersphinx_mapping&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'python'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'https://docs.python.org/3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# -- Options for todo extension ----------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/extensions/todo.html#configuration
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;todo_include_todos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Suyog Garg</name></author><category term="sphinx" /><category term="python" /><category term="documentation" /><summary type="html">Sphinx documentation build also requires configuring the source pathname inside docs/conf.py</summary></entry><entry><title type="html">Customizing Mac Terminal</title><link href="https://suyog7130.github.io/posts/2023/02/blog-post-3/" rel="alternate" type="text/html" title="Customizing Mac Terminal" /><published>2023-02-03T00:00:00+05:30</published><updated>2023-02-03T00:00:00+05:30</updated><id>https://suyog7130.github.io/posts/2023/02/blog-post-3</id><content type="html" xml:base="https://suyog7130.github.io/posts/2023/02/blog-post-3/">&lt;p&gt;Changed the Mac terminal to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;iterm2&lt;/code&gt; and then made numerous customizations to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oh-my-zsh&lt;/code&gt; plugin. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.zshrc&lt;/code&gt; looks like the following after these modifications:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# If you come from bash you might have to change your $PATH.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# export PATH=$HOME/bin:/usr/local/bin:$PATH&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Path to your oh-my-zsh installation.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ZSH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/.oh-my-zsh&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Set name of the theme to load --- if set to &quot;random&quot;, it will&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# load a random theme each time oh-my-zsh is loaded, in which case,&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# to know which specific one was loaded, run: echo $RANDOM_THEME&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;ZSH_THEME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;robbyrussell&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Set list of themes to pick from when loading at random&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Setting this variable when ZSH_THEME=random will cause zsh to load&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# a theme from this variable instead of looking in $ZSH/themes/&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# If set to an empty array, this variable will have no effect.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# ZSH_THEME_RANDOM_CANDIDATES=( &quot;robbyrussell&quot; &quot;agnoster&quot; )&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment the following line to use case-sensitive completion.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# CASE_SENSITIVE=&quot;true&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment the following line to use hyphen-insensitive completion.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Case-sensitive completion must be off. _ and - will be interchangeable.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# HYPHEN_INSENSITIVE=&quot;true&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment one of the following lines to change the auto-update behavior&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# zstyle ':omz:update' mode disabled  # disable automatic updates&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# zstyle ':omz:update' mode auto      # update automatically without asking&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# zstyle ':omz:update' mode reminder  # just remind me to update when it's time&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment the following line to change how often to auto-update (in days).&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# zstyle ':omz:update' frequency 13&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment the following line if pasting URLs and other text is messed up.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# DISABLE_MAGIC_FUNCTIONS=&quot;true&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment the following line to disable colors in ls.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# DISABLE_LS_COLORS=&quot;true&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment the following line to disable auto-setting terminal title.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# DISABLE_AUTO_TITLE=&quot;true&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment the following line to enable command auto-correction.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# ENABLE_CORRECTION=&quot;true&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment the following line to display red dots whilst waiting for completion.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# You can also set it to another string to have that shown instead of the default red dots.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# e.g. COMPLETION_WAITING_DOTS=&quot;%F{yellow}waiting...%f&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Caution: this setting can cause issues with multiline prompts in zsh &amp;lt; 5.7.1 (see #5765)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# COMPLETION_WAITING_DOTS=&quot;true&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment the following line if you want to disable marking untracked files&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# under VCS as dirty. This makes repository status check for large repositories&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# much, much faster.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# DISABLE_UNTRACKED_FILES_DIRTY=&quot;true&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Uncomment the following line if you want to change the command execution time&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# stamp shown in the history command output.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# You can set one of the optional three formats:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# &quot;mm/dd/yyyy&quot;|&quot;dd.mm.yyyy&quot;|&quot;yyyy-mm-dd&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# or set a custom format using the strftime function format specifications,&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# see 'man strftime' for details.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# HIST_STAMPS=&quot;mm/dd/yyyy&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Would you like to use another custom folder than $ZSH/custom?&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# ZSH_CUSTOM=/path/to/new-custom-folder&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Which plugins would you like to load?&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Standard plugins can be found in $ZSH/plugins/&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Custom plugins may be added to $ZSH_CUSTOM/plugins/&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Example format: plugins=(rails git textmate ruby lighthouse)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Add wisely, as too many plugins slow down shell startup.&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;
+    git
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    &lt;span class=&quot;c&quot;&gt;# fzf&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;c&quot;&gt;# User configuration&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# export MANPATH=&quot;/usr/local/man:$MANPATH&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# You may need to manually set your language environment&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# export LANG=en_US.UTF-8&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Preferred editor for local and remote sessions&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# if [[ -n $SSH_CONNECTION ]]; then&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#   export EDITOR='vim'&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# else&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#   export EDITOR='mvim'&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# fi&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Compilation flags&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# export ARCHFLAGS=&quot;-arch x86_64&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Set personal aliases, overriding those provided by oh-my-zsh libs,&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# plugins, and themes. Aliases can be placed here, though oh-my-zsh&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# users are encouraged to define aliases within the ZSH_CUSTOM folder.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# For a full list of active aliases, run `alias`.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Example aliases&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# alias zshconfig=&quot;mate ~/.zshrc&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# alias ohmyzsh=&quot;mate ~/.oh-my-zsh&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# add syntax highlighting to the list of plugins in your ~/.zshrc file&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# update plugins in your ~/.zshrc file&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# update your ~/.zshrc file&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;FZF_BASE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/.fzf&quot;&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ZSH&lt;/span&gt;/oh-my-zsh.sh
+
+&lt;span class=&quot;c&quot;&gt;# Aliases&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# python&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;python3
+
+&lt;span class=&quot;c&quot;&gt;# git&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;git status&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# map exa commands to normal ls commands&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;exa -l -g --icons&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;exa --icons&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# show file previews for fzf using bat&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# starship prompt&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;starship toggle gcloud disabled&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# toggle gcloud info on the prompt&lt;/span&gt;
+
+
+&lt;span class=&quot;c&quot;&gt;# use Starship prompt in zsh&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;starship init zsh&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; ~/.fzf.zsh &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.fzf.zsh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;https://engineeringfordatascience.com/posts/configure_terminal_for_data_science_with_oh_my_zsh/&quot;&gt;configure_terminal_for_data_science_with_oh_my_zsh/&lt;/a&gt;&lt;/p&gt;</content><author><name>Suyog Garg</name></author><category term="terminal" /><category term="git" /><category term="zsh" /><summary type="html">Changed the Mac terminal to iterm2 and then made numerous customizations to the oh-my-zsh plugin. The ~/.zshrc looks like the following after these modifications:</summary></entry><entry><title type="html">`.gitignore` file</title><link href="https://suyog7130.github.io/posts/2023/01/blog-post-2/" rel="alternate" type="text/html" title="`.gitignore` file" /><published>2023-01-23T00:00:00+05:30</published><updated>2023-01-23T00:00:00+05:30</updated><id>https://suyog7130.github.io/posts/2023/01/blog-post-2</id><content type="html" xml:base="https://suyog7130.github.io/posts/2023/01/blog-post-2/">&lt;p&gt;To ignore all files larger than 100MB:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find ./&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-size&lt;/span&gt; +100M | &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; .gitignore
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To ignore all files larger than 100MB but with pathnames not contianing “data” and without repeating already added large file names:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find ./&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;work&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/ &lt;span class=&quot;nt&quot;&gt;-not&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-path&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;data&lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;-size&lt;/span&gt; +100M | &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s|^\./||g'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; .gitignore&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'!NF || !seen[$0]++'&lt;/span&gt; .gitignore
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;An Example &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; file with other useful settings:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  GNU nano 2.9.3                                           .gitignore
+
+&lt;span class=&quot;c&quot;&gt;# Blocklist files/folders in same directory as the .gitignore file&lt;/span&gt;
+/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;data/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;work&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;data&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;gh18-work/models/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;gh18-work/results/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Includelist some files&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;.gitignore
+&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;README.md
+&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;.sh
+
+&lt;span class=&quot;c&quot;&gt;# Ignore all files named .DS_Store or ending with .log&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;/.DS_Store
+&lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;.log
+
+&lt;span class=&quot;c&quot;&gt;# Includelist folder/a/b1/ and folder/a/b2/ trailing &quot;/&quot; is optional for folders, may match file though. &quot;/&quot; is NOT&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# optional when followed by a *&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;work&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;work&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Adding to the above, this also works...&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#!/folder/a/deeply /folder/a/deeply/* !/folder/a/deeply/nested /folder/a/deeply/nested/*&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#!/folder/a/deeply/nested/subfolder&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Ignore all files larger than 150MB&lt;/span&gt;
+g2net-work/g2net-detecting-continuous-gravitational-waves.zip
+mlgwsc-work/injections4_1.25s.npy
+mlgwsc-work/real_noise_file.hdf
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Useful links:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/docs/gitignore&quot;&gt;https://git-scm.com/docs/gitignore&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/987142/make-gitignore-ignore-everything-except-a-few-files&quot;&gt;https://stackoverflow.com/questions/987142/make-gitignore-ignore-everything-except-a-few-files&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4035779/gitignore-by-file-size&quot;&gt;https://stackoverflow.com/questions/4035779/gitignore-by-file-size&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;</content><author><name>Suyog Garg</name></author><category term="terminal" /><category term="git" /><summary type="html">To ignore all files larger than 100MB:</summary></entry><entry><title type="html">Linux Terminal Commands</title><link href="https://suyog7130.github.io/posts/2021/05/blog-post-1/" rel="alternate" type="text/html" title="Linux Terminal Commands" /><published>2021-05-09T00:00:00+05:30</published><updated>2021-05-09T00:00:00+05:30</updated><id>https://suyog7130.github.io/posts/2021/05/blog-post-1</id><content type="html" xml:base="https://suyog7130.github.io/posts/2021/05/blog-post-1/">&lt;p&gt;These are some useful Linux Terminal Commands for productivity:&lt;/p&gt;
+
+&lt;h2 id=&quot;commands-using-ls-etc&quot;&gt;Commands using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt; etc.&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;use&lt;/th&gt;
+      &lt;th&gt;to&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -ltr&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;list files in reverse modification history order with details.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -ltr | tail -n 5&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;list only the last (tailing) 5 files from the list. Change 5 to any integer.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls | head -n 5&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;list only the first 5 files from the list.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rename 's/original/new/' *&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;To rename all filenames and directories containing “original” string to “new” string. To recursively do this in sub-directories, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;**/*&lt;/code&gt;. See: &lt;a href=&quot;https://unix.stackexchange.com/questions/175135/how-to-rename-multiple-files-by-replacing-string-in-file-name-this-string-conta&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://ja.stackoverflow.com/questions/90042/rename-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%81%AE%E3%83%AA%E3%83%8D%E3%83%BC%E3%83%A0%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC-substitution-replacement-not-terminated-at-user-su&quot;&gt;here&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;for dir in */; do mkdir -- &quot;$dir&quot;/{tmp1,foo,bar,qux}; done&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;To create directories within sub-directories in one go!&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;for-opening-image-files-from-terminal&quot;&gt;For opening image files from Terminal&lt;/h2&gt;
+
+&lt;p&gt;Opening files directly through the Terminal is both easy and fast. Additionally, these commands are useful to view resulting files when using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;subprocess.run&lt;/code&gt; in Python to run Terminal commands.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;use&lt;/th&gt;
+      &lt;th&gt;to&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;evince&lt;/code&gt; &lt;em&gt;filename&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;open PDF files and PS document files.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eog&lt;/code&gt; &lt;em&gt;filename&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;open image files in normal image formats like JPEG, JPG, PNG etc.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ds9&lt;/code&gt; &lt;em&gt;filename&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;open FITS format image files. &lt;em&gt;Requires DS9&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fv&lt;/code&gt; &lt;em&gt;filename&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;open FITS format event lists and datasets. &lt;em&gt;Requires initiation of NASA’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heasarc&lt;/code&gt;&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;</content><author><name>Suyog Garg</name></author><category term="terminal" /><category term="commands" /><summary type="html">These are some useful Linux Terminal Commands for productivity:</summary></entry></feed>

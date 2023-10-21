@@ -1,0 +1,647 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Linux Terminal Commands - Suyog Garg</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Suyog Garg">
+<meta property="og:title" content="Linux Terminal Commands">
+
+
+  <link rel="canonical" href="https://suyog7130.github.io/posts/2021/05/blog-post-1/">
+  <meta property="og:url" content="https://suyog7130.github.io/posts/2021/05/blog-post-1/">
+
+
+
+  <meta property="og:description" content="These are some useful Linux Terminal Commands for productivity:">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2021-05-09T00:00:00+05:30">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Suyog Garg",
+      "url" : "https://suyog7130.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://suyog7130.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Suyog Garg Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://suyog7130.github.io/assets/css/main.css">
+
+<!-- Load fonts from the fonts directory -->
+<link rel="stylesheet" href="https://suyog7130.github.io/assets/css/fonts.css">
+
+<!-- Load fonts directly from the Google Fonts Library -->
+<link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'/>
+<!-- Tangerine font -->
+<link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'/>
+    
+<!-- Fonts from https://www.theleagueofmoveabletype.com/ -->
+<link href='https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css2?family=League+Script' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css2?family=Prociono' rel='stylesheet'/>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Calligraffitti" rel="stylesheet">
+    
+<!-- Indian Type Foundary's Kalam font -->
+<link href='https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700' rel='stylesheet'/>
+
+
+<meta http-equiv="cleartype" content="on">
+
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://suyog7130.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://suyog7130.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://suyog7130.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://suyog7130.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://suyog7130.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://suyog7130.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://suyog7130.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://suyog7130.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://suyog7130.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://suyog7130.github.io/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://suyog7130.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://suyog7130.github.io/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://suyog7130.github.io/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://suyog7130.github.io/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://suyog7130.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://suyog7130.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://suyog7130.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://suyog7130.github.io/assets/css/academicons.css"/>
+
+<!-- favicon -->
+<link rel="icon" type="image/png" href="https://suyog7130.github.io/images/sg-favicon-crop-invert.png">
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://suyog7130.github.io/">Suyog Garg</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://suyog7130.github.io/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://suyog7130.github.io/talks/">Talks</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://suyog7130.github.io/research/">Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://suyog7130.github.io/portfolio/">Portfolio</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://suyog7130.github.io/year-archive/">Blog Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://suyog7130.github.io/cv/">CV</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://suyog7130.github.io/markdown/">Guide</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://suyog7130.github.io/images/" class="author__avatar" alt="Suyog Garg">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Suyog Garg</h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+      
+      
+      
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Linux Terminal Commands">
+    <meta itemprop="description" content="These are some useful Linux Terminal Commands for productivity:">
+    <meta itemprop="datePublished" content="May 09, 2021">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Linux Terminal Commands
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  1 minute read
+	
+</p>
+          
+        
+        
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Published:</strong> <time datetime="2021-05-09T00:00:00+05:30">May 09, 2021</time></p>
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>These are some useful Linux Terminal Commands for productivity:</p>
+
+<h2 id="commands-using-ls-etc">Commands using <code class="language-plaintext highlighter-rouge">ls</code> etc.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>use</th>
+      <th>to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls -ltr</code></td>
+      <td>list files in reverse modification history order with details.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls -ltr | tail -n 5</code></td>
+      <td>list only the last (tailing) 5 files from the list. Change 5 to any integer.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls | head -n 5</code></td>
+      <td>list only the first 5 files from the list.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rename 's/original/new/' *</code></td>
+      <td>To rename all filenames and directories containing “original” string to “new” string. To recursively do this in sub-directories, use <code class="language-plaintext highlighter-rouge">**/*</code>. See: <a href="https://unix.stackexchange.com/questions/175135/how-to-rename-multiple-files-by-replacing-string-in-file-name-this-string-conta">here</a> and <a href="https://ja.stackoverflow.com/questions/90042/rename-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%81%AE%E3%83%AA%E3%83%8D%E3%83%BC%E3%83%A0%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC-substitution-replacement-not-terminated-at-user-su">here</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">for dir in */; do mkdir -- "$dir"/{tmp1,foo,bar,qux}; done</code></td>
+      <td>To create directories within sub-directories in one go!</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="for-opening-image-files-from-terminal">For opening image files from Terminal</h2>
+
+<p>Opening files directly through the Terminal is both easy and fast. Additionally, these commands are useful to view resulting files when using <code class="language-plaintext highlighter-rouge">subprocess.run</code> in Python to run Terminal commands.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>use</th>
+      <th>to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">evince</code> <em>filename</em></td>
+      <td>open PDF files and PS document files.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">eog</code> <em>filename</em></td>
+      <td>open image files in normal image formats like JPEG, JPG, PNG etc.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ds9</code> <em>filename</em></td>
+      <td>open FITS format image files. <em>Requires DS9</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fv</code> <em>filename</em></td>
+      <td>open FITS format event lists and datasets. <em>Requires initiation of NASA’s <code class="language-plaintext highlighter-rouge">heasarc</code></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://suyog7130.github.io/tags/#commands" class="page__taxonomy-item" rel="tag">commands</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://suyog7130.github.io/tags/#terminal" class="page__taxonomy-item" rel="tag">terminal</a>
+    
+    </span>
+  </p>
+
+
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=https://suyog7130.github.io/posts/2021/05/blog-post-1/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://suyog7130.github.io/posts/2021/05/blog-post-1/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://suyog7130.github.io/posts/2021/05/blog-post-1/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="https://suyog7130.github.io/posts/2023/01/blog-post-2/" class="pagination--pager" title=".gitignore file
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://suyog7130.github.io/posts/2023/02/blog-post-4/" rel="permalink">How to use Sphinx Documentation
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Published:</strong> <time datetime="2023-02-13T00:00:00+05:30">February 13, 2023</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>Sphinx documentation build also requires configuring the source pathname inside <code class="language-plaintext highlighter-rouge">docs/conf.py</code>
+
+<strong><a href="https://suyog7130.github.io/posts/2023/02/blog-post-4/" rel="permalink"> Read more</a></strong></p></p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://suyog7130.github.io/posts/2023/02/blog-post-3/" rel="permalink">Customizing Mac Terminal
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  4 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Published:</strong> <time datetime="2023-02-03T00:00:00+05:30">February 03, 2023</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>Changed the Mac terminal to <code class="language-plaintext highlighter-rouge">iterm2</code> and then made numerous customizations to the <code class="language-plaintext highlighter-rouge">oh-my-zsh</code> plugin. The <code class="language-plaintext highlighter-rouge">~/.zshrc</code> looks like the following after these modifications:
+
+<strong><a href="https://suyog7130.github.io/posts/2023/02/blog-post-3/" rel="permalink"> Read more</a></strong></p></p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://suyog7130.github.io/posts/2023/01/blog-post-2/" rel="permalink"><code class="language-plaintext highlighter-rouge">.gitignore</code> file
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Published:</strong> <time datetime="2023-01-23T00:00:00+05:30">January 23, 2023</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>To ignore all files larger than 100MB:
+
+<strong><a href="https://suyog7130.github.io/posts/2023/01/blog-post-2/" rel="permalink"> Read more</a></strong></p></p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<!-- <a href="/sitemap/">Sitemap</a> -->
+
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="https://suyog7130.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Suyog Garg
+</div>
+
+<!-- Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. -->
+
+      </footer>
+    </div>
+
+    <script src="https://suyog7130.github.io/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+
