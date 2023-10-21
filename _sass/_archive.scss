@@ -168,6 +168,7 @@
 
   @include breakpoint($small) {
     margin-bottom: 0;
+    text-align: center;
     @include gallery(4 of 12);
 
     .feature__item-teaser {
