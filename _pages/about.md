@@ -436,7 +436,7 @@ header h1{
 
 <h3> <p style="text-align: center;"> Thank you for visiting my page! :) </p> </h3>
 
-<h2> <p style="text-align: center; font-family: mistral;"> My Recent Reads </p> </h2>
+<p style="text-align: center; font-family: mistral; font-size: 40px"> My Recent Reads </p>
 
 <style type="text/css" media="screen">
    .gr_grid_container {
