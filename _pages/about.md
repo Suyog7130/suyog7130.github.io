@@ -25,7 +25,9 @@ redirect_from:
 <!-- News -->
 <h2><p style="text-align: center;"> News </p></h2>
 
-- <span style="color:blue">[Academic]</span> (2023年10月01日) Started PhD with Kipp-san at RESCEU, The University of Tokyo
+- <span style="color:red">[Conference]</span> (2023年11月13-18日) I will present a Poster in the [MLPhys Conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys/) at YITP, Kyoto University.
+- <span style="color:red">[Conference]</span> (2023年10月31日) I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo.
+- <span style="color:blue">[Career]</span> (2023年10月01日) Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo
 
 <!-- Timeline -->
 
