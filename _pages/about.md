@@ -371,7 +371,7 @@ header h1{
   </li>
 
   <li>
-    <div class="direction-r">
+    <div class="direction-l">
       <div class="flag-wrapper">
         <span class="hexa"></span>
         <span class="flag"> 
@@ -384,9 +384,24 @@ header h1{
       </div>
     </div>
   </li>
-
+  
   <li>
     <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag"> 
+          TIFR, Mumbai </span>
+        <span class="time-wrapper"><span class="time">
+          2020/11 – 2021/04 </span></span>
+      </div>
+      <div class="desc">
+      	  Project Associate in the Helioseismology lab
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="direction-l">
       <div class="flag-wrapper">
         <span class="hexa"></span>
         <span class="flag"> 
@@ -421,7 +436,7 @@ header h1{
 
 <h3> <p style="text-align: center;"> Thank you for visiting my page! :) </p> </h3>
 
-<h3> <p style="text-align: center;"> Have a look at some of my Recent Reads </p> </h3>
+<h3> <p style="text-align: center; font-family: mistral"> My Recent Reads </p> </h3>
 
 <style type="text/css" media="screen">
    .gr_grid_container {

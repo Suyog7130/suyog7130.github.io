@@ -122,12 +122,13 @@
   .sidebar .author__name {
     text-align: center;
     font-family: mistral;
-    font-size: $type-size-5;
+    font-size: $type-size-3;
   }
   
   .author__bio {
     margin: 0;
     text-align: center;
+    font-weight: bold;
   
     @include breakpoint($large) {
       margin-top: 10px;
