@@ -400,8 +400,6 @@ header h1{
 <style type="text/css" media="screen">
    .gr_grid_container {
    /* customize grid container div here. eg: width: 500px; */
-   width: 750px;
-   height: 330px;
    }
    .gr_grid_book_container {
    /* customize book cover container div here */
