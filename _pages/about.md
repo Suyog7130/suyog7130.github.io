@@ -430,6 +430,6 @@ header h1{
       <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Suyog, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
    </div>
 </div>
-<script src="https://www.goodreads.com/review/grid_widget/19982554.My%20Recent%20Reads:?cover_size=medium&hide_link=true&hide_title=true&num_books=14&order=d&shelf=read&sort=date_read&widget_id=1673110566" type="text/javascript" charset="utf-8"></script>
+<script src="https://www.goodreads.com/review/grid_widget/19982554.My%20Recent%20Reads:?cover_size=medium&hide_link=true&hide_title=true&num_books=10&order=d&shelf=read&sort=date_read&widget_id=1673110566" type="text/javascript" charset="utf-8"></script>
 
 ------
