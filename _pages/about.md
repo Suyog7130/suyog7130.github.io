@@ -355,39 +355,63 @@ header h1{
 <h2><p style="text-align: center;"> Timeline </p> </h2>
 
 <ul class="timeline">
-  <!-- Item 1 -->
   <li>
     <div class="direction-r">
       <div class="flag-wrapper">
         <span class="hexa"></span>
-        <span class="flag">Lorem ipsum.</span>
-        <span class="time-wrapper"><span class="time">Feb 2015</span></span>
+        <span class="flag"> 
+          The University of Tokyo </span>
+        <span class="time-wrapper"><span class="time">
+          2023 ~ </span></span>
       </div>
-      <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
+      <div class="desc">
+      	  PhD in Physics at RESCEU
+      </div>
     </div>
   </li>
 
-  <!-- Item 2 -->
-  <li>
-    <div class="direction-l">
-      <div class="flag-wrapper">
-        <span class="hexa"></span>
-        <span class="flag">Lorem ipsum Anim.</span>
-        <span class="time-wrapper"><span class="time">Dec 2014</span></span>
-      </div>
-      <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
-    </div>
-  </li>
-
-  <!-- Item 3 -->
   <li>
     <div class="direction-r">
       <div class="flag-wrapper">
         <span class="hexa"></span>
-        <span class="flag">Lorem Occaecat.</span>
-        <span class="time-wrapper"><span class="time">July 2014</span></span>
+        <span class="flag"> 
+          The University of Tokyo </span>
+        <span class="time-wrapper"><span class="time">
+          2021 – 2023 </span></span>
       </div>
-      <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+      <div class="desc">
+      	  MSc in Physics at ICRR
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag"> 
+          IIITDM Kancheepuram, Chennai </span>
+        <span class="time-wrapper"><span class="time">
+          2016 – 2020 </span></span>
+      </div>
+      <div class="desc">
+      	  BTech in Mechanical Engineering, Design and Manufacturing
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag"> 
+          Montfort School, Mandla </span>
+        <span class="time-wrapper"><span class="time">
+          2002 – 2016 </span></span>
+      </div>
+      <div class="desc">
+      	 High School Graduation, majoring in Science      
+      </div>
     </div>
   </li>
 </ul>
