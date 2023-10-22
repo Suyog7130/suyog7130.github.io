@@ -55,8 +55,8 @@ header h1{
   height: 35px;
   width: 60px;
   font-size: 22px;
-  background: #f0f0f0;
-  color: #3c3c3c;
+  background: #973939;
+  color: #973939;
   position: relative;
   margin-top: 15px;
 }
@@ -67,7 +67,7 @@ header h1{
   left: 0; 
   width: 0; 
   height: 0;
-  border-bottom: 15px solid #f0f0f0;
+  border-bottom: 15px solid #973939;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   top: -15px;
@@ -81,7 +81,7 @@ header h1{
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 15px solid #f0f0f0;
+  border-top: 15px solid #973939;
   bottom: -15px;
 }
 
@@ -120,7 +120,7 @@ header h1{
   width: 16px;
   height: 10px;
   position: absolute;
-  background: #00c4f3;
+  background: #973939;
   z-index: 5;
   left: 0;
   right: 0;
@@ -131,7 +131,7 @@ header h1{
 }
 
 .timeline .hexa:before {
-  border-bottom: 4px solid #00c4f3;
+  border-bottom: 4px solid #973939;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -140,7 +140,7 @@ header h1{
 .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid #00c4f3;
+  border-top: 4px solid #973939;
   bottom: -4px;
 }
 
@@ -213,7 +213,7 @@ header h1{
 }
 
 .time {
-  background: #00c4f3;
+  background: #973939;
   display: inline-block;
   padding: 8px;
 }
@@ -404,8 +404,8 @@ header h1{
    .gr_grid_book_container {
    /* customize book cover container div here */
    float: left;
-   width: 98px;
-   height: 160px;
+   width: 70px;
+   height: 112px;
    padding: 0px 0px;
    overflow: hidden;
    }
