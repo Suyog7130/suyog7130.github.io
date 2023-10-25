@@ -439,9 +439,17 @@ header h1{
 ---
     
 <style type="text/css" media="screen">
+  .output_container {
+    font-family: mistral;
+    font-size: 35px;
+    text-align: center;
+    }
   .gr_grid_container {
     /* customize grid container div here. eg: width: 500px; */
-  }
+    font-family: mistral;
+    font-size: 35px;
+    text-align: center;
+    }
 
   .gr_grid_book_container {
     /* customize book cover container div here */
@@ -454,10 +462,10 @@ header h1{
 </style>
 <div id="gr_grid_widget_1698242812">
     <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
-  <h2>
+  <p>
   <a style="text-align: center; font-family: mistral; font-size: 35px;" rel="nofollow" href="https://www.goodreads.com/review/list/19982554-suyog-garg?shelf=read&utm_medium=api&utm_source=grid_widget">My Recent Reads</a>
-  </h2>
-  <div class="gr_grid_container">
+  </p>
+      <div class="gr_grid_container">
     <div class="gr_grid_book_container"><a title="Malice (Detective Kaga, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/20613611-malice"><img alt="Malice" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1497270264l/20613611._SX98_.jpg" /></a></div>
     <div class="gr_grid_book_container"><a title="4:50 from Paddington (Miss Marple, #8)" rel="nofollow" href="https://www.goodreads.com/book/show/140278.4"><img alt="4:50 from Paddington" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388324483l/140278._SX98_.jpg" /></a></div>
     <div class="gr_grid_book_container"><a title="Ghosts in the Forest (Kindle Single)" rel="nofollow" href="https://www.goodreads.com/book/show/27777511-ghosts-in-the-forest"><img alt="Ghosts in the Forest" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1447126946l/27777511._SX98_.jpg" /></a></div>
@@ -471,7 +479,24 @@ header h1{
     <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Suyog, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
   </div>
 </div>
-<script src="https://www.goodreads.com/review/grid_widget/19982554.My%20Recent%20Reads?cover_size=medium&hide_link=&hide_title=&num_books=10&order=d&shelf=read&sort=date_read&widget_id=1698242812" type="text/javascript" charset="utf-8">
-</script>
+
+<!-- Include the external Goodreads JavaScript widget -->
+  <script src="https://www.goodreads.com/review/grid_widget/19982554.My%20Recent%20Reads?cover_size=medium&hide_link=true&hide_title=&num_books=10&order=d&shelf=read&sort=date_read&widget_id=1698242812" type="text/javascript" charset="utf-8"></script>
+
+  <!-- Add a container for the widget output -->
+  <div id="output-container"></div>
+
+  <script>
+    // Wait for the external script to load and execute
+    document.querySelector("script[src='https://www.goodreads.com/review/grid_widget/19982554.My%20Recent%20Reads?cover_size=medium&hide_link=true&hide_title=&num_books=10&order=d&shelf=read&sort=date_read&widget_id=1698242812']").onload = function() {
+      // Once the script is loaded and executed, you can access and modify its output
+      var outputElement = document.getElementById("output-container");
+
+      // Here, we'll change the font family of the output
+      outputElement.style.fontFamily = "Mistral";
+      outputElement.style.fontSize = "35px";
+      outputElement.style.textAlign = "center";
+    }
+  </script>
 
 ------
