@@ -455,6 +455,9 @@ header h1{
 </style>
 <div id="gr_grid_widget_1673110566">
    <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
+    <h2>
+      <a style="text-decoration: none; text-align: center; font-family: mistral; font-size: 35px" rel="nofollow" href="https://www.goodreads.com/review/list/19982554-suyog-garg?shelf=read&utm_medium=api&utm_source=grid_widget">My Recent Reads</a>
+    </h2>
    <div class="gr_grid_container">
       <div class="gr_grid_book_container"><a title="Twelve Years a Slave" rel="nofollow" href="https://www.goodreads.com/book/show/30150463-twelve-years-a-slave"><img alt="Twelve Years a Slave" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1462847763l/30150463._SX98_.jpg" /></a></div>
       <div class="gr_grid_book_container"><a title="The Murder at the Vicarage" rel="nofollow" href="https://www.goodreads.com/book/show/11602151-the-murder-at-the-vicarage"><img alt="The Murder at the Vicarage" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328343048l/11602151._SX98_.jpg" /></a></div>
