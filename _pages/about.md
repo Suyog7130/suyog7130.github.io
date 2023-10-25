@@ -436,6 +436,8 @@ header h1{
 
 <h3> <p style="text-align: center;"> Thank you for visiting my page! :) </p> </h3>
 
+---
+
 <p style="text-align: center; font-family: mistral; font-size: 35px"> My Recent Reads </p>
 
 <style type="text/css" media="screen">
@@ -444,7 +446,7 @@ header h1{
    }
    .gr_grid_book_container {
    /* customize book cover container div here */
-   float: left;
+   float: top;
    width: 70px;
    height: 112px;
    padding: 0px 0px;
