@@ -446,7 +446,7 @@ header h1{
    }
    .gr_grid_book_container {
    /* customize book cover container div here */
-   float: top;
+   float: left;
    width: 70px;
    height: 112px;
    padding: 0px 0px;
