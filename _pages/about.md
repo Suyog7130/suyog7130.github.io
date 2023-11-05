@@ -26,7 +26,7 @@ redirect_from:
 <h2><p style="text-align: center;"> News </p></h2>
 
 - <span style="color:red">[Talk]</span> (2023年12月07-15日) I plan to submit present a talk on X-Ray Observations in the [RESCEU-NBIA GW Workshop](https://indico2.cns.s.u-tokyo.ac.jp/event/286/overview), at UTokyo, Hongo campus !
-- <span style="color:red">[Talk]</span> (2023年12月04-06日) Have an Invited talk at Gakujutsu-Henkaku Workshop in Gero-Onsen, Gifu !
+- <span style="color:red">[Talk]</span> (2023年12月04-06日) Have a talk at Gakujutsu-Henkaku Workshop in Gero-Onsen, Gifu !
 - <span style="color:darkgreen">[Poster]</span> (2023年11月13-18日) I will present a Poster in the [MLPhys Conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys/) at YITP, Kyoto University.
 - <span style="color:red">[Talk]</span> (2023年10月31日) I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo.
 - <span style="color:purple">[Academic]</span> (2023年10月-2024年02月) I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (my first TAship :)
