@@ -25,12 +25,13 @@ redirect_from:
 <!-- News -->
 <h2><p style="text-align: center;"> News </p></h2>
 
-- <span style="color:red">[Talk]</span> (2023年12月07-15日) I plan to submit present a talk on X-Ray Observations in the [RESCEU-NBIA GW Workshop](https://indico2.cns.s.u-tokyo.ac.jp/event/286/overview), at UTokyo, Hongo campus !
-- <span style="color:red">[Talk]</span> (2023年12月04-06日) Have a talk at Gakujutsu-Henkaku Workshop in Gero-Onsen, Gifu !
-- <span style="color:darkgreen">[Poster]</span> (2023年11月13-18日) I will present a Poster in the [MLPhys Conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys/) at YITP, Kyoto University.
-- <span style="color:red">[Talk]</span> (2023年10月31日) I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo.
-- <span style="color:purple">[Academic]</span> (2023年10月-2024年02月) I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (my first TAship :)
-- <span style="color:blue">[Career]</span> (2023年10月01日) Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo
+- <span style="color:red; font-weight:bold">[Talk]</span> (2023年12月07-15日) I plan to submit present a talk on X-Ray Observations in the [RESCEU-NBIA GW Workshop](https://indico2.cns.s.u-tokyo.ac.jp/event/286/overview), at UTokyo, Hongo campus !
+- <span style="color:red; font-weight:bold">[Talk]</span> (2023年12月04-06日) Have a talk at Gakujutsu-Henkaku Workshop in Gero-Onsen, Gifu !
+- <span style="color:darkgreen; font-weight:bold">[Poster]</span> (2023年11月13-18日) I will present a Poster in the [MLPhys Conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys/) at YITP, Kyoto University.
+- <span style="color:skyblue; font-weight:bold">[Part-time]</span> (2023年11月06-09日) Tomonokai Junior High School Program at Mitaka !
+- <span style="color:red; font-weight:bold">[Talk]</span> (2023年10月31日) I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo.
+- <span style="color:purple; font-weight:bold">[Part-time:Academic]</span> <span style="color:purple; font-weight:bold">[Part-time:Academic]</span> (2023年10月-2024年02月) I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (my first TAship :)
+- <span style="color:blue; font-weight:bold">[Career]</span> (2023年10月01日) Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo
 
 <!-- Timeline -->
 
