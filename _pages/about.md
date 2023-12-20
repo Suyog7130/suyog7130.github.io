@@ -28,6 +28,7 @@ redirect_from:
   font-size: 20px;
   color: #A52A2A;
   font-weight: bold;
+  display: inline-block;
 }
 
 @keyframes wobb {
@@ -48,6 +49,12 @@ redirect_from:
 .spacer {
   height: 100px;
 }
+
+.text {
+	padding: 0.5rem;
+	vertical-align: middle;
+	display: inline-block;
+}
 </style>
 
 <!-- wobble class needs to be defined before the JS code that makes the text wobble, and there seems to be a problem with the word spacing with,
@@ -55,42 +62,35 @@ Okay, I slightly modified the JS code to have word wobbling instead of individua
 See and experiment: https://codepen.io/queenadreena/pen/oKGyYq
 hmm... the hyperlink doesn't work when wobbling :(
 -->
-<table>
-<tr>
-<td>
-  <div class="wobble_container">
-	<div class="wobble">RESCEU Admin Manual (English)</div>
-	<script>
-	// Create array of any elements with "wobble" class
-	const all = document.querySelectorAll('.wobble');
-	
-	// Iterate through each "wobble"
-	all.forEach(el => {
-	  // Get the text content of the element
-	  let text = el.textContent;
-	  // Create an array of separate letters
-	  text = text.split("");
-	  // Iterate through each letter and give it its own span element and individual animation delay offset
-	  const textCode = text.map((x, idx) => {
-	    let delay = (idx + 1) * 50;
-	    return `<span style="animation-delay: ${delay}ms">${x}</span>`;
-	  })
-	  // replace the element's html with our dynamically created html
-	  el.innerHTML = textCode.join(" ");
-	});
-	</script>
-  </div>
-</td>
-<td>
-  <span style="font-size:50px;"> &#9758; </span>
-</td>
-<td>
-  <div>
-    <a style="font-size: 30px;" href="https://www.dropbox.com/scl/fi/99f7j738igzathsmx80fx/RESCEU-Adminitrative-Procedure-Manual-English.pdf?rlkey=2pbwv4jpqwul0kppqsowkw77k&dl=0">click here!</a>
-  </div>
-</td>
-</tr>
-</table>
+
+<div class="wobble_container">
+<div class="wobble">RESCEU  Admin  Manual  (English)</div>
+<div class="text">
+	<span style="font-size:50px;"> &#9758; </span>
+</div>
+<div class="text">
+	<a style="font-size: 30px;" href="https://www.dropbox.com/scl/fi/99f7j738igzathsmx80fx/RESCEU-Adminitrative-Procedure-Manual-English.pdf?rlkey=2pbwv4jpqwul0kppqsowkw77k&dl=0">click here!</a>
+</div>
+<script>
+// Create array of any elements with "wobble" class
+const all = document.querySelectorAll('.wobble');
+// Iterate through each "wobble"
+all.forEach(el => {
+  // Get the text content of the element
+  let text = el.textContent;
+  // Create an array of separate letters
+  text = text.split("");
+  // Iterate through each letter and give it its own span element and individual animation delay offset
+  const textCode = text.map((x, idx) => {
+    let delay = (idx + 1) * 50;
+    return `<span style="animation-delay: ${delay}ms">${x}</span>`;
+  })
+  // replace the element's html with our dynamically created html
+  el.innerHTML = textCode.join(" ");
+});
+</script>
+</div>
+
 
 <!-- News -->
 <h2><p style="text-align: center;"> News </p></h2>
