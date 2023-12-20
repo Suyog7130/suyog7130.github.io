@@ -62,15 +62,6 @@ Okay, I slightly modified the JS code to have word wobbling instead of individua
 See and experiment: https://codepen.io/queenadreena/pen/oKGyYq
 hmm... the hyperlink doesn't work when wobbling :(
 -->
-
-<div class="wobble_container">
-<div class="wobble">RESCEU  Admin  Manual  (English)</div>
-<div class="text">
-	<span style="font-size:50px;"> &#9758; </span>
-</div>
-<div class="text">
-	<a style="font-size: 30px;" href="https://www.dropbox.com/scl/fi/99f7j738igzathsmx80fx/RESCEU-Adminitrative-Procedure-Manual-English.pdf?rlkey=2pbwv4jpqwul0kppqsowkw77k&dl=0">click here!</a>
-</div>
 <script>
 // Create array of any elements with "wobble" class
 const all = document.querySelectorAll('.wobble');
@@ -89,6 +80,15 @@ all.forEach(el => {
   el.innerHTML = textCode.join(" ");
 });
 </script>
+
+<div class="wobble_container">
+<div class="wobble">RESCEU  Admin  Manual  (English)</div>
+<div class="text">
+	<span style="font-size:50px;"> &#9758; </span>
+</div>
+<div class="text">
+	<a style="font-size: 30px;" href="https://www.dropbox.com/scl/fi/99f7j738igzathsmx80fx/RESCEU-Adminitrative-Procedure-Manual-English.pdf?rlkey=2pbwv4jpqwul0kppqsowkw77k&dl=0">click here!</a>
+</div>
 </div>
 
 
