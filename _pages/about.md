@@ -61,7 +61,18 @@ redirect_from:
 Okay, I slightly modified the JS code to have word wobbling instead of individual letters and then added spacing between the returned wobbling words.
 See and experiment: https://codepen.io/queenadreena/pen/oKGyYq
 hmm... the hyperlink doesn't work when wobbling :(
+okay, I did plethora of things, but on webpage upload the wobbling stops and it doens't seem to be a `table` env problem. So, let's not have this up on the webpage for now.
+And also, perhaps, having this manual public isn't the best of the ideas, that Ueda-san can be nasty, when she wants to be, haha!
 -->
+<!--
+<div class="wobble_container">
+<div class="wobble">RESCEU  Admin  Manual  (English)</div>
+<div class="text">
+	<span style="font-size:50px;"> &#9758; </span>
+</div>
+<div class="text">
+	<a style="font-size: 30px;" href="https://www.dropbox.com/scl/fi/99f7j738igzathsmx80fx/RESCEU-Adminitrative-Procedure-Manual-English.pdf?rlkey=2pbwv4jpqwul0kppqsowkw77k&dl=0">click here!</a>
+</div>
 <script>
 // Create array of any elements with "wobble" class
 const all = document.querySelectorAll('.wobble');
@@ -80,16 +91,8 @@ all.forEach(el => {
   el.innerHTML = textCode.join(" ");
 });
 </script>
-
-<div class="wobble_container">
-<div class="wobble">RESCEU  Admin  Manual  (English)</div>
-<div class="text">
-	<span style="font-size:50px;"> &#9758; </span>
 </div>
-<div class="text">
-	<a style="font-size: 30px;" href="https://www.dropbox.com/scl/fi/99f7j738igzathsmx80fx/RESCEU-Adminitrative-Procedure-Manual-English.pdf?rlkey=2pbwv4jpqwul0kppqsowkw77k&dl=0">click here!</a>
-</div>
-</div>
+-->
 
 
 <!-- News -->
