@@ -22,18 +22,88 @@ redirect_from:
 - 💞️ Would be awesome to collaborate on a computational project.
 - 📫 Catch up about my work on this website.
 
+<!-- Wobble Text -->
+<style type="text/css" media="screen">
+.wobble {
+  font-size: 20px;
+  color: #A52A2A;
+  font-weight: bold;
+}
+
+@keyframes wobb {
+  0%, 100%   {transform: translateY(0px)}
+  25%  {transform: translateY(-3px)}
+  75%  {transform: translateY(3px)}
+}
+
+.wobble span {
+  animation-name: wobb;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 400ms;
+  display: inline-block;
+  transform: translateY(0px);
+}
+
+.spacer {
+  height: 100px;
+}
+</style>
+
+<!-- wobble class needs to be defined before the JS code that makes the text wobble, and there seems to be a problem with the word spacing with,
+Okay, I slightly modified the JS code to have word wobbling instead of individual letters and then added spacing between the returned wobbling words.
+See and experiment: https://codepen.io/queenadreena/pen/oKGyYq
+hmm... the hyperlink doesn't work when wobbling :(
+-->
+<table>
+<tr>
+<td>
+  <div class="wobble_container">
+	<div class="wobble">RESCEU Admin Manual (English)</div>
+	<script>
+	// Create array of any elements with "wobble" class
+	const all = document.querySelectorAll('.wobble');
+	
+	// Iterate through each "wobble"
+	all.forEach(el => {
+	  // Get the text content of the element
+	  let text = el.textContent;
+	  // Create an array of separate letters
+	  text = text.split("");
+	  // Iterate through each letter and give it its own span element and individual animation delay offset
+	  const textCode = text.map((x, idx) => {
+	    let delay = (idx + 1) * 50;
+	    return `<span style="animation-delay: ${delay}ms">${x}</span>`;
+	  })
+	  // replace the element's html with our dynamically created html
+	  el.innerHTML = textCode.join(" ");
+	});
+	</script>
+  </div>
+</td>
+<td>
+  <span style="font-size:50px;"> &#9758; </span>
+</td>
+<td>
+  <div>
+    <a style="font-size: 30px;" href="https://www.dropbox.com/scl/fi/99f7j738igzathsmx80fx/RESCEU-Adminitrative-Procedure-Manual-English.pdf?rlkey=2pbwv4jpqwul0kppqsowkw77k&dl=0">click here!</a>
+  </div>
+</td>
+</tr>
+</table>
+
 <!-- News -->
 <h2><p style="text-align: center;"> News </p></h2>
 
-- <span style="color:purple; font-weight:bold">[Academic]</span> (2023年12月$\sim$) I will be one of the reviewers for [NRTidalv3](https://dcc.ligo.org/G2302143) GW waveform model !
-- <span style="color:skyblue; font-weight:bold">[Part-time]</span> (2023年12月07-15日) Serving as a part-time worker during the RESCEU-NBIA workshop in the Hongo campus !
-- <span style="color:red; font-weight:bold">[Talk]</span> (2023年12月07-15日) I plan to submit present a talk on X-Ray Observations in the [RESCEU-NBIA GW Workshop](https://indico2.cns.s.u-tokyo.ac.jp/event/286/overview), at UTokyo, Hongo campus !
-- <span style="color:red; font-weight:bold">[Talk]</span> (2023年12月04-06日) Have a talk at Gakujutsu-Henkaku Workshop in Gero-Onsen, Gifu !
-- <span style="color:darkgreen; font-weight:bold">[Poster]</span> (2023年11月13-18日) I will present a Poster in the [MLPhys Conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys/) at YITP, Kyoto University.
-- <span style="color:skyblue; font-weight:bold">[Part-time]</span> (2023年11月06-09日) Tomonokai Junior High School Program at Mitaka !
-- <span style="color:red; font-weight:bold">[Talk]</span> (2023年10月31日) I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo.
-- <span style="color:purple; font-weight:bold">[Academic]</span> (2023年10月-2024年02月) I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (my first TAship :)
-- <span style="color:blue; font-weight:bold">[Career]</span> (2023年10月01日) Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo
+- <span style="color:darkgreen; font-weight:bold">[Academic]</span> (2023年12月$\sim$) I will be one of the [reviewers](https://git.ligo.org/waveforms/reviews/nrtidalv3/-/wikis/home#review-checks-and-review-documentation) for the [NRTidalv3](https://dcc.ligo.org/G2302143) waveform model ! My contributions will be on _Time Domain Behavior_ and _Documentation_. 
+- <span style="color:blue; font-weight:bold">[Part-time]</span> (2023年12月07-15日) Serving as a part-time worker during the RESCEU-NBIA workshop in the Hongo campus !
+- <span style="color:green; font-weight:bold">[Talk]</span> (2023年12月07-15日) I plan to submit present a talk on X-Ray Observations in the [RESCEU-NBIA GW Workshop](https://indico2.cns.s.u-tokyo.ac.jp/event/286/overview), at UTokyo, Hongo campus !
+- <span style="color:green; font-weight:bold">[Talk]</span> (2023年12月04-06日) Have a talk at the [Gakujutsu-Henkaku Conference](https://multimessenger.jp/en/events/annualconf-1/) in Gero Onsen Sumeikan, Gifu !
+- <span style="color:green; font-weight:bold">[Poster]</span> (2023年11月13-18日) I will present a Poster in the [MLPhys Conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys/) at YITP, Kyoto University.
+- <span style="color:blue; font-weight:bold">[Part-time]</span> (2023年11月06-09日) Tomonokai Junior High School Program at Mitaka !
+- <span style="color:green; font-weight:bold">[Talk]</span> (2023年10月31日) I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo.
+- <span style="color:darkblue; font-weight:bold">[Academic]</span> (2023年10月-2024年02月) I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (my first TAship :)
+- <span style="color:brown; font-weight:bold">[Career]</span> (2023年10月01日) Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo
 
 <!-- Timeline -->
 
