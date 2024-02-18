@@ -112,7 +112,6 @@ all.forEach(el => {
 - <span style="color:green; font-weight:bold">[Talk]</span> (2023年10月31日) I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo.
 - <span style="color:darkblue; font-weight:bold">[Academic]</span> (2023年10月-2024年02月) I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (my first TAship :)
 - <span style="color:brown; font-weight:bold">[Career]</span> (2023年10月01日) Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo
-
 </details>
 
 
