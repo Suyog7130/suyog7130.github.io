@@ -98,13 +98,14 @@ all.forEach(el => {
 <!-- News -->
 <h2><p style="text-align: center;"> News </p></h2>
 
+- <span style="color:green; font-weight:bold">[Poster]</span> (2024年03月11-14日) I will be participating in the [LVK collaboration meeting](https://www.lsu.edu/physics/lvkmeeting/index.php) at Louisiana State Univesity, Baton Rouge.
 - <span style="color:darkgreen; font-weight:bold">[Academic]</span> (2024年01月16-28日) Visited Prof Gopu's lab in the Department of Astronomy at TIFR, Mumbai !
 - <span style="color:darkgreen; font-weight:bold">[Academic]</span> (2023年12月$\sim$) I will be one of the [reviewers](https://git.ligo.org/waveforms/reviews/nrtidalv3/-/wikis/home#review-checks-and-review-documentation) for the [NRTidalv3](https://dcc.ligo.org/G2302143) waveform model ! My contributions will be on _Time Domain Behavior_ and _Documentation_. 
-- <span style="color:blue; font-weight:bold">[Part-time]</span> (2023年12月07-15日) Serving as a part-time worker during the RESCEU-NBIA workshop in the Hongo campus !
 
 <details>
 	<summary> older news </summary>
 	
+- <span style="color:blue; font-weight:bold">[Part-time]</span> (2023年12月07-15日) Serving as a part-time worker during the RESCEU-NBIA workshop in the Hongo campus !
 - <span style="color:green; font-weight:bold">[Talk]</span> (2023年12月07-15日) I plan to submit present a talk on X-Ray Observations in the [RESCEU-NBIA GW Workshop](https://indico2.cns.s.u-tokyo.ac.jp/event/286/overview), at UTokyo, Hongo campus !
 - <span style="color:green; font-weight:bold">[Talk]</span> (2023年12月04-06日) Have a talk at the [Gakujutsu-Henkaku Conference](https://multimessenger.jp/en/events/annualconf-1/) in Gero Onsen Sumeikan, Gifu !
 - <span style="color:green; font-weight:bold">[Poster]</span> (2023年11月13-18日) I will present a Poster in the [MLPhys Conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys/) at YITP, Kyoto University.
