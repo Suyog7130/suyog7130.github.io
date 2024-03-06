@@ -98,9 +98,10 @@ all.forEach(el => {
 <!-- News -->
 <h2><p style="text-align: center;"> News </p></h2>
 
+- <span style="color:darkblue; font-weight:bold">[Academic]</span> (2024年04月$\sim$) I will be hosting the RESCEU-UTAP Thursday seminars starting next term ! 
 - <span style="color:green; font-weight:bold">[Poster]</span> (2024年03月11-14日) I will be participating in the [LVK collaboration meeting](https://www.lsu.edu/physics/lvkmeeting/index.php) at Louisiana State Univesity, Baton Rouge.
 - <span style="color:darkgreen; font-weight:bold">[Academic]</span> (2024年01月16-28日) Visited Prof Gopu's lab in the Department of Astronomy at TIFR, Mumbai !
-- <span style="color:darkgreen; font-weight:bold">[Academic]</span> (2023年12月$\sim$) I will be one of the [reviewers](https://git.ligo.org/waveforms/reviews/nrtidalv3/-/wikis/home#review-checks-and-review-documentation) for the [NRTidalv3](https://dcc.ligo.org/G2302143) waveform model ! My contributions will be on _Time Domain Behavior_ and _Documentation_. 
+- <span style="color:darkgreen; font-weight:bold">[Academic]</span> (2023年12月$\sim$) I am be one of the [reviewers](https://git.ligo.org/waveforms/reviews/nrtidalv3/-/wikis/home#review-checks-and-review-documentation) for the [NRTidalv3](https://dcc.ligo.org/G2302143) waveform model ! My contributions will be on _Time Domain Behavior_ and _Documentation_. 
 
 <details>
 	<summary> older news </summary>
