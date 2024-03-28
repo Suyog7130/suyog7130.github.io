@@ -587,3 +587,32 @@ header h1{
 </div>
 
 ------
+
+
+
+<!-- Have the letterboxd widget embedded inside a widget container that has title -->
+    
+<style type="text/css" media="screen">
+  .widget-title {
+    font-family: mistral;
+    font-size: 35px;
+    text-align: center;
+    }
+  .gr-widget {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }</style>
+<div style="object-position:center; text-align:center">
+  <div class="widget-title">My Recently Watched Movies</div>
+<div id="letterboxd-embed-wrapper-tc" style="object-position:center">Loading...</div>
+<div style="object-position:center"><script>
+fetch('https://lb-embed-content.bokonon.dev?username=suyoggarg')
+.then(response => response.text())
+.then(data => {
+document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
+});
+</script>
+</div>
+</div>
