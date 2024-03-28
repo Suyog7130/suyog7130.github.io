@@ -605,7 +605,7 @@ header h1{
     align-items: center;
   }</style>
 <div style="object-position:center; text-align:center">
-  <div class="widget-title">My Recently Watched Movies</div>
+  <div class="widget-title">My Recent Cinema</div>
 <div id="letterboxd-embed-wrapper-tc" style="object-position:center">Loading...</div>
 <div style="object-position:center"><script>
 fetch('https://lb-embed-content.bokonon.dev?username=suyoggarg')
