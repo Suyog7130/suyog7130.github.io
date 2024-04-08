@@ -591,6 +591,7 @@ header h1{
 
 
 <!-- Have the letterboxd widget embedded inside a widget container that has title -->
+<!-- kamine this stopped working all of a sudden ! Says "username not found", when it is correct obviously, but yah, not a problem with the widget as such, the letterboxd api seems to have this error inherent in it ! -->
     
 <style type="text/css" media="screen">
   .widget-title {
@@ -607,12 +608,13 @@ header h1{
 <div style="object-position:center; text-align:center">
   <div class="widget-title">My Recent Cinema</div>
 <div id="letterboxd-embed-wrapper-tc" style="object-position:center">Loading...</div>
-<div style="object-position:center"><script>
-fetch('https://lb-embed-content.bokonon.dev?username=suyoggarg')
+<div style="object-position:center">
+<script>
+fetch('https://lb-embed-content.bokonon.dev?username=gargsuyog')
 .then(response => response.text())
 .then(data => {
 document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
-});
+})
 </script>
 </div>
 </div>
