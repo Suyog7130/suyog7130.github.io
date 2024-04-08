@@ -9,12 +9,15 @@ redirect_from:
 
 {% include base_path %}
 
-<object data="/assets/acadSummary, Nov2023.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="/assets/acadSummary, Nov2023.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+<object data="/files/acadSummary-Nov2023.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="/files/acadSummary-Nov2023.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.suyog7130.github.io/files/acadSummary-Nov2023.pdf">Download PDF</a></p>
     </embed>
 </object>
 
+
+
+<!--
 
 Education
 ======
@@ -64,3 +67,5 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+
+-->
