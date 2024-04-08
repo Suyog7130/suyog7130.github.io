@@ -607,6 +607,11 @@ header h1{
   }</style>
 <div style="object-position:center; text-align:center">
   <div class="widget-title">My Recent Cinema</div>
+<div class='sk-ww-rss-feed' data-embed-id='25394643'></div>
+<script src='https://widgets.sociablekit.com/rss-feed/widget.js' async defer></script>
+</div>
+
+<!--
 <div id="letterboxd-embed-wrapper-tc" style="object-position:center">Loading...</div>
 <div style="object-position:center">
 <script>
@@ -618,3 +623,4 @@ document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
 </script>
 </div>
 </div>
+-->
