@@ -9,13 +9,15 @@ redirect_from:
 
 <!-- {% include base_path %} -->
 
-<object data="/files/acadSummary-Nov2023.pdf" type="application/png" width="700px" height="700px">
+<object data="/files/acadSummary-Nov2023.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="/files/acadSummary-Nov2023.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.suyog7130.github.io/files/acadSummary-Nov2023.pdf">Download PDF</a></p>
     </embed>
 </object>
 
-
+<object data="/files/acadSummary-Nov2023.png" type="application/image" width="700px" height="700px">
+    <embed src="/files/acadSummary-Nov2023.png"></embed>
+</object>
 
 <!--
 
