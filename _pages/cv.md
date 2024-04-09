@@ -18,7 +18,7 @@ redirect_from:
 -->
 
 
-<img src="/files/acadSummary-Nov2023.png" alt="acadSummary-Nov2023" style="height:141%; width:100%;dpi:300"/>
+<img src="/files/acadSummary-Nov2023.png" alt="acadSummary-Nov2023" style="height:100%; width:71%;dpi:300"/>
 
 
 
