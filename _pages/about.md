@@ -547,8 +547,8 @@ header h1{
   .gr_grid_book_container {
     /* customize book cover container div here */
     float: left;
-    width: 70px;
-    height: 112px;
+    width: 100px;
+    height: 160px;
     padding: 0px 0px;
     overflow: hidden;
   }
@@ -609,13 +609,13 @@ header h1{
 <rssapp-carousel id="08PxBeyH1cRWQWAt"></rssapp-carousel>
 <script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async>
 </script>
+</div>
+
 <!-- this doesn't sync automatically !
 <div class='sk-ww-rss-feed' data-embed-id='25394643'></div>
 <script src='https://widgets.sociablekit.com/rss-feed/widget.js' async defer>
 </script>
 -->
-</div>
-
 
 <!-- kamine this stopped working all of a sudden ! Says "username not found", when it is correct obviously, but yah, not a problem with the widget as such, the letterboxd api seems to have this error inherent in it ! -->
 
