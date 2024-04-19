@@ -580,7 +580,7 @@ header h1{
   </div>
 
   <!-- Include the external Goodreads JavaScript widget -->
-  <script src="https://www.goodreads.com/review/grid_widget/19982554.My%20Recent%20Reads?cover_size=medium&hide_link=true&hide_title=true&num_books=7&order=d&shelf=read&sort=date_read&widget_id=1698242812" type="text/javascript" charset="utf-8"></script>
+  <script src="https://www.goodreads.com/review/grid_widget/19982554.My%20Recent%20Reads?cover_size=medium&hide_link=true&hide_title=true&num_books=8&order=d&shelf=read&sort=date_read&widget_id=1698242812" type="text/javascript" charset="utf-8"></script>
 
   </div>
 
