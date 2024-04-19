@@ -590,8 +590,7 @@ header h1{
 
 
 
-<!-- Have the letterboxd widget embedded inside a widget container that has title -->
-<!-- kamine this stopped working all of a sudden ! Says "username not found", when it is correct obviously, but yah, not a problem with the widget as such, the letterboxd api seems to have this error inherent in it ! -->
+<!-- letterboxd RSS widget -->
     
 <style type="text/css" media="screen">
   .widget-title {
@@ -607,9 +606,19 @@ header h1{
   }</style>
 <div style="object-position:center; text-align:center">
   <div class="widget-title">My Recent Cinema</div>
+<rssapp-carousel id="08PxBeyH1cRWQWAt"></rssapp-carousel>
+<script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async>
+</script>
+<!-- this doesn't sync automatically !
 <div class='sk-ww-rss-feed' data-embed-id='25394643'></div>
-<script src='https://widgets.sociablekit.com/rss-feed/widget.js' async defer></script>
+<script src='https://widgets.sociablekit.com/rss-feed/widget.js' async defer>
+</script>
+-->
 </div>
+
+
+<!-- kamine this stopped working all of a sudden ! Says "username not found", when it is correct obviously, but yah, not a problem with the widget as such, the letterboxd api seems to have this error inherent in it ! -->
+
 
 <!--
 <div id="letterboxd-embed-wrapper-tc" style="object-position:center">Loading...</div>
