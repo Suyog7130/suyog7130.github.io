@@ -12,7 +12,7 @@ redirect_from:
 <!--
 <object data="/files/acadSummary-Nov2023.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="/files/acadSummary-Nov2023.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.suyog7130.github.io/files/acadSummary-Nov2023.pdf">Download PDF</a></p>
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.suyog7130.github.io/files/acadSummary-Apr2024-no-contact.png">Download PDF</a></p>
     </embed>
 </object>
 -->
