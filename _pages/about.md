@@ -588,10 +588,6 @@ header h1{
 
 ------
 
-
-
-<!-- letterboxd RSS widget -->
-    
 <style type="text/css" media="screen">
   .widget-title {
     font-family: mistral;
@@ -606,10 +602,17 @@ header h1{
   }</style>
 <div style="object-position:center; text-align:center">
   <div class="widget-title">My Recent Cinema</div>
+</div>
+
+
+<!-- letterboxd RSS widget (req paid version) -->
+<!--  
+<div>
 <rssapp-carousel id="08PxBeyH1cRWQWAt"></rssapp-carousel>
 <script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async>
 </script>
 </div>
+-->
 
 <!-- this doesn't sync automatically !
 <div class='sk-ww-rss-feed' data-embed-id='25394643'></div>
@@ -620,7 +623,6 @@ header h1{
 <!-- kamine this stopped working all of a sudden ! Says "username not found", when it is correct obviously, but yah, not a problem with the widget as such, the letterboxd api seems to have this error inherent in it ! -->
 
 
-<!--
 <div id="letterboxd-embed-wrapper-tc" style="object-position:center">Loading...</div>
 <div style="object-position:center">
 <script>
@@ -632,4 +634,3 @@ document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
 </script>
 </div>
 </div>
--->
