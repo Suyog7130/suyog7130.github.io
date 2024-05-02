@@ -602,7 +602,7 @@ header h1{
   }</style>
 <div style="object-position:center; text-align:center">
   <div class="widget-title">My Recent Cinema</div>
-  </br>
+  <br></br>
 </div>
 
 
