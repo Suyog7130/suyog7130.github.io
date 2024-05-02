@@ -602,6 +602,7 @@ header h1{
   }</style>
 <div style="object-position:center; text-align:center">
   <div class="widget-title">My Recent Cinema</div>
+  </br>
 </div>
 
 
@@ -623,8 +624,9 @@ header h1{
 <!-- kamine this stopped working all of a sudden ! Says "username not found", when it is correct obviously, but yah, not a problem with the widget as such, the letterboxd api seems to have this error inherent in it ! -->
 
 
+<div style="object-position:center; text-align:center">
 <div id="letterboxd-embed-wrapper-tc" style="object-position:center">Loading...</div>
-<div style="object-position:center">
+<div style="object-position:center; text-align:center">
 <script>
 fetch('https://lb-embed-content.bokonon.dev?username=gargsuyog')
 .then(response => response.text())
