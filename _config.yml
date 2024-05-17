@@ -120,6 +120,7 @@ author:
   wikipedia        :
   nasaADS          : "https://ui.adsabs.harvard.edu/public-libraries/rXwbbw00ScyGUUwLbBi0Nw"
   blogger          : "https://suyog20.blogspot.com/"
+  arxiv            : "https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Garg%2C+Suyog&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first"
 
 # Reading Files
 include:
