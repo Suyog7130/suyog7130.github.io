@@ -526,6 +526,10 @@ header h1{
 
 ---
 
+<div style="object-position:center; text-align:center">
+<details>
+	<summary> <p style="font-family: mistral;">Reading & Cinema</p></summary>
+
 <!-- Have the Goodreads widget embedded inside a widget container that has title -->
     
 <style type="text/css" media="screen">
@@ -635,4 +639,7 @@ document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
 })
 </script>
 </div>
+</div>
+
+</details>
 </div>
