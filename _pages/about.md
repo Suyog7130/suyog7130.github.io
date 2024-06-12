@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-![](/images/suyog-ueno-dslr-pic-by-vivi.jpeg)
+![](/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg)
 
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Tangerine&color=36454F&size=50&duration=5500&width=600&height=75&center=true&repeat=true&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)
@@ -604,7 +604,6 @@ header h1{
 
 </div>
 
-------
 
 <style type="text/css" media="screen">
   .widget-title {
