@@ -105,7 +105,7 @@ all.forEach(el => {
 
 <details>
 	<summary> older news </summary>
-	
+
 - <span style="color:blue; font-weight:bold">[Part-time]</span> (2023年12月07-15日) Serving as a part-time worker during the RESCEU-NBIA workshop in the Hongo campus !
 - <span style="color:green; font-weight:bold">[Talk]</span> (2023年12月07-15日) I plan to submit present a talk on X-Ray Observations in the [RESCEU-NBIA GW Workshop](https://indico2.cns.s.u-tokyo.ac.jp/event/286/overview), at UTokyo, Hongo campus !
 - <span style="color:green; font-weight:bold">[Talk]</span> (2023年12月04-06日) Have a talk at the [Gakujutsu-Henkaku Conference](https://multimessenger.jp/en/events/annualconf-1/) in Gero Onsen Sumeikan, Gifu !
@@ -114,6 +114,7 @@ all.forEach(el => {
 - <span style="color:green; font-weight:bold">[Talk]</span> (2023年10月31日) I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo.
 - <span style="color:darkblue; font-weight:bold">[Academic]</span> (2023年10月-2024年02月) I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (my first TAship :)
 - <span style="color:brown; font-weight:bold">[Career]</span> (2023年10月01日) Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo
+
 </details>
 
 
@@ -123,10 +124,7 @@ all.forEach(el => {
 <div style="object-position:center; text-align:center">
 <details>
 	<summary>
-
-
-
-		<p style="text-align:center; font-family:mistral;"><h2>Timeline</h2></p>
+		<p style="text-align:center; font-family:mistral;">Timeline</p>
 	</summary>
 
 <style type="text/css" media="screen">
@@ -534,10 +532,6 @@ header h1{
 ---
 
 
-<h3> <p style="text-align: center;"> Thank you for visiting my page! :) </p> </h3>
-
----
-
 <div style="object-position:center; text-align:center">
 <details>
 	<summary> <p style="font-family: mistral;">Reading & Cinema</p></summary>
@@ -601,8 +595,10 @@ header h1{
   <script src="https://www.goodreads.com/review/grid_widget/19982554.My%20Recent%20Reads?cover_size=medium&hide_link=true&hide_title=true&num_books=8&order=d&shelf=read&sort=date_read&widget_id=1698242812" type="text/javascript" charset="utf-8"></script>
 
   </div>
-
+<br/>
 </div>
+
+
 
 
 <style type="text/css" media="screen">
@@ -618,8 +614,9 @@ header h1{
     align-items: center;
   }</style>
 <div style="object-position:center; text-align:center">
+<br/>
   <div class="widget-title">My Recent Cinema</div>
-  <br/>
+<br/>
 </div>
 
 
@@ -656,3 +653,11 @@ document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
 
 </details>
 </div>
+
+
+
+---
+
+
+<h3> <p style="text-align: center;"> Thank you for visiting my page! :) </p> </h3>
+
