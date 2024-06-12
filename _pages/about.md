@@ -96,7 +96,7 @@ all.forEach(el => {
 
 
 <!-- News -->
-<h2><p style="text-align: center;"> News </p></h2>
+<h2><p style="text-align:center; font-family:mistral;"> News </p></h2>
 
 - <span style="color:darkblue; font-weight:bold">[Academic]</span> (2024年04月$\sim$) I will be hosting the RESCEU-UTAP Thursday seminars starting next term ! 
 - <span style="color:green; font-weight:bold">[Poster]</span> (2024年03月11-14日) I will be participating in the [LVK collaboration meeting](https://www.lsu.edu/physics/lvkmeeting/index.php) at Louisiana State Univesity, Baton Rouge.
@@ -122,6 +122,7 @@ all.forEach(el => {
 <!-- Timeline -->
 
 <div style="object-position:center; text-align:center">
+<br/>
 <details>
 	<summary>
 		<p style="text-align:center; font-family:mistral;">Timeline</p>
