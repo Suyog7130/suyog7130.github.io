@@ -117,7 +117,17 @@ all.forEach(el => {
 </details>
 
 
+
 <!-- Timeline -->
+
+<div style="object-position:center; text-align:center">
+<details>
+	<summary>
+
+
+
+		<p style="text-align:center; font-family:mistral;"><h2>Timeline</h2></p>
+	</summary>
 
 <style type="text/css" media="screen">
    @import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
@@ -440,8 +450,6 @@ header h1{
 }
 </style>
 
-<h2><p style="text-align: center;"> Timeline </p> </h2>
-
 <ul class="timeline">
   <li>
     <div class="direction-r">
@@ -520,7 +528,11 @@ header h1{
 </ul>
 
 
-<!-- Goodreads Block -->
+</details>
+</div>
+
+---
+
 
 <h3> <p style="text-align: center;"> Thank you for visiting my page! :) </p> </h3>
 
@@ -530,6 +542,8 @@ header h1{
 <details>
 	<summary> <p style="font-family: mistral;">Reading & Cinema</p></summary>
 
+
+<!-- Goodreads Block -->
 <!-- Have the Goodreads widget embedded inside a widget container that has title -->
     
 <style type="text/css" media="screen">
