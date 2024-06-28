@@ -643,7 +643,7 @@ header h1{
 <div id="letterboxd-embed-wrapper-tc" style="object-position:center">Loading...</div>
 <div style="object-position:center; text-align:center">
 <script>
-fetch('https://lb-embed-content.bokonon.dev?username=gargsuyog')
+fetch('https://letterboxd-embed.suyog999sg.workers.dev/?username=gargsuyog')
 .then(response => response.text())
 .then(data => {
 document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
