@@ -642,39 +642,9 @@ header h1{
 
 <!-- Cloudflare Worker -->
 
-<style type="text/css" media="screen">
-.imagecarousel {
-  position: relative;
-  height: 233px;
-  margin-bottom: 30px;
-  display: flex;
-  width: fit-content;
-  gap: 20px;
-}
-
-.imagecarousel img {
-  margin: 0px 0px;
-  box-shadow: 2px 2px 8px #8a8a8a;
-}
-
-.imagecarousel {
-  animation: bannermove 50s linear infinite;
-}
-
-@keyframes bannermove {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-</style>
-
 <div style="object-position:center; text-align:center">
 <div id="letterboxd-embed-wrapper-tc" style="object-position:center">Loading...</div>
 <div style="object-position:center; text-align:center">
-<div class="imagecarousel">
 <script>
 fetch('https://letterboxd-embed.suyog999sg.workers.dev/?username=gargsuyog')
 .then(response => response.text())
@@ -682,7 +652,6 @@ fetch('https://letterboxd-embed.suyog999sg.workers.dev/?username=gargsuyog')
 document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
 })
 </script>
-</div>
 </div>
 </div>
 
