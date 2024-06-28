@@ -613,7 +613,8 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
-  }</style>
+  }
+</style>
 <div style="object-position:center; text-align:center">
 <br/>
   <div class="widget-title">My Recent Cinema</div>
@@ -639,9 +640,41 @@ header h1{
 <!-- kamine this stopped working all of a sudden ! Says "username not found", when it is correct obviously, but yah, not a problem with the widget as such, the letterboxd api seems to have this error inherent in it ! -->
 
 
+<!-- Cloudflare Worker -->
+
+<style type="text/css" media="screen">
+.imagecarousel {
+  position: relative;
+  height: 233px;
+  margin-bottom: 30px;
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+}
+
+.imagecarousel img {
+  margin: 0px 0px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
+
+.imagecarousel {
+  animation: bannermove 50s linear infinite;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
+
 <div style="object-position:center; text-align:center">
 <div id="letterboxd-embed-wrapper-tc" style="object-position:center">Loading...</div>
 <div style="object-position:center; text-align:center">
+<div class="imagecarousel">
 <script>
 fetch('https://letterboxd-embed.suyog999sg.workers.dev/?username=gargsuyog')
 .then(response => response.text())
@@ -649,6 +682,7 @@ fetch('https://letterboxd-embed.suyog999sg.workers.dev/?username=gargsuyog')
 document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
 })
 </script>
+</div>
 </div>
 </div>
 
