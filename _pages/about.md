@@ -652,7 +652,7 @@ fetch('https://letterboxd-embed.suyog999sg.workers.dev/?username=gargsuyog')
 document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
 })
 </script>
-</div></div>
+</div>
 </div>
 
 </details>
