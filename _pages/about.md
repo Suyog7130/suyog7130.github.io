@@ -98,6 +98,8 @@ all.forEach(el => {
 <!-- News -->
 <h2><p style="text-align:center; font-family:mistral;"> News </p></h2>
 
+- <span style="color:green; font-weight:bold">[Talk]</span> (2024年07月06日) Presentation at the Department of Physics Open House for prospective International student at UTokyo -> [Slides](https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&dl=0)
+- <span style="color:green; font-weight:bold">[Talk]</span> (2024年06月20日) Gave a talk at RESCEU-UTAP Thursday Seminar -> [Slides](https://www.dropbox.com/scl/fi/d7rvscuzuf3462wbtirog/thurs-seminar-240620-talk.pdf?rlkey=pxnfixmqqaplledvruua56du6&dl=0)
 - <span style="color:darkblue; font-weight:bold">[Academic]</span> (2024年04月$\sim$) I will be hosting the RESCEU-UTAP Thursday seminars starting next term ! 
 - <span style="color:green; font-weight:bold">[Poster]</span> (2024年03月11-14日) I will be participating in the [LVK collaboration meeting](https://www.lsu.edu/physics/lvkmeeting/index.php) at Louisiana State Univesity, Baton Rouge.
 - <span style="color:darkgreen; font-weight:bold">[Academic]</span> (2024年01月16-28日) Visited Prof Gopu's lab in the Department of Astronomy at TIFR, Mumbai !
