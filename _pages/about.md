@@ -645,6 +645,7 @@ header h1{
 <!-- Cloudflare Worker -->
 
 <div style="object-position:center; text-align:center">
+<div id="letterboxd-embed-wrapper-tc">Loading...</div>
 <div style="object-position:center; text-align:center">
 <script>
 fetch('https://letterboxd-embed.suyog999sg.workers.dev/?username=gargsuyog')
