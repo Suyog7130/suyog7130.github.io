@@ -25,3 +25,12 @@ redirect_from:
 })();
 </script>
 <!-- end Google Calendar Appointment Scheduling -->
+
+
+### Useful links
+
+* [http://hilite.me/](http://hilite.me/) : Code to HTML  formatter for emailing code etc.
+
+
+
+
