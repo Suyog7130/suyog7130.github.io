@@ -22,7 +22,7 @@ main:
     url: /personal/
 
   - title: "Captures"
-    url: /https://captures.suyoggarg.com/
+    url: "https://captures.suyoggarg.com/""
     
   # - title: "Guide"
   #   url: /markdown/
