@@ -20,6 +20,9 @@ main:
 
   - title: "Personal"
     url: /personal/
+
+  - title: "Captures"
+    url: /captures/
     
   # - title: "Guide"
   #   url: /markdown/
