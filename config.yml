@@ -32,36 +32,34 @@ languages:
       main:
         - name: Publications
           url: pages/publications
-          weight: 7
+          weight: 1
         - name: Talks
           url: pages/talks
-          weight: 7
+          weight: 2
         - name: Research
           url: research
-          weight: 7
-        - name: Portfolio
-          url: pages/portfolio
-          weight: 7
+          weight: 3
         - name: Tech-Blog
           url: posts
-          weight: 7
+          weight: 4
         - name: CV
           url: pages/cv
-          weight: 7
+          weight: 5
         - name: Personal
           url: pages/personal
-          weight: 7
+          weight: 6
         # - name: Archive
         #   url: archives
         #   weight: 5
         - name: Search
           url: search/
-          weight: 10
+          weight: 7
         - name: Tags
           url: tags/
-          weight: 10
+          weight: 7
         - name: captures
           url: https://captures.suyoggarg.com/
+          weight: 8
 
   hi:
     languageName: "हिंदी"
@@ -79,7 +77,7 @@ languages:
         - name: HITags
           url: hitags
           weight: 10
-        - name: HICategories
+        - name: 
           url: hicategories
           weight: 10
         - name: HISeries
@@ -198,7 +196,7 @@ params:
           News
         </summary>
       
-      - <span style="color:darkblue; font-weight:normal">[Academic]</span> 2024年10月-2025年02月
+      - <span style="color:darkblue; font-weight:normal">[Academic]</span> 2024年10月ー2025年02月
         <br/> I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (once again :) 
       
       - <span style="color:green; font-weight:normal">[Talk]</span> 2024年08月02日 
@@ -213,10 +211,10 @@ params:
       - <span style="color:darkblue; font-weight:normal">[Academic]</span> 2024年04月〜
         <br/> I will be hosting the RESCEU-UTAP Thursday seminars starting next term ! 
       
-      - <span style="color:green; font-weight:normal">[Poster]</span> 2024年03月11-14日
+      - <span style="color:green; font-weight:normal">[Poster]</span> 2024年03月11ー14日
         <br/> I will be participating in the [LVK collaboration meeting](https://www.lsu.edu/physics/lvkmeeting/index.php) at Louisiana State Univesity, Baton Rouge.
       
-      - <span style="color:darkgreen; font-weight:normal">[Academic]</span> 2024年01月16-28日
+      - <span style="color:darkgreen; font-weight:normal">[Academic]</span> 2024年01月16ー28日
         <br/> Visited Prof Gopu's lab in the Department of Astronomy at TIFR, Mumbai !
       
       <br/> 

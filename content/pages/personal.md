@@ -6,8 +6,6 @@ author_profile: true
 redirect_from:
 ---
 
-{% include base_path %}
-
 <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
