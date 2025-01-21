@@ -96,6 +96,12 @@
   </url><url>
     <loc>http://localhost:1313/pages/cv/</loc>
   </url><url>
+    <loc>http://localhost:1313/posts/icons/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/papermod-website/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/zotero/</loc>
+  </url><url>
     <loc>http://localhost:1313/archives-hi/</loc>
   </url><url>
     <loc>http://localhost:1313/archives-ja/</loc>
