@@ -27,6 +27,9 @@
       {{- partial "post_canonical.html" . -}}
     </div>
     {{- end }}
+    {{ if or .Params.math .Site.Params.math }}
+    {{ partial "math.html" . }}
+    {{ end }}
   </header>
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
