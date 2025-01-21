@@ -10,7 +10,7 @@
 <meta name="description" content="Pages - Suyog Garg">
 <meta name="author" content="Suyog Garg">
 <link rel="canonical" href="http://localhost:1313/pages/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6440be1621cf873daafce10fefdb55715c5fa0c69fcbd52ed3eb47f4f2a6be5e.css" integrity="sha256-ZEC&#43;FiHPhz2q/OEP79tVcVxfoMafy9Uu0&#43;tH9PKmvl4=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.64a104749d5750371c478ba5d91f0e376f9b5d13a6f01f7e31359a48e5840f2f.css" integrity="sha256-ZKEEdJ1XUDccR4ul2R8ON2&#43;bXROm8B9&#43;MTWaSOWEDy8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/images/sg-favicon-crop-invert.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -57,8 +57,54 @@
 
     </style>
 </noscript>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+    {
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+        ]
+    }
+);"></script>
+
+
+
+
+
+<style>
+    @media screen and (min-width: 769px) {
+         
+        .post-content input[type="checkbox"]:checked ~ label > img {
+            transform: scale(1.6);
+            cursor: zoom-out;
+            position: relative;
+            z-index: 999;
+        }
+
+        .post-content img.zoomCheck {
+            transition: transform 0.15s ease;
+            z-index: 999;
+            cursor: zoom-in;
+        }
+    }
+</style>
+
+
+
+
 <link rel="stylesheet" href="../../../../assets/css/fonts.css">
+<link rel="stylesheet" href="../../assets/fonts/academicons.ttf" type="text/css"/>
 <link rel="stylesheet" href="../../assets/fonts/MISTRAL.ttf" type="text/css"/>
+<link rel="stylesheet" href="../../assets/fonts/*.ttf" type="text/css"/>
+
+
+<link rel="stylesheet" href="../../assets/fonts/academicons.svg"/>
 
 
 <link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'/>
@@ -86,9 +132,9 @@
   <meta property="og:description" content="My Personal Webpage !">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
-      <meta property="og:image" content="http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg">
+      <meta property="og:image" content="http://localhost:1313/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg">
+<meta name="twitter:image" content="http://localhost:1313/">
 <meta name="twitter:title" content="Pages">
 <meta name="twitter:description" content="My Personal Webpage !">
 
@@ -162,38 +208,13 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/pages/publications" title="Publications">
-                    <span>Publications</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/pages/talks" title="Talks">
-                    <span>Talks</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/research" title="Research">
-                    <span>Research</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/pages/cv" title="CV">
-                    <span>CV</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/pages/personal" title="Personal">
-                    <span>Personal</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/posts" title="Tech-Blog">
-                    <span>Tech-Blog</span>
-                </a>
-            </li>
-            <li>
                 <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives" title="Archive">
+                    <span>Archive</span>
                 </a>
             </li>
             <li>
@@ -232,77 +253,19 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Markdown
+    <h2 class="entry-hint-parent">Talks and presentations
     </h2>
   </header>
   <div class="entry-content">
-    <p>Locations of key files/directories Basic config options: _config.yml Top navigation bar config: _data/navigation.yml Single pages: _pages/ Collections of pages are .md or .html files in: _publications/ _portfolio/ _posts/ _teaching/ _talks/ Footer: _includes/footer.html Static files (like PDFs): /files/ Profile image (can set in _config.yml): images/profile.png Tips and hints Name a file “.md” to have it render in markdown, name it “.html” to render in HTML. Go to the commit list (on your repo) to find the last version Github built with Jekyll. Green check: successful build Orange circle: building Red X: error No icon: not built Resources Liquid syntax guide Markdown guide Header three Header four Header five Header six Blockquotes Single line blockquote:
-...</p>
+    <p></p>
   </div>
-  <footer class="entry-footer">3 min&nbsp;·&nbsp;Suyog Garg</footer>
-  <a class="entry-link" aria-label="post link to Markdown" href="http://localhost:1313/pages/markdown/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Page Archive
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>{% include base_path %}
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}</p>
-  </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;Suyog Garg</footer>
-  <a class="entry-link" aria-label="post link to Page Archive" href="http://localhost:1313/pages/page-archive/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Page Not Found
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Sorry, but the page you were trying to view does not exist — perhaps you can try searching for it below.
-</p>
-  </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;Suyog Garg</footer>
-  <a class="entry-link" aria-label="post link to Page Not Found" href="http://localhost:1313/pages/404/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Page not in menu
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is a page not in the menu. You can use markdown in this page.
-Heading 1 Heading 2</p>
-  </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;Suyog Garg</footer>
-  <a class="entry-link" aria-label="post link to Page not in menu" href="http://localhost:1313/pages/non-menu-page/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Personal
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>{% include base_path %}
-Useful links http://hilite.me/ : Code to HTML formatter for emailing code etc. letterboxd-page/ : Page to create custom letterboxd diary embedding, in the same manner as seen on this website. soundsofspacetime Zotero : Best way to maintain your Research Paper library ! Reading &amp; Cinema
-...</p>
-  </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;Suyog Garg</footer>
-  <a class="entry-link" aria-label="post link to Personal" href="http://localhost:1313/pages/personal/"></a>
+  <footer class="entry-footer">0 min&nbsp;·&nbsp;Suyog Garg</footer>
+  <a class="entry-link" aria-label="post link to Talks and presentations" href="http://localhost:1313/pages/talks/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/pages/">
-      «&nbsp;Prev&nbsp;1/4
-    </a>
-    <a class="next" href="http://localhost:1313/pages/page/3/">Next&nbsp;3/4&nbsp;»
+      «&nbsp;Prev&nbsp;1/2
     </a>
   </nav>
 </footer>

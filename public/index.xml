@@ -294,6 +294,28 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/posts/icons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/icons/</guid>
+      <description>&lt;p&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;200&#34; height=&#34;200&#34; viewBox=&#34;0 0 1024 1536&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M768 512q0-106-75-181t-181-75t-181 75t-75 181t75 181t181 75t181-75t75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19t-67.5-19t-46.5-52L33 691Q0 621 0 512q0-212 150-362T512 0t362 150t150 362z&#34;/&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://iconbuddy.com/&#34;&gt;https://iconbuddy.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/papermod-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/papermod-website/</guid>
+      <description>&lt;p&gt;asdasD&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/zotero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/zotero/</guid>
+      <description>&lt;p&gt;dfasdf&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
       <link>http://localhost:1313/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/about/</guid>
@@ -379,11 +401,16 @@ all.forEach(el =&gt; {
 &lt;/script&gt;
 &lt;/div&gt;
 --&gt;
-&lt;!-- News --&gt;
-&lt;h2&gt;&lt;p style=&#34;text-align:center; font-family:mistral;&#34;&gt; News &lt;/p&gt;</description>
+&lt;!-- Timeline --&gt;
+&lt;div style=&#34;object-position:center; text-align:center&#34;&gt;
+&lt;details&gt;
+	&lt;summary&gt;
+	&lt;p style=&#34;text-align:center; font-family:mistral; font-size:24px&#34;&gt;
+	  Timeline
+	&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
+      <title>CV/Resume</title>
       <link>http://localhost:1313/pages/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/cv/</guid>
@@ -394,7 +421,9 @@ all.forEach(el =&gt; {
     &lt;/embed&gt;
 &lt;/object&gt;
 --&gt;
-&lt;img src=&#34;http://localhost:1313/files/acadSummary-Apr2024-no-contact.png&#34; alt=&#34;acadSummary-Apr2024&#34; style=&#34;height:100%; width:71%;dpi:300&#34;/&gt;
+&lt;span style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/files/acadSummary-Apr2024-no-contact.png&#34; alt=&#34;acadSummary-Apr2024&#34; style=&#34;height:100%; width:71%;dpi:300;&#34;/&gt;
+&lt;/span&gt;
 &lt;!--
 
 Education
@@ -447,28 +476,6 @@ Service and leadership
 * Currently signed in to 43 different slack teams
 
 --&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/posts/icons/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/icons/</guid>
-      <description>&lt;p&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;200&#34; height=&#34;200&#34; viewBox=&#34;0 0 1024 1536&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M768 512q0-106-75-181t-181-75t-181 75t-75 181t75 181t181 75t181-75t75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19t-67.5-19t-46.5-52L33 691Q0 621 0 512q0-212 150-362T512 0t362 150t150 362z&#34;/&gt;&lt;/svg&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://iconbuddy.com/&#34;&gt;https://iconbuddy.com/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/posts/papermod-website/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/papermod-website/</guid>
-      <description>&lt;p&gt;asdasD&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/posts/zotero/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/zotero/</guid>
-      <description>&lt;p&gt;dfasdf&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fonts</title>
@@ -866,6 +873,31 @@ Service and leadership
 &lt;/div&gt;  &lt;!-- closing the list --&gt;</description>
     </item>
     <item>
+      <title>News</title>
+      <link>http://localhost:1313/pages/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/news/</guid>
+      <description>&lt;!-- News --&gt;
+&lt;!-- &lt;h2&gt;&lt;p style=&#34;text-align:center; font-family:mistral;&#34;&gt; News &lt;/p&gt;&lt;/h2&gt;
+--&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt; 2024年10月ー2025年02月
+&lt;br/&gt; I serve as a Teaching Assistant for the Graduate-level &amp;ldquo;Graviational-Wave Physics&amp;rdquo; Course ! (once again :)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt; 2024年08月02日
+&lt;br/&gt; Gave an invited talk at the &amp;ldquo;Eccentric Seminar&amp;rdquo; at Tokyo City University &lt;a href=&#34;https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt; 2024年07月06日
+&lt;br/&gt; Presentation at the Department of Physics Open House for prospective International student at UTokyo -&amp;gt; &lt;a href=&#34;https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt; 2024年06月20日
+&lt;br/&gt; Gave a talk at RESCEU-UTAP Thursday Seminar -&amp;gt; &lt;a href=&#34;https://www.dropbox.com/scl/fi/d7rvscuzuf3462wbtirog/thurs-seminar-240620-talk.pdf?rlkey=pxnfixmqqaplledvruua56du6&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Personal</title>
       <link>http://localhost:1313/pages/personal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -897,7 +929,10 @@ Service and leadership
 &lt;hr&gt;
 &lt;div style=&#34;object-position:center; text-align:center&#34;&gt;
 &lt;details&gt;
-	&lt;summary&gt; &lt;p style=&#34;font-family: mistral;&#34;&gt;Reading &amp; Cinema&lt;/p&gt;</description>
+	&lt;summary&gt;
+	&lt;p style=&#34;font-family: mistral;&#34;&gt;
+	Reading &amp; Cinema
+	&lt;/p&gt;</description>
     </item>
     <item>
       <title>Publications</title>
