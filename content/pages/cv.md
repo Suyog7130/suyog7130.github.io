@@ -7,7 +7,6 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
 
 <!--
 <object data="/files/acadSummary-Nov2023.pdf" type="application/pdf" width="700px" height="700px">
