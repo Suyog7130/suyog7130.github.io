@@ -101,6 +101,8 @@ languages:
           weight: 10
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
+      profileMode:
+        enabled: false
       homeInfoParams:
         Title: "\U0001F44B スイオグ ガーグ"
         Content: 〜ウェブサイトへようこそ
