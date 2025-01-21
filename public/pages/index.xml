@@ -6,8 +6,8 @@
     <description>Recent content in Pages on Suyog Garg</description>
     <image>
       <title>Suyog Garg</title>
-      <url>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</url>
-      <link>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
@@ -173,8 +173,7 @@ Service and leadership
       <link>http://localhost:1313/pages/personal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/personal/</guid>
-      <description>&lt;p&gt;{% include base_path %}&lt;/p&gt;
-&lt;!-- Google Calendar Appointment Scheduling begin --&gt;
+      <description>&lt;!-- Google Calendar Appointment Scheduling begin --&gt;
 &lt;link href=&#34;https://calendar.google.com/calendar/scheduling-button-script.css&#34; rel=&#34;stylesheet&#34;&gt;
 &lt;script src=&#34;https://calendar.google.com/calendar/scheduling-button-script.js&#34; async&gt;&lt;/script&gt;
 &lt;script&gt;

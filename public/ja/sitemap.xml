@@ -2,45 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ja/archives/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/archives/"
-                />
-  </url><url>
     <loc>http://localhost:1313/ja/jacategories/</loc>
   </url><url>
     <loc>http://localhost:1313/ja/jaseries/</loc>
   </url><url>
     <loc>http://localhost:1313/ja/jatags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ja/search/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/search/"
-                />
   </url><url>
     <loc>http://localhost:1313/ja/</loc>
     <xhtml:link
