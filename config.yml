@@ -645,36 +645,39 @@ params:
     - name: location
       title: My currrent location
       url: "Tokyo, Japan"
-    - name: github
-      title: View Source on Github
-      url: "https://github.com/Suyog7130"
-    - name: googlescholar
-      title: My Google Scholar Page
-      url: "https://scholar.google.com/citations?user=3co-LmUAAAAJ&hl=en"
     - name: email
       title: Send me an Email
       url: "mailto:suyog7130@gmail.com"
-    - name: X
-      title: My Twitter/X Page
-      url: "https://twitter.com/SuyogGarg7130"
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/Suyog7130"
     - name: ads
       title: My NASA-ADS Library
       url: "https://ui.adsabs.harvard.edu/public-libraries/rXwbbw00ScyGUUwLbBi0Nw"
-    - name: blog
-      title: My Blog
-      url: "https://blog.suyoggarg.com"
-    - name: linkedin
-      title: My LinkedIn Page
-      url: "https://www.linkedin.com/in/suyog-garg/"
+    - name: googlescholar-acad
+      title: My Google Scholar Page
+      url: "https://scholar.google.com/citations?user=3co-LmUAAAAJ&hl=en"
+    - name: arxiv
+      title: My Arxiv Page
+      url: "https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Garg%2C+Suyog&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first"
     - name: orcid
       title: My ORCID Page
       url: "http://orcid.org/0000-0002-2309-9731"
     - name: researchgate
       title: My ResearchGate Profile
       url: "https://www.researchgate.net/profile/Suyog-Garg-2"
-    - name: arxiv
-      title: My Arxiv Page
-      url: "https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Garg%2C+Suyog&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first"
+    - name: cv-acad
+      title: Read my Resume / CV
+      url: "pages/cv"
+    - name: linkedin
+      title: My LinkedIn Page
+      url: "https://www.linkedin.com/in/suyog-garg/"
+    - name: blogger
+      title: My Blog
+      url: "https://blog.suyoggarg.com"
+    - name: twitter-fa
+      title: My Twitter Page
+      url: "https://twitter.com/SuyogGarg7130"
     - name: KoFi
       title: Buy me a Ko-Fi :)
       url: "https://ko-fi.com/suyoggarg"

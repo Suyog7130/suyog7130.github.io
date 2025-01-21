@@ -16,7 +16,7 @@ redirect_from:
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Tangerine&color=36454F&size=50&duration=5500&width=600&height=75&center=true&repeat=true&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)
 ---
 
-$$f(x) = \alpha$$
+<!--$$f(x) = \alpha$$-->
 
 <h3> Here's some fun facts about me: </h3>
 
