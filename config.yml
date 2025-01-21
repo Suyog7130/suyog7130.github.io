@@ -228,9 +228,9 @@ params:
     - name: researchgate
       title: My ResearchGate Profile
       url: "https://www.researchgate.net/profile/Suyog-Garg-2"
-    - name: cv-acad
-      title: Read my Resume / CV
-      url: "pages/cv"
+    # - name: cv-acad
+    #  title: Read my Resume / CV
+    #  url: "pages/cv"
     - name: linkedin
       title: My LinkedIn Page
       url: "https://www.linkedin.com/in/suyog-garg/"
