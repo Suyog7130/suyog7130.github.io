@@ -1,0 +1,721 @@
+# If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
+# contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+baseURL: "https://suyog7130.github.io/"
+title: Suyog Garg
+copyright: "© [Suyog Garg](https://github.com/Suyog7130)"
+theme: [hugo-PaperMod]
+pagination:
+  pagerSize: 5
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: [""]
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Publications
+          url: pages/publications
+          weight: 7
+        - name: Talks
+          url: pages/talks
+          weight: 7
+        - name: Research
+          url: research
+          weight: 7
+        - name: Portfolio
+          url: pages/portfolio
+          weight: 7
+        - name: Tech-Blog
+          url: posts
+          weight: 7
+        - name: CV
+          url: pages/cv
+          weight: 7
+        - name: Personal
+          url: pages/personal
+          weight: 7
+        # - name: Archive
+        #   url: archives
+        #   weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: captures
+          url: https://captures.suyoggarg.com/
+
+  hi:
+    languageName: "हिंदी"
+    weight: 2
+    title: सुयोग गर्ग
+    taxonomies:
+      category: HIcategories
+      tag: HItags
+      series: HIseries
+    menu:
+      main:
+        - name: Archive
+          url: archives/
+          weight: 5
+        - name: HITags
+          url: hitags
+          weight: 10
+        - name: HICategories
+          url: hicategories
+          weight: 10
+        - name: HISeries
+          url: hiseries
+          weight: 10
+        - name: NullLink
+          url: "#"
+
+    # custom params for each language should be under [langcode].parms - hugo v0.120.0
+    params:
+      languageAltTitle: Hindi
+      profileMode:
+        enabled: true
+        title: PaperMod
+        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
+        imageTitle: ProfileMode image
+        # imageWidth: 120
+        # imageHeight: 120
+        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        buttons:
+          - name: Pages
+            url: pages
+          - name: Blog
+            url: posts
+
+  ja:
+    languageName: "日本語"
+    languagedirection: rtl
+    weight: 3
+    title: スイオグ
+    taxonomies:
+      category: JAcategories
+      tag: JAtags
+      series: JAseries
+    menu:
+      main:
+        - name: JATags
+          url: jatags
+          weight: 10
+    # custom params for each language should be under [langcode].parms - hugo v0.120.0
+    params:
+      homeInfoParams:
+        Title: "Hi there \U0001F44B"
+        Content: Welcome to RTL layout
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "My Personal Webpage !"
+  author: Suyog Garg
+  # author: ["Me", "You"] # multiple authors
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  # comments: false
+  images: ["images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg"]
+
+  profileMode:
+    enabled: false
+    title: Suyog Garg
+    imageUrl: "#"
+    imageTitle: my image
+    # imageWidth: 120
+    # imageHeight: 120
+    buttons:
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+
+  homeInfoParams:
+    Title: ""
+    Content: >
+
+      ![](/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg)
+
+      >
+      ![](https://readme-typing-svg.herokuapp.com?font=Tangerine&color=36454F&size=50&duration=5500&width=600&height=75&center=true&repeat=true&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)
+      
+      >
+      <h3>Heya 👋 this is Suyog. Here's some fun facts about me:</h3>
+
+      -  👀  I adore Books, Places and Astrophysics.
+
+      -  🌱  I research on using Machine Learning for Gravitational-Wave detection.
+
+      -  💻  I have experience in Data Analysis, Numerical Solvers and Deep Neural Nets.
+
+      -  💞️  Would be awesome to collaborate on a computational project.
+
+      -  📫  Catch up about my work on this website.
+
+
+      
+      <!-- News -->
+      <div style="object-position:center; text-align:left">
+      <br/>
+      <details>
+        <summary style="text-align:center; font-family:mistral; font-size:24px">
+          News
+        </summary>
+      
+      - <span style="color:darkblue; font-weight:normal">[Academic]</span> 2024年10月-2025年02月
+        <br/> I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (once again :) 
+      
+      - <span style="color:green; font-weight:normal">[Talk]</span> 2024年08月02日 
+        <br/> Gave an invited talk at the "Eccentric Seminar" at Tokyo City University [Slides](https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&dl=0)
+      
+      - <span style="color:green; font-weight:normal">[Talk]</span> 2024年07月06日
+        <br/> Presentation at the Department of Physics Open House for prospective International student at UTokyo -> [Slides](https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&dl=0)
+      
+      - <span style="color:green; font-weight:normal">[Talk]</span> 2024年06月20日
+        <br/> Gave a talk at RESCEU-UTAP Thursday Seminar -> [Slides](https://www.dropbox.com/scl/fi/d7rvscuzuf3462wbtirog/thurs-seminar-240620-talk.pdf?rlkey=pxnfixmqqaplledvruua56du6&dl=0)
+      
+      - <span style="color:darkblue; font-weight:normal">[Academic]</span> 2024年04月〜
+        <br/> I will be hosting the RESCEU-UTAP Thursday seminars starting next term ! 
+      
+      - <span style="color:green; font-weight:normal">[Poster]</span> 2024年03月11-14日
+        <br/> I will be participating in the [LVK collaboration meeting](https://www.lsu.edu/physics/lvkmeeting/index.php) at Louisiana State Univesity, Baton Rouge.
+      
+      - <span style="color:darkgreen; font-weight:normal">[Academic]</span> 2024年01月16-28日
+        <br/> Visited Prof Gopu's lab in the Department of Astronomy at TIFR, Mumbai !
+      
+      <br/> 
+      </details>
+      </div>
+
+      
+      <!-- Timeline -->
+      <div style="object-position:center; text-align:center">
+      <details>
+        <summary style="text-align:center; font-family:mistral; font-size:24px">
+          Timeline
+        </summary>
+
+      <style type="text/css" media="screen">
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
+
+      body{
+        font-family: 'Raleway', sans-serif;
+        color: black;
+      }
+
+      header h1{
+        text-align: center;
+        font-weight: bold;
+        margin-top: 0;
+      }
+        
+      header p{
+        text-align: center;
+        margin-bottom: 0;
+      }
+
+      .hexa{
+        border: 0px;
+        float: left;
+        text-align: center;
+        height: 35px;
+        width: 60px;
+        font-size: 22px;
+        background: #973939;
+        color: #973939;
+        position: relative;
+        margin-top: 15px;
+      }
+
+      .hexa:before{
+        content: ""; 
+        position: absolute; 
+        left: 0; 
+        width: 0; 
+        height: 0;
+        border-bottom: 15px solid #973939;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        top: -15px;
+      }
+
+      .hexa:after{
+        content: ""; 
+        position: absolute; 
+        left: 0; 
+        width: 0; 
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 15px solid #973939;
+        bottom: -15px;
+      }
+
+      .timeline {
+        position: relative;
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+        list-style-type: none;
+      }
+
+      .timeline:before {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        content: ' ';
+        display: block;
+        width: 2px;
+        height: 100%;
+        margin-left: -1px;
+        background: rgb(213,213,213);
+        background: -moz-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+        background: -webkit-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+        background: -o-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+        background: -ms-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+        background: linear-gradient(to bottom, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+        z-index: 5;
+      }
+
+      .timeline li {
+        padding: 2em 0;
+      }
+
+      .timeline .hexa{
+        width: 16px;
+        height: 10px;
+        position: absolute;
+        background: #973939;
+        z-index: 5;
+        left: 0;
+        right: 0;
+        margin-left:auto;
+        margin-right:auto;
+        top: -30px;
+        margin-top: 0;
+      }
+
+      .timeline .hexa:before {
+        border-bottom: 4px solid #973939;
+        border-left-width: 8px;
+        border-right-width: 8px;
+        top: -4px;
+      }
+
+      .timeline .hexa:after {
+        border-left-width: 8px;
+        border-right-width: 8px;
+        border-top: 4px solid #973939;
+        bottom: -4px;
+      }
+
+      .direction-l,
+      .direction-r {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+
+      .flag-wrapper {
+        text-align: center;
+        position: relative;
+      }
+
+      .flag {
+        position: relative;
+        display: inline;
+        background: rgb(255,255,255);
+        font-weight: 600;
+        z-index: 15;
+        padding: 6px 10px;
+        text-align: left;
+        border-radius: 5px;
+      }
+
+      .direction-l .flag:after,
+      .direction-r .flag:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -15px;
+        height: 0;
+        width: 0;
+        margin-left: -8px;
+        border: solid transparent;
+        border-bottom-color: rgb(255,255,255);
+        border-width: 8px;
+        pointer-events: none;
+      }
+
+      .direction-l .flag {
+        -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      }
+
+      .direction-r .flag {
+        -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      }
+
+      .time-wrapper {
+        display: block;
+        position: relative;
+        margin: 4px 0 0 0;
+        z-index: 14;
+        line-height: 1em;
+        vertical-align: middle;
+        color: #fff;
+      }
+
+      .direction-l .time-wrapper {
+        float: none;
+      }
+
+      .direction-r .time-wrapper {
+        float: none;
+      }
+
+      .time {
+        background: #973939;
+        display: inline-block;
+        padding: 8px;
+      }
+
+      .desc {
+        position: relative;
+        margin: 1em 0 0 0;
+        padding: 1em;
+        background: rgb(254,254,254);
+        -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+        -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+        box-shadow: 0 0 1px rgba(0,0,0,0.20);
+        z-index: 15;
+      }
+
+      .direction-l .desc,
+      .direction-r .desc {
+        position: relative;
+        margin: 1em 1em 0 1em;
+        padding: 1em;
+        z-index: 15;
+      }
+
+      @media(min-width: 768px){
+        .timeline {
+          width: 660px;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+
+        .timeline li:after {
+          content: "";
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden;
+        }
+        
+        .timeline .hexa {
+          left: -28px;
+          right: auto;
+          top: 8px;
+        }
+
+        .timeline .direction-l .hexa {
+          left: auto;
+          right: -28px;
+        }
+
+        .direction-l {
+          position: relative;
+          width: 310px;
+          float: left;
+          text-align: right;
+        }
+
+        .direction-r {
+          position: relative;
+          width: 310px;
+          float: right;
+          text-align: left;
+        }
+
+        .flag-wrapper {
+          display: inline-block;
+        }
+        
+        .flag {
+          font-size: 18px;
+        }
+
+        .direction-l .flag:after {
+          left: auto;
+          right: -16px;
+          top: 50%;
+          margin-top: -8px;
+          border: solid transparent;
+          border-left-color: rgb(254,254,254);
+          border-width: 8px;
+        }
+
+        .direction-r .flag:after {
+          top: 50%;
+          margin-top: -8px;
+          border: solid transparent;
+          border-right-color: rgb(254,254,254);
+          border-width: 8px;
+          left: -8px;
+        }
+
+        .time-wrapper {
+          display: inline;
+          vertical-align: middle;
+          margin: 0;
+        }
+
+        .direction-l .time-wrapper {
+          float: left;
+        }
+
+        .direction-r .time-wrapper {
+          float: right;
+        }
+
+        .time {
+          padding: 5px 10px;
+        }
+
+        .direction-r .desc {
+          margin: 1em 0 0 0.75em;
+        }
+      }
+
+      @media(min-width: 992px){
+        .timeline {
+          width: 800px;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+
+        .direction-l {
+          position: relative;
+          width: 380px;
+          float: left;
+          text-align: right;
+        }
+
+        .direction-r {
+          position: relative;
+          width: 380px;
+          float: right;
+          text-align: left;
+        }
+      }
+      </style>
+
+      <ul class="timeline">
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag"> 
+                The University of Tokyo </span>
+              <span class="time-wrapper"><span class="time">
+                2023 ~ </span></span>
+            </div>
+            <div class="desc">
+                PhD in Physics at RESCEU
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag"> 
+                The University of Tokyo </span>
+              <span class="time-wrapper"><span class="time">
+                2021 – 2023 </span></span>
+            </div>
+            <div class="desc">
+                MSc in Physics at ICRR
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag"> 
+                TIFR, Mumbai </span>
+              <span class="time-wrapper"><span class="time">
+                2020/11 – 2021/04 </span></span>
+            </div>
+            <div class="desc">
+                Project Associate in the Helioseismology lab
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag"> 
+                IIITDM Kancheepuram, Chennai </span>
+              <span class="time-wrapper"><span class="time">
+                2016 – 2020 </span></span>
+            </div>
+            <div class="desc">
+                BTech in Mechanical Engineering, Design and Manufacturing
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag"> 
+                Montfort School, Mandla </span>
+              <span class="time-wrapper"><span class="time">
+                2002 – 2016 </span></span>
+            </div>
+            <div class="desc">
+              High School Graduation, majoring in Science      
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      </details>
+      </div>
+
+
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/Suyog7130"
+    - name: Discord
+      title: Join discord community
+      url: "https://discord.gg/ahpmTvhVmp"
+    - name: X
+      title: Share PaperMod on X/Twitter
+      url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
+    - name: KoFi
+      title: Buy me a Ko-Fi :)
+      url: "https://ko-fi.com/suyoggarg"
+
+  # editPost:
+  #   URL: "https://github.com/Suyog7130/"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  label:
+    iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
+    # text: "Suyog Garg"
+    icon: "images/sg-favicon-crop-circle.png"
+    iconHeight: 35
+
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+
+  assets:
+    disableHLJS: true
+    favicon: "images/sg-favicon-crop-invert.png"
+  #     favicon16x16: "<link / abs url>"
+  #     favicon32x32: "<link / abs url>"
+  #     apple_touch_icon: "<link / abs url>"
+  #     safari_pinned_tab: "<link / abs url>"
+
+  # cover:
+  #     hidden: true # hide everywhere but not in structured data
+  #     hiddenInList: true # hide on list pages and home
+  #     hiddenInSingle: true # hide on single page
+
+  # fuseOpts:
+  #     isCaseSensitive: false
+  #     shouldSort: true
+  #     location: 0
+  #     distance: 1000
+  #     threshold: 0.4
+  #     minMatchCharLength: 0
+  #     keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+# privacy:
+#   vimeo:
+#     disabled: false
+#     simple: true
+
+#   twitter:
+#     disabled: false
+#     enableDNT: true
+#     simple: true
+
+#   instagram:
+#     disabled: false
+#     simple: true
+
+#   youtube:
+#     disabled: false
+#     privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true

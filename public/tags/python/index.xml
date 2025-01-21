@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on Suyog Garg</title>
+    <link>http://localhost:1313/tags/python/</link>
+    <description>Recent content in Python on Suyog Garg</description>
+    <image>
+      <title>Suyog Garg</title>
+      <url>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</url>
+      <link>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en</language>
+    <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Mon, 13 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use Sphinx Documentation</title>
+      <link>http://localhost:1313/posts/2023-02-13-blog-post-4/</link>
+      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-02-13-blog-post-4/</guid>
+      <description>&lt;p&gt;Sphinx documentation build also requires configuring the source pathname inside &lt;code&gt;docs/conf.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;So, the process for building documentation is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;sphinx-quickstart&lt;/code&gt;, e.g. &lt;code&gt;sphinx-quickstart docs/ -p xmmPipeline -a Suyog –ext-autodoc –ext-napolean –ext-doctest –ext-intersphinx –ext-todoint&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit &lt;code&gt;docs/conf.py&lt;/code&gt; file to have the correct documentation path.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;autodoc&lt;/code&gt; to automatically import the docstring from the code modules and scripts, e.g. &lt;code&gt;sphinx-apidoc -o ./docs ../src/xmmPipeline/ –force&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;code&gt;make html&lt;/code&gt; for HTML, &lt;code&gt;make latex&lt;/code&gt; for LaTeX, &lt;code&gt;make latexpdf&lt;/code&gt; for PDF and &lt;code&gt;make epub&lt;/code&gt; for epub&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

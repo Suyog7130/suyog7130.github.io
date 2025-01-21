@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hitags on सुयोग गर्ग</title>
+    <link>http://localhost:1313/hi/hitags/</link>
+    <description>Recent content in Hitags on सुयोग गर्ग</description>
+    <image>
+      <title>सुयोग गर्ग</title>
+      <url>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</url>
+      <link>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>hi</language>
+    <copyright>Suyog Garg</copyright>
+    <atom:link href="http://localhost:1313/hi/hitags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

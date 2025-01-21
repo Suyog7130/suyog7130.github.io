@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Software on Suyog Garg</title>
+    <link>http://localhost:1313/tags/software/</link>
+    <description>Recent content in Software on Suyog Garg</description>
+    <image>
+      <title>Suyog Garg</title>
+      <url>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</url>
+      <link>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en</language>
+    <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Thu, 28 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to manage your Research Papers Library ?</title>
+      <link>http://localhost:1313/posts/2024-11-28-blog-post-10/</link>
+      <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-11-28-blog-post-10/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.zotero.org/support/collections_and_tags&#34;&gt;https://www.zotero.org/support/collections_and_tags&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/feeds&#34;&gt;https://www.zotero.org/support/feeds&lt;/a&gt;
+&lt;a href=&#34;https://forums.zotero.org/discussion/comment/472493#Comment_472493&#34;&gt;https://forums.zotero.org/discussion/comment/472493#Comment_472493&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/suyoggarg/library&#34;&gt;https://www.zotero.org/suyoggarg/library&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/sync&#34;&gt;https://www.zotero.org/support/sync&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/zotero_data&#34;&gt;https://www.zotero.org/support/zotero_data&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/attaching_files#stored_files_and_linked_files&#34;&gt;https://www.zotero.org/support/attaching_files#stored_files_and_linked_files&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/file_renaming&#34;&gt;https://www.zotero.org/support/file_renaming&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If the linked storage directory is updated, the new PDF has to be manually added to the Zotero library. However, here too, you can simply selected the whole storage directory and not add duplicates !&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Suyog Garg</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Suyog Garg</description>
+    <image>
+      <title>Suyog Garg</title>
+      <url>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</url>
+      <link>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en</language>
+    <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Thu, 28 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Don&#39;t ask for Git passphrase on each commit</title>
+      <link>http://localhost:1313/posts/2024-03-28-blog-post-6/</link>
+      <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-03-28-blog-post-6/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>Linux Terminal Commands</title>
+      <link>http://localhost:1313/posts/2021-05-09-blog-post-1/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-05-09-blog-post-1/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>How to manage your Research Papers Library ?</title>
+      <link>http://localhost:1313/posts/2024-11-28-blog-post-10/</link>
+      <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-11-28-blog-post-10/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.zotero.org/support/collections_and_tags&#34;&gt;https://www.zotero.org/support/collections_and_tags&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/feeds&#34;&gt;https://www.zotero.org/support/feeds&lt;/a&gt;
+&lt;a href=&#34;https://forums.zotero.org/discussion/comment/472493#Comment_472493&#34;&gt;https://forums.zotero.org/discussion/comment/472493#Comment_472493&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/suyoggarg/library&#34;&gt;https://www.zotero.org/suyoggarg/library&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/sync&#34;&gt;https://www.zotero.org/support/sync&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/zotero_data&#34;&gt;https://www.zotero.org/support/zotero_data&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/attaching_files#stored_files_and_linked_files&#34;&gt;https://www.zotero.org/support/attaching_files#stored_files_and_linked_files&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/file_renaming&#34;&gt;https://www.zotero.org/support/file_renaming&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If the linked storage directory is updated, the new PDF has to be manually added to the Zotero library. However, here too, you can simply selected the whole storage directory and not add duplicates !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Probability of two people serendipitously meeting somewhere</title>
+      <link>http://localhost:1313/posts/2024-06-24-blog-post-8/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-06-24-blog-post-8/</guid>
+      <description>&lt;p&gt;The problem of finding the probability of two people serendipitously meeting eachother somewhere is non-trivial !&lt;/p&gt;
+&lt;p&gt;Some relevant links are :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mathpages.com/home/kmath124/kmath124.htm&#34;&gt;https://www.mathpages.com/home/kmath124/kmath124.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/15448/probability-of-two-people-meeting&#34;&gt;https://stats.stackexchange.com/questions/15448/probability-of-two-people-meeting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Working with Cloudflare workers</title>
+      <link>http://localhost:1313/posts/2024-06-28-blog-post-9/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-06-28-blog-post-9/</guid>
+      <description>&lt;p&gt;A cloudflare enviroment can be used to deploy any reasonably sized application on to an internet server without having to pay for server storage purchase. The deployed application page is then linked to universal web address and can reached on it.&lt;/p&gt;
+&lt;p&gt;A wrangler Javascript worker application to read and publish a formatted a &lt;strong&gt;letterboxd-diary&lt;/strong&gt; given the &lt;code&gt;username&lt;/code&gt; can be created by following these links :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>git submodules are erroneous</title>
+      <link>http://localhost:1313/posts/2024-05-02-blog-post-7/</link>
+      <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-05-02-blog-post-7/</guid>
+      <description>&lt;p&gt;In the name of sheer simplicity, it would be advised to best not use the &lt;code&gt;git submodule&lt;/code&gt; utility ! If there is the utmost need to have one directory within the other, then try to have only git repository among them, yeah. Or else, try to separate out the repositories into separate folders, yah !&lt;/p&gt;
+&lt;p&gt;It may happen that you may not be able to see new changes in the main directory after using &lt;code&gt;submodule&lt;/code&gt; for a while. In this case, use the following to bring back things to the original:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>pdf2jpg via terminal</title>
+      <link>http://localhost:1313/posts/2024-03-22-blog-post-5/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-03-22-blog-post-5/</guid>
+      <description>&lt;p&gt;How to convert PDF to JPG/PNG (images) via command line prompts on MacOS &lt;code&gt;zsh&lt;/code&gt; terminal.&lt;/p&gt;
+&lt;p&gt;STEP 1 : Install &lt;code&gt;poppler&lt;/code&gt; via &lt;code&gt;brew install poppler&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;STEP 2a : If you only wanna convert one file, run,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftoppm -jpeg -r &lt;span class=&#34;m&#34;&gt;300&lt;/span&gt; path-to-input-folder/**/*.pdf path-to-output-folder/*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;STEP 2b : If you wanna loop through all the files in then execute,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; file in path-to-input-folder/**/*&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; pdftoppm -jpeg -r &lt;span class=&#34;m&#34;&gt;300&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt; path-to-output-folder/*&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See also : &lt;a href=&#34;https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh&#34;&gt;https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to use Sphinx Documentation</title>
+      <link>http://localhost:1313/posts/2023-02-13-blog-post-4/</link>
+      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-02-13-blog-post-4/</guid>
+      <description>&lt;p&gt;Sphinx documentation build also requires configuring the source pathname inside &lt;code&gt;docs/conf.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;So, the process for building documentation is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;sphinx-quickstart&lt;/code&gt;, e.g. &lt;code&gt;sphinx-quickstart docs/ -p xmmPipeline -a Suyog –ext-autodoc –ext-napolean –ext-doctest –ext-intersphinx –ext-todoint&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit &lt;code&gt;docs/conf.py&lt;/code&gt; file to have the correct documentation path.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;autodoc&lt;/code&gt; to automatically import the docstring from the code modules and scripts, e.g. &lt;code&gt;sphinx-apidoc -o ./docs ../src/xmmPipeline/ –force&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;code&gt;make html&lt;/code&gt; for HTML, &lt;code&gt;make latex&lt;/code&gt; for LaTeX, &lt;code&gt;make latexpdf&lt;/code&gt; for PDF and &lt;code&gt;make epub&lt;/code&gt; for epub&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Customizing Mac Terminal</title>
+      <link>http://localhost:1313/posts/2023-02-03-blog-post-3/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-02-03-blog-post-3/</guid>
+      <description>&lt;p&gt;Changed the Mac terminal to &lt;code&gt;iterm2&lt;/code&gt; and then made numerous customizations to the &lt;code&gt;oh-my-zsh&lt;/code&gt; plugin. The &lt;code&gt;~/.zshrc&lt;/code&gt; looks like the following after these modifications:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# If you come from bash you might have to change your $PATH.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export PATH=$HOME/bin:/usr/local/bin:$PATH&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Path to your oh-my-zsh installation.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ZSH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/.oh-my-zsh&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set name of the theme to load --- if set to &amp;#34;random&amp;#34;, it will&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# load a random theme each time oh-my-zsh is loaded, in which case,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# to know which specific one was loaded, run: echo $RANDOM_THEME&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;ZSH_THEME&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;robbyrussell&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set list of themes to pick from when loading at random&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Setting this variable when ZSH_THEME=random will cause zsh to load&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# a theme from this variable instead of looking in $ZSH/themes/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# If set to an empty array, this variable will have no effect.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ZSH_THEME_RANDOM_CANDIDATES=( &amp;#34;robbyrussell&amp;#34; &amp;#34;agnoster&amp;#34; )&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to use case-sensitive completion.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# CASE_SENSITIVE=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to use hyphen-insensitive completion.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Case-sensitive completion must be off. _ and - will be interchangeable.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# HYPHEN_INSENSITIVE=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment one of the following lines to change the auto-update behavior&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; mode disabled  # disable automatic updates&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; mode auto      # update automatically without asking&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; mode reminder  # just remind me to update when it&amp;#39;s time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to change how often to auto-update (in days).&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; frequency 13&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line if pasting URLs and other text is messed up.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_MAGIC_FUNCTIONS=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to disable colors in ls.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_LS_COLORS=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to disable auto-setting terminal title.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_AUTO_TITLE=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to enable command auto-correction.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ENABLE_CORRECTION=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to display red dots whilst waiting for completion.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# You can also set it to another string to have that shown instead of the default red dots.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# e.g. COMPLETION_WAITING_DOTS=&amp;#34;%F{yellow}waiting...%f&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Caution: this setting can cause issues with multiline prompts in zsh &amp;lt; 5.7.1 (see #5765)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# COMPLETION_WAITING_DOTS=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line if you want to disable marking untracked files&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# under VCS as dirty. This makes repository status check for large repositories&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# much, much faster.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_UNTRACKED_FILES_DIRTY=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line if you want to change the command execution time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# stamp shown in the history command output.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# You can set one of the optional three formats:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# &amp;#34;mm/dd/yyyy&amp;#34;|&amp;#34;dd.mm.yyyy&amp;#34;|&amp;#34;yyyy-mm-dd&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# or set a custom format using the strftime function format specifications,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# see &amp;#39;man strftime&amp;#39; for details.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# HIST_STAMPS=&amp;#34;mm/dd/yyyy&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Would you like to use another custom folder than $ZSH/custom?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ZSH_CUSTOM=/path/to/new-custom-folder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Which plugins would you like to load?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Standard plugins can be found in $ZSH/plugins/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Custom plugins may be added to $ZSH_CUSTOM/plugins/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Example format: plugins=(rails git textmate ruby lighthouse)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Add wisely, as too many plugins slow down shell startup.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;plugins&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    zsh-syntax-highlighting
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    zsh-autosuggestions
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# fzf&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# User configuration&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export MANPATH=&amp;#34;/usr/local/man:$MANPATH&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# You may need to manually set your language environment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export LANG=en_US.UTF-8&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Preferred editor for local and remote sessions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# if [[ -n $SSH_CONNECTION ]]; then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#   export EDITOR=&amp;#39;vim&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#   export EDITOR=&amp;#39;mvim&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Compilation flags&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export ARCHFLAGS=&amp;#34;-arch x86_64&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set personal aliases, overriding those provided by oh-my-zsh libs,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# plugins, and themes. Aliases can be placed here, though oh-my-zsh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# users are encouraged to define aliases within the ZSH_CUSTOM folder.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# For a full list of active aliases, run `alias`.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Example aliases&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# alias zshconfig=&amp;#34;mate ~/.zshrc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# alias ohmyzsh=&amp;#34;mate ~/.oh-my-zsh&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# add syntax highlighting to the list of plugins in your ~/.zshrc file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# update plugins in your ~/.zshrc file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# update your ~/.zshrc file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;FZF_BASE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/.fzf&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$ZSH&lt;/span&gt;/oh-my-zsh.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Aliases&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;python&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;python3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# git&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;gs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;git status&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# map exa commands to normal ls commands&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ll&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;exa -l -g --icons&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;exa --icons&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;lt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;exa --tree --icons -a -I &amp;#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# show file previews for fzf using bat&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;fp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;fzf --preview &amp;#39;bat --style=numbers --color=always --line-range :500 {}&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# starship prompt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;gt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;starship toggle gcloud disabled&amp;#34;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# toggle gcloud info on the prompt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# use Starship prompt in zsh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;eval&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;starship init zsh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; -f ~/.fzf.zsh &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; ~/.fzf.zsh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Reference: &lt;a href=&#34;https://engineeringfordatascience.com/posts/configure_terminal_for_data_science_with_oh_my_zsh/&#34;&gt;configure_terminal_for_data_science_with_oh_my_zsh/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>`.gitignore` file</title>
+      <link>http://localhost:1313/posts/2023-01-23-blog-post-2/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-01-23-blog-post-2/</guid>
+      <description>&lt;p&gt;To ignore all files larger than 100MB:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;find ./* -size +100M &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; cat &amp;gt;&amp;gt; .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To ignore all files larger than 100MB but with pathnames not contianing &amp;ldquo;data&amp;rdquo; and without repeating already added large file names:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;find ./*work*/ -not -path **data**  -size +100M &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;s|^\./||g&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; cat &amp;gt;&amp;gt; .gitignore&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; awk &lt;span class=&#34;s1&#34;&gt;&amp;#39;!NF || !seen[$0]++&amp;#39;&lt;/span&gt; .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An Example &lt;code&gt;.gitignore&lt;/code&gt; file with other useful settings:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  GNU nano 2.9.3                                           .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Blocklist files/folders in same directory as the .gitignore file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*data/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*work*/*data*/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*gh18-work/models/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*gh18-work/results/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Includelist some files&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!.gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!README.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!**.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Ignore all files named .DS_Store or ending with .log&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**/.DS_Store
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**.log
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Includelist folder/a/b1/ and folder/a/b2/ trailing &amp;#34;/&amp;#34; is optional for folders, may match file though. &amp;#34;/&amp;#34; is NOT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# optional when followed by a *&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!*work*/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!*work*/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Adding to the above, this also works...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#!/folder/a/deeply /folder/a/deeply/* !/folder/a/deeply/nested /folder/a/deeply/nested/*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#!/folder/a/deeply/nested/subfolder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Ignore all files larger than 150MB&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;g2net-work/g2net-detecting-continuous-gravitational-waves.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mlgwsc-work/injections4_1.25s.npy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mlgwsc-work/real_noise_file.hdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Useful links:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Terms and Privacy Policy</title>
+      <link>http://localhost:1313/pages/terms/</link>
+      <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/terms/</guid>
+      <description>&lt;p&gt;{% include base_path %}
+{% include toc %}&lt;/p&gt;
+&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;
+&lt;p&gt;The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.&lt;/p&gt;
+&lt;p&gt;First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.&lt;/p&gt;
+&lt;h3 id=&#34;log-files&#34;&gt;Log Files&lt;/h3&gt;
+&lt;p&gt;Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/about/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;typing-svghttpsreadme-typing-svgherokuappcomfonttangerinecolor36454fsize50duration5500width600height75centertruerepeattruelinesheyathisissuyogimanaspiringastrophysicistilovebooksimanavidtraveller&#34;&gt;&lt;img alt=&#34;Typing SVG&#34; loading=&#34;lazy&#34; src=&#34;https://readme-typing-svg.herokuapp.com?font=Tangerine&amp;color=36454F&amp;size=50&amp;duration=5500&amp;width=600&amp;height=75&amp;center=true&amp;repeat=true&amp;lines=Heya!+This+is+Suyog!;I&#39;m+an+aspiring+Astrophysicist!;I+love+Books!;I&#39;m+an+avid+Traveller!&#34;&gt;&lt;/h2&gt;
+&lt;h3&gt; Here&#39;s some fun facts about me: &lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;👋 Heya, this is Suyog.&lt;/li&gt;
+&lt;li&gt;👀 I adore Books, Places and Astrophysics.&lt;/li&gt;
+&lt;li&gt;🌱 I research on using Machine Learning for Gravitational-Wave detection.&lt;/li&gt;
+&lt;li&gt;💻 I have experience in Data Analysis, Numerical Solvers and Deep Neural Nets.&lt;/li&gt;
+&lt;li&gt;💞️ Would be awesome to collaborate on a computational project.&lt;/li&gt;
+&lt;li&gt;📫 Catch up about my work on this website.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- Wobble Text --&gt;
+&lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
+.wobble {
+  font-size: 20px;
+  color: #A52A2A;
+  font-weight: bold;
+  display: inline-block;
+}
+
+@keyframes wobb {
+  0%, 100%   {transform: translateY(0px)}
+  25%  {transform: translateY(-3px)}
+  75%  {transform: translateY(3px)}
+}
+
+.wobble span {
+  animation-name: wobb;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 400ms;
+  display: inline-block;
+  transform: translateY(0px);
+}
+
+.spacer {
+  height: 100px;
+}
+
+.text {
+	padding: 0.5rem;
+	vertical-align: middle;
+	display: inline-block;
+}
+&lt;/style&gt;
+&lt;!-- wobble class needs to be defined before the JS code that makes the text wobble, and there seems to be a problem with the word spacing with,
+Okay, I slightly modified the JS code to have word wobbling instead of individual letters and then added spacing between the returned wobbling words.
+See and experiment: https://codepen.io/queenadreena/pen/oKGyYq
+hmm... the hyperlink doesn&#39;t work when wobbling :(
+okay, I did plethora of things, but on webpage upload the wobbling stops and it doens&#39;t seem to be a `table` env problem. So, let&#39;s not have this up on the webpage for now.
+And also, perhaps, having this manual public isn&#39;t the best of the ideas, that Ueda-san can be nasty, when she wants to be, haha!
+--&gt;
+&lt;!--
+&lt;div class=&#34;wobble_container&#34;&gt;
+&lt;div class=&#34;wobble&#34;&gt;RESCEU  Admin  Manual  (English)&lt;/div&gt;
+&lt;div class=&#34;text&#34;&gt;
+	&lt;span style=&#34;font-size:50px;&#34;&gt; &amp;#9758; &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;text&#34;&gt;
+	&lt;a style=&#34;font-size: 30px;&#34; href=&#34;https://www.dropbox.com/scl/fi/99f7j738igzathsmx80fx/RESCEU-Adminitrative-Procedure-Manual-English.pdf?rlkey=2pbwv4jpqwul0kppqsowkw77k&amp;dl=0&#34;&gt;click here!&lt;/a&gt;
+&lt;/div&gt;
+&lt;script&gt;
+// Create array of any elements with &#34;wobble&#34; class
+const all = document.querySelectorAll(&#39;.wobble&#39;);
+// Iterate through each &#34;wobble&#34;
+all.forEach(el =&gt; {
+  // Get the text content of the element
+  let text = el.textContent;
+  // Create an array of separate letters
+  text = text.split(&#34;&#34;);
+  // Iterate through each letter and give it its own span element and individual animation delay offset
+  const textCode = text.map((x, idx) =&gt; {
+    let delay = (idx + 1) * 50;
+    return `&lt;span style=&#34;animation-delay: ${delay}ms&#34;&gt;${x}&lt;/span&gt;`;
+  })
+  // replace the element&#39;s html with our dynamically created html
+  el.innerHTML = textCode.join(&#34; &#34;);
+});
+&lt;/script&gt;
+&lt;/div&gt;
+--&gt;
+&lt;!-- News --&gt;
+&lt;h2&gt;&lt;p style=&#34;text-align:center; font-family:mistral;&#34;&gt; News &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/pages/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/cv/</guid>
+      <description>&lt;p&gt;{% include base_path %}&lt;/p&gt;
+&lt;!--
+&lt;object data=&#34;/files/acadSummary-Nov2023.pdf&#34; type=&#34;application/pdf&#34; width=&#34;700px&#34; height=&#34;700px&#34;&gt;
+    &lt;embed src=&#34;http://localhost:1313/files/acadSummary-Nov2023.pdf&#34;&gt;
+        &lt;p&gt;This browser does not support PDFs. Please download the PDF to view it: &lt;a href=&#34;https://www.suyog7130.github.io/files/acadSummary-Apr2024-no-contact.png&#34;&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
+    &lt;/embed&gt;
+&lt;/object&gt;
+--&gt;
+&lt;img src=&#34;http://localhost:1313/files/acadSummary-Apr2024-no-contact.png&#34; alt=&#34;acadSummary-Apr2024&#34; style=&#34;height:100%; width:71%;dpi:300&#34;/&gt;
+&lt;!--
+
+Education
+======
+* B.S. in GitHub, GitHub University, 2012
+* M.S. in Jekyll, GitHub University, 2014
+* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+
+Work experience
+======
+* Summer 2015: Research Assistant
+  * Github University
+  * Duties included: Tagging issues
+  * Supervisor: Professor Git
+
+* Fall 2015: Research Assistant
+  * Github University
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
+  
+Skills
+======
+* Skill 1
+* Skill 2
+  * Sub-skill 2.1
+  * Sub-skill 2.2
+  * Sub-skill 2.3
+* Skill 3
+
+Publications
+======
+  &lt;ul&gt;{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}&lt;/ul&gt;
+  
+Talks
+======
+  &lt;ul&gt;{% for post in site.talks %}
+    {% include archive-single-talk-cv.html %}
+  {% endfor %}&lt;/ul&gt;
+  
+Teaching
+======
+  &lt;ul&gt;{% for post in site.teaching %}
+    {% include archive-single-cv.html %}
+  {% endfor %}&lt;/ul&gt;
+  
+Service and leadership
+======
+* Currently signed in to 43 different slack teams
+
+--&gt;</description>
+    </item>
+    <item>
+      <title>Archive Layout with Content</title>
+      <link>http://localhost:1313/pages/archive-layout-with-content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/archive-layout-with-content/</guid>
+      <description>&lt;p&gt;A variety of common markup showing how the theme styles them.&lt;/p&gt;
+&lt;h1 id=&#34;header-one&#34;&gt;Header one&lt;/h1&gt;
+&lt;h2 id=&#34;header-two&#34;&gt;Header two&lt;/h2&gt;
+&lt;h3 id=&#34;header-three&#34;&gt;Header three&lt;/h3&gt;
+&lt;h4 id=&#34;header-four&#34;&gt;Header four&lt;/h4&gt;
+&lt;h5 id=&#34;header-five&#34;&gt;Header five&lt;/h5&gt;
+&lt;h6 id=&#34;header-six&#34;&gt;Header six&lt;/h6&gt;
+&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;Single line blockquote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Quotes are cool.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Entry&lt;/th&gt;
+          &lt;th&gt;Item&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;&#34;&gt;John Doe&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;2016&lt;/td&gt;
+          &lt;td&gt;Description of the item in the list&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;&#34;&gt;Jane Doe&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;2019&lt;/td&gt;
+          &lt;td&gt;Description of the item in the list&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;&#34;&gt;Doe Doe&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;2022&lt;/td&gt;
+          &lt;td&gt;Description of the item in the list&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Header1&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Header2&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Header3&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;cell1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;cell2&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;cell3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;cell4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;cell5&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;cell6&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;cell1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;cell2&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;cell3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;cell4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;cell5&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;cell6&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;=============================&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Foot1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Foot2&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;Foot3&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;definition-lists&#34;&gt;Definition Lists&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Definition List Title&lt;/dt&gt;
+&lt;dd&gt;Definition list division.&lt;/dd&gt;
+&lt;dt&gt;Startup&lt;/dt&gt;
+&lt;dd&gt;A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.&lt;/dd&gt;
+&lt;dt&gt;#dowork&lt;/dt&gt;
+&lt;dd&gt;Coined by Rob Dyrdek and his personal body guard Christopher &amp;ldquo;Big Black&amp;rdquo; Boykins, &amp;ldquo;Do Work&amp;rdquo; works as a self motivator, to motivating your friends.&lt;/dd&gt;
+&lt;dt&gt;Do It Live&lt;/dt&gt;
+&lt;dd&gt;I&amp;rsquo;ll let Bill O&amp;rsquo;Reilly &lt;a href=&#34;https://www.youtube.com/watch?v=O_HyZ5aW76c&#34; title=&#34;We&amp;#39;ll Do It Live&#34;&gt;explain&lt;/a&gt; this one.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id=&#34;unordered-lists-nested&#34;&gt;Unordered Lists (Nested)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;List item one
+&lt;ul&gt;
+&lt;li&gt;List item one
+&lt;ul&gt;
+&lt;li&gt;List item one&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ordered-list-nested&#34;&gt;Ordered List (Nested)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;List item one
+&lt;ol&gt;
+&lt;li&gt;List item one
+&lt;ol&gt;
+&lt;li&gt;List item one&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;buttons&#34;&gt;Buttons&lt;/h2&gt;
+&lt;p&gt;Make any link standout more when applying the &lt;code&gt;.btn&lt;/code&gt; class.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blog posts</title>
+      <link>http://localhost:1313/pages/year-archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/year-archive/</guid>
+      <description>{% include base_path %}
+{% capture written_year %}&#39;None&#39;{% endcapture %}
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: &#39;%Y&#39; }}{% endcapture %}
+  {% if year != written_year %}
+    &lt;h2 id=&#34;{{ year | slugify }}&#34; class=&#34;archive__subtitle&#34;&gt;{{ year }}&lt;/h2&gt;
+    {% capture written_year %}{{ year }}{% endcapture %}
+  {% endif %}
+  {% include archive-single.html %}
+{% endfor %}</description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/pages/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/markdown/</guid>
+      <description>&lt;h2 id=&#34;locations-of-key-filesdirectories&#34;&gt;Locations of key files/directories&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic config options: _config.yml&lt;/li&gt;
+&lt;li&gt;Top navigation bar config: _data/navigation.yml&lt;/li&gt;
+&lt;li&gt;Single pages: _pages/&lt;/li&gt;
+&lt;li&gt;Collections of pages are .md or .html files in:
+&lt;ul&gt;
+&lt;li&gt;_publications/&lt;/li&gt;
+&lt;li&gt;_portfolio/&lt;/li&gt;
+&lt;li&gt;_posts/&lt;/li&gt;
+&lt;li&gt;_teaching/&lt;/li&gt;
+&lt;li&gt;_talks/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Footer: _includes/footer.html&lt;/li&gt;
+&lt;li&gt;Static files (like PDFs): /files/&lt;/li&gt;
+&lt;li&gt;Profile image (can set in _config.yml): images/profile.png&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tips-and-hints&#34;&gt;Tips and hints&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Name a file &amp;ldquo;.md&amp;rdquo; to have it render in markdown, name it &amp;ldquo;.html&amp;rdquo; to render in HTML.&lt;/li&gt;
+&lt;li&gt;Go to the &lt;a href=&#34;https://github.com/academicpages/academicpages.github.io/commits/master&#34;&gt;commit list&lt;/a&gt; (on your repo) to find the last version Github built with Jekyll.
+&lt;ul&gt;
+&lt;li&gt;Green check: successful build&lt;/li&gt;
+&lt;li&gt;Orange circle: building&lt;/li&gt;
+&lt;li&gt;Red X: error&lt;/li&gt;
+&lt;li&gt;No icon: not built&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://shopify.github.io/liquid/tags/control-flow/&#34;&gt;Liquid syntax guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;markdown-guide&#34;&gt;Markdown guide&lt;/h2&gt;
+&lt;h3 id=&#34;header-three&#34;&gt;Header three&lt;/h3&gt;
+&lt;h4 id=&#34;header-four&#34;&gt;Header four&lt;/h4&gt;
+&lt;h5 id=&#34;header-five&#34;&gt;Header five&lt;/h5&gt;
+&lt;h6 id=&#34;header-six&#34;&gt;Header six&lt;/h6&gt;
+&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;Single line blockquote:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Page Archive</title>
+      <link>http://localhost:1313/pages/page-archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/page-archive/</guid>
+      <description>{% include base_path %}
+{% for post in site.pages %}
+  {% include archive-single.html %}
+{% endfor %}</description>
+    </item>
+    <item>
+      <title>Page Not Found</title>
+      <link>http://localhost:1313/pages/404/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/404/</guid>
+      <description>&lt;p&gt;Sorry, but the page you were trying to view does not exist &amp;mdash; perhaps you can try searching for it below.&lt;/p&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+  var GOOG_FIXURL_LANG = &#39;en&#39;;
+  var GOOG_FIXURL_SITE = &#39;{{ site.url }}&#39;
+&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;
+  src=&#34;//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js&#34;&gt;
+&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Page not in menu</title>
+      <link>http://localhost:1313/pages/non-menu-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/non-menu-page/</guid>
+      <description>&lt;p&gt;This is a page not in the menu. You can use markdown in this page.&lt;/p&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;
+&lt;h1 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Personal</title>
+      <link>http://localhost:1313/pages/personal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/personal/</guid>
+      <description>&lt;p&gt;{% include base_path %}&lt;/p&gt;
+&lt;!-- Google Calendar Appointment Scheduling begin --&gt;
+&lt;link href=&#34;https://calendar.google.com/calendar/scheduling-button-script.css&#34; rel=&#34;stylesheet&#34;&gt;
+&lt;script src=&#34;https://calendar.google.com/calendar/scheduling-button-script.js&#34; async&gt;&lt;/script&gt;
+&lt;script&gt;
+(function() {
+  var target = document.currentScript;
+  window.addEventListener(&#39;load&#39;, function() {
+    calendar.schedulingButton.load({
+      url: &#39;https://calendar.google.com/calendar/appointments/schedules/AcZssZ2pWyc6gXY24OsFC_o2C_PYjHZHF32hO9yAuKx67K86XeTr6MYx1kY6Y3BQj3QePE77o5dhSHO4?gv=true&#39;,
+      color: &#39;#8E24AA&#39;,
+      label: &#34;Hangout with me !&#34;,
+      target,
+    });
+  });
+})();
+&lt;/script&gt;
+&lt;!-- end Google Calendar Appointment Scheduling --&gt;
+&lt;h3 id=&#34;useful-links&#34;&gt;Useful links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://hilite.me/&#34;&gt;http://hilite.me/&lt;/a&gt; : Code to HTML  formatter for emailing code etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://suyoggarg.com/letterboxd-page/&#34;&gt;letterboxd-page/&lt;/a&gt; : Page to create custom letterboxd diary embedding, in the same manner as seen on this website.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.soundsofspacetime.org/the-basics-of-binary-coalescence.html&#34;&gt;soundsofspacetime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt; : Best way to maintain your Research Paper library !&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;div style=&#34;object-position:center; text-align:center&#34;&gt;
+&lt;details&gt;
+	&lt;summary&gt; &lt;p style=&#34;font-family: mistral;&#34;&gt;Reading &amp; Cinema&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Portfolio</title>
+      <link>http://localhost:1313/pages/portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/portfolio/</guid>
+      <description>{% include base_path %}
+
+
+{% for post in site.portfolio %}
+  {% include archive-single.html %}
+{% endfor %}</description>
+    </item>
+    <item>
+      <title>Posts by Category</title>
+      <link>http://localhost:1313/pages/category-archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/category-archive/</guid>
+      <description>{% include base_path %}
+{% include group-by-array collection=site.posts field=&#34;categories&#34; %}
+
+{% for category in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  &lt;h2 id=&#34;{{ category | slugify }}&#34; class=&#34;archive__subtitle&#34;&gt;{{ category }}&lt;/h2&gt;
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}</description>
+    </item>
+    <item>
+      <title>Posts by Collection</title>
+      <link>http://localhost:1313/pages/collection-archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/collection-archive/</guid>
+      <description>{% include base_path %}
+{% capture written_label %}&#39;None&#39;{% endcapture %}
+
+{% for collection in site.collections %}
+  {% unless collection.output == false or collection.label == &#34;posts&#34; %}
+    {% capture label %}{{ collection.label }}{% endcapture %}
+    {% if label != written_label %}
+      &lt;h2 id=&#34;{{ label | slugify }}&#34; class=&#34;archive__subtitle&#34;&gt;{{ label }}&lt;/h2&gt;
+      {% capture written_label %}{{ label }}{% endcapture %}
+    {% endif %}
+  {% endunless %}
+  {% for post in collection.docs %}
+    {% unless collection.output == false or collection.label == &#34;posts&#34; %}
+      {% include archive-single.html %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}</description>
+    </item>
+    <item>
+      <title>Posts by Tags</title>
+      <link>http://localhost:1313/pages/tag-archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/tag-archive/</guid>
+      <description>{% include base_path %}
+{% include group-by-array collection=site.posts field=&#34;tags&#34; %}
+
+{% for tag in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  &lt;h2 id=&#34;{{ tag | slugify }}&#34; class=&#34;archive__subtitle&#34;&gt;{{ tag }}&lt;/h2&gt;
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/pages/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/publications/</guid>
+      <description>&lt;h2 id=&#34;scientific-articles&#34;&gt;Scientific Articles&lt;/h2&gt;
+&lt;!-- #### Journal Articles (Preprint) --&gt;
+&lt;h3 id=&#34;journal-articles-published&#34;&gt;Journal Articles (Published)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148. &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. &lt;a href=&#34;https://doi.org/10.3847/2515-5172/ab3fa&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;in-collaboration&#34;&gt;In Collaboration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A. M. Price-Whelan, others, Astropy Collaboration, and Astropy Project Contributors. The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package. ApJ, 935(2):167, Aug. 2022, 2206.14220. &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ac7c74&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;S. Bapat et al. EinsteinPy: A Community Python Package for General Relativity. arXiv e-prints, May 2020, 2005.11288. &lt;a href=&#34;https://arxiv.org/abs/2005.11288&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;conference-papers&#34;&gt;Conference Papers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;S. Sasaoka, Y. Hou, D. S. Dominguez, S. Garg, N. Koyama, Y. Sakai, Y. Omae, K. Somiya, and H. Takahashi. Deep Learning for Detecting Gravitational Waves from Compact Binary Coalescences and Its Visualization by Grad-CAM. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1498, 2023. &lt;a href=&#34;https://doi.org/10.22323/1.444.1498&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;S. Sasaoka, Y. Hou, D. S. Dominguez, S. Garg, N. Koyama, Y. Sakai, Y. Omae, K. Somiya, and H. Takahashi. Deep Learning Application for Detecting Gravitational Waves from Core-Collapse Supernovae. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1499, 2023. &lt;a href=&#34;https://doi.org/10.22323/1.444.1499&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;S. Garg, S. Sasaoka, D. S. Dominguez, Y. Hou, N. Koyama, K. Somiya, H. Takahashi, and M. Ohashi. Comparison of training methods for Convolutional Neural Network model for Gravitational-Wave detection from Neutron Star−Black Hole Binaries. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1536, 2023. &lt;a href=&#34;https://doi.org/10.22323/1.444.1536&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;D. S. Dominguez, S. Sasaoka, S. Garg, Y. Hou, N. Koyama, K. Somiya, and H. Takahashi. Convolutional neural network for continuous gravitational waves detection. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1519, 2023. &lt;a href=&#34;https://doi.org/10.22323/1.444.1519&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;graduation-theses&#34;&gt;Graduation Theses&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Convolutional Neural Network model for Detection of Gravitational-Waves from Eccentric Neutron Star - Black Hole mergers. July 2023. Masters Thesis.&lt;/li&gt;
+&lt;li&gt;New Sensitivity Parameter for all-Fibre Strain Sensor. June 2020. Bachelor Thesis. Preprint : S. Garg et al. 2020 &lt;a href=&#34;http://dx.doi.org/10.13140/RG.2.2.31106.20166&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;popular-science-articles&#34;&gt;Popular Science Articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;S. Garg. Mathematics of the Evolution Game. Bhavana magazine, 2024. (submitted).&lt;/li&gt;
+&lt;li&gt;S. Garg. Removing Noise in Gravitational-Wave Signals. Science Reporter, 2022. &lt;a href=&#34;http://nopr.niscpr.res.in/handle/123456789/61105&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;general-writings&#34;&gt;General Writings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;उसके श्रम के वह आँसू (कविता)। Komaba Times, Issue 14. Apr 2025.&lt;/li&gt;
+&lt;li&gt;इस देश में बसंत (कविता)। &lt;a href=&#34;https://vaishvikhindi.com/posts/5620&#34;&gt;vaishvikhindi&lt;/a&gt;. Oct 2024.&lt;/li&gt;
+&lt;li&gt;Nippon Connection : Connecting Japan to the world, in a filmy way!. Komaba Times, Issue 13 (Digital Issue). Apr 2024. &lt;a href=&#34;https://online.fliphtml5.com/parat/aehs/#p=1&#34;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The Spring, here. Komaba Times, Issue 12. Apr 2023. &lt;a href=&#34;https://www.komabatimes.com/post/the-spring-here&#34;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;An Ordinary Day. Komaba Times. Mar 2023. &lt;a href=&#34;https://www.komabatimes.com/post/an-ordinary-day&#34;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--
+{% if author.googlescholar %}
+  You can also find my articles on &lt;u&gt;&lt;a href=&#34;{{author.googlescholar}}&#34;&gt;my Google Scholar profile&lt;/a&gt;.&lt;/u&gt;
+{% endif %}
+
+{% include base_path %}
+
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+--&gt;</description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/pages/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/research/</guid>
+      <description>&lt;!--
+
+{% include base_path %}
+
+{% for post in site.research reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+--&gt;</description>
+    </item>
+    <item>
+      <title>Sitemap</title>
+      <link>http://localhost:1313/pages/sitemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/sitemap/</guid>
+      <description>&lt;p&gt;{% include base_path %}&lt;/p&gt;
+&lt;p&gt;A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.&lt;/p&gt;
+&lt;h2&gt;Pages&lt;/h2&gt;
+{% for post in site.pages %}
+  {% include archive-single.html %}
+{% endfor %}
+&lt;h2&gt;Posts&lt;/h2&gt;
+{% for post in site.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+&lt;p&gt;{% capture written_label %}&amp;lsquo;None&amp;rsquo;{% endcapture %}&lt;/p&gt;
+&lt;p&gt;{% for collection in site.collections %}
+{% unless collection.output == false or collection.label == &amp;ldquo;posts&amp;rdquo; %}
+{% capture label %}{{ collection.label }}{% endcapture %}
+{% if label != written_label %}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Talk map</title>
+      <link>http://localhost:1313/pages/talkmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/talkmap/</guid>
+      <description>&lt;p&gt;This map is generated from a Jupyter Notebook file in &lt;a href=&#34;https://github.com/academicpages/academicpages.github.io/blob/master/_talks/talkmap.ipynb&#34;&gt;/_talks/talkmap.ipynb&lt;/a&gt;, which mines the location fields in the .md files in _talks/.&lt;/p&gt;
+&lt;iframe src=&#34;http://localhost:1313/talkmap/map.html&#34; height=&#34;700&#34; width=&#34;850&#34; style=&#34;border:none;&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>Talks and presentations</title>
+      <link>http://localhost:1313/pages/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/talks/</guid>
+      <description>&lt;!--
+
+{% if site.talkmap_link == true %}
+
+&lt;p style=&#34;text-decoration:underline;&#34;&gt;&lt;a href=&#34;http://localhost:1313/talkmap.html&#34;&gt;See a map of all the places I&#39;ve given a talk!&lt;/a&gt;&lt;/p&gt;
+
+{% endif %}
+
+{% for post in site.talks reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}
+
+--&gt;</description>
+    </item>
+  </channel>
+</rss>

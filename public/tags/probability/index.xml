@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Probability on Suyog Garg</title>
+    <link>http://localhost:1313/tags/probability/</link>
+    <description>Recent content in Probability on Suyog Garg</description>
+    <image>
+      <title>Suyog Garg</title>
+      <url>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</url>
+      <link>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en</language>
+    <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Mon, 24 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Probability of two people serendipitously meeting somewhere</title>
+      <link>http://localhost:1313/posts/2024-06-24-blog-post-8/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-06-24-blog-post-8/</guid>
+      <description>&lt;p&gt;The problem of finding the probability of two people serendipitously meeting eachother somewhere is non-trivial !&lt;/p&gt;
+&lt;p&gt;Some relevant links are :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mathpages.com/home/kmath124/kmath124.htm&#34;&gt;https://www.mathpages.com/home/kmath124/kmath124.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/15448/probability-of-two-people-meeting&#34;&gt;https://stats.stackexchange.com/questions/15448/probability-of-two-people-meeting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

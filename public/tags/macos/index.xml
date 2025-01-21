@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Macos on Suyog Garg</title>
+    <link>http://localhost:1313/tags/macos/</link>
+    <description>Recent content in Macos on Suyog Garg</description>
+    <image>
+      <title>Suyog Garg</title>
+      <url>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</url>
+      <link>http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en</language>
+    <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Fri, 22 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pdf2jpg via terminal</title>
+      <link>http://localhost:1313/posts/2024-03-22-blog-post-5/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-03-22-blog-post-5/</guid>
+      <description>&lt;p&gt;How to convert PDF to JPG/PNG (images) via command line prompts on MacOS &lt;code&gt;zsh&lt;/code&gt; terminal.&lt;/p&gt;
+&lt;p&gt;STEP 1 : Install &lt;code&gt;poppler&lt;/code&gt; via &lt;code&gt;brew install poppler&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;STEP 2a : If you only wanna convert one file, run,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftoppm -jpeg -r &lt;span class=&#34;m&#34;&gt;300&lt;/span&gt; path-to-input-folder/**/*.pdf path-to-output-folder/*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;STEP 2b : If you wanna loop through all the files in then execute,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; file in path-to-input-folder/**/*&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; pdftoppm -jpeg -r &lt;span class=&#34;m&#34;&gt;300&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt; path-to-output-folder/*&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See also : &lt;a href=&#34;https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh&#34;&gt;https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
