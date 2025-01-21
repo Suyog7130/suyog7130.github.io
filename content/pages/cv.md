@@ -1,8 +1,10 @@
 ---
 layout: archive
-title:
+title: "CV/Resume"
 permalink: /cv/
-author_profile: true
+ShowAuthor: false
+ShowToc: false
+ShowReadingTime: true
 redirect_from:
   - /resume
 ---
@@ -16,8 +18,9 @@ redirect_from:
 </object>
 -->
 
-
-<img src="/files/acadSummary-Apr2024-no-contact.png" alt="acadSummary-Apr2024" style="height:100%; width:71%;dpi:300"/>
+<span style="text-align:center">
+<img src="/files/acadSummary-Apr2024-no-contact.png" alt="acadSummary-Apr2024" style="height:100%; width:71%;dpi:300;"/>
+</span>
 
 
 
