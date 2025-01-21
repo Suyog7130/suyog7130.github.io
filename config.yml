@@ -206,7 +206,7 @@ params:
   socialIcons:
     - name: location
       title: My currrent location
-      url: "Tokyo, Japan"
+      url: "https://www.google.com/maps/place/Tokyo/"
     - name: email
       title: Send me an Email
       url: "mailto:suyog7130@gmail.com"
