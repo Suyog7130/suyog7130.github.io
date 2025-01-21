@@ -150,19 +150,19 @@ params:
   ShowToc: true
   # comments: false
   images: [""]
+  # ShareButtons: ["linkedin", "twitter"]
 
   profileMode:
-    enabled: false
+    enabled: true
     title: Suyog Garg
     imageUrl: "images/suyog_cropped.png"
     imageTitle: my-image
     # imageWidth: 120
     # imageHeight: 120
+    subtitle: "Physics PhD @ UTokyo"
     buttons:
-      - name: Archives
-        url: archives
-      - name: Tags
-        url: tags
+      - name: About
+        url: pages/about
 
   homeInfoParams:
     Title: ""
@@ -632,15 +632,39 @@ params:
 
 
   socialIcons:
+    - name: location
+      title: My currrent location
+      url: "Tokyo, Japan"
     - name: github
       title: View Source on Github
       url: "https://github.com/Suyog7130"
-    - name: Discord
-      title: Join discord community
-      url: "https://discord.gg/ahpmTvhVmp"
+    - name: googlescholar
+      title: My Google Scholar Page
+      url: "https://scholar.google.com/citations?user=3co-LmUAAAAJ&hl=en"
+    - name: email
+      title: Send me an Email
+      url: "mailto:suyog7130@gmail.com"
     - name: X
-      title: Share PaperMod on X/Twitter
-      url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
+      title: My Twitter/X Page
+      url: "https://twitter.com/SuyogGarg7130"
+    - name: ads
+      title: My NASA-ADS Library
+      url: "https://ui.adsabs.harvard.edu/public-libraries/rXwbbw00ScyGUUwLbBi0Nw"
+    - name: blog
+      title: My Blog
+      url: "https://blog.suyoggarg.com"
+    - name: linkedin
+      title: My LinkedIn Page
+      url: "https://www.linkedin.com/in/suyog-garg/"
+    - name: orcid
+      title: My ORCID Page
+      url: "http://orcid.org/0000-0002-2309-9731"
+    - name: researchgate
+      title: My ResearchGate Profile
+      url: "https://www.researchgate.net/profile/Suyog-Garg-2"
+    - name: arxiv
+      title: My Arxiv Page
+      url: "https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Garg%2C+Suyog&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first"
     - name: KoFi
       title: Buy me a Ko-Fi :)
       url: "https://ko-fi.com/suyoggarg"
