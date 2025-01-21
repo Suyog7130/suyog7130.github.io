@@ -42,23 +42,32 @@ redirect_from:
 	Older News
 	</summary>
 	
-- <span style="color:darkgreen; font-weight:bold">[Academic]</span> (2023年12月$\sim$) I am be one of the [reviewers](https://git.ligo.org/waveforms/reviews/nrtidalv3/-/wikis/home#review-checks-and-review-documentation) for the [NRTidalv3](https://dcc.ligo.org/G2302143) waveform model ! My contributions will be on _Time Domain Behavior_ and _Documentation_. 
+- <span style="color:darkgreen; font-weight:bold">[Academic]</span> 2023年12月$\sim$
+<br/> I am be one of the [reviewers](https://git.ligo.org/waveforms/reviews/nrtidalv3/-/wikis/home#review-checks-and-review-documentation) for the [NRTidalv3](https://dcc.ligo.org/G2302143) waveform model ! My contributions will be on _Time Domain Behavior_ and _Documentation_. 
 
-- <span style="color:blue; font-weight:bold">[Part-time]</span> (2023年12月07-15日) Serving as a part-time worker during the RESCEU-NBIA workshop in the Hongo campus !
+- <span style="color:blue; font-weight:bold">[Part-time]</span> 2023年12月07ー15日
+<br/> Serving as a part-time worker during the RESCEU-NBIA workshop in the Hongo campus !
 
-- <span style="color:green; font-weight:bold">[Talk]</span> (2023年12月07-15日) I plan to submit present a talk on X-Ray Observations in the [RESCEU-NBIA GW Workshop](https://indico2.cns.s.u-tokyo.ac.jp/event/286/overview), at UTokyo, Hongo campus !
+- <span style="color:green; font-weight:bold">[Talk]</span> 2023年12月07ー15日
+<br/> I plan to submit present a talk on X-Ray Observations in the [RESCEU-NBIA GW Workshop](https://indico2.cns.s.u-tokyo.ac.jp/event/286/overview), at UTokyo, Hongo campus !
 
-- <span style="color:green; font-weight:bold">[Talk]</span> (2023年12月04-06日) Have a talk at the [Gakujutsu-Henkaku Conference](https://multimessenger.jp/en/events/annualconf-1/) in Gero Onsen Sumeikan, Gifu !
+- <span style="color:green; font-weight:bold">[Talk]</span> 2023年12月04ー06日
+<br/> Have a talk at the [Gakujutsu-Henkaku Conference](https://multimessenger.jp/en/events/annualconf-1/) in Gero Onsen Sumeikan, Gifu !
 
-- <span style="color:green; font-weight:bold">[Poster]</span> (2023年11月13-18日) I will present a Poster in the [MLPhys Conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys/) at YITP, Kyoto University.
+- <span style="color:green; font-weight:bold">[Poster]</span> 2023年11月13ー18日
+<br/> I will present a Poster in the [MLPhys Conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys/) at YITP, Kyoto University.
 
-- <span style="color:blue; font-weight:bold">[Part-time]</span> (2023年11月06-09日) Tomonokai Junior High School Program at Mitaka !
+- <span style="color:blue; font-weight:bold">[Part-time]</span> 2023年11月06ー09日
+<br/> Tomonokai Junior High School Program at Mitaka !
 
-- <span style="color:green; font-weight:bold">[Talk]</span> (2023年10月31日) I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo.
+- <span style="color:green; font-weight:bold">[Talk]</span> 2023年10月31日
+<br/> I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo.
 
-- <span style="color:darkblue; font-weight:bold">[Academic]</span> (2023年10月-2024年02月) I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (my first TAship :)
+- <span style="color:darkblue; font-weight:bold">[Academic]</span> 2023年10月ー2024年02月
+<br/> I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (my first TAship :)
 
-- <span style="color:brown; font-weight:bold">[Career]</span> (2023年10月01日) Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo
+- <span style="color:brown; font-weight:bold">[Career]</span> 2023年10月01日
+<br/> Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo
 
 </details>
 
