@@ -88,9 +88,9 @@
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-03-28T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-03-28T00:00:00+00:00">
-      <meta property="og:image" content="http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg">
+      <meta property="og:image" content="http://localhost:1313/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg">
+<meta name="twitter:image" content="http://localhost:1313/">
 <meta name="twitter:title" content="Don&#39;t ask for Git passphrase on each commit">
 <meta name="twitter:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
 
@@ -128,7 +128,7 @@
   "articleBody": "So that we don’t have to write the passphrase each time we do git commit !\nAdd this to the bash file :\nenv=~/.ssh/agent.env agent_load_env () { test -f \"$env\" \u0026\u0026 . \"$env\" \u003e| /dev/null ; } agent_start () { (umask 077; ssh-agent \u003e| \"$env\") . \"$env\" \u003e| /dev/null ; } agent_load_env # agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running agent_run_state=$(ssh-add -l \u003e| /dev/null 2\u003e\u00261; echo $?) if [ ! \"$SSH_AUTH_SOCK\" ] || [ $agent_run_state = 2 ]; then agent_start ssh-add elif [ \"$SSH_AUTH_SOCK\" ] \u0026\u0026 [ $agent_run_state = 1 ]; then ssh-add fi unset env ",
   "wordCount" : "101",
   "inLanguage": "en",
-  "image": "http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg","datePublished": "2024-03-28T00:00:00Z",
+  "image": "http://localhost:1313/","datePublished": "2024-03-28T00:00:00Z",
   "dateModified": "2024-03-28T00:00:00Z",
   "author":{
     "@type": "Person",

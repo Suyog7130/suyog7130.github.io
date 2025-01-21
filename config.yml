@@ -64,50 +64,50 @@ languages:
   hi:
     languageName: "हिंदी"
     weight: 2
-    title: सुयोग गर्ग
+    title: Suyog Garg
     taxonomies:
       category: HIcategories
       tag: HItags
       series: HIseries
     menu:
       main:
-        - name: Archive
-          url: archives/
-          weight: 5
+        # - name: Archive
+        #   url: archives-hi
+        #   weight: 5
         - name: HITags
           url: hitags
           weight: 10
-        - name: 
-          url: hicategories
-          weight: 10
-        - name: HISeries
-          url: hiseries
-          weight: 10
-        - name: NullLink
-          url: "#"
+        # - name: 
+        #   url: hicategories
+        #   weight: 10
+        # - name: HISeries
+        #   url: hiseries
+        #   weight: 10
+        # - name: NullLink
+        #   url: "#"
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       languageAltTitle: Hindi
       profileMode:
         enabled: true
-        title: PaperMod
-        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
-        imageTitle: ProfileMode image
+        title: सुयोग गर्ग
+        imageUrl: "images/suyog_cropped.png"
+        imageTitle: my-image
         # imageWidth: 120
         # imageHeight: 120
-        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        subtitle: ""
         buttons:
-          - name: Pages
-            url: pages
-          - name: Blog
-            url: posts
+          - name: पृष्ठ
+            url: multi-lingual/hindi/pages
+          - name: ब्लॉग
+            url: multi-lingual/hindi/posts
 
   ja:
     languageName: "日本語"
     languagedirection: rtl
     weight: 3
-    title: スイオグ
+    title: Suyog Garg
     taxonomies:
       category: JAcategories
       tag: JAtags
@@ -120,8 +120,8 @@ languages:
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to RTL layout
+        Title: "\U0001F44B スイオグ ガーグ"
+        Content: 〜ウェブサイトへようこそ
 
 outputs:
   home:
@@ -149,13 +149,13 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg"]
+  images: [""]
 
   profileMode:
     enabled: false
     title: Suyog Garg
-    imageUrl: "#"
-    imageTitle: my image
+    imageUrl: "images/suyog_cropped.png"
+    imageTitle: my-image
     # imageWidth: 120
     # imageHeight: 120
     buttons:

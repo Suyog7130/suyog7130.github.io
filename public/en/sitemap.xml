@@ -96,22 +96,11 @@
   </url><url>
     <loc>http://localhost:1313/pages/cv/</loc>
   </url><url>
+    <loc>http://localhost:1313/archives-hi/</loc>
+  </url><url>
+    <loc>http://localhost:1313/archives-ja/</loc>
+  </url><url>
     <loc>http://localhost:1313/archives/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/archives/"
-                />
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
@@ -124,21 +113,10 @@
     <loc>http://localhost:1313/pages/publications/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/search/"
-                />
+  </url><url>
+    <loc>http://localhost:1313/search-hi/</loc>
+  </url><url>
+    <loc>http://localhost:1313/search-ja/</loc>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
   </url><url>
