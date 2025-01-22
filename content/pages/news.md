@@ -24,7 +24,8 @@ Sign up for free!
 </a>
 </div>-->
 
-
+<!--{{% button href="https://gohugo.io/" %}}Get Hugo{{% /button %}}
+{{% button href="https://gohugo.io/" style="warning" icon="dog" %}}Get Hugo{{% /button %}}-->
 
 
 - <span style="color:darkblue; font-weight:bold">[Academic]</span> 2024年10月ー2025年02月
