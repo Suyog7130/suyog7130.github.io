@@ -144,6 +144,7 @@ params:
   #   - posts
   #   - projects
   #   - teaching
+  TocSide: 'right' # or 'left'
 
   profileMode:
     enabled: true
