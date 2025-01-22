@@ -2,7 +2,8 @@
 permalink: /
 title: "News"
 math: true
-ShowAuthor: false
+hideAuthor: true
+ShowWordCount: true
 ShowToc: false
 ShowReadingTime: true
 redirect_from: 
@@ -18,7 +19,21 @@ redirect_from:
         <br/> I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (once again :)
 
 - <span style="color:green; font-weight:bold">[Talk]</span> 2024年08月02日 
-<br/> Gave an invited talk at the "Eccentric Seminar" at Tokyo City University [Slides](https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&dl=0)
+<br/> Gave an invited talk at the "Eccentric Seminar" at Tokyo City University
+
+
+<!--<div style="text-align: center">
+<a href="https://sensr.net/auth/users/sign_up">
+<button style="background-color:#a4d61e;margin-top:6px;margin-bottom:16px;border-radius:4px;font-size:1.6em;padding:8px 20px;    font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
+Sign up for free!
+</button>
+</a>
+</div>-->
+
+
+{{% button href="https://gohugo.io/" name="warning" %}}
+
+[Slides](https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&dl=0)
 
 - <span style="color:green; font-weight:bold">[Talk]</span> 2024年07月06日
 <br/> Presentation at the Department of Physics Open House for prospective International student at UTokyo -> [Slides](https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&dl=0)
