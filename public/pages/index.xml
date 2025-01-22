@@ -184,16 +184,6 @@ Service and leadership
       <description>&lt;!-- News --&gt;
 &lt;!-- &lt;h2&gt;&lt;p style=&#34;text-align:center; font-family:mistral;&#34;&gt; News &lt;/p&gt;&lt;/h2&gt;
 --&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt; 2024年10月ー2025年02月
-&lt;br/&gt; I serve as a Teaching Assistant for the Graduate-level &amp;ldquo;Graviational-Wave Physics&amp;rdquo; Course ! (once again :)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt; 2024年08月02日
-&lt;br/&gt; Gave an invited talk at the &amp;ldquo;Eccentric Seminar&amp;rdquo; at Tokyo City University&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!--&lt;div style=&#34;text-align: center&#34;&gt;
 &lt;a href=&#34;https://sensr.net/auth/users/sign_up&#34;&gt;
 &lt;button style=&#34;background-color:#a4d61e;margin-top:6px;margin-bottom:16px;border-radius:4px;font-size:1.6em;padding:8px 20px;    font-family: &#34;GibsonSemibold&#34;, &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif;float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)&#34;&gt;
@@ -201,12 +191,15 @@ Sign up for free!
 &lt;/button&gt;
 &lt;/a&gt;
 &lt;/div&gt;--&gt;
-  &lt;div class=&#34;warning&#34;&gt;
-    &lt;i class=&#34;fa fa-clock-o&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-    &lt;i class=&#39;fas fa-exclamation-triangle fa-fw&#39;&gt;&lt;/i&gt;
-  &lt;/div&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt; 2024年10月ー2025年02月
+&lt;br/&gt; I serve as a Teaching Assistant for the Graduate-level &amp;ldquo;Graviational-Wave Physics&amp;rdquo; Course ! (once again :)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt; 2024年08月02日
+&lt;br/&gt; Gave an invited talk at the &amp;ldquo;Eccentric Seminar&amp;rdquo; at Tokyo City University -&amp;gt; &lt;a href=&#34;https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt; 2024年07月06日
 &lt;br/&gt; Presentation at the Department of Physics Open House for prospective International student at UTokyo -&amp;gt; &lt;a href=&#34;https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;</description>
@@ -257,8 +250,14 @@ Sign up for free!
 &lt;!-- #### Journal Articles (Preprint) --&gt;
 &lt;h3 id=&#34;journal-articles-published&#34;&gt;Journal Articles (Published)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148. &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. &lt;a href=&#34;https://doi.org/10.3847/2515-5172/ab3fa&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148.
+&lt;br/&gt;&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Paper&lt;/a&gt;
+• &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. &lt;a href=&#34;https://doi.org/10.3847/2515-5172/ab3fa&#34;&gt;URL&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;in-collaboration&#34;&gt;In Collaboration&lt;/h3&gt;
 &lt;ul&gt;

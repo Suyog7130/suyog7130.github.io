@@ -2,23 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/2024-03-28-blog-post-6/</loc>
-    <lastmod>2024-03-28T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/pages/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/2021-05-09-blog-post-1/</loc>
-    <lastmod>2021-05-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/archives-hi/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-11-28-blog-post-10/</loc>
-    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/archives-ja/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/software/</loc>
-    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/cv/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/news/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/personal/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/publications/</loc>
+  </url><url>
+    <loc>http://localhost:1313/search/</loc>
+  </url><url>
+    <loc>http://localhost:1313/search-hi/</loc>
+  </url><url>
+    <loc>http://localhost:1313/search-ja/</loc>
+  </url><url>
+    <loc>http://localhost:1313/series/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hi"
@@ -36,97 +48,6 @@
                 />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/javascript/</loc>
-    <lastmod>2024-06-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/maths/</loc>
-    <lastmod>2024-06-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/probability/</loc>
-    <lastmod>2024-06-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-06-24-blog-post-8/</loc>
-    <lastmod>2024-06-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/web-development/</loc>
-    <lastmod>2024-06-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-06-28-blog-post-9/</loc>
-    <lastmod>2024-06-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
-    <lastmod>2024-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-05-02-blog-post-7/</loc>
-    <lastmod>2024-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/terminal/</loc>
-    <lastmod>2024-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/macos/</loc>
-    <lastmod>2024-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-03-22-blog-post-5/</loc>
-    <lastmod>2024-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/zsh/</loc>
-    <lastmod>2024-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/documentation/</loc>
-    <lastmod>2023-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2023-02-13-blog-post-4/</loc>
-    <lastmod>2023-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
-    <lastmod>2023-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sphinx/</loc>
-    <lastmod>2023-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2023-02-03-blog-post-3/</loc>
-    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2023-01-23-blog-post-2/</loc>
-    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/icons/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/papermod-website/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/zotero/</loc>
-  </url><url>
-    <loc>http://localhost:1313/pages/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/archives-hi/</loc>
-  </url><url>
-    <loc>http://localhost:1313/archives-ja/</loc>
-  </url><url>
-    <loc>http://localhost:1313/archives/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/pages/cv/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/portfolio/</loc>
-  </url><url>
-    <loc>http://localhost:1313/pages/news/</loc>
-  </url><url>
-    <loc>http://localhost:1313/pages/</loc>
-  </url><url>
-    <loc>http://localhost:1313/pages/personal/</loc>
-  </url><url>
-    <loc>http://localhost:1313/pages/publications/</loc>
-  </url><url>
-    <loc>http://localhost:1313/search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/search-hi/</loc>
-  </url><url>
-    <loc>http://localhost:1313/search-ja/</loc>
-  </url><url>
-    <loc>http://localhost:1313/series/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/talks/</loc>
   </url>

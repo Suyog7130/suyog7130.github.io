@@ -437,11 +437,11 @@ https://github.com/reorx/hugo-PaperModX/blob/master/assets/css/common/post-singl
         border: 5px solid var(--code-bg);
     }
     .toc.side.left {
-        left: 300px;
+        left: 50px;
         width: 250px;
     }
     .toc.side.right {
-        right: 300px;
+        right: 50px;
         width: 265px;
     }
     /* Don't color the active link if ToC isn't on the side */

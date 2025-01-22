@@ -3,9 +3,9 @@ permalink: /
 title: "News"
 math: true
 hideAuthor: true
-ShowWordCount: true
+ShowWordCount: false
 ShowToc: false
-ShowReadingTime: true
+ShowReadingTime: false
 redirect_from: 
   - /news/
 ---
@@ -14,6 +14,18 @@ redirect_from:
 <!-- News -->
 <!-- <h2><p style="text-align:center; font-family:mistral;"> News </p></h2>
 -->
+
+
+<!--<div style="text-align: center">
+<a href="https://sensr.net/auth/users/sign_up">
+<button style="background-color:#a4d61e;margin-top:6px;margin-bottom:16px;border-radius:4px;font-size:1.6em;padding:8px 20px;    font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
+Sign up for free!
+</button>
+</a>
+</div>-->
+
+
+
 
 - <span style="color:darkblue; font-weight:bold">[Academic]</span> 2024年10月ー2025年02月
         <br/> I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (once again :)
@@ -71,17 +83,3 @@ redirect_from:
 <br/> Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo
 
 </details>
-
-
-
-<!--<div style="text-align: center">
-<a href="https://sensr.net/auth/users/sign_up">
-<button style="background-color:#a4d61e;margin-top:6px;margin-bottom:16px;border-radius:4px;font-size:1.6em;padding:8px 20px;    font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
-Sign up for free!
-</button>
-</a>
-</div>-->
-
-
-<!--{{% button href="https://gohugo.io/" name="warning" %}}-->
-
