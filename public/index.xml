@@ -12,7 +12,308 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Thu, 28 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Don&#39;t ask for Git passphrase on each commit</title>
+      <link>http://localhost:1313/posts/2024-03-28-blog-post-6/</link>
+      <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-03-28-blog-post-6/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>Linux Terminal Commands</title>
+      <link>http://localhost:1313/posts/2021-05-09-blog-post-1/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-05-09-blog-post-1/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>How to manage your Research Papers Library ?</title>
+      <link>http://localhost:1313/posts/2024-11-28-blog-post-10/</link>
+      <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-11-28-blog-post-10/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.zotero.org/support/collections_and_tags&#34;&gt;https://www.zotero.org/support/collections_and_tags&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/feeds&#34;&gt;https://www.zotero.org/support/feeds&lt;/a&gt;
+&lt;a href=&#34;https://forums.zotero.org/discussion/comment/472493#Comment_472493&#34;&gt;https://forums.zotero.org/discussion/comment/472493#Comment_472493&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/suyoggarg/library&#34;&gt;https://www.zotero.org/suyoggarg/library&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/sync&#34;&gt;https://www.zotero.org/support/sync&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/zotero_data&#34;&gt;https://www.zotero.org/support/zotero_data&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/attaching_files#stored_files_and_linked_files&#34;&gt;https://www.zotero.org/support/attaching_files#stored_files_and_linked_files&lt;/a&gt;
+&lt;a href=&#34;https://www.zotero.org/support/file_renaming&#34;&gt;https://www.zotero.org/support/file_renaming&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If the linked storage directory is updated, the new PDF has to be manually added to the Zotero library. However, here too, you can simply selected the whole storage directory and not add duplicates !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Probability of two people serendipitously meeting somewhere</title>
+      <link>http://localhost:1313/posts/2024-06-24-blog-post-8/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-06-24-blog-post-8/</guid>
+      <description>&lt;p&gt;The problem of finding the probability of two people serendipitously meeting eachother somewhere is non-trivial !&lt;/p&gt;
+&lt;p&gt;Some relevant links are :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mathpages.com/home/kmath124/kmath124.htm&#34;&gt;https://www.mathpages.com/home/kmath124/kmath124.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/15448/probability-of-two-people-meeting&#34;&gt;https://stats.stackexchange.com/questions/15448/probability-of-two-people-meeting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Working with Cloudflare workers</title>
+      <link>http://localhost:1313/posts/2024-06-28-blog-post-9/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-06-28-blog-post-9/</guid>
+      <description>&lt;p&gt;A cloudflare enviroment can be used to deploy any reasonably sized application on to an internet server without having to pay for server storage purchase. The deployed application page is then linked to universal web address and can reached on it.&lt;/p&gt;
+&lt;p&gt;A wrangler Javascript worker application to read and publish a formatted a &lt;strong&gt;letterboxd-diary&lt;/strong&gt; given the &lt;code&gt;username&lt;/code&gt; can be created by following these links :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>git submodules are erroneous</title>
+      <link>http://localhost:1313/posts/2024-05-02-blog-post-7/</link>
+      <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-05-02-blog-post-7/</guid>
+      <description>&lt;p&gt;In the name of sheer simplicity, it would be advised to best not use the &lt;code&gt;git submodule&lt;/code&gt; utility ! If there is the utmost need to have one directory within the other, then try to have only git repository among them, yeah. Or else, try to separate out the repositories into separate folders, yah !&lt;/p&gt;
+&lt;p&gt;It may happen that you may not be able to see new changes in the main directory after using &lt;code&gt;submodule&lt;/code&gt; for a while. In this case, use the following to bring back things to the original:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>pdf2jpg via terminal</title>
+      <link>http://localhost:1313/posts/2024-03-22-blog-post-5/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-03-22-blog-post-5/</guid>
+      <description>&lt;p&gt;How to convert PDF to JPG/PNG (images) via command line prompts on MacOS &lt;code&gt;zsh&lt;/code&gt; terminal.&lt;/p&gt;
+&lt;p&gt;STEP 1 : Install &lt;code&gt;poppler&lt;/code&gt; via &lt;code&gt;brew install poppler&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;STEP 2a : If you only wanna convert one file, run,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftoppm -jpeg -r &lt;span class=&#34;m&#34;&gt;300&lt;/span&gt; path-to-input-folder/**/*.pdf path-to-output-folder/*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;STEP 2b : If you wanna loop through all the files in then execute,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; file in path-to-input-folder/**/*&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; pdftoppm -jpeg -r &lt;span class=&#34;m&#34;&gt;300&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt; path-to-output-folder/*&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See also : &lt;a href=&#34;https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh&#34;&gt;https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to use Sphinx Documentation</title>
+      <link>http://localhost:1313/posts/2023-02-13-blog-post-4/</link>
+      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-02-13-blog-post-4/</guid>
+      <description>&lt;p&gt;Sphinx documentation build also requires configuring the source pathname inside &lt;code&gt;docs/conf.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;So, the process for building documentation is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;sphinx-quickstart&lt;/code&gt;, e.g. &lt;code&gt;sphinx-quickstart docs/ -p xmmPipeline -a Suyog –ext-autodoc –ext-napolean –ext-doctest –ext-intersphinx –ext-todoint&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit &lt;code&gt;docs/conf.py&lt;/code&gt; file to have the correct documentation path.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;autodoc&lt;/code&gt; to automatically import the docstring from the code modules and scripts, e.g. &lt;code&gt;sphinx-apidoc -o ./docs ../src/xmmPipeline/ –force&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;code&gt;make html&lt;/code&gt; for HTML, &lt;code&gt;make latex&lt;/code&gt; for LaTeX, &lt;code&gt;make latexpdf&lt;/code&gt; for PDF and &lt;code&gt;make epub&lt;/code&gt; for epub&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Customizing Mac Terminal</title>
+      <link>http://localhost:1313/posts/2023-02-03-blog-post-3/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-02-03-blog-post-3/</guid>
+      <description>&lt;p&gt;Changed the Mac terminal to &lt;code&gt;iterm2&lt;/code&gt; and then made numerous customizations to the &lt;code&gt;oh-my-zsh&lt;/code&gt; plugin. The &lt;code&gt;~/.zshrc&lt;/code&gt; looks like the following after these modifications:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# If you come from bash you might have to change your $PATH.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export PATH=$HOME/bin:/usr/local/bin:$PATH&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Path to your oh-my-zsh installation.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ZSH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/.oh-my-zsh&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set name of the theme to load --- if set to &amp;#34;random&amp;#34;, it will&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# load a random theme each time oh-my-zsh is loaded, in which case,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# to know which specific one was loaded, run: echo $RANDOM_THEME&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;ZSH_THEME&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;robbyrussell&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set list of themes to pick from when loading at random&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Setting this variable when ZSH_THEME=random will cause zsh to load&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# a theme from this variable instead of looking in $ZSH/themes/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# If set to an empty array, this variable will have no effect.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ZSH_THEME_RANDOM_CANDIDATES=( &amp;#34;robbyrussell&amp;#34; &amp;#34;agnoster&amp;#34; )&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to use case-sensitive completion.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# CASE_SENSITIVE=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to use hyphen-insensitive completion.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Case-sensitive completion must be off. _ and - will be interchangeable.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# HYPHEN_INSENSITIVE=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment one of the following lines to change the auto-update behavior&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; mode disabled  # disable automatic updates&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; mode auto      # update automatically without asking&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; mode reminder  # just remind me to update when it&amp;#39;s time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to change how often to auto-update (in days).&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; frequency 13&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line if pasting URLs and other text is messed up.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_MAGIC_FUNCTIONS=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to disable colors in ls.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_LS_COLORS=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to disable auto-setting terminal title.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_AUTO_TITLE=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to enable command auto-correction.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ENABLE_CORRECTION=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to display red dots whilst waiting for completion.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# You can also set it to another string to have that shown instead of the default red dots.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# e.g. COMPLETION_WAITING_DOTS=&amp;#34;%F{yellow}waiting...%f&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Caution: this setting can cause issues with multiline prompts in zsh &amp;lt; 5.7.1 (see #5765)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# COMPLETION_WAITING_DOTS=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line if you want to disable marking untracked files&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# under VCS as dirty. This makes repository status check for large repositories&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# much, much faster.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_UNTRACKED_FILES_DIRTY=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line if you want to change the command execution time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# stamp shown in the history command output.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# You can set one of the optional three formats:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# &amp;#34;mm/dd/yyyy&amp;#34;|&amp;#34;dd.mm.yyyy&amp;#34;|&amp;#34;yyyy-mm-dd&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# or set a custom format using the strftime function format specifications,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# see &amp;#39;man strftime&amp;#39; for details.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# HIST_STAMPS=&amp;#34;mm/dd/yyyy&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Would you like to use another custom folder than $ZSH/custom?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ZSH_CUSTOM=/path/to/new-custom-folder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Which plugins would you like to load?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Standard plugins can be found in $ZSH/plugins/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Custom plugins may be added to $ZSH_CUSTOM/plugins/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Example format: plugins=(rails git textmate ruby lighthouse)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Add wisely, as too many plugins slow down shell startup.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;plugins&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    zsh-syntax-highlighting
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    zsh-autosuggestions
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# fzf&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# User configuration&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export MANPATH=&amp;#34;/usr/local/man:$MANPATH&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# You may need to manually set your language environment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export LANG=en_US.UTF-8&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Preferred editor for local and remote sessions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# if [[ -n $SSH_CONNECTION ]]; then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#   export EDITOR=&amp;#39;vim&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#   export EDITOR=&amp;#39;mvim&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Compilation flags&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export ARCHFLAGS=&amp;#34;-arch x86_64&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set personal aliases, overriding those provided by oh-my-zsh libs,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# plugins, and themes. Aliases can be placed here, though oh-my-zsh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# users are encouraged to define aliases within the ZSH_CUSTOM folder.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# For a full list of active aliases, run `alias`.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Example aliases&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# alias zshconfig=&amp;#34;mate ~/.zshrc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# alias ohmyzsh=&amp;#34;mate ~/.oh-my-zsh&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# add syntax highlighting to the list of plugins in your ~/.zshrc file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# update plugins in your ~/.zshrc file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# update your ~/.zshrc file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;FZF_BASE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/.fzf&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$ZSH&lt;/span&gt;/oh-my-zsh.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Aliases&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;python&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;python3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# git&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;gs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;git status&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# map exa commands to normal ls commands&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ll&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;exa -l -g --icons&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;exa --icons&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;lt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;exa --tree --icons -a -I &amp;#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# show file previews for fzf using bat&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;fp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;fzf --preview &amp;#39;bat --style=numbers --color=always --line-range :500 {}&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# starship prompt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;gt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;starship toggle gcloud disabled&amp;#34;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# toggle gcloud info on the prompt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# use Starship prompt in zsh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;eval&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;starship init zsh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; -f ~/.fzf.zsh &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; ~/.fzf.zsh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Reference: &lt;a href=&#34;https://engineeringfordatascience.com/posts/configure_terminal_for_data_science_with_oh_my_zsh/&#34;&gt;configure_terminal_for_data_science_with_oh_my_zsh/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>`.gitignore` file</title>
+      <link>http://localhost:1313/posts/2023-01-23-blog-post-2/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-01-23-blog-post-2/</guid>
+      <description>&lt;p&gt;To ignore all files larger than 100MB:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;find ./* -size +100M &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; cat &amp;gt;&amp;gt; .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To ignore all files larger than 100MB but with pathnames not contianing &amp;ldquo;data&amp;rdquo; and without repeating already added large file names:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;find ./*work*/ -not -path **data**  -size +100M &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;s|^\./||g&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; cat &amp;gt;&amp;gt; .gitignore&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; awk &lt;span class=&#34;s1&#34;&gt;&amp;#39;!NF || !seen[$0]++&amp;#39;&lt;/span&gt; .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An Example &lt;code&gt;.gitignore&lt;/code&gt; file with other useful settings:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  GNU nano 2.9.3                                           .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Blocklist files/folders in same directory as the .gitignore file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*data/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*work*/*data*/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*gh18-work/models/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*gh18-work/results/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Includelist some files&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!.gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!README.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!**.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Ignore all files named .DS_Store or ending with .log&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**/.DS_Store
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**.log
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Includelist folder/a/b1/ and folder/a/b2/ trailing &amp;#34;/&amp;#34; is optional for folders, may match file though. &amp;#34;/&amp;#34; is NOT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# optional when followed by a *&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!*work*/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!*work*/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Adding to the above, this also works...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#!/folder/a/deeply /folder/a/deeply/* !/folder/a/deeply/nested /folder/a/deeply/nested/*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#!/folder/a/deeply/nested/subfolder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Ignore all files larger than 150MB&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;g2net-work/g2net-detecting-continuous-gravitational-waves.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mlgwsc-work/injections4_1.25s.npy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mlgwsc-work/real_noise_file.hdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Useful links:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/icons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/icons/</guid>
+      <description>&lt;p&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;200&#34; height=&#34;200&#34; viewBox=&#34;0 0 1024 1536&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M768 512q0-106-75-181t-181-75t-181 75t-75 181t75 181t181 75t181-75t75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19t-67.5-19t-46.5-52L33 691Q0 621 0 512q0-212 150-362T512 0t362 150t150 362z&#34;/&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://iconbuddy.com/&#34;&gt;https://iconbuddy.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/papermod-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/papermod-website/</guid>
+      <description>&lt;p&gt;asdasD&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/zotero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/zotero/</guid>
+      <description>&lt;p&gt;dfasdf&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/pages/about/</link>
@@ -177,6 +478,401 @@ Service and leadership
 --&gt;</description>
     </item>
     <item>
+      <title>Fonts</title>
+      <link>http://localhost:1313/posts/portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/portfolio/</guid>
+      <description>&lt;div dir=&#34;ltr&#34; style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;
+  &lt;div dir=&#34;ltr&#34; style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;
+
+    &lt;div style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;
+      &lt;div class=&#34;MsoNormal&#34; style=&#34;line-height: normal; margin-bottom: 0in;&#34;&gt;
+        &lt;span style=&#34;font-size: 18pt; font-weight: bold;&#34;
+          &gt;I have a knack for fonts and typefaces. Below is a list of my favorites:
+&lt;/span
+        &gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: mistral; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Mistral®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      This is a Microsoft proprietary font. I have used it for the title of
+      the blog. This is the closest it gets to my handwriting. Looks good, eh?
+      &lt;span face=&#39;&#34;segoe ui emoji&#34; , sans-serif&#39; style=&#34;font-size: 13.5pt;&#34;
+        &gt;😄&lt;/span
+      &gt;
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;lato&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Lato
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Used in the body of the blog, this open source sans-serif typeface
+      is pleasing to the eye.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;monotype-corsiva&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Monotype Corsiva®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Another of Microsoft&#39;s proprietary fonts. I use it for my poems.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;pacifico&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Pacifico
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      A tiny bit heavier than the others, but good for headings.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;calligraffitti&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Calligraffitti
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      I like the extended curving of the tails. Used this in the home feed.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;verdana&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Verdana®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Yet another of Microsoft fonts. Nice and simplistic sans-serif. I like
+      it plain, without bold.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;lucida-handwriting&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Lucida® Handwriting
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Again Microsoft&#39;s. The slanting gives a personal touch. The glyphs are
+      lucid as the name goes. My favorite font for writing letters. Mistral I
+      use for the headings.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;calibri&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Calibri
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      The best known of the Word font collection. Must use for drafts.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;arial&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Arial®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Another by Monotype, this is the font one sees on google. The best
+      typeface available for the academia. I like it regular.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;parchment&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Parchment®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+        For the regal times. The best for anything immense.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;papyrus&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Papyrus®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      When I need the feel of handmade paper. A widely used calligraphic
+      typeface.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;courier new&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Courier
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      A monospace typeface that provides the type writer look. Great for writing
+      stories.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;georgia&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Georgia®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Appealing to the eyes. Good for writings that need a thorough reading.
+      Owned by Microsoft.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;helvetica&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Helvetica®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Popular sans-serif typeface. Suited for general use on the web. From
+      Mergenthaler Linotype Company. Not available in MS Office.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;vivaldi&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Vivaldi™
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      When it needs to be extreme calligraphic. Looks cool on invitation
+      cards.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;arvo&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Arvo
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Nice when the size is large and weight is not bold. The square serifs are
+      pleasing.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;times new roman&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Times New Roman®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      First designed by Monotype in the 1930s, this is the most widely used
+      font in the world. Newspapers are type set in the Times.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;comic sans&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Comic Sans®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Microsoft&#39;s proprietary font that makes everything seem playful. Also one of the few fonts available on Gmail.
+    &lt;/li&gt;
+
+&lt;!--
+&lt;h1
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: Raleway; font-style: italic; font-weight: 200;&#34;
+&gt;
+  Raleway
+&lt;/h1&gt;
+--&gt;
+
+&lt;br /&gt;
+
+&lt;li&gt; 
+    Other open source fonts from The League of Moveable Type and the Indian Type Foundary.
+&lt;/li&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: Raleway; font-style: regular; font-weight: 200; font-size: 40pt&#34;
+&gt;
+  Raleway
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: Tangerine; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Tangerine
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: Kalam; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  कलाम
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: Prociono; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Prociono
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;Fanwood Text&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Fanwood Text
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;Linden Hill&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Linden Hill
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;League Script&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  League Script
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;Sorts Mill Goudy&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Sorts Mill Goudy
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;Goudy Bookletter 1911&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Goudy Bookletter 1911
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+  &lt;/div&gt;
+&lt;/div&gt;  &lt;!-- closing the list --&gt;</description>
+    </item>
+    <item>
       <title>News</title>
       <link>http://localhost:1313/pages/news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -191,6 +887,8 @@ Sign up for free!
 &lt;/button&gt;
 &lt;/a&gt;
 &lt;/div&gt;--&gt;
+&lt;!--&lt;span class=&#34;btn cstyle interactive transparent&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&#34;btn cstyle interactive warning&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;i class=&#34;fa-fw fas fa-dog&#34;&gt;&lt;/i&gt; &lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;--&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt; 2024年10月ー2025年02月
@@ -198,11 +896,7 @@ Sign up for free!
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt; 2024年08月02日
-&lt;br/&gt; Gave an invited talk at the &amp;ldquo;Eccentric Seminar&amp;rdquo; at Tokyo City University -&amp;gt; &lt;a href=&#34;https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt; 2024年07月06日
-&lt;br/&gt; Presentation at the Department of Physics Open House for prospective International student at UTokyo -&amp;gt; &lt;a href=&#34;https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;</description>
+&lt;br/&gt; Gave an invited talk at the &amp;ldquo;Eccentric Seminar&amp;rdquo; at Tokyo City University -&amp;gt; &lt;a href=&#34;https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal</title>

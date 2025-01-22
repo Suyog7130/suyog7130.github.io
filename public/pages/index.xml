@@ -191,6 +191,8 @@ Sign up for free!
 &lt;/button&gt;
 &lt;/a&gt;
 &lt;/div&gt;--&gt;
+&lt;!--&lt;span class=&#34;btn cstyle interactive transparent&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&#34;btn cstyle interactive warning&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;i class=&#34;fa-fw fas fa-dog&#34;&gt;&lt;/i&gt; &lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;--&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt; 2024年10月ー2025年02月
@@ -198,11 +200,7 @@ Sign up for free!
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt; 2024年08月02日
-&lt;br/&gt; Gave an invited talk at the &amp;ldquo;Eccentric Seminar&amp;rdquo; at Tokyo City University -&amp;gt; &lt;a href=&#34;https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt; 2024年07月06日
-&lt;br/&gt; Presentation at the Department of Physics Open House for prospective International student at UTokyo -&amp;gt; &lt;a href=&#34;https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;</description>
+&lt;br/&gt; Gave an invited talk at the &amp;ldquo;Eccentric Seminar&amp;rdquo; at Tokyo City University -&amp;gt; &lt;a href=&#34;https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&amp;amp;dl=0&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal</title>
