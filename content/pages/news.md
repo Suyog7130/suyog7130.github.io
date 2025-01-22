@@ -22,7 +22,8 @@ redirect_from:
 Sign up for free!
 </button>
 </a>
-</div>-->
+</div>
+-->
 
 <!--{{% button href="https://gohugo.io/" %}}Get Hugo{{% /button %}}
 {{% button href="https://gohugo.io/" style="warning" icon="dog" %}}Get Hugo{{% /button %}}-->

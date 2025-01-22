@@ -190,7 +190,8 @@ Service and leadership
 Sign up for free!
 &lt;/button&gt;
 &lt;/a&gt;
-&lt;/div&gt;--&gt;
+&lt;/div&gt;
+--&gt;
 &lt;!--&lt;span class=&#34;btn cstyle interactive transparent&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
 &lt;span class=&#34;btn cstyle interactive warning&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;i class=&#34;fa-fw fas fa-dog&#34;&gt;&lt;/i&gt; &lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;--&gt;
 &lt;ul&gt;
