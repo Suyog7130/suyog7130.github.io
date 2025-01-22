@@ -1,7 +1,8 @@
 {{- $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content -}}
 {{- $has_headers := ge (len $headers) 1 -}}
 {{- if $has_headers -}}
-<div class="toc">
+<!-- From https://github.com/reorx/hugo-PaperModX/blob/master/layouts/partials/toc.html -->
+<div class="toc{{- if (.Param "TocSide") -}}{{- print " side " (.Param "TocSide") -}}{{- end -}}">
     <details {{if (.Param "TocOpen") }} open{{ end }}>
         <summary accesskey="c" title="(Alt + C)">
             <span class="details">{{- i18n "toc" | default "Table of Contents" }}</span>
@@ -71,10 +72,10 @@
                 {{- end -}}
                 {{- end }}
                 <li>
-                    <a href="#{{- $cleanedID -}}" aria-label="{{- $header | plainify | safeHTML -}}">{{- $header | plainify | safeHTML -}}</a>
+                    <a href="#{{- $cleanedID -}}" aria-label="{{- $header | plainify -}}">{{- $header | safeHTML -}}</a>
                     {{- else }}
                 <li>
-                    <a href="#{{- $cleanedID -}}" aria-label="{{- $header | plainify | safeHTML -}}">{{- $header | plainify | safeHTML -}}</a>
+                    <a href="#{{- $cleanedID -}}" aria-label="{{- $header | plainify -}}">{{- $header | safeHTML -}}</a>
                     {{- end -}}
                     {{- end -}}
                     <!-- {{- $firstHeaderLevel := len (seq (index (findRE "[1-6]" (index $headers 0) 1) 0)) -}} -->
@@ -95,3 +96,68 @@
     </details>
 </div>
 {{- end }}
+
+<!-- Source: https://github.com/reorx/hugo-PaperModX/blob/d4b3ef754f8f34342726b8f9f20c40b502706ddc/layouts/partials/footer.html#L141
+I inline the script in toc.html instead of having it in footer.html or page_footer.html
+Currently disabled until I can figure out https://github.com/jesse-wei/jessewei.dev-PaperMod/issues/25 -->
+
+{{/*
+{{- if (and (eq .Kind "page") (.Content) (.Param "ShowToc") (.Param "TocSide")) }}
+<script>
+window.addEventListener('DOMContentLoaded', function (event) {
+  if (!document.querySelector('.toc')) {
+    return;
+  }
+  const headings = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id]');
+  const activeClass = 'active';
+
+  // Make the first header active
+  let activeHeading = headings[0];
+  getLinkByHeading(activeHeading).classList.add(activeClass);
+
+  const onScroll = () => {
+    const passedHeadings = [];
+    for (const h of headings) {
+      // 5 px as a buffer
+      if (getOffsetTop(h) < 5) {
+        passedHeadings.push(h)
+      } else {
+        break;
+      }
+    }
+    if (passedHeadings.length > 0) {
+      newActiveHeading = passedHeadings[passedHeadings.length - 1];
+    } else {
+      newActiveHeading = headings[0];
+    }
+    if (activeHeading != newActiveHeading) {
+      getLinkByHeading(activeHeading).classList.remove(activeClass);
+      activeHeading = newActiveHeading;
+      getLinkByHeading(activeHeading).classList.add(activeClass);
+    }
+  }
+
+  let timer = null;
+  window.addEventListener('scroll', () => {
+    if (timer !== null) {
+      clearTimeout(timer)
+    }
+    timer = setTimeout(onScroll, 50)
+  }, false);
+
+  function getLinkByHeading(heading) {
+    const id = encodeURI(heading.getAttribute('id')).toLowerCase();
+    return document.querySelector(`.toc ul li a[href="#${id}"]`);
+  }
+
+  function getOffsetTop(heading) {
+    if (!heading.getClientRects().length) {
+      return 0;
+    }
+    let rect = heading.getBoundingClientRect();
+    return rect.top
+  }
+}, false);
+</script>
+{{- end }}
+*/}}
