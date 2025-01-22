@@ -11,7 +11,10 @@ author_profile: true
 
 ### Journal Articles (Published)
 
-- S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148. [URL](https://doi.org/10.3847/1538-4357/ab4a17).
+- S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148.
+<br/>[Paper](https://doi.org/10.3847/1538-4357/ab4a17)
+• [DOI](https://doi.org/10.3847/1538-4357/ab4a17)
+
 - S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. [URL](https://doi.org/10.3847/2515-5172/ab3fa).
 
 ### In Collaboration
