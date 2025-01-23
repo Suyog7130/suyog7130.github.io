@@ -131,6 +131,7 @@ params:
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
+  ShowWordCount: true
   ShowToc: true
   # comments: false
   images: [""]
