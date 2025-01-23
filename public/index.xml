@@ -942,60 +942,33 @@ I serve as a Teaching Assistant for the Graduate-level &amp;ldquo;Graviational-W
       <link>http://localhost:1313/pages/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/publications/</guid>
-      <description>&lt;h2 id=&#34;scientific-articles&#34;&gt;Scientific Articles&lt;/h2&gt;
+      <description>&lt;!--&lt;style type=&#34;text/css&#34;&gt;
+ .tab { margin-left: 40px; }
+&lt;/style&gt;--&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;icon_names=database&#34; /&gt;
+&lt;h2 id=&#34;scientific-articles&#34;&gt;Scientific Articles&lt;/h2&gt;
 &lt;!-- #### Journal Articles (Preprint) --&gt;
 &lt;h3 id=&#34;journal-articles-published&#34;&gt;Journal Articles (Published)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148.
-&lt;br/&gt;&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Paper&lt;/a&gt;
-• &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;
+&lt;br/&gt;
+&lt;i class=&#34;fa fa-file-pdf&#34;&gt; &lt;/i&gt;
+&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Paper&lt;/a&gt;
+ • 
+&lt;i class=&#34;ai ai-arxiv&#34;&gt; &lt;/i&gt;
+&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Arxiv&lt;/a&gt;
+ • 
+&lt;span class=&#34;material-symbols-outlined&#34;&gt;
+database
+&lt;/span&gt;
+&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Data&lt;/a&gt;
+ • 
+&lt;i class=&#34;ai ai-doi&#34;&gt; &lt;/i&gt;
+&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. &lt;a href=&#34;https://doi.org/10.3847/2515-5172/ab3fa&#34;&gt;URL&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;in-collaboration&#34;&gt;In Collaboration&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A. M. Price-Whelan, others, Astropy Collaboration, and Astropy Project Contributors. The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package. ApJ, 935(2):167, Aug. 2022, 2206.14220. &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ac7c74&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;S. Bapat et al. EinsteinPy: A Community Python Package for General Relativity. arXiv e-prints, May 2020, 2005.11288. &lt;a href=&#34;https://arxiv.org/abs/2005.11288&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;conference-papers&#34;&gt;Conference Papers&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;S. Sasaoka, Y. Hou, D. S. Dominguez, S. Garg, N. Koyama, Y. Sakai, Y. Omae, K. Somiya, and H. Takahashi. Deep Learning for Detecting Gravitational Waves from Compact Binary Coalescences and Its Visualization by Grad-CAM. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1498, 2023. &lt;a href=&#34;https://doi.org/10.22323/1.444.1498&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;S. Sasaoka, Y. Hou, D. S. Dominguez, S. Garg, N. Koyama, Y. Sakai, Y. Omae, K. Somiya, and H. Takahashi. Deep Learning Application for Detecting Gravitational Waves from Core-Collapse Supernovae. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1499, 2023. &lt;a href=&#34;https://doi.org/10.22323/1.444.1499&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;S. Garg, S. Sasaoka, D. S. Dominguez, Y. Hou, N. Koyama, K. Somiya, H. Takahashi, and M. Ohashi. Comparison of training methods for Convolutional Neural Network model for Gravitational-Wave detection from Neutron Star−Black Hole Binaries. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1536, 2023. &lt;a href=&#34;https://doi.org/10.22323/1.444.1536&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;D. S. Dominguez, S. Sasaoka, S. Garg, Y. Hou, N. Koyama, K. Somiya, and H. Takahashi. Convolutional neural network for continuous gravitational waves detection. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1519, 2023. &lt;a href=&#34;https://doi.org/10.22323/1.444.1519&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;graduation-theses&#34;&gt;Graduation Theses&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Convolutional Neural Network model for Detection of Gravitational-Waves from Eccentric Neutron Star - Black Hole mergers. July 2023. Masters Thesis.&lt;/li&gt;
-&lt;li&gt;New Sensitivity Parameter for all-Fibre Strain Sensor. June 2020. Bachelor Thesis. Preprint : S. Garg et al. 2020 &lt;a href=&#34;http://dx.doi.org/10.13140/RG.2.2.31106.20166&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;popular-science-articles&#34;&gt;Popular Science Articles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;S. Garg. Mathematics of the Evolution Game. Bhavana magazine, 2024. (submitted).&lt;/li&gt;
-&lt;li&gt;S. Garg. Removing Noise in Gravitational-Wave Signals. Science Reporter, 2022. &lt;a href=&#34;http://nopr.niscpr.res.in/handle/123456789/61105&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;general-writings&#34;&gt;General Writings&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;उसके श्रम के वह आँसू (कविता)। Komaba Times, Issue 14. Apr 2025.&lt;/li&gt;
-&lt;li&gt;इस देश में बसंत (कविता)। &lt;a href=&#34;https://vaishvikhindi.com/posts/5620&#34;&gt;vaishvikhindi&lt;/a&gt;. Oct 2024.&lt;/li&gt;
-&lt;li&gt;Nippon Connection : Connecting Japan to the world, in a filmy way!. Komaba Times, Issue 13 (Digital Issue). Apr 2024. &lt;a href=&#34;https://online.fliphtml5.com/parat/aehs/#p=1&#34;&gt;Link&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The Spring, here. Komaba Times, Issue 12. Apr 2023. &lt;a href=&#34;https://www.komabatimes.com/post/the-spring-here&#34;&gt;Link&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;An Ordinary Day. Komaba Times. Mar 2023. &lt;a href=&#34;https://www.komabatimes.com/post/an-ordinary-day&#34;&gt;Link&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--
-{% if author.googlescholar %}
-  You can also find my articles on &lt;u&gt;&lt;a href=&#34;{{author.googlescholar}}&#34;&gt;my Google Scholar profile&lt;/a&gt;.&lt;/u&gt;
-{% endif %}
-
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
---&gt;</description>
+&lt;p&gt;S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. &lt;a href=&#34;https://doi.org/10.3847/2515-5172/ab3fa&#34;&gt;URL&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Talks and presentations</title>
