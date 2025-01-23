@@ -52,7 +52,11 @@ S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in 
 
 ### Conference Papers
 
-- S. Sasaoka, Y. Hou, D. S. Dominguez, S. Garg, N. Koyama, Y. Sakai, Y. Omae, K. Somiya, and H. Takahashi. Deep Learning for Detecting Gravitational Waves from Compact Binary Coalescences and Its Visualization by Grad-CAM. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1498, 2023. [URL](https://doi.org/10.22323/1.444.1498).
+- S. Sasaoka, Y. Hou, D. S. Dominguez, S. Garg, N. Koyama, Y. Sakai, Y. Omae, K. Somiya, and H. Takahashi. Deep Learning for Detecting Gravitational Waves from Compact Binary Coalescences and Its Visualization by Grad-CAM. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1498, 2023.
+&nbsp;
+<i class="ai ai-doi"></i>
+<a href="https://doi.org/10.22323/1.444.1498">DOI</a>
+
 - S. Sasaoka, Y. Hou, D. S. Dominguez, S. Garg, N. Koyama, Y. Sakai, Y. Omae, K. Somiya, and H. Takahashi. Deep Learning Application for Detecting Gravitational Waves from Core-Collapse Supernovae. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1499, 2023. [URL](https://doi.org/10.22323/1.444.1499).
 - S. Garg, S. Sasaoka, D. S. Dominguez, Y. Hou, N. Koyama, K. Somiya, H. Takahashi, and M. Ohashi. Comparison of training methods for Convolutional Neural Network model for Gravitational-Wave detection from Neutron Star−Black Hole Binaries. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1536, 2023. [URL](https://doi.org/10.22323/1.444.1536).
 - D. S. Dominguez, S. Sasaoka, S. Garg, Y. Hou, N. Koyama, K. Somiya, and H. Takahashi. Convolutional neural network for continuous gravitational waves detection. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1519, 2023. [URL](https://doi.org/10.22323/1.444.1519).
@@ -60,24 +64,48 @@ S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in 
 ### Graduation Theses
 
 - Convolutional Neural Network model for Detection of Gravitational-Waves from Eccentric Neutron Star - Black Hole mergers. July 2023. Masters Thesis.
-- New Sensitivity Parameter for all-Fibre Strain Sensor. June 2020. Bachelor Thesis. Preprint : S. Garg et al. 2020 [URL](http://dx.doi.org/10.13140/RG.2.2.31106.20166).
+
+- New Sensitivity Parameter for all-Fibre Strain Sensor. June 2020. Bachelor Thesis.
+<br/>
+<i class="fa fa-edit">&nbsp;</i>
+<a href="http://dx.doi.org/10.13140/RG.2.2.31106.20166">Preprint</a>
+&nbsp;•&nbsp;
+<i class="ai ai-doi">&nbsp;</i>
+<a href="http://dx.doi.org/10.13140/RG.2.2.31106.20166">DOI</a>
 
 
 ## Popular Science Articles
 
 - S. Garg. Mathematics of the Evolution Game. Bhavana magazine, 2024. (submitted).
-- S. Garg. Removing Noise in Gravitational-Wave Signals. Science Reporter, 2022. [URL](http://nopr.niscpr.res.in/handle/123456789/61105).
 
+- S. Garg. Removing Noise in Gravitational-Wave Signals. Science Reporter, 2022.
+&nbsp;
+<br/>
+<i class="fa fa-external-link-alt"></i>
+<a href="http://nopr.niscpr.res.in/handle/123456789/61105">URL</a>
 
 
 ## General Writings
 
 - उसके श्रम के वह आँसू (कविता)। Komaba Times, Issue 14. Apr 2025. 
-- इस देश में बसंत (कविता)। [vaishvikhindi](https://vaishvikhindi.com/posts/5620). Oct 2024.
-- Nippon Connection : Connecting Japan to the world, in a filmy way!. Komaba Times, Issue 13 (Digital Issue). Apr 2024. [Link](https://online.fliphtml5.com/parat/aehs/#p=1).
-- The Spring, here. Komaba Times, Issue 12. Apr 2023. [Link](https://www.komabatimes.com/post/the-spring-here).
-- An Ordinary Day. Komaba Times. Mar 2023. [Link](https://www.komabatimes.com/post/an-ordinary-day).
+- इस देश में बसंत (कविता)। Oct 2024.
+&nbsp;
+<i class="fa fa-external-link-alt">&nbsp;</i>[vaishvikhindi.com](https://vaishvikhindi.com/posts/5620)
 
+- Nippon Connection : Connecting Japan to the world, in a filmy way!. Komaba Times, Issue 13 (Digital Issue). Apr 2024.
+&nbsp;
+<i class="fa fa-link"></i>
+<a href="https://online.fliphtml5.com/parat/aehs/#p=1">Link</a>
+
+- The Spring, here. Komaba Times, Issue 12. Apr 2023.
+&nbsp;
+<i class="fa fa-link"></i>
+<a href="https://www.komabatimes.com/post/the-spring-here">Link</a>
+
+- An Ordinary Day. Komaba Times. Mar 2023.
+&nbsp;
+<i class="fa fa-link"></i>
+<a href="https://www.komabatimes.com/post/an-ordinary-day">Link</a>
 
 
 <!--

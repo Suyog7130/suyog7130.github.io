@@ -6,6 +6,7 @@ hideAuthor: true
 ShowWordCount: false
 ShowToc: false
 ShowReadingTime: false
+hideTags: true
 redirect_from: 
   - /news/
 ---
@@ -75,7 +76,8 @@ I will be hosting the RESCEU-UTAP Thursday seminars starting next term !
 <br/>
 <span style="color:green; font-weight:bold">[Poster]</span> 
 I will be participating in the [LVK collaboration meeting](https://www.lsu.edu/physics/lvkmeeting/index.php) at Louisiana State Univesity, Baton Rouge.
-  
+
+<i class="fa fa-paper-plane">&nbsp;</i>
 2024年01月16ー28日
 <br/>
 <span style="color:darkgreen; font-weight:bold">[Academic]</span>

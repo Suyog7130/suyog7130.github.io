@@ -5,6 +5,7 @@ math: true
 ShowAuthor: false
 ShowToc: false
 ShowReadingTime: true
+hideTags: true
 redirect_from: 
   - /about/
   - /about.html
