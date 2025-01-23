@@ -16,7 +16,11 @@ redirect_from:
 -->
 
 
-<!--<div style="text-align: center">
+<!-- <i class="fa fa-clock"></i>
+<i class="ai ai-google-scholar"></i>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=FtzrMYwAAAAJ" class="icon-link" target="_blank" rel="noopener" data-original-href="https://scholar.google.com/citations?hl=en&amp;user=FtzrMYwAAAAJ"><i class="ai ai-google-scholar"></i> Google Scholar</a> -->
+
+<!-- <div style="text-align: center">
 <a href="https://sensr.net/auth/users/sign_up">
 <button style="background-color:#a4d61e;margin-top:6px;margin-bottom:16px;border-radius:4px;font-size:1.6em;padding:8px 20px;    font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
 Sign up for free!
