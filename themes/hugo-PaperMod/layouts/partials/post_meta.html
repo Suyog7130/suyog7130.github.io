@@ -1,11 +1,17 @@
 {{- $scratch := newScratch }}
 
 {{- if not .Date.IsZero -}}
+<span>
 {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+<i class="fa fa-calendar">&nbsp;</i>
+</span>
 {{- end }}
 
 {{- if (.Param "ShowReadingTime") -}}
+<span>
 {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" (.ReadingTime) ))) }}
+<i class="fa fa-clock">&nbsp;</i>
+</span>
 {{- end }}
 
 {{- if (.Param "ShowWordCount") -}}
@@ -13,8 +19,11 @@
 {{- end }}
 
 {{- if not (.Param "hideAuthor") -}}
+<span>
 {{- with (partial "author.html" .) }}
 {{- $scratch.Add "meta" (slice .) }}
+<i class="fa fa-pen">&nbsp;</i>
+</span>
 {{- end }}
 {{- end }}
 

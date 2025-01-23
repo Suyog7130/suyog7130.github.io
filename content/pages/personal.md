@@ -31,7 +31,7 @@ redirect_from:
 * [letterboxd-page/](https://suyoggarg.com/letterboxd-page/) : Page to create custom letterboxd diary embedding, in the same manner as seen on this website.
 * [soundsofspacetime](https://www.soundsofspacetime.org/the-basics-of-binary-coalescence.html)
 * [Zotero](https://www.zotero.org/) : Best way to maintain your Research Paper library !
-
+* [Icons](https://iconbuddy.com/) : Set of Icons to use readily.
 
 
 
