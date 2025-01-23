@@ -2,6 +2,7 @@
 layout: archive
 title: "Talks and presentations"
 permalink: /talks/
+hideTags: true
 author_profile: true
 ---
 

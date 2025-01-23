@@ -3,6 +3,7 @@ layout: archive
 title: Personal
 permalink: /personal/
 ShowToc: false
+hideTags: true
 redirect_from:
 ---
 

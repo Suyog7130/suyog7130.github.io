@@ -2,9 +2,11 @@
 layout: archive
 title: "CV/Resume"
 permalink: /cv/
-ShowAuthor: false
+hideAuthor: true
 ShowToc: false
-ShowReadingTime: true
+ShowReadingTime: false
+ShowWordCount: false
+hideTags: true
 redirect_from:
   - /resume
 ---
