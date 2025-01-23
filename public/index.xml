@@ -945,29 +945,32 @@ I serve as a Teaching Assistant for the Graduate-level &amp;ldquo;Graviational-W
       <description>&lt;!--&lt;style type=&#34;text/css&#34;&gt;
  .tab { margin-left: 40px; }
 &lt;/style&gt;--&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;icon_names=database&#34; /&gt;
+&lt;!--&lt;link rel=&#34;stylesheet&#34; href=&#34;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;icon_names=database&#34; /&gt;
+&lt;span class=&#34;material-symbols-outlined&#34;&gt;
+database
+&lt;/span&gt;--&gt;
 &lt;h2 id=&#34;scientific-articles&#34;&gt;Scientific Articles&lt;/h2&gt;
 &lt;!-- #### Journal Articles (Preprint) --&gt;
 &lt;h3 id=&#34;journal-articles-published&#34;&gt;Journal Articles (Published)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
 &lt;p&gt;S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148.
 &lt;br/&gt;
 &lt;i class=&#34;fa fa-file-pdf&#34;&gt; &lt;/i&gt;
 &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Paper&lt;/a&gt;
  • 
-&lt;i class=&#34;ai ai-arxiv&#34;&gt; &lt;/i&gt;
-&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Arxiv&lt;/a&gt;
+&lt;i class=&#34;fa fa-edit&#34;&gt; &lt;/i&gt;
+&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Preprint&lt;/a&gt;
  • 
-&lt;span class=&#34;material-symbols-outlined&#34;&gt;
-database
-&lt;/span&gt;
+&lt;i class=&#34;fa fa-code&#34;&gt; &lt;/i&gt;
+&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Code&lt;/a&gt;
+ • 
+&lt;i class=&#34;fa fa-database&#34;&gt; &lt;/i&gt;
 &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Data&lt;/a&gt;
  • 
 &lt;i class=&#34;ai ai-doi&#34;&gt; &lt;/i&gt;
-&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
+&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;DOI&lt;/a&gt;
+ • 
+&lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;
+&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;URL&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. &lt;a href=&#34;https://doi.org/10.3847/2515-5172/ab3fa&#34;&gt;URL&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>

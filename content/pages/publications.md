@@ -3,6 +3,7 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+hideTags: true
 ---
 
 
@@ -10,7 +11,10 @@ author_profile: true
  .tab { margin-left: 40px; }
 </style>-->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=database" />
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=database" />
+<span class="material-symbols-outlined">
+database
+</span>-->
 
 
 ## Scientific Articles
@@ -19,23 +23,27 @@ author_profile: true
 
 ### Journal Articles (Published)
 
-- S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148.
+S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148.
 <br/>
 <i class="fa fa-file-pdf">&nbsp;</i>
 <a href="https://doi.org/10.3847/1538-4357/ab4a17">Paper</a>
 &nbsp;•&nbsp;
-<i class="ai ai-arxiv">&nbsp;</i>
-<a href="https://doi.org/10.3847/1538-4357/ab4a17">Arxiv</a>
+<i class="fa fa-edit">&nbsp;</i>
+<a href="https://doi.org/10.3847/1538-4357/ab4a17">Preprint</a>
 &nbsp;•&nbsp;
-<span class="material-symbols-outlined">
-database
-</span>
+<i class="fa fa-code">&nbsp;</i>
+<a href="https://doi.org/10.3847/1538-4357/ab4a17">Code</a>
+&nbsp;•&nbsp;
+<i class="fa fa-database">&nbsp;</i>
 <a href="https://doi.org/10.3847/1538-4357/ab4a17">Data</a>
 &nbsp;•&nbsp;
 <i class="ai ai-doi">&nbsp;</i>
 <a href="https://doi.org/10.3847/1538-4357/ab4a17">DOI</a>
+&nbsp;•&nbsp;
+<i class="fa fa-external-link-alt">&nbsp;</i>
+<a href="https://doi.org/10.3847/1538-4357/ab4a17">URL</a>
 
-- S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. [URL](https://doi.org/10.3847/2515-5172/ab3fa).
+S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. [URL](https://doi.org/10.3847/2515-5172/ab3fa).
 
 ### In Collaboration
 
