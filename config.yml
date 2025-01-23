@@ -133,6 +133,7 @@ params:
   ShowPageNums: true
   ShowWordCount: true
   ShowToc: true
+  hideTags: false
   # comments: false
   images: [""]
 
