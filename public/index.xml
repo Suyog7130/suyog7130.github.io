@@ -880,7 +880,10 @@ Service and leadership
       <description>&lt;!-- News --&gt;
 &lt;!-- &lt;h2&gt;&lt;p style=&#34;text-align:center; font-family:mistral;&#34;&gt; News &lt;/p&gt;&lt;/h2&gt;
 --&gt;
-&lt;!--&lt;div style=&#34;text-align: center&#34;&gt;
+&lt;!-- &lt;i class=&#34;fa fa-clock&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;ai ai-google-scholar&#34;&gt;&lt;/i&gt;
+&lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;amp;user=FtzrMYwAAAAJ&#34; class=&#34;icon-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; data-original-href=&#34;https://scholar.google.com/citations?hl=en&amp;amp;user=FtzrMYwAAAAJ&#34;&gt;&lt;i class=&#34;ai ai-google-scholar&#34;&gt;&lt;/i&gt; Google Scholar&lt;/a&gt; --&gt;
+&lt;!-- &lt;div style=&#34;text-align: center&#34;&gt;
 &lt;a href=&#34;https://sensr.net/auth/users/sign_up&#34;&gt;
 &lt;button style=&#34;background-color:#a4d61e;margin-top:6px;margin-bottom:16px;border-radius:4px;font-size:1.6em;padding:8px 20px;    font-family: &#34;GibsonSemibold&#34;, &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif;float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)&#34;&gt;
 Sign up for free!
