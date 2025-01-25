@@ -178,6 +178,9 @@ params:
       - name: CV
         url: pages/cv
         weight: 7
+      - name: Writings
+        url: pages/writings
+        weight: 8
       - name: Personal
         url: pages/personal
         weight: 10
