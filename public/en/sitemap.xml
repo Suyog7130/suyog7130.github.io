@@ -129,5 +129,7 @@
     <loc>http://localhost:1313/series/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/talks/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/writings/</loc>
   </url>
 </urlset>

@@ -33,6 +33,7 @@ redirect_from:
 * [soundsofspacetime](https://www.soundsofspacetime.org/the-basics-of-binary-coalescence.html)
 * [Zotero](https://www.zotero.org/) : Best way to maintain your Research Paper library !
 * [Icons](https://iconbuddy.com/) : Set of Icons to use readily.
+* [CSS-Timelines](https://freefrontend.com/css-timelines/)
 
 
 
