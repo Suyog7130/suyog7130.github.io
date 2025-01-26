@@ -232,6 +232,7 @@ I serve as a Teaching Assistant for the Graduate-level &amp;ldquo;Graviational-W
 &lt;li&gt;&lt;a href=&#34;https://www.soundsofspacetime.org/the-basics-of-binary-coalescence.html&#34;&gt;soundsofspacetime&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt; : Best way to maintain your Research Paper library !&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://iconbuddy.com/&#34;&gt;Icons&lt;/a&gt; : Set of Icons to use readily.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://freefrontend.com/css-timelines/&#34;&gt;CSS-Timelines&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;div style=&#34;object-position:center; text-align:center&#34;&gt;
@@ -295,6 +296,40 @@ database
 {% endfor %}
 
 --&gt;</description>
+    </item>
+    <item>
+      <title>Writings</title>
+      <link>http://localhost:1313/pages/writings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/writings/</guid>
+      <description>&lt;h2 id=&#34;popular-science-articles&#34;&gt;Popular Science Articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;S. Garg. Mathematics of the Evolution Game. Bhavana magazine, 2024. (submitted).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;S. Garg. Removing Noise in Gravitational-Wave Signals. Science Reporter, 2022.
+ 
+&lt;br/&gt;
+&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;a href=&#34;http://nopr.niscpr.res.in/handle/123456789/61105&#34;&gt;URL&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;general-writings&#34;&gt;General Writings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;उसके श्रम के वह आँसू (कविता)। Komaba Times, Issue 14. Apr 2025.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;इस देश में बसंत (कविता)। Oct 2024.
+ 
+&lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;&lt;a href=&#34;https://vaishvikhindi.com/posts/5620&#34;&gt;vaishvikhindi.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nippon Connection : Connecting Japan to the world, in a filmy way!. Komaba Times, Issue 13 (Digital Issue). Apr 2024.
+ 
+&lt;i class=&#34;fa fa-link&#34;&gt;&lt;/i&gt;
+&lt;a href=&#34;https://online.fliphtml5.com/parat/aehs/#p=1&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
