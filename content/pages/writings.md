@@ -21,7 +21,7 @@ hideTags: true
 
 ## General Writings
 
-- उसके श्रम के वह आँसू (कविता)। Komaba Times, Issue 14. Apr 2025. 
+- उसके श्रम के वह आँसू (कविता)। Jan 2025. 
 - इस देश में बसंत (कविता)। Oct 2024.
 &nbsp;
 <i class="fa fa-external-link-alt">&nbsp;</i>[vaishvikhindi.com](https://vaishvikhindi.com/posts/5620)
