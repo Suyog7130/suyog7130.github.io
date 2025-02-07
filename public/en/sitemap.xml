@@ -92,6 +92,16 @@
     <loc>http://localhost:1313/posts/2023-01-23-blog-post-2/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pages/personal/books/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/personal/languages/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/personal/movies/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/publications/pubs-authorwise/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/publications/pubs-yrwise/</loc>
+  </url><url>
     <loc>http://localhost:1313/posts/icons/</loc>
   </url><url>
     <loc>http://localhost:1313/posts/papermod-website/</loc>
@@ -129,6 +139,8 @@
     <loc>http://localhost:1313/series/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/talks/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/tips/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/writings/</loc>
   </url>
