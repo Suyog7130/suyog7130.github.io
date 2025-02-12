@@ -22,9 +22,11 @@ hideTags: true
 ## General Writings
 
 - उसके श्रम के वह आँसू (कविता)। Jan 2025. 
+<i class="fa fa-external-link-alt">&nbsp;</i>[vaishvikhindi/posts/8528](https://vaishvikhindi.com/posts/8528)
+
 - इस देश में बसंत (कविता)। Oct 2024.
 &nbsp;
-<i class="fa fa-external-link-alt">&nbsp;</i>[vaishvikhindi.com](https://vaishvikhindi.com/posts/5620)
+<i class="fa fa-external-link-alt">&nbsp;</i>[vaishvikhindi/posts/5620](https://vaishvikhindi.com/posts/5620)
 
 - Nippon Connection : Connecting Japan to the world, in a filmy way!. Komaba Times, Issue 13 (Digital Issue). Apr 2024.
 &nbsp;
