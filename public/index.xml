@@ -343,6 +343,13 @@
       <description>&lt;p&gt;dfasdf&lt;/p&gt;</description>
     </item>
     <item>
+      <title></title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;p&gt;This page contains a list of my academic and personal projects.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>About</title>
       <link>http://localhost:1313/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1092,12 +1099,13 @@ database
 &lt;h2 id=&#34;general-writings&#34;&gt;General Writings&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;उसके श्रम के वह आँसू (कविता)। Jan 2025.&lt;/p&gt;
+&lt;p&gt;उसके श्रम के वह आँसू (कविता)। Jan 2025.
+&lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;&lt;a href=&#34;https://vaishvikhindi.com/posts/8528&#34;&gt;vaishvikhindi/posts/8528&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;इस देश में बसंत (कविता)। Oct 2024.
  
-&lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;&lt;a href=&#34;https://vaishvikhindi.com/posts/5620&#34;&gt;vaishvikhindi.com&lt;/a&gt;&lt;/p&gt;
+&lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;&lt;a href=&#34;https://vaishvikhindi.com/posts/5620&#34;&gt;vaishvikhindi/posts/5620&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Nippon Connection : Connecting Japan to the world, in a filmy way!. Komaba Times, Issue 13 (Digital Issue). Apr 2024.
