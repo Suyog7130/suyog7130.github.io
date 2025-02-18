@@ -58,82 +58,12 @@
 &lt;li&gt;💞️ Would be awesome to collaborate on a computational project.&lt;/li&gt;
 &lt;li&gt;📫 Catch up about my work on this website.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- Wobble Text --&gt;
-&lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
-.wobble {
-  font-size: 20px;
-  color: #A52A2A;
-  font-weight: bold;
-  display: inline-block;
-}
-
-@keyframes wobb {
-  0%, 100%   {transform: translateY(0px)}
-  25%  {transform: translateY(-3px)}
-  75%  {transform: translateY(3px)}
-}
-
-.wobble span {
-  animation-name: wobb;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 400ms;
-  display: inline-block;
-  transform: translateY(0px);
-}
-
-.spacer {
-  height: 100px;
-}
-
-.text {
-	padding: 0.5rem;
-	vertical-align: middle;
-	display: inline-block;
-}
-&lt;/style&gt;
-&lt;!-- wobble class needs to be defined before the JS code that makes the text wobble, and there seems to be a problem with the word spacing with,
-Okay, I slightly modified the JS code to have word wobbling instead of individual letters and then added spacing between the returned wobbling words.
-See and experiment: https://codepen.io/queenadreena/pen/oKGyYq
-hmm... the hyperlink doesn&#39;t work when wobbling :(
-okay, I did plethora of things, but on webpage upload the wobbling stops and it doens&#39;t seem to be a `table` env problem. So, let&#39;s not have this up on the webpage for now.
-And also, perhaps, having this manual public isn&#39;t the best of the ideas, that Ueda-san can be nasty, when she wants to be, haha!
---&gt;
-&lt;!--
-&lt;div class=&#34;wobble_container&#34;&gt;
-&lt;div class=&#34;wobble&#34;&gt;RESCEU  Admin  Manual  (English)&lt;/div&gt;
-&lt;div class=&#34;text&#34;&gt;
-	&lt;span style=&#34;font-size:50px;&#34;&gt; &amp;#9758; &lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&#34;text&#34;&gt;
-	&lt;a style=&#34;font-size: 30px;&#34; href=&#34;https://www.dropbox.com/scl/fi/99f7j738igzathsmx80fx/RESCEU-Adminitrative-Procedure-Manual-English.pdf?rlkey=2pbwv4jpqwul0kppqsowkw77k&amp;dl=0&#34;&gt;click here!&lt;/a&gt;
-&lt;/div&gt;
-&lt;script&gt;
-// Create array of any elements with &#34;wobble&#34; class
-const all = document.querySelectorAll(&#39;.wobble&#39;);
-// Iterate through each &#34;wobble&#34;
-all.forEach(el =&gt; {
-  // Get the text content of the element
-  let text = el.textContent;
-  // Create an array of separate letters
-  text = text.split(&#34;&#34;);
-  // Iterate through each letter and give it its own span element and individual animation delay offset
-  const textCode = text.map((x, idx) =&gt; {
-    let delay = (idx + 1) * 50;
-    return `&lt;span style=&#34;animation-delay: ${delay}ms&#34;&gt;${x}&lt;/span&gt;`;
-  })
-  // replace the element&#39;s html with our dynamically created html
-  el.innerHTML = textCode.join(&#34; &#34;);
-});
-&lt;/script&gt;
-&lt;/div&gt;
---&gt;
-&lt;!-- Timeline --&gt;
+&lt;!-- More Details --&gt;
 &lt;div style=&#34;object-position:center; text-align:center&#34;&gt;
 &lt;details&gt;
 	&lt;summary&gt;
 	&lt;p style=&#34;text-align:center; font-family:mistral; font-size:24px&#34;&gt;
-	  Timeline
+	  A Bit More Detail
 	&lt;/p&gt;</description>
     </item>
     <item>
@@ -203,6 +133,15 @@ Service and leadership
 * Currently signed in to 43 different slack teams
 
 --&gt;</description>
+    </item>
+    <item>
+      <title>Ideas</title>
+      <link>http://localhost:1313/pages/ideas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/ideas/</guid>
+      <description>&lt;p&gt;Myriad of different ideas, often eccentric, come up to my mind every now and then. Sometimes I get to work on them, usually the just lie there at the back of the mind accumulating dust.&lt;/p&gt;
+&lt;p&gt;This is semi-complete list of my ideas. I would love if you can work on any of them or provide your insights.
+Start by opening up a discussion in a Gist using the button provided !&lt;/p&gt;</description>
     </item>
     <item>
       <title>News</title>

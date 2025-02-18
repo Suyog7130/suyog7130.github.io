@@ -21,12 +21,35 @@ redirect_from:
 
 <h3> Here's some fun facts about me: </h3>
 
-- 👋 Heya, this is Suyog.
-- 👀 I adore Books, Places and Astrophysics.
-- 🌱 I research on using Machine Learning for Gravitational-Wave detection.
-- 💻 I have experience in Data Analysis, Numerical Solvers and Deep Neural Nets.
-- 💞️ Would be awesome to collaborate on a computational project.
-- 📫 Catch up about my work on this website.
+&nbsp;&nbsp;👋&nbsp;&nbsp; Heya, this is Suyog. I am a Physics PhD student @ UTokyo.
+	
+&nbsp;&nbsp;👀&nbsp;&nbsp; I love Astrophysics, Books, Places and People.
+	
+&nbsp;&nbsp;🌱&nbsp;&nbsp; My research is on using Machine Learning for Gravitational-Wave Detections.
+	
+&nbsp;&nbsp;💻&nbsp;&nbsp; I have experience in Data Analysis, Numerical Solvers and Deep Neural Networks.
+	
+&nbsp;&nbsp;💞️&nbsp;&nbsp; It would be awesome to collaborate on a computational project together :)
+	
+&nbsp;&nbsp;📫&nbsp;&nbsp; Catch up about my work on this website ~
+
+
+<!-- More Details -->
+
+
+<div style="object-position:center; text-align:center">
+<details>
+	<summary>
+	<p style="text-align:center; font-family:mistral; font-size:24px">
+	  A Bit More Detail
+	</p>
+	</summary>
+	I am supported by the MEXT Scholarship and the ASPIRE program.
+</details>
+</div>
+
+
+
 
 <!-- Wobble Text -->
 <style type="text/css" media="screen">
