@@ -122,6 +122,8 @@
   </url><url>
     <loc>http://localhost:1313/posts/portfolio/</loc>
   </url><url>
+    <loc>http://localhost:1313/pages/ideas/</loc>
+  </url><url>
     <loc>http://localhost:1313/pages/news/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/</loc>
