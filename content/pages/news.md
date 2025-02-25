@@ -35,52 +35,59 @@ Sign up for free!
 
 
 <i class="fa fa-paper-plane">&nbsp;</i>
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
 2024年10月 ー 2025年02月
 <br/>
-<span style="color:darkblue; font-weight:bold">[Academic]</span> 
 I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (once again :)
 
 <i class="fa fa-paper-plane">&nbsp;</i>
+<span style="color:green; font-weight:bold">[Talk]</span>
+&nbsp;
 2024年08月02日
 <br/>
-<span style="color:green; font-weight:bold">[Talk]</span>
 Gave an invited talk at the "Eccentric Seminar" at Tokyo City University 
 <br/>
 $\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
 <a href="https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&dl=0">Slides</a>
 
 <i class="fa fa-paper-plane">&nbsp;</i>
+<span style="color:green; font-weight:bold">[Talk]</span>
+&nbsp;
 2024年07月06日
 <br/>
-<span style="color:green; font-weight:bold">[Talk]</span>
 Presentation at the Department of Physics Open House for prospective International student at UTokyo
 $\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
 <a href="https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&dl=0">Slides</a>
 
 <i class="fa fa-paper-plane">&nbsp;</i>
+<span style="color:green; font-weight:bold">[Talk]</span>
+&nbsp;
 2024年06月20日
 <br/>
-<span style="color:green; font-weight:bold">[Talk]</span>
 Gave a talk at RESCEU-UTAP Thursday Seminar
 $\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
 <a href="https://www.dropbox.com/scl/fi/d7rvscuzuf3462wbtirog/thurs-seminar-240620-talk.pdf?rlkey=pxnfixmqqaplledvruua56du6&dl=0">Slides</a>
 
 <i class="fa fa-paper-plane">&nbsp;</i>
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
 2024年04月〜
 <br/>
-<span style="color:darkblue; font-weight:bold">[Academic]</span>
 I will be hosting the RESCEU-UTAP Thursday seminars starting next term ! 
   
 <i class="fa fa-paper-plane">&nbsp;</i>
+<span style="color:green; font-weight:bold">[Poster]</span> 
+&nbsp;
 2024年03月11ー14日
 <br/>
-<span style="color:green; font-weight:bold">[Poster]</span> 
 I will be participating in the [LVK collaboration meeting](https://www.lsu.edu/physics/lvkmeeting/index.php) at Louisiana State Univesity, Baton Rouge.
 
 <i class="fa fa-paper-plane">&nbsp;</i>
+<span style="color:darkgreen; font-weight:bold">[Academic]</span>
+&nbsp;
 2024年01月16ー28日
 <br/>
-<span style="color:darkgreen; font-weight:bold">[Academic]</span>
 Visited Prof Gopu's lab in the Department of Astronomy at TIFR, Mumbai !
       
 <!-- Older News -->
