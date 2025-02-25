@@ -26,6 +26,64 @@ redirect_from:
 <!-- end Google Calendar Appointment Scheduling -->
 
 
+<!-- General Introduction -->
+
+Academics and Research occupy a majority of day, or for that matter, my night time, but they are still just a part of my life. In addition to those, I love all of the followings :
+
+- Books : I am a reader !
+- Writing :
+- 
+- Organizing Events
+- A really attractive and popular womanizer ! (okayy, this one's for joke, haha~)
+<!-- - There's a bit of a more hidden side to me too, but you are highly likely to never be able to be intimate with that !-->
+
+<div style="text-align: center">
+
+<a href="https://sensr.net/auth/users/sign_up">
+<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif, Lato, Mistral,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
+Sign up for free!
+</button>
+</a>
+
+<a href="https://sensr.net/auth/users/sign_up">
+<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
+Sign up for free!
+</button>
+</a>
+
+<a href="https://sensr.net/auth/users/sign_up">
+<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif, Lato, Mistral,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
+Sign up for free!
+</button>
+</a>
+
+<a href="https://sensr.net/auth/users/sign_up">
+<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif, Lato, Mistral,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
+Sign up for free!
+</button>
+</a>
+
+<a href="https://sensr.net/auth/users/sign_up">
+<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif, Lato, Mistral,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
+Sign up for free!
+</button>
+</a>
+
+</div>
+
+<a href="https://sensr.net/auth/users/sign_up">
+<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:1px; font-size:20px; padding:3px 10px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
+Sign up for free!
+</button>
+</a>
+&nbsp;
+<a href="https://sensr.net/auth/users/sign_up">
+<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif, Lato, Mistral,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
+Sign up for free!
+</button>
+</a>
+
+
 ### Useful links
 
 * [http://hilite.me/](http://hilite.me/) : Code to HTML  formatter for emailing code etc.
