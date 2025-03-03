@@ -12,7 +12,42 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Mon, 03 Mar 2025 21:10:16 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conferences and Workshops</title>
+      <link>http://localhost:1313/pages/personal/conferences/</link>
+      <pubDate>Mon, 03 Mar 2025 21:10:16 +0900</pubDate>
+      <guid>http://localhost:1313/pages/personal/conferences/</guid>
+      <description>&lt;p&gt;List of most of the Conferences and Workshops I have undertaken or am going to :&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Upcoming&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2026
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年09月  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; LIGO India  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Pune?, India&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LIGO-Virgo-KAGRA Meeting Spring 2026
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年03月  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; VIRGO  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Cascina, Italy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2nd I&amp;rsquo;nt Conference on Physics of the Two Infinities
+[&lt;a href=&#34;https://indico.in2p3.fr/event/35255/&#34;&gt;website&lt;/a&gt;]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年11月17-21日  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; UTokyo  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Tokyo, Japan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2025
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年09月  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Colorado State University  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA&lt;/p&gt;</description>
+    </item>
     <item>
       <title></title>
       <link>http://localhost:1313/pages/personal/languages/</link>
@@ -154,10 +189,17 @@ Sign up for free!
 --&gt;
 &lt;!--&lt;span class=&#34;btn cstyle interactive transparent&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
 &lt;span class=&#34;btn cstyle interactive warning&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;i class=&#34;fa-fw fas fa-dog&#34;&gt;&lt;/i&gt; &lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;--&gt;
-&lt;p&gt;&lt;i class=&#34;fa fa-paper-plane&#34;&gt; &lt;/i&gt;
-2024年10月 ー 2025年02月
+&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Poster]&lt;/span&gt;
+ 
+&lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
+2025年03月24-28日
 &lt;br/&gt;
-&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt;
+Presenting a Poster at the LVK Meeting in Monash University, Melbourne.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt;
+ 
+&lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
+2024年10月 ー 2025年02月
+&lt;/br&gt;
 I serve as a Teaching Assistant for the Graduate-level &amp;ldquo;Graviational-Wave Physics&amp;rdquo; Course ! (once again :)&lt;/p&gt;</description>
     </item>
     <item>
@@ -260,7 +302,21 @@ database
  • 
 &lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;
 &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;URL&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. &lt;a href=&#34;https://doi.org/10.3847/2515-5172/ab3fa&#34;&gt;URL&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;ul&gt;
+&lt;li&gt;S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. &lt;a href=&#34;https://doi.org/10.3847/2515-5172/ab3fa&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;in-collaboration&#34;&gt;In Collaboration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A. M. Price-Whelan, others, Astropy Collaboration, and Astropy Project Contributors. The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package. ApJ, 935(2):167, Aug. 2022, 2206.14220. &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ac7c74&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;S. Bapat et al. EinsteinPy: A Community Python Package for General Relativity. arXiv e-prints, May 2020, 2005.11288. &lt;a href=&#34;https://arxiv.org/abs/2005.11288&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;conference-papers&#34;&gt;Conference Papers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;S. Sasaoka, Y. Hou, D. S. Dominguez, S. Garg, N. Koyama, Y. Sakai, Y. Omae, K. Somiya, and H. Takahashi. Deep Learning for Detecting Gravitational Waves from Compact Binary Coalescences and Its Visualization by Grad-CAM. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1498, 2023.
+ 
+&lt;i class=&#34;ai ai-doi&#34;&gt;&lt;/i&gt;
+&lt;a href=&#34;https://doi.org/10.22323/1.444.1498&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Talks and presentations</title>
