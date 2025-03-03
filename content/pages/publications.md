@@ -43,7 +43,7 @@ S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in
 <i class="fa fa-external-link-alt">&nbsp;</i>
 <a href="https://doi.org/10.3847/1538-4357/ab4a17">URL</a>
 
-S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. [URL](https://doi.org/10.3847/2515-5172/ab3fa).
+- S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. [URL](https://doi.org/10.3847/2515-5172/ab3fa).
 
 ### In Collaboration
 

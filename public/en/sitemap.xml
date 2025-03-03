@@ -8,17 +8,11 @@
     <loc>http://localhost:1313/posts/2021-05-09-blog-post-1/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-11-28-blog-post-10/</loc>
-    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/software/</loc>
-    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/pages/</loc>
+    <lastmod>2025-03-03T23:42:31+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-03T23:42:31+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hi"
@@ -34,6 +28,21 @@
                 hreflang="en"
                 href="http://localhost:1313/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/pages/personal/conferences/</loc>
+    <lastmod>2025-03-03T21:10:16+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/multilingual/</loc>
+    <lastmod>2025-02-25T23:54:49+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024-11-28-blog-post-10/</loc>
+    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/software/</loc>
+    <lastmod>2024-11-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-11-28T00:00:00+00:00</lastmod>
@@ -127,8 +136,6 @@
     <loc>http://localhost:1313/pages/ideas/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/news/</loc>
-  </url><url>
-    <loc>http://localhost:1313/pages/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/personal/</loc>
   </url><url>
