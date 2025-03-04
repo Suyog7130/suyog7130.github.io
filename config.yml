@@ -156,10 +156,12 @@ params:
     # imageWidth: 120
     # imageHeight: 120
     subtitle: "Physics PhD @ UTokyo"
+    # newsTitle: "Recent News"
+    # newsBox: True
     news:
-      - date: "2021-09-01"
+      - date: "2025-03-09"
         type: ""
-        content: "I have started my PhD at the University of Tokyo."
+        content: "Visiting Monash University in Melbourne, Australia."
       # - date: "2021-09-01"
       #   type: "Academics"
       #   content: "I have started my PhD at the University of Tokyo."
