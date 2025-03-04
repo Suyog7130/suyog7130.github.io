@@ -38,7 +38,14 @@
         {{- if .news }}
         <div class="news">
             <br/>
-            <p style="font-family: mystral; font-size: 24;">News</p>
+            {{- if .newsTitle }}
+                <p style="font-family: mistral; font-size: 28px;">{{ .newsTitle }}</p>
+            {{- end}}
+            {{- if .newsBox }}
+                <div style="border: 2px; border-style: solid; border-color: #c3c1c1; padding: 10px; margin-top: 3px;">
+            {{- else }}
+                <div>
+            {{- end}}
             <ul class="fa-ul">
                 {{- range .news }}
                 <li>
@@ -47,12 +54,13 @@
                     &nbsp;•&nbsp;
                     {{- if .type}}
                         <span>[{{ .type }}]&nbsp;{{ .content }}</span>
-                    {{ else }}
+                    {{- else }}
                         <span>{{ .content }}</span>
                     {{- end}}
                 </li>
                 {{- end }}
             </ul>
+            </div>
             <br/>
         </div>
         {{- end }}
