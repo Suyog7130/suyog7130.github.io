@@ -44,7 +44,7 @@ redirect_from:
 	  A Bit More Detail
 	</p>
 	</summary>
-I am supported by the MEXT Scholarship and the ASPIRE program.
+I am supported by the MEXT Scholarship and the ASPIRE-GW program.
 </br></br>
 </details>
 </div>

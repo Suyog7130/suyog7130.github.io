@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Mon, 03 Mar 2025 23:42:31 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Don&#39;t ask for Git passphrase on each commit</title>
@@ -27,142 +27,6 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2021-05-09-blog-post-1/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
-    </item>
-    <item>
-      <title>Timeline</title>
-      <link>http://localhost:1313/pages/personal/timeline/</link>
-      <pubDate>Mon, 03 Mar 2025 23:42:31 +0900</pubDate>
-      <guid>http://localhost:1313/pages/personal/timeline/</guid>
-      <description>&lt;!--the below was just non-sense !!!!--&gt;
-&lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
-@import url(&#39;https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&amp;display=swap&#39;);
-.design-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: ;
-  min-height: 100vh;
-  padding: 50px 0;
-  font-family: Jost;
-}
-
-.design {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.timeline {
-  width: 80%;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.timeline-content {
-  padding: 20px;
-  background:;
-  border-radius: 5px;
-  color:;
-  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-          box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-  padding: 1.75rem;
-  transition: 0.4s ease;
-  overflow-wrap: break-word !important;
-  margin: 1rem;
-  margin-bottom: 20px;
-  border-radius: 6px;
-}
-
-.timeline-component {
-  margin: 0px 20px 20px 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .timeline {
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
-  }
-  .timeline-middle {
-    position: relative;
-    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
-    width: 3px;
-    height: 100%;
-  }
-  .main-middle {
-    opacity: 0;
-  }
-  .timeline-circle {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-&lt;/style&gt;
-&lt;style&gt;@import url(&#39;https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&amp;display=swap&#39;);&lt;/style&gt;
-&lt;!--This is the main container that contains the whole timeline.--&gt;
-&lt;section class=&#34;design-section&#34;&gt;
-&lt;div class=&#34;timeline&#34;&gt;
-&lt;!--Well, The reason for this div is to fill space. 
-This space is technically used for keeping dates, 
-but I didn&#39;t find the need for dates. However, I&#39;ll provide 
-you the styling for dates, so that you can use it if you 
-wanted to. 
---&gt;
-                  &lt;div class=&#34;timeline-empty&#34;&gt;
-                  &lt;/div&gt;
-&lt;!--This is the class where the timeline graphics are 
-housed in. Note that we have timeline-circle 
-here for that pointer in timeline.--&gt;
-               &lt;div class=&#34;timeline-middle&#34;&gt;
-                   &lt;div class=&#34;timeline-circle&#34;&gt;&lt;/div&gt;
-               &lt;/div&gt;
-               &lt;div class=&#34;timeline-component timeline-content&#34;&gt;
-                &lt;h3&gt;HTML&lt;/h3&gt;
-                &lt;p&gt;Some Text&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Conferences and Workshops</title>
-      <link>http://localhost:1313/pages/personal/conferences/</link>
-      <pubDate>Mon, 03 Mar 2025 21:10:16 +0900</pubDate>
-      <guid>http://localhost:1313/pages/personal/conferences/</guid>
-      <description>&lt;p&gt;List of most of the Conferences and Workshops I have undertaken or am going to :&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;Upcoming&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2026
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年09月  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; LIGO India  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Pune?, India&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;LIGO-Virgo-KAGRA Meeting Spring 2026
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年03月  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; VIRGO  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Cascina, Italy&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2nd I&amp;rsquo;nt Conference on Physics of the Two Infinities
-[&lt;a href=&#34;https://indico.in2p3.fr/event/35255/&#34;&gt;website&lt;/a&gt;]
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年11月17-21日  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; UTokyo  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Tokyo, Japan&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2025
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年09月  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Colorado State University  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to manage your Research Papers Library ?</title>
@@ -427,20 +291,6 @@ here for that pointer in timeline.--&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mlgwsc-work/injections4_1.25s.npy
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mlgwsc-work/real_noise_file.hdf
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Useful links:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/pages/personal/languages/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/personal/languages/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/pages/personal/movies/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/personal/movies/</guid>
-      <description></description>
     </item>
     <item>
       <title></title>
@@ -1022,6 +872,7 @@ I serve as a Teaching Assistant for the Graduate-level &amp;ldquo;Graviational-W
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/personal/</guid>
       <description>&lt;!-- Google Calendar Appointment Scheduling begin --&gt;
+&lt;div&gt;
 &lt;link href=&#34;https://calendar.google.com/calendar/scheduling-button-script.css&#34; rel=&#34;stylesheet&#34;&gt;
 &lt;script src=&#34;https://calendar.google.com/calendar/scheduling-button-script.js&#34; async&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -1037,50 +888,117 @@ I serve as a Teaching Assistant for the Graduate-level &amp;ldquo;Graviational-W
   });
 })();
 &lt;/script&gt;
+&lt;/div&gt;
 &lt;!-- end Google Calendar Appointment Scheduling --&gt;
 &lt;!-- General Introduction --&gt;
-&lt;p&gt;Academics and Research occupy a majority of day, or for that matter, my night time, but they are still just a part of my life. In addition to those, I love all of the followings :&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Personal</title>
-      <link>http://localhost:1313/pages/personal/books/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/personal/books/</guid>
-      <description>&lt;!-- Goodreads Block --&gt;
-&lt;!-- Have the Goodreads widget embedded inside a widget container that has title --&gt;
+&lt;br/&gt;
+Academics and Research occupy a majority of day, or for that matter, my night time, but they are still just a part of my life. In addition, I am fond of the following pleasures, a bit too fond of some of them :
+&lt;br/&gt;
+&lt;!-- - Books : I am a reader !
+- Writing :
+- Organizing Events --&gt;
+&lt;!-- - Girls--&gt;
+&lt;!-- - A really attractive and popular womanizer ! (okayy, this one&#39;s for joke, haha~)--&gt;
+&lt;!-- - There&#39;s a bit of a more hidden side to me too, but you are highly likely to never be able to be intimate with that !--&gt;
+&lt;!-- tried the prev button option, but the current one is better! --&gt;
+&lt;!--&lt;div style=&#34;text-align: center&#34;&gt;
+&lt;a href=&#34;https://sensr.net/auth/users/sign_up&#34;&gt;
+&lt;button style=&#34;background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:1px; font-size:20px; padding:3px 10px; font-family: &#34;GibsonSemibold&#34;, &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)&#34;&gt;
+Sign up for free!
+&lt;/button&gt;
+&lt;/a&gt;
+&amp;nbsp;
+&lt;a href=&#34;https://sensr.net/auth/users/sign_up&#34;&gt;
+&lt;button style=&#34;background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: &#34;GibsonSemibold&#34;, &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif, Lato, Mistral,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)&#34;&gt;
+Sign up for free!
+&lt;/button&gt;
+&lt;/a&gt;
+&lt;/div&gt;--&gt;
+&lt;!-- this could be copied to `profile-mode.css` --&gt;
 &lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
-  .widget-title {
-    font-family: mistral;
-    font-size: 35px;
-    text-align: center;
-    }
-  .gr-widget {
-    text-align: center;
+.buttons_custom{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .gr_grid_container {
-    /* customize grid container div here. eg: width: 500px; */   }
-
-  .gr_grid_book_container {
-    /* customize book cover container div here */
-    float: left;
-    width: 100px;
-    height: 160px;
-    padding: 0px 0px;
-    overflow: hidden;
-  }
+    flex-wrap: wrap;
+    border-radius: 3px;
+    gap: 5px;
+    margin: 0px ;
+    padding: 6px;
+    flex-direction: row;
+    &lt;!--font-size: 20px;--&gt;
+}
+.buttontwo{
+    background: var(--tertiary);
+    border-radius: 3px;
+    margin: 6px;
+    justify-content: center;
+    max-width: 220px;
+    padding: 30px 20px; &lt;!-- (all) (hori) --&gt;
+    transition: transform 0.1s;
+}
 &lt;/style&gt;
-&lt;div class=&#34;widget-container&#34;&gt;
-  &lt;div class=&#34;widget-title&#34;&gt;All My Reads&lt;/div&gt;
-  &lt;div class=&#39;gr-widget&#39;&gt;
-  &lt;div id=&#34;gr_grid_widget_1698242812&#34;&gt;
-      &lt;!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work --&gt;
-    &lt;p&gt;
-    &lt;a style=&#34;text-align: center; font-family: mistral; font-size: 35px;&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/review/list/19982554-suyog-garg?shelf=read&amp;utm_medium=api&amp;utm_source=grid_widget&#34;&gt;My Recent Reads&lt;/a&gt;
-    &lt;/p&gt;</description>
+&lt;!--&lt;div class=&#34;buttons&#34; style=&#34;text-align:center;&#34;&gt;--&gt;
+&lt;div class=&#34;buttons_custom&#34; class=&#34;buttons&#34; style=&#34;text-align:center;&#34;&gt;
+&lt;a class=&#34;buttontwo&#34; href=&#34;books/&#34; rel=&#34;noopener&#34; title=&#34;books&#34; style=&#34;text-align:center&#34;&gt;
+	&lt;span class=&#34;button&#34; style=&#34;font-weight:bold;&#34;&gt;
+                Books  
+	&lt;/span&gt;
+	&lt;br/&gt;
+	I love reading Books!
+&lt;/a&gt;
+&lt;a class=&#34;buttontwo&#34; href=&#34;../writings/&#34; rel=&#34;noopener&#34; title=&#34;&#34; style=&#34;text-align:center&#34;&gt;
+	&lt;span class=&#34;button&#34; style=&#34;font-weight:bold;&#34;&gt;
+                Writing  
+	&lt;/span&gt;
+	&lt;br/&gt;
+	I am a published writer, albiet a minor one!
+&lt;/a&gt;
+&lt;a class=&#34;buttontwo&#34; href=&#34;../writings/&#34; rel=&#34;noopener&#34; title=&#34;&#34; style=&#34;text-align:center&#34;&gt;
+	&lt;span class=&#34;button&#34; style=&#34;font-weight:bold;&#34;&gt;
+                Poems  
+	&lt;/span&gt;
+	&lt;br/&gt;
+	Read some of my Poems here !
+&lt;/a&gt;
+&lt;a class=&#34;buttontwo&#34; href=&#34;events/&#34; rel=&#34;noopener&#34; title=&#34;&#34; style=&#34;text-align:center&#34;&gt;
+	&lt;span class=&#34;button&#34; style=&#34;font-weight:bold;&#34;&gt;
+                Events  
+	&lt;/span&gt;
+	&lt;br/&gt;
+	I love organizing events. Hope to see ya in one soon~
+&lt;/a&gt;
+&lt;a class=&#34;buttontwo&#34; href=&#34;places/&#34; rel=&#34;noopener&#34; title=&#34;books&#34; style=&#34;text-align:center&#34;&gt;
+	&lt;span class=&#34;button&#34; style=&#34;font-weight:bold;&#34;&gt;
+                Places  
+	&lt;/span&gt;
+	&lt;br/&gt;
+	Love travelling !
+&lt;/a&gt;
+&lt;a class=&#34;buttontwo&#34; href=&#34;movies/&#34; rel=&#34;noopener&#34; title=&#34;&#34; style=&#34;text-align:center&#34;&gt;
+	&lt;span class=&#34;button&#34; style=&#34;font-weight:bold;&#34;&gt;
+                Movies  
+	&lt;/span&gt;
+	&lt;br/&gt;
+	Once every two weeks, to the Cinema we go!
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;useful-links&#34;&gt;Useful links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://hilite.me/&#34;&gt;http://hilite.me/&lt;/a&gt; : Code to HTML  formatter for emailing code etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://suyoggarg.com/letterboxd-page/&#34;&gt;letterboxd-page/&lt;/a&gt; : Page to create custom letterboxd diary embedding, in the same manner as seen on this website.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.soundsofspacetime.org/the-basics-of-binary-coalescence.html&#34;&gt;soundsofspacetime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt; : Best way to maintain your Research Paper library !&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://iconbuddy.com/&#34;&gt;Icons&lt;/a&gt; : Set of Icons to use readily.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://freefrontend.com/css-timelines/&#34;&gt;CSS-Timelines&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;div style=&#34;object-position:center; text-align:center&#34;&gt;
+&lt;details&gt;
+	&lt;summary&gt;
+	&lt;p style=&#34;font-family: mistral;&#34;&gt;
+	Reading &amp; Cinema
+	&lt;/p&gt;</description>
     </item>
     <item>
       <title>Publications</title>
