@@ -23,7 +23,9 @@ database
 
 ### Journal Articles (Published)
 
+
 S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148.
+<span class="__dimensions_badge_embed__" data-doi="10.3847/1538-4357/ab4a17" data-hide-zero-citations="true" data-style="small_rectangle" style="white-space:nowrap;"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <br/>
 <i class="fa fa-file-pdf">&nbsp;</i>
 <a href="https://doi.org/10.3847/1538-4357/ab4a17">Paper</a>
