@@ -44,19 +44,26 @@
 
         {{- if .news }}
         <div>
-            <br/>
             {{- if .newsTitle }}
-                <p style="font-family: mistral; font-size: 28px;">{{ .newsTitle }}</p>
+                {{- if .newsTitleUnderline }}
+                <p style="font-family: mistral; font-size: 28px; text-decoration: underline; text-underline-offset: 3px;">
+                {{- else }}
+                <p style="font-family: mistral; font-size: 28px;">
+                {{- end }}
+                    {{ .newsTitle }}
+                </p>
+            {{- else}}
+                <br/>
             {{- end}}
             {{- if .newsBox }}
                 <div style="border: 2px; border-style: solid; border-color: #c3c1c1; padding: 10px; margin-top: 3px;">
             {{- else }}
                 <div>
             {{- end}}
-            <ul class="fa-ul" style="text-align: center; list-style-position: inside;">
+            <ul class="fa-ul" style="margin-left: 0%; text-align: center; list-style-position: inside;">
                 {{- range .news }}
                 <li>
-                    <i class="fas fa-paper-plane">&nbsp;</i>
+                    <i class="fas fa-bullhorn">&nbsp;</i>
                     {{- if .date}}
                         <time datetime="{{ .date }}">{{ dateFormat "2006/01/02" .date }}</time>
                         &nbsp;•&nbsp;
