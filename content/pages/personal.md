@@ -8,6 +8,7 @@ redirect_from:
 ---
 
 <!-- Google Calendar Appointment Scheduling begin -->
+<div>
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 <script>
@@ -23,54 +24,27 @@ redirect_from:
   });
 })();
 </script>
+</div>
 <!-- end Google Calendar Appointment Scheduling -->
 
 
 <!-- General Introduction -->
+<br/>
+Academics and Research occupy a majority of day, or for that matter, my night time, but they are still just a part of my life. In addition, I am fond of the following pleasures, a bit too fond of some of them :
+<br/>
 
-Academics and Research occupy a majority of day, or for that matter, my night time, but they are still just a part of my life. In addition to those, I love all of the followings :
-
-- Books : I am a reader !
+<!-- - Books : I am a reader !
 - Writing :
-- 
-- Organizing Events
-- A really attractive and popular womanizer ! (okayy, this one's for joke, haha~)
+- Organizing Events -->
+<!-- - Girls-->
+<!-- - A really attractive and popular womanizer ! (okayy, this one's for joke, haha~)-->
 <!-- - There's a bit of a more hidden side to me too, but you are highly likely to never be able to be intimate with that !-->
 
-<div style="text-align: center">
 
-<a href="https://sensr.net/auth/users/sign_up">
-<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif, Lato, Mistral,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
-Sign up for free!
-</button>
-</a>
 
-<a href="https://sensr.net/auth/users/sign_up">
-<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
-Sign up for free!
-</button>
-</a>
+<!-- tried the prev button option, but the current one is better! -->
 
-<a href="https://sensr.net/auth/users/sign_up">
-<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif, Lato, Mistral,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
-Sign up for free!
-</button>
-</a>
-
-<a href="https://sensr.net/auth/users/sign_up">
-<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif, Lato, Mistral,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
-Sign up for free!
-</button>
-</a>
-
-<a href="https://sensr.net/auth/users/sign_up">
-<button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:2px; font-size:1.6em; padding:3px 5px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif, Lato, Mistral,; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
-Sign up for free!
-</button>
-</a>
-
-</div>
-
+<!--<div style="text-align: center">
 <a href="https://sensr.net/auth/users/sign_up">
 <button style="background-color:darkgray; margin-top:6px;margin-bottom:10px; border-radius:1px; font-size:20px; padding:3px 10px; font-family: "GibsonSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif; float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)">
 Sign up for free!
@@ -82,6 +56,85 @@ Sign up for free!
 Sign up for free!
 </button>
 </a>
+</div>-->
+
+<!-- this could be copied to `profile-mode.css` -->
+<style type="text/css" media="screen">
+.buttons_custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    gap: 5px;
+    margin: 0px ;
+    padding: 6px;
+    flex-direction: row;
+    <!--font-size: 20px;-->
+}
+.buttontwo{
+    background: var(--tertiary);
+    border-radius: 3px;
+    margin: 6px;
+    justify-content: center;
+    max-width: 220px;
+    padding: 30px 20px; <!-- (all) (hori) -->
+    transition: transform 0.1s;
+}
+</style>
+
+<!--<div class="buttons" style="text-align:center;">-->
+<div class="buttons_custom" class="buttons" style="text-align:center;">
+
+<a class="buttontwo" href="books/" rel="noopener" title="books" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+                Books  
+	</span>
+	<br/>
+	I love reading Books!
+</a>
+
+<a class="buttontwo" href="../writings/" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+                Writing  
+	</span>
+	<br/>
+	I am a published writer, albiet a minor one!
+</a>
+
+<a class="buttontwo" href="../writings/" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+                Poems  
+	</span>
+	<br/>
+	Read some of my Poems here !
+</a>
+
+<a class="buttontwo" href="events/" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+                Events  
+	</span>
+	<br/>
+	I love organizing events. Hope to see ya in one soon~
+</a>
+
+<a class="buttontwo" href="places/" rel="noopener" title="books" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+                Places  
+	</span>
+	<br/>
+	Love travelling !
+</a>
+
+<a class="buttontwo" href="movies/" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+                Movies  
+	</span>
+	<br/>
+	Once every two weeks, to the Cinema we go!
+</a>
+
+</div>
 
 
 ### Useful links

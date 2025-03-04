@@ -104,8 +104,12 @@ Visited Prof Gopu's lab in the Department of Astronomy at TIFR, Mumbai !
 	Older News
 	</summary>
 	
-- <span style="color:darkgreen; font-weight:bold">[Academic]</span> 2023年12月$\sim$
-<br/> I am be one of the [reviewers](https://git.ligo.org/waveforms/reviews/nrtidalv3/-/wikis/home#review-checks-and-review-documentation) for the [NRTidalv3](https://dcc.ligo.org/G2302143) waveform model ! My contributions will be on _Time Domain Behavior_ and _Documentation_. 
+
+<i class="fa fa-paper-plane">&nbsp;</i>
+2023年12月$\sim$
+<br/>
+<span style="color:darkgreen; font-weight:bold">[Academic]</span> 
+I am be one of the [reviewers](https://git.ligo.org/waveforms/reviews/nrtidalv3/-/wikis/home#review-checks-and-review-documentation) for the [NRTidalv3](https://dcc.ligo.org/G2302143) waveform model ! My contributions will be on _Time Domain Behavior_ and _Documentation_. 
 
 - <span style="color:blue; font-weight:bold">[Part-time]</span> 2023年12月07ー15日
 <br/> Serving as a part-time worker during the RESCEU-NBIA workshop in the Hongo campus !
