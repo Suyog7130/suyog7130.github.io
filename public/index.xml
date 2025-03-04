@@ -444,6 +444,20 @@ here for that pointer in timeline.--&gt;
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/pages/publications/pubs-authorwise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/publications/pubs-authorwise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/pages/publications/pubs-yrwise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/publications/pubs-yrwise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/posts/250220-paper-writing-tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/250220-paper-writing-tips/</guid>

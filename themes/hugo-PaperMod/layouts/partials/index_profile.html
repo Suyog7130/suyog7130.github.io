@@ -32,7 +32,30 @@
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>
         <span>{{ .subtitle | markdownify }}</span>
+
         {{- partial "social_icons.html" -}}
+
+        {{- if .news }}
+        <div class="news">
+            <br/>
+            <p style="font-family: mystral; font-size: 24;">News</p>
+            <ul class="fa-ul">
+                {{- range .news }}
+                <li>
+                    <span class="fa-li"><i class="fas fa-paper-plane"></i></span>
+                    <time datetime="{{ .date }}">{{ dateFormat "2006/01/02" .date }}</time>
+                    &nbsp;•&nbsp;
+                    {{- if .type}}
+                        <span>[{{ .type }}]&nbsp;{{ .content }}</span>
+                    {{ else }}
+                        <span>{{ .content }}</span>
+                    {{- end}}
+                </li>
+                {{- end }}
+            </ul>
+            <br/>
+        </div>
+        {{- end }}
 
         {{- with .buttons }}
         <div class="buttons">
