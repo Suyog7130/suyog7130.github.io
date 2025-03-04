@@ -65,7 +65,7 @@
                 <li>
                     <i class="fas fa-bullhorn">&nbsp;</i>
                     {{- if .date}}
-                        <time datetime="{{ .date }}">{{ dateFormat "2006/01/02" .date }}</time>
+                        <time datetime="{{ .date }}">{{ .date }}</time>
                         &nbsp;•&nbsp;
                     {{- end }}
                     {{- if .type}}
