@@ -1,7 +1,6 @@
 ---
-layout: archive
-title: "Writings"
-permalink: /writings/
+title: "Tips"
+permalink: /tips/
 author_profile: true
 hideTags: true
 ---

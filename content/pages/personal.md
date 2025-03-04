@@ -156,7 +156,7 @@ Sign up for free!
 <div style="object-position:center; text-align:center">
 <details>
 	<summary>
-	<p style="font-family: mistral;">
+	<p style="font-family: mistral; font-size:24px;">
 	Reading & Cinema
 	</p>
 	</summary>
