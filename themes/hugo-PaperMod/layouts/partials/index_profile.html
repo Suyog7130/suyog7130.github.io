@@ -53,10 +53,10 @@
             {{- else }}
                 <div>
             {{- end}}
-            <ul class="fa-ul" style="text-align: center; ">
+            <ul class="fa-ul" style="text-align: center; list-style-position: inside;">
                 {{- range .news }}
                 <li>
-                    <span class="fa-li"><i class="fas fa-paper-plane"></i></span>
+                    <i class="fas fa-paper-plane">&nbsp;</i>
                     {{- if .date}}
                         <time datetime="{{ .date }}">{{ dateFormat "2006/01/02" .date }}</time>
                         &nbsp;•&nbsp;
