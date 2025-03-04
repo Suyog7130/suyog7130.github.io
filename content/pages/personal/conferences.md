@@ -51,6 +51,13 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 
 </details>
 
+- 12th KAGRA International Workshop
+[[website](https://kiw12.casconf.cn/page/1878817789607809024)]
+<br/><i class="fa fa-calendar-alt"></i> 2025年05月26-27日 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> Shanghai Astronomical Observatory &nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> Shangai, China
+
+
 - From Quarks to Neutron Stars: Insights from kHz gravitational waves
 [[website](https://indico2.riken.jp/event/5141/)]
 <br/><i class="fa fa-calendar-alt"></i> 2025年04月23-24日 &nbsp;•&nbsp;

@@ -9,10 +9,10 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Mon, 03 Mar 2025 21:10:16 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 03 Mar 2025 23:42:31 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Don&#39;t ask for Git passphrase on each commit</title>
@@ -27,6 +27,108 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2021-05-09-blog-post-1/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>Timeline</title>
+      <link>http://localhost:1313/pages/personal/timeline/</link>
+      <pubDate>Mon, 03 Mar 2025 23:42:31 +0900</pubDate>
+      <guid>http://localhost:1313/pages/personal/timeline/</guid>
+      <description>&lt;!--the below was just non-sense !!!!--&gt;
+&lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
+@import url(&#39;https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&amp;display=swap&#39;);
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: ;
+  min-height: 100vh;
+  padding: 50px 0;
+  font-family: Jost;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background:;
+  border-radius: 5px;
+  color:;
+  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+          box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+&lt;/style&gt;
+&lt;style&gt;@import url(&#39;https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&amp;display=swap&#39;);&lt;/style&gt;
+&lt;!--This is the main container that contains the whole timeline.--&gt;
+&lt;section class=&#34;design-section&#34;&gt;
+&lt;div class=&#34;timeline&#34;&gt;
+&lt;!--Well, The reason for this div is to fill space. 
+This space is technically used for keeping dates, 
+but I didn&#39;t find the need for dates. However, I&#39;ll provide 
+you the styling for dates, so that you can use it if you 
+wanted to. 
+--&gt;
+                  &lt;div class=&#34;timeline-empty&#34;&gt;
+                  &lt;/div&gt;
+&lt;!--This is the class where the timeline graphics are 
+housed in. Note that we have timeline-circle 
+here for that pointer in timeline.--&gt;
+               &lt;div class=&#34;timeline-middle&#34;&gt;
+                   &lt;div class=&#34;timeline-circle&#34;&gt;&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div class=&#34;timeline-component timeline-content&#34;&gt;
+                &lt;h3&gt;HTML&lt;/h3&gt;
+                &lt;p&gt;Some Text&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conferences and Workshops</title>
@@ -338,20 +440,6 @@
       <link>http://localhost:1313/pages/personal/movies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/personal/movies/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/pages/publications/pubs-authorwise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/publications/pubs-authorwise/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/pages/publications/pubs-yrwise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/publications/pubs-yrwise/</guid>
       <description></description>
     </item>
     <item>
@@ -996,6 +1084,7 @@ database
 &lt;!-- #### Journal Articles (Preprint) --&gt;
 &lt;h3 id=&#34;journal-articles-published&#34;&gt;Journal Articles (Published)&lt;/h3&gt;
 &lt;p&gt;S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148.
+&lt;span class=&#34;__dimensions_badge_embed__&#34; data-doi=&#34;10.3847/1538-4357/ab4a17&#34; data-hide-zero-citations=&#34;true&#34; data-style=&#34;small_rectangle&#34; style=&#34;white-space:nowrap;&#34;&gt;&lt;/span&gt;&lt;script async src=&#34;https://badge.dimensions.ai/badge.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;br/&gt;
 &lt;i class=&#34;fa fa-file-pdf&#34;&gt; &lt;/i&gt;
 &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Paper&lt;/a&gt;
