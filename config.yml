@@ -156,6 +156,16 @@ params:
     # imageWidth: 120
     # imageHeight: 120
     subtitle: "Physics PhD @ UTokyo"
+    news:
+      - date: "2021-09-01"
+        type: ""
+        content: "I have started my PhD at the University of Tokyo."
+      # - date: "2021-09-01"
+      #   type: "Academics"
+      #   content: "I have started my PhD at the University of Tokyo."
+      # - date: "2021-09-01"
+      #   type: "Talk"
+      #   content: "I have started my PhD at the University of Tokyo."
     buttons:
       - name: About
         url: pages/about
