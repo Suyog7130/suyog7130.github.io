@@ -29,6 +29,9 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/pages/personal/timeline/</loc>
+    <lastmod>2025-03-03T23:42:31+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/pages/personal/conferences/</loc>
     <lastmod>2025-03-03T21:10:16+09:00</lastmod>
   </url><url>
