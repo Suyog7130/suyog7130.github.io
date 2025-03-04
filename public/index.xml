@@ -294,20 +294,6 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/pages/publications/pubs-authorwise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/publications/pubs-authorwise/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/pages/publications/pubs-yrwise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/publications/pubs-yrwise/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
       <link>http://localhost:1313/posts/250220-paper-writing-tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/250220-paper-writing-tips/</guid>
@@ -996,7 +982,7 @@ Sign up for free!
 &lt;div style=&#34;object-position:center; text-align:center&#34;&gt;
 &lt;details&gt;
 	&lt;summary&gt;
-	&lt;p style=&#34;font-family: mistral;&#34;&gt;
+	&lt;p style=&#34;font-family: mistral; font-size:24px;&#34;&gt;
 	Reading &amp; Cinema
 	&lt;/p&gt;</description>
     </item>
@@ -1052,6 +1038,20 @@ database
 &lt;a href=&#34;https://doi.org/10.22323/1.444.1498&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/pages/publications/pubs-authorwise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/publications/pubs-authorwise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/pages/publications/pubs-yrwise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/publications/pubs-yrwise/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Talks and presentations</title>
       <link>http://localhost:1313/pages/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1071,7 +1071,7 @@ database
 --&gt;</description>
     </item>
     <item>
-      <title>Writings</title>
+      <title>Tips</title>
       <link>http://localhost:1313/pages/tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/tips/</guid>
