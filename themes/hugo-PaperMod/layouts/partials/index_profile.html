@@ -1,3 +1,10 @@
+<!-- <style type="text/css" media="screen">
+    .fa-li::after {
+    content: ''; 
+    margin-left: -50px; /* Adjust the space as needed */
+    }
+</style> -->
+
 <div class="profile">
     {{- with site.Params.profileMode }}
     <div class="profile_inner">
@@ -36,7 +43,7 @@
         {{- partial "social_icons.html" -}}
 
         {{- if .news }}
-        <div class="news">
+        <div>
             <br/>
             {{- if .newsTitle }}
                 <p style="font-family: mistral; font-size: 28px;">{{ .newsTitle }}</p>
@@ -46,16 +53,18 @@
             {{- else }}
                 <div>
             {{- end}}
-            <ul class="fa-ul">
+            <ul class="fa-ul" style="text-align: center; ">
                 {{- range .news }}
                 <li>
                     <span class="fa-li"><i class="fas fa-paper-plane"></i></span>
-                    <time datetime="{{ .date }}">{{ dateFormat "2006/01/02" .date }}</time>
-                    &nbsp;•&nbsp;
+                    {{- if .date}}
+                        <time datetime="{{ .date }}">{{ dateFormat "2006/01/02" .date }}</time>
+                        &nbsp;•&nbsp;
+                    {{- end }}
                     {{- if .type}}
-                        <span>[{{ .type }}]&nbsp;{{ .content }}</span>
+                        [{{ .type }}]&nbsp;{{ .content }}
                     {{- else }}
-                        <span>{{ .content }}</span>
+                            {{ .content }}
                     {{- end}}
                 </li>
                 {{- end }}

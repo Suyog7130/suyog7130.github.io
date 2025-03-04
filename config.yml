@@ -162,12 +162,9 @@ params:
       - date: "2025-03-09"
         type: ""
         content: "Visiting Monash University in Melbourne, Australia."
-      # - date: "2021-09-01"
-      #   type: "Academics"
-      #   content: "I have started my PhD at the University of Tokyo."
-      # - date: "2021-09-01"
-      #   type: "Talk"
-      #   content: "I have started my PhD at the University of Tokyo."
+      - content: "I have started my PhD at the University of Tokyo."
+      - type: "Talk"
+        content: "I have started my PhD at the University of Tokyo."
     buttons:
       - name: About
         url: pages/about

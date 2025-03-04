@@ -12,7 +12,42 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Mon, 03 Mar 2025 21:10:16 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conferences and Workshops</title>
+      <link>http://localhost:1313/pages/personal/conferences/</link>
+      <pubDate>Mon, 03 Mar 2025 21:10:16 +0900</pubDate>
+      <guid>http://localhost:1313/pages/personal/conferences/</guid>
+      <description>&lt;p&gt;List of most of the Conferences and Workshops I have undertaken or am going to :&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Upcoming&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2026
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年09月  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; LIGO India  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Pune?, India&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LIGO-Virgo-KAGRA Meeting Spring 2026
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年03月  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; VIRGO  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Cascina, Italy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2nd I&amp;rsquo;nt Conference on Physics of the Two Infinities
+[&lt;a href=&#34;https://indico.in2p3.fr/event/35255/&#34;&gt;website&lt;/a&gt;]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年11月17-21日  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; UTokyo  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Tokyo, Japan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2025
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年09月  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Colorado State University  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/pages/about/</link>
@@ -27,6 +62,48 @@
 &lt;p&gt;  🌱   My research is on using Machine Learning for Gravitational-Wave Detections.&lt;/p&gt;
 &lt;p&gt;  💻   I have experience in Data Analysis, Numerical Solvers and Deep Neural Networks.&lt;/p&gt;
 &lt;p&gt;  💞️   It would be awesome to collaborate on a computational project together :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Books</title>
+      <link>http://localhost:1313/pages/personal/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/personal/books/</guid>
+      <description>&lt;p&gt;I love reading books. Few of the books I recall having had the pleasure of investing my time in are as follows. The list is incomplete and constantly evolving.&lt;/p&gt;
+&lt;!-- Goodreads Block --&gt;
+&lt;!-- Have the Goodreads widget embedded inside a widget container that has title --&gt;
+&lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
+  .widget-title {
+    font-family: mistral;
+    font-size: 35px;
+    text-align: center;
+    }
+  .gr-widget {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gr_grid_container {
+    /* customize grid container div here. eg: width: 500px; */   }
+
+  .gr_grid_book_container {
+    /* customize book cover container div here */
+    float: left;
+    width: 100px;
+    height: 160px;
+    padding: 0px 0px;
+    overflow: hidden;
+  }
+&lt;/style&gt;
+&lt;div class=&#34;widget-container&#34;&gt;
+  &lt;div class=&#34;widget-title&#34;&gt;All My Reads&lt;/div&gt;
+  &lt;div class=&#39;gr-widget&#39;&gt;
+  &lt;div id=&#34;gr_grid_widget_1698242812&#34;&gt;
+      &lt;!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work --&gt;
+    &lt;p style=&#34;font-family:mistral; font-size:28px;&#34;&gt;
+    wait a little bit darling ~
+    &lt;/p&gt;</description>
     </item>
     <item>
       <title>CV/Resume</title>
@@ -104,6 +181,20 @@ Service and leadership
       <description>&lt;p&gt;Myriad of different ideas, often eccentric, come up to my mind every now and then. Sometimes I get to work on them, usually the just lie there at the back of the mind accumulating dust.&lt;/p&gt;
 &lt;p&gt;This is semi-complete list of my ideas. I would love if you can work on any of them or provide your insights.
 Start by opening up a discussion in a Gist using the button provided !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Languages</title>
+      <link>http://localhost:1313/pages/personal/languages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/personal/languages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Movies</title>
+      <link>http://localhost:1313/pages/personal/movies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/personal/movies/</guid>
+      <description></description>
     </item>
     <item>
       <title>News</title>
