@@ -44,6 +44,13 @@ Presenting a Poster at the LVK Meeting in Monash University, Melbourne.
 <span style="color:darkblue; font-weight:bold">[Academic]</span>
 &nbsp;
 <i class="fa fa-paper-plane"></i>
+2025年01月 ー 2025年09月
+</br>
+Enrolled in the MITx Statistics and Data Science MicroMasters Programs. Crediting four courses in the Methods track.
+
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
 2024年10月 ー 2025年02月
 </br>
 I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physics" Course ! (once again :)
