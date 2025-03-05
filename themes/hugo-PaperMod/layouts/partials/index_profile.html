@@ -43,7 +43,7 @@
         {{- partial "social_icons.html" -}}
 
         {{- if .news }}
-        <div>
+        <div style="margin-top: 3%; margin-bottom: 4%;">
             {{- if .newsTitle }}
                 {{- if .newsTitleUnderline }}
                 <p style="font-family: mistral; font-size: 28px; text-decoration: underline; text-underline-offset: 3px;">
@@ -52,11 +52,9 @@
                 {{- end }}
                     {{ .newsTitle }}
                 </p>
-            {{- else}}
-                <br/>
             {{- end}}
             {{- if .newsBox }}
-                <div style="border: 2px; border-style: solid; border-color: #c3c1c1; padding: 10px; margin-top: 3px;">
+                <div style="border: 2px; border-style: solid; border-color: #c3c1c1; padding: 10px;">
             {{- else }}
                 <div>
             {{- end}}
@@ -77,7 +75,6 @@
                 {{- end }}
             </ul>
             </div>
-            <br/>
         </div>
         {{- end }}
 
