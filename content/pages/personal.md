@@ -30,8 +30,12 @@ redirect_from:
 
 <!-- General Introduction -->
 <br/>
-Academics and Research occupy a majority of day, or for that matter, my night time, but they are still just a part of my life. In addition, I am fond of the following pleasures, a bit too fond of some of them :
-<br/>
+<p>
+Academics and Research occupy a major part of my day, or for that matter, my night time often too. However, research is still just a component of my life, albiet an important one. In the rest of it, I have a funny-ambiverted side of me that likes to hangout with friends every other day, and also a slightly darker naughtier side, that only some of the girls I have been with know about.
+</p>
+<p>
+In a nutshell, I am fond of the following pleasures, hobbies, interests and delinquencies (in fact, a bit too fond of some of them) :
+</p>
 
 <!-- - Books : I am a reader !
 - Writing :
@@ -102,7 +106,7 @@ Sign up for free!
 	I am a published writer, albiet a minor one!
 </a>
 
-<a class="buttontwo" href="../writings/" rel="noopener" title="" style="text-align:center">
+<a class="buttontwo" href="https://blog.suyoggarg.com/search/label/Poems" rel="noopener" title="" style="text-align:center">
 	<span class="button" style="font-weight:bold;">
                 Poems  
 	</span>
@@ -133,6 +137,95 @@ Sign up for free!
 	<br/>
 	Once every two weeks, to the Cinema we go!
 </a>
+
+<a class="buttontwo" href="https://blog.suyoggarg.com/p/maps.html" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+                Maps  
+	</span>
+	<br/>
+	In a past life, I was a Cartographer!
+</a>
+
+<a class="buttontwo" href="https://blog.suyoggarg.com/p/fonts.html" rel="noopener" title="" style="text-align:center; font-family:mistral; fontsize:18px">
+	<span class="button" style="font-weight:bold; font-family:papyrus; fontsize:30px">
+                Font Typefaces  
+	</span>
+	<br/>
+	 Mistral is my favorite font, overall ~
+</a>
+
+<a class="buttontwo" href="languages/" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+              Languages  
+	</span>
+	<br/>
+	If ya speak Chinese, ya can talk to 1.5 Billion more people!
+</a>
+
+<a class="buttontwo" href="" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+              Editing  
+	</span>
+	<br/>
+	It can be fun!
+</a>
+
+<a class="buttontwo" href="" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+              People  
+	</span>
+	<br/>
+	Homo Sapiens are what we got after millions of years of evolution !
+</a>
+
+<a class="buttontwo" href="" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+              Stars  
+	</span>
+	<br/>
+	Afterall, this is where we all come from!
+</a>
+
+<a class="buttontwo" href="" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+              Couchsurfing  
+	</span>
+	<br/>
+	Tho I don't own a Couch, haha~
+</a>
+
+<a class="buttontwo" href="" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+              Coding  
+	</span>
+	<br/>
+	This can be fun too ~
+</a>
+
+<a class="buttontwo" href="" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+              Words  
+	</span>
+	<br/>
+	They mean a lot to me!
+</a>
+
+<a class="buttontwo" href="" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+              Stories  
+	</span>
+	<br/>
+	I have a story to tell, perhaps, you too!
+</a>
+
+<a class="buttontwo" href="" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+              Mermaids  
+	</span>
+	<br/>
+	Nothing more exotic than a Mermaid ;)
+</a>
+
 
 </div>
 
