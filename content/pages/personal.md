@@ -232,6 +232,8 @@ Sign up for free!
 
 ### Useful links
 
+
+* [LVK Collaboration Papers](https://pnp.ligo.org/ppcomm/Papers.html)
 * [http://hilite.me/](http://hilite.me/) : Code to HTML  formatter for emailing code etc.
 * [letterboxd-page/](https://suyoggarg.com/letterboxd-page/) : Page to create custom letterboxd diary embedding, in the same manner as seen on this website.
 * [soundsofspacetime](https://www.soundsofspacetime.org/the-basics-of-binary-coalescence.html)

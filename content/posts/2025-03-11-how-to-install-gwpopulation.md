@@ -1,5 +1,5 @@
 ---
-title: 'How to install `gwpopulation` on MacOS'
+title: 'How to install gwpopulation on MacOS'
 date: 2025-03-11
 place: Melbourne, Australia
 tags:
@@ -53,7 +53,7 @@ ImportError: cannot import name 'btdtri' from 'scipy.special._ufuncs' (/opt/home
 `python3 -> import bilby`
 Perhaps, it also has the same error.
 
-- The error arises due to package dependency conflicts. See the references for further discussions.
+- The error arises due to package dependency conflicts. See the references for further discussions. If a particular version or pre-release of `bilby` is required, you need to install it correctly.
 
 
 
