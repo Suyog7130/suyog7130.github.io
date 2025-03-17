@@ -94,3 +94,8 @@ intersphinx_mapping = {
 
 todo_include_todos = True
 ```
+
+
+References:
+
+- https://www.sphinx-doc.org/en/master/man/sphinx-build.html
