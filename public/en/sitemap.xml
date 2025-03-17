@@ -8,11 +8,11 @@
     <loc>http://localhost:1313/posts/2021-05-09-terminal-commands/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-03-14T16:27:20+11:00</lastmod>
+    <loc>http://localhost:1313/pages/</loc>
+    <lastmod>2025-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-14T16:27:20+11:00</lastmod>
+    <lastmod>2025-03-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hi"
@@ -29,6 +29,12 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/pages/useful-links/</loc>
+    <lastmod>2025-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-03-14T16:27:20+11:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/2025-03-14-use-cit-as-kagra/</loc>
     <lastmod>2025-03-14T14:40:21+11:00</lastmod>
   </url><url>
@@ -43,9 +49,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pages/</loc>
-    <lastmod>2025-03-03T23:42:31+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/personal/conferences/</loc>
     <lastmod>2025-03-03T21:10:16+09:00</lastmod>
@@ -110,7 +113,8 @@
     <loc>http://localhost:1313/posts/2023-01-23-gitignore/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/useful-links/</loc>
+    <loc>http://localhost:1313/tags/command/</loc>
+    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-02-20-paper-writing-tips/</loc>
   </url><url>
