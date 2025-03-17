@@ -23,6 +23,13 @@
 &lt;p&gt;It may happen that you may not be able to see new changes in the main directory after using &lt;code&gt;submodule&lt;/code&gt; for a while. In this case, use the following to bring back things to the original:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Do not ask for Git passphrase on each commit</title>
+      <link>http://localhost:1313/posts/2024-03-28-git-passphrase/</link>
+      <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-03-28-git-passphrase/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
       <title>Customizing Mac Terminal</title>
       <link>http://localhost:1313/posts/2023-02-03-custom-mac-terminal/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
