@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/sphinx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to use Sphinx Documentation</title>
-      <link>http://localhost:1313/posts/2023-02-13-blog-post-4/</link>
+      <link>http://localhost:1313/posts/2023-02-13-how-to-sphinx/</link>
       <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-02-13-blog-post-4/</guid>
+      <guid>http://localhost:1313/posts/2023-02-13-how-to-sphinx/</guid>
       <description>&lt;p&gt;Sphinx documentation build also requires configuring the source pathname inside &lt;code&gt;docs/conf.py&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;So, the process for building documentation is:&lt;/p&gt;
 &lt;ul&gt;

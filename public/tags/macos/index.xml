@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pdf2jpg via terminal</title>
-      <link>http://localhost:1313/posts/2024-03-22-blog-post-5/</link>
+      <link>http://localhost:1313/posts/2024-03-22-pdf2jpg/</link>
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-03-22-blog-post-5/</guid>
+      <guid>http://localhost:1313/posts/2024-03-22-pdf2jpg/</guid>
       <description>&lt;p&gt;How to convert PDF to JPG/PNG (images) via command line prompts on MacOS &lt;code&gt;zsh&lt;/code&gt; terminal.&lt;/p&gt;
 &lt;p&gt;STEP 1 : Install &lt;code&gt;poppler&lt;/code&gt; via &lt;code&gt;brew install poppler&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;STEP 2a : If you only wanna convert one file, run,&lt;/p&gt;

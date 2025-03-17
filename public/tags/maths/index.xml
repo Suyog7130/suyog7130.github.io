@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/maths/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Probability of two people serendipitously meeting somewhere</title>
-      <link>http://localhost:1313/posts/2024-06-24-blog-post-8/</link>
+      <link>http://localhost:1313/posts/2024-06-24-two-people-meeting/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-06-24-blog-post-8/</guid>
+      <guid>http://localhost:1313/posts/2024-06-24-two-people-meeting/</guid>
       <description>&lt;p&gt;The problem of finding the probability of two people serendipitously meeting eachother somewhere is non-trivial !&lt;/p&gt;
 &lt;p&gt;Some relevant links are :&lt;/p&gt;
 &lt;ul&gt;
