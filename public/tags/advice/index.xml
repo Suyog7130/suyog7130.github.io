@@ -12,6 +12,17 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/advice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gitignore file</title>
+      <link>http://localhost:1313/posts/2025-02-20-paper-writing-tips/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-02-20-paper-writing-tips/</guid>
+      <description>&lt;p&gt;These are a list of tips and points to keep in mind when writing a research paper. The list is mostly for my own benefit !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Always use active voice ! For instance,&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>

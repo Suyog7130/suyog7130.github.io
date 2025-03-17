@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Mar 2025 18:49:00 +1100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -20,6 +20,33 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2021-05-09-terminal-commands/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>Access VS Code via the Terminal</title>
+      <link>http://localhost:1313/posts/2025-03-17-vscode-terminal-cmd/</link>
+      <pubDate>Mon, 17 Mar 2025 18:49:00 +1100</pubDate>
+      <guid>http://localhost:1313/posts/2025-03-17-vscode-terminal-cmd/</guid>
+      <description>&lt;p&gt;To access and open VS Code directly from your terminal, do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open your Bash or zsh profile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;open ~/.zshrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Add path to the VS Code application to your PATHS variable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Add Visual Studio Code (code)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$PATH&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Reload your updated terminal profile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; ~/.zshrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;You can now open VS code by running &lt;code&gt;code xxx&lt;/code&gt; from anywhere in your computer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com/docs/setup/mac&#34;&gt;https://code.visualstudio.com/docs/setup/mac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Useful Links</title>
@@ -158,6 +185,13 @@ Perhaps, it also has the same error.&lt;/p&gt;</description>
 &lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年09月  • 
 &lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Colorado State University  • 
 &lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Guide to Hugo PaperMod Website</title>
+      <link>http://localhost:1313/posts/papermod-website/</link>
+      <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/papermod-website/</guid>
+      <description></description>
     </item>
     <item>
       <title>How to manage your Research Papers Library ?</title>
@@ -388,7 +422,7 @@ Perhaps, it also has the same error.&lt;/p&gt;</description>
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Reference: &lt;a href=&#34;https://engineeringfordatascience.com/posts/configure_terminal_for_data_science_with_oh_my_zsh/&#34;&gt;configure_terminal_for_data_science_with_oh_my_zsh/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>`.gitignore` file</title>
+      <title>gitignore file</title>
       <link>http://localhost:1313/posts/2023-01-23-gitignore/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2023-01-23-gitignore/</guid>
@@ -431,9 +465,9 @@ Perhaps, it also has the same error.&lt;/p&gt;</description>
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Useful links:&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
+      <title>Tips on Writing Scientific Papers</title>
       <link>http://localhost:1313/posts/2025-02-20-paper-writing-tips/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2025-02-20-paper-writing-tips/</guid>
       <description>&lt;p&gt;These are a list of tips and points to keep in mind when writing a research paper. The list is mostly for my own benefit !&lt;/p&gt;
 &lt;ul&gt;
@@ -447,20 +481,6 @@ Perhaps, it also has the same error.&lt;/p&gt;</description>
       <guid>http://localhost:1313/posts/icons/</guid>
       <description>&lt;p&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;200&#34; height=&#34;200&#34; viewBox=&#34;0 0 1024 1536&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M768 512q0-106-75-181t-181-75t-181 75t-75 181t75 181t181 75t181-75t75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19t-67.5-19t-46.5-52L33 691Q0 621 0 512q0-212 150-362T512 0t362 150t150 362z&#34;/&gt;&lt;/svg&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://iconbuddy.com/&#34;&gt;https://iconbuddy.com/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/posts/papermod-website/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/papermod-website/</guid>
-      <description>&lt;p&gt;asdasD&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/posts/zotero/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/zotero/</guid>
-      <description>&lt;p&gt;dfasdf&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -596,9 +616,9 @@ Service and leadership
     </item>
     <item>
       <title>Fonts</title>
-      <link>http://localhost:1313/posts/portfolio/</link>
+      <link>http://localhost:1313/posts/fonts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/portfolio/</guid>
+      <guid>http://localhost:1313/posts/fonts/</guid>
       <description>&lt;div dir=&#34;ltr&#34; style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;
   &lt;div dir=&#34;ltr&#34; style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;
 

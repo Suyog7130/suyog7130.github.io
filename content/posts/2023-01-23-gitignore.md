@@ -1,5 +1,5 @@
 ---
-title: '`.gitignore` file'
+title: 'gitignore file'
 date: 2023-01-23
 permalink: /posts/2023/01/blog-post-2/
 tags:
