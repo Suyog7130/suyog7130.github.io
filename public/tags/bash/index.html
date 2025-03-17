@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Suyog Garg</title>
+<title>Bash | Suyog Garg</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Suyog Garg">
+<meta name="description" content="My Personal Webpage !">
 <meta name="author" content="Suyog Garg">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/tags/bash/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a9beb8cc794bded6e6065a475e3046b73c3f4333e4ffa4e4a539a242b6ff8818.css" integrity="sha256-qb64zHlL3tbmBlpHXjBGtzw/QzPk/6TkpTmiQrb/iBg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/images/sg-favicon-crop-invert.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/bash/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/bash/">
 <noscript>
     <style>
         #theme-toggle,
@@ -132,33 +132,18 @@
 
 <meta http-equiv="cleartype" content="on">
 
-<link rel="stylesheet" type="text/css" href="/hugo-cite.css" /><meta property="og:url" content="http://localhost:1313/posts/">
+<link rel="stylesheet" type="text/css" href="/hugo-cite.css" /><meta property="og:url" content="http://localhost:1313/tags/bash/">
   <meta property="og:site_name" content="Suyog Garg">
-  <meta property="og:title" content="Posts">
+  <meta property="og:title" content="Bash">
   <meta property="og:description" content="My Personal Webpage !">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/">
-<meta name="twitter:title" content="Posts">
+<meta name="twitter:title" content="Bash">
 <meta name="twitter:description" content="My Personal Webpage !">
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://localhost:1313/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -243,10 +228,10 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Posts
-    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+    Bash
+    <a href="/tags/bash/index.xml" title="RSS" aria-label="RSS">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" height="23">
         <path d="M4 11a9 9 0 0 1 9 9" />
@@ -257,93 +242,20 @@
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Linux Terminal Commands
+    <h2 class="entry-hint-parent">Do not ask for Git passphrase on each commit
     </h2>
   </header>
   <div class="entry-content">
-    <p>These are some useful Linux Terminal Commands for productivity:
-Commands using ls etc. use to ls -ltr list files in reverse modification history order with details. `ls -ltr tail -n 5` `ls head -n 5` rename &#39;s/original/new/&#39; * To rename all filenames and directories containing “original” string to “new” string. To recursively do this in sub-directories, use **/*. See: here and here for dir in */; do mkdir -- &#34;$dir&#34;/{tmp1,foo,bar,qux}; done To create directories within sub-directories in one go! For opening image files from Terminal Opening files directly through the Terminal is both easy and fast. Additionally, these commands are useful to view resulting files when using subprocess.run in Python to run Terminal commands.
-...</p>
+    <p>So that we don’t have to write the passphrase each time we do git commit !
+Add this to the bash file :
+env=~/.ssh/agent.env agent_load_env () { test -f &#34;$env&#34; &amp;&amp; . &#34;$env&#34; &gt;| /dev/null ; } agent_start () { (umask 077; ssh-agent &gt;| &#34;$env&#34;) . &#34;$env&#34; &gt;| /dev/null ; } agent_load_env # agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running agent_run_state=$(ssh-add -l &gt;| /dev/null 2&gt;&amp;1; echo $?) if [ ! &#34;$SSH_AUTH_SOCK&#34; ] || [ $agent_run_state = 2 ]; then agent_start ssh-add elif [ &#34;$SSH_AUTH_SOCK&#34; ] &amp;&amp; [ $agent_run_state = 1 ]; then ssh-add fi unset env </p>
   </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2021-05-09 00:00:00 +0000 UTC'>May 9, 2021</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;162 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-03-28 00:00:00 +0000 UTC'>March 28, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;101 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
-  <a class="entry-link" aria-label="post link to Linux Terminal Commands" href="http://localhost:1313/posts/2021-05-09-terminal-commands/"></a>
+  <a class="entry-link" aria-label="post link to Do not ask for Git passphrase on each commit" href="http://localhost:1313/posts/2024-03-28-git-passphrase/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to use LIGO Data Grid CIT as KAGRA-only Member
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>As a member of only the KAGRA collaboration and LIGO, in the LIGO-Virgo-KAGRA or IGWN Consortium, the process of obtaining access to LIGO Data Grid (LDG) clusters is not straight-forward.
-First of all, follow steps from Eric’s page here if ya have a LIGO account.
-KAGRA members need to request LDG authentication access using the form available at this link: https://registry.igwn.org/registry/co_petitions/start/coef:25
-Once you have filled the LDG access form, you should be able to see an option to add your computer’s SSH public key. This option exists in the right-hand side under the heading Authenticators.
-...</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-14 14:40:21 +1100 AEDT'>March 14, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;214 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to How to use LIGO Data Grid CIT as KAGRA-only Member" href="http://localhost:1313/posts/2025-03-14-use-cit-as-kagra/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to install gwpopulation on MacOS
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>To install gwpopulation do:
-Create a new Conda environment : conda create --name monash
-Activate the new environment : conda activate monash
-Use conda-forge to install gwpopulation : conda install -c conda-forge gwpopulation
-Check if import the installed package works or not : python3 -&gt; import gwpopulation
-Maybe there is a package dependency conflict and the import doesn’t work ! Perhaps, it’s the following error that pops up :
-❯ python3 Python 3.13.2 | packaged by conda-forge | (main, Feb 17 2025, 14:02:48) [Clang 18.1.8 ] on darwin Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. &gt;&gt;&gt; import gwpopulation Traceback (most recent call last): File &#34;&lt;python-input-0&gt;&#34;, line 1, in &lt;module&gt; import gwpopulation File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/gwpopulation/__init__.py&#34;, line 14, in &lt;module&gt; from . import conversions, hyperpe, models, utils, vt File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/gwpopulation/hyperpe.py&#34;, line 48, in &lt;module&gt; from bilby.core.likelihood import Likelihood File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/__init__.py&#34;, line 21, in &lt;module&gt; from . import core, gw, hyper File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/__init__.py&#34;, line 1, in &lt;module&gt; from . import grid, likelihood, prior, result, sampler, series, utils, fisher File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/grid.py&#34;, line 6, in &lt;module&gt; from .prior import Prior, PriorDict File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/prior/__init__.py&#34;, line 1, in &lt;module&gt; from .analytical import * File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/prior/analytical.py&#34;, line 3, in &lt;module&gt; from scipy.special._ufuncs import xlogy, erf, log1p, stdtrit, gammaln, stdtr, \ btdtri, betaln, btdtr, gammaincinv, gammainc ImportError: cannot import name &#39;btdtri&#39; from &#39;scipy.special._ufuncs&#39; (/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/scipy/special/_ufuncs.cpython-313-darwin.so) Check if bilby can be imported : python3 -&gt; import bilby Perhaps, it also has the same error.
-...</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-11 00:00:00 +0000 UTC'>March 11, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;267 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to How to install gwpopulation on MacOS" href="http://localhost:1313/posts/2025-03-11-how-to-install-gwpopulation/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to manage your Research Papers Library ?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>https://www.zotero.org/support/collections_and_tags https://www.zotero.org/support/feeds https://forums.zotero.org/discussion/comment/472493#Comment_472493 https://www.zotero.org/suyoggarg/library https://www.zotero.org/support/sync https://www.zotero.org/support/zotero_data https://www.zotero.org/support/attaching_files#stored_files_and_linked_files https://www.zotero.org/support/file_renaming
-If the linked storage directory is updated, the new PDF has to be manually added to the Zotero library. However, here too, you can simply selected the whole storage directory and not add duplicates !
-</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-11-28 00:00:00 +0000 UTC'>November 28, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;43 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to How to manage your Research Papers Library ?" href="http://localhost:1313/posts/2024-11-28-zotero/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Probability of two people serendipitously meeting somewhere
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem of finding the probability of two people serendipitously meeting eachother somewhere is non-trivial !
-Some relevant links are :
-https://www.mathpages.com/home/kmath124/kmath124.htm https://stats.stackexchange.com/questions/15448/probability-of-two-people-meeting </p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-06-24 00:00:00 +0000 UTC'>June 24, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;23 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to Probability of two people serendipitously meeting somewhere" href="http://localhost:1313/posts/2024-06-24-two-people-meeting/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="next" href="http://localhost:1313/posts/page/2/">Next&nbsp;2/4&nbsp;»
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">

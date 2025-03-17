@@ -1,16 +1,9 @@
-
 ---
 author: "Suyog Garg"
-title: "Don't ask for Git passphrase on each commit"
-date: "2024-03-28"
+title: 'Do not ask for Git passphrase on each commit'
+date: '2024-03-28'
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-FAtags: ["terminal", "git", "zsh"]
-FAcategories: ["terminal"]
-FAseries: ["Themes Guide"]
-aliases: ["migrate-from-jekyl"]
-ShowToc: true
-TocOpen: true
-weight: 2
+tags: ["git", "terminal", "bash"]
 ---
 
 So that we don't have to write the passphrase each time we do `git commit` !
