@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pdf2jpg via terminal</title>
-      <link>http://localhost:1313/posts/2024-03-22-blog-post-5/</link>
+      <link>http://localhost:1313/posts/2024-03-22-pdf2jpg/</link>
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-03-22-blog-post-5/</guid>
+      <guid>http://localhost:1313/posts/2024-03-22-pdf2jpg/</guid>
       <description>&lt;p&gt;How to convert PDF to JPG/PNG (images) via command line prompts on MacOS &lt;code&gt;zsh&lt;/code&gt; terminal.&lt;/p&gt;
 &lt;p&gt;STEP 1 : Install &lt;code&gt;poppler&lt;/code&gt; via &lt;code&gt;brew install poppler&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;STEP 2a : If you only wanna convert one file, run,&lt;/p&gt;
@@ -29,9 +29,9 @@
     </item>
     <item>
       <title>Customizing Mac Terminal</title>
-      <link>http://localhost:1313/posts/2023-02-03-blog-post-3/</link>
+      <link>http://localhost:1313/posts/2023-02-03-custom-mac-terminal/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-02-03-blog-post-3/</guid>
+      <guid>http://localhost:1313/posts/2023-02-03-custom-mac-terminal/</guid>
       <description>&lt;p&gt;Changed the Mac terminal to &lt;code&gt;iterm2&lt;/code&gt; and then made numerous customizations to the &lt;code&gt;oh-my-zsh&lt;/code&gt; plugin. The &lt;code&gt;~/.zshrc&lt;/code&gt; looks like the following after these modifications:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# If you come from bash you might have to change your $PATH.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export PATH=$HOME/bin:/usr/local/bin:$PATH&lt;/span&gt;

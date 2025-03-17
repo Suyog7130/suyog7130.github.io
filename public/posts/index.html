@@ -269,7 +269,7 @@ env=~/.ssh/agent.env agent_load_env () { test -f &#34;$env&#34; &amp;&amp; . &#3
   </div>
   <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-03-28 00:00:00 +0000 UTC'>March 28, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;101 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
-  <a class="entry-link" aria-label="post link to Don&#39;t ask for Git passphrase on each commit" href="http://localhost:1313/posts/2024-03-28-blog-post-6/"></a>
+  <a class="entry-link" aria-label="post link to Don&#39;t ask for Git passphrase on each commit" href="http://localhost:1313/posts/2024-03-28-git-passphrase/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -284,7 +284,44 @@ Commands using ls etc. use to ls -ltr list files in reverse modification history
   </div>
   <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2021-05-09 00:00:00 +0000 UTC'>May 9, 2021</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;162 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
-  <a class="entry-link" aria-label="post link to Linux Terminal Commands" href="http://localhost:1313/posts/2021-05-09-blog-post-1/"></a>
+  <a class="entry-link" aria-label="post link to Linux Terminal Commands" href="http://localhost:1313/posts/2021-05-09-terminal-commands/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to use LIGO Data Grid CIT as KAGRA-only Member
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>As a member of only the KAGRA collaboration and LIGO, in the LIGO-Virgo-KAGRA or IGWN Consortium, the process of obtaining access to LIGO Data Grid (LDG) clusters is not straight-forward.
+First of all, follow steps from Eric’s page here if ya have a LIGO account.
+KAGRA members need to request LDG authentication access using the form available at this link: https://registry.igwn.org/registry/co_petitions/start/coef:25
+Once you have filled the LDG access form, you should be able to see an option to add your computer’s SSH public key. This option exists in the right-hand side under the heading Authenticators.
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-14 14:40:21 +1100 AEDT'>March 14, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;214 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to How to use LIGO Data Grid CIT as KAGRA-only Member" href="http://localhost:1313/posts/2025-03-14-use-cit-as-kagra/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to install gwpopulation on MacOS
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>To install gwpopulation do:
+Create a new Conda environment : conda create --name monash
+Activate the new environment : conda activate monash
+Use conda-forge to install gwpopulation : conda install -c conda-forge gwpopulation
+Check if import the installed package works or not : python3 -&gt; import gwpopulation
+Maybe there is a package dependency conflict and the import doesn’t work ! Perhaps, it’s the following error that pops up :
+❯ python3 Python 3.13.2 | packaged by conda-forge | (main, Feb 17 2025, 14:02:48) [Clang 18.1.8 ] on darwin Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. &gt;&gt;&gt; import gwpopulation Traceback (most recent call last): File &#34;&lt;python-input-0&gt;&#34;, line 1, in &lt;module&gt; import gwpopulation File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/gwpopulation/__init__.py&#34;, line 14, in &lt;module&gt; from . import conversions, hyperpe, models, utils, vt File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/gwpopulation/hyperpe.py&#34;, line 48, in &lt;module&gt; from bilby.core.likelihood import Likelihood File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/__init__.py&#34;, line 21, in &lt;module&gt; from . import core, gw, hyper File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/__init__.py&#34;, line 1, in &lt;module&gt; from . import grid, likelihood, prior, result, sampler, series, utils, fisher File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/grid.py&#34;, line 6, in &lt;module&gt; from .prior import Prior, PriorDict File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/prior/__init__.py&#34;, line 1, in &lt;module&gt; from .analytical import * File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/prior/analytical.py&#34;, line 3, in &lt;module&gt; from scipy.special._ufuncs import xlogy, erf, log1p, stdtrit, gammaln, stdtr, \ btdtri, betaln, btdtr, gammaincinv, gammainc ImportError: cannot import name &#39;btdtri&#39; from &#39;scipy.special._ufuncs&#39; (/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/scipy/special/_ufuncs.cpython-313-darwin.so) Check if bilby can be imported : python3 -&gt; import bilby Perhaps, it also has the same error.
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-11 00:00:00 +0000 UTC'>March 11, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;267 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to How to install gwpopulation on MacOS" href="http://localhost:1313/posts/2025-03-11-how-to-install-gwpopulation/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -299,41 +336,11 @@ If the linked storage directory is updated, the new PDF has to be manually added
   </div>
   <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-11-28 00:00:00 +0000 UTC'>November 28, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;43 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
-  <a class="entry-link" aria-label="post link to How to manage your Research Papers Library ?" href="http://localhost:1313/posts/2024-11-28-blog-post-10/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Probability of two people serendipitously meeting somewhere
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem of finding the probability of two people serendipitously meeting eachother somewhere is non-trivial !
-Some relevant links are :
-https://www.mathpages.com/home/kmath124/kmath124.htm https://stats.stackexchange.com/questions/15448/probability-of-two-people-meeting </p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-06-24 00:00:00 +0000 UTC'>June 24, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;23 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to Probability of two people serendipitously meeting somewhere" href="http://localhost:1313/posts/2024-06-24-blog-post-8/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Working with Cloudflare workers
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>A cloudflare enviroment can be used to deploy any reasonably sized application on to an internet server without having to pay for server storage purchase. The deployed application page is then linked to universal web address and can reached on it.
-A wrangler Javascript worker application to read and publish a formatted a letterboxd-diary given the username can be created by following these links :
-</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-06-24 00:00:00 +0000 UTC'>June 24, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;65 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to Working with Cloudflare workers" href="http://localhost:1313/posts/2024-06-28-blog-post-9/"></a>
+  <a class="entry-link" aria-label="post link to How to manage your Research Papers Library ?" href="http://localhost:1313/posts/2024-11-28-zotero/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="http://localhost:1313/posts/page/2/">Next&nbsp;2/3&nbsp;»
+    <a class="next" href="http://localhost:1313/posts/page/2/">Next&nbsp;2/4&nbsp;»
     </a>
   </nav>
 </footer>

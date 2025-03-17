@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Lists on Suyog Garg</title>
+    <link>http://localhost:1313/tags/lists/</link>
+    <description>Recent content in Lists on Suyog Garg</description>
+    <image>
+      <title>Suyog Garg</title>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
+    </image>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en</language>
+    <copyright>Suyog Garg</copyright>
+    <atom:link href="http://localhost:1313/tags/lists/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Useful Links</title>
+      <link>http://localhost:1313/pages/useful-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/useful-links/</guid>
+      <description>&lt;h3 id=&#34;utokyo-related&#34;&gt;UTokyo Related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;UTokyo Physics Department &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/g_info/40191/&#34;&gt;Leave Application Forms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;UTokyo Graduate School of Science &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/scholarship/&#34;&gt;List of Scholarships Page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;research-related&#34;&gt;Research Related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;LVK Collaboration &lt;a href=&#34;https://pnp.ligo.org/ppcomm/Papers.html&#34;&gt;List of All Papers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LVK CBC Waveforms Group &lt;a href=&#34;https://wiki.ligo.org/CBC/Waveforms&#34;&gt;WIKI page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.soundsofspacetime.org/the-basics-of-binary-coalescence.html&#34;&gt;soundsofspacetime&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;academics-advice-and-help&#34;&gt;Academics Advice and Help&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Erick Thrane&amp;rsquo;s &lt;a href=&#34;https://users.monash.edu.au/~erict/Resources/&#34;&gt;Resources Page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;software-related&#34;&gt;Software Related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt; : Best way to maintain your Research Paper library !&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;other-general-interesting-stuff&#34;&gt;Other General Interesting Stuff&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://iconbuddy.com/&#34;&gt;Icons&lt;/a&gt; : Set of Icons to use readily.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://freefrontend.com/css-timelines/&#34;&gt;CSS-Timelines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://hilite.me/&#34;&gt;http://hilite.me/&lt;/a&gt; : Code to HTML  formatter for emailing code etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://suyoggarg.com/letterboxd-page/&#34;&gt;letterboxd-page/&lt;/a&gt; : Page to create custom letterboxd diary embedding, in the same manner as seen on this website.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
