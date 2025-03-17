@@ -5,6 +5,7 @@ permalink: /posts/2023/01/blog-post-2/
 tags:
   - terminal
   - git
+  - command
 ---
 
 To ignore all files larger than 100MB:
