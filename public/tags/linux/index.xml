@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Bash on Suyog Garg</title>
-    <link>http://localhost:1313/tags/bash/</link>
-    <description>Recent content in Bash on Suyog Garg</description>
+    <title>Linux on Suyog Garg</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on Suyog Garg</description>
     <image>
       <title>Suyog Garg</title>
       <url>http://localhost:1313/</url>
@@ -13,20 +13,13 @@
     <language>en</language>
     <copyright>Suyog Garg</copyright>
     <lastBuildDate>Fri, 14 Mar 2025 16:27:20 +1100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2025 03 14 Customize Linux Terminal</title>
       <link>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</link>
       <pubDate>Fri, 14 Mar 2025 16:27:20 +1100</pubDate>
       <guid>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>Do not ask for Git passphrase on each commit</title>
-      <link>http://localhost:1313/posts/2024-03-28-git-passphrase/</link>
-      <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-03-28-git-passphrase/</guid>
-      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
   </channel>
 </rss>

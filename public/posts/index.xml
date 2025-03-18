@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Mon, 17 Mar 2025 18:49:00 +1100</lastBuildDate>
+    <lastBuildDate>Tue, 18 Mar 2025 12:24:46 +1100</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -20,6 +20,13 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2021-05-09-terminal-commands/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>2025 03 18 Using Ssh</title>
+      <link>http://localhost:1313/posts/2025-03-18-using-ssh/</link>
+      <pubDate>Tue, 18 Mar 2025 12:24:46 +1100</pubDate>
+      <guid>http://localhost:1313/posts/2025-03-18-using-ssh/</guid>
+      <description></description>
     </item>
     <item>
       <title>Access VS Code via the Terminal</title>
@@ -47,6 +54,13 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com/docs/setup/mac&#34;&gt;https://code.visualstudio.com/docs/setup/mac&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>2025 03 14 Customize Linux Terminal</title>
+      <link>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</link>
+      <pubDate>Fri, 14 Mar 2025 16:27:20 +1100</pubDate>
+      <guid>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</guid>
+      <description></description>
     </item>
     <item>
       <title>How to use LIGO Data Grid CIT as KAGRA-only Member</title>
