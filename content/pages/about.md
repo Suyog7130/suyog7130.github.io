@@ -13,9 +13,7 @@ redirect_from:
 
 ![](/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg)
 
-
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Tangerine&color=36454F&size=50&duration=5500&width=600&height=75&center=true&repeat=true&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)
-
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Tangerine&color=&background=8A8A8A00&size=50&duration=5500&width=600&height=75&center=true&repeat=true&lines=Heya!+This+is+Suyog!;I'm+an+aspiring+Astrophysicist!;I+love+Books!;I'm+an+avid+Traveller!)](https://git.io/typing-svg)
 
 <!--$$f(x) = \alpha$$-->
 

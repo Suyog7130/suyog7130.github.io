@@ -35,3 +35,4 @@ redirect_from: /personal/useful-links/
 * [CSS-Timelines](https://freefrontend.com/css-timelines/)
 * [http://hilite.me/](http://hilite.me/) : Code to HTML  formatter for emailing code etc.
 * [letterboxd-page/](https://suyoggarg.com/letterboxd-page/) : Page to create custom letterboxd diary embedding, in the same manner as seen on this website.
+* [readme-typing-svg](https://readme-typing-svg.herokuapp.com/demo/) : The kinda thing you see in the About page.

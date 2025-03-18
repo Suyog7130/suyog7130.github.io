@@ -12,8 +12,22 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Tue, 18 Mar 2025 12:24:46 +1100</lastBuildDate>
+    <lastBuildDate>Tue, 18 Mar 2025 15:05:28 +1100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging</title>
+      <link>http://localhost:1313/tags/debugging/</link>
+      <pubDate>Tue, 18 Mar 2025 15:05:28 +1100</pubDate>
+      <guid>http://localhost:1313/tags/debugging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zotero</title>
+      <link>http://localhost:1313/tags/zotero/</link>
+      <pubDate>Tue, 18 Mar 2025 15:05:28 +1100</pubDate>
+      <guid>http://localhost:1313/tags/zotero/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Guide</title>
       <link>http://localhost:1313/tags/guide/</link>
