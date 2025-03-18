@@ -44,6 +44,7 @@
 &lt;li&gt;&lt;a href=&#34;https://freefrontend.com/css-timelines/&#34;&gt;CSS-Timelines&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://hilite.me/&#34;&gt;http://hilite.me/&lt;/a&gt; : Code to HTML  formatter for emailing code etc.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://suyoggarg.com/letterboxd-page/&#34;&gt;letterboxd-page/&lt;/a&gt; : Page to create custom letterboxd diary embedding, in the same manner as seen on this website.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://readme-typing-svg.herokuapp.com/demo/&#34;&gt;readme-typing-svg&lt;/a&gt; : The kinda thing you see in the About page.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
@@ -86,7 +87,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/about/</guid>
       <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/suyog-ueno-dslr-pic-by-vivi-cropped.jpeg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://readme-typing-svg.herokuapp.com?font=Tangerine&amp;color=000000&amp;background=#FFFFFFFF&amp;size=50&amp;duration=5500&amp;width=600&amp;height=75&amp;center=true&amp;repeat=true&amp;lines=Heya!+This+is+Suyog!;I&#39;m+an+aspiring+Astrophysicist!;I+love+Books!;I&#39;m+an+avid+Traveller!&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://git.io/typing-svg&#34;&gt;&lt;img alt=&#34;Typing SVG&#34; loading=&#34;lazy&#34; src=&#34;https://readme-typing-svg.herokuapp.com?font=Tangerine&amp;color=&amp;background=8A8A8A00&amp;size=50&amp;duration=5500&amp;width=600&amp;height=75&amp;center=true&amp;repeat=true&amp;lines=Heya!+This+is+Suyog!;I&#39;m+an+aspiring+Astrophysicist!;I+love+Books!;I&#39;m+an+avid+Traveller!&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;!--$$f(x) = \alpha$$--&gt;
 &lt;h3&gt; Here&#39;s some fun facts about me: &lt;/h3&gt;
 &lt;p&gt;  👋   Heya, this is Suyog. I am a Physics PhD student @ UTokyo.&lt;/p&gt;
