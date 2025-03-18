@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Zotero on Suyog Garg</title>
+    <link>http://localhost:1313/tags/zotero/</link>
+    <description>Recent content in Zotero on Suyog Garg</description>
+    <image>
+      <title>Suyog Garg</title>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
+    </image>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>en</language>
+    <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Tue, 18 Mar 2025 15:05:28 +1100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/zotero/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Issues with Zotero and working them out!</title>
+      <link>http://localhost:1313/posts/2025-03-18-zotero-issues/</link>
+      <pubDate>Tue, 18 Mar 2025 15:05:28 +1100</pubDate>
+      <guid>http://localhost:1313/posts/2025-03-18-zotero-issues/</guid>
+      <description>&lt;p&gt;A log of Zotero issues, I have encountered.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Date: 2025/03/18&lt;/li&gt;
+&lt;li&gt;Issue: Zotero freezes, items don&amp;rsquo;t load and the application doesn&amp;rsquo;t respond.&lt;/li&gt;
+&lt;li&gt;Reason: Possibly due to adding too many feeds and the syncing issue.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Date: 2025/03/18&lt;/li&gt;
+&lt;li&gt;Issue: Zootmoov didn&amp;rsquo;t sync recent files.&lt;/li&gt;
+&lt;li&gt;Solution: Select affected files, &lt;code&gt;right click&lt;/code&gt;$ \rightarrow$ &lt;code&gt;Move them to directory with Zootmoov&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description>
+    </item>
+  </channel>
+</rss>

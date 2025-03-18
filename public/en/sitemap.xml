@@ -5,20 +5,17 @@
     <loc>http://localhost:1313/posts/2021-05-09-terminal-commands/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-03-18-using-ssh/</loc>
-    <lastmod>2025-03-18T12:24:46+11:00</lastmod>
+    <loc>http://localhost:1313/tags/debugging/</loc>
+    <lastmod>2025-03-18T15:05:28+11:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/guide/</loc>
-    <lastmod>2025-03-18T12:24:46+11:00</lastmod>
+    <loc>http://localhost:1313/posts/2025-03-18-zotero-issues/</loc>
+    <lastmod>2025-03-18T15:05:28+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-03-18T12:24:46+11:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ssh/</loc>
-    <lastmod>2025-03-18T12:24:46+11:00</lastmod>
+    <lastmod>2025-03-18T15:05:28+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-18T12:24:46+11:00</lastmod>
+    <lastmod>2025-03-18T15:05:28+11:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hi"
@@ -36,6 +33,18 @@
                 />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-03-18T15:05:28+11:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/zotero/</loc>
+    <lastmod>2025-03-18T15:05:28+11:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-03-18-using-ssh/</loc>
+    <lastmod>2025-03-18T12:24:46+11:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/guide/</loc>
+    <lastmod>2025-03-18T12:24:46+11:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ssh/</loc>
     <lastmod>2025-03-18T12:24:46+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-03-17-vscode-terminal-cmd/</loc>

@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Tue, 18 Mar 2025 12:24:46 +1100</lastBuildDate>
+    <lastBuildDate>Tue, 18 Mar 2025 15:05:28 +1100</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -22,11 +22,34 @@
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
     <item>
-      <title>2025 03 18 Using Ssh</title>
+      <title>Issues with Zotero and working them out!</title>
+      <link>http://localhost:1313/posts/2025-03-18-zotero-issues/</link>
+      <pubDate>Tue, 18 Mar 2025 15:05:28 +1100</pubDate>
+      <guid>http://localhost:1313/posts/2025-03-18-zotero-issues/</guid>
+      <description>&lt;p&gt;A log of Zotero issues, I have encountered.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Date: 2025/03/18&lt;/li&gt;
+&lt;li&gt;Issue: Zotero freezes, items don&amp;rsquo;t load and the application doesn&amp;rsquo;t respond.&lt;/li&gt;
+&lt;li&gt;Reason: Possibly due to adding too many feeds and the syncing issue.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Date: 2025/03/18&lt;/li&gt;
+&lt;li&gt;Issue: Zootmoov didn&amp;rsquo;t sync recent files.&lt;/li&gt;
+&lt;li&gt;Solution: Select affected files, &lt;code&gt;right click&lt;/code&gt;$ \rightarrow$ &lt;code&gt;Move them to directory with Zootmoov&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Access Computing Clusters using Open-SSH</title>
       <link>http://localhost:1313/posts/2025-03-18-using-ssh/</link>
       <pubDate>Tue, 18 Mar 2025 12:24:46 +1100</pubDate>
       <guid>http://localhost:1313/posts/2025-03-18-using-ssh/</guid>
-      <description></description>
+      <description>&lt;h3 id=&#34;accessing-ligo-data-grid-ldg-cit-cluster&#34;&gt;Accessing LIGO Data Grid (LDG) CIT Cluster&lt;/h3&gt;
+&lt;h3 id=&#34;accessing-ipmu-idark&#34;&gt;Accessing IPMU iDark&lt;/h3&gt;
+&lt;h3 id=&#34;accessing-einstein-and-landau-at-tokyo-city-university&#34;&gt;Accessing Einstein and Landau at Tokyo City University&lt;/h3&gt;
+&lt;h3 id=&#34;accessing-tifr-computing-facility&#34;&gt;Accessing TIFR Computing Facility&lt;/h3&gt;</description>
     </item>
     <item>
       <title>Access VS Code via the Terminal</title>
