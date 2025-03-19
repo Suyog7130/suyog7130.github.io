@@ -7,7 +7,7 @@ tags:
   - research
 ---
 
-### Basic `gwpopulation` installation
+## Basic `gwpopulation` installation
 
 To install `gwpopulation` do:
 
@@ -57,7 +57,7 @@ Perhaps, it also has the same error.
 
 - The error arises due to package dependency conflicts. See the references for further discussions. If a particular version or pre-release of `bilby` is required, you need to install it correctly.
 
-### Installing `gwpopulation` from the Source
+## Installing `gwpopulation` from the Source
 
 If the errors persist and you cannot find the possible culprits, then do a source install for `gwpopulation` by cloning the source repository, instead of the `pip` or `conda` install. This is helpful because maybe the latest version of the release already resolves the unknown error you get. Source installation can be done as:
 
@@ -69,7 +69,7 @@ If the errors persist and you cannot find the possible culprits, then do a sourc
 ```
 
 
-### Bilby "number of threads" Error
+## Bilby "number of threads" Error
 
 Due to setup of Bilby, the number of threads keywords has to be set manually, otherwise the following error pops up:
 
@@ -120,7 +120,7 @@ After this, execute your python routines using `taskset -c 0-3 python <file-name
 
 
 
-#### References:
+## References:
 
 - https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 - https://github.com/bilby-dev/bilby/issues/917 

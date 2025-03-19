@@ -17,6 +17,16 @@ You basically have three entities you want to interlink and provide bidirectiona
 
 A copy of all my ssh keys is stored in `~/Dropbox/ssh-access-keys/`
 
+#### Known issues
+
+- If the internet connection is not stable, the connection may be terminated abruptly, with an error message like:
+
+```bash
+Read from remote host ldas-pcdev12.ligo.caltech.edu: No route to host
+Connection to ldas-pcdev12.ligo.caltech.edu closed.
+client_loop: send disconnect: Broken pipe
+```
+
 
 ### Accessing LIGO Data Grid (LDG) CIT Cluster
 
