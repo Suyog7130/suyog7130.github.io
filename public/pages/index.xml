@@ -12,8 +12,25 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 17:42:20 +1100</lastBuildDate>
     <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quotes</title>
+      <link>http://localhost:1313/pages/personal/quotes/</link>
+      <pubDate>Wed, 19 Mar 2025 17:42:20 +1100</pubDate>
+      <guid>http://localhost:1313/pages/personal/quotes/</guid>
+      <description>&lt;p&gt;This is a list of favorite quotes, either my own or somebody else&#39;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Interesting Articles</title>
+      <link>http://localhost:1313/pages/interesting-articles/</link>
+      <pubDate>Wed, 19 Mar 2025 17:39:59 +1100</pubDate>
+      <guid>http://localhost:1313/pages/interesting-articles/</guid>
+      <description>&lt;p&gt;This is a list of interesting research articles, books, popular science write-up and other general writings that I have come across over the years. See &lt;a href=&#34;http://localhost:1313/pages/personal/quotes/&#34;&gt;quotes&lt;/a&gt; for a look on some of my favorite quotes from these and other sources.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&#34;&gt;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Useful Links</title>
       <link>http://localhost:1313/pages/useful-links/</link>

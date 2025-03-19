@@ -248,16 +248,15 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>To install gwpopulation do:
+    <p>Basic gwpopulation installation To install gwpopulation do:
 Create a new Conda environment : conda create --name monash
 Activate the new environment : conda activate monash
 Use conda-forge to install gwpopulation : conda install -c conda-forge gwpopulation
 Check if import the installed package works or not : python3 -&gt; import gwpopulation
 Maybe there is a package dependency conflict and the import doesn’t work ! Perhaps, it’s the following error that pops up :
-❯ python3 Python 3.13.2 | packaged by conda-forge | (main, Feb 17 2025, 14:02:48) [Clang 18.1.8 ] on darwin Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. &gt;&gt;&gt; import gwpopulation Traceback (most recent call last): File &#34;&lt;python-input-0&gt;&#34;, line 1, in &lt;module&gt; import gwpopulation File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/gwpopulation/__init__.py&#34;, line 14, in &lt;module&gt; from . import conversions, hyperpe, models, utils, vt File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/gwpopulation/hyperpe.py&#34;, line 48, in &lt;module&gt; from bilby.core.likelihood import Likelihood File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/__init__.py&#34;, line 21, in &lt;module&gt; from . import core, gw, hyper File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/__init__.py&#34;, line 1, in &lt;module&gt; from . import grid, likelihood, prior, result, sampler, series, utils, fisher File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/grid.py&#34;, line 6, in &lt;module&gt; from .prior import Prior, PriorDict File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/prior/__init__.py&#34;, line 1, in &lt;module&gt; from .analytical import * File &#34;/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/bilby/core/prior/analytical.py&#34;, line 3, in &lt;module&gt; from scipy.special._ufuncs import xlogy, erf, log1p, stdtrit, gammaln, stdtr, \ btdtri, betaln, btdtr, gammaincinv, gammainc ImportError: cannot import name &#39;btdtri&#39; from &#39;scipy.special._ufuncs&#39; (/opt/homebrew/anaconda3/envs/monash/lib/python3.13/site-packages/scipy/special/_ufuncs.cpython-313-darwin.so) Check if bilby can be imported : python3 -&gt; import bilby Perhaps, it also has the same error.
 ...</p>
   </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-11 00:00:00 +0000 UTC'>March 11, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;267 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-11 00:00:00 +0000 UTC'>March 11, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;4 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;673 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
   <a class="entry-link" aria-label="post link to How to install gwpopulation on MacOS" href="http://localhost:1313/posts/2025-03-11-how-to-install-gwpopulation/"></a>
 </article>

@@ -15,14 +15,21 @@
     <lastBuildDate>Tue, 18 Mar 2025 12:24:46 +1100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Access Computing Clusters using Open-SSH</title>
-      <link>http://localhost:1313/posts/2025-03-18-using-ssh/</link>
+      <title>Accessing Remote Computing Clusters using Open-SSH</title>
+      <link>http://localhost:1313/posts/2025-03-18-using-ssh-remote-access/</link>
       <pubDate>Tue, 18 Mar 2025 12:24:46 +1100</pubDate>
-      <guid>http://localhost:1313/posts/2025-03-18-using-ssh/</guid>
-      <description>&lt;h3 id=&#34;accessing-ligo-data-grid-ldg-cit-cluster&#34;&gt;Accessing LIGO Data Grid (LDG) CIT Cluster&lt;/h3&gt;
-&lt;h3 id=&#34;accessing-ipmu-idark&#34;&gt;Accessing IPMU iDark&lt;/h3&gt;
-&lt;h3 id=&#34;accessing-einstein-and-landau-at-tokyo-city-university&#34;&gt;Accessing Einstein and Landau at Tokyo City University&lt;/h3&gt;
-&lt;h3 id=&#34;accessing-tifr-computing-facility&#34;&gt;Accessing TIFR Computing Facility&lt;/h3&gt;</description>
+      <guid>http://localhost:1313/posts/2025-03-18-using-ssh-remote-access/</guid>
+      <description>&lt;h3 id=&#34;general-guidelines&#34;&gt;General guidelines&lt;/h3&gt;
+&lt;p&gt;You basically have three entities you want to interlink and provide bidirectional access.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Personal computer&lt;/li&gt;
+&lt;li&gt;Remote computer&lt;/li&gt;
+&lt;li&gt;Github or Gitlab a/c server&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A copy of all my ssh keys is stored in &lt;code&gt;~/Dropbox/ssh-access-keys/&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;accessing-ligo-data-grid-ldg-cit-cluster&#34;&gt;Accessing LIGO Data Grid (LDG) CIT Cluster&lt;/h3&gt;
+&lt;p&gt;To use  &lt;code&gt;ssh&lt;/code&gt; to push to github repo, you still have to provide in the username and password for your &lt;code&gt;@git.ligo.org&lt;/code&gt; account.
+You have to make sure that your SSH public key for LDG-CIT is uploaded to the &lt;code&gt;git.ligo.org&lt;/code&gt; account, and not your personal Github account.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
