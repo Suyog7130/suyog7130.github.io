@@ -124,4 +124,4 @@ After this, execute your python routines using `taskset -c 0-3 python <file-name
 
 - https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 - https://github.com/bilby-dev/bilby/issues/917 
-
+- https://computing.docs.ligo.org/guide/gitlab/
