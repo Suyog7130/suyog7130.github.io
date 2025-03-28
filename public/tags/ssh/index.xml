@@ -27,7 +27,14 @@
 &lt;li&gt;Github or Gitlab a/c server&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;A copy of all my ssh keys is stored in &lt;code&gt;~/Dropbox/ssh-access-keys/&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;accessing-ligo-data-grid-ldg-cit-cluster&#34;&gt;Accessing LIGO Data Grid (LDG) CIT Cluster&lt;/h3&gt;
+&lt;h4 id=&#34;known-issues&#34;&gt;Known issues&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;If the internet connection is not stable, the connection may be terminated abruptly, with an error message like:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Read from remote host ldas-pcdev12.ligo.caltech.edu: No route to host
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Connection to ldas-pcdev12.ligo.caltech.edu closed.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;client_loop: send disconnect: Broken pipe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;accessing-ligo-data-grid-ldg-cit-cluster&#34;&gt;Accessing LIGO Data Grid (LDG) CIT Cluster&lt;/h3&gt;
 &lt;p&gt;To use  &lt;code&gt;ssh&lt;/code&gt; to push to github repo, you still have to provide in the username and password for your &lt;code&gt;@git.ligo.org&lt;/code&gt; account.
 You have to make sure that your SSH public key for LDG-CIT is uploaded to the &lt;code&gt;git.ligo.org&lt;/code&gt; account, and not your personal Github account.&lt;/p&gt;</description>
     </item>

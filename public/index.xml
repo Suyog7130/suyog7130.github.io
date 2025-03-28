@@ -26,7 +26,15 @@
       <link>http://localhost:1313/pages/personal/quotes/</link>
       <pubDate>Wed, 19 Mar 2025 17:42:20 +1100</pubDate>
       <guid>http://localhost:1313/pages/personal/quotes/</guid>
-      <description>&lt;p&gt;This is a list of favorite quotes, either my own or somebody else&#39;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is a list of quotations I like, either my own or somebody else&#39;&lt;/p&gt;
+&lt;h2 id=&#34;from-books&#34;&gt;From Books&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I don’t know what I’m looking for.”
+&amp;ldquo;Why not?&amp;rdquo;
+&amp;ldquo;Because&amp;hellip;because&amp;hellip;I think it might be because if I knew
+I wouldn’t be able to look for them.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— Douglas Adams, The Hitchhiker’s Guide to the Galaxy&lt;/p&gt;</description>
     </item>
     <item>
       <title>Interesting Articles</title>
@@ -71,7 +79,14 @@
 &lt;li&gt;Github or Gitlab a/c server&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;A copy of all my ssh keys is stored in &lt;code&gt;~/Dropbox/ssh-access-keys/&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;accessing-ligo-data-grid-ldg-cit-cluster&#34;&gt;Accessing LIGO Data Grid (LDG) CIT Cluster&lt;/h3&gt;
+&lt;h4 id=&#34;known-issues&#34;&gt;Known issues&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;If the internet connection is not stable, the connection may be terminated abruptly, with an error message like:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Read from remote host ldas-pcdev12.ligo.caltech.edu: No route to host
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Connection to ldas-pcdev12.ligo.caltech.edu closed.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;client_loop: send disconnect: Broken pipe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;accessing-ligo-data-grid-ldg-cit-cluster&#34;&gt;Accessing LIGO Data Grid (LDG) CIT Cluster&lt;/h3&gt;
 &lt;p&gt;To use  &lt;code&gt;ssh&lt;/code&gt; to push to github repo, you still have to provide in the username and password for your &lt;code&gt;@git.ligo.org&lt;/code&gt; account.
 You have to make sure that your SSH public key for LDG-CIT is uploaded to the &lt;code&gt;git.ligo.org&lt;/code&gt; account, and not your personal Github account.&lt;/p&gt;</description>
     </item>
@@ -136,7 +151,7 @@ You have to make sure that your SSH public key for LDG-CIT is uploaded to the &l
 &lt;/ul&gt;</description>
     </item>
     <item>
-      <title>2025 03 14 Customize Linux Terminal</title>
+      <title>Customize Linux Terminal!</title>
       <link>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</link>
       <pubDate>Fri, 14 Mar 2025 16:27:20 +1100</pubDate>
       <guid>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</guid>
@@ -163,7 +178,7 @@ You have to make sure that your SSH public key for LDG-CIT is uploaded to the &l
       <link>http://localhost:1313/posts/2025-03-11-how-to-install-gwpopulation/</link>
       <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2025-03-11-how-to-install-gwpopulation/</guid>
-      <description>&lt;h3 id=&#34;basic-gwpopulation-installation&#34;&gt;Basic &lt;code&gt;gwpopulation&lt;/code&gt; installation&lt;/h3&gt;
+      <description>&lt;h2 id=&#34;basic-gwpopulation-installation&#34;&gt;Basic &lt;code&gt;gwpopulation&lt;/code&gt; installation&lt;/h2&gt;
 &lt;p&gt;To install &lt;code&gt;gwpopulation&lt;/code&gt; do:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
