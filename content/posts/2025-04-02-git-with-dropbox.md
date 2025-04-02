@@ -1,5 +1,5 @@
 ---
-title: "2025 04 02 Git With Dropbox"
+title: "How to use Git With Dropbox?"
 date: 2025-04-02T18:07:51+09:00
 draft: false
 tags:
