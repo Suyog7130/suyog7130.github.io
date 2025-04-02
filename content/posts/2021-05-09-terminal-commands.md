@@ -39,5 +39,14 @@ use | to
 `ds9` *filename*      | open FITS format image files. *Requires DS9*
 `fv` *filename*        | open FITS format event lists and datasets. *Requires initiation of NASA's `heasarc`*
 
---- 
+---
+
+
+### To Check File Size in directories and sub-directories
+
+```
+du -h d 1 | sort -hu
+```
+
+Ref : https://www.linuxteck.com/9-basic-du-command-in-linux-with-examples/
 
