@@ -162,10 +162,13 @@ params:
     # newsTitleUnderline: true
     # newsBox: true
     news:
-      - date: "2025/03/09-29"
+      - date: "2025/04/23-24"
         type: ""
-        content: "Visiting Monash University in Melbourne, Australia"
-      - content: "Open to Research Positions starting Fall 2026!"
+        content: "Participating in kHz GW workshop @ UTokyo"
+      - date: "2025/04~07"
+        type: ""
+        content: "Started ML4Astro Seminar Series @ UTokyo"
+      # - content: "Open to Research Positions starting Fall 2026!"
       # - type: "Talk"
       #   content: "I have started my PhD at the University of Tokyo."
     buttons:
