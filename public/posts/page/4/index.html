@@ -259,6 +259,43 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">pdf2jpg via terminal
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to convert PDF to JPG/PNG (images) via command line prompts on MacOS zsh terminal.
+STEP 1 : Install poppler via brew install poppler
+STEP 2a : If you only wanna convert one file, run,
+pdftoppm -jpeg -r 300 path-to-input-folder/**/*.pdf path-to-output-folder/* STEP 2b : If you wanna loop through all the files in then execute,
+for file in path-to-input-folder/**/*; do pdftoppm -jpeg -r 300 $file path-to-output-folder/*; done; See also : https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh
+</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-03-22 00:00:00 +0000 UTC'>March 22, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;71 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to pdf2jpg via terminal" href="http://localhost:1313/posts/2024-03-22-pdf2jpg/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to use Sphinx Documentation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Sphinx documentation build also requires configuring the source pathname inside docs/conf.py
+So, the process for building documentation is:
+Run sphinx-quickstart, e.g. sphinx-quickstart docs/ -p xmmPipeline -a Suyog –ext-autodoc –ext-napolean –ext-doctest –ext-intersphinx –ext-todoint
+Edit docs/conf.py file to have the correct documentation path.
+Run autodoc to automatically import the docstring from the code modules and scripts, e.g. sphinx-apidoc -o ./docs ../src/xmmPipeline/ –force
+Use make html for HTML, make latex for LaTeX, make latexpdf for PDF and make epub for epub
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2023-02-13 00:00:00 +0000 UTC'>February 13, 2023</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;345 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to How to use Sphinx Documentation" href="http://localhost:1313/posts/2023-02-13-how-to-sphinx/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Customizing Mac Terminal
     </h2>
   </header>
@@ -302,38 +339,12 @@ Always use active voice ! For instance, </p>
 </footer>
   <a class="entry-link" aria-label="post link to Tips on Writing Scientific Papers" href="http://localhost:1313/posts/2025-02-20-paper-writing-tips/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>
-https://iconbuddy.com/
-</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;word&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/posts/icons/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Fonts
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> I have a knack for fonts and typefaces. Below is a list of my favorites: Mistral® This is a Microsoft proprietary font. I have used it for the title of the blog. This is the closest it gets to my handwriting. Looks good, eh? 😄 Lato Used in the body of the blog, this open source sans-serif typeface is pleasing to the eye. Monotype Corsiva® Another of Microsoft&#39;s proprietary fonts. I use it for my poems. Pacifico A tiny bit heavier than the others, but good for headings. Calligraffitti I like the extended curving of the tails. Used this in the home feed. Verdana® Yet another of Microsoft fonts. Nice and simplistic sans-serif. I like it plain, without bold. Lucida® Handwriting Again Microsoft&#39;s. The slanting gives a personal touch. The glyphs are lucid as the name goes. My favorite font for writing letters. Mistral I use for the headings. Calibri The best known of the Word font collection. Must use for drafts. Arial® Another by Monotype, this is the font one sees on google. The best typeface available for the academia. I like it regular. Parchment® For the regal times. The best for anything immense. Papyrus® When I need the feel of handmade paper. A widely used calligraphic typeface. Courier A monospace typeface that provides the type writer look. Great for writing stories. Georgia® Appealing to the eyes. Good for writings that need a thorough reading. Owned by Microsoft. Helvetica® Popular sans-serif typeface. Suited for general use on the web. From Mergenthaler Linotype Company. Not available in MS Office. Vivaldi™ When it needs to be extreme calligraphic. Looks cool on invitation cards. Arvo Nice when the size is large and weight is not bold. The square serifs are pleasing. Times New Roman® First designed by Monotype in the 1930s, this is the most widely used font in the world. Newspapers are type set in the Times. Comic Sans® Microsoft&#39;s proprietary font that makes everything seem playful. Also one of the few fonts available on Gmail. Other open source fonts from The League of Moveable Type and the Indian Type Foundary. Raleway Tangerine कलाम Prociono Fanwood Text Linden Hill League Script Sorts Mill Goudy Goudy Bookletter 1911 </p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;366 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to Fonts" href="http://localhost:1313/posts/fonts/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/posts/page/3/">
-      «&nbsp;Prev&nbsp;3/4
+      «&nbsp;Prev&nbsp;3/5
+    </a>
+    <a class="next" href="http://localhost:1313/posts/page/5/">Next&nbsp;5/5&nbsp;»
     </a>
   </nav>
 </footer>

@@ -177,8 +177,8 @@
   "keywords": [
     
   ],
-  "articleBody": "These are some useful Linux Terminal Commands for productivity:\nCommands using ls etc. use to ls -ltr list files in reverse modification history order with details. `ls -ltr tail -n 5` `ls head -n 5` rename 's/original/new/' * To rename all filenames and directories containing “original” string to “new” string. To recursively do this in sub-directories, use **/*. See: here and here for dir in */; do mkdir -- \"$dir\"/{tmp1,foo,bar,qux}; done To create directories within sub-directories in one go! For opening image files from Terminal Opening files directly through the Terminal is both easy and fast. Additionally, these commands are useful to view resulting files when using subprocess.run in Python to run Terminal commands.\nuse to evince filename open PDF files and PS document files. eog filename open image files in normal image formats like JPEG, JPG, PNG etc. ds9 filename open FITS format image files. Requires DS9 fv filename open FITS format event lists and datasets. Requires initiation of NASA’s heasarc ",
-  "wordCount" : "162",
+  "articleBody": "These are some useful Linux Terminal Commands for productivity:\nCommands using ls etc. use to ls -ltr list files in reverse modification history order with details. `ls -ltr tail -n 5` `ls head -n 5` rename 's/original/new/' * To rename all filenames and directories containing “original” string to “new” string. To recursively do this in sub-directories, use **/*. See: here and here for dir in */; do mkdir -- \"$dir\"/{tmp1,foo,bar,qux}; done To create directories within sub-directories in one go! ls -a list all files, including hidden ones! For opening image files from Terminal Opening files directly through the Terminal is both easy and fast. Additionally, these commands are useful to view resulting files when using subprocess.run in Python to run Terminal commands.\nuse to evince filename open PDF files and PS document files. eog filename open image files in normal image formats like JPEG, JPG, PNG etc. ds9 filename open FITS format image files. Requires DS9 fv filename open FITS format event lists and datasets. Requires initiation of NASA’s heasarc To Check File Size in directories and sub-directories du -h d 1 | sort -hu Ref : https://www.linuxteck.com/9-basic-du-command-in-linux-with-examples/\n",
+  "wordCount" : "188",
   "inLanguage": "en",
   "image": "http://localhost:1313/","datePublished": "2021-05-09T00:00:00Z",
   "dateModified": "2021-05-09T00:00:00Z",
@@ -294,7 +294,7 @@
     <div class="post-description">
       Sample article showcasing basic Markdown syntax and formatting for HTML elements.
     </div>
-    <div class="post-meta"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2021-05-09 00:00:00 +0000 UTC'>May 9, 2021</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;162 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+    <div class="post-meta"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2021-05-09 00:00:00 +0000 UTC'>May 9, 2021</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;188 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 
 
 </div>
@@ -329,7 +329,11 @@
         <div class="inner"><nav id="TableOfContents">
   <ul>
     <li><a href="#commands-using-ls-etc">Commands using <code>ls</code> etc.</a></li>
-    <li><a href="#for-opening-image-files-from-terminal">For opening image files from Terminal</a></li>
+    <li><a href="#for-opening-image-files-from-terminal">For opening image files from Terminal</a>
+      <ul>
+        <li><a href="#to-check-file-size-in-directories-and-sub-directories">To Check File Size in directories and sub-directories</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         </div>
@@ -369,6 +373,10 @@
           <td><code>for dir in */; do mkdir -- &quot;$dir&quot;/{tmp1,foo,bar,qux}; done</code></td>
           <td>To create directories within sub-directories in one go!</td>
       </tr>
+      <tr>
+          <td><code>ls -a</code></td>
+          <td>list all files, including hidden ones!</td>
+      </tr>
   </tbody>
 </table>
 <h2 id="for-opening-image-files-from-terminal">For opening image files from Terminal<a hidden class="anchor" aria-hidden="true" href="#for-opening-image-files-from-terminal">#</a></h2>
@@ -400,6 +408,9 @@
   </tbody>
 </table>
 <hr>
+<h3 id="to-check-file-size-in-directories-and-sub-directories">To Check File Size in directories and sub-directories<a hidden class="anchor" aria-hidden="true" href="#to-check-file-size-in-directories-and-sub-directories">#</a></h3>
+<pre tabindex="0"><code>du -h d 1 | sort -hu
+</code></pre><p>Ref : <a href="https://www.linuxteck.com/9-basic-du-command-in-linux-with-examples/">https://www.linuxteck.com/9-basic-du-command-in-linux-with-examples/</a></p>
 
 
   </div>
