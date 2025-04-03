@@ -12,8 +12,23 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Thu, 02 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2025 18:07:51 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use Git With Dropbox?</title>
+      <link>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</link>
+      <pubDate>Wed, 02 Apr 2025 18:07:51 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</guid>
+      <description>&lt;p&gt;Problems I have encountered using Dropbox:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dropbox storage space available for use is really low, and is consumed relatively easily because of the &lt;code&gt;.git&lt;/code&gt; folder.&lt;/li&gt;
+&lt;li&gt;Dropbox real time sync has issues with &lt;code&gt;git&lt;/code&gt; if multiple computers work on a project simultaneously. Although, it has been rare that I have encountere this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My current solution for this problem is as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Move the most space consuming &lt;code&gt;.git&lt;/code&gt; folders outside of Dropbox. This way Dropbox won&amp;rsquo;t be syncing these large folders.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>git submodules are erroneous</title>
       <link>http://localhost:1313/posts/2024-05-02-git-submodules/</link>

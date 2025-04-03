@@ -244,6 +244,22 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">How to use Git With Dropbox?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Problems I have encountered using Dropbox:
+Dropbox storage space available for use is really low, and is consumed relatively easily because of the .git folder. Dropbox real time sync has issues with git if multiple computers work on a project simultaneously. Although, it has been rare that I have encountere this. My current solution for this problem is as follows:
+Move the most space consuming .git folders outside of Dropbox. This way Dropbox won’t be syncing these large folders.
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-02 18:07:51 +0900 JST'>April 2, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;413 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to How to use Git With Dropbox?" href="http://localhost:1313/posts/2025-04-02-git-with-dropbox/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Access VS Code via the Terminal
     </h2>
   </header>
@@ -252,7 +268,7 @@
 Open your Bash or zsh profile. open ~/.zshrc Add path to the VS Code application to your PATHS variable. # Add Visual Studio Code (code) export PATH=&#34;$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&#34; Reload your updated terminal profile. source ~/.zshrc You can now open VS code by running code xxx from anywhere in your computer. References:
 https://code.visualstudio.com/docs/setup/mac </p>
   </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-17 18:49:00 +1100 AEDT'>March 17, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;66 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-17 18:49:00 +1100 +1100'>March 17, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;66 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
   <a class="entry-link" aria-label="post link to Access VS Code via the Terminal" href="http://localhost:1313/posts/2025-03-17-vscode-terminal-cmd/"></a>
 </article>
@@ -265,7 +281,7 @@ https://code.visualstudio.com/docs/setup/mac </p>
   <div class="entry-content">
     <p></p>
   </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-14 16:27:20 +1100 AEDT'>March 14, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;0 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;0 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-14 16:27:20 +1100 +1100'>March 14, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;0 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;0 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
   <a class="entry-link" aria-label="post link to Customize Linux Terminal!" href="http://localhost:1313/posts/2025-03-14-custom-linux-terminal/"></a>
 </article>
@@ -298,24 +314,6 @@ env=~/.ssh/agent.env agent_load_env () { test -f &#34;$env&#34; &amp;&amp; . &#3
   <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-03-28 00:00:00 +0000 UTC'>March 28, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;101 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
   <a class="entry-link" aria-label="post link to Do not ask for Git passphrase on each commit" href="http://localhost:1313/posts/2024-03-28-git-passphrase/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">pdf2jpg via terminal
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>How to convert PDF to JPG/PNG (images) via command line prompts on MacOS zsh terminal.
-STEP 1 : Install poppler via brew install poppler
-STEP 2a : If you only wanna convert one file, run,
-pdftoppm -jpeg -r 300 path-to-input-folder/**/*.pdf path-to-output-folder/* STEP 2b : If you wanna loop through all the files in then execute,
-for file in path-to-input-folder/**/*; do pdftoppm -jpeg -r 300 $file path-to-output-folder/*; done; See also : https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh
-</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-03-22 00:00:00 +0000 UTC'>March 22, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;71 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to pdf2jpg via terminal" href="http://localhost:1313/posts/2024-03-22-pdf2jpg/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

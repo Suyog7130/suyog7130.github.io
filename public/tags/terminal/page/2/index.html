@@ -244,6 +244,24 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">pdf2jpg via terminal
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to convert PDF to JPG/PNG (images) via command line prompts on MacOS zsh terminal.
+STEP 1 : Install poppler via brew install poppler
+STEP 2a : If you only wanna convert one file, run,
+pdftoppm -jpeg -r 300 path-to-input-folder/**/*.pdf path-to-output-folder/* STEP 2b : If you wanna loop through all the files in then execute,
+for file in path-to-input-folder/**/*; do pdftoppm -jpeg -r 300 $file path-to-output-folder/*; done; See also : https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh
+</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-03-22 00:00:00 +0000 UTC'>March 22, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;71 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to pdf2jpg via terminal" href="http://localhost:1313/posts/2024-03-22-pdf2jpg/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Customizing Mac Terminal
     </h2>
   </header>
