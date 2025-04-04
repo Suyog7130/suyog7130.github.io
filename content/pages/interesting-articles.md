@@ -8,3 +8,4 @@ This is a list of interesting research articles, books, popular science write-up
 
 - https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures
 
+- [List of Books that changed the world](https://web.mnstate.edu/schwartz/centurylist2.html)
