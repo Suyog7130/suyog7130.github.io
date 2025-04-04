@@ -9,11 +9,25 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Wed, 02 Apr 2025 18:07:51 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 03 Apr 2025 18:25:31 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On switching to TexStudio!</title>
+      <link>http://localhost:1313/posts/2025-04-03-texstudio/</link>
+      <pubDate>Thu, 03 Apr 2025 18:25:31 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-03-texstudio/</guid>
+      <description>&lt;p&gt;For many many year I have been using &lt;a href=&#34;http://www.xm1math.net/texmaker/&#34;&gt;TexMaker&lt;/a&gt; for all my offline LaTeX document creation, compiling and editing needs. A few years back, Overleaf came along with its super ease-of-access approach to online LaTeX document editing and sharing. Overleaf has an edge over other LaTeX software distributions, mainly because of the following reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Overleaf is online, so the document can be accessed from anywhere with Internet.&lt;/li&gt;
+&lt;li&gt;Adding collaborators is as easy as adding their email addresses.&lt;/li&gt;
+&lt;li&gt;Auto-completion of usual command structures.&lt;/li&gt;
+&lt;li&gt;Better design and native LaTeX library support than others.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On the other hand, &lt;strong&gt;TexMaker&lt;/strong&gt; been an offline and a little bit old now, has many inefficiencies that render it more time consuming to edit documents. Plus, you have to use an external cloud storage like Dropbox to store the work files.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to use Git With Dropbox?</title>
       <link>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</link>

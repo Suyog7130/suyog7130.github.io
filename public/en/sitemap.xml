@@ -5,20 +5,14 @@
     <loc>http://localhost:1313/posts/2021-05-09-terminal-commands/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
-    <lastmod>2025-04-02T18:07:51+09:00</lastmod>
+    <loc>http://localhost:1313/pages/</loc>
+    <lastmod>2025-04-03T18:58:07+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</loc>
-    <lastmod>2025-04-02T18:07:51+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/mac/</loc>
-    <lastmod>2025-04-02T18:07:51+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-04-02T18:07:51+09:00</lastmod>
+    <loc>http://localhost:1313/pages/teaching/softtools/</loc>
+    <lastmod>2025-04-03T18:58:07+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-04-02T18:07:51+09:00</lastmod>
+    <lastmod>2025-04-03T18:58:07+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hi"
@@ -35,7 +29,31 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/pages/teaching/ml4astro/notes@ml4astro/</loc>
+    <lastmod>2025-04-03T18:55:47+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/latex/</loc>
+    <lastmod>2025-04-03T18:25:31+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mac/</loc>
+    <lastmod>2025-04-03T18:25:31+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-04-03-texstudio/</loc>
+    <lastmod>2025-04-03T18:25:31+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-04-03T18:25:31+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/software/</loc>
+    <lastmod>2025-04-03T18:25:31+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-04-03T18:25:31+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/git/</loc>
+    <lastmod>2025-04-02T18:07:51+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</loc>
     <lastmod>2025-04-02T18:07:51+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/terminal/</loc>
@@ -43,9 +61,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</loc>
     <lastmod>2025-04-01T16:56:24+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pages/</loc>
-    <lastmod>2025-03-28T15:10:35+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/personal/quotes/</loc>
     <lastmod>2025-03-19T17:42:20+11:00</lastmod>
@@ -96,9 +111,6 @@
     <lastmod>2025-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/research/</loc>
-    <lastmod>2025-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/software/</loc>
     <lastmod>2025-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/personal/conferences/</loc>
@@ -172,6 +184,8 @@
   </url><url>
     <loc>http://localhost:1313/posts/2025-02-20-paper-writing-tips/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pages/personal/resceu-related/</loc>
   </url><url>
     <loc>http://localhost:1313/posts/icons/</loc>
   </url><url>
