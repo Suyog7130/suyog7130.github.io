@@ -11,9 +11,10 @@ redirect_from: /personal/useful-links/
 ### UTokyo Related
 
 * UTokyo Physics Department [Leave Application Forms](https://www.phys.s.u-tokyo.ac.jp/g_info/40191/)
+* UTokyo General [Scholarships Page](https://www.u-tokyo.ac.jp/ja/students/welfare/h02.html)
 * UTokyo Graduate School of Science [List of Scholarships Page](https://www.phys.s.u-tokyo.ac.jp/scholarship/)
 * [UTokyo Private Scholarships Page](https://www.u-tokyo.ac.jp/ja/students/welfare/h02_02.html) (mostly only for Japanese students)
-* UTokyo [Physics Dept Scholarships Page](https://www.phys.s.u-tokyo.ac.jp/scholarship/)
+* UTokyo Physics Dept [Scholarships Page](https://www.phys.s.u-tokyo.ac.jp/scholarship/)
 
 ### Research Related
 
