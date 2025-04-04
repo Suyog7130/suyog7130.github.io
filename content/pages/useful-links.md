@@ -11,10 +11,18 @@ redirect_from: /personal/useful-links/
 ### UTokyo Related
 
 * UTokyo Physics Department [Leave Application Forms](https://www.phys.s.u-tokyo.ac.jp/g_info/40191/)
+
+### UTokyo Graduate-level Funding and Scholarship Related
+
 * UTokyo General [Scholarships Page](https://www.u-tokyo.ac.jp/ja/students/welfare/h02.html)
 * UTokyo Graduate School of Science [List of Scholarships Page](https://www.phys.s.u-tokyo.ac.jp/scholarship/)
 * [UTokyo Private Scholarships Page](https://www.u-tokyo.ac.jp/ja/students/welfare/h02_02.html) (mostly only for Japanese students)
 * UTokyo Physics Dept [Scholarships Page](https://www.phys.s.u-tokyo.ac.jp/scholarship/)
+* [Spring-GX WINGS-FMSP Program](https://www.ms.u-tokyo.ac.jp/wings-fmsp/)
+* [UTokyo Research Support System](https://www.u-tokyo.ac.jp/ja/research/systems-data/support.html)
+* [UTokyo-Russia Exchange Program STEPS](https://www.s.u-tokyo.ac.jp/ja/STEPS/)
+* [UTokyo CompSci Alliance Overseas Support](https://www.compsci-alliance.jp/overseas-support/) (maybe only for Japanese)
+* JST Research Grant Programs: [Main Page](https://www.jst.go.jp/kisoken/programs/index.html), [2025 Call for Proposals](https://www.jst.go.jp/kisoken/boshuu/teian/en/top/gaiyo.html)
 
 ### Research Related
 
