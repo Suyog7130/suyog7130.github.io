@@ -9,10 +9,10 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Wed, 02 Apr 2025 18:07:51 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 03 Apr 2025 18:58:07 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -20,6 +20,61 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2021-05-09-terminal-commands/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>SoftTools</title>
+      <link>http://localhost:1313/pages/teaching/softtools/</link>
+      <pubDate>Thu, 03 Apr 2025 18:58:07 +0900</pubDate>
+      <guid>http://localhost:1313/pages/teaching/softtools/</guid>
+      <description>&lt;p&gt;This document is to store notes about a possible Software Tools I may be interested in running later this year or the next in UTokyo.&lt;/p&gt;
+&lt;p&gt;List of Important Scientific software tools and Packages I have been using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zotero : for Research Papers management.&lt;/li&gt;
+&lt;li&gt;LaTeX : Perhaps, have a demo on some advanced latex tools.&lt;/li&gt;
+&lt;li&gt;Python : Again, introduction to advanced tools and libraries and to proper coding practices.&lt;/li&gt;
+&lt;li&gt;Git / Github : How to do version control??&lt;/li&gt;
+&lt;li&gt;Blender ??&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Notes@ml4astro</title>
+      <link>http://localhost:1313/pages/teaching/ml4astro/notes@ml4astro/</link>
+      <pubDate>Thu, 03 Apr 2025 18:55:47 +0900</pubDate>
+      <guid>http://localhost:1313/pages/teaching/ml4astro/notes@ml4astro/</guid>
+      <description>&lt;h2 id=&#34;notes-for-the-ml4astro-seminar-series&#34;&gt;Notes for the ML4Astro Seminar Series&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>On switching to TexStudio!</title>
+      <link>http://localhost:1313/posts/2025-04-03-texstudio/</link>
+      <pubDate>Thu, 03 Apr 2025 18:25:31 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-03-texstudio/</guid>
+      <description>&lt;p&gt;For many many year I have been using &lt;a href=&#34;http://www.xm1math.net/texmaker/&#34;&gt;TexMaker&lt;/a&gt; for all my offline LaTeX document creation, compiling and editing needs. A few years back, Overleaf came along with its super ease-of-access approach to online LaTeX document editing and sharing. Overleaf has an edge over other LaTeX software distributions, mainly because of the following reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Overleaf is online, so the document can be accessed from anywhere with Internet.&lt;/li&gt;
+&lt;li&gt;Adding collaborators is as easy as adding their email addresses.&lt;/li&gt;
+&lt;li&gt;Auto-completion of usual command structures.&lt;/li&gt;
+&lt;li&gt;Better design and native LaTeX library support than others.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On the other hand, &lt;strong&gt;TexMaker&lt;/strong&gt; been an offline and a little bit old now, has many inefficiencies that render it more time consuming to edit documents. Plus, you have to use an external cloud storage like Dropbox to store the work files.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stuff RESCEU Related</title>
+      <link>http://localhost:1313/pages/personal/resceu-related/</link>
+      <pubDate>Thu, 03 Apr 2025 17:44:26 +0900</pubDate>
+      <guid>http://localhost:1313/pages/personal/resceu-related/</guid>
+      <description>&lt;p&gt;Random Stuff Related to my time at RESCEU!&lt;/p&gt;
+&lt;p style=&#34;text-align: center; font-weight: bold;&#34;&gt;
+	UTokyo General Library Calendar 2025
+&lt;/p&gt;
+&lt;!--
+These sites are dynamically generated, so the current month is always correct.
+However, in my case, the view is fixed at the month for which I have put the html code in. So, the best option right now is to have this link to the calendar page!
+--&gt;
+&lt;p style=&#34;text-align: center;&#34;&gt;
+	&lt;a href=&#34;https://opac.dl.itc.u-tokyo.ac.jp/opac/calendar/?lang=1&amp;countercd=100001&amp;date=2025-04&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;
+		Open UTokyo General Library Calendar 2025
+	&lt;/a&gt;
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to use Git With Dropbox?</title>
@@ -60,8 +115,7 @@
 &lt;p&gt;&amp;ldquo;I don’t know what I’m looking for.”
 &amp;ldquo;Why not?&amp;rdquo;
 &amp;ldquo;Because&amp;hellip;because&amp;hellip;I think it might be because if I knew
-I wouldn’t be able to look for them.”&lt;/p&gt;
-&lt;/blockquote&gt;
+I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;— Douglas Adams, The Hitchhiker’s Guide to the Galaxy&lt;/p&gt;</description>
     </item>
     <item>
