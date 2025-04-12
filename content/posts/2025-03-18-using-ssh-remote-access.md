@@ -18,6 +18,14 @@ You basically have three entities you want to interlink and provide bidirectiona
 
 A copy of all my ssh keys is stored in `~/Dropbox/ssh-access-keys/`
 
+**Using VS Code Interface**
+
+To use the Microsoft VisualStudio Code interface for accessing your remote server account, follow the following directions:
+
+
+
+**Porting via Jupyter notebook**
+
 
 ## Known Issues and Problems Encountered
 
@@ -29,7 +37,7 @@ Connection to ldas-pcdev12.ligo.caltech.edu closed.
 client_loop: send disconnect: Broken pipe
 ```
 
-- Some servers require connection ported by a supported VPN service. So, the ssh connection request won't work if the VPN is not swited on prior to making the request. 
+- Some servers require connection ported by a supported VPN service. So, the ssh connection request won't work if the VPN is not switched on prior to making the request. 
 
 - The computer accessing the remote server should have the same public key as the one originally submitted/added to the remote server. Otherwise, the ssh connection request won't work.
 
@@ -73,8 +81,6 @@ ssh suyog.garg@idark.ipmu.jp
 
 
 ### Accessing TIFR Computing Facility
-
-**Porting via Jupyter notebook**
 
 
 
