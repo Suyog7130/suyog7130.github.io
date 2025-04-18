@@ -37,6 +37,25 @@
       <description>&lt;h2 id=&#34;notes-for-the-ml4astro-seminar-series&#34;&gt;Notes for the ML4Astro Seminar Series&lt;/h2&gt;</description>
     </item>
     <item>
+      <title>Stuff RESCEU Related</title>
+      <link>http://localhost:1313/pages/personal/resceu-related/</link>
+      <pubDate>Thu, 03 Apr 2025 17:44:26 +0900</pubDate>
+      <guid>http://localhost:1313/pages/personal/resceu-related/</guid>
+      <description>&lt;p&gt;Random Stuff Related to my time at RESCEU!&lt;/p&gt;
+&lt;p style=&#34;text-align: center; font-weight: bold;&#34;&gt;
+	UTokyo General Library Calendar 2025
+&lt;/p&gt;
+&lt;!--
+These sites are dynamically generated, so the current month is always correct.
+However, in my case, the view is fixed at the month for which I have put the html code in. So, the best option right now is to have this link to the calendar page!
+--&gt;
+&lt;p style=&#34;text-align: center;&#34;&gt;
+	&lt;a href=&#34;https://opac.dl.itc.u-tokyo.ac.jp/opac/calendar/?lang=1&amp;countercd=100001&amp;date=2025-04&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;
+		Open UTokyo General Library Calendar 2025
+	&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Quotes</title>
       <link>http://localhost:1313/pages/personal/quotes/</link>
       <pubDate>Wed, 19 Mar 2025 17:42:20 +1100</pubDate>
@@ -57,7 +76,12 @@ I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
       <guid>http://localhost:1313/pages/interesting-articles/</guid>
       <description>&lt;p&gt;This is a list of interesting research articles, books, popular science write-up and other general writings that I have come across over the years. See &lt;a href=&#34;http://localhost:1313/pages/personal/quotes/&#34;&gt;quotes&lt;/a&gt; for a look on some of my favorite quotes from these and other sources.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&#34;&gt;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&#34;&gt;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://web.mnstate.edu/schwartz/centurylist2.html&#34;&gt;List of Books that changed the world&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
@@ -68,7 +92,18 @@ I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
       <description>&lt;h3 id=&#34;utokyo-related&#34;&gt;UTokyo Related&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;UTokyo Physics Department &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/g_info/40191/&#34;&gt;Leave Application Forms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;utokyo-graduate-level-funding-and-scholarship-related&#34;&gt;UTokyo Graduate-level Funding and Scholarship Related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;UTokyo General &lt;a href=&#34;https://www.u-tokyo.ac.jp/ja/students/welfare/h02.html&#34;&gt;Scholarships Page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;UTokyo Graduate School of Science &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/scholarship/&#34;&gt;List of Scholarships Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.u-tokyo.ac.jp/ja/students/welfare/h02_02.html&#34;&gt;UTokyo Private Scholarships Page&lt;/a&gt; (mostly only for Japanese students)&lt;/li&gt;
+&lt;li&gt;UTokyo Physics Dept &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/scholarship/&#34;&gt;Scholarships Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ms.u-tokyo.ac.jp/wings-fmsp/&#34;&gt;Spring-GX WINGS-FMSP Program&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.u-tokyo.ac.jp/ja/research/systems-data/support.html&#34;&gt;UTokyo Research Support System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.s.u-tokyo.ac.jp/ja/STEPS/&#34;&gt;UTokyo-Russia Exchange Program STEPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.compsci-alliance.jp/overseas-support/&#34;&gt;UTokyo CompSci Alliance Overseas Support&lt;/a&gt; (maybe only for Japanese)&lt;/li&gt;
+&lt;li&gt;JST Research Grant Programs: &lt;a href=&#34;https://www.jst.go.jp/kisoken/programs/index.html&#34;&gt;Main Page&lt;/a&gt;, &lt;a href=&#34;https://www.jst.go.jp/kisoken/boshuu/teian/en/top/gaiyo.html&#34;&gt;2025 Call for Proposals&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;research-related&#34;&gt;Research Related&lt;/h3&gt;
 &lt;ul&gt;
@@ -100,7 +135,7 @@ I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
       <guid>http://localhost:1313/pages/personal/conferences/</guid>
       <description>&lt;p&gt;List of most of the Conferences and Workshops I have undertaken or am going to :&lt;/p&gt;
 &lt;details&gt;
-&lt;summary&gt;Upcoming&lt;/summary&gt;
+&lt;summary&gt;Next Year or Later&lt;/summary&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2026
@@ -114,6 +149,9 @@ I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
 &lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; VIRGO  • 
 &lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Cascina, Italy&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;2nd I&amp;rsquo;nt Conference on Physics of the Two Infinities
 [&lt;a href=&#34;https://indico.in2p3.fr/event/35255/&#34;&gt;website&lt;/a&gt;]
@@ -125,568 +163,7 @@ I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2025
 &lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年09月  • 
 &lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Colorado State University  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/pages/personal/resceu-related/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/personal/resceu-related/</guid>
-      <description>&lt;!-- ---
-title: &#34;Stuff RESCEU Related&#34;
-date: 2025-04-03T17:44:26+09:00
-draft: false
---- --&gt;
-
-
-&lt;p&gt;
-	Random Stuff Related to my time at RESCEU
-&lt;/p&gt;
-
-
-
-&lt;p&gt;
-	UTokyo General Library Calendar 2025
-&lt;/p&gt;
-
-
-
-
-
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;ja&#34;&gt;
-&lt;head&gt;
-	&lt;!-- meta --&gt;
-	&lt;meta charset=&#34;UTF-8&#34;&gt;
-	&lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
-	&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=utf-8&#34; /&gt;
-	&lt;meta http-equiv=&#34;Content-Style-type&#34; content=&#34;text/css&#34; /&gt;
-	&lt;meta http-equiv=&#34;content-script-type&#34; content=&#34;text/javascript&#34; /&gt;
-	&lt;meta http-equiv=&#34;Pragma&#34; content=&#34;no-cache&#34; /&gt;
-	&lt;meta http-equiv=&#34;Cache-Control&#34; content=&#34;no-cache&#34; /&gt;
-	&lt;meta http-equiv=&#34;Cache-Control&#34; content=&#34;no-store&#34; /&gt;
-	&lt;meta http-equiv=&#34;Expires&#34; content=&#34;0&#34; /&gt;
-	&lt;meta name=&#34;ROBOTS&#34; content=&#34;NONE&#34; /&gt;
-	&lt;meta name=&#34;ROBOTS&#34; content=&#34;NOINDEX,NOFOLLOW&#34; /&gt;
-	&lt;meta name=&#34;ROBOTS&#34; content=&#34;NOARCHIVE&#34; /&gt;
-	
-		&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1.0,minimum-scale=1.0&#34;&gt;
-	
-	&lt;meta name=&#34;description&#34; content=&#34;OPAC CALENDAR&#34;&gt;
-
-	&lt;!-- css: opac theme --&gt;
-	&lt;link href=&#34;http://localhost:1313/media/css/opac_common.css?20240722&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34; /&gt;
-	&lt;link href=&#34;http://localhost:1313/media/css/opac_common_custom.css?20240722&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34; /&gt;
-	&lt;link href=&#34;http://localhost:1313/media/calendar/css/calendar.css?20240722&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34; /&gt;
-	&lt;link href=&#34;http://localhost:1313/media/calendar/css/calendar_custom.css?20240722&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34; /&gt;
-	
-
-	&lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
-	&lt;!-- WARNING: Respond.js doesn&#39;t work if you view the page via file:// --&gt;
-	&lt;!--[if lt IE 9]&gt;
-		&lt;script src=&#34;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&#34;&gt;&lt;/script&gt;
-		&lt;script src=&#34;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&#34;&gt;&lt;/script&gt;
-	&lt;![endif]--&gt;
-
-	&lt;script type=&#34;text/javascript&#34; src=&#34;http://localhost:1313/media/js/jquery.min.js?20240722&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-	&lt;script&gt;jQuery.ajaxPrefilter( function( s ) { if ( s.crossDomain ) { s.contents.script = false; } } );&lt;/script&gt;
-	&lt;script type=&#34;text/javascript&#34; src=&#34;http://localhost:1313/media/js_c/jquery-ui.min.js?20240722&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-	&lt;script type=&#34;text/javascript&#34; src=&#34;http://localhost:1313/media/js_c/longPressBlocker.js?20240722&#34; charset=&#34;UTF-8&#34;&gt;&lt;/script&gt;
-	
-	&lt;link rel=&#34;shortcut icon&#34; href=&#34;http://localhost:1313/media/img/favicon.ico&#34; /&gt;
-	&lt;script type=&#34;text/javascript&#34;&gt;
-	//&lt;![CDATA[
-	 var media_url=&#34;http://localhost:1313/media/&#34;; // MEDIA_URL
-	 //]]&gt;
-	&lt;/script&gt;
-	&lt;!-- title --&gt;
-	&lt;title&gt;Calendar&lt;/title&gt;
-&lt;/head&gt;
-&lt;body class=&#34;opac_en&#34;&gt;
-	
-
-
-
-&lt;script type=&#34;text/javascript&#34;&gt;
-&lt;!--
-
-var pre_selday_100001 = &#34;&#34;;
-
-
-$(function() {
-	
-		dispDate_100001(&#34;2025/03/01(Sat)&#34;, &#34;3&#34;, &#34;day_1_100001&#34;);
-	
-});
-
-
-function dispDate_100001(curdate, cmcode, selday) {
-	var code_name = &#39;&#39;;
-	var hours = &#39;&#39;;
-	var bgcolor = &#39;&#39;;
-	var fontcolor = &#39;&#39;;
-	
-		if (&#39;0&#39; ==  cmcode){
-			code_name = &#39;Weekdays&#39;;
-			hours = &#39;本館(Main bldg.) 9:00-22:30 / 別館(Annex)9:00-17:00&#39;;
-			bgcolor = &#39;#FFFFFF&#39;;
-			fontcolor = &#39;#4D4D4D&#39;;
-		}
-	
-		if (&#39;1&#39; ==  cmcode){
-			code_name = &#39;Weekends&amp;amp;Holidays&#39;;
-			hours = &#39;本館(Main bldg.) 9:00-19:00 / 別館閉館 Annex closed&#39;;
-			bgcolor = &#39;#00CCFF&#39;;
-			fontcolor = &#39;#4D4D4D&#39;;
-		}
-	
-		if (&#39;2&#39; ==  cmcode){
-			code_name = &#39;Weekdays(in Aug. &amp;amp; Mar.)&#39;;
-			hours = &#39;本館(Main bldg.) 9:00-21:00  / 別館閉館 Annex closed&#39;;
-			bgcolor = &#39;#FF66FF&#39;;
-			fontcolor = &#39;#4D4D4D&#39;;
-		}
-	
-		if (&#39;3&#39; ==  cmcode){
-			code_name = &#39;Weekends&amp;amp;Holidays(in Aug. &amp;amp; Mar.) (Annex closed)&#39;;
-			hours = &#39;本館(Main bldg.) 9:00-17:00 / 別館閉館 Annex closed&#39;;
-			bgcolor = &#39;#99DDDD&#39;;
-			fontcolor = &#39;#4D4D4D&#39;;
-		}
-	
-		if (&#39;4&#39; ==  cmcode){
-			code_name = &#39;Closed(Main &amp;amp; Annex)&#39;;
-			hours = &#39;closed&#39;;
-			bgcolor = &#39;#999999&#39;;
-			fontcolor = &#39;#4D4D4D&#39;;
-		}
-	
-		if (&#39;6&#39; ==  cmcode){
-			code_name = &#39;Closed(Main Bldg.)&#39;;
-			hours = &#39;別館(Annex) 9:00-17:00&#39;;
-			bgcolor = &#39;#FF6666&#39;;
-			fontcolor = &#39;#4D4D4D&#39;;
-		}
-	
-		if (&#39;5&#39; ==  cmcode){
-			code_name = &#39;Closed(Annex)&#39;;
-			hours = &#39;本館(Main bldg.) 9:00-22:30&#39;;
-			bgcolor = &#39;#009999&#39;;
-			fontcolor = &#39;#4D4D4D&#39;;
-		}
-	
-		if (&#39;7&#39; ==  cmcode){
-			code_name = &#39;Short opening&#39;;
-			hours = &#39;全館(Main and Annex) 9:00-17:00&#39;;
-			bgcolor = &#39;#669933&#39;;
-			fontcolor = &#39;#4D4D4D&#39;;
-		}
-	
-		if (&#39;13&#39; ==  cmcode){
-			code_name = &#39;Short opening (in Aug. &amp;amp; Mar.)(Annex closed)&#39;;
-			hours = &#39;本館(Main bldg.) 9:00-17:00 / 別館閉館 Annex closed&#39;;
-			bgcolor = &#39;#FFFFBB&#39;;
-			fontcolor = &#39;#4D4D4D&#39;;
-		}
-	
-	var strDate = &#39;&lt;strong&gt;&#39; + curdate + &#39;&amp;nbsp;&lt;/strong&gt;&lt;br /&gt;&#39; + code_name + &#39;&amp;nbsp;&#39; + hours;
-    $(&#34;#seldata_area_100001&#34;).html(strDate);
-	$(&#34;#seldata_area_100001&#34;).css({&#39;background-color&#39;:bgcolor, &#39;color&#39;:fontcolor});
-	if (selday) {
-		if (pre_selday_100001) {
-			$(&#34;#&#34; + pre_selday_100001).removeClass(&#39;calendar_today&#39;);
-		}
-		$(&#34;#&#34; + selday).addClass(&#39;calendar_today&#39;);
-		pre_selday_100001 = selday;
-	}
-}
-
-//--&gt;
-&lt;/script&gt;
-
-&lt;form method=&#34;post&#34; action=&#34;&#34; onsubmit=&#34;return false&#34;&gt;&lt;div style=&#39;display:none&#39;&gt;&lt;input type=&#39;hidden&#39; name=&#39;csrfmiddlewaretoken&#39; value=&#39;77c964c83e0e62b7b05e49b146b90736&#39; /&gt;&lt;/div&gt;
-&lt;div id=&#34;calendar_content&#34;&gt;
-&lt;div class=&#34;calendarLink clearfix&#34;&gt;
-
-&lt;a class=&#34;calendarLef&#34; href=&#34;http://localhost:1313/opac/calendar/?lang=1&amp;amp;countercd=100001&amp;amp;date=2025-02&#34;&gt;＜＜&amp;nbsp;February 2025&lt;/a&gt;
-
-
-
-&lt;a class=&#34;calendarRig&#34; href=&#34;http://localhost:1313/opac/calendar/?lang=1&amp;amp;countercd=100001&amp;amp;date=2025-04&#34;&gt;April 2025&amp;nbsp;＞＞&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&#34;calendarLink clearfix&#34;&gt;
-&lt;ul class=&#34;calendar_list clearfix&#34;&gt;
-&lt;li&gt;
-
-
- &lt;div class=&#34;calendar_main&#34;&gt;
-  &lt;!-- &lt;div class=&#34;counter_name&#34;&gt;General Library&lt;/div&gt; --&gt;
-  &lt;div id=&#34;seldata_area_100001&#34; class=&#34;seldata&#34;&gt;&lt;/div&gt;
-  &lt;div class=&#34;calendar_header&#34;&gt;
-   &lt;div class=&#34;calendar_title&#34;&gt;March 2025&lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;table class=&#34;lib_calendar&#34;&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-      
-        &lt;th scope=&#34;col&#34;&gt;Sun&lt;/th&gt;
-      
-        &lt;th scope=&#34;col&#34;&gt;Mon&lt;/th&gt;
-      
-        &lt;th scope=&#34;col&#34;&gt;Tue&lt;/th&gt;
-      
-        &lt;th scope=&#34;col&#34;&gt;Wed&lt;/th&gt;
-      
-        &lt;th scope=&#34;col&#34;&gt;Thu&lt;/th&gt;
-      
-        &lt;th scope=&#34;col&#34;&gt;Fri&lt;/th&gt;
-      
-        &lt;th scope=&#34;col&#34;&gt;Sat&lt;/th&gt;
-      
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-      	
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_1_100001&#34; class=&#34;calendar_today&#34; style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/01(Sat)&#34;, &#34;3&#34;, &#34;day_1_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;1&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-	            &lt;/tr&gt;
-	            &lt;tr&gt;
-	          
-		      
-			    &lt;td id=&#34;day_2_100001&#34;  style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/02(Sun)&#34;, &#34;3&#34;, &#34;day_2_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;2&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_3_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/03(Mon)&#34;, &#34;2&#34;, &#34;day_3_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;3&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_4_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/04(Tue)&#34;, &#34;2&#34;, &#34;day_4_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;4&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_5_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/05(Wed)&#34;, &#34;2&#34;, &#34;day_5_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;5&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_6_100001&#34;  style=&#34;background-color:#999999;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/06(Thu)&#34;, &#34;4&#34;, &#34;day_6_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;6&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_7_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/07(Fri)&#34;, &#34;2&#34;, &#34;day_7_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;7&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_8_100001&#34;  style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/08(Sat)&#34;, &#34;3&#34;, &#34;day_8_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;8&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-	            &lt;/tr&gt;
-	            &lt;tr&gt;
-	          
-		      
-			    &lt;td id=&#34;day_9_100001&#34;  style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/09(Sun)&#34;, &#34;3&#34;, &#34;day_9_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;9&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_10_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/10(Mon)&#34;, &#34;2&#34;, &#34;day_10_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;10&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_11_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/11(Tue)&#34;, &#34;2&#34;, &#34;day_11_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;11&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_12_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/12(Wed)&#34;, &#34;2&#34;, &#34;day_12_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;12&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_13_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/13(Thu)&#34;, &#34;2&#34;, &#34;day_13_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;13&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_14_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/14(Fri)&#34;, &#34;2&#34;, &#34;day_14_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;14&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_15_100001&#34;  style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/15(Sat)&#34;, &#34;3&#34;, &#34;day_15_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;15&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-	            &lt;/tr&gt;
-	            &lt;tr&gt;
-	          
-		      
-			    &lt;td id=&#34;day_16_100001&#34;  style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/16(Sun)&#34;, &#34;3&#34;, &#34;day_16_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;16&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_17_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/17(Mon)&#34;, &#34;2&#34;, &#34;day_17_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;17&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_18_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/18(Tue)&#34;, &#34;2&#34;, &#34;day_18_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;18&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_19_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/19(Wed)&#34;, &#34;2&#34;, &#34;day_19_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;19&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_20_100001&#34; class=&#34; calendar_holiday&#34; style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/20(Thu)&#34;, &#34;3&#34;, &#34;day_20_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;20&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_21_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/21(Fri)&#34;, &#34;2&#34;, &#34;day_21_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;21&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_22_100001&#34;  style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/22(Sat)&#34;, &#34;3&#34;, &#34;day_22_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;22&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-	            &lt;/tr&gt;
-	            &lt;tr&gt;
-	          
-		      
-			    &lt;td id=&#34;day_23_100001&#34;  style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/23(Sun)&#34;, &#34;3&#34;, &#34;day_23_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;23&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_24_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/24(Mon)&#34;, &#34;2&#34;, &#34;day_24_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;24&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_25_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/25(Tue)&#34;, &#34;2&#34;, &#34;day_25_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;25&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_26_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/26(Wed)&#34;, &#34;2&#34;, &#34;day_26_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;26&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_27_100001&#34;  style=&#34;background-color:#999999;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/27(Thu)&#34;, &#34;4&#34;, &#34;day_27_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;27&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_28_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/28(Fri)&#34;, &#34;2&#34;, &#34;day_28_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;28&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_29_100001&#34;  style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/29(Sat)&#34;, &#34;3&#34;, &#34;day_29_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;29&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-	            &lt;/tr&gt;
-	            &lt;tr&gt;
-	          
-		      
-			    &lt;td id=&#34;day_30_100001&#34;  style=&#34;background-color:#99DDDD;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/30(Sun)&#34;, &#34;3&#34;, &#34;day_30_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;30&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td id=&#34;day_31_100001&#34;  style=&#34;background-color:#FF66FF;&#34;&gt;&lt;a href=&#34;javascript:void(0);&#34; onclick=&#39;dispDate_100001(&#34;2025/03/31(Mon)&#34;, &#34;2&#34;, &#34;day_31_100001&#34;);&#39; style=&#34;color:#4D4D4D;&#34;&gt;31&lt;/a&gt;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-	          
-		      
-			    &lt;td class=&#34;calendar_blank&#34;&gt;&amp;nbsp;&lt;/td&gt;
-		      
-	        
-      	
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
- 
-   &lt;div class=&#34;calendar_cm&#34;&gt;
-    &lt;table class=&#34;remarks&#34;&gt;
-	  
-	   &lt;tr&gt;
-	     &lt;td style=&#34;background-color:#FFFFFF; color:#4D4D4D;&#34;&gt;
-	     	Weekdays
-	     &lt;/td&gt;
-	     &lt;td&gt;
-	     
-	       本館(Main bldg.) 9:00-22:30 / 別館(Annex)9:00-17:00
-	     
-	     &lt;/td&gt;
-	   &lt;/tr&gt;
-	  
-	   &lt;tr&gt;
-	     &lt;td style=&#34;background-color:#00CCFF; color:#4D4D4D;&#34;&gt;
-	     	Weekends&amp;amp;Holidays
-	     &lt;/td&gt;
-	     &lt;td&gt;
-	     
-	       本館(Main bldg.) 9:00-19:00 / 別館閉館 Annex closed
-	     
-	     &lt;/td&gt;
-	   &lt;/tr&gt;
-	  
-	   &lt;tr&gt;
-	     &lt;td style=&#34;background-color:#FF66FF; color:#4D4D4D;&#34;&gt;
-	     	Weekdays(in Aug. &amp;amp; Mar.)
-	     &lt;/td&gt;
-	     &lt;td&gt;
-	     
-	       本館(Main bldg.) 9:00-21:00  / 別館閉館 Annex closed
-	     
-	     &lt;/td&gt;
-	   &lt;/tr&gt;
-	  
-	   &lt;tr&gt;
-	     &lt;td style=&#34;background-color:#99DDDD; color:#4D4D4D;&#34;&gt;
-	     	Weekends&amp;amp;Holidays(in Aug. &amp;amp; Mar.) (Annex closed)
-	     &lt;/td&gt;
-	     &lt;td&gt;
-	     
-	       本館(Main bldg.) 9:00-17:00 / 別館閉館 Annex closed
-	     
-	     &lt;/td&gt;
-	   &lt;/tr&gt;
-	  
-	   &lt;tr&gt;
-	     &lt;td style=&#34;background-color:#999999; color:#4D4D4D;&#34;&gt;
-	     	Closed(Main &amp;amp; Annex)
-	     &lt;/td&gt;
-	     &lt;td&gt;
-	     
-	       closed
-	     
-	     &lt;/td&gt;
-	   &lt;/tr&gt;
-	  
-	   &lt;tr&gt;
-	     &lt;td style=&#34;background-color:#FF6666; color:#4D4D4D;&#34;&gt;
-	     	Closed(Main Bldg.)
-	     &lt;/td&gt;
-	     &lt;td&gt;
-	     
-	       別館(Annex) 9:00-17:00
-	     
-	     &lt;/td&gt;
-	   &lt;/tr&gt;
-	  
-	   &lt;tr&gt;
-	     &lt;td style=&#34;background-color:#009999; color:#4D4D4D;&#34;&gt;
-	     	Closed(Annex)
-	     &lt;/td&gt;
-	     &lt;td&gt;
-	     
-	       本館(Main bldg.) 9:00-22:30
-	     
-	     &lt;/td&gt;
-	   &lt;/tr&gt;
-	  
-	   &lt;tr&gt;
-	     &lt;td style=&#34;background-color:#669933; color:#4D4D4D;&#34;&gt;
-	     	Short opening
-	     &lt;/td&gt;
-	     &lt;td&gt;
-	     
-	       全館(Main and Annex) 9:00-17:00
-	     
-	     &lt;/td&gt;
-	   &lt;/tr&gt;
-	  
-	   &lt;tr&gt;
-	     &lt;td style=&#34;background-color:#FFFFBB; color:#4D4D4D;&#34;&gt;
-	     	Short opening (in Aug. &amp;amp; Mar.)(Annex closed)
-	     &lt;/td&gt;
-	     &lt;td&gt;
-	     
-	       本館(Main bldg.) 9:00-17:00 / 別館閉館 Annex closed
-	     
-	     &lt;/td&gt;
-	   &lt;/tr&gt;
-	  
-    &lt;/table&gt;
-    &lt;p class=&#34;clearLeft&#34;&gt;&lt;/p&gt;</description>
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA &lt;br/&gt; &lt;em&gt;Note: Most likely not attending!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>

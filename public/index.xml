@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Thu, 03 Apr 2025 18:58:07 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 11 Apr 2025 15:01:20 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -20,6 +20,13 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2021-05-09-terminal-commands/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>Using Conda and Conda Command Cheatsheet</title>
+      <link>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</link>
+      <pubDate>Fri, 11 Apr 2025 15:01:20 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</guid>
+      <description></description>
     </item>
     <item>
       <title>SoftTools</title>
@@ -125,7 +132,12 @@ I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
       <guid>http://localhost:1313/pages/interesting-articles/</guid>
       <description>&lt;p&gt;This is a list of interesting research articles, books, popular science write-up and other general writings that I have come across over the years. See &lt;a href=&#34;http://localhost:1313/pages/personal/quotes/&#34;&gt;quotes&lt;/a&gt; for a look on some of my favorite quotes from these and other sources.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&#34;&gt;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&#34;&gt;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://web.mnstate.edu/schwartz/centurylist2.html&#34;&gt;List of Books that changed the world&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
@@ -153,7 +165,7 @@ I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
       <link>http://localhost:1313/posts/2025-03-18-using-ssh-remote-access/</link>
       <pubDate>Tue, 18 Mar 2025 12:24:46 +1100</pubDate>
       <guid>http://localhost:1313/posts/2025-03-18-using-ssh-remote-access/</guid>
-      <description>&lt;h3 id=&#34;general-guidelines&#34;&gt;General guidelines&lt;/h3&gt;
+      <description>&lt;h2 id=&#34;general-guidelines&#34;&gt;General guidelines&lt;/h2&gt;
 &lt;p&gt;You basically have three entities you want to interlink and provide bidirectional access.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Personal computer&lt;/li&gt;
@@ -161,16 +173,19 @@ I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
 &lt;li&gt;Github or Gitlab a/c server&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;A copy of all my ssh keys is stored in &lt;code&gt;~/Dropbox/ssh-access-keys/&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;known-issues&#34;&gt;Known issues&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Using VS Code Interface&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To use the Microsoft VisualStudio Code interface for accessing your remote server account, follow the following directions:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Porting via Jupyter notebook&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;known-issues-and-problems-encountered&#34;&gt;Known Issues and Problems Encountered&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;If the internet connection is not stable, the connection may be terminated abruptly, with an error message like:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Read from remote host ldas-pcdev12.ligo.caltech.edu: No route to host
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Connection to ldas-pcdev12.ligo.caltech.edu closed.
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;client_loop: send disconnect: Broken pipe
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;accessing-ligo-data-grid-ldg-cit-cluster&#34;&gt;Accessing LIGO Data Grid (LDG) CIT Cluster&lt;/h3&gt;
-&lt;p&gt;To use  &lt;code&gt;ssh&lt;/code&gt; to push to github repo, you still have to provide in the username and password for your &lt;code&gt;@git.ligo.org&lt;/code&gt; account.
-You have to make sure that your SSH public key for LDG-CIT is uploaded to the &lt;code&gt;git.ligo.org&lt;/code&gt; account, and not your personal Github account.&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Some servers require connection ported by a supported VPN service. So, the ssh connection request won&amp;rsquo;t work if the VPN is not switched on prior to making the request.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Access VS Code via the Terminal</title>
@@ -207,7 +222,18 @@ You have to make sure that your SSH public key for LDG-CIT is uploaded to the &l
       <description>&lt;h3 id=&#34;utokyo-related&#34;&gt;UTokyo Related&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;UTokyo Physics Department &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/g_info/40191/&#34;&gt;Leave Application Forms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;utokyo-graduate-level-funding-and-scholarship-related&#34;&gt;UTokyo Graduate-level Funding and Scholarship Related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;UTokyo General &lt;a href=&#34;https://www.u-tokyo.ac.jp/ja/students/welfare/h02.html&#34;&gt;Scholarships Page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;UTokyo Graduate School of Science &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/scholarship/&#34;&gt;List of Scholarships Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.u-tokyo.ac.jp/ja/students/welfare/h02_02.html&#34;&gt;UTokyo Private Scholarships Page&lt;/a&gt; (mostly only for Japanese students)&lt;/li&gt;
+&lt;li&gt;UTokyo Physics Dept &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/scholarship/&#34;&gt;Scholarships Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ms.u-tokyo.ac.jp/wings-fmsp/&#34;&gt;Spring-GX WINGS-FMSP Program&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.u-tokyo.ac.jp/ja/research/systems-data/support.html&#34;&gt;UTokyo Research Support System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.s.u-tokyo.ac.jp/ja/STEPS/&#34;&gt;UTokyo-Russia Exchange Program STEPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.compsci-alliance.jp/overseas-support/&#34;&gt;UTokyo CompSci Alliance Overseas Support&lt;/a&gt; (maybe only for Japanese)&lt;/li&gt;
+&lt;li&gt;JST Research Grant Programs: &lt;a href=&#34;https://www.jst.go.jp/kisoken/programs/index.html&#34;&gt;Main Page&lt;/a&gt;, &lt;a href=&#34;https://www.jst.go.jp/kisoken/boshuu/teian/en/top/gaiyo.html&#34;&gt;2025 Call for Proposals&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;research-related&#34;&gt;Research Related&lt;/h3&gt;
 &lt;ul&gt;
@@ -289,7 +315,7 @@ You have to make sure that your SSH public key for LDG-CIT is uploaded to the &l
       <guid>http://localhost:1313/pages/personal/conferences/</guid>
       <description>&lt;p&gt;List of most of the Conferences and Workshops I have undertaken or am going to :&lt;/p&gt;
 &lt;details&gt;
-&lt;summary&gt;Upcoming&lt;/summary&gt;
+&lt;summary&gt;Next Year or Later&lt;/summary&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2026
@@ -303,6 +329,9 @@ You have to make sure that your SSH public key for LDG-CIT is uploaded to the &l
 &lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; VIRGO  • 
 &lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Cascina, Italy&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;2nd I&amp;rsquo;nt Conference on Physics of the Two Infinities
 [&lt;a href=&#34;https://indico.in2p3.fr/event/35255/&#34;&gt;website&lt;/a&gt;]
@@ -314,7 +343,7 @@ You have to make sure that your SSH public key for LDG-CIT is uploaded to the &l
 &lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2025
 &lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年09月  • 
 &lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Colorado State University  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA&lt;/p&gt;</description>
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA &lt;br/&gt; &lt;em&gt;Note: Most likely not attending!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Guide to Hugo PaperMod Website</title>
