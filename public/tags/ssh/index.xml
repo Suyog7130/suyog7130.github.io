@@ -19,7 +19,7 @@
       <link>http://localhost:1313/posts/2025-03-18-using-ssh-remote-access/</link>
       <pubDate>Tue, 18 Mar 2025 12:24:46 +1100</pubDate>
       <guid>http://localhost:1313/posts/2025-03-18-using-ssh-remote-access/</guid>
-      <description>&lt;h3 id=&#34;general-guidelines&#34;&gt;General guidelines&lt;/h3&gt;
+      <description>&lt;h2 id=&#34;general-guidelines&#34;&gt;General guidelines&lt;/h2&gt;
 &lt;p&gt;You basically have three entities you want to interlink and provide bidirectional access.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Personal computer&lt;/li&gt;
@@ -27,16 +27,19 @@
 &lt;li&gt;Github or Gitlab a/c server&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;A copy of all my ssh keys is stored in &lt;code&gt;~/Dropbox/ssh-access-keys/&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;known-issues&#34;&gt;Known issues&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Using VS Code Interface&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To use the Microsoft VisualStudio Code interface for accessing your remote server account, follow the following directions:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Porting via Jupyter notebook&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;known-issues-and-problems-encountered&#34;&gt;Known Issues and Problems Encountered&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;If the internet connection is not stable, the connection may be terminated abruptly, with an error message like:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Read from remote host ldas-pcdev12.ligo.caltech.edu: No route to host
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Connection to ldas-pcdev12.ligo.caltech.edu closed.
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;client_loop: send disconnect: Broken pipe
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;accessing-ligo-data-grid-ldg-cit-cluster&#34;&gt;Accessing LIGO Data Grid (LDG) CIT Cluster&lt;/h3&gt;
-&lt;p&gt;To use  &lt;code&gt;ssh&lt;/code&gt; to push to github repo, you still have to provide in the username and password for your &lt;code&gt;@git.ligo.org&lt;/code&gt; account.
-You have to make sure that your SSH public key for LDG-CIT is uploaded to the &lt;code&gt;git.ligo.org&lt;/code&gt; account, and not your personal Github account.&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Some servers require connection ported by a supported VPN service. So, the ssh connection request won&amp;rsquo;t work if the VPN is not switched on prior to making the request.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

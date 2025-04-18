@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Conda on Suyog Garg</title>
+    <link>http://localhost:1313/tags/conda/</link>
+    <description>Recent content in Conda on Suyog Garg</description>
+    <image>
+      <title>Suyog Garg</title>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <copyright>Suyog Garg</copyright>
+    <lastBuildDate>Fri, 11 Apr 2025 15:01:20 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/conda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Conda and Conda Command Cheatsheet</title>
+      <link>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</link>
+      <pubDate>Fri, 11 Apr 2025 15:01:20 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

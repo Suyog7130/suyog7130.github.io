@@ -259,6 +259,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">git submodules are erroneous
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In the name of sheer simplicity, it would be advised to best not use the git submodule utility ! If there is the utmost need to have one directory within the other, then try to have only git repository among them, yeah. Or else, try to separate out the repositories into separate folders, yah !
+It may happen that you may not be able to see new changes in the main directory after using submodule for a while. In this case, use the following to bring back things to the original:
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2024-05-02 00:00:00 +0000 UTC'>May 2, 2024</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;127 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to git submodules are erroneous" href="http://localhost:1313/posts/2024-05-02-git-submodules/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Do not ask for Git passphrase on each commit
     </h2>
   </header>
@@ -322,23 +337,6 @@ Use make html for HTML, make latex for LaTeX, make latexpdf for PDF and make epu
   <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2023-02-03 00:00:00 +0000 UTC'>February 3, 2023</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;4 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;711 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
   <a class="entry-link" aria-label="post link to Customizing Mac Terminal" href="http://localhost:1313/posts/2023-02-03-custom-mac-terminal/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">gitignore file
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>To ignore all files larger than 100MB:
-find ./* -size &#43;100M | cat &gt;&gt; .gitignore To ignore all files larger than 100MB but with pathnames not contianing “data” and without repeating already added large file names:
-find ./*work*/ -not -path **data** -size &#43;100M | sed &#39;s|^\./||g&#39; | cat &gt;&gt; .gitignore; awk &#39;!NF || !seen[$0]&#43;&#43;&#39; .gitignore An Example .gitignore file with other useful settings:
-GNU nano 2.9.3 .gitignore # Blocklist files/folders in same directory as the .gitignore file /* *data/* *work*/*data*/* *gh18-work/models/* *gh18-work/results/* # Includelist some files !.gitignore !README.md !**.sh # Ignore all files named .DS_Store or ending with .log **/.DS_Store **.log # Includelist folder/a/b1/ and folder/a/b2/ trailing &#34;/&#34; is optional for folders, may match file though. &#34;/&#34; is NOT # optional when followed by a * !*work*/ !*work*/* # Adding to the above, this also works... #!/folder/a/deeply /folder/a/deeply/* !/folder/a/deeply/nested /folder/a/deeply/nested/* #!/folder/a/deeply/nested/subfolder # Ignore all files larger than 150MB g2net-work/g2net-detecting-continuous-gravitational-waves.zip mlgwsc-work/injections4_1.25s.npy mlgwsc-work/real_noise_file.hdf Useful links:
-...</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2023-01-23 00:00:00 +0000 UTC'>January 23, 2023</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;156 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to gitignore file" href="http://localhost:1313/posts/2023-01-23-gitignore/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

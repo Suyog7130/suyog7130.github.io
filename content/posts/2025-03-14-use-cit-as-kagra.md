@@ -12,6 +12,8 @@ As a member of only the KAGRA collaboration and LIGO, in the LIGO-Virgo-KAGRA or
 
 - Once you have filled the LDG access form, you should be able to see an option to add your computer's SSH public key. This option exists in the right-hand side under the heading `Authenticators`.
 
+> If later required, additional SSH public keys can be added to the list of Authenticators, by clicking on the "Manage" button for the associated LDG cluster.
+
 - Create and then upload your computer's public SSH key to the `Authenticators` settings, for the LDG key tab.
 
 - After this, someone at CalTech, or LIGO, needs to manually approve your LDG account request and link your provided  username to your . You will receive a confirmation email once that is approved and a `home` directory with your username has been created.
