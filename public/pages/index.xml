@@ -9,7 +9,7 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
     <lastBuildDate>Thu, 03 Apr 2025 18:58:07 +0900</lastBuildDate>
@@ -66,7 +66,8 @@ However, in my case, the view is fixed at the month for which I have put the htm
 &lt;p&gt;&amp;ldquo;I don’t know what I’m looking for.”
 &amp;ldquo;Why not?&amp;rdquo;
 &amp;ldquo;Because&amp;hellip;because&amp;hellip;I think it might be because if I knew
-I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
+I wouldn’t be able to look for them.”&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;— Douglas Adams, The Hitchhiker’s Guide to the Galaxy&lt;/p&gt;</description>
     </item>
     <item>
