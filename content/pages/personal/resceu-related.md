@@ -26,3 +26,10 @@ However, in my case, the view is fixed at the month for which I have put the htm
 		Open UTokyo General Library Calendar 2025
 	</a>
 </p>
+
+
+<p style="text-align: center; font-weight: bold;">
+UTokyo Coop Stores & Cafetaria Timings
+</p>
+<iframe src="https://www.utcoop.or.jp/en/calendar202504/" height="800px" width="150%">
+</iframe>
