@@ -73,6 +73,8 @@ ssh suyog.garg@idark.ipmu.jp
 
 - There should not be any prompt asking for a password if the ssh public keys between the computer making the request and the remote server match.
 
+> Note that the user name is required when accessing the cluster all the time. Otherwise, how does the ssh request know about what access to ping the request to.
+
 
 ### Accessing Einstein and Landau at Tokyo City University
 
