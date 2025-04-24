@@ -33,7 +33,127 @@ then
 fi
 ```
 
+Optionally, make an alias for the `ls` command, so that hidden files are only shown when they are wanted. Add the following to the `~/.bashrc` file:
 
+```bash
+alias ls="ls -h"
+alias lll="ls"
+```
+
+Optionally, `eza` can be installed to have icons in the `ls` command.
+See: https://github.com/eza-community/eza/blob/main/INSTALL.md
+
+
+The full `~/.bashrc` file now looks like:
+
+```bash
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
+#ulimit -Ss unlimited
+
+SCRIPTDIR=/home/.common
+
+##################################
+#
+# for Compiler
+#
+
+COMPILER=INTEL19.0
+#COMPILER=INTEL18.0
+#COMPILER=INTEL17.0
+#COMPILER=INTEL15.0
+#COMPILER=PGI17
+#COMPILER=PGI16
+#COMPILER=PGI15
+
+##################################
+#
+# for MPI
+#
+
+MPI=IntelMPI
+#MPI=OpenMPI
+#MPI=MPICH
+#MPI=MPICH2
+
+for script in $SCRIPTDIR/$COMPILER/*.sh $SCRIPTDIR/$COMPILER/$MPI/*.sh $SCRIPTDIR/*.sh
+do
+	if [ -r $script ]; then
+		. $script
+	fi
+done
+
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+##-----------------------------------------------------
+## synth-shell-greeter.sh
+if [ -f /home/suyog.garg/.config/synth-shell/synth-shell-greeter.sh ] && [ -n "$( echo $- | grep i )" ]; then
+	source /home/suyog.garg/.config/synth-shell/synth-shell-greeter.sh
+fi
+
+##-----------------------------------------------------
+## synth-shell-prompt.sh
+if [ -f /home/suyog.garg/.config/synth-shell/synth-shell-prompt.sh ] && [ -n "$( echo $- | grep i )" ]; then
+	source /home/suyog.garg/.config/synth-shell/synth-shell-prompt.sh
+fi
+
+##-----------------------------------------------------
+## better-ls
+if [ -f /home/suyog.garg/.config/synth-shell/better-ls.sh ] && [ -n "$( echo $- | grep i )" ]; then
+	source /home/suyog.garg/.config/synth-shell/better-ls.sh
+fi
+
+##-----------------------------------------------------
+## alias
+if [ -f /home/suyog.garg/.config/synth-shell/alias.sh ] && [ -n "$( echo $- | grep i )" ]; then
+	source /home/suyog.garg/.config/synth-shell/alias.sh
+fi
+
+##-----------------------------------------------------
+## better-history
+if [ -f /home/suyog.garg/.config/synth-shell/better-history.sh ] && [ -n "$( echo $- | grep i )" ]; then
+	source /home/suyog.garg/.config/synth-shell/better-history.sh
+fi
+
+
+
+# Aliases
+
+# python
+alias python=python3
+
+# git
+alias gs="git status"
+```
+
+---
 
 Also see:
 
