@@ -18,13 +18,29 @@ You basically have three entities you want to interlink and provide bidirectiona
 
 A copy of all my ssh keys is stored in `~/Dropbox/ssh-access-keys/`
 
-**Using VS Code Interface**
+### Using VS Code Interface
 
 To use the Microsoft VisualStudio Code interface for accessing your remote server account, follow the following directions:
 
+> Some remote linux servers can be really old. So, the VS Code plugin may not work for them!
 
 
-**Porting via Jupyter notebook**
+### Porting via Jupyter notebook
+
+
+### File Transfer with Secure Copy Protocol
+
+To upload file(s) from your local machine to the remote server, do:
+
+```bash
+scp *local-file-path* user.name@remote.server.xyz:/home/user.name/*folder-name*
+```
+
+To download file(s) from the remote server to your local machine, do:
+
+```bash
+scp user.name@remote.server.xyz:/home/user.name/*remote-file-path* *local-folder-name*
+```
 
 
 ## Known Issues and Problems Encountered
@@ -49,7 +65,15 @@ This is mostly a list of procedures to follow for connecting to remote servers t
 ### Accessing LIGO Data Grid (LDG) CIT Cluster
 
 To use  `ssh` to push to github repo, you still have to provide in the username and password for your `@git.ligo.org` account.
-You have to make sure that your SSH public key for LDG-CIT is uploaded to the `git.ligo.org` account, and not your personal Github account. 
+You have to make sure that your SSH public key for LDG-CIT is uploaded to the `git.ligo.org` account, and not your personal Github account.
+
+The primary work node in the LDG-CIT cluster are the GPU machines labelled `pcdev1-12`. The user workdir is shared between all these nodes and is accessible via an ssh ping to anyone of them. Do:
+
+```bash
+ssh suyog.garg@ldas-pcdev12.ligo.caltech.edu
+```
+
+> If the public keys have been properly uploaded there won't be any prompt to type in the password.
 
 
 ### Accessing IPMU iDark
