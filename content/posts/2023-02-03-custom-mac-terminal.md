@@ -8,6 +8,21 @@ tags:
   - zsh
 ---
 
+
+**Update 2025/04/24**
+
+Changed to `eza` instead `exa` for alias for `ls` commands with icons, because the `exa` package is no longer supported. Thus,
+
+```bash
+# map exa commands to normal ls commands
+alias ll="eza -l -g --icons"
+alias li="eza --icons"
+alias lt="eza --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
+```
+
+---
+
+
 Changed the Mac terminal to `iterm2` and then made numerous customizations to the `oh-my-zsh` plugin. The `~/.zshrc` looks like the following after these modifications:
 
 ```bash
