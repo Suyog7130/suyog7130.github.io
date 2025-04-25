@@ -9,7 +9,7 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
     <lastBuildDate>Fri, 14 Mar 2025 16:27:20 +1100</lastBuildDate>
@@ -19,7 +19,12 @@
       <link>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</link>
       <pubDate>Fri, 14 Mar 2025 16:27:20 +1100</pubDate>
       <guid>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</guid>
-      <description></description>
+      <description>&lt;p&gt;A good way to prettify and enhance the outlook of a linux bash terminal is to use &lt;a href=&#34;https://github.com/andresgongora/synth-shell&#34;&gt;synth-shell&lt;/a&gt;. Do:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone --recursive https://github.com/andresgongora/synth-shell.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; synth-shell
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo chmod +x setup.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./setup.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Additionally, &lt;code&gt;neofetch&lt;/code&gt; can be installed on top &lt;code&gt;synth-shell&lt;/code&gt; to further enhance the way in which the system summary is presented on the log-on screen. However, this requires root access to use &lt;code&gt;apt&lt;/code&gt;, &lt;code&gt;yum&lt;/code&gt; or &lt;code&gt;dnp&lt;/code&gt; package manager. Since for remote clusters the root access is usually not available, this is optional. Install &lt;code&gt;neofetch&lt;/code&gt; using:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
