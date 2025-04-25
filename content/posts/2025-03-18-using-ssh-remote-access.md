@@ -146,13 +146,13 @@ ssh suyog.garg@idark.ipmu.jp
 > Note that the user name is required when accessing the cluster all the time. Otherwise, how does the ssh request know about what access to ping the request to.
 
 
-### Accessing Einstein and Landau at Tokyo City University
+### Accessing Einstein and Landau Clusters at Tokyo City University
 
 
 ### Accessing RESCEU BBC Cluster
 
 
-### Accessing TIFR Computing Facility
+### Accessing TIFR Mumbai Computing Facility
 
 
 
