@@ -7,7 +7,13 @@
 <meta name="robots" content="index, follow">
 <title>Customizing Mac Terminal | Suyog Garg</title>
 <meta name="keywords" content="terminal, git, zsh">
-<meta name="description" content="Changed the Mac terminal to iterm2 and then made numerous customizations to the oh-my-zsh plugin. The ~/.zshrc looks like the following after these modifications:
+<meta name="description" content="Update 2025/04/24
+Changed to eza instead exa for alias for ls commands with icons, because the exa package is no longer supported. Thus,
+# map exa commands to normal ls commands
+alias ll=&#34;eza -l -g --icons&#34;
+alias li=&#34;eza --icons&#34;
+alias lt=&#34;eza --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34;
+The full ~/.zshrc file now is:
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -130,9 +136,9 @@ alias python=python3
 alias gs=&#34;git status&#34;
 
 # map exa commands to normal ls commands
-alias ll=&#34;exa -l -g --icons&#34;
-alias li=&#34;exa --icons&#34;
-alias lt=&#34;exa --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34;
+alias ll=&#34;eza -l -g --icons&#34;
+alias li=&#34;eza --icons&#34;
+alias lt=&#34;eza --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34;
 
 # show file previews for fzf using bat
 alias fp=&#34;fzf --preview &#39;bat --style=numbers --color=always --line-range :500 {}&#39;&#34;
@@ -145,7 +151,40 @@ alias gt=&#34;starship toggle gcloud disabled&#34; # toggle gcloud info on the p
 eval &#34;$(starship init zsh)&#34;
 
 [ -f ~/.fzf.zsh ] &amp;&amp; source ~/.fzf.zsh
-Reference: configure_terminal_for_data_science_with_oh_my_zsh/">
+
+export PATH=&#34;$PATH:/usr/local/&#34;
+export PATH=&#34;$PATH:/usr/local/texlive/2023/bin/universal-darwin&#34;
+
+
+# so-that-git-commit-doesn&#39;t-ask-for-passphrase-each-time
+
+env=~/.ssh/agent.env
+
+agent_load_env () { test -f &#34;$env&#34; &amp;&amp; . &#34;$env&#34; &gt;| /dev/null ; }
+
+agent_start () {
+    (umask 077; ssh-agent &gt;| &#34;$env&#34;)
+    . &#34;$env&#34; &gt;| /dev/null ; }
+
+agent_load_env
+
+# agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running
+agent_run_state=$(ssh-add -l &gt;| /dev/null 2&gt;&amp;1; echo $?)
+
+if [ ! &#34;$SSH_AUTH_SOCK&#34; ] || [ $agent_run_state = 2 ]; then
+    agent_start
+    ssh-add
+elif [ &#34;$SSH_AUTH_SOCK&#34; ] &amp;&amp; [ $agent_run_state = 1 ]; then
+    ssh-add
+fi
+
+unset env
+
+# Add Visual Studio Code (code)
+export PATH=&#34;$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&#34;
+
+
+Always remember to source the bash file after any modification, by: source ~/.zshrc">
 <meta name="author" content="Suyog Garg">
 <link rel="canonical" href="http://localhost:1313/posts/2023-02-03-custom-mac-terminal/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a9beb8cc794bded6e6065a475e3046b73c3f4333e4ffa4e4a539a242b6ff8818.css" integrity="sha256-qb64zHlL3tbmBlpHXjBGtzw/QzPk/6TkpTmiQrb/iBg=" rel="preload stylesheet" as="style">
@@ -272,8 +311,10 @@ Reference: configure_terminal_for_data_science_with_oh_my_zsh/">
 <link rel="stylesheet" type="text/css" href="/hugo-cite.css" /><meta property="og:url" content="http://localhost:1313/posts/2023-02-03-custom-mac-terminal/">
   <meta property="og:site_name" content="Suyog Garg">
   <meta property="og:title" content="Customizing Mac Terminal">
-  <meta property="og:description" content="Changed the Mac terminal to iterm2 and then made numerous customizations to the oh-my-zsh plugin. The ~/.zshrc looks like the following after these modifications:
-# If you come from bash you might have to change your $PATH. # export PATH=$HOME/bin:/usr/local/bin:$PATH # Path to your oh-my-zsh installation. export ZSH=&#34;$HOME/.oh-my-zsh&#34; # Set name of the theme to load --- if set to &#34;random&#34;, it will # load a random theme each time oh-my-zsh is loaded, in which case, # to know which specific one was loaded, run: echo $RANDOM_THEME # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes ZSH_THEME=&#34;robbyrussell&#34; # Set list of themes to pick from when loading at random # Setting this variable when ZSH_THEME=random will cause zsh to load # a theme from this variable instead of looking in $ZSH/themes/ # If set to an empty array, this variable will have no effect. # ZSH_THEME_RANDOM_CANDIDATES=( &#34;robbyrussell&#34; &#34;agnoster&#34; ) # Uncomment the following line to use case-sensitive completion. # CASE_SENSITIVE=&#34;true&#34; # Uncomment the following line to use hyphen-insensitive completion. # Case-sensitive completion must be off. _ and - will be interchangeable. # HYPHEN_INSENSITIVE=&#34;true&#34; # Uncomment one of the following lines to change the auto-update behavior # zstyle &#39;:omz:update&#39; mode disabled # disable automatic updates # zstyle &#39;:omz:update&#39; mode auto # update automatically without asking # zstyle &#39;:omz:update&#39; mode reminder # just remind me to update when it&#39;s time # Uncomment the following line to change how often to auto-update (in days). # zstyle &#39;:omz:update&#39; frequency 13 # Uncomment the following line if pasting URLs and other text is messed up. # DISABLE_MAGIC_FUNCTIONS=&#34;true&#34; # Uncomment the following line to disable colors in ls. # DISABLE_LS_COLORS=&#34;true&#34; # Uncomment the following line to disable auto-setting terminal title. # DISABLE_AUTO_TITLE=&#34;true&#34; # Uncomment the following line to enable command auto-correction. # ENABLE_CORRECTION=&#34;true&#34; # Uncomment the following line to display red dots whilst waiting for completion. # You can also set it to another string to have that shown instead of the default red dots. # e.g. COMPLETION_WAITING_DOTS=&#34;%F{yellow}waiting...%f&#34; # Caution: this setting can cause issues with multiline prompts in zsh &lt; 5.7.1 (see #5765) # COMPLETION_WAITING_DOTS=&#34;true&#34; # Uncomment the following line if you want to disable marking untracked files # under VCS as dirty. This makes repository status check for large repositories # much, much faster. # DISABLE_UNTRACKED_FILES_DIRTY=&#34;true&#34; # Uncomment the following line if you want to change the command execution time # stamp shown in the history command output. # You can set one of the optional three formats: # &#34;mm/dd/yyyy&#34;|&#34;dd.mm.yyyy&#34;|&#34;yyyy-mm-dd&#34; # or set a custom format using the strftime function format specifications, # see &#39;man strftime&#39; for details. # HIST_STAMPS=&#34;mm/dd/yyyy&#34; # Would you like to use another custom folder than $ZSH/custom? # ZSH_CUSTOM=/path/to/new-custom-folder # Which plugins would you like to load? # Standard plugins can be found in $ZSH/plugins/ # Custom plugins may be added to $ZSH_CUSTOM/plugins/ # Example format: plugins=(rails git textmate ruby lighthouse) # Add wisely, as too many plugins slow down shell startup. plugins=( git zsh-syntax-highlighting zsh-autosuggestions # fzf ) # User configuration # export MANPATH=&#34;/usr/local/man:$MANPATH&#34; # You may need to manually set your language environment # export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions # if [[ -n $SSH_CONNECTION ]]; then # export EDITOR=&#39;vim&#39; # else # export EDITOR=&#39;mvim&#39; # fi # Compilation flags # export ARCHFLAGS=&#34;-arch x86_64&#34; # Set personal aliases, overriding those provided by oh-my-zsh libs, # plugins, and themes. Aliases can be placed here, though oh-my-zsh # users are encouraged to define aliases within the ZSH_CUSTOM folder. # For a full list of active aliases, run `alias`. # # Example aliases # alias zshconfig=&#34;mate ~/.zshrc&#34; # alias ohmyzsh=&#34;mate ~/.oh-my-zsh&#34; # add syntax highlighting to the list of plugins in your ~/.zshrc file # update plugins in your ~/.zshrc file # update your ~/.zshrc file FZF_BASE=&#34;$HOME/.fzf&#34; source $ZSH/oh-my-zsh.sh # Aliases # python alias python=python3 # git alias gs=&#34;git status&#34; # map exa commands to normal ls commands alias ll=&#34;exa -l -g --icons&#34; alias li=&#34;exa --icons&#34; alias lt=&#34;exa --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34; # show file previews for fzf using bat alias fp=&#34;fzf --preview &#39;bat --style=numbers --color=always --line-range :500 {}&#39;&#34; # starship prompt alias gt=&#34;starship toggle gcloud disabled&#34; # toggle gcloud info on the prompt # use Starship prompt in zsh eval &#34;$(starship init zsh)&#34; [ -f ~/.fzf.zsh ] &amp;&amp; source ~/.fzf.zsh Reference: configure_terminal_for_data_science_with_oh_my_zsh/">
+  <meta property="og:description" content="Update 2025/04/24
+Changed to eza instead exa for alias for ls commands with icons, because the exa package is no longer supported. Thus,
+# map exa commands to normal ls commands alias ll=&#34;eza -l -g --icons&#34; alias li=&#34;eza --icons&#34; alias lt=&#34;eza --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34; The full ~/.zshrc file now is:
+# If you come from bash you might have to change your $PATH. # export PATH=$HOME/bin:/usr/local/bin:$PATH # Path to your oh-my-zsh installation. export ZSH=&#34;$HOME/.oh-my-zsh&#34; # Set name of the theme to load --- if set to &#34;random&#34;, it will # load a random theme each time oh-my-zsh is loaded, in which case, # to know which specific one was loaded, run: echo $RANDOM_THEME # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes ZSH_THEME=&#34;robbyrussell&#34; # Set list of themes to pick from when loading at random # Setting this variable when ZSH_THEME=random will cause zsh to load # a theme from this variable instead of looking in $ZSH/themes/ # If set to an empty array, this variable will have no effect. # ZSH_THEME_RANDOM_CANDIDATES=( &#34;robbyrussell&#34; &#34;agnoster&#34; ) # Uncomment the following line to use case-sensitive completion. # CASE_SENSITIVE=&#34;true&#34; # Uncomment the following line to use hyphen-insensitive completion. # Case-sensitive completion must be off. _ and - will be interchangeable. # HYPHEN_INSENSITIVE=&#34;true&#34; # Uncomment one of the following lines to change the auto-update behavior # zstyle &#39;:omz:update&#39; mode disabled # disable automatic updates # zstyle &#39;:omz:update&#39; mode auto # update automatically without asking # zstyle &#39;:omz:update&#39; mode reminder # just remind me to update when it&#39;s time # Uncomment the following line to change how often to auto-update (in days). # zstyle &#39;:omz:update&#39; frequency 13 # Uncomment the following line if pasting URLs and other text is messed up. # DISABLE_MAGIC_FUNCTIONS=&#34;true&#34; # Uncomment the following line to disable colors in ls. # DISABLE_LS_COLORS=&#34;true&#34; # Uncomment the following line to disable auto-setting terminal title. # DISABLE_AUTO_TITLE=&#34;true&#34; # Uncomment the following line to enable command auto-correction. # ENABLE_CORRECTION=&#34;true&#34; # Uncomment the following line to display red dots whilst waiting for completion. # You can also set it to another string to have that shown instead of the default red dots. # e.g. COMPLETION_WAITING_DOTS=&#34;%F{yellow}waiting...%f&#34; # Caution: this setting can cause issues with multiline prompts in zsh &lt; 5.7.1 (see #5765) # COMPLETION_WAITING_DOTS=&#34;true&#34; # Uncomment the following line if you want to disable marking untracked files # under VCS as dirty. This makes repository status check for large repositories # much, much faster. # DISABLE_UNTRACKED_FILES_DIRTY=&#34;true&#34; # Uncomment the following line if you want to change the command execution time # stamp shown in the history command output. # You can set one of the optional three formats: # &#34;mm/dd/yyyy&#34;|&#34;dd.mm.yyyy&#34;|&#34;yyyy-mm-dd&#34; # or set a custom format using the strftime function format specifications, # see &#39;man strftime&#39; for details. # HIST_STAMPS=&#34;mm/dd/yyyy&#34; # Would you like to use another custom folder than $ZSH/custom? # ZSH_CUSTOM=/path/to/new-custom-folder # Which plugins would you like to load? # Standard plugins can be found in $ZSH/plugins/ # Custom plugins may be added to $ZSH_CUSTOM/plugins/ # Example format: plugins=(rails git textmate ruby lighthouse) # Add wisely, as too many plugins slow down shell startup. plugins=( git zsh-syntax-highlighting zsh-autosuggestions # fzf ) # User configuration # export MANPATH=&#34;/usr/local/man:$MANPATH&#34; # You may need to manually set your language environment # export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions # if [[ -n $SSH_CONNECTION ]]; then # export EDITOR=&#39;vim&#39; # else # export EDITOR=&#39;mvim&#39; # fi # Compilation flags # export ARCHFLAGS=&#34;-arch x86_64&#34; # Set personal aliases, overriding those provided by oh-my-zsh libs, # plugins, and themes. Aliases can be placed here, though oh-my-zsh # users are encouraged to define aliases within the ZSH_CUSTOM folder. # For a full list of active aliases, run `alias`. # # Example aliases # alias zshconfig=&#34;mate ~/.zshrc&#34; # alias ohmyzsh=&#34;mate ~/.oh-my-zsh&#34; # add syntax highlighting to the list of plugins in your ~/.zshrc file # update plugins in your ~/.zshrc file # update your ~/.zshrc file FZF_BASE=&#34;$HOME/.fzf&#34; source $ZSH/oh-my-zsh.sh # Aliases # python alias python=python3 # git alias gs=&#34;git status&#34; # map exa commands to normal ls commands alias ll=&#34;eza -l -g --icons&#34; alias li=&#34;eza --icons&#34; alias lt=&#34;eza --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34; # show file previews for fzf using bat alias fp=&#34;fzf --preview &#39;bat --style=numbers --color=always --line-range :500 {}&#39;&#34; # starship prompt alias gt=&#34;starship toggle gcloud disabled&#34; # toggle gcloud info on the prompt # use Starship prompt in zsh eval &#34;$(starship init zsh)&#34; [ -f ~/.fzf.zsh ] &amp;&amp; source ~/.fzf.zsh export PATH=&#34;$PATH:/usr/local/&#34; export PATH=&#34;$PATH:/usr/local/texlive/2023/bin/universal-darwin&#34; # so-that-git-commit-doesn&#39;t-ask-for-passphrase-each-time env=~/.ssh/agent.env agent_load_env () { test -f &#34;$env&#34; &amp;&amp; . &#34;$env&#34; &gt;| /dev/null ; } agent_start () { (umask 077; ssh-agent &gt;| &#34;$env&#34;) . &#34;$env&#34; &gt;| /dev/null ; } agent_load_env # agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running agent_run_state=$(ssh-add -l &gt;| /dev/null 2&gt;&amp;1; echo $?) if [ ! &#34;$SSH_AUTH_SOCK&#34; ] || [ $agent_run_state = 2 ]; then agent_start ssh-add elif [ &#34;$SSH_AUTH_SOCK&#34; ] &amp;&amp; [ $agent_run_state = 1 ]; then ssh-add fi unset env # Add Visual Studio Code (code) export PATH=&#34;$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&#34; Always remember to source the bash file after any modification, by: source ~/.zshrc">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -286,7 +327,13 @@ Reference: configure_terminal_for_data_science_with_oh_my_zsh/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/">
 <meta name="twitter:title" content="Customizing Mac Terminal">
-<meta name="twitter:description" content="Changed the Mac terminal to iterm2 and then made numerous customizations to the oh-my-zsh plugin. The ~/.zshrc looks like the following after these modifications:
+<meta name="twitter:description" content="Update 2025/04/24
+Changed to eza instead exa for alias for ls commands with icons, because the exa package is no longer supported. Thus,
+# map exa commands to normal ls commands
+alias ll=&#34;eza -l -g --icons&#34;
+alias li=&#34;eza --icons&#34;
+alias lt=&#34;eza --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34;
+The full ~/.zshrc file now is:
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -409,9 +456,9 @@ alias python=python3
 alias gs=&#34;git status&#34;
 
 # map exa commands to normal ls commands
-alias ll=&#34;exa -l -g --icons&#34;
-alias li=&#34;exa --icons&#34;
-alias lt=&#34;exa --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34;
+alias ll=&#34;eza -l -g --icons&#34;
+alias li=&#34;eza --icons&#34;
+alias lt=&#34;eza --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34;
 
 # show file previews for fzf using bat
 alias fp=&#34;fzf --preview &#39;bat --style=numbers --color=always --line-range :500 {}&#39;&#34;
@@ -424,7 +471,40 @@ alias gt=&#34;starship toggle gcloud disabled&#34; # toggle gcloud info on the p
 eval &#34;$(starship init zsh)&#34;
 
 [ -f ~/.fzf.zsh ] &amp;&amp; source ~/.fzf.zsh
-Reference: configure_terminal_for_data_science_with_oh_my_zsh/">
+
+export PATH=&#34;$PATH:/usr/local/&#34;
+export PATH=&#34;$PATH:/usr/local/texlive/2023/bin/universal-darwin&#34;
+
+
+# so-that-git-commit-doesn&#39;t-ask-for-passphrase-each-time
+
+env=~/.ssh/agent.env
+
+agent_load_env () { test -f &#34;$env&#34; &amp;&amp; . &#34;$env&#34; &gt;| /dev/null ; }
+
+agent_start () {
+    (umask 077; ssh-agent &gt;| &#34;$env&#34;)
+    . &#34;$env&#34; &gt;| /dev/null ; }
+
+agent_load_env
+
+# agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running
+agent_run_state=$(ssh-add -l &gt;| /dev/null 2&gt;&amp;1; echo $?)
+
+if [ ! &#34;$SSH_AUTH_SOCK&#34; ] || [ $agent_run_state = 2 ]; then
+    agent_start
+    ssh-add
+elif [ &#34;$SSH_AUTH_SOCK&#34; ] &amp;&amp; [ $agent_run_state = 1 ]; then
+    ssh-add
+fi
+
+unset env
+
+# Add Visual Studio Code (code)
+export PATH=&#34;$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&#34;
+
+
+Always remember to source the bash file after any modification, by: source ~/.zshrc">
 
 
 <script type="application/ld+json">
@@ -453,12 +533,12 @@ Reference: configure_terminal_for_data_science_with_oh_my_zsh/">
   "@type": "BlogPosting",
   "headline": "Customizing Mac Terminal",
   "name": "Customizing Mac Terminal",
-  "description": "Changed the Mac terminal to iterm2 and then made numerous customizations to the oh-my-zsh plugin. The ~/.zshrc looks like the following after these modifications:\n# If you come from bash you might have to change your $PATH. # export PATH=$HOME/bin:/usr/local/bin:$PATH # Path to your oh-my-zsh installation. export ZSH=\u0026#34;$HOME/.oh-my-zsh\u0026#34; # Set name of the theme to load --- if set to \u0026#34;random\u0026#34;, it will # load a random theme each time oh-my-zsh is loaded, in which case, # to know which specific one was loaded, run: echo $RANDOM_THEME # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes ZSH_THEME=\u0026#34;robbyrussell\u0026#34; # Set list of themes to pick from when loading at random # Setting this variable when ZSH_THEME=random will cause zsh to load # a theme from this variable instead of looking in $ZSH/themes/ # If set to an empty array, this variable will have no effect. # ZSH_THEME_RANDOM_CANDIDATES=( \u0026#34;robbyrussell\u0026#34; \u0026#34;agnoster\u0026#34; ) # Uncomment the following line to use case-sensitive completion. # CASE_SENSITIVE=\u0026#34;true\u0026#34; # Uncomment the following line to use hyphen-insensitive completion. # Case-sensitive completion must be off. _ and - will be interchangeable. # HYPHEN_INSENSITIVE=\u0026#34;true\u0026#34; # Uncomment one of the following lines to change the auto-update behavior # zstyle \u0026#39;:omz:update\u0026#39; mode disabled # disable automatic updates # zstyle \u0026#39;:omz:update\u0026#39; mode auto # update automatically without asking # zstyle \u0026#39;:omz:update\u0026#39; mode reminder # just remind me to update when it\u0026#39;s time # Uncomment the following line to change how often to auto-update (in days). # zstyle \u0026#39;:omz:update\u0026#39; frequency 13 # Uncomment the following line if pasting URLs and other text is messed up. # DISABLE_MAGIC_FUNCTIONS=\u0026#34;true\u0026#34; # Uncomment the following line to disable colors in ls. # DISABLE_LS_COLORS=\u0026#34;true\u0026#34; # Uncomment the following line to disable auto-setting terminal title. # DISABLE_AUTO_TITLE=\u0026#34;true\u0026#34; # Uncomment the following line to enable command auto-correction. # ENABLE_CORRECTION=\u0026#34;true\u0026#34; # Uncomment the following line to display red dots whilst waiting for completion. # You can also set it to another string to have that shown instead of the default red dots. # e.g. COMPLETION_WAITING_DOTS=\u0026#34;%F{yellow}waiting...%f\u0026#34; # Caution: this setting can cause issues with multiline prompts in zsh \u0026lt; 5.7.1 (see #5765) # COMPLETION_WAITING_DOTS=\u0026#34;true\u0026#34; # Uncomment the following line if you want to disable marking untracked files # under VCS as dirty. This makes repository status check for large repositories # much, much faster. # DISABLE_UNTRACKED_FILES_DIRTY=\u0026#34;true\u0026#34; # Uncomment the following line if you want to change the command execution time # stamp shown in the history command output. # You can set one of the optional three formats: # \u0026#34;mm/dd/yyyy\u0026#34;|\u0026#34;dd.mm.yyyy\u0026#34;|\u0026#34;yyyy-mm-dd\u0026#34; # or set a custom format using the strftime function format specifications, # see \u0026#39;man strftime\u0026#39; for details. # HIST_STAMPS=\u0026#34;mm/dd/yyyy\u0026#34; # Would you like to use another custom folder than $ZSH/custom? # ZSH_CUSTOM=/path/to/new-custom-folder # Which plugins would you like to load? # Standard plugins can be found in $ZSH/plugins/ # Custom plugins may be added to $ZSH_CUSTOM/plugins/ # Example format: plugins=(rails git textmate ruby lighthouse) # Add wisely, as too many plugins slow down shell startup. plugins=( git zsh-syntax-highlighting zsh-autosuggestions # fzf ) # User configuration # export MANPATH=\u0026#34;/usr/local/man:$MANPATH\u0026#34; # You may need to manually set your language environment # export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions # if [[ -n $SSH_CONNECTION ]]; then # export EDITOR=\u0026#39;vim\u0026#39; # else # export EDITOR=\u0026#39;mvim\u0026#39; # fi # Compilation flags # export ARCHFLAGS=\u0026#34;-arch x86_64\u0026#34; # Set personal aliases, overriding those provided by oh-my-zsh libs, # plugins, and themes. Aliases can be placed here, though oh-my-zsh # users are encouraged to define aliases within the ZSH_CUSTOM folder. # For a full list of active aliases, run `alias`. # # Example aliases # alias zshconfig=\u0026#34;mate ~/.zshrc\u0026#34; # alias ohmyzsh=\u0026#34;mate ~/.oh-my-zsh\u0026#34; # add syntax highlighting to the list of plugins in your ~/.zshrc file # update plugins in your ~/.zshrc file # update your ~/.zshrc file FZF_BASE=\u0026#34;$HOME/.fzf\u0026#34; source $ZSH/oh-my-zsh.sh # Aliases # python alias python=python3 # git alias gs=\u0026#34;git status\u0026#34; # map exa commands to normal ls commands alias ll=\u0026#34;exa -l -g --icons\u0026#34; alias li=\u0026#34;exa --icons\u0026#34; alias lt=\u0026#34;exa --tree --icons -a -I \u0026#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints\u0026#39;\u0026#34; # show file previews for fzf using bat alias fp=\u0026#34;fzf --preview \u0026#39;bat --style=numbers --color=always --line-range :500 {}\u0026#39;\u0026#34; # starship prompt alias gt=\u0026#34;starship toggle gcloud disabled\u0026#34; # toggle gcloud info on the prompt # use Starship prompt in zsh eval \u0026#34;$(starship init zsh)\u0026#34; [ -f ~/.fzf.zsh ] \u0026amp;\u0026amp; source ~/.fzf.zsh Reference: configure_terminal_for_data_science_with_oh_my_zsh/\n",
+  "description": "Update 2025/04/24\nChanged to eza instead exa for alias for ls commands with icons, because the exa package is no longer supported. Thus,\n# map exa commands to normal ls commands alias ll=\u0026#34;eza -l -g --icons\u0026#34; alias li=\u0026#34;eza --icons\u0026#34; alias lt=\u0026#34;eza --tree --icons -a -I \u0026#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints\u0026#39;\u0026#34; The full ~/.zshrc file now is:\n# If you come from bash you might have to change your $PATH. # export PATH=$HOME/bin:/usr/local/bin:$PATH # Path to your oh-my-zsh installation. export ZSH=\u0026#34;$HOME/.oh-my-zsh\u0026#34; # Set name of the theme to load --- if set to \u0026#34;random\u0026#34;, it will # load a random theme each time oh-my-zsh is loaded, in which case, # to know which specific one was loaded, run: echo $RANDOM_THEME # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes ZSH_THEME=\u0026#34;robbyrussell\u0026#34; # Set list of themes to pick from when loading at random # Setting this variable when ZSH_THEME=random will cause zsh to load # a theme from this variable instead of looking in $ZSH/themes/ # If set to an empty array, this variable will have no effect. # ZSH_THEME_RANDOM_CANDIDATES=( \u0026#34;robbyrussell\u0026#34; \u0026#34;agnoster\u0026#34; ) # Uncomment the following line to use case-sensitive completion. # CASE_SENSITIVE=\u0026#34;true\u0026#34; # Uncomment the following line to use hyphen-insensitive completion. # Case-sensitive completion must be off. _ and - will be interchangeable. # HYPHEN_INSENSITIVE=\u0026#34;true\u0026#34; # Uncomment one of the following lines to change the auto-update behavior # zstyle \u0026#39;:omz:update\u0026#39; mode disabled # disable automatic updates # zstyle \u0026#39;:omz:update\u0026#39; mode auto # update automatically without asking # zstyle \u0026#39;:omz:update\u0026#39; mode reminder # just remind me to update when it\u0026#39;s time # Uncomment the following line to change how often to auto-update (in days). # zstyle \u0026#39;:omz:update\u0026#39; frequency 13 # Uncomment the following line if pasting URLs and other text is messed up. # DISABLE_MAGIC_FUNCTIONS=\u0026#34;true\u0026#34; # Uncomment the following line to disable colors in ls. # DISABLE_LS_COLORS=\u0026#34;true\u0026#34; # Uncomment the following line to disable auto-setting terminal title. # DISABLE_AUTO_TITLE=\u0026#34;true\u0026#34; # Uncomment the following line to enable command auto-correction. # ENABLE_CORRECTION=\u0026#34;true\u0026#34; # Uncomment the following line to display red dots whilst waiting for completion. # You can also set it to another string to have that shown instead of the default red dots. # e.g. COMPLETION_WAITING_DOTS=\u0026#34;%F{yellow}waiting...%f\u0026#34; # Caution: this setting can cause issues with multiline prompts in zsh \u0026lt; 5.7.1 (see #5765) # COMPLETION_WAITING_DOTS=\u0026#34;true\u0026#34; # Uncomment the following line if you want to disable marking untracked files # under VCS as dirty. This makes repository status check for large repositories # much, much faster. # DISABLE_UNTRACKED_FILES_DIRTY=\u0026#34;true\u0026#34; # Uncomment the following line if you want to change the command execution time # stamp shown in the history command output. # You can set one of the optional three formats: # \u0026#34;mm/dd/yyyy\u0026#34;|\u0026#34;dd.mm.yyyy\u0026#34;|\u0026#34;yyyy-mm-dd\u0026#34; # or set a custom format using the strftime function format specifications, # see \u0026#39;man strftime\u0026#39; for details. # HIST_STAMPS=\u0026#34;mm/dd/yyyy\u0026#34; # Would you like to use another custom folder than $ZSH/custom? # ZSH_CUSTOM=/path/to/new-custom-folder # Which plugins would you like to load? # Standard plugins can be found in $ZSH/plugins/ # Custom plugins may be added to $ZSH_CUSTOM/plugins/ # Example format: plugins=(rails git textmate ruby lighthouse) # Add wisely, as too many plugins slow down shell startup. plugins=( git zsh-syntax-highlighting zsh-autosuggestions # fzf ) # User configuration # export MANPATH=\u0026#34;/usr/local/man:$MANPATH\u0026#34; # You may need to manually set your language environment # export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions # if [[ -n $SSH_CONNECTION ]]; then # export EDITOR=\u0026#39;vim\u0026#39; # else # export EDITOR=\u0026#39;mvim\u0026#39; # fi # Compilation flags # export ARCHFLAGS=\u0026#34;-arch x86_64\u0026#34; # Set personal aliases, overriding those provided by oh-my-zsh libs, # plugins, and themes. Aliases can be placed here, though oh-my-zsh # users are encouraged to define aliases within the ZSH_CUSTOM folder. # For a full list of active aliases, run `alias`. # # Example aliases # alias zshconfig=\u0026#34;mate ~/.zshrc\u0026#34; # alias ohmyzsh=\u0026#34;mate ~/.oh-my-zsh\u0026#34; # add syntax highlighting to the list of plugins in your ~/.zshrc file # update plugins in your ~/.zshrc file # update your ~/.zshrc file FZF_BASE=\u0026#34;$HOME/.fzf\u0026#34; source $ZSH/oh-my-zsh.sh # Aliases # python alias python=python3 # git alias gs=\u0026#34;git status\u0026#34; # map exa commands to normal ls commands alias ll=\u0026#34;eza -l -g --icons\u0026#34; alias li=\u0026#34;eza --icons\u0026#34; alias lt=\u0026#34;eza --tree --icons -a -I \u0026#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints\u0026#39;\u0026#34; # show file previews for fzf using bat alias fp=\u0026#34;fzf --preview \u0026#39;bat --style=numbers --color=always --line-range :500 {}\u0026#39;\u0026#34; # starship prompt alias gt=\u0026#34;starship toggle gcloud disabled\u0026#34; # toggle gcloud info on the prompt # use Starship prompt in zsh eval \u0026#34;$(starship init zsh)\u0026#34; [ -f ~/.fzf.zsh ] \u0026amp;\u0026amp; source ~/.fzf.zsh export PATH=\u0026#34;$PATH:/usr/local/\u0026#34; export PATH=\u0026#34;$PATH:/usr/local/texlive/2023/bin/universal-darwin\u0026#34; # so-that-git-commit-doesn\u0026#39;t-ask-for-passphrase-each-time env=~/.ssh/agent.env agent_load_env () { test -f \u0026#34;$env\u0026#34; \u0026amp;\u0026amp; . \u0026#34;$env\u0026#34; \u0026gt;| /dev/null ; } agent_start () { (umask 077; ssh-agent \u0026gt;| \u0026#34;$env\u0026#34;) . \u0026#34;$env\u0026#34; \u0026gt;| /dev/null ; } agent_load_env # agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running agent_run_state=$(ssh-add -l \u0026gt;| /dev/null 2\u0026gt;\u0026amp;1; echo $?) if [ ! \u0026#34;$SSH_AUTH_SOCK\u0026#34; ] || [ $agent_run_state = 2 ]; then agent_start ssh-add elif [ \u0026#34;$SSH_AUTH_SOCK\u0026#34; ] \u0026amp;\u0026amp; [ $agent_run_state = 1 ]; then ssh-add fi unset env # Add Visual Studio Code (code) export PATH=\u0026#34;$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin\u0026#34; Always remember to source the bash file after any modification, by: source ~/.zshrc\n",
   "keywords": [
     "terminal", "git", "zsh"
   ],
-  "articleBody": "Changed the Mac terminal to iterm2 and then made numerous customizations to the oh-my-zsh plugin. The ~/.zshrc looks like the following after these modifications:\n# If you come from bash you might have to change your $PATH. # export PATH=$HOME/bin:/usr/local/bin:$PATH # Path to your oh-my-zsh installation. export ZSH=\"$HOME/.oh-my-zsh\" # Set name of the theme to load --- if set to \"random\", it will # load a random theme each time oh-my-zsh is loaded, in which case, # to know which specific one was loaded, run: echo $RANDOM_THEME # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes ZSH_THEME=\"robbyrussell\" # Set list of themes to pick from when loading at random # Setting this variable when ZSH_THEME=random will cause zsh to load # a theme from this variable instead of looking in $ZSH/themes/ # If set to an empty array, this variable will have no effect. # ZSH_THEME_RANDOM_CANDIDATES=( \"robbyrussell\" \"agnoster\" ) # Uncomment the following line to use case-sensitive completion. # CASE_SENSITIVE=\"true\" # Uncomment the following line to use hyphen-insensitive completion. # Case-sensitive completion must be off. _ and - will be interchangeable. # HYPHEN_INSENSITIVE=\"true\" # Uncomment one of the following lines to change the auto-update behavior # zstyle ':omz:update' mode disabled # disable automatic updates # zstyle ':omz:update' mode auto # update automatically without asking # zstyle ':omz:update' mode reminder # just remind me to update when it's time # Uncomment the following line to change how often to auto-update (in days). # zstyle ':omz:update' frequency 13 # Uncomment the following line if pasting URLs and other text is messed up. # DISABLE_MAGIC_FUNCTIONS=\"true\" # Uncomment the following line to disable colors in ls. # DISABLE_LS_COLORS=\"true\" # Uncomment the following line to disable auto-setting terminal title. # DISABLE_AUTO_TITLE=\"true\" # Uncomment the following line to enable command auto-correction. # ENABLE_CORRECTION=\"true\" # Uncomment the following line to display red dots whilst waiting for completion. # You can also set it to another string to have that shown instead of the default red dots. # e.g. COMPLETION_WAITING_DOTS=\"%F{yellow}waiting...%f\" # Caution: this setting can cause issues with multiline prompts in zsh \u003c 5.7.1 (see #5765) # COMPLETION_WAITING_DOTS=\"true\" # Uncomment the following line if you want to disable marking untracked files # under VCS as dirty. This makes repository status check for large repositories # much, much faster. # DISABLE_UNTRACKED_FILES_DIRTY=\"true\" # Uncomment the following line if you want to change the command execution time # stamp shown in the history command output. # You can set one of the optional three formats: # \"mm/dd/yyyy\"|\"dd.mm.yyyy\"|\"yyyy-mm-dd\" # or set a custom format using the strftime function format specifications, # see 'man strftime' for details. # HIST_STAMPS=\"mm/dd/yyyy\" # Would you like to use another custom folder than $ZSH/custom? # ZSH_CUSTOM=/path/to/new-custom-folder # Which plugins would you like to load? # Standard plugins can be found in $ZSH/plugins/ # Custom plugins may be added to $ZSH_CUSTOM/plugins/ # Example format: plugins=(rails git textmate ruby lighthouse) # Add wisely, as too many plugins slow down shell startup. plugins=( git zsh-syntax-highlighting zsh-autosuggestions # fzf ) # User configuration # export MANPATH=\"/usr/local/man:$MANPATH\" # You may need to manually set your language environment # export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions # if [[ -n $SSH_CONNECTION ]]; then # export EDITOR='vim' # else # export EDITOR='mvim' # fi # Compilation flags # export ARCHFLAGS=\"-arch x86_64\" # Set personal aliases, overriding those provided by oh-my-zsh libs, # plugins, and themes. Aliases can be placed here, though oh-my-zsh # users are encouraged to define aliases within the ZSH_CUSTOM folder. # For a full list of active aliases, run `alias`. # # Example aliases # alias zshconfig=\"mate ~/.zshrc\" # alias ohmyzsh=\"mate ~/.oh-my-zsh\" # add syntax highlighting to the list of plugins in your ~/.zshrc file # update plugins in your ~/.zshrc file # update your ~/.zshrc file FZF_BASE=\"$HOME/.fzf\" source $ZSH/oh-my-zsh.sh # Aliases # python alias python=python3 # git alias gs=\"git status\" # map exa commands to normal ls commands alias ll=\"exa -l -g --icons\" alias li=\"exa --icons\" alias lt=\"exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'\" # show file previews for fzf using bat alias fp=\"fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'\" # starship prompt alias gt=\"starship toggle gcloud disabled\" # toggle gcloud info on the prompt # use Starship prompt in zsh eval \"$(starship init zsh)\" [ -f ~/.fzf.zsh ] \u0026\u0026 source ~/.fzf.zsh Reference: configure_terminal_for_data_science_with_oh_my_zsh/\n",
-  "wordCount" : "711",
+  "articleBody": "Update 2025/04/24\nChanged to eza instead exa for alias for ls commands with icons, because the exa package is no longer supported. Thus,\n# map exa commands to normal ls commands alias ll=\"eza -l -g --icons\" alias li=\"eza --icons\" alias lt=\"eza --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'\" The full ~/.zshrc file now is:\n# If you come from bash you might have to change your $PATH. # export PATH=$HOME/bin:/usr/local/bin:$PATH # Path to your oh-my-zsh installation. export ZSH=\"$HOME/.oh-my-zsh\" # Set name of the theme to load --- if set to \"random\", it will # load a random theme each time oh-my-zsh is loaded, in which case, # to know which specific one was loaded, run: echo $RANDOM_THEME # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes ZSH_THEME=\"robbyrussell\" # Set list of themes to pick from when loading at random # Setting this variable when ZSH_THEME=random will cause zsh to load # a theme from this variable instead of looking in $ZSH/themes/ # If set to an empty array, this variable will have no effect. # ZSH_THEME_RANDOM_CANDIDATES=( \"robbyrussell\" \"agnoster\" ) # Uncomment the following line to use case-sensitive completion. # CASE_SENSITIVE=\"true\" # Uncomment the following line to use hyphen-insensitive completion. # Case-sensitive completion must be off. _ and - will be interchangeable. # HYPHEN_INSENSITIVE=\"true\" # Uncomment one of the following lines to change the auto-update behavior # zstyle ':omz:update' mode disabled # disable automatic updates # zstyle ':omz:update' mode auto # update automatically without asking # zstyle ':omz:update' mode reminder # just remind me to update when it's time # Uncomment the following line to change how often to auto-update (in days). # zstyle ':omz:update' frequency 13 # Uncomment the following line if pasting URLs and other text is messed up. # DISABLE_MAGIC_FUNCTIONS=\"true\" # Uncomment the following line to disable colors in ls. # DISABLE_LS_COLORS=\"true\" # Uncomment the following line to disable auto-setting terminal title. # DISABLE_AUTO_TITLE=\"true\" # Uncomment the following line to enable command auto-correction. # ENABLE_CORRECTION=\"true\" # Uncomment the following line to display red dots whilst waiting for completion. # You can also set it to another string to have that shown instead of the default red dots. # e.g. COMPLETION_WAITING_DOTS=\"%F{yellow}waiting...%f\" # Caution: this setting can cause issues with multiline prompts in zsh \u003c 5.7.1 (see #5765) # COMPLETION_WAITING_DOTS=\"true\" # Uncomment the following line if you want to disable marking untracked files # under VCS as dirty. This makes repository status check for large repositories # much, much faster. # DISABLE_UNTRACKED_FILES_DIRTY=\"true\" # Uncomment the following line if you want to change the command execution time # stamp shown in the history command output. # You can set one of the optional three formats: # \"mm/dd/yyyy\"|\"dd.mm.yyyy\"|\"yyyy-mm-dd\" # or set a custom format using the strftime function format specifications, # see 'man strftime' for details. # HIST_STAMPS=\"mm/dd/yyyy\" # Would you like to use another custom folder than $ZSH/custom? # ZSH_CUSTOM=/path/to/new-custom-folder # Which plugins would you like to load? # Standard plugins can be found in $ZSH/plugins/ # Custom plugins may be added to $ZSH_CUSTOM/plugins/ # Example format: plugins=(rails git textmate ruby lighthouse) # Add wisely, as too many plugins slow down shell startup. plugins=( git zsh-syntax-highlighting zsh-autosuggestions # fzf ) # User configuration # export MANPATH=\"/usr/local/man:$MANPATH\" # You may need to manually set your language environment # export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions # if [[ -n $SSH_CONNECTION ]]; then # export EDITOR='vim' # else # export EDITOR='mvim' # fi # Compilation flags # export ARCHFLAGS=\"-arch x86_64\" # Set personal aliases, overriding those provided by oh-my-zsh libs, # plugins, and themes. Aliases can be placed here, though oh-my-zsh # users are encouraged to define aliases within the ZSH_CUSTOM folder. # For a full list of active aliases, run `alias`. # # Example aliases # alias zshconfig=\"mate ~/.zshrc\" # alias ohmyzsh=\"mate ~/.oh-my-zsh\" # add syntax highlighting to the list of plugins in your ~/.zshrc file # update plugins in your ~/.zshrc file # update your ~/.zshrc file FZF_BASE=\"$HOME/.fzf\" source $ZSH/oh-my-zsh.sh # Aliases # python alias python=python3 # git alias gs=\"git status\" # map exa commands to normal ls commands alias ll=\"eza -l -g --icons\" alias li=\"eza --icons\" alias lt=\"eza --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'\" # show file previews for fzf using bat alias fp=\"fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'\" # starship prompt alias gt=\"starship toggle gcloud disabled\" # toggle gcloud info on the prompt # use Starship prompt in zsh eval \"$(starship init zsh)\" [ -f ~/.fzf.zsh ] \u0026\u0026 source ~/.fzf.zsh export PATH=\"$PATH:/usr/local/\" export PATH=\"$PATH:/usr/local/texlive/2023/bin/universal-darwin\" # so-that-git-commit-doesn't-ask-for-passphrase-each-time env=~/.ssh/agent.env agent_load_env () { test -f \"$env\" \u0026\u0026 . \"$env\" \u003e| /dev/null ; } agent_start () { (umask 077; ssh-agent \u003e| \"$env\") . \"$env\" \u003e| /dev/null ; } agent_load_env # agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running agent_run_state=$(ssh-add -l \u003e| /dev/null 2\u003e\u00261; echo $?) if [ ! \"$SSH_AUTH_SOCK\" ] || [ $agent_run_state = 2 ]; then agent_start ssh-add elif [ \"$SSH_AUTH_SOCK\" ] \u0026\u0026 [ $agent_run_state = 1 ]; then ssh-add fi unset env # Add Visual Studio Code (code) export PATH=\"$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin\" Always remember to source the bash file after any modification, by: source ~/.zshrc\nChanged the Mac terminal to iterm2 and then made numerous customizations to the oh-my-zsh plugin. The ~/.zshrc looks like the following after these modifications:\n# If you come from bash you might have to change your $PATH. # export PATH=$HOME/bin:/usr/local/bin:$PATH # Path to your oh-my-zsh installation. export ZSH=\"$HOME/.oh-my-zsh\" # Set name of the theme to load --- if set to \"random\", it will # load a random theme each time oh-my-zsh is loaded, in which case, # to know which specific one was loaded, run: echo $RANDOM_THEME # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes ZSH_THEME=\"robbyrussell\" # Set list of themes to pick from when loading at random # Setting this variable when ZSH_THEME=random will cause zsh to load # a theme from this variable instead of looking in $ZSH/themes/ # If set to an empty array, this variable will have no effect. # ZSH_THEME_RANDOM_CANDIDATES=( \"robbyrussell\" \"agnoster\" ) # Uncomment the following line to use case-sensitive completion. # CASE_SENSITIVE=\"true\" # Uncomment the following line to use hyphen-insensitive completion. # Case-sensitive completion must be off. _ and - will be interchangeable. # HYPHEN_INSENSITIVE=\"true\" # Uncomment one of the following lines to change the auto-update behavior # zstyle ':omz:update' mode disabled # disable automatic updates # zstyle ':omz:update' mode auto # update automatically without asking # zstyle ':omz:update' mode reminder # just remind me to update when it's time # Uncomment the following line to change how often to auto-update (in days). # zstyle ':omz:update' frequency 13 # Uncomment the following line if pasting URLs and other text is messed up. # DISABLE_MAGIC_FUNCTIONS=\"true\" # Uncomment the following line to disable colors in ls. # DISABLE_LS_COLORS=\"true\" # Uncomment the following line to disable auto-setting terminal title. # DISABLE_AUTO_TITLE=\"true\" # Uncomment the following line to enable command auto-correction. # ENABLE_CORRECTION=\"true\" # Uncomment the following line to display red dots whilst waiting for completion. # You can also set it to another string to have that shown instead of the default red dots. # e.g. COMPLETION_WAITING_DOTS=\"%F{yellow}waiting...%f\" # Caution: this setting can cause issues with multiline prompts in zsh \u003c 5.7.1 (see #5765) # COMPLETION_WAITING_DOTS=\"true\" # Uncomment the following line if you want to disable marking untracked files # under VCS as dirty. This makes repository status check for large repositories # much, much faster. # DISABLE_UNTRACKED_FILES_DIRTY=\"true\" # Uncomment the following line if you want to change the command execution time # stamp shown in the history command output. # You can set one of the optional three formats: # \"mm/dd/yyyy\"|\"dd.mm.yyyy\"|\"yyyy-mm-dd\" # or set a custom format using the strftime function format specifications, # see 'man strftime' for details. # HIST_STAMPS=\"mm/dd/yyyy\" # Would you like to use another custom folder than $ZSH/custom? # ZSH_CUSTOM=/path/to/new-custom-folder # Which plugins would you like to load? # Standard plugins can be found in $ZSH/plugins/ # Custom plugins may be added to $ZSH_CUSTOM/plugins/ # Example format: plugins=(rails git textmate ruby lighthouse) # Add wisely, as too many plugins slow down shell startup. plugins=( git zsh-syntax-highlighting zsh-autosuggestions # fzf ) # User configuration # export MANPATH=\"/usr/local/man:$MANPATH\" # You may need to manually set your language environment # export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions # if [[ -n $SSH_CONNECTION ]]; then # export EDITOR='vim' # else # export EDITOR='mvim' # fi # Compilation flags # export ARCHFLAGS=\"-arch x86_64\" # Set personal aliases, overriding those provided by oh-my-zsh libs, # plugins, and themes. Aliases can be placed here, though oh-my-zsh # users are encouraged to define aliases within the ZSH_CUSTOM folder. # For a full list of active aliases, run `alias`. # # Example aliases # alias zshconfig=\"mate ~/.zshrc\" # alias ohmyzsh=\"mate ~/.oh-my-zsh\" # add syntax highlighting to the list of plugins in your ~/.zshrc file # update plugins in your ~/.zshrc file # update your ~/.zshrc file FZF_BASE=\"$HOME/.fzf\" source $ZSH/oh-my-zsh.sh # Aliases # python alias python=python3 # git alias gs=\"git status\" # map exa commands to normal ls commands alias ll=\"exa -l -g --icons\" alias li=\"exa --icons\" alias lt=\"exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'\" # show file previews for fzf using bat alias fp=\"fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'\" # starship prompt alias gt=\"starship toggle gcloud disabled\" # toggle gcloud info on the prompt # use Starship prompt in zsh eval \"$(starship init zsh)\" [ -f ~/.fzf.zsh ] \u0026\u0026 source ~/.fzf.zsh Reference: configure_terminal_for_data_science_with_oh_my_zsh/\n",
+  "wordCount" : "1555",
   "inLanguage": "en",
   "image": "http://localhost:1313/","datePublished": "2023-02-03T00:00:00Z",
   "dateModified": "2023-02-03T00:00:00Z",
@@ -571,7 +651,7 @@ Reference: configure_terminal_for_data_science_with_oh_my_zsh/">
     <h1 class="post-title entry-hint-parent">
       Customizing Mac Terminal
     </h1>
-    <div class="post-meta"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2023-02-03 00:00:00 +0000 UTC'>February 3, 2023</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;4 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;711 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+    <div class="post-meta"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2023-02-03 00:00:00 +0000 UTC'>February 3, 2023</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;8 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;1555 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 
 
 </div>
@@ -601,7 +681,185 @@ Reference: configure_terminal_for_data_science_with_oh_my_zsh/">
 
 
 
-  <div class="post-content"><p>Changed the Mac terminal to <code>iterm2</code> and then made numerous customizations to the <code>oh-my-zsh</code> plugin. The <code>~/.zshrc</code> looks like the following after these modifications:</p>
+  <div class="post-content"><p><strong>Update 2025/04/24</strong></p>
+<p>Changed to <code>eza</code> instead <code>exa</code> for alias for <code>ls</code> commands with icons, because the <code>exa</code> package is no longer supported. Thus,</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># map exa commands to normal ls commands</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s2">&#34;eza -l -g --icons&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">li</span><span class="o">=</span><span class="s2">&#34;eza --icons&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">lt</span><span class="o">=</span><span class="s2">&#34;eza --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34;</span>
+</span></span></code></pre></div><p>The full <code>~/.zshrc</code> file now is:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># If you come from bash you might have to change your $PATH.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># export PATH=$HOME/bin:/usr/local/bin:$PATH</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Path to your oh-my-zsh installation.</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ZSH</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/.oh-my-zsh&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Set name of the theme to load --- if set to &#34;random&#34;, it will</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># load a random theme each time oh-my-zsh is loaded, in which case,</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># to know which specific one was loaded, run: echo $RANDOM_THEME</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes</span>
+</span></span><span class="line"><span class="cl"><span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&#34;robbyrussell&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Set list of themes to pick from when loading at random</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Setting this variable when ZSH_THEME=random will cause zsh to load</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># a theme from this variable instead of looking in $ZSH/themes/</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># If set to an empty array, this variable will have no effect.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ZSH_THEME_RANDOM_CANDIDATES=( &#34;robbyrussell&#34; &#34;agnoster&#34; )</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line to use case-sensitive completion.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># CASE_SENSITIVE=&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line to use hyphen-insensitive completion.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Case-sensitive completion must be off. _ and - will be interchangeable.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># HYPHEN_INSENSITIVE=&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment one of the following lines to change the auto-update behavior</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># zstyle &#39;:omz:update&#39; mode disabled  # disable automatic updates</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># zstyle &#39;:omz:update&#39; mode auto      # update automatically without asking</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># zstyle &#39;:omz:update&#39; mode reminder  # just remind me to update when it&#39;s time</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line to change how often to auto-update (in days).</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># zstyle &#39;:omz:update&#39; frequency 13</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line if pasting URLs and other text is messed up.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># DISABLE_MAGIC_FUNCTIONS=&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line to disable colors in ls.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># DISABLE_LS_COLORS=&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line to disable auto-setting terminal title.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># DISABLE_AUTO_TITLE=&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line to enable command auto-correction.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ENABLE_CORRECTION=&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line to display red dots whilst waiting for completion.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># You can also set it to another string to have that shown instead of the default red dots.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># e.g. COMPLETION_WAITING_DOTS=&#34;%F{yellow}waiting...%f&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Caution: this setting can cause issues with multiline prompts in zsh &lt; 5.7.1 (see #5765)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># COMPLETION_WAITING_DOTS=&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line if you want to disable marking untracked files</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># under VCS as dirty. This makes repository status check for large repositories</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># much, much faster.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># DISABLE_UNTRACKED_FILES_DIRTY=&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line if you want to change the command execution time</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># stamp shown in the history command output.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># You can set one of the optional three formats:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># &#34;mm/dd/yyyy&#34;|&#34;dd.mm.yyyy&#34;|&#34;yyyy-mm-dd&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># or set a custom format using the strftime function format specifications,</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># see &#39;man strftime&#39; for details.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># HIST_STAMPS=&#34;mm/dd/yyyy&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Would you like to use another custom folder than $ZSH/custom?</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ZSH_CUSTOM=/path/to/new-custom-folder</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Which plugins would you like to load?</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Standard plugins can be found in $ZSH/plugins/</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Custom plugins may be added to $ZSH_CUSTOM/plugins/</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Example format: plugins=(rails git textmate ruby lighthouse)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Add wisely, as too many plugins slow down shell startup.</span>
+</span></span><span class="line"><span class="cl"><span class="nv">plugins</span><span class="o">=(</span>
+</span></span><span class="line"><span class="cl">    git
+</span></span><span class="line"><span class="cl">    zsh-syntax-highlighting
+</span></span><span class="line"><span class="cl">    zsh-autosuggestions
+</span></span><span class="line"><span class="cl">    <span class="c1"># fzf</span>
+</span></span><span class="line"><span class="cl"><span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># User configuration</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># export MANPATH=&#34;/usr/local/man:$MANPATH&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># You may need to manually set your language environment</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># export LANG=en_US.UTF-8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Preferred editor for local and remote sessions</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># if [[ -n $SSH_CONNECTION ]]; then</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   export EDITOR=&#39;vim&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># else</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   export EDITOR=&#39;mvim&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Compilation flags</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># export ARCHFLAGS=&#34;-arch x86_64&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Set personal aliases, overriding those provided by oh-my-zsh libs,</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># plugins, and themes. Aliases can be placed here, though oh-my-zsh</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># users are encouraged to define aliases within the ZSH_CUSTOM folder.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># For a full list of active aliases, run `alias`.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Example aliases</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># alias zshconfig=&#34;mate ~/.zshrc&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># alias ohmyzsh=&#34;mate ~/.oh-my-zsh&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># add syntax highlighting to the list of plugins in your ~/.zshrc file</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># update plugins in your ~/.zshrc file</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># update your ~/.zshrc file</span>
+</span></span><span class="line"><span class="cl"><span class="nv">FZF_BASE</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/.fzf&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> <span class="nv">$ZSH</span>/oh-my-zsh.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Aliases</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># python</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">python</span><span class="o">=</span>python3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># git</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">gs</span><span class="o">=</span><span class="s2">&#34;git status&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># map exa commands to normal ls commands</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s2">&#34;eza -l -g --icons&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">li</span><span class="o">=</span><span class="s2">&#34;eza --icons&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">lt</span><span class="o">=</span><span class="s2">&#34;eza --tree --icons -a -I &#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&#39;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># show file previews for fzf using bat</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">fp</span><span class="o">=</span><span class="s2">&#34;fzf --preview &#39;bat --style=numbers --color=always --line-range :500 {}&#39;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># starship prompt</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">gt</span><span class="o">=</span><span class="s2">&#34;starship toggle gcloud disabled&#34;</span> <span class="c1"># toggle gcloud info on the prompt</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># use Starship prompt in zsh</span>
+</span></span><span class="line"><span class="cl"><span class="nb">eval</span> <span class="s2">&#34;</span><span class="k">$(</span>starship init zsh<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span> -f ~/.fzf.zsh <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.fzf.zsh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$PATH</span><span class="s2">:/usr/local/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$PATH</span><span class="s2">:/usr/local/texlive/2023/bin/universal-darwin&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># so-that-git-commit-doesn&#39;t-ask-for-passphrase-each-time</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">env</span><span class="o">=</span>~/.ssh/agent.env
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">agent_load_env <span class="o">()</span> <span class="o">{</span> <span class="nb">test</span> -f <span class="s2">&#34;</span><span class="nv">$env</span><span class="s2">&#34;</span> <span class="o">&amp;&amp;</span> . <span class="s2">&#34;</span><span class="nv">$env</span><span class="s2">&#34;</span> &gt;<span class="p">|</span> /dev/null <span class="p">;</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">agent_start <span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">(</span><span class="nb">umask</span> 077<span class="p">;</span> ssh-agent &gt;<span class="p">|</span> <span class="s2">&#34;</span><span class="nv">$env</span><span class="s2">&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    . <span class="s2">&#34;</span><span class="nv">$env</span><span class="s2">&#34;</span> &gt;<span class="p">|</span> /dev/null <span class="p">;</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">agent_load_env
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running</span>
+</span></span><span class="line"><span class="cl"><span class="nv">agent_run_state</span><span class="o">=</span><span class="k">$(</span>ssh-add -l &gt;<span class="p">|</span> /dev/null 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> <span class="nb">echo</span> <span class="nv">$?</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> ! <span class="s2">&#34;</span><span class="nv">$SSH_AUTH_SOCK</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">||</span> <span class="o">[</span> <span class="nv">$agent_run_state</span> <span class="o">=</span> <span class="m">2</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    agent_start
+</span></span><span class="line"><span class="cl">    ssh-add
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$SSH_AUTH_SOCK</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="nv">$agent_run_state</span> <span class="o">=</span> <span class="m">1</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    ssh-add
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> env
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Add Visual Studio Code (code)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$PATH</span><span class="s2">:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&#34;</span>
+</span></span></code></pre></div><hr>
+<blockquote>
+<p>Always remember to source the bash file after any modification, by: <code>source ~/.zshrc</code></p></blockquote>
+<p>Changed the Mac terminal to <code>iterm2</code> and then made numerous customizations to the <code>oh-my-zsh</code> plugin. The <code>~/.zshrc</code> looks like the following after these modifications:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># If you come from bash you might have to change your $PATH.</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># export PATH=$HOME/bin:/usr/local/bin:$PATH</span>
 </span></span><span class="line"><span class="cl">

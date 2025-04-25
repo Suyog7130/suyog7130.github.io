@@ -7,7 +7,12 @@
 <meta name="robots" content="index, follow">
 <title>Customize Linux Terminal! | Suyog Garg</title>
 <meta name="keywords" content="terminal, linux, bash">
-<meta name="description" content="Customize Linux Terminal! - Suyog Garg">
+<meta name="description" content="A good way to prettify and enhance the outlook of a linux bash terminal is to use synth-shell. Do:
+git clone --recursive https://github.com/andresgongora/synth-shell.git
+cd synth-shell
+sudo chmod &#43;x setup.sh
+./setup.sh
+Additionally, neofetch can be installed on top synth-shell to further enhance the way in which the system summary is presented on the log-on screen. However, this requires root access to use apt, yum or dnp package manager. Since for remote clusters the root access is usually not available, this is optional. Install neofetch using:">
 <meta name="author" content="Suyog Garg">
 <link rel="canonical" href="http://localhost:1313/posts/2025-03-14-custom-linux-terminal/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a9beb8cc794bded6e6065a475e3046b73c3f4333e4ffa4e4a539a242b6ff8818.css" integrity="sha256-qb64zHlL3tbmBlpHXjBGtzw/QzPk/6TkpTmiQrb/iBg=" rel="preload stylesheet" as="style">
@@ -134,7 +139,8 @@
 <link rel="stylesheet" type="text/css" href="/hugo-cite.css" /><meta property="og:url" content="http://localhost:1313/posts/2025-03-14-custom-linux-terminal/">
   <meta property="og:site_name" content="Suyog Garg">
   <meta property="og:title" content="Customize Linux Terminal!">
-  <meta property="og:description" content="My Personal Webpage !">
+  <meta property="og:description" content="A good way to prettify and enhance the outlook of a linux bash terminal is to use synth-shell. Do:
+git clone --recursive https://github.com/andresgongora/synth-shell.git cd synth-shell sudo chmod &#43;x setup.sh ./setup.sh Additionally, neofetch can be installed on top synth-shell to further enhance the way in which the system summary is presented on the log-on screen. However, this requires root access to use apt, yum or dnp package manager. Since for remote clusters the root access is usually not available, this is optional. Install neofetch using:">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -147,7 +153,12 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/">
 <meta name="twitter:title" content="Customize Linux Terminal!">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="A good way to prettify and enhance the outlook of a linux bash terminal is to use synth-shell. Do:
+git clone --recursive https://github.com/andresgongora/synth-shell.git
+cd synth-shell
+sudo chmod &#43;x setup.sh
+./setup.sh
+Additionally, neofetch can be installed on top synth-shell to further enhance the way in which the system summary is presented on the log-on screen. However, this requires root access to use apt, yum or dnp package manager. Since for remote clusters the root access is usually not available, this is optional. Install neofetch using:">
 
 
 <script type="application/ld+json">
@@ -176,12 +187,12 @@
   "@type": "BlogPosting",
   "headline": "Customize Linux Terminal!",
   "name": "Customize Linux Terminal!",
-  "description": "",
+  "description": "A good way to prettify and enhance the outlook of a linux bash terminal is to use synth-shell. Do:\ngit clone --recursive https://github.com/andresgongora/synth-shell.git cd synth-shell sudo chmod +x setup.sh ./setup.sh Additionally, neofetch can be installed on top synth-shell to further enhance the way in which the system summary is presented on the log-on screen. However, this requires root access to use apt, yum or dnp package manager. Since for remote clusters the root access is usually not available, this is optional. Install neofetch using:\n",
   "keywords": [
     "terminal", "linux", "bash"
   ],
-  "articleBody": "",
-  "wordCount" : "0",
+  "articleBody": "A good way to prettify and enhance the outlook of a linux bash terminal is to use synth-shell. Do:\ngit clone --recursive https://github.com/andresgongora/synth-shell.git cd synth-shell sudo chmod +x setup.sh ./setup.sh Additionally, neofetch can be installed on top synth-shell to further enhance the way in which the system summary is presented on the log-on screen. However, this requires root access to use apt, yum or dnp package manager. Since for remote clusters the root access is usually not available, this is optional. Install neofetch using:\nsudo apt install neofetch Then, make changes to the ~/.bashrc file by commenting out or removing the call to synth-shell greeter screen, so that neofetch is loaded at log-on. Open the ~/.bashrc file, and modify the following lines:\nif [ -f /home/linuxfordevices/config/synth-shell/synth-shell-greeter.sh ] \u0026\u0026 [ -n \"$(echo $- | grep i )\" ] then source /home/linuxfordevices/config/synth-shell/synth-shell-greeter.sh fi Optionally, make an alias for the ls command, so that hidden files are only shown when they are wanted. Add the following to the ~/.bashrc file:\nalias ls=\"ls -h\" alias lll=\"ls\" Optionally, eza can be installed to have icons in the ls command. See: https://github.com/eza-community/eza/blob/main/INSTALL.md\nThe full ~/.bashrc file now looks like:\n# .bashrc # Source global definitions if [ -f /etc/bashrc ]; then . /etc/bashrc fi # Uncomment the following line if you don't like systemctl's auto-paging feature: # export SYSTEMD_PAGER= # User specific aliases and functions #ulimit -Ss unlimited SCRIPTDIR=/home/.common ################################## # # for Compiler # COMPILER=INTEL19.0 #COMPILER=INTEL18.0 #COMPILER=INTEL17.0 #COMPILER=INTEL15.0 #COMPILER=PGI17 #COMPILER=PGI16 #COMPILER=PGI15 ################################## # # for MPI # MPI=IntelMPI #MPI=OpenMPI #MPI=MPICH #MPI=MPICH2 for script in $SCRIPTDIR/$COMPILER/*.sh $SCRIPTDIR/$COMPILER/$MPI/*.sh $SCRIPTDIR/*.sh do if [ -r $script ]; then . $script fi done export OMP_NUM_THREADS=1 export MKL_NUM_THREADS=1 # \u003e\u003e\u003e conda initialize \u003e\u003e\u003e # !! Contents within this block are managed by 'conda init' !! __conda_setup=\"$('/home/anaconda3/bin/conda' 'shell.bash' 'hook' 2\u003e /dev/null)\" if [ $? -eq 0 ]; then eval \"$__conda_setup\" else if [ -f \"/home/anaconda3/etc/profile.d/conda.sh\" ]; then . \"/home/anaconda3/etc/profile.d/conda.sh\" else export PATH=\"/home/anaconda3/bin:$PATH\" fi fi unset __conda_setup # \u003c\u003c\u003c conda initialize \u003c\u003c\u003c ##----------------------------------------------------- ## synth-shell-greeter.sh if [ -f /home/suyog.garg/.config/synth-shell/synth-shell-greeter.sh ] \u0026\u0026 [ -n \"$( echo $- | grep i )\" ]; then source /home/suyog.garg/.config/synth-shell/synth-shell-greeter.sh fi ##----------------------------------------------------- ## synth-shell-prompt.sh if [ -f /home/suyog.garg/.config/synth-shell/synth-shell-prompt.sh ] \u0026\u0026 [ -n \"$( echo $- | grep i )\" ]; then source /home/suyog.garg/.config/synth-shell/synth-shell-prompt.sh fi ##----------------------------------------------------- ## better-ls if [ -f /home/suyog.garg/.config/synth-shell/better-ls.sh ] \u0026\u0026 [ -n \"$( echo $- | grep i )\" ]; then source /home/suyog.garg/.config/synth-shell/better-ls.sh fi ##----------------------------------------------------- ## alias if [ -f /home/suyog.garg/.config/synth-shell/alias.sh ] \u0026\u0026 [ -n \"$( echo $- | grep i )\" ]; then source /home/suyog.garg/.config/synth-shell/alias.sh fi ##----------------------------------------------------- ## better-history if [ -f /home/suyog.garg/.config/synth-shell/better-history.sh ] \u0026\u0026 [ -n \"$( echo $- | grep i )\" ]; then source /home/suyog.garg/.config/synth-shell/better-history.sh fi # Aliases # python alias python=python3 # git alias gs=\"git status\" Also see:\nhttps://www.linuxfordevices.com/tutorials/linux/beautify-bash-shell ",
+  "wordCount" : "458",
   "inLanguage": "en",
   "image": "http://localhost:1313/","datePublished": "2025-03-14T16:27:20+11:00",
   "dateModified": "2025-03-14T16:27:20+11:00",
@@ -294,7 +305,7 @@
     <h1 class="post-title entry-hint-parent">
       Customize Linux Terminal!
     </h1>
-    <div class="post-meta"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-14 16:27:20 +1100 +1100'>March 14, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;0 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;0 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+    <div class="post-meta"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-14 16:27:20 +1100 +1100'>March 14, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;3 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;458 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 
 
 </div>
@@ -324,6 +335,137 @@
 
 
 
+  <div class="post-content"><p>A good way to prettify and enhance the outlook of a linux bash terminal is to use <a href="https://github.com/andresgongora/synth-shell">synth-shell</a>. Do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone --recursive https://github.com/andresgongora/synth-shell.git
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> synth-shell
+</span></span><span class="line"><span class="cl">sudo chmod +x setup.sh
+</span></span><span class="line"><span class="cl">./setup.sh
+</span></span></code></pre></div><p>Additionally, <code>neofetch</code> can be installed on top <code>synth-shell</code> to further enhance the way in which the system summary is presented on the log-on screen. However, this requires root access to use <code>apt</code>, <code>yum</code> or <code>dnp</code> package manager. Since for remote clusters the root access is usually not available, this is optional. Install <code>neofetch</code> using:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install neofetch
+</span></span></code></pre></div><p>Then, make changes to the <code>~/.bashrc</code> file by commenting out or removing the call to <code>synth-shell</code> greeter screen, so that <code>neofetch</code> is loaded at log-on. Open the <code>~/.bashrc</code> file, and modify the following lines:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f /home/linuxfordevices/config/synth-shell/synth-shell-greeter.sh <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$-</span> <span class="p">|</span> grep i <span class="k">)</span><span class="s2">&#34;</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">source</span> /home/linuxfordevices/config/synth-shell/synth-shell-greeter.sh
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></div><p>Optionally, make an alias for the <code>ls</code> command, so that hidden files are only shown when they are wanted. Add the following to the <code>~/.bashrc</code> file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">ls</span><span class="o">=</span><span class="s2">&#34;ls -h&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">lll</span><span class="o">=</span><span class="s2">&#34;ls&#34;</span>
+</span></span></code></pre></div><p>Optionally, <code>eza</code> can be installed to have icons in the <code>ls</code> command.
+See: <a href="https://github.com/eza-community/eza/blob/main/INSTALL.md">https://github.com/eza-community/eza/blob/main/INSTALL.md</a></p>
+<p>The full <code>~/.bashrc</code> file now looks like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># .bashrc</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Source global definitions</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f /etc/bashrc <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">	. /etc/bashrc
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Uncomment the following line if you don&#39;t like systemctl&#39;s auto-paging feature:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># export SYSTEMD_PAGER=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># User specific aliases and functions</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#ulimit -Ss unlimited</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">SCRIPTDIR</span><span class="o">=</span>/home/.common
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># for Compiler</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">COMPILER</span><span class="o">=</span>INTEL19.0
+</span></span><span class="line"><span class="cl"><span class="c1">#COMPILER=INTEL18.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#COMPILER=INTEL17.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#COMPILER=INTEL15.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#COMPILER=PGI17</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#COMPILER=PGI16</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#COMPILER=PGI15</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># for MPI</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">MPI</span><span class="o">=</span>IntelMPI
+</span></span><span class="line"><span class="cl"><span class="c1">#MPI=OpenMPI</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#MPI=MPICH</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#MPI=MPICH2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> script in <span class="nv">$SCRIPTDIR</span>/<span class="nv">$COMPILER</span>/*.sh <span class="nv">$SCRIPTDIR</span>/<span class="nv">$COMPILER</span>/<span class="nv">$MPI</span>/*.sh <span class="nv">$SCRIPTDIR</span>/*.sh
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">[</span> -r <span class="nv">$script</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">		. <span class="nv">$script</span>
+</span></span><span class="line"><span class="cl">	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">MKL_NUM_THREADS</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># &gt;&gt;&gt; conda initialize &gt;&gt;&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># !! Contents within this block are managed by &#39;conda init&#39; !!</span>
+</span></span><span class="line"><span class="cl"><span class="nv">__conda_setup</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span><span class="s1">&#39;/home/anaconda3/bin/conda&#39;</span> <span class="s1">&#39;shell.bash&#39;</span> <span class="s1">&#39;hook&#39;</span> 2&gt; /dev/null<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -eq <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">eval</span> <span class="s2">&#34;</span><span class="nv">$__conda_setup</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">[</span> -f <span class="s2">&#34;/home/anaconda3/etc/profile.d/conda.sh&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">        . <span class="s2">&#34;/home/anaconda3/etc/profile.d/conda.sh&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;/home/anaconda3/bin:</span><span class="nv">$PATH</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> __conda_setup
+</span></span><span class="line"><span class="cl"><span class="c1"># &lt;&lt;&lt; conda initialize &lt;&lt;&lt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##-----------------------------------------------------</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## synth-shell-greeter.sh</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f /home/suyog.garg/.config/synth-shell/synth-shell-greeter.sh <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="k">$(</span> <span class="nb">echo</span> <span class="nv">$-</span> <span class="p">|</span> grep i <span class="k">)</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">source</span> /home/suyog.garg/.config/synth-shell/synth-shell-greeter.sh
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##-----------------------------------------------------</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## synth-shell-prompt.sh</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f /home/suyog.garg/.config/synth-shell/synth-shell-prompt.sh <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="k">$(</span> <span class="nb">echo</span> <span class="nv">$-</span> <span class="p">|</span> grep i <span class="k">)</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">source</span> /home/suyog.garg/.config/synth-shell/synth-shell-prompt.sh
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##-----------------------------------------------------</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## better-ls</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f /home/suyog.garg/.config/synth-shell/better-ls.sh <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="k">$(</span> <span class="nb">echo</span> <span class="nv">$-</span> <span class="p">|</span> grep i <span class="k">)</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">source</span> /home/suyog.garg/.config/synth-shell/better-ls.sh
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##-----------------------------------------------------</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## alias</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f /home/suyog.garg/.config/synth-shell/alias.sh <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="k">$(</span> <span class="nb">echo</span> <span class="nv">$-</span> <span class="p">|</span> grep i <span class="k">)</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">source</span> /home/suyog.garg/.config/synth-shell/alias.sh
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##-----------------------------------------------------</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## better-history</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -f /home/suyog.garg/.config/synth-shell/better-history.sh <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="k">$(</span> <span class="nb">echo</span> <span class="nv">$-</span> <span class="p">|</span> grep i <span class="k">)</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">source</span> /home/suyog.garg/.config/synth-shell/better-history.sh
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Aliases</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># python</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">python</span><span class="o">=</span>python3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># git</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">gs</span><span class="o">=</span><span class="s2">&#34;git status&#34;</span>
+</span></span></code></pre></div><hr>
+<p>Also see:</p>
+<ul>
+<li><a href="https://www.linuxfordevices.com/tutorials/linux/beautify-bash-shell">https://www.linuxfordevices.com/tutorials/linux/beautify-bash-shell</a></li>
+</ul>
+
+
+  </div>
 
   <footer class="post-footer">
     <ul class="post-tags">

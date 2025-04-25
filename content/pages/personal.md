@@ -31,7 +31,10 @@ redirect_from:
 <!-- General Introduction -->
 <br/>
 <p>
-Academics and Research occupy a major part of my day, or for that matter, my night time often too. However, research is still just a component of my life, albiet an important one. In the rest of it, I have a funny-ambiverted side of me that likes to hangout with friends every other day, and also a slightly darker naughtier side, that only some of the girls I have been with know about.
+Academics and Research occupy a major part of my day, or for that matter, my night time often too. However, research is still just a component of my life, albiet an important one. 
+
+<!--In the rest of it, I have a funny-ambiverted side of me that likes to hangout with friends every other day, and also a slightly darker naughtier side, that only some of the girls I have been with know about.-->
+
 </p>
 <p>
 In a nutshell, I am fond of the following pleasures, hobbies, interests and delinquencies (in fact, a bit too fond of some of them) :
@@ -77,8 +80,7 @@ Sign up for free!
     <!--font-size: 20px;-->
 }
 .buttontwo{
-    background: gray; <!--var(--tertiary)-->
-    
+    background: var(--tertiary);
     border-radius: 3px;
     margin: 6px;
     justify-content: center;
@@ -90,13 +92,12 @@ Sign up for free!
 <!--<div class="buttons" style="text-align:center;">-->
 <div class="buttons_custom" class="buttons" style="text-align:center;">
 
-<a class="buttontwo" href="books/" rel="noopener" title="books" style="text-align:center">	<span class="button" style="font-weight:bold;">
-                Books
+<a class="buttontwo" href="books/" rel="noopener" title="" style="text-align:center">
+	<span class="button" style="font-weight:bold;">
+                Books  
 	</span>
 	<br/>
-	<details><summary></summary>
 	I love reading Books!
-	</details>
 </a>
 
 <a class="buttontwo" href="../writings/" rel="noopener" title="" style="text-align:center">
