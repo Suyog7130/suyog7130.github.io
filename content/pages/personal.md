@@ -77,25 +77,26 @@ Sign up for free!
     <!--font-size: 20px;-->
 }
 .buttontwo{
-    background: var(--tertiary);
+    background: gray; <!--var(--tertiary)-->
+    
     border-radius: 3px;
     margin: 6px;
     justify-content: center;
     max-width: 220px;
     padding: 30px 20px; <!-- (all) (hori) -->
-    transition: transform 0.1s;
-}
+    transition: transform 0.1s;}
 </style>
 
 <!--<div class="buttons" style="text-align:center;">-->
 <div class="buttons_custom" class="buttons" style="text-align:center;">
 
-<a class="buttontwo" href="books/" rel="noopener" title="books" style="text-align:center">
-	<span class="button" style="font-weight:bold;">
-                Books  
+<a class="buttontwo" href="books/" rel="noopener" title="books" style="text-align:center">	<span class="button" style="font-weight:bold;">
+                Books
 	</span>
 	<br/>
+	<details><summary></summary>
 	I love reading Books!
+	</details>
 </a>
 
 <a class="buttontwo" href="../writings/" rel="noopener" title="" style="text-align:center">
