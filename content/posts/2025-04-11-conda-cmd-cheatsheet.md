@@ -54,18 +54,12 @@ unset __conda_setup
 
 Do a `source ~/.zshrc` run after `conda init`.
 
+### Creating Conda Environments
+
 Now, a new conda environment can be easily created using:
 
 ```bash
 conda create -n ENV_NAME
-```
-
-Individual packages can be installed into this environment by:
-
-```bash
-conda activate ENV_NAME
-conda install PKG_NAME
-pip3 install PKG_NAME
 ```
 
 If there is a environment configuration file available, you can pass the file name too:
@@ -76,7 +70,6 @@ conda env create -n ENV_NAME --file=FILE_PATH
 
 If just ```conda env create -n ENV_NAME``` is used, without passing any filename path for the environment configuration file. 
 
-
 Check the list of all available conda enviroments using :
 
 ```bash
@@ -85,6 +78,28 @@ conda env list
 ```
 
 See : https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html
+
+
+### Installing New Packages
+
+Individual packages can be installed into this environment by:
+
+```bash
+conda activate ENV_NAME
+conda install PKG_NAME
+pip3 install PKG_NAME
+```
+
+To install packages to a specific environment, do:
+
+```bash
+conda install --name ENV_NAME -c conda-forge PKG_NAME
+```
+
+where, `-c conda-forge` denotes the conda channel to use for the download.
+
+
+
 
 
 
