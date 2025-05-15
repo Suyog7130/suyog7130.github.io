@@ -34,8 +34,18 @@ git filter-repo --path '**/*.pdf' --invert-path --force --prune-empty auto
 
 For other kinds of files and file extensions, edit the relevant pathname in the command above!
 
+At the end, force push the new git history to the remote origin branch:
+
+```bash
+git push origin main --force --tags --prune
+```
+
+You can check the directory file storage using `du -h -d 2 | sort -hu`.
+
+
 NOTE: These command can be run routinely to remove large files from git history, whenever a storage space crunch happens!
 
+<br/>
 
 See:
 
