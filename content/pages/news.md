@@ -33,6 +33,14 @@ Sign up for free!
 <!--{{% button href="https://gohugo.io/" %}}Get Hugo{{% /button %}}
 {{% button href="https://gohugo.io/" style="warning" icon="dog" %}}Get Hugo{{% /button %}}-->
 
+<span style="color:green; font-weight:bold">[Talk]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2024年08月02日
+<br/>
+Spoke at the KAGRA International Workshop 12 in Shanghai, China!
+<br/>
+$\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
 
 <span style="color:green; font-weight:bold">[Poster]</span> 
 &nbsp;
