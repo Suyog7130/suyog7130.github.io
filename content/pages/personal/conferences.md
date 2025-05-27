@@ -45,11 +45,13 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 <i class="fa fa-university"></i> CICG &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Geneva, Switzerland
 
+<!--
 - GR24 and Amaldi16
 [[website](https://iop.eventsair.com/gr24-amaldi16/)]
 <br/><i class="fa fa-calendar-alt"></i> 2025年07月14-18日 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> Scottish Exhibition Center &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Glasgow, UK
+-->
 
 - 12th KAGRA International Workshop
 [[website](https://kiw12.casconf.cn/page/1878817789607809024)]
