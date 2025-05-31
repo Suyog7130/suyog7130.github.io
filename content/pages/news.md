@@ -71,7 +71,7 @@ I serve as a Teaching Assistant for the Graduate-level "Graviational-Wave Physic
 Gave an invited talk at the "Eccentric Seminar" at Tokyo City University 
 <br/>
 $\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
-<a href="https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&dl=0">Slides</a>
+<a href="https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&dl=0">slides</a>
 
 <span style="color:green; font-weight:bold">[Talk]</span>
 &nbsp;
@@ -80,7 +80,7 @@ $\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
 <br/>
 Presentation at the Department of Physics Open House for prospective International student at UTokyo
 $\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
-<a href="https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&dl=0">Slides</a>
+<a href="https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&dl=0">slides</a>
 
 <span style="color:green; font-weight:bold">[Talk]</span>
 &nbsp;
@@ -89,7 +89,7 @@ $\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
 <br/>
 Gave a talk at RESCEU-UTAP Thursday Seminar
 $\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
-<a href="https://www.dropbox.com/scl/fi/d7rvscuzuf3462wbtirog/thurs-seminar-240620-talk.pdf?rlkey=pxnfixmqqaplledvruua56du6&dl=0">Slides</a>
+<a href="https://www.dropbox.com/scl/fi/d7rvscuzuf3462wbtirog/thurs-seminar-240620-talk.pdf?rlkey=pxnfixmqqaplledvruua56du6&dl=0">slides</a>
 
 <span style="color:darkblue; font-weight:bold">[Academic]</span>
 &nbsp;

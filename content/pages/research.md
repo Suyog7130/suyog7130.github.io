@@ -1,0 +1,1 @@
+My current PhD research relates to gravitational-wave Astrophysics. Over the past few years, I have broadly worked on computational astrophsics and data analysis topics. Below is a brief description and summary of my research interests.
