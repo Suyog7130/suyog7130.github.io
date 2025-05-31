@@ -182,7 +182,7 @@ params:
         url: pages/talks
         weight: 4
       - name: Research
-        url: research
+        url: pages/research
         weight: 5
       - name: Posts
         url: posts
