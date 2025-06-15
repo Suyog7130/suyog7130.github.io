@@ -65,3 +65,9 @@ You've shared **6 flight sets**, and I've compiled all the fares for **Air India
 3. **ANA is expensive but consistent**, with minimal change from weekday to weekend.
 4. **JAL prices are volatile**, ranging from **¥92,930 to ¥632,890**, with one fare emitting **1,788 kg CO₂e**—**+222% higher** than average!
 5. **Air India offers best value-for-money**, with the **lowest emissions and fares**, especially for economy travelers.
+
+---
+
+
+I made this comparison of Tokyo->Delhi flight prices to find why JAL was so expensive for one of my friends who recently visited India. I think the reason is that their weekend flight prices are super inflated and the regular prices are high due to larger CO2 comsumption, which points to lower mileage per unit fuel, perhaps due to the older engines. ANA is the best choice overall optimizing cost, punctuality and comfort, while Air India is easily the most cost effective albiet usually with ~30mins delay. All other logistics are the same, for instance the departure airport and schedule and flight duration.
+However, Japanese companies are, perhaps, contrained to only book JAL flights when they are available for business trip routes.
