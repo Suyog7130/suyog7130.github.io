@@ -1,8 +1,8 @@
 ---
 title: "Tokyo->Delhi Flight Price Comparison"
 date: 2025-06-16T01:22:03+09:00
-draft: false
-tags: chatgpt
+tags: 
+    - chatgpt
 ---
 
 Note: Made using ChatGPTv4-o prompt! 
