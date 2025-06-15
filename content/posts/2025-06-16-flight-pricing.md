@@ -1,7 +1,8 @@
 ---
-title: "2025 06 16 Flight Pricing"
+title: "Tokyo->Delhi Flight Price Comparison"
 date: 2025-06-16T01:22:03+09:00
-draft: true
+draft: false
+tags: chatgpt
 ---
 
 Note: Made using ChatGPTv4-o prompt! 
