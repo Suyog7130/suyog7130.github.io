@@ -1,5 +1,5 @@
 ---
-title: "2025 06 17 Tmux on Centos"
+title: "Installing tmux on CentOS server"
 date: 2025-06-17T13:36:15+09:00
 draft: false
 tags:
