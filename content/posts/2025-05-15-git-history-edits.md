@@ -50,4 +50,4 @@ NOTE: These command can be run routinely to remove large files from git history,
 See:
 
 - https://stackoverflow.com/questions/2100907/how-can-i-remove-delete-a-large-file-from-the-commit-history-in-the-git-reposito
-
+- https://github.com/newren/git-filter-repo/blob/main/INSTALL.md
