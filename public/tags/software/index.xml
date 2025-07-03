@@ -9,7 +9,7 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
     <lastBuildDate>Thu, 03 Apr 2025 18:25:31 +0900</lastBuildDate>
@@ -63,19 +63,12 @@
       <description></description>
     </item>
     <item>
-      <title>How to manage your Research Papers Library ?</title>
+      <title>How to Manage Your Research Paper Library with Zotero</title>
       <link>http://localhost:1313/posts/2024-11-28-zotero/</link>
       <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2024-11-28-zotero/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.zotero.org/support/collections_and_tags&#34;&gt;https://www.zotero.org/support/collections_and_tags&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/support/feeds&#34;&gt;https://www.zotero.org/support/feeds&lt;/a&gt;
-&lt;a href=&#34;https://forums.zotero.org/discussion/comment/472493#Comment_472493&#34;&gt;https://forums.zotero.org/discussion/comment/472493#Comment_472493&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/suyoggarg/library&#34;&gt;https://www.zotero.org/suyoggarg/library&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/support/sync&#34;&gt;https://www.zotero.org/support/sync&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/support/zotero_data&#34;&gt;https://www.zotero.org/support/zotero_data&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/support/attaching_files#stored_files_and_linked_files&#34;&gt;https://www.zotero.org/support/attaching_files#stored_files_and_linked_files&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/support/file_renaming&#34;&gt;https://www.zotero.org/support/file_renaming&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If the linked storage directory is updated, the new PDF has to be manually added to the Zotero library. However, here too, you can simply selected the whole storage directory and not add duplicates !&lt;/p&gt;</description>
+      <description>&lt;p&gt;If you’re a researcher, student, or academic drowning in PDFs and journal articles, Zotero might be the tool you didn’t know you needed. It&amp;rsquo;s a powerful, free, and open-source reference manager that helps you collect, organize, annotate, cite, and share your research materials with ease.&lt;/p&gt;
+&lt;p&gt;In this post, we’ll look at how to set up and optimize Zotero for managing a growing library of research papers, especially PDFs. We&amp;rsquo;ll also explore helpful features and best practices to avoid common pitfalls.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

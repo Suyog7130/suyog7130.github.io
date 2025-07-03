@@ -1,0 +1,266 @@
+
+---
+title: My Visits Calendar
+description: A calendar view of my visits over the years.
+permalink: /personal/visits/
+ShowToc: false
+hideTags: true
+ShowWordCount: false
+ShowReadingTime: false
+hideAuthor: true
+---
+
+<div id="year-buttons" style="margin-bottom: 20px;">
+    <!-- Year buttons will be inserted here -->
+    <style>
+    #year-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    #year-buttons button {
+        background: #f5f5f5;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+        padding: 8px 18px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s, border 0.2s;
+    }
+    #year-buttons button:hover,
+    #year-buttons button.active {
+        background: #8d9fac;
+        color: #040404;
+        border-color: #8fa2b0;
+    }
+    </style>
+</div>
+<div id="calendar-container">
+    <style>
+    #calendar-container h2 {
+        text-align: center;
+        margin-bottom: 24px;
+        color: #2d3a4a;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    #calendar-container .calendar-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        justify-content: center;
+    }
+    #calendar-container .calendar-month {
+        background: #f8fafc;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(60,80,120,0.07);
+        min-width: 200px;
+        max-width: 220px;
+        flex: 1 0 200px;
+        margin: 0;
+        padding: 18px 14px 12px 14px;
+        transition: box-shadow 0.2s;
+    }
+    #calendar-container .calendar-month:hover {
+        box-shadow: 0 4px 16px rgba(60,80,120,0.13);
+        border-color: #8fa2b0;
+    }
+    #calendar-container .calendar-month strong {
+        display: block;
+        font-size: 1.1rem;
+        color: #3b4d5c;
+        margin-bottom: 8px;
+        letter-spacing: 0.5px;
+    }
+    #calendar-container .calendar-month ul {
+        padding-left: 18px;
+        margin: 0;
+        font-size: 0.98rem;
+    }
+    #calendar-container .calendar-month li {
+        margin-bottom: 4px;
+        color: #4b5c6b;
+    }
+    #calendar-container .calendar-month li:last-child {
+        margin-bottom: 0;
+    }
+    #calendar-container .calendar-month li:empty {
+        display: none;
+    }
+    </style>
+</div>
+
+<script>
+const visitsData = {
+    2016: {
+        January: ["Visit to New York", "Conference in LA"],
+        February: ["Trip to Chicago"],
+        March: [],
+        April: ["Family visit"],
+        May: [],
+        June: ["Business meeting in Boston"],
+        July: [],
+        August: ["Vacation in Miami"],
+        September: [],
+        October: ["Seminar in Seattle"],
+        November: [],
+        December: ["Holiday in Denver"]
+    },
+    2017: {
+        January: ["Workshop in Austin"],
+        February: [],
+        March: ["Visit to San Francisco"],
+        April: [],
+        May: ["Conference in Dallas"],
+        June: [],
+        July: ["Trip to Portland"],
+        August: [],
+        September: ["Family reunion"],
+        October: [],
+        November: ["Business trip to Atlanta"],
+        December: []
+    },
+    2018: {
+        January: [],
+        February: ["Visit to Toronto"],
+        March: [],
+        April: ["Seminar in Houston"],
+        May: [],
+        June: ["Vacation in Hawaii"],
+        July: [],
+        August: [],
+        September: ["Conference in DC"],
+        October: [],
+        November: [],
+        December: ["Holiday in Orlando"]
+    },
+    2019: {
+        January: ["Trip to Las Vegas"],
+        February: [],
+        March: [],
+        April: ["Visit to San Diego"],
+        May: [],
+        June: [],
+        July: ["Workshop in Nashville"],
+        August: [],
+        September: [],
+        October: ["Conference in Phoenix"],
+        November: [],
+        December: []
+    },
+    2020: {
+        January: ["Visit to Salt Lake City"],
+        February: [],
+        March: [],
+        April: [],
+        May: [],
+        June: [],
+        July: [],
+        August: [],
+        September: [],
+        October: [],
+        November: [],
+        December: []
+    },
+    2021: {
+        January: [],
+        February: [],
+        March: [],
+        April: [],
+        May: [],
+        June: [],
+        July: [],
+        August: [],
+        September: [],
+        October: [],
+        November: [],
+        December: []
+    },
+    2022: {
+        January: [],
+        February: [],
+        March: [],
+        April: [],
+        May: [],
+        June: [],
+        July: [],
+        August: [],
+        September: [],
+        October: [],
+        November: [],
+        December: []
+    },
+    2023: {
+        January: [],
+        February: [],
+        March: [],
+        April: [],
+        May: [],
+        June: [],
+        July: [],
+        August: [],
+        September: [],
+        October: [],
+        November: [],
+        December: []
+    },
+    2024: {
+        January: [],
+        February: [],
+        March: [],
+        April: [],
+        May: [],
+        June: [],
+        July: [],
+        August: [],
+        September: [],
+        October: [],
+        November: [],
+        December: []
+    }
+};
+
+const currentYear = new Date().getFullYear();
+const startYear = 2016;
+const yearButtonsDiv = document.getElementById('year-buttons');
+const calendarContainer = document.getElementById('calendar-container');
+
+function renderYearButtons() {
+    for (let year = startYear; year <= currentYear; year++) {
+        const btn = document.createElement('button');
+        btn.textContent = year;
+        btn.style.marginRight = '8px';
+        btn.onclick = () => renderCalendar(year);
+        yearButtonsDiv.appendChild(btn);
+    }
+}
+
+function renderCalendar(year) {
+    const months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+    let html = `<h2>${year} Visits</h2><div class="calendar-grid">`;
+    for (let i = 0; i < 12; i++) {
+        const month = months[i];
+        const visits = (visitsData[year] && visitsData[year][month]) ? visitsData[year][month] : [];
+        html += `<div class="calendar-month">
+            <strong>${month}</strong>
+            <ul>${
+                visits.length ? visits.map(v => `<li>${v}</li>`).join('') : '<li style="color:#b0b8c1;">No visits</li>'
+            }</ul>
+        </div>`;
+    }
+    html += '</div>';
+    calendarContainer.innerHTML = html;
+    // Highlight active year button
+    Array.from(yearButtonsDiv.querySelectorAll('button')).forEach(btn => {
+        btn.classList.toggle('active', btn.textContent == year);
+    });
+}
+
+// Initial render
+renderYearButtons();
+renderCalendar(currentYear);
+</script>

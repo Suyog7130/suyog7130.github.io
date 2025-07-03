@@ -5,14 +5,20 @@
     <loc>http://localhost:1313/posts/2021-05-09-terminal-commands/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/conda/</loc>
-    <lastmod>2025-04-11T15:01:20+09:00</lastmod>
+    <loc>http://localhost:1313/tags/chatgpt/</loc>
+    <lastmod>2025-06-17T13:36:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</loc>
+    <lastmod>2025-06-17T13:36:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2025-06-17T13:36:15+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-04-11T15:01:20+09:00</lastmod>
+    <lastmod>2025-06-17T13:36:15+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-04-11T15:01:20+09:00</lastmod>
+    <lastmod>2025-06-17T13:36:15+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hi"
@@ -30,6 +36,21 @@
                 />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-06-17T13:36:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/terminal/</loc>
+    <lastmod>2025-06-17T13:36:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-06-16-flight-pricing/</loc>
+    <lastmod>2025-06-16T01:22:03+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/git/</loc>
+    <lastmod>2025-05-15T22:14:18+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-05-15-git-history-edits/</loc>
+    <lastmod>2025-05-15T22:14:18+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/conda/</loc>
     <lastmod>2025-04-11T15:01:20+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</loc>
@@ -59,20 +80,11 @@
     <loc>http://localhost:1313/pages/personal/resceu-related/</loc>
     <lastmod>2025-04-03T17:44:26+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
-    <lastmod>2025-04-02T18:07:51+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</loc>
-    <lastmod>2025-04-02T18:07:51+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/terminal/</loc>
     <lastmod>2025-04-02T18:07:51+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</loc>
     <lastmod>2025-04-01T16:56:24+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pages/personal/quotes/</loc>
-    <lastmod>2025-03-19T17:42:20+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/interesting-articles/</loc>
     <lastmod>2025-03-19T17:39:59+11:00</lastmod>
@@ -108,9 +120,6 @@
     <lastmod>2025-03-14T16:27:20+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</loc>
-    <lastmod>2025-03-14T16:27:20+11:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2025-03-14T16:27:20+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-03-14-use-cit-as-kagra/</loc>
@@ -194,6 +203,8 @@
     <loc>http://localhost:1313/posts/2025-02-20-paper-writing-tips/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pages/personal/visits/</loc>
+  </url><url>
     <loc>http://localhost:1313/posts/icons/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
@@ -218,8 +229,6 @@
   </url><url>
     <loc>http://localhost:1313/pages/personal/languages/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/personal/movies/</loc>
-  </url><url>
     <loc>http://localhost:1313/pages/news/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/personal/</loc>
@@ -229,6 +238,8 @@
     <loc>http://localhost:1313/pages/publications/pubs-authorwise/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/publications/pubs-yrwise/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/research/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url><url>

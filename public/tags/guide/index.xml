@@ -9,7 +9,7 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
     <lastBuildDate>Tue, 18 Mar 2025 12:24:46 +1100</lastBuildDate>
@@ -38,6 +38,14 @@
       <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/papermod-website/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>How to Manage Your Research Paper Library with Zotero</title>
+      <link>http://localhost:1313/posts/2024-11-28-zotero/</link>
+      <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-11-28-zotero/</guid>
+      <description>&lt;p&gt;If you’re a researcher, student, or academic drowning in PDFs and journal articles, Zotero might be the tool you didn’t know you needed. It&amp;rsquo;s a powerful, free, and open-source reference manager that helps you collect, organize, annotate, cite, and share your research materials with ease.&lt;/p&gt;
+&lt;p&gt;In this post, we’ll look at how to set up and optimize Zotero for managing a growing library of research papers, especially PDFs. We&amp;rsquo;ll also explore helpful features and best practices to avoid common pitfalls.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

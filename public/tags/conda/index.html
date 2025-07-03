@@ -248,9 +248,14 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p></p>
+    <p>Installing Conda package on macOS Do:
+brew install --cask conda This will download miniconda, coda and anaconda3 and all other required affiliated packages. The install location may vary, but is most likely to be in /usr/local/anaconda3/
+After the installation, add the path to the anaconda3 installation directory to the $PATH system variable, by:
+echo &#39;export PATH=&#34;/usr/local/anaconda3/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc source ~/.zshrc Initializing Conda Environment Initialize conda for your shell permanently:
+conda init This will add command lines to your ~/.zshrc file to initialize conda path variables at each startup. The modified ~/.zshrc file looks like:
+...</p>
   </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-11 15:01:20 +0900 JST'>April 11, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;0 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;0 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-11 15:01:20 +0900 JST'>April 11, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;287 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
   <a class="entry-link" aria-label="post link to Using Conda and Conda Command Cheatsheet" href="http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/"></a>
 </article>

@@ -9,10 +9,10 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Fri, 11 Apr 2025 15:01:20 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jun 2025 13:36:15 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -22,11 +22,289 @@
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
     <item>
+      <title>Installing tmux on CentOS server</title>
+      <link>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</link>
+      <pubDate>Tue, 17 Jun 2025 13:36:15 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</guid>
+      <description>&lt;h1 id=&#34;-building-libevent-ncurses-and-tmux-without-sudo-on-a-centos-server-while-escaping-anaconda&#34;&gt;🧵 Building &lt;code&gt;libevent&lt;/code&gt;, &lt;code&gt;ncurses&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; Without &lt;code&gt;sudo&lt;/code&gt; on a CentOS Server (While Escaping Anaconda)&lt;/h1&gt;
+&lt;p&gt;This guide shows how to install &lt;code&gt;ncurses&lt;/code&gt;, &lt;code&gt;libevent&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; locally under &lt;code&gt;$HOME&lt;/code&gt;, without &lt;code&gt;sudo&lt;/code&gt;, and without interference from Anaconda, on older CentOS systems.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-step-1-start-a-clean-build-shell&#34;&gt;🧼 Step 1: Start a Clean Build Shell&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;env -i bash --noprofile --norc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then set up the build environment manually:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;HOME&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/home/yourusername
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr/bin:/bin:/usr/local/bin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LIBRARY_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PKG_CONFIG_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/local/lib/pkgconfig&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;CFLAGS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-I&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/local/include -I&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/local/include/ncursesw&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LDFLAGS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-L&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/local/lib -Wl,-rpath=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/local/lib&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;-step-2-install-ncurses-locally&#34;&gt;📦 Step 2: Install &lt;code&gt;ncurses&lt;/code&gt; Locally&lt;/h2&gt;
+&lt;p&gt;If your system is missing the &lt;code&gt;ncursesw&lt;/code&gt; headers, or has an old version, build your own:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tokyo-&gt;Delhi Flight Price Comparison</title>
+      <link>http://localhost:1313/posts/2025-06-16-flight-pricing/</link>
+      <pubDate>Mon, 16 Jun 2025 01:22:03 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2025-06-16-flight-pricing/</guid>
+      <description>&lt;p&gt;Note: Made using ChatGPTv4-o prompt!&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ve shared &lt;strong&gt;6 flight sets&lt;/strong&gt;, and I&amp;rsquo;ve compiled all the fares for &lt;strong&gt;Air India, ANA, and JAL&lt;/strong&gt; (all nonstop, round-trip, HND–DEL) in &lt;strong&gt;JPY&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-summary-of-all-flights-shared&#34;&gt;✈️ &lt;strong&gt;Summary of All Flights Shared&lt;/strong&gt;&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Airline&lt;/th&gt;
+          &lt;th&gt;Date Type&lt;/th&gt;
+          &lt;th&gt;Price (JPY)&lt;/th&gt;
+          &lt;th&gt;CO₂ Emissions&lt;/th&gt;
+          &lt;th&gt;Notes&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Air India&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;407 kg (−27%)&lt;/td&gt;
+          &lt;td&gt;Constant across weekdays&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Air India&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;407 kg&lt;/td&gt;
+          &lt;td&gt;Repeated entry&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Air India&lt;/td&gt;
+          &lt;td&gt;Weekend&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;407 kg&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Air India&lt;/td&gt;
+          &lt;td&gt;Weekend&lt;/td&gt;
+          &lt;td&gt;¥169,330&lt;/td&gt;
+          &lt;td&gt;407 kg&lt;/td&gt;
+          &lt;td&gt;One high weekend fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Air India&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;407 kg&lt;/td&gt;
+          &lt;td&gt;Reconfirmed low fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;ANA&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥142,230&lt;/td&gt;
+          &lt;td&gt;428 kg (−23%)&lt;/td&gt;
+          &lt;td&gt;Lower weekday price&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ANA&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥142,230&lt;/td&gt;
+          &lt;td&gt;428 kg&lt;/td&gt;
+          &lt;td&gt;Repeated fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ANA&lt;/td&gt;
+          &lt;td&gt;Weekend&lt;/td&gt;
+          &lt;td&gt;¥195,730&lt;/td&gt;
+          &lt;td&gt;428 kg&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ANA&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥195,730&lt;/td&gt;
+          &lt;td&gt;428 kg&lt;/td&gt;
+          &lt;td&gt;Repeated fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ANA&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥195,730&lt;/td&gt;
+          &lt;td&gt;428 kg&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;JAL&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥115,430&lt;/td&gt;
+          &lt;td&gt;447 kg (−20%)&lt;/td&gt;
+          &lt;td&gt;Lower weekday fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JAL&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥115,430&lt;/td&gt;
+          &lt;td&gt;447 kg&lt;/td&gt;
+          &lt;td&gt;Repeated fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JAL&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥92,930&lt;/td&gt;
+          &lt;td&gt;447 kg&lt;/td&gt;
+          &lt;td&gt;One discounted fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JAL&lt;/td&gt;
+          &lt;td&gt;Weekend&lt;/td&gt;
+          &lt;td&gt;¥154,430&lt;/td&gt;
+          &lt;td&gt;447 kg&lt;/td&gt;
+          &lt;td&gt;Higher weekend fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JAL&lt;/td&gt;
+          &lt;td&gt;Weekend&lt;/td&gt;
+          &lt;td&gt;¥632,890&lt;/td&gt;
+          &lt;td&gt;1,788 kg (+222%)&lt;/td&gt;
+          &lt;td&gt;Extremely high premium fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JAL&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥250,430&lt;/td&gt;
+          &lt;td&gt;447 kg&lt;/td&gt;
+          &lt;td&gt;Very high weekday fare&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-price-averages-by-airline--day-type&#34;&gt;📊 &lt;strong&gt;Price Averages by Airline &amp;amp; Day Type&lt;/strong&gt;&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Airline&lt;/th&gt;
+          &lt;th&gt;Avg. Weekday Price&lt;/th&gt;
+          &lt;th&gt;Avg. Weekend Price&lt;/th&gt;
+          &lt;th&gt;Emissions Range&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Air India&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;¥125,730 (avg of 82k + 169k)&lt;/td&gt;
+          &lt;td&gt;407 kg&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;ANA&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;¥177,230&lt;/td&gt;
+          &lt;td&gt;¥195,730&lt;/td&gt;
+          &lt;td&gt;428 kg&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;JAL&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;¥138,565&lt;/td&gt;
+          &lt;td&gt;¥393,660 (avg of 154k + 632k)&lt;/td&gt;
+          &lt;td&gt;447–1,788 kg&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-analysis-table-air-india-vs-ana--jal-weekdays-vs-weekends&#34;&gt;🧠 &lt;strong&gt;Analysis Table: Air India vs ANA &amp;amp; JAL (Weekdays vs Weekends)&lt;/strong&gt;&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Criteria&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Air India&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;ANA&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;JAL&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Avg. Weekday Price&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;¥177,230&lt;/td&gt;
+          &lt;td&gt;¥138,565&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Avg. Weekend Price&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;¥125,730&lt;/td&gt;
+          &lt;td&gt;¥195,730&lt;/td&gt;
+          &lt;td&gt;¥393,660&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Price Stability&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Very stable (flat ¥82k most days)&lt;/td&gt;
+          &lt;td&gt;Stable but high&lt;/td&gt;
+          &lt;td&gt;Highly volatile (¥92k–¥632k)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CO₂ Emissions&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;407 kg (−27%)&lt;/td&gt;
+          &lt;td&gt;428 kg (−23%)&lt;/td&gt;
+          &lt;td&gt;Up to 1,788 kg (+222%)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Best for Budget&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;✅ Clearly the lowest&lt;/td&gt;
+          &lt;td&gt;❌ Double the cost&lt;/td&gt;
+          &lt;td&gt;❌ Often 3–5× more&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Best for Comfort/Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;❌ Basic service&lt;/td&gt;
+          &lt;td&gt;✅ Premium Japanese&lt;/td&gt;
+          &lt;td&gt;✅ Premium + elite pricing&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Weekend Fare Inflation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;+53% over weekday avg&lt;/td&gt;
+          &lt;td&gt;+10% over weekday avg&lt;/td&gt;
+          &lt;td&gt;+184% over weekday avg&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-key-insights&#34;&gt;📌 &lt;strong&gt;Key Insights&lt;/strong&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Air India dominates weekday prices&lt;/strong&gt;, consistently offering fares at &lt;strong&gt;~¥82,000&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weekend Air India fare jumped to ¥169,330&lt;/strong&gt; once—still cheaper than JAL or ANA.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ANA is expensive but consistent&lt;/strong&gt;, with minimal change from weekday to weekend.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JAL prices are volatile&lt;/strong&gt;, ranging from &lt;strong&gt;¥92,930 to ¥632,890&lt;/strong&gt;, with one fare emitting &lt;strong&gt;1,788 kg CO₂e&lt;/strong&gt;—&lt;strong&gt;+222% higher&lt;/strong&gt; than average!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Air India offers best value-for-money&lt;/strong&gt;, with the &lt;strong&gt;lowest emissions and fares&lt;/strong&gt;, especially for economy travelers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;I made this comparison of Tokyo-&amp;gt;Delhi flight prices to find why JAL was so expensive for one of my friends who recently visited India. I think the reason is that their weekend flight prices are super inflated and the regular prices are high due to larger CO2 comsumption, which points to lower mileage per unit fuel, perhaps due to the older engines. ANA is the best choice overall optimizing cost, punctuality and comfort, while Air India is easily the most cost effective albiet usually with ~30mins delay. All other logistics are the same, for instance the departure airport and schedule and flight duration.
+However, Japanese companies are, perhaps, contrained to only book JAL flights when they are available for business trip routes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to remove large files from `git` commit history?</title>
+      <link>http://localhost:1313/posts/2025-05-15-git-history-edits/</link>
+      <pubDate>Thu, 15 May 2025 22:14:18 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2025-05-15-git-history-edits/</guid>
+      <description>&lt;p&gt;First, analyze the git storage in the directory with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git filter-repo --analyze
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then the large files can be removed from &lt;code&gt;git&lt;/code&gt; history using &lt;code&gt;git filter-repo&lt;/code&gt; as follows:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git filter-repo --strip-blobs-bigger-than 10M
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This removes all files larger than 10MB from &lt;code&gt;.git/objects/&lt;/code&gt; directory. You may have to use &lt;code&gt;--force&lt;/code&gt; argument, if the repository is not a fresh clone. The command will also remove the &lt;code&gt;origin&lt;/code&gt; remote, so you will need to readd it!&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Using Conda and Conda Command Cheatsheet</title>
       <link>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</link>
       <pubDate>Fri, 11 Apr 2025 15:01:20 +0900</pubDate>
       <guid>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</guid>
-      <description></description>
+      <description>&lt;h3 id=&#34;installing-conda-package-on-macos&#34;&gt;Installing Conda package on macOS&lt;/h3&gt;
+&lt;p&gt;Do:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install --cask conda
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will download &lt;code&gt;miniconda&lt;/code&gt;, &lt;code&gt;coda&lt;/code&gt; and &lt;code&gt;anaconda3&lt;/code&gt; and all other required affiliated packages. The install location may vary, but is most likely to be in &lt;code&gt;/usr/local/anaconda3/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After the installation, add the path to the &lt;code&gt;anaconda3&lt;/code&gt; installation directory to the &lt;code&gt;$PATH&lt;/code&gt; system variable, by:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;export PATH=&amp;#34;/usr/local/anaconda3/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.zshrc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; ~/.zshrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;initializing-conda-environment&#34;&gt;Initializing Conda Environment&lt;/h3&gt;
+&lt;p&gt;Initialize &lt;code&gt;conda&lt;/code&gt; for your shell permanently:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will add command lines to your &lt;code&gt;~/.zshrc&lt;/code&gt; file to initialize conda path variables at each startup. The modified &lt;code&gt;~/.zshrc&lt;/code&gt; file looks like:&lt;/p&gt;</description>
     </item>
     <item>
       <title>On switching to TexStudio!</title>
@@ -198,19 +476,12 @@
       <description></description>
     </item>
     <item>
-      <title>How to manage your Research Papers Library ?</title>
+      <title>How to Manage Your Research Paper Library with Zotero</title>
       <link>http://localhost:1313/posts/2024-11-28-zotero/</link>
       <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2024-11-28-zotero/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.zotero.org/support/collections_and_tags&#34;&gt;https://www.zotero.org/support/collections_and_tags&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/support/feeds&#34;&gt;https://www.zotero.org/support/feeds&lt;/a&gt;
-&lt;a href=&#34;https://forums.zotero.org/discussion/comment/472493#Comment_472493&#34;&gt;https://forums.zotero.org/discussion/comment/472493#Comment_472493&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/suyoggarg/library&#34;&gt;https://www.zotero.org/suyoggarg/library&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/support/sync&#34;&gt;https://www.zotero.org/support/sync&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/support/zotero_data&#34;&gt;https://www.zotero.org/support/zotero_data&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/support/attaching_files#stored_files_and_linked_files&#34;&gt;https://www.zotero.org/support/attaching_files#stored_files_and_linked_files&lt;/a&gt;
-&lt;a href=&#34;https://www.zotero.org/support/file_renaming&#34;&gt;https://www.zotero.org/support/file_renaming&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If the linked storage directory is updated, the new PDF has to be manually added to the Zotero library. However, here too, you can simply selected the whole storage directory and not add duplicates !&lt;/p&gt;</description>
+      <description>&lt;p&gt;If you’re a researcher, student, or academic drowning in PDFs and journal articles, Zotero might be the tool you didn’t know you needed. It&amp;rsquo;s a powerful, free, and open-source reference manager that helps you collect, organize, annotate, cite, and share your research materials with ease.&lt;/p&gt;
+&lt;p&gt;In this post, we’ll look at how to set up and optimize Zotero for managing a growing library of research papers, especially PDFs. We&amp;rsquo;ll also explore helpful features and best practices to avoid common pitfalls.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Probability of two people serendipitously meeting somewhere</title>
