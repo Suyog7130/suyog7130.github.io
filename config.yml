@@ -188,6 +188,9 @@ params:
       - name: Posts
         url: posts
         weight: 6
+      - name: Pages
+        url: pages
+        weight: 9
       - name: CV
         url: pages/cv
         weight: 7
