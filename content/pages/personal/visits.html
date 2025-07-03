@@ -10,6 +10,25 @@ ShowReadingTime: false
 hideAuthor: true
 ---
 
+<!-- extend page width -->
+<style>
+    /* body {
+        max-width: 100vw !important;
+        width: 100vw !important;
+        margin-left: calc(-50vw + 50%) !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        overflow-x: auto;
+    } */
+    #visits-table {
+        width: 100vw !important;
+        max-width: 100% !important;
+        /* margin-left: calc(-5vw) !important; */
+        /* margin-left: 10px !important; */
+    }
+</style>
+
 <div id="year-buttons" style="margin-bottom: 20px;">
     <style>
     #year-buttons {
@@ -164,8 +183,13 @@ function renderCalendar(year) {
     let html = `
         <h2><span style="color:#4b5c6b;">${year}</span> <span style="font-size:1.1rem;color:#8fa2b0;">Visits</span></h2>
         <p style="font-size:1.05rem; color:#4b5c6b; margin-bottom:12px;">
-            Total visits: <strong>${
-                (visitsData[year] ? Object.values(visitsData[year]).reduce((sum, arr) => sum + arr.length, 0) : 0)
+            Total trips: <strong>${
+                (visitsData[year]
+                    ? Object.values(visitsData[year]).reduce(
+                        (sum, arr) => sum + arr.filter(v => v.startsWith("Trip:")).length,
+                        0
+                    )
+                    : 0)
             }</strong>
         </p>
         <div class="timeline" style="overflow-x: auto; white-space: nowrap;">`;
@@ -209,7 +233,7 @@ renderCalendar(currentYear);
 
 <!-- Table View of Visits -->
 <div style="margin-top: 40px;">
-    <h2 style="color:#4b5c6b;">Visits Table</h2>
+    <h2 style="color:#4b5c6b; margin-bottom:18px; text-align: center;">Visits Table</h2>
     <table id="visits-table" style="border-collapse:collapse; width:100%; background:#f8f9fa;">
         <thead>
             <tr>
