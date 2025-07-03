@@ -11,7 +11,6 @@ hideAuthor: true
 ---
 
 <div id="year-buttons" style="margin-bottom: 20px;">
-    <!-- Year buttons will be inserted here -->
     <style>
     #year-buttons {
         display: flex;
@@ -35,60 +34,23 @@ hideAuthor: true
     }
     </style>
 </div>
-<div id="calendar-container">
-    <style>
-    #calendar-container h2 {
-        text-align: center;
-        margin-bottom: 24px;
-        color: #2d3a4a;
-        font-size: 2rem;
-        letter-spacing: 1px;
-    }
-    #calendar-container .calendar-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-        justify-content: center;
-    }
-    #calendar-container .calendar-month {
-        background: #f8fafc;
-        border: 1px solid #d1d5db;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(60,80,120,0.07);
-        min-width: 200px;
-        max-width: 220px;
-        flex: 1 0 200px;
-        margin: 0;
-        padding: 18px 14px 12px 14px;
-        transition: box-shadow 0.2s;
-    }
-    #calendar-container .calendar-month:hover {
-        box-shadow: 0 4px 16px rgba(60,80,120,0.13);
-        border-color: #8fa2b0;
-    }
-    #calendar-container .calendar-month strong {
-        display: block;
-        font-size: 1.1rem;
-        color: #3b4d5c;
-        margin-bottom: 8px;
-        letter-spacing: 0.5px;
-    }
-    #calendar-container .calendar-month ul {
-        padding-left: 18px;
-        margin: 0;
-        font-size: 0.98rem;
-    }
-    #calendar-container .calendar-month li {
-        margin-bottom: 4px;
-        color: #4b5c6b;
-    }
-    #calendar-container .calendar-month li:last-child {
-        margin-bottom: 0;
-    }
-    #calendar-container .calendar-month li:empty {
-        display: none;
-    }
-    </style>
+
+<div id="calendar-container"></div>
+
+<style>
+.timeline-month {
+    display: inline-block;
+    vertical-align: top;
+    background: #eeecec;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(140,160,180,0.07);
+    margin-right: 18px;
+    margin-bottom: 12px;
+    padding: 12px 16px 10px 16px;
+    min-width: 140px;
+    max-width: 200px;
+}
+</style>
 </div>
 
 <script>
@@ -196,7 +158,7 @@ const visitsData = {
         February: [],
         March: [],
         April: [],
-        May: [],
+        May: ["Nothing"],
         June: [],
         July: [],
         August: [],
@@ -241,16 +203,38 @@ function renderCalendar(year) {
         "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ];
-    let html = `<h2>${year} Visits</h2><div class="calendar-grid">`;
+    let html = `
+        <h2><span style="color:#4b5c6b;">${year}</span> <span style="font-size:1.1rem;color:#8fa2b0;">Visits</span></h2>
+        <p style="font-size:1.05rem; color:#4b5c6b; margin-bottom:12px;">
+            Total visits: <strong>${
+                (visitsData[year] ? Object.values(visitsData[year]).reduce((sum, arr) => sum + arr.length, 0) : 0)
+            }</strong>
+        </p>
+        <div class="timeline" style="overflow-x: auto; white-space: nowrap;">`;
     for (let i = 0; i < 12; i++) {
         const month = months[i];
         const visits = (visitsData[year] && visitsData[year][month]) ? visitsData[year][month] : [];
-        html += `<div class="calendar-month">
-            <strong>${month}</strong>
-            <ul>${
-                visits.length ? visits.map(v => `<li>${v}</li>`).join('') : '<li style="color:#b0b8c1;">No visits</li>'
-            }</ul>
-        </div>`;
+        if (!visits.length) {
+            html += `
+                <div class="timeline-month" style="display: inline-block; vertical-align: top;">
+                    <strong style="font-size:1.08rem; color:#2d3a4a; margin-bottom:10px; margin-right: 20px;">
+                        ${month}
+                    </strong>
+                </div>`;
+            continue;
+        }
+        html += `
+            <div class="timeline-month" style="display: inline-block; vertical-align: top;">
+                <strong style="font-size:1.08rem; color:#2d3a4a; margin-bottom:10px; margin-right: 20px;">
+                    <span style="display:inline-block; width:100%; text-align:center;">
+                    ${month}
+                </strong>
+                <ul style="padding-left:18px; margin:0; margin-right: 10px;">
+                    ${
+                        visits.map(v => `<li style="margin-bottom:4px; color:#4b5c6b;">${v}</li>`).join('')
+                    }
+                </ul>
+            </div>`;
     }
     html += '</div>';
     calendarContainer.innerHTML = html;
