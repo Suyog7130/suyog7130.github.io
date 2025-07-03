@@ -244,6 +244,22 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Installing tmux on CentOS server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🧵 Building libevent, ncurses, and tmux Without sudo on a CentOS Server (While Escaping Anaconda) This guide shows how to install ncurses, libevent, and tmux locally under $HOME, without sudo, and without interference from Anaconda, on older CentOS systems.
+🧼 Step 1: Start a Clean Build Shell env -i bash --noprofile --norc Then set up the build environment manually:
+export HOME=/home/yourusername export PATH=/usr/bin:/bin:/usr/local/bin export LD_LIBRARY_PATH= export LIBRARY_PATH= export PKG_CONFIG_PATH=&#34;$HOME/local/lib/pkgconfig&#34; export CFLAGS=&#34;-I$HOME/local/include -I$HOME/local/include/ncursesw&#34; export LDFLAGS=&#34;-L$HOME/local/lib -Wl,-rpath=$HOME/local/lib&#34; 📦 Step 2: Install ncurses Locally If your system is missing the ncursesw headers, or has an old version, build your own:
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-06-17 13:36:15 +0900 JST'>June 17, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;359 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to Installing tmux on CentOS server" href="http://localhost:1313/posts/2025-06-17-tmux-on-centos/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Customize Linux Terminal!
     </h2>
   </header>

@@ -7,7 +7,17 @@
 <meta name="robots" content="index, follow">
 <title>Using Conda and Conda Command Cheatsheet | Suyog Garg</title>
 <meta name="keywords" content="conda">
-<meta name="description" content="Using Conda and Conda Command Cheatsheet - Suyog Garg">
+<meta name="description" content="Installing Conda package on macOS
+Do:
+brew install --cask conda
+This will download miniconda, coda and anaconda3 and all other required affiliated packages. The install location may vary, but is most likely to be in /usr/local/anaconda3/
+After the installation, add the path to the anaconda3 installation directory to the $PATH system variable, by:
+echo &#39;export PATH=&#34;/usr/local/anaconda3/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc
+source ~/.zshrc
+Initializing Conda Environment
+Initialize conda for your shell permanently:
+conda init
+This will add command lines to your ~/.zshrc file to initialize conda path variables at each startup. The modified ~/.zshrc file looks like:">
 <meta name="author" content="Suyog Garg">
 <link rel="canonical" href="http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a9beb8cc794bded6e6065a475e3046b73c3f4333e4ffa4e4a539a242b6ff8818.css" integrity="sha256-qb64zHlL3tbmBlpHXjBGtzw/QzPk/6TkpTmiQrb/iBg=" rel="preload stylesheet" as="style">
@@ -134,7 +144,11 @@
 <link rel="stylesheet" type="text/css" href="/hugo-cite.css" /><meta property="og:url" content="http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/">
   <meta property="og:site_name" content="Suyog Garg">
   <meta property="og:title" content="Using Conda and Conda Command Cheatsheet">
-  <meta property="og:description" content="My Personal Webpage !">
+  <meta property="og:description" content="Installing Conda package on macOS Do:
+brew install --cask conda This will download miniconda, coda and anaconda3 and all other required affiliated packages. The install location may vary, but is most likely to be in /usr/local/anaconda3/
+After the installation, add the path to the anaconda3 installation directory to the $PATH system variable, by:
+echo &#39;export PATH=&#34;/usr/local/anaconda3/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc source ~/.zshrc Initializing Conda Environment Initialize conda for your shell permanently:
+conda init This will add command lines to your ~/.zshrc file to initialize conda path variables at each startup. The modified ~/.zshrc file looks like:">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -145,7 +159,17 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/">
 <meta name="twitter:title" content="Using Conda and Conda Command Cheatsheet">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="Installing Conda package on macOS
+Do:
+brew install --cask conda
+This will download miniconda, coda and anaconda3 and all other required affiliated packages. The install location may vary, but is most likely to be in /usr/local/anaconda3/
+After the installation, add the path to the anaconda3 installation directory to the $PATH system variable, by:
+echo &#39;export PATH=&#34;/usr/local/anaconda3/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc
+source ~/.zshrc
+Initializing Conda Environment
+Initialize conda for your shell permanently:
+conda init
+This will add command lines to your ~/.zshrc file to initialize conda path variables at each startup. The modified ~/.zshrc file looks like:">
 
 
 <script type="application/ld+json">
@@ -174,12 +198,12 @@
   "@type": "BlogPosting",
   "headline": "Using Conda and Conda Command Cheatsheet",
   "name": "Using Conda and Conda Command Cheatsheet",
-  "description": "",
+  "description": "Installing Conda package on macOS Do:\nbrew install --cask conda This will download miniconda, coda and anaconda3 and all other required affiliated packages. The install location may vary, but is most likely to be in /usr/local/anaconda3/\nAfter the installation, add the path to the anaconda3 installation directory to the $PATH system variable, by:\necho \u0026#39;export PATH=\u0026#34;/usr/local/anaconda3/bin:$PATH\u0026#34;\u0026#39; \u0026gt;\u0026gt; ~/.zshrc source ~/.zshrc Initializing Conda Environment Initialize conda for your shell permanently:\nconda init This will add command lines to your ~/.zshrc file to initialize conda path variables at each startup. The modified ~/.zshrc file looks like:\n",
   "keywords": [
     "conda"
   ],
-  "articleBody": "",
-  "wordCount" : "0",
+  "articleBody": "Installing Conda package on macOS Do:\nbrew install --cask conda This will download miniconda, coda and anaconda3 and all other required affiliated packages. The install location may vary, but is most likely to be in /usr/local/anaconda3/\nAfter the installation, add the path to the anaconda3 installation directory to the $PATH system variable, by:\necho 'export PATH=\"/usr/local/anaconda3/bin:$PATH\"' \u003e\u003e ~/.zshrc source ~/.zshrc Initializing Conda Environment Initialize conda for your shell permanently:\nconda init This will add command lines to your ~/.zshrc file to initialize conda path variables at each startup. The modified ~/.zshrc file looks like:\n# export PATH=\"/usr/local/anaconda3/bin:$PATH\" # commented out by conda initialize # \u003e\u003e\u003e conda initialize \u003e\u003e\u003e # !! Contents within this block are managed by 'conda init' !! __conda_setup=\"$('/usr/local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2\u003e /dev/null)\" if [ $? -eq 0 ]; then eval \"$__conda_setup\" else if [ -f \"/usr/local/anaconda3/etc/profile.d/conda.sh\" ]; then . \"/usr/local/anaconda3/etc/profile.d/conda.sh\" else export PATH=\"/usr/local/anaconda3/bin:$PATH\" fi fi unset __conda_setup # \u003c\u003c\u003c conda initialize \u003c\u003c\u003c Do a source ~/.zshrc run after conda init.\nCreating Conda Environments Now, a new conda environment can be easily created using:\nconda create -n ENV_NAME If there is a environment configuration file available, you can pass the file name too:\nconda env create -n ENV_NAME --file=FILE_PATH If just conda env create -n ENV_NAME is used, without passing any filename path for the environment configuration file.\nCheck the list of all available conda enviroments using :\nconda info --envs conda env list See : https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html\nInstalling New Packages Individual packages can be installed into this environment by:\nconda activate ENV_NAME conda install PKG_NAME pip3 install PKG_NAME To install packages to a specific environment, do:\nconda install --name ENV_NAME -c conda-forge PKG_NAME where, -c conda-forge denotes the conda channel to use for the download.\n",
+  "wordCount" : "287",
   "inLanguage": "en",
   "image": "http://localhost:1313/","datePublished": "2025-04-11T15:01:20+09:00",
   "dateModified": "2025-04-11T15:01:20+09:00",
@@ -292,7 +316,7 @@
     <h1 class="post-title entry-hint-parent">
       Using Conda and Conda Command Cheatsheet
     </h1>
-    <div class="post-meta"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-11 15:01:20 +0900 JST'>April 11, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;0 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;0 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+    <div class="post-meta"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-11 15:01:20 +0900 JST'>April 11, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;287 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 
 
 </div>
@@ -318,10 +342,80 @@
 </script>
     
   </header> 
+<div class="toc side right">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#installing-conda-package-on-macos">Installing Conda package on macOS</a></li>
+        <li><a href="#initializing-conda-environment">Initializing Conda Environment</a></li>
+        <li><a href="#creating-conda-environments">Creating Conda Environments</a></li>
+        <li><a href="#installing-new-packages">Installing New Packages</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
 
 
 
 
+  <div class="post-content"><h3 id="installing-conda-package-on-macos">Installing Conda package on macOS<a hidden class="anchor" aria-hidden="true" href="#installing-conda-package-on-macos">#</a></h3>
+<p>Do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew install --cask conda
+</span></span></code></pre></div><p>This will download <code>miniconda</code>, <code>coda</code> and <code>anaconda3</code> and all other required affiliated packages. The install location may vary, but is most likely to be in <code>/usr/local/anaconda3/</code></p>
+<p>After the installation, add the path to the <code>anaconda3</code> installation directory to the <code>$PATH</code> system variable, by:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;export PATH=&#34;/usr/local/anaconda3/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.zshrc
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.zshrc
+</span></span></code></pre></div><h3 id="initializing-conda-environment">Initializing Conda Environment<a hidden class="anchor" aria-hidden="true" href="#initializing-conda-environment">#</a></h3>
+<p>Initialize <code>conda</code> for your shell permanently:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda init
+</span></span></code></pre></div><p>This will add command lines to your <code>~/.zshrc</code> file to initialize conda path variables at each startup. The modified <code>~/.zshrc</code> file looks like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># export PATH=&#34;/usr/local/anaconda3/bin:$PATH&#34;  # commented out by conda initialize</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># &gt;&gt;&gt; conda initialize &gt;&gt;&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># !! Contents within this block are managed by &#39;conda init&#39; !!</span>
+</span></span><span class="line"><span class="cl"><span class="nv">__conda_setup</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span><span class="s1">&#39;/usr/local/anaconda3/bin/conda&#39;</span> <span class="s1">&#39;shell.zsh&#39;</span> <span class="s1">&#39;hook&#39;</span> 2&gt; /dev/null<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -eq <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">eval</span> <span class="s2">&#34;</span><span class="nv">$__conda_setup</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">[</span> -f <span class="s2">&#34;/usr/local/anaconda3/etc/profile.d/conda.sh&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">        . <span class="s2">&#34;/usr/local/anaconda3/etc/profile.d/conda.sh&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;/usr/local/anaconda3/bin:</span><span class="nv">$PATH</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> __conda_setup
+</span></span><span class="line"><span class="cl"><span class="c1"># &lt;&lt;&lt; conda initialize &lt;&lt;&lt;</span>
+</span></span></code></pre></div><p>Do a <code>source ~/.zshrc</code> run after <code>conda init</code>.</p>
+<h3 id="creating-conda-environments">Creating Conda Environments<a hidden class="anchor" aria-hidden="true" href="#creating-conda-environments">#</a></h3>
+<p>Now, a new conda environment can be easily created using:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda create -n ENV_NAME
+</span></span></code></pre></div><p>If there is a environment configuration file available, you can pass the file name too:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda env create -n ENV_NAME --file<span class="o">=</span>FILE_PATH
+</span></span></code></pre></div><p>If just <code>conda env create -n ENV_NAME</code> is used, without passing any filename path for the environment configuration file.</p>
+<p>Check the list of all available conda enviroments using :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda info --envs
+</span></span><span class="line"><span class="cl">conda env list
+</span></span></code></pre></div><p>See : <a href="https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html">https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html</a></p>
+<h3 id="installing-new-packages">Installing New Packages<a hidden class="anchor" aria-hidden="true" href="#installing-new-packages">#</a></h3>
+<p>Individual packages can be installed into this environment by:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda activate ENV_NAME
+</span></span><span class="line"><span class="cl">conda install PKG_NAME
+</span></span><span class="line"><span class="cl">pip3 install PKG_NAME
+</span></span></code></pre></div><p>To install packages to a specific environment, do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda install --name ENV_NAME -c conda-forge PKG_NAME
+</span></span></code></pre></div><p>where, <code>-c conda-forge</code> denotes the conda channel to use for the download.</p>
+
+
+  </div>
 
   <footer class="post-footer">
     <ul class="post-tags">

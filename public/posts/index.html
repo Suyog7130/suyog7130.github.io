@@ -274,65 +274,72 @@ Commands using ls etc. use to ls -ltr list files in reverse modification history
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Installing tmux on CentOS server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🧵 Building libevent, ncurses, and tmux Without sudo on a CentOS Server (While Escaping Anaconda) This guide shows how to install ncurses, libevent, and tmux locally under $HOME, without sudo, and without interference from Anaconda, on older CentOS systems.
+🧼 Step 1: Start a Clean Build Shell env -i bash --noprofile --norc Then set up the build environment manually:
+export HOME=/home/yourusername export PATH=/usr/bin:/bin:/usr/local/bin export LD_LIBRARY_PATH= export LIBRARY_PATH= export PKG_CONFIG_PATH=&#34;$HOME/local/lib/pkgconfig&#34; export CFLAGS=&#34;-I$HOME/local/include -I$HOME/local/include/ncursesw&#34; export LDFLAGS=&#34;-L$HOME/local/lib -Wl,-rpath=$HOME/local/lib&#34; 📦 Step 2: Install ncurses Locally If your system is missing the ncursesw headers, or has an old version, build your own:
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-06-17 13:36:15 +0900 JST'>June 17, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;359 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to Installing tmux on CentOS server" href="http://localhost:1313/posts/2025-06-17-tmux-on-centos/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tokyo-&gt;Delhi Flight Price Comparison
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Note: Made using ChatGPTv4-o prompt!
+You’ve shared 6 flight sets, and I’ve compiled all the fares for Air India, ANA, and JAL (all nonstop, round-trip, HND–DEL) in JPY.
+✈️ Summary of All Flights Shared Airline Date Type Price (JPY) CO₂ Emissions Notes Air India Weekday ¥82,130 407 kg (−27%) Constant across weekdays Air India Weekday ¥82,130 407 kg Repeated entry Air India Weekend ¥82,130 407 kg Air India Weekend ¥169,330 407 kg One high weekend fare Air India Weekday ¥82,130 407 kg Reconfirmed low fare ANA Weekday ¥142,230 428 kg (−23%) Lower weekday price ANA Weekday ¥142,230 428 kg Repeated fare ANA Weekend ¥195,730 428 kg ANA Weekday ¥195,730 428 kg Repeated fare ANA Weekday ¥195,730 428 kg JAL Weekday ¥115,430 447 kg (−20%) Lower weekday fare JAL Weekday ¥115,430 447 kg Repeated fare JAL Weekday ¥92,930 447 kg One discounted fare JAL Weekend ¥154,430 447 kg Higher weekend fare JAL Weekend ¥632,890 1,788 kg (&#43;222%) Extremely high premium fare JAL Weekday ¥250,430 447 kg Very high weekday fare 📊 Price Averages by Airline &amp; Day Type Airline Avg. Weekday Price Avg. Weekend Price Emissions Range Air India ¥82,130 ¥125,730 (avg of 82k &#43; 169k) 407 kg ANA ¥177,230 ¥195,730 428 kg JAL ¥138,565 ¥393,660 (avg of 154k &#43; 632k) 447–1,788 kg 🧠 Analysis Table: Air India vs ANA &amp; JAL (Weekdays vs Weekends) Criteria Air India ANA JAL Avg. Weekday Price ¥82,130 ¥177,230 ¥138,565 Avg. Weekend Price ¥125,730 ¥195,730 ¥393,660 Price Stability Very stable (flat ¥82k most days) Stable but high Highly volatile (¥92k–¥632k) CO₂ Emissions 407 kg (−27%) 428 kg (−23%) Up to 1,788 kg (&#43;222%) Best for Budget ✅ Clearly the lowest ❌ Double the cost ❌ Often 3–5× more Best for Comfort/Status ❌ Basic service ✅ Premium Japanese ✅ Premium &#43; elite pricing Weekend Fare Inflation &#43;53% over weekday avg &#43;10% over weekday avg &#43;184% over weekday avg 📌 Key Insights Air India dominates weekday prices, consistently offering fares at ~¥82,000. Weekend Air India fare jumped to ¥169,330 once—still cheaper than JAL or ANA. ANA is expensive but consistent, with minimal change from weekday to weekend. JAL prices are volatile, ranging from ¥92,930 to ¥632,890, with one fare emitting 1,788 kg CO₂e—&#43;222% higher than average! Air India offers best value-for-money, with the lowest emissions and fares, especially for economy travelers. I made this comparison of Tokyo-&gt;Delhi flight prices to find why JAL was so expensive for one of my friends who recently visited India. I think the reason is that their weekend flight prices are super inflated and the regular prices are high due to larger CO2 comsumption, which points to lower mileage per unit fuel, perhaps due to the older engines. ANA is the best choice overall optimizing cost, punctuality and comfort, while Air India is easily the most cost effective albiet usually with ~30mins delay. All other logistics are the same, for instance the departure airport and schedule and flight duration. However, Japanese companies are, perhaps, contrained to only book JAL flights when they are available for business trip routes.
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-06-16 01:22:03 +0900 JST'>June 16, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;3 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;506 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to Tokyo-&gt;Delhi Flight Price Comparison" href="http://localhost:1313/posts/2025-06-16-flight-pricing/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to remove large files from `git` commit history?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>First, analyze the git storage in the directory with:
+git filter-repo --analyze Then the large files can be removed from git history using git filter-repo as follows:
+git filter-repo --strip-blobs-bigger-than 10M This removes all files larger than 10MB from .git/objects/ directory. You may have to use --force argument, if the repository is not a fresh clone. The command will also remove the origin remote, so you will need to readd it!
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-05-15 22:14:18 +0900 JST'>May 15, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;190 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to How to remove large files from `git` commit history?" href="http://localhost:1313/posts/2025-05-15-git-history-edits/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Using Conda and Conda Command Cheatsheet
     </h2>
   </header>
   <div class="entry-content">
-    <p></p>
+    <p>Installing Conda package on macOS Do:
+brew install --cask conda This will download miniconda, coda and anaconda3 and all other required affiliated packages. The install location may vary, but is most likely to be in /usr/local/anaconda3/
+After the installation, add the path to the anaconda3 installation directory to the $PATH system variable, by:
+echo &#39;export PATH=&#34;/usr/local/anaconda3/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc source ~/.zshrc Initializing Conda Environment Initialize conda for your shell permanently:
+conda init This will add command lines to your ~/.zshrc file to initialize conda path variables at each startup. The modified ~/.zshrc file looks like:
+...</p>
   </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-11 15:01:20 +0900 JST'>April 11, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;0 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;0 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-11 15:01:20 +0900 JST'>April 11, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;287 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
   <a class="entry-link" aria-label="post link to Using Conda and Conda Command Cheatsheet" href="http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">On switching to TexStudio!
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>For many many year I have been using TexMaker for all my offline LaTeX document creation, compiling and editing needs. A few years back, Overleaf came along with its super ease-of-access approach to online LaTeX document editing and sharing. Overleaf has an edge over other LaTeX software distributions, mainly because of the following reasons:
-Overleaf is online, so the document can be accessed from anywhere with Internet. Adding collaborators is as easy as adding their email addresses. Auto-completion of usual command structures. Better design and native LaTeX library support than others. On the other hand, TexMaker been an offline and a little bit old now, has many inefficiencies that render it more time consuming to edit documents. Plus, you have to use an external cloud storage like Dropbox to store the work files.
-...</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-03 18:25:31 +0900 JST'>April 3, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;180 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to On switching to TexStudio!" href="http://localhost:1313/posts/2025-04-03-texstudio/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to use Git With Dropbox?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Problems I have encountered using Dropbox:
-Dropbox storage space available for use is really low, and is consumed relatively easily because of the .git folder. Dropbox real time sync has issues with git if multiple computers work on a project simultaneously. Although, it has been rare that I have encountere this. My current solution for this problem is as follows:
-Move the most space consuming .git folders outside of Dropbox. This way Dropbox won’t be syncing these large folders.
-...</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-02 18:07:51 +0900 JST'>April 2, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;413 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to How to use Git With Dropbox?" href="http://localhost:1313/posts/2025-04-02-git-with-dropbox/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Performing Mouse Clicks with only the Keyboard in iMac
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>iMac when used with bluetooth Apple keyboards and mouse has a faintly annoying problem of the inability to use the mouse if it doesn’t automatically gets connected to the system. A possible remedy and workaround for this is to use keyboard keys for mouse control.
-Press F8 (or F7 in the Macbook) key on the keyboard to enable switching the command palettes in the settings window. Use the Tab to scroll up and down in the command palette. Use the Space bar to make the selection click at the desired command. Some refs for this problem are:
-...</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-01 16:56:24 +0900 JST'>April 1, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;97 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to Performing Mouse Clicks with only the Keyboard in iMac" href="http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="http://localhost:1313/posts/page/2/">Next&nbsp;2/5&nbsp;»
+    <a class="next" href="http://localhost:1313/posts/page/2/">Next&nbsp;2/6&nbsp;»
     </a>
   </nav>
 </footer>

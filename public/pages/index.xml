@@ -9,7 +9,7 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
     <lastBuildDate>Thu, 03 Apr 2025 18:58:07 +0900</lastBuildDate>
@@ -54,20 +54,6 @@ However, in my case, the view is fixed at the month for which I have put the htm
 		Open UTokyo General Library Calendar 2025
 	&lt;/a&gt;
 &lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Quotes</title>
-      <link>http://localhost:1313/pages/personal/quotes/</link>
-      <pubDate>Wed, 19 Mar 2025 17:42:20 +1100</pubDate>
-      <guid>http://localhost:1313/pages/personal/quotes/</guid>
-      <description>&lt;p&gt;This is a list of quotations I like, either my own or somebody else&#39;&lt;/p&gt;
-&lt;h2 id=&#34;from-books&#34;&gt;From Books&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;I don’t know what I’m looking for.”
-&amp;ldquo;Why not?&amp;rdquo;
-&amp;ldquo;Because&amp;hellip;because&amp;hellip;I think it might be because if I knew
-I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;— Douglas Adams, The Hitchhiker’s Guide to the Galaxy&lt;/p&gt;</description>
     </item>
     <item>
       <title>Interesting Articles</title>
@@ -126,6 +112,7 @@ I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
 &lt;li&gt;&lt;a href=&#34;http://hilite.me/&#34;&gt;http://hilite.me/&lt;/a&gt; : Code to HTML  formatter for emailing code etc.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://suyoggarg.com/letterboxd-page/&#34;&gt;letterboxd-page/&lt;/a&gt; : Page to create custom letterboxd diary embedding, in the same manner as seen on this website.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://readme-typing-svg.herokuapp.com/demo/&#34;&gt;readme-typing-svg&lt;/a&gt; : The kinda thing you see in the About page.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.mnstate.edu/schwartz/centurylist2.html&#34;&gt;List of Books that shaped Science!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
@@ -164,6 +151,156 @@ I wouldn’t be able to look for them.”&lt;/p&gt;&lt;/blockquote&gt;
 &lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年09月  • 
 &lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Colorado State University  • 
 &lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA &lt;br/&gt; &lt;em&gt;Note: Most likely not attending!&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/pages/personal/visits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/personal/visits/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;title&gt;My Visits Calendar&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        .tabs { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px; }
+        .tab-btn {
+            padding: 8px 16px;
+            border: 1px solid #0074D9;
+            background: #fff;
+            color: #0074D9;
+            cursor: pointer;
+            border-radius: 4px 4px 0 0;
+            outline: none;
+            transition: background 0.2s;
+        }
+        .tab-btn.active, .tab-btn:hover {
+            background: #0074D9;
+            color: #fff;
+        }
+        .tab-content { display: none; border: 1px solid #0074D9; border-top: none; padding: 20px; border-radius: 0 0 4px 4px; }
+        .tab-content.active { display: block; }
+        .month-dropdown {
+            margin-bottom: 15px;
+            padding: 6px 10px;
+            font-size: 1em;
+        }
+        .visits-list {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .visits-list li {
+            margin-bottom: 6px;
+        }
+        @media (max-width: 600px) {
+            .tabs { flex-direction: column; }
+            .tab-btn { border-radius: 4px; }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;My Visits Calendar&lt;/h1&gt;
+    &lt;div class=&#34;tabs&#34; id=&#34;yearTabs&#34;&gt;&lt;/div&gt;
+    &lt;div id=&#34;tabContents&#34;&gt;&lt;/div&gt;
+
+    &lt;script&gt;
+        // Years from 2010 to present
+        const startYear = 2010;
+        const currentYear = new Date().getFullYear();
+        const months = [
+            &#34;January&#34;, &#34;February&#34;, &#34;March&#34;, &#34;April&#34;, &#34;May&#34;, &#34;June&#34;,
+            &#34;July&#34;, &#34;August&#34;, &#34;September&#34;, &#34;October&#34;, &#34;November&#34;, &#34;December&#34;
+        ];
+
+        // Example visits data structure: { [year]: { [month]: [visits] } }
+        // Fill in your actual visits here
+        const visitsData = {
+            2024: {
+                &#34;June&#34;: [&#34;Visited Paris&#34;, &#34;Business trip to Berlin&#34;],
+                &#34;May&#34;: [&#34;Weekend in London&#34;]
+            },
+            2023: {
+                &#34;December&#34;: [&#34;Family trip to Goa&#34;],
+                &#34;July&#34;: [&#34;Conference in Tokyo&#34;]
+            },
+            // Add more years and months as needed
+        };
+
+        // Generate tabs for each year
+        const yearTabs = document.getElementById(&#39;yearTabs&#39;);
+        const tabContents = document.getElementById(&#39;tabContents&#39;);
+
+        for (let y = startYear; y &lt;= currentYear; y++) {
+            // Create tab button
+            const btn = document.createElement(&#39;button&#39;);
+            btn.className = &#39;tab-btn&#39;;
+            btn.textContent = y;
+            btn.dataset.year = y;
+            yearTabs.appendChild(btn);
+
+            // Create tab content
+            const content = document.createElement(&#39;div&#39;);
+            content.className = &#39;tab-content&#39;;
+            content.id = `tab-content-${y}`;
+
+            // Month dropdown
+            const select = document.createElement(&#39;select&#39;);
+            select.className = &#39;month-dropdown&#39;;
+            select.innerHTML = months.map((m, i) =&gt;
+                `&lt;option value=&#34;${m}&#34;&gt;${m}&lt;/option&gt;`
+            ).join(&#39;&#39;);
+            content.appendChild(select);
+
+            // Visits list
+            const ul = document.createElement(&#39;ul&#39;);
+            ul.className = &#39;visits-list&#39;;
+            content.appendChild(ul);
+
+            // Populate visits for the first month
+            function updateVisitsList() {
+                const month = select.value;
+                ul.innerHTML = &#39;&#39;;
+                const visits = (visitsData[y] &amp;&amp; visitsData[y][month]) || [];
+                if (visits.length) {
+                    visits.forEach(v =&gt; {
+                        const li = document.createElement(&#39;li&#39;);
+                        li.textContent = v;
+                        ul.appendChild(li);
+                    });
+                } else {
+                    ul.innerHTML = &#39;&lt;li&gt;No visits recorded.&lt;/li&gt;&#39;;
+                }
+            }
+            select.addEventListener(&#39;change&#39;, updateVisitsList);
+            updateVisitsList();
+
+            tabContents.appendChild(content);
+        }
+
+        // Tab switching logic
+        function activateTab(year) {
+            document.querySelectorAll(&#39;.tab-btn&#39;).forEach(btn =&gt; {
+                btn.classList.toggle(&#39;active&#39;, btn.dataset.year == year);
+            });
+            document.querySelectorAll(&#39;.tab-content&#39;).forEach(tc =&gt; {
+                tc.classList.toggle(&#39;active&#39;, tc.id === `tab-content-${year}`);
+            });
+        }
+
+        // Initial activation
+        const defaultYear = currentYear;
+        activateTab(defaultYear);
+
+        // Tab click event
+        yearTabs.addEventListener(&#39;click&#39;, e =&gt; {
+            if (e.target.classList.contains(&#39;tab-btn&#39;)) {
+                activateTab(e.target.dataset.year);
+            }
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</description>
     </item>
     <item>
       <title>About</title>
@@ -307,13 +444,6 @@ Start by opening up a discussion in a Gist using the button provided !&lt;/p&gt;
       <description></description>
     </item>
     <item>
-      <title>Movies</title>
-      <link>http://localhost:1313/pages/personal/movies/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/personal/movies/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>News</title>
       <link>http://localhost:1313/pages/news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -334,18 +464,20 @@ Sign up for free!
 --&gt;
 &lt;!--&lt;span class=&#34;btn cstyle interactive transparent&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
 &lt;span class=&#34;btn cstyle interactive warning&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;i class=&#34;fa-fw fas fa-dog&#34;&gt;&lt;/i&gt; &lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;--&gt;
+&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt;
+ 
+&lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
+2024年08月02日
+&lt;br/&gt;
+Spoke at the KAGRA International Workshop 12 in Shanghai, China!
+&lt;br/&gt;
+$\rightarrow$ &lt;i class=&#34;fa fa-file-pdf&#34;&gt; &lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Poster]&lt;/span&gt;
  
 &lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
 2025年03月24-28日
 &lt;br/&gt;
-Presenting a Poster at the LVK Meeting in Monash University, Melbourne.&lt;/p&gt;
-&lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt;
- 
-&lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
-2025年01月 ー 2025年09月
-&lt;/br&gt;
-Enrolled in the MITx Statistics and Data Science MicroMasters Programs. Crediting four courses in the Methods track.&lt;/p&gt;</description>
+Presenting a Poster at the LVK Meeting in Monash University, Melbourne.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal</title>
@@ -444,6 +576,27 @@ database
       <description></description>
     </item>
     <item>
+      <title>Research</title>
+      <link>http://localhost:1313/pages/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/research/</guid>
+      <description>&lt;p&gt;My current PhD research relates to gravitational-wave Astrophysics. Over the past few years, I have broadly worked on computational astrophysics and data analysis topics. Below is a brief description and summary of my research interests. Some projects have their own pages.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;gravitational-waves&#34;&gt;Gravitational Waves&lt;/h2&gt;
+&lt;h3 id=&#34;generating-gravitational-waveform-approximations-using-machine-learning-models&#34;&gt;Generating gravitational waveform approximations using machine learning models&lt;/h3&gt;
+&lt;h3 id=&#34;detections-of-gravitational-waves-from-compact-object-mergers&#34;&gt;Detections of gravitational waves from compact object mergers&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;stellar-and-solar-physics&#34;&gt;Stellar and Solar Physics&lt;/h2&gt;
+&lt;h3 id=&#34;stellar-magnetic-cycles-and-variability&#34;&gt;Stellar magnetic cycles and variability&lt;/h3&gt;
+&lt;h3 id=&#34;super-resolving-the-solar-magnetograms&#34;&gt;Super-resolving the solar magnetograms&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;other-interests&#34;&gt;Other Interests&lt;/h2&gt;
+&lt;h3 id=&#34;agns-and-x-ray-emissions&#34;&gt;AGNs and X-Ray Emissions&lt;/h3&gt;
+&lt;h3 id=&#34;dark-matter-halos-and-the-uchuu-simulation&#34;&gt;Dark Matter Halos and the Uchuu simulation&lt;/h3&gt;
+&lt;h3 id=&#34;internal-structure-of-neutron-stars&#34;&gt;Internal structure of Neutron Stars&lt;/h3&gt;
+&lt;h3 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h3&gt;</description>
+    </item>
+    <item>
       <title>Talks and presentations</title>
       <link>http://localhost:1313/pages/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -492,25 +645,25 @@ database
 &lt;h2 id=&#34;general-writings&#34;&gt;General Writings&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;Art and Connections: KT in conversation with Fernando Kague. Komaba Times, Issue 14. Apr 2025.
+ 
+&lt;i class=&#34;fa fa-link&#34;&gt;&lt;/i&gt;
+&lt;a href=&#34;https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cold Nights, Tokyo and Tenali Rama. Kamaba Times, Issue 14. Apr 2025.
+ 
+&lt;i class=&#34;fa fa-link&#34;&gt;&lt;/i&gt;
+&lt;a href=&#34;https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;उसके श्रम के वह आँसू (कविता)। Jan 2025.
 &lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;&lt;a href=&#34;https://vaishvikhindi.com/posts/8528&#34;&gt;vaishvikhindi/posts/8528&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;इस देश में बसंत (कविता)। Oct 2024.
  
-&lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;&lt;a href=&#34;https://vaishvikhindi.com/posts/5620&#34;&gt;vaishvikhindi/posts/5620&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Nippon Connection : Connecting Japan to the world, in a filmy way!. Komaba Times, Issue 13 (Digital Issue). Apr 2024.
- 
-&lt;i class=&#34;fa fa-link&#34;&gt;&lt;/i&gt;
-&lt;a href=&#34;https://online.fliphtml5.com/parat/aehs/#p=1&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The Spring, here. Komaba Times, Issue 12. Apr 2023.
- 
-&lt;i class=&#34;fa fa-link&#34;&gt;&lt;/i&gt;
-&lt;a href=&#34;https://www.komabatimes.com/post/the-spring-here&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;</description>
+&lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;&lt;a href=&#34;https://vaishvikhindi.com/posts/5620&#34;&gt;vaishvikhindi/posts/5620&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
