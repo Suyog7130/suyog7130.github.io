@@ -153,156 +153,6 @@ However, in my case, the view is fixed at the month for which I have put the htm
 &lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA &lt;br/&gt; &lt;em&gt;Note: Most likely not attending!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/pages/personal/visits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/personal/visits/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-    &lt;meta charset=&#34;UTF-8&#34;&gt;
-    &lt;title&gt;My Visits Calendar&lt;/title&gt;
-    &lt;style&gt;
-        body { font-family: Arial, sans-serif; margin: 30px; }
-        .tabs { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px; }
-        .tab-btn {
-            padding: 8px 16px;
-            border: 1px solid #0074D9;
-            background: #fff;
-            color: #0074D9;
-            cursor: pointer;
-            border-radius: 4px 4px 0 0;
-            outline: none;
-            transition: background 0.2s;
-        }
-        .tab-btn.active, .tab-btn:hover {
-            background: #0074D9;
-            color: #fff;
-        }
-        .tab-content { display: none; border: 1px solid #0074D9; border-top: none; padding: 20px; border-radius: 0 0 4px 4px; }
-        .tab-content.active { display: block; }
-        .month-dropdown {
-            margin-bottom: 15px;
-            padding: 6px 10px;
-            font-size: 1em;
-        }
-        .visits-list {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-        .visits-list li {
-            margin-bottom: 6px;
-        }
-        @media (max-width: 600px) {
-            .tabs { flex-direction: column; }
-            .tab-btn { border-radius: 4px; }
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;My Visits Calendar&lt;/h1&gt;
-    &lt;div class=&#34;tabs&#34; id=&#34;yearTabs&#34;&gt;&lt;/div&gt;
-    &lt;div id=&#34;tabContents&#34;&gt;&lt;/div&gt;
-
-    &lt;script&gt;
-        // Years from 2010 to present
-        const startYear = 2010;
-        const currentYear = new Date().getFullYear();
-        const months = [
-            &#34;January&#34;, &#34;February&#34;, &#34;March&#34;, &#34;April&#34;, &#34;May&#34;, &#34;June&#34;,
-            &#34;July&#34;, &#34;August&#34;, &#34;September&#34;, &#34;October&#34;, &#34;November&#34;, &#34;December&#34;
-        ];
-
-        // Example visits data structure: { [year]: { [month]: [visits] } }
-        // Fill in your actual visits here
-        const visitsData = {
-            2024: {
-                &#34;June&#34;: [&#34;Visited Paris&#34;, &#34;Business trip to Berlin&#34;],
-                &#34;May&#34;: [&#34;Weekend in London&#34;]
-            },
-            2023: {
-                &#34;December&#34;: [&#34;Family trip to Goa&#34;],
-                &#34;July&#34;: [&#34;Conference in Tokyo&#34;]
-            },
-            // Add more years and months as needed
-        };
-
-        // Generate tabs for each year
-        const yearTabs = document.getElementById(&#39;yearTabs&#39;);
-        const tabContents = document.getElementById(&#39;tabContents&#39;);
-
-        for (let y = startYear; y &lt;= currentYear; y++) {
-            // Create tab button
-            const btn = document.createElement(&#39;button&#39;);
-            btn.className = &#39;tab-btn&#39;;
-            btn.textContent = y;
-            btn.dataset.year = y;
-            yearTabs.appendChild(btn);
-
-            // Create tab content
-            const content = document.createElement(&#39;div&#39;);
-            content.className = &#39;tab-content&#39;;
-            content.id = `tab-content-${y}`;
-
-            // Month dropdown
-            const select = document.createElement(&#39;select&#39;);
-            select.className = &#39;month-dropdown&#39;;
-            select.innerHTML = months.map((m, i) =&gt;
-                `&lt;option value=&#34;${m}&#34;&gt;${m}&lt;/option&gt;`
-            ).join(&#39;&#39;);
-            content.appendChild(select);
-
-            // Visits list
-            const ul = document.createElement(&#39;ul&#39;);
-            ul.className = &#39;visits-list&#39;;
-            content.appendChild(ul);
-
-            // Populate visits for the first month
-            function updateVisitsList() {
-                const month = select.value;
-                ul.innerHTML = &#39;&#39;;
-                const visits = (visitsData[y] &amp;&amp; visitsData[y][month]) || [];
-                if (visits.length) {
-                    visits.forEach(v =&gt; {
-                        const li = document.createElement(&#39;li&#39;);
-                        li.textContent = v;
-                        ul.appendChild(li);
-                    });
-                } else {
-                    ul.innerHTML = &#39;&lt;li&gt;No visits recorded.&lt;/li&gt;&#39;;
-                }
-            }
-            select.addEventListener(&#39;change&#39;, updateVisitsList);
-            updateVisitsList();
-
-            tabContents.appendChild(content);
-        }
-
-        // Tab switching logic
-        function activateTab(year) {
-            document.querySelectorAll(&#39;.tab-btn&#39;).forEach(btn =&gt; {
-                btn.classList.toggle(&#39;active&#39;, btn.dataset.year == year);
-            });
-            document.querySelectorAll(&#39;.tab-content&#39;).forEach(tc =&gt; {
-                tc.classList.toggle(&#39;active&#39;, tc.id === `tab-content-${year}`);
-            });
-        }
-
-        // Initial activation
-        const defaultYear = currentYear;
-        activateTab(defaultYear);
-
-        // Tab click event
-        yearTabs.addEventListener(&#39;click&#39;, e =&gt; {
-            if (e.target.classList.contains(&#39;tab-btn&#39;)) {
-                activateTab(e.target.dataset.year);
-            }
-        });
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</description>
-    </item>
-    <item>
       <title>About</title>
       <link>http://localhost:1313/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -442,6 +292,13 @@ Start by opening up a discussion in a Gist using the button provided !&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/personal/languages/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>My Visits Calendar</title>
+      <link>http://localhost:1313/pages/personal/visits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/personal/visits/</guid>
+      <description>A calendar view of my visits over the years.</description>
     </item>
     <item>
       <title>News</title>
