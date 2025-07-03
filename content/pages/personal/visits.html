@@ -78,7 +78,7 @@ const visitsData = {
         February: [],
         March: [],
         April: [],
-        May: ["Trip: Conference in Nepal"],
+        May: ["Trip: Conference @ <b>Nepal</b>"],
         June: [],
         July: [],
         August: [],
@@ -94,7 +94,7 @@ const visitsData = {
         April: [],
         May: [],
         June: [],
-        July: ["Event: Graduation!"],
+        July: ["Event: <b>Graduation</b>!"],
         August: [],
         September: [],
         October: [],
@@ -111,8 +111,8 @@ const visitsData = {
         July: [],
         August: [],
         September: [],
-        October: ["Event: Start of Masters!"],
-        November: ["Trip: Came to Japan"],
+        October: ["Event: Start of <b>Masters</b>!"],
+        November: ["Trip: Came to <b>Japan</b>"],
         December: []
     },
     2022: {
@@ -120,11 +120,11 @@ const visitsData = {
         February: [],
         March: [],
         April: [],
-        May: [],
+        May: ["Holiday: @<b>Japan</b>"],
         June: [],
         July: [],
         August: [],
-        September: [],
+        September: ["Holiday: @<b>India</b>"],
         October: [],
         November: [],
         December: []
@@ -134,33 +134,61 @@ const visitsData = {
         February: [],
         March: [],
         April: [],
-        May: [],
+        May: ["Holiday: @<b>India</b>"],
         June: [],
         July: [],
         August: [],
-        September: [],
-        October: [],
+        September: ["Trip: Conference @<b>Nagoya</b>"],
+        October:  ["Event: Start of <b>PhD</b>!"],
         November: [],
         December: []
     },
     2024: {
-        January: [],
+        January: ["Holiday: @<b>India</b>"],
         February: [],
-        March: [],
+        March: ["Trip: Conference @<b>Louisiana</b>"],
         April: [],
         May: [],
         June: [],
         July: [],
         August: [],
+        September: ["Trip: Conference @<b>Barcelona</b>"],
+        October: [],
+        November: [],
+        December: ["Holiday: @ Asia & <b>India</b>"]
+    },
+    2025: {
+        January: [],
+        February: [],
+        March: ["Trip: Research @<b>Melbourne</b>"],
+        April: [],
+        May: ["Trip: Conference @<b>Shanghai</b>"],
+        June: [],
+        July: ["Trip: Conference @<b>Geneva</b>"],
+        August: ["Trip: Research @<b>Melbourne</b>"],
         September: [],
+        October: ["Trip: Research @<b>Seoul</b>"],
+        November: ["Trip: Research @<b>Seoul</b>"],
+        December: []
+    },
+    2026: {
+        January: [],
+        February: [],
+        March: [],
+        April:  [],
+        May: [],
+        June: [],
+        July: [],
+        August: [],
+        September: ["Event: <br/><b>PhD Completion</b>!"],
         October: [],
         November: [],
         December: []
     }
 };
 
-const currentYear = new Date().getFullYear();
-const startYear = 2016;
+const currentYear = Math.max(...Object.keys(visitsData).map(Number));
+const startYear = Math.min(...Object.keys(visitsData).map(Number));
 const yearButtonsDiv = document.getElementById('year-buttons');
 const calendarContainer = document.getElementById('calendar-container');
 
@@ -210,9 +238,9 @@ function renderCalendar(year) {
                     <span style="display:inline-block; width:100%; text-align:center;">
                     ${month}
                 </strong>
-                <ul style="padding-left:18px; margin:0; margin-right: 10px;">
+                <ul style="padding-left:18px; margin:0; margin-right: 10px; word-break: break-word; white-space: normal;">
                     ${
-                        visits.map(v => `<li style="margin-bottom:4px; color:#4b5c6b;">${v}</li>`).join('')
+                        visits.map(v => `<li style="margin-bottom:4px; color:#4b5c6b; word-break: break-word; white-space: normal;">${v}</li>`).join('')
                     }
                 </ul>
             </div>`;
