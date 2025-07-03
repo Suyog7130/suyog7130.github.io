@@ -55,70 +55,28 @@ hideAuthor: true
 
 <script>
 const visitsData = {
-    2016: {
-        January: ["Visit to New York", "Conference in LA"],
-        February: ["Trip to Chicago"],
-        March: [],
-        April: ["Family visit"],
-        May: [],
-        June: ["Business meeting in Boston"],
-        July: [],
-        August: ["Vacation in Miami"],
-        September: [],
-        October: ["Seminar in Seattle"],
-        November: [],
-        December: ["Holiday in Denver"]
-    },
-    2017: {
-        January: ["Workshop in Austin"],
-        February: [],
-        March: ["Visit to San Francisco"],
-        April: [],
-        May: ["Conference in Dallas"],
-        June: [],
-        July: ["Trip to Portland"],
-        August: [],
-        September: ["Family reunion"],
-        October: [],
-        November: ["Business trip to Atlanta"],
-        December: []
-    },
-    2018: {
-        January: [],
-        February: ["Visit to Toronto"],
-        March: [],
-        April: ["Seminar in Houston"],
-        May: [],
-        June: ["Vacation in Hawaii"],
-        July: [],
-        August: [],
-        September: ["Conference in DC"],
-        October: [],
-        November: [],
-        December: ["Holiday in Orlando"]
-    },
     2019: {
-        January: ["Trip to Las Vegas"],
+        January: [],
         February: [],
         March: [],
-        April: ["Visit to San Diego"],
-        May: [],
+        April: [],
+        May: ["Trip: Conference in Nepal"],
         June: [],
-        July: ["Workshop in Nashville"],
+        July: [],
         August: [],
         September: [],
-        October: ["Conference in Phoenix"],
+        October: [],
         November: [],
         December: []
     },
     2020: {
-        January: ["Visit to Salt Lake City"],
+        January: [],
         February: [],
         March: [],
         April: [],
         May: [],
         June: [],
-        July: [],
+        July: ["Event: Graduation!"],
         August: [],
         September: [],
         October: [],
@@ -135,8 +93,8 @@ const visitsData = {
         July: [],
         August: [],
         September: [],
-        October: [],
-        November: [],
+        October: ["Event: Start of Masters!"],
+        November: ["Trip: Came to Japan"],
         December: []
     },
     2022: {
@@ -158,7 +116,7 @@ const visitsData = {
         February: [],
         March: [],
         April: [],
-        May: ["Nothing"],
+        May: [],
         June: [],
         July: [],
         August: [],
@@ -247,4 +205,66 @@ function renderCalendar(year) {
 // Initial render
 renderYearButtons();
 renderCalendar(currentYear);
+</script>
+
+<!-- Table View of Visits -->
+<div style="margin-top: 40px;">
+    <h2 style="color:#4b5c6b;">Visits Table</h2>
+    <table id="visits-table" style="border-collapse:collapse; width:100%; background:#f8f9fa;">
+        <thead>
+            <tr>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Year</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Jan</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Feb</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Mar</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Apr</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">May</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Jun</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Jul</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Aug</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Sep</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Oct</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Nov</th>
+                <th style="border:1px solid #bbb; padding:8px; background:#e3e7ea;">Dec</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<script>
+(function() {
+        const months = [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+        ];
+        const tbody = document.querySelector('#visits-table tbody');
+        for (let year = currentYear; year >= startYear; year--) {
+                const tr = document.createElement('tr');
+                // Year cell
+                const tdYear = document.createElement('td');
+                tdYear.textContent = year;
+                tdYear.style.border = '1px solid #bbb';
+                tdYear.style.padding = '8px';
+                tdYear.style.background = '#f0f3f6';
+                tdYear.style.fontWeight = 'bold';
+                tr.appendChild(tdYear);
+                // Month cells
+                for (let i = 0; i < 12; i++) {
+                        const td = document.createElement('td');
+                        td.style.border = '1px solid #bbb';
+                        td.style.padding = '8px';
+                        td.style.minWidth = '80px';
+                        let visits = (visitsData[year] && visitsData[year][months[i]]) ? visitsData[year][months[i]] : [];
+                        if (visits.length) {
+                                td.innerHTML = visits.map(v => `<span style="color:#4b5c6b;">${v}</span>`).join('<br>');
+                                td.style.background = '#eaf3fa';
+                        } else {
+                                td.innerHTML = '';
+                        }
+                        tr.appendChild(td);
+                }
+                tbody.appendChild(tr);
+        }
+})();
 </script>
