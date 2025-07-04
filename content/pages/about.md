@@ -42,11 +42,16 @@ redirect_from:
 	  A Bit More Detail
 	</p>
 	</summary>
+	
+<p style="text-align:justified">
 Heya, this is Suyog. Currently, I am a second year PhD candidate at the Department of Physics, the University of Tokyo (UTokyo). I am a member of the Research Center for Early Universe (RESCEU) and primarily focus on detection and data analysis methods for Gravitional-Waves. At UTokyo, I am supported by the MEXT Scholarship and the ASPIRE-GW program. 
-
+</p>
+<p style="text-align:justified">
 My research and other interests are broad and indiscriminate. And so are my hobbies and experiences, ranging from dabbling in cutting-edge Machine Learning research to masquerading as a wannabe writer. You can find more about these on this website.
-
-Prior to RESCEU, I was a master's student at the Intitute of Cosmic Ray Research in Kashiwanoha. My undergraduate degree is in Mechanical Engineering with specialization in Design and Manufacturing, from IIITDM Kancheerpuram, Chennai. I was born and raised in a quaint little town called Mandla in the heart of India, amidst a pleasant life full of stories, warm summers, trees, and books.
+</p>
+<p style="text-align:justified">
+Prior to RESCEU, I was a master's student at the Institute of Cosmic Ray Research, UTokyo. My undergraduate degree is in Mechanical Engineering with specialization in Design and Manufacturing, from IIITDM Kancheerpuram, Chennai. I was born and raised in a quaint little town called Mandla in the heart of India, amidst a pleasant life full of stories, warm summers, trees, and books.
+</p>
 </br></br>
 </details>
 </div>
