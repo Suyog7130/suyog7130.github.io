@@ -19,7 +19,7 @@ redirect_from:
 
 <h3> Here's some fun facts about me: </h3>
 
-&nbsp;&nbsp;👋&nbsp;&nbsp; Heya, this is Suyog. I am a Physics PhD student @ UTokyo.
+&nbsp;&nbsp;👋&nbsp;&nbsp; My name is Suyog and I am a scientist!
 	
 &nbsp;&nbsp;👀&nbsp;&nbsp; I love Astrophysics, Books, Places and People.
 	
@@ -42,7 +42,11 @@ redirect_from:
 	  A Bit More Detail
 	</p>
 	</summary>
-I am supported by the MEXT Scholarship and the ASPIRE-GW program.
+Heya, this is Suyog. Currently, I am a second year PhD candidate at the Department of Physics, the University of Tokyo (UTokyo). I am a member of the Research Center for Early Universe (RESCEU) and primarily focus on detection and data analysis methods for Gravitional-Waves. At UTokyo, I am supported by the MEXT Scholarship and the ASPIRE-GW program. 
+
+My research and other interests are broad and indiscriminate. And so are my hobbies and experiences, ranging from dabbling in cutting-edge Machine Learning research to masquerading as a wannabe writer. You can find more about these on this website.
+
+Prior to RESCEU, I was a master's student at the Intitute of Cosmic Ray Research in Kashiwanoha. My undergraduate degree is in Mechanical Engineering with specialization in Design and Manufacturing, from IIITDM Kancheerpuram, Chennai. I was born and raised in a quaint little town called Mandla in the heart of India, amidst a pleasant life full of stories, warm summers, trees, and books.
 </br></br>
 </details>
 </div>
