@@ -33,6 +33,13 @@ Sign up for free!
 <!--{{% button href="https://gohugo.io/" %}}Get Hugo{{% /button %}}
 {{% button href="https://gohugo.io/" style="warning" icon="dog" %}}Get Hugo{{% /button %}}-->
 
+<span style="color:green; font-weight:bold">[Poster]</span> 
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年07月15-25日
+<br/>
+Presenting a Poster at the ICRC 2025 in Geneva, Swizz!
+
 <span style="color:green; font-weight:bold">[Talk]</span>
 &nbsp;
 <i class="fa fa-paper-plane"></i>
