@@ -23,6 +23,7 @@ redirect_from: /personal/useful-links/
 * [UTokyo-Russia Exchange Program STEPS](https://www.s.u-tokyo.ac.jp/ja/STEPS/)
 * [UTokyo CompSci Alliance Overseas Support](https://www.compsci-alliance.jp/overseas-support/) (maybe only for Japanese)
 * JST Research Grant Programs: [Main Page](https://www.jst.go.jp/kisoken/programs/index.html), [2025 Call for Proposals](https://www.jst.go.jp/kisoken/boshuu/teian/en/top/gaiyo.html)
+* [UTokyo-FUTI GPA Calculator](https://applications.friendsofutokyo.org/GPACalculator/GPACalculator3.php)
 
 ### Research Related
 
