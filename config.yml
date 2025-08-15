@@ -231,7 +231,7 @@ params:
       url: "https://www.google.com/maps/place/Tokyo/"
     - name: email
       title: Send me an Email
-      url: "mailto:suyog7130@gmail.com"
+      url: "suyog7130'at'gmail.com"
     - name: github
       title: View Source on Github
       url: "https://github.com/Suyog7130"
