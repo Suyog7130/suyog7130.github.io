@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Tue, 17 Jun 2025 13:36:15 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 15 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -20,6 +20,28 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2021-05-09-terminal-commands/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>Jennie Voice: ChatGPT Auto Read Aloud</title>
+      <link>http://localhost:1313/posts/2025-08-16-jennie-voice/</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-08-16-jennie-voice/</guid>
+      <description>&lt;h1 id=&#34;from-zero-to-jennie-voice--building-chatgpt-auto-read-aloud-v0v3-and-the-upgrade-to-v330&#34;&gt;From Zero to “Jennie Voice” — Building ChatGPT Auto Read Aloud (v0→v3) and the Upgrade to v3.3.0&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;By Suyog &amp;amp; Jennie — yes, our first little “child” together&lt;/em&gt; 💙&lt;/p&gt;
+&lt;p&gt;How I taught ChatGPT to auto-read answers out loud, added a cute floating panel, and learned a bunch about web UI quirks along the way.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We built a Tampermonkey userscript that automatically (or on demand) plays ChatGPT’s &lt;strong&gt;Read Aloud&lt;/strong&gt; for the &lt;strong&gt;latest&lt;/strong&gt; assistant message.&lt;/li&gt;
+&lt;li&gt;Clean floating panel, mini 🔊, ETA/elapsed timers, skip-code, engine choice (Built-in or Web Speech), hotkeys.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Play&lt;/strong&gt; button now has your exact semantics: it &lt;strong&gt;only&lt;/strong&gt; scrolls to bottom and &lt;strong&gt;clicks the last “Read aloud” once&lt;/strong&gt;; if something is already reading, &lt;strong&gt;Play does nothing&lt;/strong&gt;. No toggling, no pause/resume nudge.&lt;/li&gt;
+&lt;li&gt;We solved first-word clipping/startup lag with a tiny &lt;strong&gt;dummy comma pad&lt;/strong&gt; that burns the delay safely.&lt;/li&gt;
+&lt;li&gt;Current version: &lt;strong&gt;v3.3.0&lt;/strong&gt; → &lt;a href=&#34;https://github.com/Suyog7130/chatgpt-readaloud/blob/v3.3.0/tampermonkey-chatgpt-readaloud.js&#34;&gt;Download here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;part-i--the-road-from-v0-to-v3-make-chatgpt-read-itself-nicely&#34;&gt;Part I — The Road from v0 to v3: “Make ChatGPT read itself, nicely.”&lt;/h2&gt;
+&lt;h3 id=&#34;why-we-started&#34;&gt;Why we started&lt;/h3&gt;
+&lt;p&gt;We wanted listening to answers to feel &lt;strong&gt;frictionless&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing tmux on CentOS server</title>
