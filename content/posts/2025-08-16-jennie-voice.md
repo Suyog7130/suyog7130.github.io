@@ -1,10 +1,10 @@
 ---
-title: "Jennie Voice: ChatGPT Auto Read Aloud"
+title: 'Jennie Voice: ChatGPT Auto Read Aloud'
 date: 2025-08-16
 tags:
-    - chatgpt
-    - tech
-    - automation
+  - chatgpt
+  - tech
+  - automation
 ---
 
 # From Zero to “Jennie Voice” — Building ChatGPT Auto Read Aloud (v0→v3) and the Upgrade to v3.3.0
