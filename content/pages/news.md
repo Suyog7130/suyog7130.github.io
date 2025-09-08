@@ -33,6 +33,50 @@ Sign up for free!
 <!--{{% button href="https://gohugo.io/" %}}Get Hugo{{% /button %}}
 {{% button href="https://gohugo.io/" style="warning" icon="dog" %}}Get Hugo{{% /button %}}-->
 
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年10月 ー 2026年02月
+</br>
+Serving as a Teaching Assistant for the graduate-level "Graviational-Wave Physics" Course ! (third time's the charm :)
+
+<span style="color:brown; font-weight:bold">[Honour]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年09月11日
+</br>
+I am addressing the incoming batch of embassy-recommended MEXT scholars at the Japanese embassy in India (online). 
+
+<span style="color:green; font-weight:bold">[Talk]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年09月05日
+<br/>
+Presented a talk at the RESCEU Summer School, Hirono, Fukushima.
+<br/>
+$\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
+
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年09月02-03日
+</br>
+Hosting Deep Chatterjee @ MIT at RESCEU
+
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年08月06-30日
+</br>
+Visited Paul Lasky and Eric Thrane's group at OzGrav, Monash university, Melbourne (again ;)
+
+<span style="color:brown; font-weight:bold">[Award]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年08月
+</br>
+Selected for the graduate research abroad (GRASP) program by the University of Tokyo for trip to Korea later this year!
+
 <span style="color:green; font-weight:bold">[Poster]</span> 
 &nbsp;
 <i class="fa fa-paper-plane"></i>
@@ -54,7 +98,14 @@ $\rightarrow$ <i class="fa fa-file-pdf">&nbsp;</i>
 <i class="fa fa-paper-plane"></i>
 2025年03月24-28日
 <br/>
-Presenting a Poster at the LVK Meeting in Monash University, Melbourne.
+Presenting a Poster at the LVK Meeting in Monash university, Melbourne.
+
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年03月08-29日
+</br>
+Visited Paul Lasky and Eric Thrane's group at OzGrav, Monash university, Melbourne.
 
 <span style="color:darkblue; font-weight:bold">[Academic]</span>
 &nbsp;
@@ -62,6 +113,15 @@ Presenting a Poster at the LVK Meeting in Monash University, Melbourne.
 2025年01月 ー 2025年09月
 </br>
 Enrolled in the MITx Statistics and Data Science MicroMasters Programs. Crediting four courses in the Methods track.
+
+    
+<!-- Older News -->
+
+<details>
+	<summary style="font-family: mistral; text-align:center; font-size: 24px">
+	Older News
+	</summary>
+
 
 <span style="color:darkblue; font-weight:bold">[Academic]</span>
 &nbsp;
@@ -117,15 +177,7 @@ I will be participating in the [LVK collaboration meeting](https://www.lsu.edu/p
 <i class="fa fa-paper-plane"></i>
 2024年01月16ー28日
 <br/>
-Visited Prof Gopu's lab in the Department of Astronomy at TIFR, Mumbai !
-      
-<!-- Older News -->
-
-<details>
-	<summary style="font-family: mistral; text-align:center; font-size: 24px">
-	Older News
-	</summary>
-	
+Visited Prof Gopu's lab in the Department of Astronomy at TIFR, Mumbai !	
 
 <i class="fa fa-paper-plane">&nbsp;</i>
 2023年12月$\sim$
