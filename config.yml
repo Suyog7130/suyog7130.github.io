@@ -166,8 +166,8 @@ params:
       #   type: ""
       #   content: "Running ML4Astro Seminar Series @ UTokyo"
       - content: "Open to Research Positions starting Fall 2026!"
-      - content: "Visiting OzGrav, Monash this month @ Melbourne!"
-      - content: "May have project ideas for students! (ping me up :)"
+      - content: "Addressing the incoming batch of MEXT scholars in India on 09/11"
+      # - content: "May have project ideas for students! (ping me up :)"
       # - type: "Talk"
       #   content: "I have started my PhD at the University of Tokyo."
     buttons:
@@ -232,7 +232,7 @@ params:
       url: "https://www.google.com/maps/place/Tokyo/"
     - name: email
       title: Send me an Email
-      url: "suyog7130@gmail.com"
+      url: "email/"
     - name: github
       title: View Source on Github
       url: "https://github.com/Suyog7130"
