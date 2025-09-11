@@ -44,7 +44,7 @@ redirect_from:
 	</summary>
 	
 <p style="text-align:justified">
-Heya, this is Suyog. Currently, I am a second year PhD candidate at the Department of Physics, the University of Tokyo (UTokyo). I am a member of the Research Center for Early Universe (RESCEU) and primarily focus on detection and data analysis methods for Gravitional-Waves. At UTokyo, I am supported by the MEXT Scholarship and the ASPIRE-GW program. 
+Heya, this is Suyog. Currently, I am a second year PhD candidate at the Department of Physics, the University of Tokyo (UTokyo). I am a member of the Research Center for Early Universe (RESCEU). My primary research focus is on detection and data analysis methods for Gravitational waves, with some applications of machine learning tuned in. At UTokyo, I am supported by the embassy-recommended MEXT Scholarship and the ASPIRE-GW program, together with a few more short-term research grants. 
 </p>
 <p style="text-align:justified">
 My research and other interests are broad and indiscriminate. And so are my hobbies and experiences, ranging from dabbling in cutting-edge Machine Learning research to masquerading as a wannabe writer. You can find more about these on this website.
