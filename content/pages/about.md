@@ -44,13 +44,13 @@ redirect_from:
 	</summary>
 	
 <p style="text-align:justified">
-Heya, this is Suyog. Currently, I am a second year PhD candidate at the Department of Physics, the University of Tokyo (UTokyo). I am a member of the Research Center for Early Universe (RESCEU). My primary research focus is on detection and data analysis methods for Gravitational waves, with some applications of machine learning tuned in. At UTokyo, I am supported by the embassy-recommended MEXT Scholarship and the ASPIRE-GW program, together with a few more short-term research grants. 
+Heya, this is Suyog. Currently, I am a Physics PhD student working with Prof <a href="https://www.resceu.s.u-tokyo.ac.jp/~kipp/">Kipp Cannon</a> at the <a href="http://www.resceu.s.u-tokyo.ac.jp/">Research Center for Early Universe</a>, the <a href="http://www.u-tokyo.ac.jp/en/index.html">University of Tokyo</a>. My primary research focus is on detection and data analysis methods for Gravitational waves, with some applications of machine learning tuned in. At UTokyo, I am supported by the embassy-recommended <a href="https://www.mext.go.jp/a_menu/koutou/ryugaku/06032818.htm">MEXT Scholarship</a> and the <a href="https://aspire-gw.com/">ASPIRE-GW</a> program, together with a few more short-term research grants. 
 </p>
 <p style="text-align:justified">
 My research and other interests are broad and indiscriminate. And so are my hobbies and experiences, ranging from dabbling in cutting-edge Machine Learning research to masquerading as a wannabe writer. You can find more about these on this website.
 </p>
 <p style="text-align:justified">
-Prior to RESCEU, I was a master's student at the Institute of Cosmic Ray Research, UTokyo. My undergraduate degree is in Mechanical Engineering with specialization in Design and Manufacturing, from IIITDM Kancheerpuram, Chennai. I was born and raised in a quaint little town called Mandla in the heart of India, amidst a pleasant life full of stories, warm summers, trees, and books.
+Prior to RESCEU, I was a master's student at the <a href="https://www.icrr.u-tokyo.ac.jp/">Institute of Cosmic Ray Research</a>, UTokyo. My undergraduate degree is in Mechanical Engineering with specialization in Design and Manufacturing, from <a href="https://iiitdm.ac.in/">IIITDM Kancheerpuram</a>, Chennai. I was born and raised in a quaint little town called <a href="https://mandla.nic.in/en/">Mandla</a> in the heart of India, amidst a pleasant life full of stories, warm summers, trees, and books.
 </p>
 </br></br>
 </details>

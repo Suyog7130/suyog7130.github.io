@@ -45,7 +45,7 @@ Serving as a Teaching Assistant for the graduate-level "Graviational-Wave Physic
 <i class="fa fa-paper-plane"></i>
 2025年09月11日
 </br>
-I am addressing the incoming batch of embassy-recommended MEXT scholars at the Japanese embassy in India (online). 
+I am addressing the incoming batch of embassy-recommended MEXT scholars at the Embassy of Japan in India (online). 
 
 <span style="color:green; font-weight:bold">[Talk]</span>
 &nbsp;
