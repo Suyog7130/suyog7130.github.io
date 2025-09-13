@@ -951,6 +951,37 @@ However, in my case, the view is fixed at the month for which I have put the htm
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/posts/hosting_cloudflare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hosting_cloudflare/</guid>
+      <description>&lt;h1 id=&#34;cloudflare-pages--hosting-guide-for-jennies-dating-scorecard&#34;&gt;Cloudflare Pages — Hosting Guide for Jennie’s Dating Scorecard&lt;/h1&gt;
+&lt;p&gt;This app is a static front‑end (HTML/CSS/JS) that calls a Google Apps Script backend. Cloudflare Pages is perfect to host the static files over HTTPS (needed for PWA).&lt;/p&gt;
+&lt;h2 id=&#34;what-you-need&#34;&gt;What you need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A Cloudflare account (free is fine).&lt;/li&gt;
+&lt;li&gt;Your app folder with: &lt;code&gt;index.html&lt;/code&gt;, &lt;code&gt;app.js&lt;/code&gt;, &lt;code&gt;manifest.webmanifest&lt;/code&gt;, &lt;code&gt;sw.js&lt;/code&gt;, &lt;code&gt;icons/&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Your &lt;strong&gt;Apps Script Web App URL&lt;/strong&gt; pasted into &lt;code&gt;app.js&lt;/code&gt; as &lt;code&gt;GAS_ENDPOINT&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;quick-deploy-upload-assets&#34;&gt;Quick Deploy (Upload Assets)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Log in to Cloudflare → &lt;strong&gt;Pages&lt;/strong&gt; → &lt;strong&gt;Create a project&lt;/strong&gt; → &lt;strong&gt;Upload assets&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Drag‑drop your folder (the one that contains &lt;code&gt;index.html&lt;/code&gt; at the root).&lt;/li&gt;
+&lt;li&gt;Project name: something like &lt;strong&gt;dating-scorecard&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Build settings:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Framework preset:&lt;/strong&gt; None&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build command:&lt;/strong&gt; None&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Output directory:&lt;/strong&gt; &lt;code&gt;/&lt;/code&gt; (root where &lt;code&gt;index.html&lt;/code&gt; lives)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save and Deploy&lt;/strong&gt;. In ~30s you’ll get a &lt;code&gt;*.pages.dev&lt;/code&gt; URL.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hash routes like &lt;code&gt;#scorecard&lt;/code&gt; require no special SPA rewrites, so you’re good.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/posts/icons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/icons/</guid>
@@ -1529,20 +1560,12 @@ Sign up for free!
 --&gt;
 &lt;!--&lt;span class=&#34;btn cstyle interactive transparent&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
 &lt;span class=&#34;btn cstyle interactive warning&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;i class=&#34;fa-fw fas fa-dog&#34;&gt;&lt;/i&gt; &lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;--&gt;
-&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Poster]&lt;/span&gt;
+&lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt;
  
 &lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
-2025年07月15-25日
-&lt;br/&gt;
-Presenting a Poster at the ICRC 2025 in Geneva, Swizz!&lt;/p&gt;
-&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Talk]&lt;/span&gt;
- 
-&lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
-2024年08月02日
-&lt;br/&gt;
-Spoke at the KAGRA International Workshop 12 in Shanghai, China!
-&lt;br/&gt;
-$\rightarrow$ &lt;i class=&#34;fa fa-file-pdf&#34;&gt; &lt;/i&gt;&lt;/p&gt;</description>
+2025年10月 ー 2026年02月
+&lt;/br&gt;
+Serving as a Teaching Assistant for the graduate-level &amp;ldquo;Graviational-Wave Physics&amp;rdquo; Course ! (third time&amp;rsquo;s the charm :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal</title>

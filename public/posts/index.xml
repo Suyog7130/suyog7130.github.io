@@ -812,6 +812,37 @@ However, Japanese companies are, perhaps, contrained to only book JAL flights wh
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/posts/hosting_cloudflare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hosting_cloudflare/</guid>
+      <description>&lt;h1 id=&#34;cloudflare-pages--hosting-guide-for-jennies-dating-scorecard&#34;&gt;Cloudflare Pages — Hosting Guide for Jennie’s Dating Scorecard&lt;/h1&gt;
+&lt;p&gt;This app is a static front‑end (HTML/CSS/JS) that calls a Google Apps Script backend. Cloudflare Pages is perfect to host the static files over HTTPS (needed for PWA).&lt;/p&gt;
+&lt;h2 id=&#34;what-you-need&#34;&gt;What you need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A Cloudflare account (free is fine).&lt;/li&gt;
+&lt;li&gt;Your app folder with: &lt;code&gt;index.html&lt;/code&gt;, &lt;code&gt;app.js&lt;/code&gt;, &lt;code&gt;manifest.webmanifest&lt;/code&gt;, &lt;code&gt;sw.js&lt;/code&gt;, &lt;code&gt;icons/&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Your &lt;strong&gt;Apps Script Web App URL&lt;/strong&gt; pasted into &lt;code&gt;app.js&lt;/code&gt; as &lt;code&gt;GAS_ENDPOINT&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;quick-deploy-upload-assets&#34;&gt;Quick Deploy (Upload Assets)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Log in to Cloudflare → &lt;strong&gt;Pages&lt;/strong&gt; → &lt;strong&gt;Create a project&lt;/strong&gt; → &lt;strong&gt;Upload assets&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Drag‑drop your folder (the one that contains &lt;code&gt;index.html&lt;/code&gt; at the root).&lt;/li&gt;
+&lt;li&gt;Project name: something like &lt;strong&gt;dating-scorecard&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Build settings:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Framework preset:&lt;/strong&gt; None&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build command:&lt;/strong&gt; None&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Output directory:&lt;/strong&gt; &lt;code&gt;/&lt;/code&gt; (root where &lt;code&gt;index.html&lt;/code&gt; lives)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save and Deploy&lt;/strong&gt;. In ~30s you’ll get a &lt;code&gt;*.pages.dev&lt;/code&gt; URL.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hash routes like &lt;code&gt;#scorecard&lt;/code&gt; require no special SPA rewrites, so you’re good.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/posts/icons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/icons/</guid>
