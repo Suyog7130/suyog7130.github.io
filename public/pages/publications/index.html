@@ -1080,6 +1080,106 @@ body:not(.dark) .pubs-root dialog .pub-btn-primary{
   border-color:#1f6feb;
   color:#fff;
 }
+
+/* When the SITE THEME is actually dark, make the ACTIVE-FILTER chips readable */
+html.dark .pubs-root .active-filters .chip,
+:root[data-theme="dark"] .pubs-root .active-filters .chip,
+body.dark .pubs-root .active-filters .chip{
+  background: transparent;
+  border-color: #30363d;
+  color: inherit;
+}
+
+/* When the SITE THEME is light, keep ACTIVE-FILTER chips light (even if OS prefers dark) */
+html:not(.dark) .pubs-root .active-filters .chip,
+:root:not([data-theme="dark"]) .pubs-root .active-filters .chip,
+body:not(.dark) .pubs-root .active-filters .chip{
+  background:#fff;
+  border-color:#d0d7de;
+  color: inherit;
+}
+
+/* Dark site theme: make Filter/Sort dialogs dark (background + controls) */
+html.dark .pubs-root dialog,
+:root[data-theme="dark"] .pubs-root dialog,
+body.dark .pubs-root dialog{
+  background: inherit;
+  color: inherit;
+}
+
+/* Chips inside dialogs */
+html.dark .pubs-root dialog .chip,
+:root[data-theme="dark"] .pubs-root dialog .chip,
+body.dark .pubs-root dialog .chip,
+html.dark .pubs-root dialog .chip-toggle,
+:root[data-theme="dark"] .pubs-root dialog .chip-toggle,
+body.dark .pubs-root dialog .chip-toggle{
+  background:#0d1117;
+  border-color:#30363d;
+  color:#c9d1d9;
+}
+
+/* Buttons inside dialogs */
+html.dark .pubs-root dialog .pub-btn,
+:root[data-theme="dark"] .pubs-root dialog .pub-btn,
+body.dark .pubs-root dialog .pub-btn{
+  background:#0d1117;
+  border-color:#30363d;
+  color:#ffffff;
+}
+html.dark .pubs-root dialog .pub-btn-primary,
+:root[data-theme="dark"] .pubs-root dialog .pub-btn-primary,
+body.dark .pubs-root dialog .pub-btn-primary{
+  background:#1f6feb;
+  border-color:#1f6feb;
+  color:#ffffff;
+}
+
+/* ===== FINAL THEME-SCOPED OVERRIDES (paste at end) ===== */
+/* Apply styles by SITE THEME only, regardless of OS preference */
+
+/* --- LIGHT SITE THEME ---------------------------------------------------- */
+html:not(.dark) .pubs-root dialog,
+:root:not([data-theme="dark"]) .pubs-root dialog,
+body:not(.dark) .pubs-root dialog{
+  background:#fff !important;
+  color:inherit !important;
+}
+
+html:not(.dark) .pubs-root dialog .chip-toggle,
+:root:not([data-theme="dark"]) .pubs-root dialog .chip-toggle,
+body:not(.dark) .pubs-root dialog .chip-toggle,
+html:not(.dark) .pubs-root dialog .chip,
+:root:not([data-theme="dark"]) .pubs-root dialog .chip,
+body:not(.dark) .pubs-root dialog .chip{
+  background:#fff !important;
+  border-color:#d0d7de !important;
+  color:inherit !important;
+}
+
+html:not(.dark) .pubs-root dialog .pub-btn,
+:root:not([data-theme="dark"]) .pubs-root dialog .pub-btn,
+body:not(.dark) .pubs-root dialog .pub-btn{
+  background:#fff !important;
+  border-color:var(--mm-btn-border, #d0d7de) !important;
+  color:#24292f !important;
+}
+html:not(.dark) .pubs-root dialog .pub-btn-primary,
+:root:not([data-theme="dark"]) .pubs-root dialog .pub-btn-primary,
+body:not(.dark) .pubs-root dialog .pub-btn-primary{
+  background:#1f6feb !important;
+  border-color:#1f6feb !important;
+  color:#fff !important;
+}
+
+/* Active filter chips below the controls — readable on light */
+html:not(.dark) .pubs-root .active-filters .chip,
+:root:not([data-theme="dark"]) .pubs-root .active-filters .chip,
+body:not(.dark) .pubs-root .active-filters .chip{
+  background:#fff !important;
+  border-color:#d0d7de !important;
+  color:inherit !important;
+}
 </style>
 
 
