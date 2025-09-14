@@ -366,6 +366,154 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
       <link>http://localhost:1313/pages/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/publications/</guid>
+      <description>&lt;!-- =========================
+     INTERACTIVE QUICK VIEW
+     ========================= --&gt;
+&lt;h2 id=&#34;publications--quick-view-interactive&#34;&gt;Publications — Quick View (interactive)&lt;/h2&gt;
+&lt;div class=&#34;pub-controls&#34; role=&#34;region&#34; aria-label=&#34;Publications controls&#34;&gt;
+  &lt;button id=&#34;btnFilter&#34; class=&#34;pub-btn&#34;&gt;&lt;i class=&#34;fa fa-filter&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Filter&lt;/button&gt;
+  &lt;button id=&#34;btnSort&#34; class=&#34;pub-btn&#34;&gt;&lt;i class=&#34;fa fa-sort&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Sort&lt;/button&gt;
+  &lt;span id=&#34;countLabel&#34; class=&#34;pub-count&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div id=&#34;activeFilters&#34; class=&#34;active-filters&#34; aria-live=&#34;polite&#34;&gt;&lt;/div&gt;
+&lt;!-- Reverse-numbered list renders here --&gt;
+&lt;ol id=&#34;pubList&#34; class=&#34;pub-list&#34; reversed&gt;&lt;/ol&gt;
+&lt;!-- Filter dialog --&gt;
+&lt;dialog id=&#34;filterDialog&#34; aria-label=&#34;Filter publications&#34;&gt;
+  &lt;form method=&#34;dialog&#34; class=&#34;dialog-form&#34;&gt;
+    &lt;h3&gt;Filter&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;fieldset class=&amp;quot;filter-group&amp;quot;&amp;gt;
+  &amp;lt;legend&amp;gt;Type&amp;lt;/legend&amp;gt;
+  &amp;lt;div id=&amp;quot;filterTypes&amp;quot; class=&amp;quot;filter-chips&amp;quot;&amp;gt;&amp;lt;!-- populated by JS --&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/fieldset&amp;gt;
+
+&amp;lt;fieldset class=&amp;quot;filter-group&amp;quot;&amp;gt;
+  &amp;lt;legend&amp;gt;Subset / Topic&amp;lt;/legend&amp;gt;
+  &amp;lt;div id=&amp;quot;filterSubsets&amp;quot; class=&amp;quot;filter-chips&amp;quot;&amp;gt;&amp;lt;!-- populated by JS --&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/fieldset&amp;gt;
+
+&amp;lt;div class=&amp;quot;dialog-actions&amp;quot;&amp;gt;
+  &amp;lt;button value=&amp;quot;cancel&amp;quot; class=&amp;quot;pub-btn pub-btn-secondary&amp;quot;&amp;gt;Close&amp;lt;/button&amp;gt;
+  &amp;lt;button id=&amp;quot;btnResetFilters&amp;quot; type=&amp;quot;button&amp;quot; class=&amp;quot;pub-btn pub-btn-secondary&amp;quot;&amp;gt;Reset&amp;lt;/button&amp;gt;
+  &amp;lt;button id=&amp;quot;btnApplyFilters&amp;quot; type=&amp;quot;submit&amp;quot; class=&amp;quot;pub-btn pub-btn-primary&amp;quot;&amp;gt;Apply&amp;lt;/button&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/form&gt;
+&lt;/dialog&gt;
+&lt;!-- Sort dialog --&gt;
+&lt;dialog id=&#34;sortDialog&#34; aria-label=&#34;Sort publications&#34;&gt;
+  &lt;form method=&#34;dialog&#34; class=&#34;dialog-form&#34;&gt;
+    &lt;h3&gt;Sort&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;fieldset class=&amp;quot;filter-group&amp;quot;&amp;gt;
+  &amp;lt;legend&amp;gt;Order&amp;lt;/legend&amp;gt;
+  &amp;lt;label class=&amp;quot;radio&amp;quot;&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;sortMode&amp;quot; value=&amp;quot;year-desc&amp;quot; checked&amp;gt;
+    Year — newest → oldest
+  &amp;lt;/label&amp;gt;
+  &amp;lt;label class=&amp;quot;radio&amp;quot;&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;sortMode&amp;quot; value=&amp;quot;year-asc&amp;quot;&amp;gt;
+    Year — oldest → newest
+  &amp;lt;/label&amp;gt;
+  &amp;lt;label class=&amp;quot;radio&amp;quot;&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;sortMode&amp;quot; value=&amp;quot;title-asc&amp;quot;&amp;gt;
+    Title — A → Z
+  &amp;lt;/label&amp;gt;
+  &amp;lt;label class=&amp;quot;radio&amp;quot;&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;sortMode&amp;quot; value=&amp;quot;title-desc&amp;quot;&amp;gt;
+    Title — Z → A
+  &amp;lt;/label&amp;gt;
+  &amp;lt;label class=&amp;quot;radio&amp;quot;&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;sortMode&amp;quot; value=&amp;quot;first-asc&amp;quot;&amp;gt;
+    First author — A → Z
+  &amp;lt;/label&amp;gt;
+  &amp;lt;label class=&amp;quot;radio&amp;quot;&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;sortMode&amp;quot; value=&amp;quot;first-desc&amp;quot;&amp;gt;
+    First author — Z → A
+  &amp;lt;/label&amp;gt;
+&amp;lt;/fieldset&amp;gt;
+
+&amp;lt;div class=&amp;quot;dialog-actions&amp;quot;&amp;gt;
+  &amp;lt;button value=&amp;quot;cancel&amp;quot; class=&amp;quot;pub-btn pub-btn-secondary&amp;quot;&amp;gt;Close&amp;lt;/button&amp;gt;
+  &amp;lt;button id=&amp;quot;btnApplySort&amp;quot; type=&amp;quot;submit&amp;quot; class=&amp;quot;pub-btn pub-btn-primary&amp;quot;&amp;gt;Apply&amp;lt;/button&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/form&gt;
+&lt;/dialog&gt;
+&lt;!-- Hover preview tooltip --&gt;
+&lt;div id=&#34;previewTip&#34; class=&#34;preview-tip&#34; role=&#34;tooltip&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
+&lt;!-- =========================
+     STYLES (scoped, minimal)
+     ========================= --&gt;
+&lt;style&gt;
+  .pub-controls{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin:0 0 1rem 0}
+  .pub-btn{border:1px solid var(--mm-btn-border,#d0d7de);padding:.4rem .7rem;border-radius:.5rem;background:#fff;cursor:pointer;font:inherit}
+  .pub-btn:hover{background:#f6f8fa}
+  .pub-btn-primary{background:#1f6feb;color:#fff;border-color:#1f6feb}
+  .pub-btn-primary:hover{filter:brightness(0.95)}
+  .pub-btn-secondary{background:#fff;color:#24292f}
+  .pub-count{margin-left:auto;font-size:.95rem;color:#555}
+  .active-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem 0}
+  .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:999px;padding:.2rem .55rem;font-size:.85rem;background:#fff}
+  .chip button{all:unset;cursor:pointer;display:inline-flex}
+  .chip .fa{font-size:.8em;color:#555}
+
+  .pub-list{counter-reset: none; padding-left: 1.2rem}
+  .pub-item{margin:0 0 .9rem 0;padding:0 0 .9rem 0;border-bottom:1px dashed #e5e7eb}
+  .pub-title{font-weight:600;line-height:1.35;margin:0}
+  .pub-title a{text-decoration:none}
+  .pub-title a:hover{text-decoration:underline}
+  .pub-meta{color:#444;margin:.15rem 0 .45rem 0;font-size:.95rem}
+  .subsets{display:flex;flex-wrap:wrap;gap:.35rem}
+  .subset{font-size:.78rem;border:1px solid #e5e7eb;border-radius:.4rem;padding:.05rem .4rem;background:#fafbfc}
+  .actions{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.35rem}
+  .btn-chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:.5rem;padding:.25rem .45rem;font-size:.85rem;background:#fff;text-decoration:none}
+  .btn-chip:hover{background:#f6f8fa}
+  .btn-chip .fa, .btn-chip .ai{font-size:.9em}
+
+  dialog{border:none;border-radius:12px;padding:1rem 1rem 1.2rem 1rem;max-width:680px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+  .dialog-form h3{margin:.3rem 0 .7rem 0}
+  .filter-group{margin:.6rem 0}
+  .filter-chips{display:flex;flex-wrap:wrap;gap:.45rem}
+  .chip-toggle{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:999px;padding:.25rem .6rem;background:#fff;cursor:pointer}
+  .chip-toggle input{accent-color:#1f6feb}
+  .radio{display:flex;gap:.5rem;align-items:center;margin:.25rem 0}
+  .dialog-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.8rem}
+
+  .preview-tip{position:fixed;max-width:420px;background:#111;color:#fff;padding:.5rem .65rem;border-radius:.5rem;font-size:.9rem;line-height:1.35;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:99;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .12s ease,transform .12s ease}
+  .preview-tip[data-show=&#34;true&#34;]{opacity:1;transform:translateY(0)}
+  @media (prefers-color-scheme: dark){
+    .pub-btn,.chip,.chip-toggle,.btn-chip{background:#0d1117;border-color:#30363d;color:#c9d1d9}
+    .pub-btn:hover,.btn-chip:hover{background:#161b22}
+    .pub-item{border-color:#30363d}
+    .subset{background:#0d1117;border-color:#30363d}
+    dialog{background:#0d1117;color:#c9d1d9}
+    .preview-tip{background:#161b22}
+  }
+&lt;/style&gt;
+&lt;!-- =========================
+     DATA + RENDER LOGIC
+     ========================= --&gt;
+&lt;p&gt;{% raw %}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/pages/publications/pubs-authorwise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/publications/pubs-authorwise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/pages/publications/pubs-yrwise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/publications/pubs-yrwise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/pages/pubs-legacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/pubs-legacy/</guid>
       <description>&lt;!--&lt;style type=&#34;text/css&#34;&gt;
  .tab { margin-left: 40px; }
 &lt;/style&gt;--&gt;
@@ -411,20 +559,6 @@ database
  
 &lt;i class=&#34;ai ai-doi&#34;&gt;&lt;/i&gt;
 &lt;a href=&#34;https://doi.org/10.22323/1.444.1498&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Publications</title>
-      <link>http://localhost:1313/pages/publications/pubs-authorwise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/publications/pubs-authorwise/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Publications</title>
-      <link>http://localhost:1313/pages/publications/pubs-yrwise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/publications/pubs-yrwise/</guid>
-      <description></description>
     </item>
     <item>
       <title>Research</title>

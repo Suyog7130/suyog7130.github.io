@@ -250,6 +250,8 @@
   </url><url>
     <loc>http://localhost:1313/pages/publications/pubs-yrwise/</loc>
   </url><url>
+    <loc>http://localhost:1313/pages/pubs-legacy/</loc>
+  </url><url>
     <loc>http://localhost:1313/pages/research/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
