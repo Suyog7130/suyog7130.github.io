@@ -1038,6 +1038,51 @@ async function boot(){
 document.addEventListener('DOMContentLoaded', boot);
 </script>
 
+
+<style>
+/* Force Filter/Sort dialogs to stay light when site theme is light
+   (works even if OS is in dark mode). Place AFTER all other rules. */
+html:not(.dark) .pubs-root dialog,
+:root:not([data-theme="dark"]) .pubs-root dialog,
+body:not(.dark) .pubs-root dialog{
+  background:#fff;
+  color:inherit;
+}
+
+/* Light styles for dialog controls when site theme is light */
+html:not(.dark) .pubs-root dialog .chip-toggle,
+:root:not([data-theme="dark"]) .pubs-root dialog .chip-toggle,
+body:not(.dark) .pubs-root dialog .chip-toggle{
+  background:#fff;
+  border-color:#d0d7de;
+  color:inherit;
+}
+
+html:not(.dark) .pubs-root dialog .chip,
+:root:not([data-theme="dark"]) .pubs-root dialog .chip,
+body:not(.dark) .pubs-root dialog .chip{
+  background:#fff;
+  border-color:#d0d7de;
+  color:inherit;
+}
+
+html:not(.dark) .pubs-root dialog .pub-btn,
+:root:not([data-theme="dark"]) .pubs-root dialog .pub-btn,
+body:not(.dark) .pubs-root dialog .pub-btn{
+  background:#fff;
+  border-color: var(--mm-btn-border, #d0d7de);
+  color:#24292f;
+}
+html:not(.dark) .pubs-root dialog .pub-btn-primary,
+:root:not([data-theme="dark"]) .pubs-root dialog .pub-btn-primary,
+body:not(.dark) .pubs-root dialog .pub-btn-primary{
+  background:#1f6feb;
+  border-color:#1f6feb;
+  color:#fff;
+}
+</style>
+
+
   </div>
 
   <footer class="post-footer">
