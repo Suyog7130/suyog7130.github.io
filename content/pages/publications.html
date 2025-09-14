@@ -115,22 +115,27 @@ showTOC: false
   .preview-tip[data-show="true"] { opacity: 1; transform: translateY(0); }
   @media (prefers-color-scheme: dark) {
     /* keep other controls as you had them */
-    .pub-btn, .chip, .chip-toggle {
+    .pub-btn {
+      background: inherit;
+      border-color: #30363d;
+      color: inherit;
+    }
+    .chip, .chip-toggle {
       background: inherit;
       border-color: #30363d;
       color: #ffffff;
     }
-    .pub-btn:hover { background: #0d1117; }
+    .pub-btn:hover { background: inherit; text-decoration: underline; }
 
     /* invert action chips (buttons) to light text in dark mode */
     .btn-chip {
       background: inherit;
       border-color: #30363d;
-      color: #ffffff;
+      color: inherit;
     }
     .btn-chip:hover {
-      background: #0d1117;
-      color: #ffffff;
+      background: inherit;
+      color: inherit;
     }
     .btn-chip .fa,
     .btn-chip .ai {
@@ -142,8 +147,8 @@ showTOC: false
 
     .pub-item { border-color: #30363d; }
     .subset { background: #161b22; border-color: #30363d; }
-    dialog { background: #161b22; color: #c9d1d9; }
-    .preview-tip { background: #0d1117; }
+    dialog { background: #161b22; color: #ffffff; }
+    .preview-tip { background: #0d1117; color: #ffffff; }
   }
 </style>
 
