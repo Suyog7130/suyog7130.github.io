@@ -1603,43 +1603,25 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
       <link>http://localhost:1313/pages/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/publications/</guid>
-      <description>&lt;!-- ===== Dependencies (icons + Dimensions badge) ===== --&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css&#34;&gt;
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css&#34;&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#34;&gt;
 &lt;script async src=&#34;https://badge.dimensions.ai/badge.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;!-- =========================
-     INTERACTIVE QUICK VIEW
-     ========================= --&gt;
 &lt;section class=&#34;pubs-root&#34;&gt;
-  &lt;h2 style=&#34;margin:0 0 .6rem 0&#34;&gt;Publications — Quick View (interactive)&lt;/h2&gt;
-
+  &lt;!-- &lt;h2 style=&#34;margin:0 0 .6rem 0&#34;&gt;Publications — Quick View (interactive)&lt;/h2&gt; --&gt;
   &lt;div class=&#34;pub-controls&#34; role=&#34;region&#34; aria-label=&#34;Publications controls&#34;&gt;
     &lt;button id=&#34;btnFilter&#34; class=&#34;pub-btn&#34;&gt;&lt;i class=&#34;fa fa-filter&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Filter&lt;/button&gt;
     &lt;button id=&#34;btnSort&#34; class=&#34;pub-btn&#34;&gt;&lt;i class=&#34;fa fa-sort&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Sort&lt;/button&gt;
     &lt;span id=&#34;countLabel&#34; class=&#34;pub-count&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
   &lt;/div&gt;
-
   &lt;div id=&#34;activeFilters&#34; class=&#34;active-filters&#34; aria-live=&#34;polite&#34;&gt;&lt;/div&gt;
-
-  &lt;!-- Reverse-numbered list renders here --&gt;
   &lt;ol id=&#34;pubList&#34; class=&#34;pub-list&#34; reversed&gt;&lt;/ol&gt;
 
-  &lt;!-- Filter dialog --&gt;
   &lt;dialog id=&#34;filterDialog&#34; aria-label=&#34;Filter publications&#34;&gt;
     &lt;form method=&#34;dialog&#34; class=&#34;dialog-form&#34;&gt;
       &lt;h3&gt;Filter&lt;/h3&gt;
-
-      &lt;fieldset class=&#34;filter-group&#34;&gt;
-        &lt;legend&gt;Type&lt;/legend&gt;
-        &lt;div id=&#34;filterTypes&#34; class=&#34;filter-chips&#34;&gt;&lt;!-- populated by JS --&gt;&lt;/div&gt;
-      &lt;/fieldset&gt;
-
-      &lt;fieldset class=&#34;filter-group&#34;&gt;
-        &lt;legend&gt;Subset / Topic&lt;/legend&gt;
-        &lt;div id=&#34;filterSubsets&#34; class=&#34;filter-chips&#34;&gt;&lt;!-- populated by JS --&gt;&lt;/div&gt;
-      &lt;/fieldset&gt;
-
+      &lt;fieldset class=&#34;filter-group&#34;&gt;&lt;legend&gt;Type&lt;/legend&gt;&lt;div id=&#34;filterTypes&#34; class=&#34;filter-chips&#34;&gt;&lt;/div&gt;&lt;/fieldset&gt;
+      &lt;fieldset class=&#34;filter-group&#34;&gt;&lt;legend&gt;Subset / Topic&lt;/legend&gt;&lt;div id=&#34;filterSubsets&#34; class=&#34;filter-chips&#34;&gt;&lt;/div&gt;&lt;/fieldset&gt;
       &lt;fieldset class=&#34;filter-group&#34;&gt;
         &lt;legend&gt;Year&lt;/legend&gt;
         &lt;div class=&#34;year-row&#34;&gt;
@@ -1648,7 +1630,6 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
           &lt;button id=&#34;btnResetYear&#34; type=&#34;button&#34; class=&#34;pub-btn pub-btn-secondary&#34; style=&#34;margin-left:auto&#34;&gt;Reset year&lt;/button&gt;
         &lt;/div&gt;
       &lt;/fieldset&gt;
-
       &lt;div class=&#34;dialog-actions&#34;&gt;
         &lt;button value=&#34;cancel&#34; class=&#34;pub-btn pub-btn-secondary&#34;&gt;Close&lt;/button&gt;
         &lt;button id=&#34;btnResetFilters&#34; type=&#34;button&#34; class=&#34;pub-btn pub-btn-secondary&#34;&gt;Reset all&lt;/button&gt;
@@ -1657,7 +1638,6 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
     &lt;/form&gt;
   &lt;/dialog&gt;
 
-  &lt;!-- Sort dialog --&gt;
   &lt;dialog id=&#34;sortDialog&#34; aria-label=&#34;Sort publications&#34;&gt;
     &lt;form method=&#34;dialog&#34; class=&#34;dialog-form&#34;&gt;
       &lt;h3&gt;Sort&lt;/h3&gt;
@@ -1674,58 +1654,7 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
         &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;cites-desc&#34;&gt; Citations — most → fewest*&lt;/label&gt;
         &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;cites-asc&#34;&gt; Citations — fewest → most*&lt;/label&gt;
       &lt;/fieldset&gt;
-      &lt;p class=&#34;hint&#34;&gt;* Sorting uses a numeric &lt;code&gt;cites&lt;/code&gt; field in your .bib when present; the on-card badge still shows live Dimensions counts from the DOI.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Publications</title>
-      <link>http://localhost:1313/pages/pubs-legacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/pubs-legacy/</guid>
-      <description>&lt;!--&lt;style type=&#34;text/css&#34;&gt;
- .tab { margin-left: 40px; }
-&lt;/style&gt;--&gt;
-&lt;!--&lt;link rel=&#34;stylesheet&#34; href=&#34;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;icon_names=database&#34; /&gt;
-&lt;span class=&#34;material-symbols-outlined&#34;&gt;
-database
-&lt;/span&gt;--&gt;
-&lt;h2 id=&#34;scientific-articles&#34;&gt;Scientific Articles&lt;/h2&gt;
-&lt;!-- #### Journal Articles (Preprint) --&gt;
-&lt;h3 id=&#34;journal-articles-published&#34;&gt;Journal Articles (Published)&lt;/h3&gt;
-&lt;p&gt;S. Garg, B. B. Karak, R. Egeland, W. Soon, and S. Baliunas. Waldmeier Eﬀect in Stellar Cycles. ApJ, 886(2):132, Dec 2019, 1909.12148.
-&lt;span class=&#34;__dimensions_badge_embed__&#34; data-doi=&#34;10.3847/1538-4357/ab4a17&#34; data-hide-zero-citations=&#34;true&#34; data-style=&#34;small_rectangle&#34; style=&#34;white-space:nowrap;&#34;&gt;&lt;/span&gt;&lt;script async src=&#34;https://badge.dimensions.ai/badge.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;br/&gt;
-&lt;i class=&#34;fa fa-file-pdf&#34;&gt; &lt;/i&gt;
-&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Paper&lt;/a&gt;
- • 
-&lt;i class=&#34;fa fa-edit&#34;&gt; &lt;/i&gt;
-&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Preprint&lt;/a&gt;
- • 
-&lt;i class=&#34;fa fa-code&#34;&gt; &lt;/i&gt;
-&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Code&lt;/a&gt;
- • 
-&lt;i class=&#34;fa fa-database&#34;&gt; &lt;/i&gt;
-&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;Data&lt;/a&gt;
- • 
-&lt;i class=&#34;ai ai-doi&#34;&gt; &lt;/i&gt;
-&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;DOI&lt;/a&gt;
- • 
-&lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;
-&lt;a href=&#34;https://doi.org/10.3847/1538-4357/ab4a17&#34;&gt;URL&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;S. Garg and M. Bagchi. A Negligible Tidal Eﬀect in a Periastron Precession in Neutron Star–Black Hole (Stellar Mass) Binaries. Research Notes of the American Astronomical Society, 3(9):125, Sep 2019. &lt;a href=&#34;https://doi.org/10.3847/2515-5172/ab3fa&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;in-collaboration&#34;&gt;In Collaboration&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A. M. Price-Whelan, others, Astropy Collaboration, and Astropy Project Contributors. The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package. ApJ, 935(2):167, Aug. 2022, 2206.14220. &lt;a href=&#34;https://doi.org/10.3847/1538-4357/ac7c74&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;S. Bapat et al. EinsteinPy: A Community Python Package for General Relativity. arXiv e-prints, May 2020, 2005.11288. &lt;a href=&#34;https://arxiv.org/abs/2005.11288&#34;&gt;URL&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;conference-papers&#34;&gt;Conference Papers&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;S. Sasaoka, Y. Hou, D. S. Dominguez, S. Garg, N. Koyama, Y. Sakai, Y. Omae, K. Somiya, and H. Takahashi. Deep Learning for Detecting Gravitational Waves from Compact Binary Coalescences and Its Visualization by Grad-CAM. In Proceedings of 38th International Cosmic Ray Conference — PoS(ICRC2023), volume 444, page 1498, 2023.
- 
-&lt;i class=&#34;ai ai-doi&#34;&gt;&lt;/i&gt;
-&lt;a href=&#34;https://doi.org/10.22323/1.444.1498&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;</description>
+      &lt;p class=&#34;hint&#34;&gt;* Sorting uses a numeric &lt;code&gt;cites&lt;/code&gt; field from the `.bib` when present. The on-card badge shows live Dimensions counts from DOI.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Research</title>
