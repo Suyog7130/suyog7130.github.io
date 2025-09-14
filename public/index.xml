@@ -1620,8 +1620,14 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
   &lt;dialog id=&#34;filterDialog&#34; aria-label=&#34;Filter publications&#34;&gt;
     &lt;form method=&#34;dialog&#34; class=&#34;dialog-form&#34;&gt;
       &lt;h3&gt;Filter&lt;/h3&gt;
+
       &lt;fieldset class=&#34;filter-group&#34;&gt;&lt;legend&gt;Type&lt;/legend&gt;&lt;div id=&#34;filterTypes&#34; class=&#34;filter-chips&#34;&gt;&lt;/div&gt;&lt;/fieldset&gt;
+
+      &lt;!-- NEW: Authorship filter --&gt;
+      &lt;fieldset class=&#34;filter-group&#34;&gt;&lt;legend&gt;Authorship&lt;/legend&gt;&lt;div id=&#34;filterAuthKinds&#34; class=&#34;filter-chips&#34;&gt;&lt;/div&gt;&lt;/fieldset&gt;
+
       &lt;fieldset class=&#34;filter-group&#34;&gt;&lt;legend&gt;Subset / Topic&lt;/legend&gt;&lt;div id=&#34;filterSubsets&#34; class=&#34;filter-chips&#34;&gt;&lt;/div&gt;&lt;/fieldset&gt;
+
       &lt;fieldset class=&#34;filter-group&#34;&gt;
         &lt;legend&gt;Year&lt;/legend&gt;
         &lt;div class=&#34;year-row&#34;&gt;
