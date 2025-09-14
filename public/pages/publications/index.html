@@ -513,16 +513,17 @@
   .chip button { all: unset; cursor: pointer; display: inline-flex; }
   .chip .fa { font-size: 0.8em; color: #555; }
   .pub-list { counter-reset: none; padding-left: 1.2rem; }
-  .pub-item { margin: 0 0 0.9rem 0; padding: 0 0 0.9rem 0; border-bottom: 1px dashed #e5e7eb; }
+  .pub-item { margin: 0 0 0.9rem 0; padding: 0 0 0.9rem 0; }
   .pub-title { font-weight: 600; line-height: 1.35; margin: 0; }
   .pub-title a { text-decoration: none; }
   .pub-title a:hover { text-decoration: underline; }
-  .pub-meta { color: #444; margin: 0.15rem 0 0.45rem 0; font-size: 0.95rem; }
+  /* was: .pub-meta{color:#444; margin:...; font-size:.95rem} */
+  .pub-meta{ margin:.15rem 0 .45rem 0; font-size:.95rem }
   .subsets { display: flex; flex-wrap: wrap; gap: 0.35rem; }
   .subset { font-size: 0.78rem; border: 1px solid #e5e7eb; border-radius: 0.4rem; padding: 0.05rem 0.4rem; background: #fafbfc; }
   .actions { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.35rem; }
   .btn-chip { display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid #d0d7de; border-radius: 0.5rem; padding: 0.25rem 0.45rem; font-size: 0.85rem; background: #fff; text-decoration: none; line-height: 1; }
-  .btn-chip:hover { background: #f6f8fa; }
+  .btn-chip:hover{text-decoration:underline; background:#f6f8fa;}
   .btn-chip .fa, .btn-chip .ai { font-size: 0.9em; }
   .btn-badge { padding: 0.2rem 0.35rem; }
   .btn-badge .__dimensions_Badge_Font { font-size: 0.82em !important; }
@@ -538,20 +539,37 @@
   .preview-tip { position: fixed; max-width: 520px; background: #111; color: #fff; padding: 0.6rem 0.75rem; border-radius: 0.5rem; font-size: 0.92rem; line-height: 1.35; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); z-index: 99; pointer-events: none; opacity: 0; transform: translateY(4px); transition: opacity 0.12s ease, transform 0.12s ease; }
   .preview-tip[data-show="true"] { opacity: 1; transform: translateY(0); }
   @media (prefers-color-scheme: dark) {
-    .pub-btn, .chip, .chip-toggle, .btn-chip { background: #161b22; border-color: #30363d; color: #ffffff; }
-    .btn-chip:hover { background: #0d1117; }
-    .btn-chip .fa, .btn-chip .ai { color: #ffffff; }
-    .btn-chip .fa-file-pdf { color: #ffffff; }
-    .pub-btn:hover, .btn-chip:hover { background: #0d1117; }
+    /* keep other controls as you had them */
+    .pub-btn, .chip, .chip-toggle {
+      background: inherit;
+      border-color: #30363d;
+      color: #ffffff;
+    }
+    .pub-btn:hover { background: #0d1117; }
+
+    /* invert action chips (buttons) to light text in dark mode */
+    .btn-chip {
+      background: inherit;
+      border-color: #30363d;
+      color: #ffffff;
+    }
+    .btn-chip:hover {
+      background: #0d1117;
+      color: #ffffff;
+    }
+    .btn-chip .fa,
+    .btn-chip .ai {
+      color: inherit; /* follows the chip text color */
+    }
+    .btn-chip .fa-file-pdf {
+      color: inherit; /* change to #b30b00 if you want a red accent */
+    }
+
     .pub-item { border-color: #30363d; }
     .subset { background: #161b22; border-color: #30363d; }
     dialog { background: #161b22; color: #c9d1d9; }
     .preview-tip { background: #0d1117; }
   }
-  html.dark .pubs-root .btn-chip, :root[data-theme="dark"] .pubs-root .btn-chip, body.dark .pubs-root .btn-chip { background: #f6f8fa !important; border-color: #f6f8fa !important; color: #0d1117 !important; }
-  html.dark .pubs-root .btn-chip:hover, :root[data-theme="dark"] .pubs-root .btn-chip:hover, body.dark .pubs-root .btn-chip:hover { background: #ffffff !important; }
-  html.dark .pubs-root .btn-chip .fa, :root[data-theme="dark"] .pubs-root .btn-chip .fa, body.dark .pubs-root .btn-chip .fa, html.dark .pubs-root .btn-chip .ai, :root[data-theme="dark"] .pubs-root .btn-chip .ai, body.dark .pubs-root .btn-chip .ai { color: inherit !important; }
-  html.dark .pubs-root .btn-chip .fa-file-pdf, :root[data-theme="dark"] .pubs-root .btn-chip .fa-file-pdf, body.dark .pubs-root .btn-chip .fa-file-pdf { color: #b30b00 !important; }
 </style>
 
 <script>
