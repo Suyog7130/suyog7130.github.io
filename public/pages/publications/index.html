@@ -24,8 +24,14 @@
   
     
       Filter
+
       Type
+
+      
+      Authorship
+
       Subset / Topic
+
       
         Year
         
@@ -185,7 +191,7 @@
 <link rel="stylesheet" type="text/css" href="/hugo-cite.css" /><meta property="og:url" content="http://localhost:1313/pages/publications/">
   <meta property="og:site_name" content="Suyog Garg">
   <meta property="og:title" content="Publications">
-  <meta property="og:description" content=" Filter Sort Filter Type Subset / Topic Year From  To  Reset year Close Reset all Apply Sort Order Year — newest → oldest Year — oldest → newest Title — A → Z Title — Z → A First author — A → Z First author — Z → A Paper length — longest → shortest Paper length — shortest → longest Citations — most → fewest* Citations — fewest → most* * Sorting uses a numeric cites field from the `.bib` when present. The on-card badge shows live Dimensions counts from DOI.">
+  <meta property="og:description" content=" Filter Sort Filter Type Authorship Subset / Topic Year From  To  Reset year Close Reset all Apply Sort Order Year — newest → oldest Year — oldest → newest Title — A → Z Title — Z → A First author — A → Z First author — Z → A Paper length — longest → shortest Paper length — shortest → longest Citations — most → fewest* Citations — fewest → most* * Sorting uses a numeric cites field from the `.bib` when present. The on-card badge shows live Dimensions counts from DOI.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="pages">
@@ -210,8 +216,14 @@
   
     
       Filter
+
       Type
+
+      
+      Authorship
+
       Subset / Topic
+
       
         Year
         
@@ -273,12 +285,12 @@
   "@type": "BlogPosting",
   "headline": "Publications",
   "name": "Publications",
-  "description": " Filter Sort Filter Type Subset / Topic Year From\u0026nbsp; To\u0026nbsp; Reset year Close Reset all Apply Sort Order Year — newest → oldest Year — oldest → newest Title — A → Z Title — Z → A First author — A → Z First author — Z → A Paper length — longest → shortest Paper length — shortest → longest Citations — most → fewest* Citations — fewest → most* * Sorting uses a numeric cites field from the `.bib` when present. The on-card badge shows live Dimensions counts from DOI.\n",
+  "description": " Filter Sort Filter Type Authorship Subset / Topic Year From\u0026nbsp; To\u0026nbsp; Reset year Close Reset all Apply Sort Order Year — newest → oldest Year — oldest → newest Title — A → Z Title — Z → A First author — A → Z First author — Z → A Paper length — longest → shortest Paper length — shortest → longest Citations — most → fewest* Citations — fewest → most* * Sorting uses a numeric cites field from the `.bib` when present. The on-card badge shows live Dimensions counts from DOI.\n",
   "keywords": [
     
   ],
-  "articleBody": " Filter Sort Filter Type Subset / Topic Year From To Reset year Close Reset all Apply Sort Order Year — newest → oldest Year — oldest → newest Title — A → Z Title — Z → A First author — A → Z First author — Z → A Paper length — longest → shortest Paper length — shortest → longest Citations — most → fewest* Citations — fewest → most* * Sorting uses a numeric cites field from the `.bib` when present. The on-card badge shows live Dimensions counts from DOI.\nClose Apply Debug ",
-  "wordCount" : "96",
+  "articleBody": " Filter Sort Filter Type Authorship Subset / Topic Year From To Reset year Close Reset all Apply Sort Order Year — newest → oldest Year — oldest → newest Title — A → Z Title — Z → A First author — A → Z First author — Z → A Paper length — longest → shortest Paper length — shortest → longest Citations — most → fewest* Citations — fewest → most* * Sorting uses a numeric cites field from the `.bib` when present. The on-card badge shows live Dimensions counts from DOI.\nClose Apply Debug ",
+  "wordCount" : "97",
   "inLanguage": "en",
   "image": "http://localhost:1313/","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -391,7 +403,7 @@
     <h1 class="post-title entry-hint-parent">
       Publications
     </h1>
-    <div class="post-meta"><a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;96 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+    <div class="post-meta"><a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;97 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 
 
 </div>
@@ -418,6 +430,7 @@
     
   </header> 
   <div class="post-content">
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
@@ -435,8 +448,14 @@
   <dialog id="filterDialog" aria-label="Filter publications">
     <form method="dialog" class="dialog-form">
       <h3>Filter</h3>
+
       <fieldset class="filter-group"><legend>Type</legend><div id="filterTypes" class="filter-chips"></div></fieldset>
+
+      <!-- NEW: Authorship filter -->
+      <fieldset class="filter-group"><legend>Authorship</legend><div id="filterAuthKinds" class="filter-chips"></div></fieldset>
+
       <fieldset class="filter-group"><legend>Subset / Topic</legend><div id="filterSubsets" class="filter-chips"></div></fieldset>
+
       <fieldset class="filter-group">
         <legend>Year</legend>
         <div class="year-row">
@@ -482,86 +501,57 @@
 </section>
 
 <style>
-  .pub-controls{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin:0 0 1rem 0}
-  .pub-btn{border:1px solid var(--mm-btn-border,#d0d7de);padding:.4rem .7rem;border-radius:.5rem;background:#fff;cursor:pointer;font:inherit}
-  .pub-btn:hover{background:#f6f8fa}
-  .pub-btn-primary{background:#1f6feb;color:#fff;border-color:#1f6feb}
-  .pub-btn-secondary{background:#fff;color:#24292f}
-  .hint{font-size:.85rem;color:#667}
-  .pub-count{margin-left:auto;font-size:.95rem;color:#555}
-  .active-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem 0}
-  .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:999px;padding:.2rem .55rem;font-size:.85rem;background:#fff}
-  .chip button{all:unset;cursor:pointer;display:inline-flex}
-  .chip .fa{font-size:.8em;color:#555}
-  .pub-list{counter-reset:none;padding-left:1.2rem}
-  .pub-item{margin:0 0 .9rem 0;padding:0 0 .9rem 0;border-bottom:1px dashed #e5e7eb}
-  .pub-title{font-weight:600;line-height:1.35;margin:0}
-  .pub-title a{text-decoration:none}
-  .pub-title a:hover{text-decoration:underline}
-  .pub-meta{color:#444;margin:.15rem 0 .45rem 0;font-size:.95rem}
-  .subsets{display:flex;flex-wrap:wrap;gap:.35rem}
-  .subset{font-size:.78rem;border:1px solid #e5e7eb;border-radius:.4rem;padding:.05rem .4rem;background:#fafbfc}
-  .actions{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.35rem}
-  .btn-chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:.5rem;padding:.25rem .45rem;font-size:.85rem;background:#fff;text-decoration:none;line-height:1}
-  .btn-chip:hover{background:#f6f8fa}
-  .btn-chip .fa,.btn-chip .ai{font-size:.9em}
-  .btn-badge{padding:.2rem .35rem}
-  .btn-badge .__dimensions_Badge_Font{font-size:.82em!important}
-  dialog{border:none;border-radius:12px;padding:1rem 1rem 1.2rem 1rem;max-width:720px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15)}
-  .dialog-form h3{margin:.3rem 0 .7rem 0}
-  .filter-group{margin:.6rem 0}
-  .filter-chips{display:flex;flex-wrap:wrap;gap:.45rem}
-  .chip-toggle{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:999px;padding:.25rem .6rem;background:#fff;cursor:pointer}
-  .chip-toggle input{accent-color:#1f6feb}
-  .radio{display:flex;gap:.5rem;align-items:center;margin:.25rem 0}
-  .dialog-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.8rem}
-  .year-row{display:flex;gap:.6rem;align-items:center}
-  .preview-tip{position:fixed;max-width:520px;background:#111;color:#fff;padding:.6rem .75rem;border-radius:.5rem;font-size:.92rem;line-height:1.35;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:99;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .12s ease,transform .12s ease}
-  .preview-tip[data-show="true"]{opacity:1;transform:translateY(0)}
-  @media (prefers-color-scheme: dark){
-    .pub-btn,.chip,.chip-toggle,
-    /* invert the button color */
-    .btn-chip{
-      background:#161b22;       /* dark pill */
-      border-color:#30363d;     /* dark border */
-      color: #ffffff;           /* white text */
-    }
-    .btn-chip:hover{background:#0d1117}
-    .btn-chip .fa, .btn-chip .ai{ color:#ffffff } /* icons follow text color */
-    /* keep the PDF icon accent */
-    .btn-chip .fa-file-pdf{ color:#ffffff }
-    .pub-btn:hover,.btn-chip:hover{background:#0d1117}
-    .pub-item{border-color:#30363d}
-    .subset{background:#161b22;border-color:#30363d}
-    dialog{background:#161b22;color:#c9d1d9}
-    .preview-tip{background:#0d1117}
+  .pub-controls { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; margin: 0 0 1rem 0; }
+  .pub-btn { border: 1px solid var(--mm-btn-border, #d0d7de); padding: 0.4rem 0.7rem; border-radius: 0.5rem; background: #fff; cursor: pointer; font: inherit; }
+  .pub-btn:hover { background: #f6f8fa; }
+  .pub-btn-primary { background: #1f6feb; color: #fff; border-color: #1f6feb; }
+  .pub-btn-secondary { background: #fff; color: #24292f; }
+  .hint { font-size: 0.85rem; color: #667; }
+  .pub-count { margin-left: auto; font-size: 0.95rem; color: #555; }
+  .active-filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.25rem 0 1rem 0; }
+  .chip { display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid #d0d7de; border-radius: 999px; padding: 0.2rem 0.55rem; font-size: 0.85rem; background: #fff; }
+  .chip button { all: unset; cursor: pointer; display: inline-flex; }
+  .chip .fa { font-size: 0.8em; color: #555; }
+  .pub-list { counter-reset: none; padding-left: 1.2rem; }
+  .pub-item { margin: 0 0 0.9rem 0; padding: 0 0 0.9rem 0; border-bottom: 1px dashed #e5e7eb; }
+  .pub-title { font-weight: 600; line-height: 1.35; margin: 0; }
+  .pub-title a { text-decoration: none; }
+  .pub-title a:hover { text-decoration: underline; }
+  .pub-meta { color: #444; margin: 0.15rem 0 0.45rem 0; font-size: 0.95rem; }
+  .subsets { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .subset { font-size: 0.78rem; border: 1px solid #e5e7eb; border-radius: 0.4rem; padding: 0.05rem 0.4rem; background: #fafbfc; }
+  .actions { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.35rem; }
+  .btn-chip { display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid #d0d7de; border-radius: 0.5rem; padding: 0.25rem 0.45rem; font-size: 0.85rem; background: #fff; text-decoration: none; line-height: 1; }
+  .btn-chip:hover { background: #f6f8fa; }
+  .btn-chip .fa, .btn-chip .ai { font-size: 0.9em; }
+  .btn-badge { padding: 0.2rem 0.35rem; }
+  .btn-badge .__dimensions_Badge_Font { font-size: 0.82em !important; }
+  dialog { border: none; border-radius: 12px; padding: 1rem 1rem 1.2rem 1rem; max-width: 720px; width: 92%; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); }
+  .dialog-form h3 { margin: 0.3rem 0 0.7rem 0; }
+  .filter-group { margin: 0.6rem 0; }
+  .filter-chips { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+  .chip-toggle { display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid #d0d7de; border-radius: 999px; padding: 0.25rem 0.6rem; background: #fff; cursor: pointer; }
+  .chip-toggle input { accent-color: #1f6feb; }
+  .radio { display: flex; gap: 0.5rem; align-items: center; margin: 0.25rem 0; }
+  .dialog-actions { display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 0.8rem; }
+  .year-row { display: flex; gap: 0.6rem; align-items: center; }
+  .preview-tip { position: fixed; max-width: 520px; background: #111; color: #fff; padding: 0.6rem 0.75rem; border-radius: 0.5rem; font-size: 0.92rem; line-height: 1.35; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); z-index: 99; pointer-events: none; opacity: 0; transform: translateY(4px); transition: opacity 0.12s ease, transform 0.12s ease; }
+  .preview-tip[data-show="true"] { opacity: 1; transform: translateY(0); }
+  @media (prefers-color-scheme: dark) {
+    .pub-btn, .chip, .chip-toggle, .btn-chip { background: #161b22; border-color: #30363d; color: #ffffff; }
+    .btn-chip:hover { background: #0d1117; }
+    .btn-chip .fa, .btn-chip .ai { color: #ffffff; }
+    .btn-chip .fa-file-pdf { color: #ffffff; }
+    .pub-btn:hover, .btn-chip:hover { background: #0d1117; }
+    .pub-item { border-color: #30363d; }
+    .subset { background: #161b22; border-color: #30363d; }
+    dialog { background: #161b22; color: #c9d1d9; }
+    .preview-tip { background: #0d1117; }
   }
-  /* 2) Theme-class dark modes (covers many Hugo themes) */
-  html.dark .pubs-root .btn-chip,
-  :root[data-theme="dark"] .pubs-root .btn-chip,
-  body.dark .pubs-root .btn-chip{
-    background:#f6f8fa !important;
-    border-color:#f6f8fa !important;
-    color:#0d1117 !important;
-  }
-  html.dark .pubs-root .btn-chip:hover,
-  :root[data-theme="dark"] .pubs-root .btn-chip:hover,
-  body.dark .pubs-root .btn-chip:hover{
-    background:#ffffff !important;
-  }
-  html.dark .pubs-root .btn-chip .fa,
-  :root[data-theme="dark"] .pubs-root .btn-chip .fa,
-  body.dark .pubs-root .btn-chip .fa,
-  html.dark .pubs-root .btn-chip .ai,
-  :root[data-theme="dark"] .pubs-root .btn-chip .ai,
-  body.dark .pubs-root .btn-chip .ai{
-    color:inherit !important;
-  }
-  html.dark .pubs-root .btn-chip .fa-file-pdf,
-  :root[data-theme="dark"] .pubs-root .btn-chip .fa-file-pdf,
-  body.dark .pubs-root .btn-chip .fa-file-pdf{
-    color:#b30b00 !important;
-  }
+  html.dark .pubs-root .btn-chip, :root[data-theme="dark"] .pubs-root .btn-chip, body.dark .pubs-root .btn-chip { background: #f6f8fa !important; border-color: #f6f8fa !important; color: #0d1117 !important; }
+  html.dark .pubs-root .btn-chip:hover, :root[data-theme="dark"] .pubs-root .btn-chip:hover, body.dark .pubs-root .btn-chip:hover { background: #ffffff !important; }
+  html.dark .pubs-root .btn-chip .fa, :root[data-theme="dark"] .pubs-root .btn-chip .fa, body.dark .pubs-root .btn-chip .fa, html.dark .pubs-root .btn-chip .ai, :root[data-theme="dark"] .pubs-root .btn-chip .ai, body.dark .pubs-root .btn-chip .ai { color: inherit !important; }
+  html.dark .pubs-root .btn-chip .fa-file-pdf, :root[data-theme="dark"] .pubs-root .btn-chip .fa-file-pdf, body.dark .pubs-root .btn-chip .fa-file-pdf { color: #b30b00 !important; }
 </style>
 
 <script>
@@ -577,6 +567,19 @@ const VENUE_SHORT = {
   "arXiv e-prints":"arXiv"
 };
 
+/* NEW: name patterns + authorship filter options */
+const SELF_NAME_PATTERNS = [
+  /\bSuyog\s+Garg\b/i,
+  /\bGarg,\s*Suyog\b/i,
+  /\bS\.?\s*Garg\b/i
+];
+const AUTHOR_FILTER_OPTIONS = [
+  { key: 'first',  label: 'First Author' },
+  { key: 'second', label: 'Co-Authored' },
+  { key: 'short',  label: 'Short-Author paper' },
+  { key: 'collab', label: 'Collaboration' }
+];
+
 /** ===== State/els ===== */
 const els = {
   list: document.getElementById('pubList'),
@@ -585,6 +588,7 @@ const els = {
   filterDlg: document.getElementById('filterDialog'),
   sortDlg: document.getElementById('sortDialog'),
   filterTypes: document.getElementById('filterTypes'),
+  filterAuthKinds: document.getElementById('filterAuthKinds'), // NEW
   filterSubsets: document.getElementById('filterSubsets'),
   activeFilters: document.getElementById('activeFilters'),
   btnFilter: document.getElementById('btnFilter'),
@@ -600,6 +604,7 @@ const els = {
 };
 const state = {
   all: [], sortMode: 'year-desc', types: new Set(), subsets: new Set(),
+  authKinds: new Set(), // NEW
   yearFrom: null, yearTo: null, minYear: null, maxYear: null
 };
 const DEBUG = /[?&]pubsdebug=1/.test(location.search);
@@ -610,7 +615,6 @@ function logd(...a){ if(DEBUG){ console.log('[pubs]',...a); els.dbgWrap.style.di
 /** ===== Path resolution & robust fetch ===== */
 function candidateBibPaths(pref){
   const main = (pref && pref.trim()) ? pref.trim() : 'publications.bib';
-  // try exactly the same directory, nothing else
   return [main];
 }
 async function tryFetch(paths){
@@ -647,8 +651,8 @@ function untex(s){
     .replace(/{\\\'?o}/g,'ó').replace(/\\\'o/g,'ó')
     .replace(/{\\\'?u}/g,'ú').replace(/\\\'u/g,'ú')
     .replace(/\\textendash/g,'–').replace(/\\textemdash/g,'—')
-    .replace(/\$[^$]*\$/g,'') // strip inline math
-    .replace(/[{}]/g,'')      // drop remaining braces
+    .replace(/\$[^$]*\$/g,'')
+    .replace(/[{}]/g,'')
     .replace(/\s+/g,' ')
     .trim();
 }
@@ -669,7 +673,6 @@ function pagesToLen(p){
   if(!p) return null;
   const m = p.match(/([A-Za-z]?)(\d+)\s*[-–—]\s*([A-Za-z]?)(\d+)/);
   if(!m) return null;
-  // if letters differ, just return null to avoid nonsense
   if((m[1]||'') !== (m[3]||'')) return null;
   const a = parseInt(m[2],10), b = parseInt(m[4],10);
   if(isNaN(a)||isNaN(b)) return null;
@@ -680,6 +683,23 @@ function firstAuthorKey(p){ return (p.authors && p.authors[0] || '').toLowerCase
 function scholarLink(title, firstAuthor){
   const q = [title, firstAuthor ? firstAuthor.split(',')[0] : ''].filter(Boolean).join(' ');
   return 'https://scholar.google.com/scholar?q=' + encodeURIComponent(q);
+}
+
+/* NEW: authorship helpers */
+function isSelfAuthor(name){
+  const s = (name || '').toString();
+  return SELF_NAME_PATTERNS.some(rx => rx.test(s));
+}
+function computeAuthKinds(authors){
+  const a = Array.isArray(authors) ? authors : [];
+  const count = a.length;
+  const hasCollabWord = a.some(n => /collaboration/i.test(n));
+  const kinds = [];
+  if(count > 0 && isSelfAuthor(a[0])) kinds.push('first');
+  if(count > 1 && isSelfAuthor(a[1])) kinds.push('second');
+  if(count > 0 && count < 5) kinds.push('short');
+  if(count > 5 || hasCollabWord) kinds.push('collab');
+  return kinds;
 }
 
 /** ===== BibTeX parser with @string and # concat ===== */
@@ -751,7 +771,6 @@ function parseBibTeX(input){
     const parts = [];
     let p = idx;
     while(p < s.length){
-      // skip spaces
       while(p<s.length && /\s/.test(s[p])) p++;
       if(p>=s.length) break;
       let {value, next} = parseValueToken(s, p, strings);
@@ -761,7 +780,6 @@ function parseBibTeX(input){
       if(s[p] === '#'){ p++; continue; }
       break;
     }
-    // move to next comma at depth 0
     while(p<s.length && s[p]!==',') p++;
     if(p<s.length && s[p]===',') p++;
     return {value: parts.join(''), next: p};
@@ -828,7 +846,8 @@ function bibToPub(e){
     doi: doi || null, arxiv: arxiv || null,
     paperUrl: paperUrl || null, preprintUrl: preprintUrl || null,
     codeUrl: codeUrl || null, dataUrl: dataUrl || null, url: url || null,
-    abstract, subsets, length: (length||null), citations: isNaN(cites)? null : cites
+    abstract, subsets, length: (length||null), citations: isNaN(cites)? null : cites,
+    authKinds: computeAuthKinds(authors) // NEW
   };
 }
 
@@ -839,8 +858,16 @@ function initFilters(pubs){
   const years = pubs.map(p=>p.year).filter(Boolean);
   state.minYear = Math.min(...years); state.maxYear = Math.max(...years);
   state.yearFrom = state.minYear; state.yearTo = state.maxYear;
+
   els.filterTypes.innerHTML = allTypes.map(t=>`<label class="chip-toggle"><input type="checkbox" value="${t}"> ${t}</label>`).join('');
+
+  // NEW: authorship filter options (fixed)
+  els.filterAuthKinds.innerHTML = AUTHOR_FILTER_OPTIONS.map(opt => `
+    <label class="chip-toggle"><input type="checkbox" value="${opt.key}"> ${opt.label}</label>
+  `).join('');
+
   els.filterSubsets.innerHTML = allSubsets.map(s=>`<label class="chip-toggle"><input type="checkbox" value="${s}"> ${s}</label>`).join('');
+
   els.yearFrom.min = els.yearTo.min = String(state.minYear);
   els.yearFrom.max = els.yearTo.max = String(state.maxYear);
   els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
@@ -856,23 +883,24 @@ function dimsBadge(doi){ return doi ? `<span class="btn-chip btn-badge" data-has
 function cleanupEmptyBadges(){
   document.querySelectorAll('.btn-badge').forEach(w=>{
     const badgeEl = w.querySelector('.__dimensions_Badge, .__dimensions_badge_embed__');
-    if(!badgeEl) { 
-      w.remove(); 
-      return; 
-    }
+    if(!badgeEl) { w.remove(); return; }
     const cs = getComputedStyle(badgeEl);
     const invisible = cs.display === 'none' || cs.visibility === 'hidden' || badgeEl.textContent.trim() === '';
-    if(invisible || w.offsetWidth < 8) {
-      w.remove();
-    }
+    if(invisible || w.offsetWidth < 8) w.remove();
   });
 }
 function renderActiveFilters(){
-  const chips=[]; state.types.forEach(t=>chips.push(`<span class="chip">Type: ${t}<button aria-label="Remove ${t}" data-x-type="${t}"><i class="fa fa-times"></i></button></span>`));
+  const chips=[];
+  state.types.forEach(t=>chips.push(`<span class="chip">Type: ${t}<button aria-label="Remove ${t}" data-x-type="${t}"><i class="fa fa-times"></i></button></span>`));
+  state.authKinds.forEach(k=>{
+    const label = (AUTHOR_FILTER_OPTIONS.find(o=>o.key===k)||{}).label || k;
+    chips.push(`<span class="chip">Auth: ${label}<button aria-label="Remove ${label}" data-x-auth="${k}"><i class="fa fa-times"></i></button></span>`);
+  });
   state.subsets.forEach(s=>chips.push(`<span class="chip">Topic: ${s}<button aria-label="Remove ${s}" data-x-subset="${s}"><i class="fa fa-times"></i></button></span>`));
   if(state.yearFrom!==state.minYear || state.yearTo!==state.maxYear){ chips.push(`<span class="chip">Years: ${state.yearFrom}–${state.yearTo}<button aria-label="Reset years" data-x-year="1"><i class="fa fa-times"></i></button></span>`); }
   els.activeFilters.innerHTML = chips.join('');
   els.activeFilters.querySelectorAll('button[data-x-type]').forEach(b=>b.addEventListener('click',()=>{ state.types.delete(b.dataset.xType); syncDialogChecks(); render(); }));
+  els.activeFilters.querySelectorAll('button[data-x-auth]').forEach(b=>b.addEventListener('click',()=>{ state.authKinds.delete(b.dataset.xAuth); syncDialogChecks(); render(); }));
   els.activeFilters.querySelectorAll('button[data-x-subset]').forEach(b=>b.addEventListener('click',()=>{ state.subsets.delete(b.dataset.xSubset); syncDialogChecks(); render(); }));
   els.activeFilters.querySelectorAll('button[data-x-year]').forEach(b=>b.addEventListener('click',()=>{ state.yearFrom=state.minYear; state.yearTo=state.maxYear; syncDialogChecks(); render(); }));
 }
@@ -898,7 +926,6 @@ function render(){
   els.list.setAttribute('start', String(sorted.length));
   els.list.innerHTML = sorted.map(p=>{
     const meta = `${authorArrayToShort(p.authors)} — ${p.venueShort || p.venue || ''}${p.year ? ' ('+p.year+')' : ''}${p.type ? ' • '+p.type : ''}${p.length? ' • ' + p.length + ' pp.' : ''}`;
-    const subsetChips = (p.subsets||[]).map(s=>`<span class="subset">${s}</span>`).join('');
     const actions = [
       button('Paper','fa-solid fa-file-pdf',p.paperUrl),
       button('Preprint','ai ai-arxiv',p.preprintUrl),
@@ -909,7 +936,6 @@ function render(){
       p.doi ? dimsBadge(p.doi) : ''
     ].join('');
     const absBtn = p.abstract ? `<a class="btn-chip abstract-btn" href="javascript:void(0)" data-abstract="${p.abstract.replace(/"/g,'&quot;')}"><i class="fa fa-align-left"></i> Abstract</a>` : '';
-    // <div class="subsets">${subsetChips}</div> <!-- optionally show subsets/tags/subjects on each item below!! -->
     return `
       <li class="pub-item">
         <p class="pub-title"><a href="${linkForTitle(p)}" class="title-link">${p.title}</a></p>
@@ -919,15 +945,16 @@ function render(){
   }).join('');
   els.count.textContent = `Showing ${sorted.length} of ${state.all.length}`;
   renderActiveFilters(); wireAbstractHover();
-  setTimeout(cleanupEmptyBadges, 300); // let Dimensions badges load
-  setTimeout(cleanupEmptyBadges, 1200); // second pass after load
+  setTimeout(cleanupEmptyBadges, 300);
+  setTimeout(cleanupEmptyBadges, 1200);
   window.addEventListener('load', ()=> setTimeout(cleanupEmptyBadges, 1000));
 }
 function passesFilters(p){
   const tOK = state.types.size ? state.types.has(p.type) : true;
+  const aOK = state.authKinds.size ? (p.authKinds||[]).some(k => state.authKinds.has(k)) : true; // NEW
   const sOK = state.subsets.size ? (p.subsets||[]).some(s=>state.subsets.has(s)) : true;
   const yOK = (!state.yearFrom || !p.year || p.year >= state.yearFrom) && (!state.yearTo || !p.year || p.year <= state.yearTo);
-  return tOK && sOK && yOK;
+  return tOK && aOK && sOK && yOK;
 }
 function wireAbstractHover(){
   document.querySelectorAll('.abstract-btn').forEach(btn=>{
@@ -938,14 +965,16 @@ function wireAbstractHover(){
 }
 function syncDialogChecks(){
   els.filterTypes.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.types.has(cb.value); });
+  els.filterAuthKinds.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.authKinds.has(cb.value); }); // NEW
   els.filterSubsets.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.subsets.has(cb.value); });
   els.sortDlg.querySelectorAll('input[name=sortMode]').forEach(r=>{ r.checked = (r.value === state.sortMode); });
   els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
 }
 function applyFiltersFromDialog(){
   const newTypes = new Set(); els.filterTypes.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newTypes.add(cb.value));
+  const newAuth  = new Set(); els.filterAuthKinds.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newAuth.add(cb.value)); // NEW
   const newSubs  = new Set(); els.filterSubsets.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newSubs.add(cb.value));
-  state.types = newTypes; state.subsets = newSubs;
+  state.types = newTypes; state.authKinds = newAuth; state.subsets = newSubs;
   const yf = parseInt(els.yearFrom.value,10), yt = parseInt(els.yearTo.value,10);
   state.yearFrom = isNaN(yf)? state.minYear : Math.max(state.minYear, Math.min(yf, state.maxYear));
   state.yearTo   = isNaN(yt)? state.maxYear : Math.max(state.minYear, Math.min(yt, state.maxYear));
@@ -979,7 +1008,7 @@ async function boot(){
   els.btnFilter.addEventListener('click', ()=>{ syncDialogChecks(); (typeof HTMLDialogElement!=='undefined'? els.filterDlg.showModal(): (els.filterDlg.open=true)); });
   els.btnSort.addEventListener('click', ()=>{ syncDialogChecks(); (typeof HTMLDialogElement!=='undefined'? els.sortDlg.showModal(): (els.sortDlg.open=true)); });
   els.btnApplyFilters?.closest('form')?.addEventListener('submit', (e)=>{ e.preventDefault(); applyFiltersFromDialog(); (els.filterDlg.close?.()|| (els.filterDlg.open=false)); render(); });
-  els.btnResetFilters.addEventListener('click', ()=>{ state.types.clear(); state.subsets.clear(); state.yearFrom = state.minYear; state.yearTo = state.maxYear; syncDialogChecks(); render(); });
+  els.btnResetFilters.addEventListener('click', ()=>{ state.types.clear(); state.authKinds.clear(); state.subsets.clear(); state.yearFrom = state.minYear; state.yearTo = state.maxYear; syncDialogChecks(); render(); });
   els.btnResetYear.addEventListener('click', ()=>{ state.yearFrom = state.minYear; state.yearTo = state.maxYear; syncDialogChecks(); });
   els.btnApplySort?.closest('form')?.addEventListener('submit', (e)=>{ e.preventDefault(); applySortFromDialog(); (els.sortDlg.close?.()|| (els.sortDlg.open=false)); render(); });
 }
