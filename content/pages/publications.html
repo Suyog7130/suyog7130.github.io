@@ -5,43 +5,25 @@ hideTags: true
 showTOC: false
 ---
 
-<!-- ===== Dependencies (icons + Dimensions badge) ===== -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
-<!-- =========================
-     INTERACTIVE QUICK VIEW
-     ========================= -->
 <section class="pubs-root">
   <!-- <h2 style="margin:0 0 .6rem 0">Publications — Quick View (interactive)</h2> -->
-
   <div class="pub-controls" role="region" aria-label="Publications controls">
     <button id="btnFilter" class="pub-btn"><i class="fa fa-filter" aria-hidden="true"></i> Filter</button>
     <button id="btnSort" class="pub-btn"><i class="fa fa-sort" aria-hidden="true"></i> Sort</button>
     <span id="countLabel" class="pub-count" aria-live="polite"></span>
   </div>
-
   <div id="activeFilters" class="active-filters" aria-live="polite"></div>
-
-  <!-- Reverse-numbered list renders here -->
   <ol id="pubList" class="pub-list" reversed></ol>
 
-  <!-- Filter dialog -->
   <dialog id="filterDialog" aria-label="Filter publications">
     <form method="dialog" class="dialog-form">
       <h3>Filter</h3>
-
-      <fieldset class="filter-group">
-        <legend>Type</legend>
-        <div id="filterTypes" class="filter-chips"><!-- populated by JS --></div>
-      </fieldset>
-
-      <fieldset class="filter-group">
-        <legend>Subset / Topic</legend>
-        <div id="filterSubsets" class="filter-chips"><!-- populated by JS --></div>
-      </fieldset>
-
+      <fieldset class="filter-group"><legend>Type</legend><div id="filterTypes" class="filter-chips"></div></fieldset>
+      <fieldset class="filter-group"><legend>Subset / Topic</legend><div id="filterSubsets" class="filter-chips"></div></fieldset>
       <fieldset class="filter-group">
         <legend>Year</legend>
         <div class="year-row">
@@ -50,7 +32,6 @@ showTOC: false
           <button id="btnResetYear" type="button" class="pub-btn pub-btn-secondary" style="margin-left:auto">Reset year</button>
         </div>
       </fieldset>
-
       <div class="dialog-actions">
         <button value="cancel" class="pub-btn pub-btn-secondary">Close</button>
         <button id="btnResetFilters" type="button" class="pub-btn pub-btn-secondary">Reset all</button>
@@ -59,7 +40,6 @@ showTOC: false
     </form>
   </dialog>
 
-  <!-- Sort dialog -->
   <dialog id="sortDialog" aria-label="Sort publications">
     <form method="dialog" class="dialog-form">
       <h3>Sort</h3>
@@ -76,7 +56,7 @@ showTOC: false
         <label class="radio"><input type="radio" name="sortMode" value="cites-desc"> Citations — most → fewest*</label>
         <label class="radio"><input type="radio" name="sortMode" value="cites-asc"> Citations — fewest → most*</label>
       </fieldset>
-      <p class="hint">* Sorting uses a numeric <code>cites</code> field from `.bib` when present; the on-card badge still shows live Dimensions counts from the DOI.</p>
+      <p class="hint">* Sorting uses a numeric <code>cites</code> field from the `.bib` when present. The on-card badge shows live Dimensions counts from DOI.</p>
       <div class="dialog-actions">
         <button value="cancel" class="pub-btn pub-btn-secondary">Close</button>
         <button id="btnApplySort" type="submit" class="pub-btn pub-btn-primary">Apply</button>
@@ -84,29 +64,23 @@ showTOC: false
     </form>
   </dialog>
 
-  <!-- Hover preview tooltip (used by Abstract button only) -->
   <div id="previewTip" class="preview-tip" role="tooltip" aria-hidden="true"></div>
+  <details id="pubs-debug" style="display:none;margin-top:1rem;"><summary>Debug</summary><pre id="pubs-debug-pre" style="white-space:pre-wrap"></pre></details>
 </section>
 
-<!-- =========================
-     STYLES (scoped, minimal)
-     ========================= -->
 <style>
   .pub-controls{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin:0 0 1rem 0}
   .pub-btn{border:1px solid var(--mm-btn-border,#d0d7de);padding:.4rem .7rem;border-radius:.5rem;background:#fff;cursor:pointer;font:inherit}
   .pub-btn:hover{background:#f6f8fa}
   .pub-btn-primary{background:#1f6feb;color:#fff;border-color:#1f6feb}
-  .pub-btn-primary:hover{filter:brightness(0.95)}
   .pub-btn-secondary{background:#fff;color:#24292f}
   .hint{font-size:.85rem;color:#667}
-
   .pub-count{margin-left:auto;font-size:.95rem;color:#555}
   .active-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem 0}
   .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:999px;padding:.2rem .55rem;font-size:.85rem;background:#fff}
   .chip button{all:unset;cursor:pointer;display:inline-flex}
   .chip .fa{font-size:.8em;color:#555}
-
-  .pub-list{counter-reset: none; padding-left: 1.2rem}
+  .pub-list{counter-reset:none;padding-left:1.2rem}
   .pub-item{margin:0 0 .9rem 0;padding:0 0 .9rem 0;border-bottom:1px dashed #e5e7eb}
   .pub-title{font-weight:600;line-height:1.35;margin:0}
   .pub-title a{text-decoration:none}
@@ -117,10 +91,9 @@ showTOC: false
   .actions{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.35rem}
   .btn-chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:.5rem;padding:.25rem .45rem;font-size:.85rem;background:#fff;text-decoration:none;line-height:1}
   .btn-chip:hover{background:#f6f8fa}
-  .btn-chip .fa, .btn-chip .ai{font-size:.9em}
+  .btn-chip .fa,.btn-chip .ai{font-size:.9em}
   .btn-badge{padding:.2rem .35rem}
   .btn-badge .__dimensions_Badge_Font{font-size:.82em!important}
-
   dialog{border:none;border-radius:12px;padding:1rem 1rem 1.2rem 1rem;max-width:720px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15)}
   .dialog-form h3{margin:.3rem 0 .7rem 0}
   .filter-group{margin:.6rem 0}
@@ -130,10 +103,8 @@ showTOC: false
   .radio{display:flex;gap:.5rem;align-items:center;margin:.25rem 0}
   .dialog-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.8rem}
   .year-row{display:flex;gap:.6rem;align-items:center}
-
   .preview-tip{position:fixed;max-width:520px;background:#111;color:#fff;padding:.6rem .75rem;border-radius:.5rem;font-size:.92rem;line-height:1.35;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:99;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .12s ease,transform .12s ease}
   .preview-tip[data-show="true"]{opacity:1;transform:translateY(0)}
-
   @media (prefers-color-scheme: dark){
     .pub-btn,.chip,.chip-toggle,.btn-chip{background:#0d1117;border-color:#30363d;color:#c9d1d9}
     .pub-btn:hover,.btn-chip:hover{background:#161b22}
@@ -144,18 +115,12 @@ showTOC: false
   }
 </style>
 
-<!-- =========================
-     DATA + RENDER LOGIC
-     ========================= -->
 <script>
-/*** ====== SETTINGS ====== ***/
-const BIB_PATH = "../../assets/bib/publications.bib";   // <- set your .bib path here
-const PROJECT_URL_MAP = {
-  // "apj2019-waldmeier": "/research/waldmeier-effect/",
-  // "your-citekey-here": "/research/your-project/"
-};
+/** ===== Settings ===== */
+const USER_PREFERRED_PATH = "/bib/publications.bib"; // file in ../../static/
+const PROJECT_URL_MAP = { /* "citekey": "/projects/..." */ };
 const VENUE_SHORT = {
-  "The Astrophysical Journal":"ApJ", "Astrophysical Journal":"ApJ",
+  "The Astrophysical Journal":"ApJ","Astrophysical Journal":"ApJ",
   "Research Notes of the American Astronomical Society":"RNAAS",
   "Proceedings of Science":"PoS","PoS (ICRC2023)":"PoS",
   "Monthly Notices of the Royal Astronomical Society":"MNRAS",
@@ -163,7 +128,7 @@ const VENUE_SHORT = {
   "arXiv e-prints":"arXiv"
 };
 
-/*** ====== STATE ====== ***/
+/** ===== State/els ===== */
 const els = {
   list: document.getElementById('pubList'),
   count: document.getElementById('countLabel'),
@@ -181,80 +146,109 @@ const els = {
   yearFrom: document.getElementById('yearFrom'),
   yearTo: document.getElementById('yearTo'),
   btnResetYear: document.getElementById('btnResetYear'),
+  dbgWrap: document.getElementById('pubs-debug'),
+  dbg: document.getElementById('pubs-debug-pre'),
 };
-
 const state = {
-  all: [],            // all PUBS from .bib
-  sortMode: 'year-desc',
-  types: new Set(),   // empty = all
-  subsets: new Set(), // empty = all
-  yearFrom: null,
-  yearTo: null,
-  minYear: null,
-  maxYear: null
+  all: [], sortMode: 'year-desc', types: new Set(), subsets: new Set(),
+  yearFrom: null, yearTo: null, minYear: null, maxYear: null
 };
+const DEBUG = /[?&]pubsdebug=1/.test(location.search);
 
-/*** ====== UTILS ====== ***/
+/** ===== Debug helper ===== */
+function logd(...a){ if(DEBUG){ console.log('[pubs]',...a); els.dbgWrap.style.display='block'; els.dbg.textContent += a.map(x=>typeof x==='string'?x:JSON.stringify(x,null,2)).join(' ')+'\n'; }}
+
+/** ===== Path resolution & robust fetch ===== */
+function candidateBibPaths(pref){
+  const main = (pref && pref.trim()) ? pref.trim() : 'publications.bib';
+  // try exactly the same directory, nothing else
+  return [main];
+}
+async function tryFetch(paths){
+  for(const p of paths){
+    try{
+      const url = new URL(p, document.baseURI).href;
+      logd('Trying', url);
+      const res = await fetch(url, {cache:'no-cache'});
+      if(res.ok){
+        const txt = await res.text();
+        if(txt && txt.trim().length){
+          logd('Loaded', url, 'bytes=', txt.length);
+          return {text: txt, url};
+        }
+      }else{
+        logd('Non-OK', url, res.status);
+      }
+    }catch(e){ logd('Fetch error', p, String(e)); }
+  }
+  throw new Error('Could not load .bib from any candidate path.');
+}
+
+/** ===== BibTeX utilities ===== */
 function uniqueSorted(arr){ return [...new Set(arr)].sort((a,b)=>a.localeCompare(b,'en',{sensitivity:'base'})); }
 function trimBraces(str){ return (str||'').replace(/^{|}$/g,''); }
 function untex(s){
   if(!s) return '';
   return s
-    .replace(/\\&/g,'&')
-    .replace(/\\%/g,'%')
-    .replace(/{\\'a}/g,'á').replace(/\\'a/g,'á')
-    .replace(/{\\"o}/g,'ö').replace(/\\"o/g,'ö')
-    .replace(/[{}]/g,''); // crude but keeps things clean
+    .replace(/\\&/g,'&').replace(/\\%/g,'%')
+    .replace(/{\\\'?a}/g,'á').replace(/\\\'a/g,'á')
+    .replace(/{\\\"o}/g,'ö').replace(/\\"o/g,'ö')
+    .replace(/{\\\'?e}/g,'é').replace(/\\\'e/g,'é')
+    .replace(/{\\\'?i}/g,'í').replace(/\\\'i/g,'í')
+    .replace(/{\\\'?o}/g,'ó').replace(/\\\'o/g,'ó')
+    .replace(/{\\\'?u}/g,'ú').replace(/\\\'u/g,'ú')
+    .replace(/\\textendash/g,'–').replace(/\\textemdash/g,'—')
+    .replace(/\$[^$]*\$/g,'') // strip inline math
+    .replace(/[{}]/g,'')      // drop remaining braces
+    .replace(/\s+/g,' ')
+    .trim();
 }
 function authorToShort(a){
-  // handle "Last, First Middle" OR "First Middle Last"
   a = a.trim();
   if(a.includes(',')){
     const [last, firsts] = a.split(',',2).map(s=>s.trim());
-    return (firsts||'').split(/\s+/).filter(Boolean).map(x=>x[0].toUpperCase()+'.').join(' ') + ' ' + last;
+    const inits = (firsts||'').split(/\s+/).filter(Boolean).map(x=>x[0].toUpperCase()+'.').join(' ');
+    return (inits? inits+' ' : '') + last;
   }else{
     const parts = a.split(/\s+/).filter(Boolean);
-    const last = parts.pop();
-    const inits = parts.map(x=>x[0].toUpperCase()+'.').join(' ');
-    return (inits ? inits+' ' : '') + last;
+    const last = parts.pop(); const inits = parts.map(x=>x[0].toUpperCase()+'.').join(' ');
+    return (inits? inits+' ' : '') + last;
   }
 }
-function authorArrayToShort(list){
-  if(!list || !list.length) return '';
-  if(list.length<=3) return list.map(authorToShort).join(', ');
-  return authorToShort(list[0]) + ' et al.';
-}
+function authorArrayToShort(list){ if(!list?.length) return ''; return list.length<=3 ? list.map(authorToShort).join(', ') : authorToShort(list[0])+' et al.'; }
 function pagesToLen(p){
   if(!p) return null;
-  const m = p.match(/(\d+)\s*[-–—]\s*(\d+)/);
+  const m = p.match(/([A-Za-z]?)(\d+)\s*[-–—]\s*([A-Za-z]?)(\d+)/);
   if(!m) return null;
-  const a = parseInt(m[1],10), b = parseInt(m[2],10);
+  // if letters differ, just return null to avoid nonsense
+  if((m[1]||'') !== (m[3]||'')) return null;
+  const a = parseInt(m[2],10), b = parseInt(m[4],10);
   if(isNaN(a)||isNaN(b)) return null;
   return Math.max(0, b - a + 1);
 }
-function firstAuthorKey(p){ return (p.authors && p.authors[0] || '').toLowerCase(); }
 function venueShort(v){ return VENUE_SHORT[v] || v || ''; }
+function firstAuthorKey(p){ return (p.authors && p.authors[0] || '').toLowerCase(); }
 function scholarLink(title, firstAuthor){
   const q = [title, firstAuthor ? firstAuthor.split(',')[0] : ''].filter(Boolean).join(' ');
   return 'https://scholar.google.com/scholar?q=' + encodeURIComponent(q);
 }
 
-/*** ====== BIBTEX PARSER (lightweight, tolerant) ====== ***/
+/** ===== BibTeX parser with @string and # concat ===== */
 function parseBibTeX(input){
-  const text = input.replace(/^[ \t]*%.*$/gm,''); // strip % comments
+  const text = input.replace(/^[ \t]*%.*$/gm,''); // strip % line comments
+  const strings = Object.create(null);
   const entries = [];
-  let i = 0;
+  let i=0;
   while(true){
     const at = text.indexOf('@', i);
     if(at === -1) break;
-    // read type
     const braceIdx = text.indexOf('{', at);
     const parenIdx = text.indexOf('(', at);
     let open = braceIdx, closeCh = '}';
     if(parenIdx !== -1 && (braceIdx === -1 || parenIdx < braceIdx)){ open = parenIdx; closeCh = ')'; }
     if(open === -1) break;
     const type = text.slice(at+1, open).trim().toLowerCase();
-    // read until matching closing
+    // read block
     let depth = 0, j = open, end = -1;
     for(; j < text.length; j++){
       const ch = text[j];
@@ -263,7 +257,18 @@ function parseBibTeX(input){
     }
     if(end === -1) break;
     const body = text.slice(open+1, end).trim();
-    // citekey up to first comma at depth 0
+    i = end + 1;
+    if(type==='comment' || type==='preamble'){ continue; }
+    if(type==='string'){
+      const m = body.match(/^\s*([^=]+?)\s*=\s*(.+)\s*$/s);
+      if(m){
+        const key = m[1].trim().toLowerCase();
+        const val = parseValue(m[2].trim());
+        strings[key] = val;
+      }
+      continue;
+    }
+    // normal entry
     let k=0, keyEnd=-1, d=0;
     for(; k<body.length; k++){
       const ch = body[k];
@@ -271,166 +276,157 @@ function parseBibTeX(input){
       if(ch === '}') d--;
       if(ch === ',' && d===0){ keyEnd = k; break; }
     }
-    if(keyEnd === -1){ i = end+1; continue; }
+    if(keyEnd === -1) continue;
     const citekey = body.slice(0,keyEnd).trim();
     const fieldsText = body.slice(keyEnd+1).trim();
     const fields = {};
-    // parse fields name = value, respecting braces/quotes
     let p=0;
     while(p < fieldsText.length){
-      // skip commas/whitespace
       while(p<fieldsText.length && /[\s,]/.test(fieldsText[p])) p++;
       if(p>=fieldsText.length) break;
-      // read name
       const nameStart = p;
       while(p<fieldsText.length && /[A-Za-z_]/.test(fieldsText[p])) p++;
       const name = fieldsText.slice(nameStart,p).toLowerCase();
       while(p<fieldsText.length && /\s/.test(fieldsText[p])) p++;
-      if(fieldsText[p] !== '='){ // malformed
-        while(p<fieldsText.length && fieldsText[p]!==',') p++;
-        continue;
-      }
-      p++; // skip '='
-      while(p<fieldsText.length && /\s/.test(fieldsText[p])) p++;
-      // read value
-      let val = '';
-      if(fieldsText[p] === '{'){
-        let depth2=0;
-        p++;
-        const start=p;
-        for(; p<fieldsText.length; p++){
-          const ch=fieldsText[p];
-          if(ch==='{') depth2++;
-          else if(ch==='}'){
-            if(depth2===0){ val = fieldsText.slice(start,p); p++; break; }
-            depth2--;
-          }
-        }
-      }else if(fieldsText[p] === '"'){
-        p++;
-        const start=p;
-        for(; p<fieldsText.length; p++){
-          if(fieldsText[p]==='"' && fieldsText[p-1] !== '\\'){ val = fieldsText.slice(start,p); p++; break; }
-        }
-      }else{
-        const start=p;
-        while(p<fieldsText.length && /[^,\s]/.test(fieldsText[p])) p++;
-        val = fieldsText.slice(start,p);
-      }
-      fields[name] = val.trim();
-      // continue to next
+      if(fieldsText[p] !== '='){ while(p<fieldsText.length && fieldsText[p]!==',') p++; continue; }
+      p++; while(p<fieldsText.length && /\s/.test(fieldsText[p])) p++;
+      const {value, next} = parseValueWithConcat(fieldsText, p, strings);
+      p = next;
+      fields[name] = value.trim();
     }
     entries.push({type, key: citekey, fields});
-    i = end+1;
   }
   return entries;
+
+  function parseValueWithConcat(s, idx, strings){
+    const parts = [];
+    let p = idx;
+    while(p < s.length){
+      // skip spaces
+      while(p<s.length && /\s/.test(s[p])) p++;
+      if(p>=s.length) break;
+      let {value, next} = parseValueToken(s, p, strings);
+      parts.push(value);
+      p = next;
+      while(p<s.length && /\s/.test(s[p])) p++;
+      if(s[p] === '#'){ p++; continue; }
+      break;
+    }
+    // move to next comma at depth 0
+    while(p<s.length && s[p]!==',') p++;
+    if(p<s.length && s[p]===',') p++;
+    return {value: parts.join(''), next: p};
+  }
+  function parseValueToken(s, p, strings){
+    if(s[p] === '{'){
+      let depth=0; p++; const start=p;
+      for(; p<s.length; p++){
+        const ch=s[p];
+        if(ch==='{') depth++;
+        else if(ch==='}'){ if(depth===0){ const raw=s.slice(start,p); p++; return {value: raw, next:p}; } depth--; }
+      }
+      return {value:'', next:p};
+    }else if(s[p] === '"'){
+      p++; const start=p;
+      for(; p<s.length; p++){ if(s[p]==='"' && s[p-1] !== '\\'){ const raw=s.slice(start,p); p++; return {value: raw, next:p}; } }
+      return {value:'', next:p};
+    }else{
+      const start=p;
+      while(p<s.length && /[^,\s#)}/]/.test(s[p])) p++;
+      const token = s.slice(start,p).trim();
+      const key = token.toLowerCase();
+      const val = (strings[key] ?? token);
+      return {value: val, next:p};
+    }
+  }
+  function parseValue(val){
+    val = val.trim();
+    if(val.startsWith('{') || val.startsWith('"')) return trimBraces(val.replace(/^"|"$/g,''));
+    const k = val.toLowerCase(); return strings[k] ?? val;
+  }
 }
 
-/*** ====== MAP BIB ENTRY -> PUB ITEM ====== ***/
+/** ===== Map Bib to UI ===== */
 function bibToPub(e){
   const f = e.fields;
-  const typeMap = {
-    article:'Journal', inproceedings:'Conference', incollection:'Conference',
-    phdthesis:'Thesis', mastersthesis:'Thesis', thesis:'Thesis',
-    techreport:'Report', book:'Book', misc: (f.eprint||f.archiveprefix)?'Preprint':'Other',
-    unpublished:'Preprint'
-  };
+  const typeMap = {article:'Journal',inproceedings:'Conference',incollection:'Conference',phdthesis:'Thesis',mastersthesis:'Thesis',thesis:'Thesis',techreport:'Report',book:'Book',misc:(f.eprint||f.archiveprefix)?'Preprint':'Other',unpublished:'Preprint'};
   const typ = typeMap[e.type] || 'Other';
-
   const authors = (f.author||'').split(/\s+and\s+/i).map(untex).filter(Boolean);
   const year = parseInt((f.year||'').match(/\d{4}/)?.[0]||'');
   const month = (f.month||'').toString().padStart(2,'0');
   const date = (year? String(year):'') + (month? '-' + month : '');
-
   const title = untex(trimBraces(f.title||'')).replace(/\s+/g,' ').trim();
   const venue = untex(f.journal || f.booktitle || f.school || f.publisher || '');
   const vShort = venueShort(venue);
-
   const doi = (f.doi||'').replace(/^https?:\/\/(dx\.)?doi\.org\//,'').trim() || '';
   const url = (f.url||'').trim();
   const eprint = (f.eprint||'').trim();
   const arxiv = /^arxiv$/i.test(f.archiveprefix||'') || /^arXiv:/i.test(eprint) ? (eprint.replace(/^arXiv:/i,'')) : '';
   const preprintUrl = arxiv ? ('https://arxiv.org/abs/' + arxiv) : ( /^https?:\/\/arxiv\.org\/abs\//.test(url) ? url : '' );
   const paperUrl = doi ? ('https://doi.org/' + doi) : ( url && !preprintUrl ? url : '' );
-
   const pages = f.pages ? untex(f.pages) : '';
   const length = pagesToLen(pages);
   const cites = parseInt((f.cites||'').toString(),10);
   const abstract = untex(f.abstract || '');
-
   const keywords = (f.keywords||f.keyword||'').split(/[,;]/).map(s=>s.trim()).filter(Boolean);
   const subsets = keywords.length ? keywords : (venue ? [vShort] : []);
-
-  // External extras (custom fields you may add in .bib)
   const codeUrl = f.code || f.github || '';
   const dataUrl = f.data || f.dataset || '';
-
   return {
-    id: e.key,
-    year, date, type: typ,
-    title, shortTitle: title, // keep same unless you want to add a custom field later
-    authors, venue, venueShort: vShort,
+    id: e.key, year, date, type: typ,
+    title, shortTitle: title, authors, venue, venueShort: vShort,
     volume: f.volume||'', issue: f.number||'', pages,
     doi: doi || null, arxiv: arxiv || null,
     paperUrl: paperUrl || null, preprintUrl: preprintUrl || null,
-    codeUrl: codeUrl || null, dataUrl: dataUrl || null,
-    url: url || null,
-    abstract, subsets,
-    length: (length||null),
-    citations: isNaN(cites)? null : cites
+    codeUrl: codeUrl || null, dataUrl: dataUrl || null, url: url || null,
+    abstract, subsets, length: (length||null), citations: isNaN(cites)? null : cites
   };
 }
 
-/*** ====== RENDERING ====== ***/
+/** ===== UI helpers ===== */
 function initFilters(pubs){
   const allTypes = uniqueSorted(pubs.map(p=>p.type));
   const allSubsets = uniqueSorted(pubs.flatMap(p=>p.subsets||[]));
   const years = pubs.map(p=>p.year).filter(Boolean);
-  state.minYear = Math.min(...years);
-  state.maxYear = Math.max(...years);
+  state.minYear = Math.min(...years); state.maxYear = Math.max(...years);
   state.yearFrom = state.minYear; state.yearTo = state.maxYear;
-
-  // Build type chips
-  els.filterTypes.innerHTML = allTypes.map(t => `
-    <label class="chip-toggle"><input type="checkbox" value="${t}"> ${t}</label>
-  `).join('');
-
-  // Build subset chips
-  els.filterSubsets.innerHTML = allSubsets.map(s => `
-    <label class="chip-toggle"><input type="checkbox" value="${s}"> ${s}</label>
-  `).join('');
-
+  els.filterTypes.innerHTML = allTypes.map(t=>`<label class="chip-toggle"><input type="checkbox" value="${t}"> ${t}</label>`).join('');
+  els.filterSubsets.innerHTML = allSubsets.map(s=>`<label class="chip-toggle"><input type="checkbox" value="${s}"> ${s}</label>`).join('');
   els.yearFrom.min = els.yearTo.min = String(state.minYear);
   els.yearFrom.max = els.yearTo.max = String(state.maxYear);
-  els.yearFrom.value = String(state.yearFrom);
-  els.yearTo.value = String(state.yearTo);
+  els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
 }
-
-function linkForTitle(p){
-  return PROJECT_URL_MAP[p.id] || p.paperUrl || p.preprintUrl || (p.doi ? `https://doi.org/${p.doi}` : (p.url || '#'));
-}
+function linkForTitle(p){ return PROJECT_URL_MAP[p.id] || p.paperUrl || p.preprintUrl || (p.doi ? `https://doi.org/${p.doi}` : (p.url || '#')); }
 function button(label, iconClass, url){
   if(!url) return '';
   const safe = url.replace(/"/g,'%22');
-  return `<a class="btn-chip" href="${safe}" target="_blank" rel="noopener">
-    <i class="${iconClass}" aria-hidden="true"></i> ${label}
-  </a>`;
+  return `<a class="btn-chip" href="${safe}" target="_blank" rel="noopener"><i class="${iconClass}" aria-hidden="true"></i> ${label}</a>`;
 }
-function dimsBadge(doi){
-  if(!doi) return '';
-  return `<span class="btn-chip btn-badge">
-    <span class="__dimensions_badge_embed__" data-doi="${doi}" data-hide-zero-citations="true" data-style="small_rectangle"></span>
-  </span>`;
+function dimsBadge(doi){ return doi ? `<span class="btn-chip btn-badge" data-has-badge="1"><span class="__dimensions_badge_embed__" data-doi="${doi}" data-hide-zero-citations="true" data-style="small_rectangle"></span></span>` : ''; }
+// Remove empty/hidden Dimensions badges (no citation count)
+function cleanupEmptyBadges(){
+  document.querySelectorAll('.btn-badge').forEach(w=>{
+    const badgeEl = w.querySelector('.__dimensions_Badge, .__dimensions_badge_embed__');
+    if(!badgeEl) { 
+      w.remove(); 
+      return; 
+    }
+    const cs = getComputedStyle(badgeEl);
+    const invisible = cs.display === 'none' || cs.visibility === 'hidden' || badgeEl.textContent.trim() === '';
+    if(invisible || w.offsetWidth < 8) {
+      w.remove();
+    }
+  });
 }
-
-function passesFilters(p){
-  const tOK = state.types.size ? state.types.has(p.type) : true;
-  const sOK = state.subsets.size ? (p.subsets||[]).some(s=>state.subsets.has(s)) : true;
-  const yOK = (!state.yearFrom || !p.year || p.year >= state.yearFrom) &&
-              (!state.yearTo   || !p.year || p.year <= state.yearTo);
-  return tOK && sOK && yOK;
+function renderActiveFilters(){
+  const chips=[]; state.types.forEach(t=>chips.push(`<span class="chip">Type: ${t}<button aria-label="Remove ${t}" data-x-type="${t}"><i class="fa fa-times"></i></button></span>`));
+  state.subsets.forEach(s=>chips.push(`<span class="chip">Topic: ${s}<button aria-label="Remove ${s}" data-x-subset="${s}"><i class="fa fa-times"></i></button></span>`));
+  if(state.yearFrom!==state.minYear || state.yearTo!==state.maxYear){ chips.push(`<span class="chip">Years: ${state.yearFrom}–${state.yearTo}<button aria-label="Reset years" data-x-year="1"><i class="fa fa-times"></i></button></span>`); }
+  els.activeFilters.innerHTML = chips.join('');
+  els.activeFilters.querySelectorAll('button[data-x-type]').forEach(b=>b.addEventListener('click',()=>{ state.types.delete(b.dataset.xType); syncDialogChecks(); render(); }));
+  els.activeFilters.querySelectorAll('button[data-x-subset]').forEach(b=>b.addEventListener('click',()=>{ state.subsets.delete(b.dataset.xSubset); syncDialogChecks(); render(); }));
+  els.activeFilters.querySelectorAll('button[data-x-year]').forEach(b=>b.addEventListener('click',()=>{ state.yearFrom=state.minYear; state.yearTo=state.maxYear; syncDialogChecks(); render(); }));
 }
-
 function sortPubs(list){
   const m = state.sortMode;
   return [...list].sort((a,b)=>{
@@ -447,180 +443,96 @@ function sortPubs(list){
     return 0;
   });
 }
-
-function renderActiveFilters(){
-  const chips = [];
-  state.types.forEach(t=>{
-    chips.push(`<span class="chip">Type: ${t}<button aria-label="Remove ${t}" data-x-type="${t}"><i class="fa fa-times"></i></button></span>`);
-  });
-  state.subsets.forEach(s=>{
-    chips.push(`<span class="chip">Topic: ${s}<button aria-label="Remove ${s}" data-x-subset="${s}"><i class="fa fa-times"></i></button></span>`);
-  });
-  if(state.yearFrom!==state.minYear || state.yearTo!==state.maxYear){
-    chips.push(`<span class="chip">Years: ${state.yearFrom}–${state.yearTo}<button aria-label="Reset years" data-x-year="1"><i class="fa fa-times"></i></button></span>`);
-  }
-  els.activeFilters.innerHTML = chips.join('');
-  els.activeFilters.querySelectorAll('button[data-x-type]').forEach(b=>{
-    b.addEventListener('click',()=>{ state.types.delete(b.dataset.xType); syncDialogChecks(); render(); });
-  });
-  els.activeFilters.querySelectorAll('button[data-x-subset]').forEach(b=>{
-    b.addEventListener('click',()=>{ state.subsets.delete(b.dataset.xSubset); syncDialogChecks(); render(); });
-  });
-  els.activeFilters.querySelectorAll('button[data-x-year]').forEach(b=>{
-    b.addEventListener('click',()=>{ state.yearFrom=state.minYear; state.yearTo=state.maxYear; syncDialogChecks(); render(); });
-  });
-}
-
 function render(){
   const filtered = state.all.filter(p=>passesFilters(p));
   const sorted = sortPubs(filtered);
   els.list.setAttribute('start', String(sorted.length));
   els.list.innerHTML = sorted.map(p=>{
-    const titleUrl = linkForTitle(p);
     const meta = `${authorArrayToShort(p.authors)} — ${p.venueShort || p.venue || ''}${p.year ? ' ('+p.year+')' : ''}${p.type ? ' • '+p.type : ''}${p.length? ' • ' + p.length + ' pp.' : ''}`;
     const subsetChips = (p.subsets||[]).map(s=>`<span class="subset">${s}</span>`).join('');
     const actions = [
-      button('Paper','fa fa-file-pdf',p.paperUrl),
-      button('Preprint','fa fa-edit',p.preprintUrl),
-      button('Code','fa fa-code',p.codeUrl),
-      button('Data','fa fa-database',p.dataUrl),
+      button('Paper','fa-solid fa-file-pdf',p.paperUrl),
+      button('Preprint','ai ai-arxiv',p.preprintUrl),
+      button('Code','fa-solid fa-code',p.codeUrl),
+      button('Data','fa-solid fa-database',p.dataUrl),
       button('DOI','ai ai-doi', p.doi ? `https://doi.org/${p.doi}` : null),
       button('Scholar','ai ai-google-scholar', scholarLink(p.title, p.authors?.[0]||'')),
       p.doi ? dimsBadge(p.doi) : ''
     ].join('');
     const absBtn = p.abstract ? `<a class="btn-chip abstract-btn" href="javascript:void(0)" data-abstract="${p.abstract.replace(/"/g,'&quot;')}"><i class="fa fa-align-left"></i> Abstract</a>` : '';
+    // <div class="subsets">${subsetChips}</div> <!-- optionally show subsets/tags/subjects on each item below!! -->
     return `
       <li class="pub-item">
-        <p class="pub-title">
-          <a href="${titleUrl}" class="title-link">${p.title}</a>
-        </p>
+        <p class="pub-title"><a href="${linkForTitle(p)}" class="title-link">${p.title}</a></p>
         <div class="pub-meta">${meta}</div>
-        <div class="subsets">${subsetChips}</div>
         <div class="actions">${actions} ${absBtn}</div>
-      </li>
-    `;
+      </li>`;
   }).join('');
-
   els.count.textContent = `Showing ${sorted.length} of ${state.all.length}`;
-  renderActiveFilters();
-  wireAbstractHover();
+  renderActiveFilters(); wireAbstractHover();
+  setTimeout(cleanupEmptyBadges, 300); // let Dimensions badges load
+  setTimeout(cleanupEmptyBadges, 1200); // second pass after load
+  window.addEventListener('load', ()=> setTimeout(cleanupEmptyBadges, 1000));
 }
-
+function passesFilters(p){
+  const tOK = state.types.size ? state.types.has(p.type) : true;
+  const sOK = state.subsets.size ? (p.subsets||[]).some(s=>state.subsets.has(s)) : true;
+  const yOK = (!state.yearFrom || !p.year || p.year >= state.yearFrom) && (!state.yearTo || !p.year || p.year <= state.yearTo);
+  return tOK && sOK && yOK;
+}
 function wireAbstractHover(){
   document.querySelectorAll('.abstract-btn').forEach(btn=>{
-    btn.addEventListener('mouseenter', e=>{
-      showTip(btn.dataset.abstract || '', e.clientX, e.clientY);
-    });
-    btn.addEventListener('mousemove', e=>{
-      if(els.tip.getAttribute('data-show') === 'true'){
-        positionTip(e.clientX, e.clientY);
-      }
-    });
+    btn.addEventListener('mouseenter', e=>{ showTip(btn.dataset.abstract || '', e.clientX, e.clientY); });
+    btn.addEventListener('mousemove', e=>{ if(els.tip.getAttribute('data-show')==='true'){ positionTip(e.clientX,e.clientY); }});
     ['mouseleave','blur'].forEach(ev=>btn.addEventListener(ev, hideTip));
   });
 }
-
 function syncDialogChecks(){
-  // Types
-  els.filterTypes.querySelectorAll('input[type=checkbox]').forEach(cb=>{
-    cb.checked = state.types.has(cb.value);
-  });
-  // Subsets
-  els.filterSubsets.querySelectorAll('input[type=checkbox]').forEach(cb=>{
-    cb.checked = state.subsets.has(cb.value);
-  });
-  // Sort radios
-  els.sortDlg.querySelectorAll('input[name=sortMode]').forEach(r=>{
-    r.checked = (r.value === state.sortMode);
-  });
-  // Years
-  els.yearFrom.value = String(state.yearFrom);
-  els.yearTo.value = String(state.yearTo);
+  els.filterTypes.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.types.has(cb.value); });
+  els.filterSubsets.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.subsets.has(cb.value); });
+  els.sortDlg.querySelectorAll('input[name=sortMode]').forEach(r=>{ r.checked = (r.value === state.sortMode); });
+  els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
 }
-
 function applyFiltersFromDialog(){
-  const newTypes = new Set();
-  els.filterTypes.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newTypes.add(cb.value));
-  const newSubs = new Set();
-  els.filterSubsets.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newSubs.add(cb.value));
-  state.types = newTypes;
-  state.subsets = newSubs;
-  // Years
+  const newTypes = new Set(); els.filterTypes.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newTypes.add(cb.value));
+  const newSubs  = new Set(); els.filterSubsets.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newSubs.add(cb.value));
+  state.types = newTypes; state.subsets = newSubs;
   const yf = parseInt(els.yearFrom.value,10), yt = parseInt(els.yearTo.value,10);
   state.yearFrom = isNaN(yf)? state.minYear : Math.max(state.minYear, Math.min(yf, state.maxYear));
   state.yearTo   = isNaN(yt)? state.maxYear : Math.max(state.minYear, Math.min(yt, state.maxYear));
   if(state.yearFrom > state.yearTo){ const t = state.yearFrom; state.yearFrom = state.yearTo; state.yearTo = t; }
 }
+function applySortFromDialog(){ const sel = els.sortDlg.querySelector('input[name=sortMode]:checked'); if(sel) state.sortMode = sel.value; }
+function showTip(text,x,y){ if(!text) return; els.tip.textContent = text; els.tip.setAttribute('data-show','true'); els.tip.setAttribute('aria-hidden','false'); positionTip(x,y); }
+function positionTip(x,y){ const pad=12,w=els.tip.offsetWidth,h=els.tip.offsetHeight; let left=x+pad, top=y+pad; if(left+w>innerWidth-8) left=x-w-pad; if(top+h>innerHeight-8) top=y-h-pad; els.tip.style.left=left+'px'; els.tip.style.top=top+'px'; }
+function hideTip(){ els.tip.removeAttribute('data-show'); els.tip.setAttribute('aria-hidden','true'); }
 
-function applySortFromDialog(){
-  const sel = els.sortDlg.querySelector('input[name=sortMode]:checked');
-  if(sel) state.sortMode = sel.value;
-}
-
-/*** ====== TIP ====== ***/
-function showTip(text, x, y){
-  if(!text) return;
-  els.tip.textContent = text;
-  els.tip.setAttribute('data-show','true');
-  els.tip.setAttribute('aria-hidden','false');
-  positionTip(x,y);
-}
-function positionTip(x,y){
-  const pad = 12;
-  const w = els.tip.offsetWidth, h = els.tip.offsetHeight;
-  let left = x + pad, top = y + pad;
-  if(left + w > window.innerWidth - 8) left = x - w - pad;
-  if(top + h > window.innerHeight - 8) top = y - h - pad;
-  els.tip.style.left = left + 'px';
-  els.tip.style.top = top + 'px';
-}
-function hideTip(){
-  els.tip.removeAttribute('data-show');
-  els.tip.setAttribute('aria-hidden','true');
-}
-
-/*** ====== DIALOG HELPERS ====== ***/
-function supportsDialog(){ return typeof HTMLDialogElement !== 'undefined'; }
-function openDialog(dlg){ supportsDialog()? dlg.showModal() : (dlg.open=true, dlg.style.display='block'); }
-function closeDialog(dlg){ supportsDialog()? dlg.close()     : (dlg.open=false, dlg.style.display='none'); }
-
-/*** ====== BOOT ====== ***/
+/** ===== Boot ===== */
 async function boot(){
-  const bibText = await fetch(BIB_PATH).then(r=>r.text());
-  const entries = parseBibTeX(bibText);
-  state.all = entries.map(bibToPub);
-
-  initFilters(state.all);
-  syncDialogChecks();
-  render();
-
+  try{
+    const {text, url} = await tryFetch(candidateBibPaths(USER_PREFERRED_PATH));
+    const entries = parseBibTeX(text);
+    state.all = entries.map(bibToPub);
+    logd('Parsed entries:', entries.length, 'from', url);
+    if(!state.all.length){
+      logd('No entries parsed. First 400 chars:\n'+ text.slice(0,400));
+      els.list.innerHTML = '<li class="pub-item"><em>No publications found in .bib (enable ?pubsdebug=1 for details).</em></li>';
+      els.count.textContent = 'Showing 0 of 0';
+      return;
+    }
+    initFilters(state.all); syncDialogChecks(); render();
+  }catch(err){
+    logd('BOOT ERROR:', String(err));
+    els.list.innerHTML = `<li class="pub-item"><em>Could not load publications.bib.</em><br><small>${String(err)}</small></li>`;
+    els.count.textContent = '—';
+  }
   // wire controls
-  els.btnFilter.addEventListener('click', ()=>{ syncDialogChecks(); openDialog(els.filterDlg); });
-  els.btnSort.addEventListener('click', ()=>{ syncDialogChecks(); openDialog(els.sortDlg); });
-
-  els.btnApplyFilters?.closest('form')?.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    applyFiltersFromDialog();
-    closeDialog(els.filterDlg);
-    render();
-  });
-  els.btnResetFilters.addEventListener('click', ()=>{
-    state.types.clear(); state.subsets.clear();
-    state.yearFrom = state.minYear; state.yearTo = state.maxYear;
-    syncDialogChecks(); render();
-  });
-  els.btnResetYear.addEventListener('click', ()=>{
-    state.yearFrom = state.minYear; state.yearTo = state.maxYear;
-    syncDialogChecks();
-  });
-
-  els.btnApplySort?.closest('form')?.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    applySortFromDialog();
-    closeDialog(els.sortDlg);
-    render();
-  });
+  els.btnFilter.addEventListener('click', ()=>{ syncDialogChecks(); (typeof HTMLDialogElement!=='undefined'? els.filterDlg.showModal(): (els.filterDlg.open=true)); });
+  els.btnSort.addEventListener('click', ()=>{ syncDialogChecks(); (typeof HTMLDialogElement!=='undefined'? els.sortDlg.showModal(): (els.sortDlg.open=true)); });
+  els.btnApplyFilters?.closest('form')?.addEventListener('submit', (e)=>{ e.preventDefault(); applyFiltersFromDialog(); (els.filterDlg.close?.()|| (els.filterDlg.open=false)); render(); });
+  els.btnResetFilters.addEventListener('click', ()=>{ state.types.clear(); state.subsets.clear(); state.yearFrom = state.minYear; state.yearTo = state.maxYear; syncDialogChecks(); render(); });
+  els.btnResetYear.addEventListener('click', ()=>{ state.yearFrom = state.minYear; state.yearTo = state.maxYear; syncDialogChecks(); });
+  els.btnApplySort?.closest('form')?.addEventListener('submit', (e)=>{ e.preventDefault(); applySortFromDialog(); (els.sortDlg.close?.()|| (els.sortDlg.open=false)); render(); });
 }
-
 document.addEventListener('DOMContentLoaded', boot);
 </script>
