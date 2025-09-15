@@ -348,8 +348,8 @@ function parseBibTeX(input){
 /*** ===== Map Bib entry -> Talk item ===== ***/
 function modalityFromFields(f){
   const raw = [f.modality, f.note, f.howpublished, f.venue].filter(Boolean).join(' ').toLowerCase();
-  const hasOnline = /online|virtual|zoom|vimeo|youtube|livestream/.test(raw);
-  const hasPlace  = /room|hall|campus|building|auditorium|street|avenue|road|rd\.|st\.|city|country|in-person|on-site|onsite/.test(raw);
+  const hasOnline = /online|virtual|zoom|vimeo|youtube|livestream/i.test(raw);
+  const hasPlace  = /room|hall|campus|building|auditorium|street|avenue|road|rd\.|st\.|city|country|in-person|on-site|onsite/i.test(raw);
   if(/hybrid/.test(raw)) return 'Hybrid';
   if(hasOnline && hasPlace) return 'Hybrid';
   if(hasOnline) return 'Online';
