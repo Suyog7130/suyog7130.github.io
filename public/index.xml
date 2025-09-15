@@ -1726,7 +1726,7 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
 
       &lt;fieldset class=&#34;filter-group&#34;&gt;
         &lt;legend&gt;Country&lt;/legend&gt;
-        &lt;input id=&#34;countryContains&#34; type=&#34;text&#34; placeholder=&#34;Contains… (e.g., Japan)&#34; style=&#34;width:100%;padding:.4rem .6rem;border-radius:.5rem;border:1px solid #d0d7de;&#34;/&gt;
+        &lt;input id=&#34;countryContains&#34; type=&#34;text&#34; placeholder=&#34;Contains… (e.g., Japan)&#34; style=&#34;width:100%;padding:.4rem .6rem;border-radius:.5rem;border:1px solid var(--border);&#34;/&gt;
       &lt;/fieldset&gt;
 
       &lt;fieldset class=&#34;filter-group&#34;&gt;
@@ -1772,47 +1772,61 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
 &lt;/section&gt;
 
 &lt;style&gt;
+  /* --- Theme tokens scoped to this page --- */
+  .talks-root{
+    --bg:#fff; --fg:#24292f; --muted:#555;
+    --chip-bg:#fff; --chip-fg:inherit; --chip-border:#d0d7de;
+    --btn-bg:#fff; --btn-fg:#24292f; --btn-border:#d0d7de; --btn-bg-hover:#f6f8fa;
+    --border:#d0d7de;
+  }
+  @media (prefers-color-scheme: dark){
+    .talks-root{
+      --bg:#161b22; --fg:#c9d1d9; --muted:#c9d1d9;
+      --chip-bg:#161b22; --chip-fg:#ffffff; --chip-border:#30363d;
+      --btn-bg:#161b22; --btn-fg:#ffffff; --btn-border:#30363d; --btn-bg-hover:#0d1117;
+      --border:#30363d;
+    }
+  }
+  html.dark .talks-root, :root[data-theme=&#34;dark&#34;] .talks-root, body.dark .talks-root{
+    --bg:#161b22; --fg:#c9d1d9; --muted:#c9d1d9;
+    --chip-bg:#161b22; --chip-fg:#ffffff; --chip-border:#30363d;
+    --btn-bg:#161b22; --btn-fg:#ffffff; --btn-border:#30363d; --btn-bg-hover:#0d1117;
+    --border:#30363d;
+  }
+
   .talks-controls{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin:0 0 1rem 0}
-  .talks-btn{border:1px solid var(--mm-btn-border,#d0d7de);padding:.4rem .7rem;border-radius:.5rem;background:#fff;cursor:pointer;font:inherit}
-  .talks-btn:hover{background:#f6f8fa}
+  .talks-btn{border:1px solid var(--btn-border);padding:.4rem .7rem;border-radius:.5rem;background:var(--btn-bg);color:var(--btn-fg);cursor:pointer;font:inherit}
+  .talks-btn:hover{background:var(--btn-bg-hover)}
   .talks-btn-primary{background:#1f6feb;color:#fff;border-color:#1f6feb}
-  .talks-btn-secondary{background:#fff;color:#24292f}
-  .talks-count{margin-left:auto;font-size:.95rem;color:#555}
+  .talks-btn-secondary{background:var(--btn-bg);color:var(--btn-fg)}
+  .talks-count{margin-left:auto;font-size:.95rem;color:var(--muted)}
 
   .active-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem 0}
-  .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:999px;padding:.2rem .55rem;font-size:.85rem;background:#fff}
+  .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--chip-border);border-radius:999px;padding:.2rem .55rem;font-size:.85rem;background:var(--chip-bg);color:var(--chip-fg)}
   .chip button{all:unset;cursor:pointer;display:inline-flex}
-  .chip .fa{font-size:.8em}
+  .chip .fa{font-size:.8em;color:inherit}
 
   .talks-list{counter-reset:none;padding-left:1.2rem}
   .talk-item{margin:0 0 .9rem 0;padding:0 0 .9rem 0}
   .talk-title{font-weight:600;line-height:1.35;margin:0}
   .talk-title a{text-decoration:none}
   .talk-title a:hover{text-decoration:underline}
-  .talk-meta{margin:.15rem 0 .45rem 0;font-size:.95rem}
+  .talk-meta{margin:.15rem 0 .45rem 0;font-size:.95rem;color:var(--fg)}
 
   .actions{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.35rem}
-  .btn-chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:.5rem;padding:.25rem .45rem;font-size:.85rem;background:#fff;text-decoration:none;line-height:1}
-  .btn-chip:hover{background:#f6f8fa}
-  .btn-chip .fa{font-size:.9em}
+  .btn-chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--chip-border);border-radius:.5rem;padding:.25rem .45rem;font-size:.85rem;background:var(--chip-bg);color:var(--chip-fg);text-decoration:none;line-height:1}
+  .btn-chip:hover{background:var(--btn-bg-hover)}
+  .btn-chip .fa{font-size:.9em;color:inherit}
 
-  dialog{border:none;border-radius:12px;padding:1rem 1rem 1.2rem 1rem;max-width:720px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+  dialog{border:none;border-radius:12px;padding:1rem 1rem 1.2rem 1rem;max-width:720px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15);background:var(--bg);color:var(--fg)}
   .dialog-form h3{margin:.3rem 0 .7rem 0}
   .filter-group{margin:.6rem 0}
   .filter-chips{display:flex;flex-wrap:wrap;gap:.45rem}
-  .chip-toggle{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:999px;padding:.25rem .6rem;background:#fff;cursor:pointer}
+  .chip-toggle{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--chip-border);border-radius:999px;padding:.25rem .6rem;background:var(--chip-bg);color:var(--chip-fg);cursor:pointer}
   .chip-toggle input{accent-color:#1f6feb}
   .radio{display:flex;gap:.5rem;align-items:center;margin:.25rem 0}
   .dialog-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.8rem}
   .year-row{display:flex;gap:.6rem;align-items:center}
-
-  /* Minimal dark-mode so it doesn&#39;t fight your site styles */
-  @media (prefers-color-scheme: dark){
-    .talks-btn,.chip,.chip-toggle,.btn-chip{background:#161b22;border-color:#30363d;color:#ffffff}
-    .btn-chip:hover{background:#0d1117}
-    .talk-item{border-color:#30363d}
-    dialog{background:#161b22;color:#c9d1d9}
-  }
 &lt;/style&gt;
 
 &lt;script&gt;
@@ -1823,19 +1837,6 @@ const TALKS_SOURCES = {
   &#34;Poster&#34;: &#34;/bib/posters.bib&#34;,
   &#34;Other&#34;: &#34;/bib/talks-other.bib&#34;
 };
-// Continents for filtering (basic mapping; extend as you wish)
-const COUNTRY_TO_CONTINENT = {
-  &#34;japan&#34;:&#34;Asia&#34;,&#34;india&#34;:&#34;Asia&#34;,&#34;china&#34;:&#34;Asia&#34;,&#34;korea&#34;:&#34;Asia&#34;,&#34;taiwan&#34;:&#34;Asia&#34;,&#34;singapore&#34;:&#34;Asia&#34;,&#34;thailand&#34;:&#34;Asia&#34;,&#34;vietnam&#34;:&#34;Asia&#34;,&#34;indonesia&#34;:&#34;Asia&#34;,
-  &#34;usa&#34;:&#34;North America&#34;,&#34;u.s.a.&#34;:&#34;North America&#34;,&#34;united states&#34;:&#34;North America&#34;,&#34;united states of america&#34;:&#34;North America&#34;,&#34;canada&#34;:&#34;North America&#34;,&#34;mexico&#34;:&#34;North America&#34;,
-  &#34;uk&#34;:&#34;Europe&#34;,&#34;united kingdom&#34;:&#34;Europe&#34;,&#34;england&#34;:&#34;Europe&#34;,&#34;scotland&#34;:&#34;Europe&#34;,&#34;wales&#34;:&#34;Europe&#34;,&#34;northern ireland&#34;:&#34;Europe&#34;,&#34;ireland&#34;:&#34;Europe&#34;,
-  &#34;germany&#34;:&#34;Europe&#34;,&#34;france&#34;:&#34;Europe&#34;,&#34;italy&#34;:&#34;Europe&#34;,&#34;spain&#34;:&#34;Europe&#34;,&#34;portugal&#34;:&#34;Europe&#34;,&#34;sweden&#34;:&#34;Europe&#34;,&#34;norway&#34;:&#34;Europe&#34;,&#34;finland&#34;:&#34;Europe&#34;,&#34;denmark&#34;:&#34;Europe&#34;,&#34;netherlands&#34;:&#34;Europe&#34;,&#34;belgium&#34;:&#34;Europe&#34;,&#34;switzerland&#34;:&#34;Europe&#34;,&#34;austria&#34;:&#34;Europe&#34;,&#34;poland&#34;:&#34;Europe&#34;,&#34;czech&#34;:&#34;Europe&#34;,&#34;czech republic&#34;:&#34;Europe&#34;,&#34;slovakia&#34;:&#34;Europe&#34;,&#34;hungary&#34;:&#34;Europe&#34;,&#34;greece&#34;:&#34;Europe&#34;,
-  &#34;australia&#34;:&#34;Oceania&#34;,&#34;new zealand&#34;:&#34;Oceania&#34;,
-  &#34;brazil&#34;:&#34;South America&#34;,&#34;argentina&#34;:&#34;South America&#34;,&#34;chile&#34;:&#34;South America&#34;,&#34;peru&#34;:&#34;South America&#34;,&#34;colombia&#34;:&#34;South America&#34;,
-  &#34;south africa&#34;:&#34;Africa&#34;,&#34;kenya&#34;:&#34;Africa&#34;,&#34;egypt&#34;:&#34;Africa&#34;,&#34;morocco&#34;:&#34;Africa&#34;,&#34;ghana&#34;:&#34;Africa&#34;,&#34;nigeria&#34;:&#34;Africa&#34;,
-  &#34;israel&#34;:&#34;Asia&#34;,&#34;turkey&#34;:&#34;Asia&#34;
-};
-const CONTINENTS = [&#34;Africa&#34;,&#34;Asia&#34;,&#34;Europe&#34;,&#34;North America&#34;,&#34;South America&#34;,&#34;Oceania&#34;,&#34;Antarctica&#34;];
-
 const DEBUG = /[?&amp;]talksdebug=1/.test(location.search);
 
 /*** ===== Elements &amp; State ===== ***/
@@ -1845,6 +1846,7 @@ const els = {
   filterDlg: document.getElementById(&#39;filterDialog&#39;),
   sortDlg: document.getElementById(&#39;sortDialog&#39;),
   filterTypes: document.getElementById(&#39;filterTypes&#39;),
+  filterModality: document.getElementById(&#39;filterModality&#39;), // &lt;-- missing earlier (fixed)
   filterContinents: document.getElementById(&#39;filterContinents&#39;),
   countryContains: document.getElementById(&#39;countryContains&#39;),
   btnFilter: document.getElementById(&#39;btnFilter&#39;),
@@ -1893,7 +1895,7 @@ async function loadAllSources(){
   return out;
 }
 
-/*** ===== BibTeX utilities &amp; parser (tolerant) ===== ***/
+/*** ===== BibTeX utilities &amp; parser ===== ***/
 function uniqueSorted(arr){ return [...new Set(arr)].sort((a,b)=&gt;a.localeCompare(b,&#39;en&#39;,{sensitivity:&#39;base&#39;})); }
 function trimBraces(str){ return (str||&#39;&#39;).replace(/^{|}$/g,&#39;&#39;); }
 function untex(s){
@@ -1918,8 +1920,14 @@ function monthToNum(m){
   const map = {jan:&#39;01&#39;,feb:&#39;02&#39;,mar:&#39;03&#39;,apr:&#39;04&#39;,may:&#39;05&#39;,jun:&#39;06&#39;,jul:&#39;07&#39;,aug:&#39;08&#39;,sep:&#39;09&#39;,oct:&#39;10&#39;,nov:&#39;11&#39;,dec:&#39;12&#39;};
   return map[s] || &#39;&#39;;
 }
+function monthToAlpha(m){
+  if(!m) return &#39;&#39;;
+  const s = m.toString().toLowerCase().slice(0,3);
+  const map = {jan:&#39;Jan&#39;,feb:&#39;Feb&#39;,mar:&#39;Mar&#39;,apr:&#39;Apr&#39;,may:&#39;May&#39;,jun:&#39;Jun&#39;,jul:&#39;Jul&#39;,aug:&#39;Aug&#39;,sep:&#39;Sep&#39;,oct:&#39;Oct&#39;,nov:&#39;Nov&#39;,dec:&#39;Dec&#39;};
+  return map[s] || &#39;&#39;;
+}
 function parseBibTeX(input){
-  const text = input.replace(/^[ \t]*%.*$/gm,&#39;&#39;); // strip % line comments
+  const text = input.replace(/^[ \t]*%.*$/gm,&#39;&#39;); // strip % comments
   const strings = Object.create(null);
   const entries = [];
   let i=0;
@@ -2029,15 +2037,6 @@ function parseBibTeX(input){
 }
 
 /*** ===== Map Bib entry -&gt; Talk item ===== ***/
-function modalityFromFields(f){
-  const raw = [f.modality, f.note, f.howpublished, f.venue].filter(Boolean).join(&#39; &#39;).toLowerCase();
-  const hasOnline = /online|virtual|zoom|vimeo|youtube|livestream/.test(raw);
-  const hasPlace  = /room|hall|campus|building|auditorium|street|avenue|road|rd\.|st\.|city|country|in-person|on-site|onsite/.test(raw);
-  if(/hybrid/.test(raw)) return &#39;Hybrid&#39;;
-  if(hasOnline &amp;&amp; hasPlace) return &#39;Hybrid&#39;;
-  if(hasOnline) return &#39;Online&#39;;
-  return &#39;In-person&#39;;
-}
 function pick(...vals){ return vals.find(v =&gt; v &amp;&amp; String(v).trim().length) || &#39;&#39;; }
 function normalizeLocation(f){
   const loc = pick(f.address, f.location, f.venue, f.institution, f.organization, f.school, f.publisher, f.howpublished, f.note);
@@ -2045,36 +2044,44 @@ function normalizeLocation(f){
 }
 function extractCountry(loc){
   const s = (loc||&#39;&#39;).toLowerCase();
-  // Try last comma-part as country
   const parts = s.split(&#39;,&#39;).map(x=&gt;x.trim()).filter(Boolean);
   let guess = parts[parts.length-1] || s;
-  // normalize variants
-  guess = guess.replace(/\busa\b|\bu\.s\.a\.\b/g,&#39;united states&#39;);
-  guess = guess.replace(/\buk\b/g,&#39;united kingdom&#39;);
+  guess = guess.replace(/\busa\b|\bu\.s\.a\.\b/g,&#39;united states&#39;)
+               .replace(/\buk\b/g,&#39;united kingdom&#39;);
   return guess;
 }
+const COUNTRY_TO_CONTINENT = {
+  &#34;japan&#34;:&#34;Asia&#34;,&#34;india&#34;:&#34;Asia&#34;,&#34;china&#34;:&#34;Asia&#34;,&#34;korea&#34;:&#34;Asia&#34;,&#34;taiwan&#34;:&#34;Asia&#34;,&#34;singapore&#34;:&#34;Asia&#34;,&#34;thailand&#34;:&#34;Asia&#34;,&#34;vietnam&#34;:&#34;Asia&#34;,&#34;indonesia&#34;:&#34;Asia&#34;,
+  &#34;usa&#34;:&#34;North America&#34;,&#34;united states&#34;:&#34;North America&#34;,&#34;canada&#34;:&#34;North America&#34;,&#34;mexico&#34;:&#34;North America&#34;,
+  &#34;united kingdom&#34;:&#34;Europe&#34;,&#34;england&#34;:&#34;Europe&#34;,&#34;scotland&#34;:&#34;Europe&#34;,&#34;wales&#34;:&#34;Europe&#34;,&#34;ireland&#34;:&#34;Europe&#34;,
+  &#34;germany&#34;:&#34;Europe&#34;,&#34;france&#34;:&#34;Europe&#34;,&#34;italy&#34;:&#34;Europe&#34;,&#34;spain&#34;:&#34;Europe&#34;,&#34;portugal&#34;:&#34;Europe&#34;,&#34;sweden&#34;:&#34;Europe&#34;,&#34;norway&#34;:&#34;Europe&#34;,&#34;finland&#34;:&#34;Europe&#34;,&#34;denmark&#34;:&#34;Europe&#34;,&#34;netherlands&#34;:&#34;Europe&#34;,&#34;belgium&#34;:&#34;Europe&#34;,&#34;switzerland&#34;:&#34;Europe&#34;,&#34;austria&#34;:&#34;Europe&#34;,&#34;poland&#34;:&#34;Europe&#34;,&#34;czech&#34;:&#34;Europe&#34;,&#34;czech republic&#34;:&#34;Europe&#34;,&#34;slovakia&#34;:&#34;Europe&#34;,&#34;hungary&#34;:&#34;Europe&#34;,&#34;greece&#34;:&#34;Europe&#34;,
+  &#34;australia&#34;:&#34;Oceania&#34;,&#34;new zealand&#34;:&#34;Oceania&#34;,
+  &#34;brazil&#34;:&#34;South America&#34;,&#34;argentina&#34;:&#34;South America&#34;,&#34;chile&#34;:&#34;South America&#34;,&#34;peru&#34;:&#34;South America&#34;,&#34;colombia&#34;:&#34;South America&#34;,
+  &#34;south africa&#34;:&#34;Africa&#34;,&#34;kenya&#34;:&#34;Africa&#34;,&#34;egypt&#34;:&#34;Africa&#34;,&#34;morocco&#34;:&#34;Africa&#34;,&#34;ghana&#34;:&#34;Africa&#34;,&#34;nigeria&#34;:&#34;Africa&#34;,
+  &#34;israel&#34;:&#34;Asia&#34;,&#34;turkey&#34;:&#34;Asia&#34;
+};
 function continentFromCountry(country){
   const key = (country||&#39;&#39;).toLowerCase();
-  for(const name in COUNTRY_TO_CONTINENT){
-    if(key.includes(name)) return COUNTRY_TO_CONTINENT[name];
-  }
+  for(const name in COUNTRY_TO_CONTINENT){ if(key.includes(name)) return COUNTRY_TO_CONTINENT[name]; }
   return &#39;&#39;;
 }
+function modalityFromFields(f){
+  const raw = [f.modality, f.note, f.howpublished, f.venue].filter(Boolean).join(&#39; &#39;).toLowerCase();
+  const hasOnline = /online|virtual|zoom|youtube|livestream/.test(raw);
+  const hasPlace  = /room|hall|campus|auditorium|street|city|in-person|on-site|onsite/.test(raw);
+  if(/hybrid/.test(raw)) return &#39;Hybrid&#39;;
+  if(hasOnline &amp;&amp; hasPlace) return &#39;Hybrid&#39;;
+  if(hasOnline) return &#39;Online&#39;;
+  return &#39;In-person&#39;;
+}
 function mapDate(fields){
-  // prefer ISO date, else (year, month, day)
-  const dateIso = fields.date &amp;&amp; fields.date.match(/^\d{4}(-\d{2}(-\d{2})?)?$/) ? fields.date : &#39;&#39;;
-  let year = 0, month=&#39;&#39;, day=&#39;&#39;;
-  if(dateIso){
-    const [y,m,d] = dateIso.split(&#39;-&#39;);
-    year = parseInt(y,10)||0; month = m||&#39;&#39;; day = d||&#39;&#39;;
-  }else{
-    year = parseInt((fields.year||&#39;&#39;).match(/\d{4}/)?.[0]||&#39;&#39;)||0;
-    month = monthToNum(fields.month||&#39;&#39;) || &#39;&#39;;
-    day = (fields.day||&#39;&#39;).toString().padStart(2,&#39;0&#39;);
-  }
-  const dateKey = `${year || &#39;0000&#39;}-${month||&#39;00&#39;}-${day||&#39;00&#39;}`;
-  const label = [ [year||&#39;&#39;], month, day ].filter(Boolean).join(&#39;-&#39;); // YYYY-MM-DD (compact)
-  return {year, dateKey, label};
+  // Only year + month, show as YYYYMon
+  const y = parseInt((fields.year||&#39;&#39;).match(/\d{4}/)?.[0]||&#39;&#39;)||0;
+  const monthNum = monthToNum(fields.month||&#39;&#39;);
+  const monthAlpha = monthToAlpha(fields.month||&#39;&#39;);
+  const dateKey = `${y || &#39;0000&#39;}-${monthNum || &#39;00&#39;}`; // for sorting
+  const label = [y ? String(y) : &#39;&#39;, monthAlpha].filter(Boolean).join(&#39;&#39;); // &#34;YYYYMon&#34; or &#34;YYYY&#34;
+  return {year: y, dateKey, label};
 }
 function bibToTalk(e){
   const f = e.fields;
@@ -2089,9 +2096,8 @@ function bibToTalk(e){
   const page = pick(f.page, f.project, f.website);
   return {
     id: e.key,
-    type: e._kind || &#39;Other&#39;, // from source
-    title,
-    event,
+    type: e._kind || &#39;Other&#39;,
+    title, event,
     location: loc,
     continent,
     country: untex(countryRaw).trim(),
@@ -2104,14 +2110,13 @@ function bibToTalk(e){
 
 /*** ===== UI helpers ===== ***/
 function initFilters(talks){
-  // Types are fixed from sources
   const types = [&#34;Invited&#34;,&#34;Contributed&#34;,&#34;Poster&#34;,&#34;Other&#34;];
-  els.filterTypes.innerHTML = types.map(t=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${t}&#34;&gt; ${t}&lt;/label&gt;`).join(&#39;&#39;);
-  // Continents present in data
+  document.getElementById(&#39;filterTypes&#39;).innerHTML =
+    types.map(t=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${t}&#34;&gt; ${t}&lt;/label&gt;`).join(&#39;&#39;);
   const conts = uniqueSorted(talks.map(t=&gt;t.continent).filter(Boolean));
-  const list = conts.length ? conts : CONTINENTS;
-  els.filterContinents.innerHTML = list.map(c=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${c}&#34;&gt; ${c}&lt;/label&gt;`).join(&#39;&#39;);
-  // Years
+  const list = conts.length ? conts : [&#34;Africa&#34;,&#34;Asia&#34;,&#34;Europe&#34;,&#34;North America&#34;,&#34;South America&#34;,&#34;Oceania&#34;,&#34;Antarctica&#34;];
+  document.getElementById(&#39;filterContinents&#39;).innerHTML =
+    list.map(c=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${c}&#34;&gt; ${c}&lt;/label&gt;`).join(&#39;&#39;);
   const years = talks.map(t=&gt;t.year).filter(Boolean);
   state.minYear = years.length ? Math.min(...years) : 2000;
   state.maxYear = years.length ? Math.max(...years) : new Date().getFullYear();
@@ -2124,17 +2129,15 @@ function button(label, icon, url){
   if(!url) return &#39;&#39;;
   return `&lt;a class=&#34;btn-chip&#34; href=&#34;${url.replace(/&#34;/g,&#39;%22&#39;)}&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;i class=&#34;fa ${icon}&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; ${label}&lt;/a&gt;`;
 }
-function iconChip(label, icon){ // non-link chip
-  return `&lt;span class=&#34;btn-chip&#34; role=&#34;note&#34;&gt;&lt;i class=&#34;fa ${icon}&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; ${label}&lt;/span&gt;`;
-}
+function iconChip(label, icon){ return `&lt;span class=&#34;btn-chip&#34; role=&#34;note&#34;&gt;&lt;i class=&#34;fa ${icon}&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; ${label}&lt;/span&gt;`; }
 function mapsLink(q){ return &#39;https://www.google.com/maps/search/?api=1&amp;query=&#39; + encodeURIComponent(q); }
 
 function renderActiveFilters(){
   const chips=[];
-  if(state.types.size) state.types.forEach(t=&gt;chips.push(chip(&#39;Type&#39;, t, &#39;type&#39;, t)));
-  if(state.modalities.size) state.modalities.forEach(m=&gt;chips.push(chip(&#39;Mode&#39;, m, &#39;mod&#39;, m)));
-  if(state.continents.size) state.continents.forEach(c=&gt;chips.push(chip(&#39;Continent&#39;, c, &#39;cont&#39;, c)));
-  if(state.countryContains) chips.push(chip(&#39;Country&#39;, state.countryContains, &#39;country&#39;, &#39;1&#39;));
+  if(state.types.size) state.types.forEach(t=&gt;chips.push(makeChip(&#39;Type&#39;, t, &#39;type&#39;, t)));
+  if(state.modalities.size) state.modalities.forEach(m=&gt;chips.push(makeChip(&#39;Mode&#39;, m, &#39;mod&#39;, m)));
+  if(state.continents.size) state.continents.forEach(c=&gt;chips.push(makeChip(&#39;Continent&#39;, c, &#39;cont&#39;, c)));
+  if(state.countryContains) chips.push(makeChip(&#39;Country&#39;, state.countryContains, &#39;country&#39;, &#39;1&#39;));
   if(state.yearFrom!==state.minYear || state.yearTo!==state.maxYear){
     chips.push(`&lt;span class=&#34;chip&#34;&gt;Years: ${state.yearFrom}–${state.yearTo}&lt;button aria-label=&#34;Reset years&#34; data-x-year=&#34;1&#34;&gt;&lt;i class=&#34;fa fa-times&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/span&gt;`);
   }
@@ -2144,7 +2147,7 @@ function renderActiveFilters(){
   els.activeFilters.querySelectorAll(&#39;button[data-x-cont]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.continents.delete(b.dataset.xCont); syncDialogChecks(); render(); }));
   els.activeFilters.querySelectorAll(&#39;button[data-x-country]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.countryContains=&#39;&#39;; els.countryContains.value=&#39;&#39;; render(); }));
   els.activeFilters.querySelectorAll(&#39;button[data-x-year]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.yearFrom=state.minYear; state.yearTo=state.maxYear; syncDialogChecks(); render(); }));
-  function chip(label, val, kind, data){
+  function makeChip(label, val, kind, data){
     return `&lt;span class=&#34;chip&#34;&gt;${label}: ${val}&lt;button aria-label=&#34;Remove ${label}&#34; data-x-${kind}=&#34;${data}&#34;&gt;&lt;i class=&#34;fa fa-times&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/span&gt;`;
   }
 }
@@ -2177,15 +2180,13 @@ function render(){
   const sorted = sortTalks(filtered);
   els.list.setAttribute(&#39;start&#39;, String(sorted.length));
   els.list.innerHTML = sorted.map(t =&gt; {
-    // Title: link to page if present, else plain text
-    const titleHtml = t.page ? `&lt;a href=&#34;${t.page.replace(/&#34;/g,&#39;%22&#39;)}&#34; class=&#34;title-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;${t.title}&lt;/a&gt;`
-                             : `${t.title}`;
+    const titleHtml = t.page ? `&lt;a href=&#34;${t.page.replace(/&#34;/g,&#39;%22&#39;)}&#34; class=&#34;title-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;${t.title}&lt;/a&gt;` : `${t.title}`;
     const meta = [t.event, t.type, t.modality].filter(Boolean).join(&#39; • &#39;);
     const actions = [
       t.location ? button(t.location, &#39;fa-location-dot&#39;, mapsLink(t.location)) : &#39;&#39;,
       t.dateLabel ? iconChip(t.dateLabel, &#39;fa-calendar&#39;) : &#39;&#39;,
       t.slides ? button(&#39;Slides&#39;, &#39;fa-file-lines&#39;, t.slides) : &#39;&#39;,
-      t.page ? button(&#39;Page&#39;, &#39;fa-external-link-alt&#39;, t.page) : &#39;&#39;
+      t.page ? button(&#39;Page&#39;, &#39;fa-up-right-from-square&#39;, t.page) : &#39;&#39;
     ].filter(Boolean).join(&#39; &#39;);
     return `
       &lt;li class=&#34;talk-item&#34;&gt;
