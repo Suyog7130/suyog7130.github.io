@@ -524,7 +524,7 @@
 
       <fieldset class="filter-group">
         <legend>Country</legend>
-        <input id="countryContains" type="text" placeholder="Contains… (e.g., Japan)" style="width:100%;padding:.4rem .6rem;border-radius:.5rem;border:1px solid #d0d7de;"/>
+        <input id="countryContains" type="text" placeholder="Contains… (e.g., Japan)" style="width:100%;padding:.4rem .6rem;border-radius:.5rem;border:1px solid var(--border);"/>
       </fieldset>
 
       <fieldset class="filter-group">
@@ -570,47 +570,61 @@
 </section>
 
 <style>
+  /* --- Theme tokens scoped to this page --- */
+  .talks-root{
+    --bg:#fff; --fg:#24292f; --muted:#555;
+    --chip-bg:#fff; --chip-fg:inherit; --chip-border:#d0d7de;
+    --btn-bg:#fff; --btn-fg:#24292f; --btn-border:#d0d7de; --btn-bg-hover:#f6f8fa;
+    --border:#d0d7de;
+  }
+  @media (prefers-color-scheme: dark){
+    .talks-root{
+      --bg:#161b22; --fg:#c9d1d9; --muted:#c9d1d9;
+      --chip-bg:#161b22; --chip-fg:#ffffff; --chip-border:#30363d;
+      --btn-bg:#161b22; --btn-fg:#ffffff; --btn-border:#30363d; --btn-bg-hover:#0d1117;
+      --border:#30363d;
+    }
+  }
+  html.dark .talks-root, :root[data-theme="dark"] .talks-root, body.dark .talks-root{
+    --bg:#161b22; --fg:#c9d1d9; --muted:#c9d1d9;
+    --chip-bg:#161b22; --chip-fg:#ffffff; --chip-border:#30363d;
+    --btn-bg:#161b22; --btn-fg:#ffffff; --btn-border:#30363d; --btn-bg-hover:#0d1117;
+    --border:#30363d;
+  }
+
   .talks-controls{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin:0 0 1rem 0}
-  .talks-btn{border:1px solid var(--mm-btn-border,#d0d7de);padding:.4rem .7rem;border-radius:.5rem;background:#fff;cursor:pointer;font:inherit}
-  .talks-btn:hover{background:#f6f8fa}
+  .talks-btn{border:1px solid var(--btn-border);padding:.4rem .7rem;border-radius:.5rem;background:var(--btn-bg);color:var(--btn-fg);cursor:pointer;font:inherit}
+  .talks-btn:hover{background:var(--btn-bg-hover)}
   .talks-btn-primary{background:#1f6feb;color:#fff;border-color:#1f6feb}
-  .talks-btn-secondary{background:#fff;color:#24292f}
-  .talks-count{margin-left:auto;font-size:.95rem;color:#555}
+  .talks-btn-secondary{background:var(--btn-bg);color:var(--btn-fg)}
+  .talks-count{margin-left:auto;font-size:.95rem;color:var(--muted)}
 
   .active-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem 0}
-  .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:999px;padding:.2rem .55rem;font-size:.85rem;background:#fff}
+  .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--chip-border);border-radius:999px;padding:.2rem .55rem;font-size:.85rem;background:var(--chip-bg);color:var(--chip-fg)}
   .chip button{all:unset;cursor:pointer;display:inline-flex}
-  .chip .fa{font-size:.8em}
+  .chip .fa{font-size:.8em;color:inherit}
 
   .talks-list{counter-reset:none;padding-left:1.2rem}
   .talk-item{margin:0 0 .9rem 0;padding:0 0 .9rem 0}
   .talk-title{font-weight:600;line-height:1.35;margin:0}
   .talk-title a{text-decoration:none}
   .talk-title a:hover{text-decoration:underline}
-  .talk-meta{margin:.15rem 0 .45rem 0;font-size:.95rem}
+  .talk-meta{margin:.15rem 0 .45rem 0;font-size:.95rem;color:var(--fg)}
 
   .actions{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.35rem}
-  .btn-chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:.5rem;padding:.25rem .45rem;font-size:.85rem;background:#fff;text-decoration:none;line-height:1}
-  .btn-chip:hover{background:#f6f8fa}
-  .btn-chip .fa{font-size:.9em}
+  .btn-chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--chip-border);border-radius:.5rem;padding:.25rem .45rem;font-size:.85rem;background:var(--chip-bg);color:var(--chip-fg);text-decoration:none;line-height:1}
+  .btn-chip:hover{background:var(--btn-bg-hover)}
+  .btn-chip .fa{font-size:.9em;color:inherit}
 
-  dialog{border:none;border-radius:12px;padding:1rem 1rem 1.2rem 1rem;max-width:720px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+  dialog{border:none;border-radius:12px;padding:1rem 1rem 1.2rem 1rem;max-width:720px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15);background:var(--bg);color:var(--fg)}
   .dialog-form h3{margin:.3rem 0 .7rem 0}
   .filter-group{margin:.6rem 0}
   .filter-chips{display:flex;flex-wrap:wrap;gap:.45rem}
-  .chip-toggle{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #d0d7de;border-radius:999px;padding:.25rem .6rem;background:#fff;cursor:pointer}
+  .chip-toggle{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--chip-border);border-radius:999px;padding:.25rem .6rem;background:var(--chip-bg);color:var(--chip-fg);cursor:pointer}
   .chip-toggle input{accent-color:#1f6feb}
   .radio{display:flex;gap:.5rem;align-items:center;margin:.25rem 0}
   .dialog-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.8rem}
   .year-row{display:flex;gap:.6rem;align-items:center}
-
-  /* Minimal dark-mode so it doesn't fight your site styles */
-  @media (prefers-color-scheme: dark){
-    .talks-btn,.chip,.chip-toggle,.btn-chip{background:#161b22;border-color:#30363d;color:#ffffff}
-    .btn-chip:hover{background:#0d1117}
-    .talk-item{border-color:#30363d}
-    dialog{background:#161b22;color:#c9d1d9}
-  }
 </style>
 
 <script>
@@ -621,19 +635,6 @@ const TALKS_SOURCES = {
   "Poster": "/bib/posters.bib",
   "Other": "/bib/talks-other.bib"
 };
-// Continents for filtering (basic mapping; extend as you wish)
-const COUNTRY_TO_CONTINENT = {
-  "japan":"Asia","india":"Asia","china":"Asia","korea":"Asia","taiwan":"Asia","singapore":"Asia","thailand":"Asia","vietnam":"Asia","indonesia":"Asia",
-  "usa":"North America","u.s.a.":"North America","united states":"North America","united states of america":"North America","canada":"North America","mexico":"North America",
-  "uk":"Europe","united kingdom":"Europe","england":"Europe","scotland":"Europe","wales":"Europe","northern ireland":"Europe","ireland":"Europe",
-  "germany":"Europe","france":"Europe","italy":"Europe","spain":"Europe","portugal":"Europe","sweden":"Europe","norway":"Europe","finland":"Europe","denmark":"Europe","netherlands":"Europe","belgium":"Europe","switzerland":"Europe","austria":"Europe","poland":"Europe","czech":"Europe","czech republic":"Europe","slovakia":"Europe","hungary":"Europe","greece":"Europe",
-  "australia":"Oceania","new zealand":"Oceania",
-  "brazil":"South America","argentina":"South America","chile":"South America","peru":"South America","colombia":"South America",
-  "south africa":"Africa","kenya":"Africa","egypt":"Africa","morocco":"Africa","ghana":"Africa","nigeria":"Africa",
-  "israel":"Asia","turkey":"Asia"
-};
-const CONTINENTS = ["Africa","Asia","Europe","North America","South America","Oceania","Antarctica"];
-
 const DEBUG = /[?&]talksdebug=1/.test(location.search);
 
 /*** ===== Elements & State ===== ***/
@@ -643,6 +644,7 @@ const els = {
   filterDlg: document.getElementById('filterDialog'),
   sortDlg: document.getElementById('sortDialog'),
   filterTypes: document.getElementById('filterTypes'),
+  filterModality: document.getElementById('filterModality'), // <-- missing earlier (fixed)
   filterContinents: document.getElementById('filterContinents'),
   countryContains: document.getElementById('countryContains'),
   btnFilter: document.getElementById('btnFilter'),
@@ -691,7 +693,7 @@ async function loadAllSources(){
   return out;
 }
 
-/*** ===== BibTeX utilities & parser (tolerant) ===== ***/
+/*** ===== BibTeX utilities & parser ===== ***/
 function uniqueSorted(arr){ return [...new Set(arr)].sort((a,b)=>a.localeCompare(b,'en',{sensitivity:'base'})); }
 function trimBraces(str){ return (str||'').replace(/^{|}$/g,''); }
 function untex(s){
@@ -716,8 +718,14 @@ function monthToNum(m){
   const map = {jan:'01',feb:'02',mar:'03',apr:'04',may:'05',jun:'06',jul:'07',aug:'08',sep:'09',oct:'10',nov:'11',dec:'12'};
   return map[s] || '';
 }
+function monthToAlpha(m){
+  if(!m) return '';
+  const s = m.toString().toLowerCase().slice(0,3);
+  const map = {jan:'Jan',feb:'Feb',mar:'Mar',apr:'Apr',may:'May',jun:'Jun',jul:'Jul',aug:'Aug',sep:'Sep',oct:'Oct',nov:'Nov',dec:'Dec'};
+  return map[s] || '';
+}
 function parseBibTeX(input){
-  const text = input.replace(/^[ \t]*%.*$/gm,''); // strip % line comments
+  const text = input.replace(/^[ \t]*%.*$/gm,''); // strip % comments
   const strings = Object.create(null);
   const entries = [];
   let i=0;
@@ -827,15 +835,6 @@ function parseBibTeX(input){
 }
 
 /*** ===== Map Bib entry -> Talk item ===== ***/
-function modalityFromFields(f){
-  const raw = [f.modality, f.note, f.howpublished, f.venue].filter(Boolean).join(' ').toLowerCase();
-  const hasOnline = /online|virtual|zoom|vimeo|youtube|livestream/.test(raw);
-  const hasPlace  = /room|hall|campus|building|auditorium|street|avenue|road|rd\.|st\.|city|country|in-person|on-site|onsite/.test(raw);
-  if(/hybrid/.test(raw)) return 'Hybrid';
-  if(hasOnline && hasPlace) return 'Hybrid';
-  if(hasOnline) return 'Online';
-  return 'In-person';
-}
 function pick(...vals){ return vals.find(v => v && String(v).trim().length) || ''; }
 function normalizeLocation(f){
   const loc = pick(f.address, f.location, f.venue, f.institution, f.organization, f.school, f.publisher, f.howpublished, f.note);
@@ -843,36 +842,44 @@ function normalizeLocation(f){
 }
 function extractCountry(loc){
   const s = (loc||'').toLowerCase();
-  // Try last comma-part as country
   const parts = s.split(',').map(x=>x.trim()).filter(Boolean);
   let guess = parts[parts.length-1] || s;
-  // normalize variants
-  guess = guess.replace(/\busa\b|\bu\.s\.a\.\b/g,'united states');
-  guess = guess.replace(/\buk\b/g,'united kingdom');
+  guess = guess.replace(/\busa\b|\bu\.s\.a\.\b/g,'united states')
+               .replace(/\buk\b/g,'united kingdom');
   return guess;
 }
+const COUNTRY_TO_CONTINENT = {
+  "japan":"Asia","india":"Asia","china":"Asia","korea":"Asia","taiwan":"Asia","singapore":"Asia","thailand":"Asia","vietnam":"Asia","indonesia":"Asia",
+  "usa":"North America","united states":"North America","canada":"North America","mexico":"North America",
+  "united kingdom":"Europe","england":"Europe","scotland":"Europe","wales":"Europe","ireland":"Europe",
+  "germany":"Europe","france":"Europe","italy":"Europe","spain":"Europe","portugal":"Europe","sweden":"Europe","norway":"Europe","finland":"Europe","denmark":"Europe","netherlands":"Europe","belgium":"Europe","switzerland":"Europe","austria":"Europe","poland":"Europe","czech":"Europe","czech republic":"Europe","slovakia":"Europe","hungary":"Europe","greece":"Europe",
+  "australia":"Oceania","new zealand":"Oceania",
+  "brazil":"South America","argentina":"South America","chile":"South America","peru":"South America","colombia":"South America",
+  "south africa":"Africa","kenya":"Africa","egypt":"Africa","morocco":"Africa","ghana":"Africa","nigeria":"Africa",
+  "israel":"Asia","turkey":"Asia"
+};
 function continentFromCountry(country){
   const key = (country||'').toLowerCase();
-  for(const name in COUNTRY_TO_CONTINENT){
-    if(key.includes(name)) return COUNTRY_TO_CONTINENT[name];
-  }
+  for(const name in COUNTRY_TO_CONTINENT){ if(key.includes(name)) return COUNTRY_TO_CONTINENT[name]; }
   return '';
 }
+function modalityFromFields(f){
+  const raw = [f.modality, f.note, f.howpublished, f.venue].filter(Boolean).join(' ').toLowerCase();
+  const hasOnline = /online|virtual|zoom|youtube|livestream/.test(raw);
+  const hasPlace  = /room|hall|campus|auditorium|street|city|in-person|on-site|onsite/.test(raw);
+  if(/hybrid/.test(raw)) return 'Hybrid';
+  if(hasOnline && hasPlace) return 'Hybrid';
+  if(hasOnline) return 'Online';
+  return 'In-person';
+}
 function mapDate(fields){
-  // prefer ISO date, else (year, month, day)
-  const dateIso = fields.date && fields.date.match(/^\d{4}(-\d{2}(-\d{2})?)?$/) ? fields.date : '';
-  let year = 0, month='', day='';
-  if(dateIso){
-    const [y,m,d] = dateIso.split('-');
-    year = parseInt(y,10)||0; month = m||''; day = d||'';
-  }else{
-    year = parseInt((fields.year||'').match(/\d{4}/)?.[0]||'')||0;
-    month = monthToNum(fields.month||'') || '';
-    day = (fields.day||'').toString().padStart(2,'0');
-  }
-  const dateKey = `${year || '0000'}-${month||'00'}-${day||'00'}`;
-  const label = [ [year||''], month, day ].filter(Boolean).join('-'); // YYYY-MM-DD (compact)
-  return {year, dateKey, label};
+  // Only year + month, show as YYYYMon
+  const y = parseInt((fields.year||'').match(/\d{4}/)?.[0]||'')||0;
+  const monthNum = monthToNum(fields.month||'');
+  const monthAlpha = monthToAlpha(fields.month||'');
+  const dateKey = `${y || '0000'}-${monthNum || '00'}`; // for sorting
+  const label = [y ? String(y) : '', monthAlpha].filter(Boolean).join(''); // "YYYYMon" or "YYYY"
+  return {year: y, dateKey, label};
 }
 function bibToTalk(e){
   const f = e.fields;
@@ -887,9 +894,8 @@ function bibToTalk(e){
   const page = pick(f.page, f.project, f.website);
   return {
     id: e.key,
-    type: e._kind || 'Other', // from source
-    title,
-    event,
+    type: e._kind || 'Other',
+    title, event,
     location: loc,
     continent,
     country: untex(countryRaw).trim(),
@@ -902,14 +908,13 @@ function bibToTalk(e){
 
 /*** ===== UI helpers ===== ***/
 function initFilters(talks){
-  // Types are fixed from sources
   const types = ["Invited","Contributed","Poster","Other"];
-  els.filterTypes.innerHTML = types.map(t=>`<label class="chip-toggle"><input type="checkbox" value="${t}"> ${t}</label>`).join('');
-  // Continents present in data
+  document.getElementById('filterTypes').innerHTML =
+    types.map(t=>`<label class="chip-toggle"><input type="checkbox" value="${t}"> ${t}</label>`).join('');
   const conts = uniqueSorted(talks.map(t=>t.continent).filter(Boolean));
-  const list = conts.length ? conts : CONTINENTS;
-  els.filterContinents.innerHTML = list.map(c=>`<label class="chip-toggle"><input type="checkbox" value="${c}"> ${c}</label>`).join('');
-  // Years
+  const list = conts.length ? conts : ["Africa","Asia","Europe","North America","South America","Oceania","Antarctica"];
+  document.getElementById('filterContinents').innerHTML =
+    list.map(c=>`<label class="chip-toggle"><input type="checkbox" value="${c}"> ${c}</label>`).join('');
   const years = talks.map(t=>t.year).filter(Boolean);
   state.minYear = years.length ? Math.min(...years) : 2000;
   state.maxYear = years.length ? Math.max(...years) : new Date().getFullYear();
@@ -922,17 +927,15 @@ function button(label, icon, url){
   if(!url) return '';
   return `<a class="btn-chip" href="${url.replace(/"/g,'%22')}" target="_blank" rel="noopener"><i class="fa ${icon}" aria-hidden="true"></i> ${label}</a>`;
 }
-function iconChip(label, icon){ // non-link chip
-  return `<span class="btn-chip" role="note"><i class="fa ${icon}" aria-hidden="true"></i> ${label}</span>`;
-}
+function iconChip(label, icon){ return `<span class="btn-chip" role="note"><i class="fa ${icon}" aria-hidden="true"></i> ${label}</span>`; }
 function mapsLink(q){ return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q); }
 
 function renderActiveFilters(){
   const chips=[];
-  if(state.types.size) state.types.forEach(t=>chips.push(chip('Type', t, 'type', t)));
-  if(state.modalities.size) state.modalities.forEach(m=>chips.push(chip('Mode', m, 'mod', m)));
-  if(state.continents.size) state.continents.forEach(c=>chips.push(chip('Continent', c, 'cont', c)));
-  if(state.countryContains) chips.push(chip('Country', state.countryContains, 'country', '1'));
+  if(state.types.size) state.types.forEach(t=>chips.push(makeChip('Type', t, 'type', t)));
+  if(state.modalities.size) state.modalities.forEach(m=>chips.push(makeChip('Mode', m, 'mod', m)));
+  if(state.continents.size) state.continents.forEach(c=>chips.push(makeChip('Continent', c, 'cont', c)));
+  if(state.countryContains) chips.push(makeChip('Country', state.countryContains, 'country', '1'));
   if(state.yearFrom!==state.minYear || state.yearTo!==state.maxYear){
     chips.push(`<span class="chip">Years: ${state.yearFrom}–${state.yearTo}<button aria-label="Reset years" data-x-year="1"><i class="fa fa-times"></i></button></span>`);
   }
@@ -942,7 +945,7 @@ function renderActiveFilters(){
   els.activeFilters.querySelectorAll('button[data-x-cont]').forEach(b=>b.addEventListener('click',()=>{ state.continents.delete(b.dataset.xCont); syncDialogChecks(); render(); }));
   els.activeFilters.querySelectorAll('button[data-x-country]').forEach(b=>b.addEventListener('click',()=>{ state.countryContains=''; els.countryContains.value=''; render(); }));
   els.activeFilters.querySelectorAll('button[data-x-year]').forEach(b=>b.addEventListener('click',()=>{ state.yearFrom=state.minYear; state.yearTo=state.maxYear; syncDialogChecks(); render(); }));
-  function chip(label, val, kind, data){
+  function makeChip(label, val, kind, data){
     return `<span class="chip">${label}: ${val}<button aria-label="Remove ${label}" data-x-${kind}="${data}"><i class="fa fa-times"></i></button></span>`;
   }
 }
@@ -975,15 +978,13 @@ function render(){
   const sorted = sortTalks(filtered);
   els.list.setAttribute('start', String(sorted.length));
   els.list.innerHTML = sorted.map(t => {
-    // Title: link to page if present, else plain text
-    const titleHtml = t.page ? `<a href="${t.page.replace(/"/g,'%22')}" class="title-link" target="_blank" rel="noopener">${t.title}</a>`
-                             : `${t.title}`;
+    const titleHtml = t.page ? `<a href="${t.page.replace(/"/g,'%22')}" class="title-link" target="_blank" rel="noopener">${t.title}</a>` : `${t.title}`;
     const meta = [t.event, t.type, t.modality].filter(Boolean).join(' • ');
     const actions = [
       t.location ? button(t.location, 'fa-location-dot', mapsLink(t.location)) : '',
       t.dateLabel ? iconChip(t.dateLabel, 'fa-calendar') : '',
       t.slides ? button('Slides', 'fa-file-lines', t.slides) : '',
-      t.page ? button('Page', 'fa-external-link-alt', t.page) : ''
+      t.page ? button('Page', 'fa-up-right-from-square', t.page) : ''
     ].filter(Boolean).join(' ');
     return `
       <li class="talk-item">
@@ -996,60 +997,51 @@ function render(){
   renderActiveFilters();
 }
 function syncDialogChecks(){
-  // Types
-  els.filterTypes.querySelectorAll('input[type=checkbox]').forEach(cb=>{
-    cb.checked = state.types.has(cb.value);
-  });
-  // Continents
-  els.filterContinents.querySelectorAll('input[type=checkbox]').forEach(cb=>{
-    cb.checked = state.continents.has(cb.value);
-  });
-  // Modalities are static
-  els.filterModality?.querySelectorAll('input[type=checkbox]').forEach(cb=>{
-    cb.checked = state.modalities.has(cb.value);
-  });
-  // Country text
+  els.filterTypes.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.types.has(cb.value); });
+  els.filterContinents.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.continents.has(cb.value); });
+  els.filterModality.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.modalities.has(cb.value); });
   els.countryContains.value = state.countryContains;
-  // Years
-  els.yearFrom.value = String(state.yearFrom);
-  els.yearTo.value = String(state.yearTo);
+  els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
 }
 
 /*** ===== Boot ===== ***/
 async function boot(){
-  const rawEntries = await loadAllSources();
-  if(!rawEntries.length){
-    els.list.innerHTML = '<li class="talk-item"><em>No talks found (enable ?talksdebug=1 for details).</em></li>';
-    els.count.textContent = 'Showing 0 of 0';
-    return;
+  try{
+    const rawEntries = await loadAllSources();
+    if(!rawEntries.length){
+      els.list.innerHTML = '<li class="talk-item"><em>No talks found (enable ?talksdebug=1 for details).</em></li>';
+      els.count.textContent = 'Showing 0 of 0';
+      return;
+    }
+    state.all = rawEntries.map(bibToTalk);
+    initFilters(state.all);
+    syncDialogChecks();
+    render();
+  }catch(e){
+    els.list.innerHTML = `<li class="talk-item"><em>Could not load talks.</em><br><small>${String(e)}</small></li>`;
+    els.count.textContent = '—';
   }
-  state.all = rawEntries.map(bibToTalk);
-  initFilters(state.all);
-  syncDialogChecks();
-  render();
 
-  // wire controls
+  // open dialogs
   els.btnFilter.addEventListener('click', ()=>{ syncDialogChecks(); (typeof HTMLDialogElement!=='undefined'? els.filterDlg.showModal(): (els.filterDlg.open=true)); });
-  els.btnSort.addEventListener('click', ()=>{ syncDialogChecks(); (typeof HTMLDialogElement!=='undefined'? els.sortDlg.showModal(): (els.sortDlg.open=true)); });
+  els.btnSort.addEventListener('click',   ()=>{ syncDialogChecks(); (typeof HTMLDialogElement!=='undefined'? els.sortDlg.showModal(): (els.sortDlg.open=true)); });
 
+  // apply filters
   els.btnApplyFilters?.closest('form')?.addEventListener('submit', (e)=>{
     e.preventDefault();
-    // collect
     const newTypes = new Set(); els.filterTypes.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newTypes.add(cb.value));
     const newMods  = new Set(); els.filterModality.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newMods.add(cb.value));
     const newConts = new Set(); els.filterContinents.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newConts.add(cb.value));
     state.types = newTypes; state.modalities = newMods; state.continents = newConts;
-    // country
     state.countryContains = els.countryContains.value.trim();
-    // years
     const yf = parseInt(els.yearFrom.value,10), yt = parseInt(els.yearTo.value,10);
     state.yearFrom = isNaN(yf)? state.minYear : Math.max(state.minYear, Math.min(yf, state.maxYear));
     state.yearTo   = isNaN(yt)? state.maxYear : Math.max(state.minYear, Math.min(yt, state.maxYear));
     if(state.yearFrom > state.yearTo){ const t = state.yearFrom; state.yearFrom = state.yearTo; state.yearTo = t; }
-    // close and render
     (els.filterDlg.close?.()|| (els.filterDlg.open=false)); render();
   });
 
+  // reset filters
   els.btnResetFilters.addEventListener('click', ()=>{
     state.types.clear(); state.modalities.clear(); state.continents.clear();
     state.countryContains = '';
@@ -1060,6 +1052,7 @@ async function boot(){
     state.yearFrom = state.minYear; state.yearTo = state.maxYear; syncDialogChecks();
   });
 
+  // apply sort
   els.btnApplySort?.closest('form')?.addEventListener('submit', (e)=>{
     e.preventDefault();
     const sel = els.sortDlg.querySelector('input[name=sortMode]:checked');
