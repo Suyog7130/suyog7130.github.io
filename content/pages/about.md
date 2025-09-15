@@ -50,7 +50,7 @@ Heya, this is Suyog. Currently, I am a Physics PhD student working with Prof <a 
 My research and other interests are broad and indiscriminate. And so are my hobbies and experiences, ranging from dabbling in cutting-edge Machine Learning research to masquerading as a wannabe writer. You can find more about these on this website.
 </p>
 <p style="text-align:justified">
-Prior to RESCEU, I was a master's student at the <a href="https://www.icrr.u-tokyo.ac.jp/">Institute of Cosmic Ray Research</a>, UTokyo. My undergraduate degree is in Mechanical Engineering with specialization in Design and Manufacturing, from <a href="https://iiitdm.ac.in/">IIITDM Kancheerpuram</a>, Chennai. I was born and raised in a quaint little town called <a href="https://mandla.nic.in/en/">Mandla</a> in the heart of India, amidst a pleasant life full of stories, warm summers, trees, and books.
+Prior to RESCEU, I was a master's student at the <a href="https://www.icrr.u-tokyo.ac.jp/">Institute of Cosmic Ray Research</a>, UTokyo. My undergraduate degree is in Mechanical Engineering with specialization in Design and Manufacturing, from <a href="https://iiitdm.ac.in/">IIITDM Kancheerpuram</a>, Chennai. Previously, during the COVID times, I was also a <a href="https://summerofcode.withgoogle.com/archive/2021/projects/5365547692195840">Google Summer of Code</a> student in 2021. Much earlier than that, I was born and raised in a quaint little town called <a href="https://mandla.nic.in/en/">Mandla</a> in the heart of India, amidst a pleasant life full of stories, warm summers, trees, and books.
 </p>
 </br></br>
 </details>
