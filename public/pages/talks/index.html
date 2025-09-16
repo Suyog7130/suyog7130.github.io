@@ -570,24 +570,26 @@
 </section>
 
 <style>
-  /* --- Theme tokens scoped to this page --- */
+  /* --- Theme tokens scoped to this page (defaults = light) --- */
   .talks-root{
     --bg:#fff; --fg:#24292f; --muted:#555;
     --chip-bg:#fff; --chip-fg:inherit; --chip-border:#d0d7de;
     --btn-bg:#fff; --btn-fg:#24292f; --btn-border:#d0d7de; --btn-bg-hover:#f6f8fa;
     --border:#d0d7de;
+    color: var(--fg);
   }
+  /* OS dark or site dark flips tokens */
   @media (prefers-color-scheme: dark){
     .talks-root{
       --bg:#161b22; --fg:#c9d1d9; --muted:#c9d1d9;
-      --chip-bg:#161b22; --chip-fg:#ffffff; --chip-border:#30363d;
+      --chip-bg:transparent; --chip-fg:inherit; --chip-border:#30363d;
       --btn-bg:#161b22; --btn-fg:#ffffff; --btn-border:#30363d; --btn-bg-hover:#0d1117;
       --border:#30363d;
     }
   }
   html.dark .talks-root, :root[data-theme="dark"] .talks-root, body.dark .talks-root{
     --bg:#161b22; --fg:#c9d1d9; --muted:#c9d1d9;
-    --chip-bg:#161b22; --chip-fg:#ffffff; --chip-border:#30363d;
+    --chip-bg:transparent; --chip-fg:inherit; --chip-border:#30363d;
     --btn-bg:#161b22; --btn-fg:#ffffff; --btn-border:#30363d; --btn-bg-hover:#0d1117;
     --border:#30363d;
   }
@@ -607,7 +609,7 @@
   .talks-list{counter-reset:none;padding-left:1.2rem}
   .talk-item{margin:0 0 .9rem 0;padding:0 0 .9rem 0}
   .talk-title{font-weight:600;line-height:1.35;margin:0}
-  .talk-title a{text-decoration:none}
+  .talk-title a{color: inherit; text-decoration:none}
   .talk-title a:hover{text-decoration:underline}
   .talk-meta{margin:.15rem 0 .45rem 0;font-size:.95rem;color:var(--fg)}
 
@@ -628,13 +630,17 @@
 </style>
 
 <script>
-/*** ===== Settings ===== ***/
+/*** ===== Config (easy switches) ===== ***/
+const DATE_STYLE = 'auto'; // 'auto' | 'jp' | 'en'
+
+/*** ===== Sources ===== ***/
 const TALKS_SOURCES = {
   "Invited": "/bib/talks-invited.bib",
   "Contributed": "/bib/talks-contributed.bib",
   "Poster": "/bib/posters.bib",
   "Other": "/bib/talks-other.bib"
 };
+
 const DEBUG = /[?&]talksdebug=1/.test(location.search);
 
 /*** ===== Elements & State ===== ***/
@@ -644,7 +650,7 @@ const els = {
   filterDlg: document.getElementById('filterDialog'),
   sortDlg: document.getElementById('sortDialog'),
   filterTypes: document.getElementById('filterTypes'),
-  filterModality: document.getElementById('filterModality'), // <-- missing earlier (fixed)
+  filterModality: document.getElementById('filterModality'),
   filterContinents: document.getElementById('filterContinents'),
   countryContains: document.getElementById('countryContains'),
   btnFilter: document.getElementById('btnFilter'),
@@ -655,6 +661,7 @@ const els = {
   yearFrom: document.getElementById('yearFrom'),
   yearTo: document.getElementById('yearTo'),
   btnResetYear: document.getElementById('btnResetYear'),
+  activeFilters: document.getElementById('activeFilters'),
   dbgWrap: document.getElementById('talks-debug'),
   dbg: document.getElementById('talks-debug-pre'),
 };
@@ -693,7 +700,7 @@ async function loadAllSources(){
   return out;
 }
 
-/*** ===== BibTeX utilities & parser ===== ***/
+/*** ===== BibTeX utils & parser ===== ***/
 function uniqueSorted(arr){ return [...new Set(arr)].sort((a,b)=>a.localeCompare(b,'en',{sensitivity:'base'})); }
 function trimBraces(str){ return (str||'').replace(/^{|}$/g,''); }
 function untex(s){
@@ -837,15 +844,14 @@ function parseBibTeX(input){
 /*** ===== Map Bib entry -> Talk item ===== ***/
 function pick(...vals){ return vals.find(v => v && String(v).trim().length) || ''; }
 function normalizeLocation(f){
-  const loc = pick(f.address, f.location, f.venue, f.institution, f.organization, f.school, f.publisher, f.howpublished, f.note);
+  const loc = pick(f.address, f.location, f.venue, f.institution, f.organization, f.school, f.publisher, f.howpublished, f.note, f.place);
   return untex(trimBraces(loc)).replace(/\s+/g,' ').trim();
 }
 function extractCountry(loc){
   const s = (loc||'').toLowerCase();
   const parts = s.split(',').map(x=>x.trim()).filter(Boolean);
   let guess = parts[parts.length-1] || s;
-  guess = guess.replace(/\busa\b|\bu\.s\.a\.\b/g,'united states')
-               .replace(/\buk\b/g,'united kingdom');
+  guess = guess.replace(/\busa\b|\bu\.s\.a\.\b/g,'united states').replace(/\buk\b/g,'united kingdom');
   return guess;
 }
 const COUNTRY_TO_CONTINENT = {
@@ -872,13 +878,35 @@ function modalityFromFields(f){
   if(hasOnline) return 'Online';
   return 'In-person';
 }
+
+/* date helpers */
+function formatDateLabel(y, mNum, mAlpha, d){
+  const pad = n => String(n||'').padStart(2,'0');
+  if(DATE_STYLE === 'jp'){
+    if(y && mNum && d) return `${y}年${pad(mNum)}月${pad(d)}日`;
+    if(y && mNum)      return `${y}年${pad(mNum)}月`;
+    if(y)              return `${y}年`;
+    return '';
+  }
+  if(DATE_STYLE === 'en'){
+    if(y && mAlpha && d) return `${y}${mAlpha}${pad(d)}`;
+    if(y && mAlpha)      return `${mAlpha} ${y}`;
+    if(y)                return String(y);
+    return '';
+  }
+  // auto
+  if(y && mNum && d) return `${y}年${pad(mNum)}月${pad(d)}日`; // full JP when day exists
+  if(y && mAlpha)    return `${mAlpha} ${y}`;                  // Mon YYYY otherwise
+  if(y)              return String(y);
+  return '';
+}
 function mapDate(fields){
-  // Only year + month, show as YYYYMon
   const y = parseInt((fields.year||'').match(/\d{4}/)?.[0]||'')||0;
-  const monthNum = monthToNum(fields.month||'');
-  const monthAlpha = monthToAlpha(fields.month||'');
-  const dateKey = `${y || '0000'}-${monthNum || '00'}`; // for sorting
-  const label = [y ? String(y) : '', monthAlpha].filter(Boolean).join(''); // "YYYYMon" or "YYYY"
+  const mNum = monthToNum(fields.month||'');        // "01" .. "12"
+  const mAlpha = monthToAlpha(fields.month||'');    // "Jan" etc.
+  const d = parseInt((fields.day||'').toString(),10) || '';
+  const dateKey = `${y || '0000'}-${mNum || '00'}-${String(d||'00').padStart(2,'0')}`;
+  const label = formatDateLabel(y, mNum, mAlpha, d);
   return {year: y, dateKey, label};
 }
 function bibToTalk(e){
@@ -909,19 +937,19 @@ function bibToTalk(e){
 /*** ===== UI helpers ===== ***/
 function initFilters(talks){
   const types = ["Invited","Contributed","Poster","Other"];
-  document.getElementById('filterTypes').innerHTML =
-    types.map(t=>`<label class="chip-toggle"><input type="checkbox" value="${t}"> ${t}</label>`).join('');
+  if(els.filterTypes) els.filterTypes.innerHTML = types.map(t=>`<label class="chip-toggle"><input type="checkbox" value="${t}"> ${t}</label>`).join('');
   const conts = uniqueSorted(talks.map(t=>t.continent).filter(Boolean));
   const list = conts.length ? conts : ["Africa","Asia","Europe","North America","South America","Oceania","Antarctica"];
-  document.getElementById('filterContinents').innerHTML =
-    list.map(c=>`<label class="chip-toggle"><input type="checkbox" value="${c}"> ${c}</label>`).join('');
+  if(els.filterContinents) els.filterContinents.innerHTML = list.map(c=>`<label class="chip-toggle"><input type="checkbox" value="${c}"> ${c}</label>`).join('');
   const years = talks.map(t=>t.year).filter(Boolean);
   state.minYear = years.length ? Math.min(...years) : 2000;
   state.maxYear = years.length ? Math.max(...years) : new Date().getFullYear();
   state.yearFrom = state.minYear; state.yearTo = state.maxYear;
-  els.yearFrom.min = els.yearTo.min = String(state.minYear);
-  els.yearFrom.max = els.yearTo.max = String(state.maxYear);
-  els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
+  if(els.yearFrom && els.yearTo){
+    els.yearFrom.min = els.yearTo.min = String(state.minYear);
+    els.yearFrom.max = els.yearTo.max = String(state.maxYear);
+    els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
+  }
 }
 function button(label, icon, url){
   if(!url) return '';
@@ -931,6 +959,7 @@ function iconChip(label, icon){ return `<span class="btn-chip" role="note"><i cl
 function mapsLink(q){ return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q); }
 
 function renderActiveFilters(){
+  if(!els.activeFilters) return;
   const chips=[];
   if(state.types.size) state.types.forEach(t=>chips.push(makeChip('Type', t, 'type', t)));
   if(state.modalities.size) state.modalities.forEach(m=>chips.push(makeChip('Mode', m, 'mod', m)));
@@ -943,7 +972,7 @@ function renderActiveFilters(){
   els.activeFilters.querySelectorAll('button[data-x-type]').forEach(b=>b.addEventListener('click',()=>{ state.types.delete(b.dataset.xType); syncDialogChecks(); render(); }));
   els.activeFilters.querySelectorAll('button[data-x-mod]').forEach(b=>b.addEventListener('click',()=>{ state.modalities.delete(b.dataset.xMod); syncDialogChecks(); render(); }));
   els.activeFilters.querySelectorAll('button[data-x-cont]').forEach(b=>b.addEventListener('click',()=>{ state.continents.delete(b.dataset.xCont); syncDialogChecks(); render(); }));
-  els.activeFilters.querySelectorAll('button[data-x-country]').forEach(b=>b.addEventListener('click',()=>{ state.countryContains=''; els.countryContains.value=''; render(); }));
+  els.activeFilters.querySelectorAll('button[data-x-country]').forEach(b=>b.addEventListener('click',()=>{ state.countryContains=''; if(els.countryContains) els.countryContains.value=''; render(); }));
   els.activeFilters.querySelectorAll('button[data-x-year]').forEach(b=>b.addEventListener('click',()=>{ state.yearFrom=state.minYear; state.yearTo=state.maxYear; syncDialogChecks(); render(); }));
   function makeChip(label, val, kind, data){
     return `<span class="chip">${label}: ${val}<button aria-label="Remove ${label}" data-x-${kind}="${data}"><i class="fa fa-times"></i></button></span>`;
@@ -976,8 +1005,8 @@ function sortTalks(list){
 function render(){
   const filtered = state.all.filter(passesFilters);
   const sorted = sortTalks(filtered);
-  els.list.setAttribute('start', String(sorted.length));
-  els.list.innerHTML = sorted.map(t => {
+  if(els.list) els.list.setAttribute('start', String(sorted.length));
+  if(els.list) els.list.innerHTML = sorted.map(t => {
     const titleHtml = t.page ? `<a href="${t.page.replace(/"/g,'%22')}" class="title-link" target="_blank" rel="noopener">${t.title}</a>` : `${t.title}`;
     const meta = [t.event, t.type, t.modality].filter(Boolean).join(' • ');
     const actions = [
@@ -993,24 +1022,28 @@ function render(){
         <div class="actions">${actions}</div>
       </li>`;
   }).join('');
-  els.count.textContent = `Showing ${sorted.length} of ${state.all.length}`;
+  if(els.count) els.count.textContent = `Showing ${sorted.length} of ${state.all.length}`;
   renderActiveFilters();
 }
 function syncDialogChecks(){
-  els.filterTypes.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.types.has(cb.value); });
-  els.filterContinents.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.continents.has(cb.value); });
-  els.filterModality.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.modalities.has(cb.value); });
-  els.countryContains.value = state.countryContains;
-  els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
+  els.filterTypes?.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.types.has(cb.value); });
+  els.filterContinents?.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.continents.has(cb.value); });
+  els.filterModality?.querySelectorAll('input[type=checkbox]').forEach(cb=>{ cb.checked = state.modalities.has(cb.value); });
+  if(els.countryContains) els.countryContains.value = state.countryContains;
+  if(els.yearFrom && els.yearTo){ els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo); }
 }
 
 /*** ===== Boot ===== ***/
 async function boot(){
+  // Initial placeholder to avoid "nothing loaded" flash
+  if (els.list) els.list.innerHTML = '<li class="talk-item"><em>Loading talks…</em></li>';
+  if (els.count) els.count.textContent = '—';
+
   try{
     const rawEntries = await loadAllSources();
     if(!rawEntries.length){
-      els.list.innerHTML = '<li class="talk-item"><em>No talks found (enable ?talksdebug=1 for details).</em></li>';
-      els.count.textContent = 'Showing 0 of 0';
+      if (els.list) els.list.innerHTML = '<li class="talk-item"><em>No talks found (enable ?talksdebug=1 for details).</em></li>';
+      if (els.count) els.count.textContent = 'Showing 0 of 0';
       return;
     }
     state.all = rawEntries.map(bibToTalk);
@@ -1018,46 +1051,52 @@ async function boot(){
     syncDialogChecks();
     render();
   }catch(e){
-    els.list.innerHTML = `<li class="talk-item"><em>Could not load talks.</em><br><small>${String(e)}</small></li>`;
-    els.count.textContent = '—';
+    if (els.list) els.list.innerHTML = `<li class="talk-item"><em>Could not load talks.</em><br><small>${String(e)}</small></li>`;
+    if (els.count) els.count.textContent = '—';
+    return;
   }
 
-  // open dialogs
-  els.btnFilter.addEventListener('click', ()=>{ syncDialogChecks(); (typeof HTMLDialogElement!=='undefined'? els.filterDlg.showModal(): (els.filterDlg.open=true)); });
-  els.btnSort.addEventListener('click',   ()=>{ syncDialogChecks(); (typeof HTMLDialogElement!=='undefined'? els.sortDlg.showModal(): (els.sortDlg.open=true)); });
+  // Open dialogs
+  els.btnFilter?.addEventListener('click', ()=>{ syncDialogChecks(); (els.filterDlg?.showModal ? els.filterDlg.showModal() : (els.filterDlg.open = true)); });
+  els.btnSort?.addEventListener('click',   ()=>{ syncDialogChecks(); (els.sortDlg?.showModal   ? els.sortDlg.showModal()   : (els.sortDlg.open = true)); });
 
-  // apply filters
+  // Apply Filters
   els.btnApplyFilters?.closest('form')?.addEventListener('submit', (e)=>{
     e.preventDefault();
-    const newTypes = new Set(); els.filterTypes.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newTypes.add(cb.value));
-    const newMods  = new Set(); els.filterModality.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newMods.add(cb.value));
-    const newConts = new Set(); els.filterContinents.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newConts.add(cb.value));
+    const newTypes = new Set(); els.filterTypes?.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newTypes.add(cb.value));
+    const newMods  = new Set(); els.filterModality?.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newMods.add(cb.value));
+    const newConts = new Set(); els.filterContinents?.querySelectorAll('input[type=checkbox]:checked').forEach(cb=>newConts.add(cb.value));
     state.types = newTypes; state.modalities = newMods; state.continents = newConts;
-    state.countryContains = els.countryContains.value.trim();
-    const yf = parseInt(els.yearFrom.value,10), yt = parseInt(els.yearTo.value,10);
-    state.yearFrom = isNaN(yf)? state.minYear : Math.max(state.minYear, Math.min(yf, state.maxYear));
-    state.yearTo   = isNaN(yt)? state.maxYear : Math.max(state.minYear, Math.min(yt, state.maxYear));
-    if(state.yearFrom > state.yearTo){ const t = state.yearFrom; state.yearFrom = state.yearTo; state.yearTo = t; }
-    (els.filterDlg.close?.()|| (els.filterDlg.open=false)); render();
+    state.countryContains = (els.countryContains?.value || '').trim();
+    const yf = parseInt(els.yearFrom?.value ?? '', 10);
+    const yt = parseInt(els.yearTo?.value ?? '', 10);
+    state.yearFrom = Number.isFinite(yf) ? Math.max(state.minYear, Math.min(yf, state.maxYear)) : state.minYear;
+    state.yearTo   = Number.isFinite(yt) ? Math.max(state.minYear, Math.min(yt, state.maxYear)) : state.maxYear;
+    if (state.yearFrom > state.yearTo){ const t = state.yearFrom; state.yearFrom = state.yearTo; state.yearTo = t; }
+    (els.filterDlg?.close ? els.filterDlg.close() : (els.filterDlg.open = false));
+    render();
   });
 
-  // reset filters
-  els.btnResetFilters.addEventListener('click', ()=>{
+  // Reset filters
+  els.btnResetFilters?.addEventListener('click', ()=>{
     state.types.clear(); state.modalities.clear(); state.continents.clear();
     state.countryContains = '';
     state.yearFrom = state.minYear; state.yearTo = state.maxYear;
     syncDialogChecks(); render();
   });
-  els.btnResetYear.addEventListener('click', ()=>{
+
+  // Reset year range only
+  els.btnResetYear?.addEventListener('click', ()=>{
     state.yearFrom = state.minYear; state.yearTo = state.maxYear; syncDialogChecks();
   });
 
-  // apply sort
+  // Apply sort
   els.btnApplySort?.closest('form')?.addEventListener('submit', (e)=>{
     e.preventDefault();
-    const sel = els.sortDlg.querySelector('input[name=sortMode]:checked');
-    if(sel) state.sortMode = sel.value;
-    (els.sortDlg.close?.()|| (els.sortDlg.open=false)); render();
+    const sel = els.sortDlg?.querySelector('input[name=sortMode]:checked');
+    if (sel) state.sortMode = sel.value;
+    (els.sortDlg?.close ? els.sortDlg.close() : (els.sortDlg.open = false));
+    render();
   });
 }
 document.addEventListener('DOMContentLoaded', boot);
