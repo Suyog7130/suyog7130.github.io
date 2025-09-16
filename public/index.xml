@@ -1772,24 +1772,26 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
 &lt;/section&gt;
 
 &lt;style&gt;
-  /* --- Theme tokens scoped to this page --- */
+  /* --- Theme tokens scoped to this page (defaults = light) --- */
   .talks-root{
     --bg:#fff; --fg:#24292f; --muted:#555;
     --chip-bg:#fff; --chip-fg:inherit; --chip-border:#d0d7de;
     --btn-bg:#fff; --btn-fg:#24292f; --btn-border:#d0d7de; --btn-bg-hover:#f6f8fa;
     --border:#d0d7de;
+    color: var(--fg);
   }
+  /* OS dark or site dark flips tokens */
   @media (prefers-color-scheme: dark){
     .talks-root{
       --bg:#161b22; --fg:#c9d1d9; --muted:#c9d1d9;
-      --chip-bg:#161b22; --chip-fg:#ffffff; --chip-border:#30363d;
+      --chip-bg:transparent; --chip-fg:inherit; --chip-border:#30363d;
       --btn-bg:#161b22; --btn-fg:#ffffff; --btn-border:#30363d; --btn-bg-hover:#0d1117;
       --border:#30363d;
     }
   }
   html.dark .talks-root, :root[data-theme=&#34;dark&#34;] .talks-root, body.dark .talks-root{
     --bg:#161b22; --fg:#c9d1d9; --muted:#c9d1d9;
-    --chip-bg:#161b22; --chip-fg:#ffffff; --chip-border:#30363d;
+    --chip-bg:transparent; --chip-fg:inherit; --chip-border:#30363d;
     --btn-bg:#161b22; --btn-fg:#ffffff; --btn-border:#30363d; --btn-bg-hover:#0d1117;
     --border:#30363d;
   }
@@ -1809,7 +1811,7 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
   .talks-list{counter-reset:none;padding-left:1.2rem}
   .talk-item{margin:0 0 .9rem 0;padding:0 0 .9rem 0}
   .talk-title{font-weight:600;line-height:1.35;margin:0}
-  .talk-title a{text-decoration:none}
+  .talk-title a{color: inherit; text-decoration:none}
   .talk-title a:hover{text-decoration:underline}
   .talk-meta{margin:.15rem 0 .45rem 0;font-size:.95rem;color:var(--fg)}
 
@@ -1830,13 +1832,17 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
 &lt;/style&gt;
 
 &lt;script&gt;
-/*** ===== Settings ===== ***/
+/*** ===== Config (easy switches) ===== ***/
+const DATE_STYLE = &#39;auto&#39;; // &#39;auto&#39; | &#39;jp&#39; | &#39;en&#39;
+
+/*** ===== Sources ===== ***/
 const TALKS_SOURCES = {
   &#34;Invited&#34;: &#34;/bib/talks-invited.bib&#34;,
   &#34;Contributed&#34;: &#34;/bib/talks-contributed.bib&#34;,
   &#34;Poster&#34;: &#34;/bib/posters.bib&#34;,
   &#34;Other&#34;: &#34;/bib/talks-other.bib&#34;
 };
+
 const DEBUG = /[?&amp;]talksdebug=1/.test(location.search);
 
 /*** ===== Elements &amp; State ===== ***/
@@ -1846,7 +1852,7 @@ const els = {
   filterDlg: document.getElementById(&#39;filterDialog&#39;),
   sortDlg: document.getElementById(&#39;sortDialog&#39;),
   filterTypes: document.getElementById(&#39;filterTypes&#39;),
-  filterModality: document.getElementById(&#39;filterModality&#39;), // &lt;-- missing earlier (fixed)
+  filterModality: document.getElementById(&#39;filterModality&#39;),
   filterContinents: document.getElementById(&#39;filterContinents&#39;),
   countryContains: document.getElementById(&#39;countryContains&#39;),
   btnFilter: document.getElementById(&#39;btnFilter&#39;),
@@ -1857,6 +1863,7 @@ const els = {
   yearFrom: document.getElementById(&#39;yearFrom&#39;),
   yearTo: document.getElementById(&#39;yearTo&#39;),
   btnResetYear: document.getElementById(&#39;btnResetYear&#39;),
+  activeFilters: document.getElementById(&#39;activeFilters&#39;),
   dbgWrap: document.getElementById(&#39;talks-debug&#39;),
   dbg: document.getElementById(&#39;talks-debug-pre&#39;),
 };
@@ -1895,7 +1902,7 @@ async function loadAllSources(){
   return out;
 }
 
-/*** ===== BibTeX utilities &amp; parser ===== ***/
+/*** ===== BibTeX utils &amp; parser ===== ***/
 function uniqueSorted(arr){ return [...new Set(arr)].sort((a,b)=&gt;a.localeCompare(b,&#39;en&#39;,{sensitivity:&#39;base&#39;})); }
 function trimBraces(str){ return (str||&#39;&#39;).replace(/^{|}$/g,&#39;&#39;); }
 function untex(s){
@@ -2039,15 +2046,14 @@ function parseBibTeX(input){
 /*** ===== Map Bib entry -&gt; Talk item ===== ***/
 function pick(...vals){ return vals.find(v =&gt; v &amp;&amp; String(v).trim().length) || &#39;&#39;; }
 function normalizeLocation(f){
-  const loc = pick(f.address, f.location, f.venue, f.institution, f.organization, f.school, f.publisher, f.howpublished, f.note);
+  const loc = pick(f.address, f.location, f.venue, f.institution, f.organization, f.school, f.publisher, f.howpublished, f.note, f.place);
   return untex(trimBraces(loc)).replace(/\s+/g,&#39; &#39;).trim();
 }
 function extractCountry(loc){
   const s = (loc||&#39;&#39;).toLowerCase();
   const parts = s.split(&#39;,&#39;).map(x=&gt;x.trim()).filter(Boolean);
   let guess = parts[parts.length-1] || s;
-  guess = guess.replace(/\busa\b|\bu\.s\.a\.\b/g,&#39;united states&#39;)
-               .replace(/\buk\b/g,&#39;united kingdom&#39;);
+  guess = guess.replace(/\busa\b|\bu\.s\.a\.\b/g,&#39;united states&#39;).replace(/\buk\b/g,&#39;united kingdom&#39;);
   return guess;
 }
 const COUNTRY_TO_CONTINENT = {
@@ -2074,13 +2080,35 @@ function modalityFromFields(f){
   if(hasOnline) return &#39;Online&#39;;
   return &#39;In-person&#39;;
 }
+
+/* date helpers */
+function formatDateLabel(y, mNum, mAlpha, d){
+  const pad = n =&gt; String(n||&#39;&#39;).padStart(2,&#39;0&#39;);
+  if(DATE_STYLE === &#39;jp&#39;){
+    if(y &amp;&amp; mNum &amp;&amp; d) return `${y}年${pad(mNum)}月${pad(d)}日`;
+    if(y &amp;&amp; mNum)      return `${y}年${pad(mNum)}月`;
+    if(y)              return `${y}年`;
+    return &#39;&#39;;
+  }
+  if(DATE_STYLE === &#39;en&#39;){
+    if(y &amp;&amp; mAlpha &amp;&amp; d) return `${y}${mAlpha}${pad(d)}`;
+    if(y &amp;&amp; mAlpha)      return `${mAlpha} ${y}`;
+    if(y)                return String(y);
+    return &#39;&#39;;
+  }
+  // auto
+  if(y &amp;&amp; mNum &amp;&amp; d) return `${y}年${pad(mNum)}月${pad(d)}日`; // full JP when day exists
+  if(y &amp;&amp; mAlpha)    return `${mAlpha} ${y}`;                  // Mon YYYY otherwise
+  if(y)              return String(y);
+  return &#39;&#39;;
+}
 function mapDate(fields){
-  // Only year + month, show as YYYYMon
   const y = parseInt((fields.year||&#39;&#39;).match(/\d{4}/)?.[0]||&#39;&#39;)||0;
-  const monthNum = monthToNum(fields.month||&#39;&#39;);
-  const monthAlpha = monthToAlpha(fields.month||&#39;&#39;);
-  const dateKey = `${y || &#39;0000&#39;}-${monthNum || &#39;00&#39;}`; // for sorting
-  const label = [y ? String(y) : &#39;&#39;, monthAlpha].filter(Boolean).join(&#39;&#39;); // &#34;YYYYMon&#34; or &#34;YYYY&#34;
+  const mNum = monthToNum(fields.month||&#39;&#39;);        // &#34;01&#34; .. &#34;12&#34;
+  const mAlpha = monthToAlpha(fields.month||&#39;&#39;);    // &#34;Jan&#34; etc.
+  const d = parseInt((fields.day||&#39;&#39;).toString(),10) || &#39;&#39;;
+  const dateKey = `${y || &#39;0000&#39;}-${mNum || &#39;00&#39;}-${String(d||&#39;00&#39;).padStart(2,&#39;0&#39;)}`;
+  const label = formatDateLabel(y, mNum, mAlpha, d);
   return {year: y, dateKey, label};
 }
 function bibToTalk(e){
@@ -2111,19 +2139,19 @@ function bibToTalk(e){
 /*** ===== UI helpers ===== ***/
 function initFilters(talks){
   const types = [&#34;Invited&#34;,&#34;Contributed&#34;,&#34;Poster&#34;,&#34;Other&#34;];
-  document.getElementById(&#39;filterTypes&#39;).innerHTML =
-    types.map(t=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${t}&#34;&gt; ${t}&lt;/label&gt;`).join(&#39;&#39;);
+  if(els.filterTypes) els.filterTypes.innerHTML = types.map(t=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${t}&#34;&gt; ${t}&lt;/label&gt;`).join(&#39;&#39;);
   const conts = uniqueSorted(talks.map(t=&gt;t.continent).filter(Boolean));
   const list = conts.length ? conts : [&#34;Africa&#34;,&#34;Asia&#34;,&#34;Europe&#34;,&#34;North America&#34;,&#34;South America&#34;,&#34;Oceania&#34;,&#34;Antarctica&#34;];
-  document.getElementById(&#39;filterContinents&#39;).innerHTML =
-    list.map(c=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${c}&#34;&gt; ${c}&lt;/label&gt;`).join(&#39;&#39;);
+  if(els.filterContinents) els.filterContinents.innerHTML = list.map(c=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${c}&#34;&gt; ${c}&lt;/label&gt;`).join(&#39;&#39;);
   const years = talks.map(t=&gt;t.year).filter(Boolean);
   state.minYear = years.length ? Math.min(...years) : 2000;
   state.maxYear = years.length ? Math.max(...years) : new Date().getFullYear();
   state.yearFrom = state.minYear; state.yearTo = state.maxYear;
-  els.yearFrom.min = els.yearTo.min = String(state.minYear);
-  els.yearFrom.max = els.yearTo.max = String(state.maxYear);
-  els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
+  if(els.yearFrom &amp;&amp; els.yearTo){
+    els.yearFrom.min = els.yearTo.min = String(state.minYear);
+    els.yearFrom.max = els.yearTo.max = String(state.maxYear);
+    els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
+  }
 }
 function button(label, icon, url){
   if(!url) return &#39;&#39;;
@@ -2133,6 +2161,7 @@ function iconChip(label, icon){ return `&lt;span class=&#34;btn-chip&#34; role=&
 function mapsLink(q){ return &#39;https://www.google.com/maps/search/?api=1&amp;query=&#39; + encodeURIComponent(q); }
 
 function renderActiveFilters(){
+  if(!els.activeFilters) return;
   const chips=[];
   if(state.types.size) state.types.forEach(t=&gt;chips.push(makeChip(&#39;Type&#39;, t, &#39;type&#39;, t)));
   if(state.modalities.size) state.modalities.forEach(m=&gt;chips.push(makeChip(&#39;Mode&#39;, m, &#39;mod&#39;, m)));
@@ -2145,7 +2174,7 @@ function renderActiveFilters(){
   els.activeFilters.querySelectorAll(&#39;button[data-x-type]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.types.delete(b.dataset.xType); syncDialogChecks(); render(); }));
   els.activeFilters.querySelectorAll(&#39;button[data-x-mod]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.modalities.delete(b.dataset.xMod); syncDialogChecks(); render(); }));
   els.activeFilters.querySelectorAll(&#39;button[data-x-cont]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.continents.delete(b.dataset.xCont); syncDialogChecks(); render(); }));
-  els.activeFilters.querySelectorAll(&#39;button[data-x-country]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.countryContains=&#39;&#39;; els.countryContains.value=&#39;&#39;; render(); }));
+  els.activeFilters.querySelectorAll(&#39;button[data-x-country]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.countryContains=&#39;&#39;; if(els.countryContains) els.countryContains.value=&#39;&#39;; render(); }));
   els.activeFilters.querySelectorAll(&#39;button[data-x-year]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.yearFrom=state.minYear; state.yearTo=state.maxYear; syncDialogChecks(); render(); }));
   function makeChip(label, val, kind, data){
     return `&lt;span class=&#34;chip&#34;&gt;${label}: ${val}&lt;button aria-label=&#34;Remove ${label}&#34; data-x-${kind}=&#34;${data}&#34;&gt;&lt;i class=&#34;fa fa-times&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/span&gt;`;
@@ -2178,8 +2207,8 @@ function sortTalks(list){
 function render(){
   const filtered = state.all.filter(passesFilters);
   const sorted = sortTalks(filtered);
-  els.list.setAttribute(&#39;start&#39;, String(sorted.length));
-  els.list.innerHTML = sorted.map(t =&gt; {
+  if(els.list) els.list.setAttribute(&#39;start&#39;, String(sorted.length));
+  if(els.list) els.list.innerHTML = sorted.map(t =&gt; {
     const titleHtml = t.page ? `&lt;a href=&#34;${t.page.replace(/&#34;/g,&#39;%22&#39;)}&#34; class=&#34;title-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;${t.title}&lt;/a&gt;` : `${t.title}`;
     const meta = [t.event, t.type, t.modality].filter(Boolean).join(&#39; • &#39;);
     const actions = [
