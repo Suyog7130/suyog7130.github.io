@@ -1667,21 +1667,56 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
       <link>http://localhost:1313/pages/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/research/</guid>
-      <description>&lt;p&gt;My current PhD research relates to gravitational-wave Astrophysics. Over the past few years, I have broadly worked on computational astrophysics and data analysis topics. Below is a brief description and summary of my research interests. Some projects have their own pages.&lt;/p&gt;
+      <description>&lt;p&gt;My PhD research focus on gravitational-wave astrophysics. Over the past few years, I have broadly worked on computational astrophysics and data analysis. Below is a brief description and summary of my research interests. Some projects have their own pages.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;gravitational-waves&#34;&gt;Gravitational Waves&lt;/h2&gt;
+&lt;h2 id=&#34;gravitational-waves-astrophysics&#34;&gt;Gravitational Waves Astrophysics&lt;/h2&gt;
 &lt;h3 id=&#34;generating-gravitational-waveform-approximations-using-machine-learning-models&#34;&gt;Generating gravitational waveform approximations using machine learning models&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I build fast &lt;em&gt;surrogate&lt;/em&gt; or data-driven waveform models for compact binaries, with the current aim of accurately approximating effective one-body waveforms, which would be later expanded into other waveforms approximations and binary systems.&lt;/li&gt;
+&lt;li&gt;Architectures explored include convolutional networks on time–frequency representations and lightweight auto-encoder models for rapid evaluation.&lt;/li&gt;
+&lt;li&gt;Targets: high overlap (low mismatch) with reference models, large parameter-space coverage (incl. eccentricity and spin), and uncertainty-aware predictions (ensembles/calibration).&lt;/li&gt;
+&lt;li&gt;Intended use cases: speeding up parameter estimation and low-latency searches for 3G gravitational wave detectors.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;detections-of-gravitational-waves-from-compact-object-mergers&#34;&gt;Detections of gravitational waves from compact object mergers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I develop deep-learning pipelines for detection/classification of compact binary coalescences and related sources.&lt;/li&gt;
+&lt;li&gt;Training strategy comparisons (curriculum learning, transfer learning) to improve sensitivity and robustness to glitches.&lt;/li&gt;
+&lt;li&gt;Practical considerations: coincidence logic, false-alarm control, and runtime efficiency on commodity GPUs.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;stellar-and-solar-physics&#34;&gt;Stellar and Solar Physics&lt;/h2&gt;
 &lt;h3 id=&#34;stellar-magnetic-cycles-and-variability&#34;&gt;Stellar magnetic cycles and variability&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I studied the &lt;strong&gt;Waldmeier effect&lt;/strong&gt; (anti-correlation of rise time with cycle amplitude) in stellar activity cycles, extending solar-cycle phenomenology to other stars.&lt;/li&gt;
+&lt;li&gt;Methods included cycle extraction from long-baseline activity indices and careful treatment of cadence/uncertainty.&lt;/li&gt;
+&lt;li&gt;Results help connect stellar dynamos with solar behavior and inform scaling relations across spectral types.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;super-resolving-the-solar-magnetograms&#34;&gt;Super-resolving the solar magnetograms&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Worked on super-resolution and denoising of solar magnetograms using convolutional models.&lt;/li&gt;
+&lt;li&gt;Goals: recover small-scale magnetic structures from older low-resolution magnetograms by super-resolving them and cross-instrument benchmarks.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;other-interests&#34;&gt;Other Interests&lt;/h2&gt;
 &lt;h3 id=&#34;agns-and-x-ray-emissions&#34;&gt;AGNs and X-Ray Emissions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Worked on developing pipeline for XMM-Newton EPIC instrument auto data reductions and inferences for a single-query raw data to science products pathway.&lt;/li&gt;
+&lt;li&gt;Analysed the ASASSN-14li data using the developed pipeline to check for a presence of X-Ray Corona formation in that system.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;dark-matter-halos-and-the-uchuu-simulation&#34;&gt;Dark Matter Halos and the Uchuu simulation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Brief stint on developing pipeline to calculate the halo occupancy number distribution in the Uchuu and Rockstar simulations.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;internal-structure-of-neutron-stars&#34;&gt;Internal structure of Neutron Stars&lt;/h3&gt;
-&lt;h3 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h3&gt;</description>
+&lt;ul&gt;
+&lt;li&gt;Investigated tidal contributions to periastron precession in stellar-mass NS–BH binaries and found them &lt;em&gt;negligible&lt;/em&gt; in the regimes considered, clarifying where strong-field GR effects dominate over tidal structure effects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Broad interest in physically-informed ML: data augmentation that respects symmetries, calibrated uncertainties, and attribution methods (e.g., Grad-CAM).&lt;/li&gt;
+&lt;li&gt;Reproducible research and open-source: contributions within the scientific Python ecosystem (e.g., community tools for astronomy and relativity).&lt;/li&gt;
+&lt;li&gt;Symbolic regression and machine learning physical symmetries from large-scale multimodal datasets.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Talks &amp; Presentations</title>
