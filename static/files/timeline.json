@@ -1,38 +1,38 @@
 [
   {
-    "title": "The University of Tokyo",
-    "place": "Japan",
-    "period": "2023 ~",
-    "type": "res",
-    "desc": "PhD in Physics at RESCEU",
+    "title": "PhD in Physics at RESCEU",
+    "place": "The University of Tokyo, Japan",
+    "period": "2023~2026",
+    "type": "education",
+    "desc": "@ Research Center for the Early Universe",
     "url": "https://www.resceu.s.u-tokyo.ac.jp/top.php"
   },
   {
-    "title": "The University of Tokyo",
-    "place": "Japan",
-    "period": "2021 – 2023",
-    "type": "res",
-    "desc": "MSc in Physics at ICRR"
+    "title": "MSc in Physics",
+    "place": "The University of Tokyo, Japan",
+    "period": "2021 ~ 2023",
+    "type": "education",
+    "desc": "@ Institute for Cosmic Ray Research"
   },
   {
-    "title": "",
+    "title": "Project Associate in the Helioseismology lab",
     "place": "TIFR, Mumbai",
-    "period": "2020/11 – 2021/04",
-    "type": "work",
-    "desc": "Project Associate in the Helioseismology lab"
+    "period": "2020/11 ~ 2021/04",
+    "type": "research",
+    "desc": ""
   },
   {
-    "title": "",
+    "title": "BTech in Mechanical Engineering, Design and Manufacturing",
     "place": "IIITDM Kancheepuram, Chennai",
-    "period": "2016 – 2020",
-    "type": "edu",
-    "desc": "BTech in Mechanical Engineering, Design and Manufacturing"
+    "period": "2016 ~ 2020",
+    "type": "education",
+    "desc": ""
   },
   {
-    "title": "",
+    "title": "High School Graduation",
     "place": "Montfort School, Mandla",
-    "period": "2002 – 2016",
-    "type": "edu",
-    "desc": "High School Graduation, majoring in Science"
+    "period": "2002 ~ 2016",
+    "type": "education",
+    "desc": ""
   }
 ]
