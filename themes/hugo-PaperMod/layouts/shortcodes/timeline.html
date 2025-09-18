@@ -139,6 +139,21 @@ body.dark .sx-timeline-root{
 .sx-collapsible .sx-tl-title{display:inline-flex;align-items:center; gap:.5rem}
 .sx-caret{transition:transform .18s ease; display:inline-block}
 .sx-collapsible[open] .sx-caret{transform:rotate(90deg)}
+
+/* Centrally aligned meta info below description */
+.sx-tl-meta-centered {
+  font-size: .98rem;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .18rem;
+  margin: .7rem 0 0 0;
+}
+.sx-place, .sx-period {
+  display: block;
+  font-style: normal;
+}
 </style>
 
 <!-- Fallback sample data -->
@@ -208,12 +223,12 @@ body.dark .sx-timeline-root{
           <div class="sx-spacer"></div>
           <div class="sx-tl-card">
             ${year ? `<div class="sx-year-badge" aria-label="Year">${year}</div>` : ``}
-            <div class="sx-tl-meta">
-              <span class="sx-badge"><i class="fa fa-map-marker"></i>${place}</span>
-              <span class="sx-badge"><i class="fa fa-calendar"></i>${period}</span>
-            </div>
             <h4>${titleHtml}</h4>
             ${desc ? `<div class="sx-tl-desc">${desc}</div>` : ``}
+            <div class="sx-tl-meta-centered">
+                <span class="sx-place"><i class="fa fa-location-dot" style="margin-right: 0.3rem;"></i> ${place}</span>
+                <span class="sx-period"><i class="fa fa-calendar-days" style="margin-right: 0.3rem;"></i> ${period}</span>
+            </div>
           </div>
         </div>
       </li>`;
