@@ -143,13 +143,10 @@ all.forEach(el => {
 	</p>
 	</summary>
 
+{{< timeline src="/files/timeline.json" title="Timeline" collapse="false" open="false" >}}
+
 </details>
 </div>
-
-
-
-{{< timeline src="/files/timeline.json" title="Timeline" collapse="false" open="true" >}}
-
 
 
 ---
