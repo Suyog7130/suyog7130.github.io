@@ -15,97 +15,181 @@
 </section>
 
 <style>
+/* === Treasure-map Timeline — ONLY CSS === */
+/* Fancy fonts for headings/cards */
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Cinzel:wght@400;600;700&display=swap');
+
 /* ----- Theme tokens (scoped) ----- */
 .sx-timeline-root{
-  --bg: #fdf6e3; --fg:#333; --muted:#666; --border:#e5e7eb; --hair:#d0d7de;
-  --card:#fff8dc; --shadow: 0 4px 8px rgba(0,0,0,.2);
-  --line:#8b4513; --node:#daa520;
+  --bg:#fdf6e3; --fg:#333; --muted:#5b4a2f;
+  --border:#d9c9a3; --hair:#d7c7a1;
+  --card:#fff8dc; --shadow:0 6px 14px rgba(0,0,0,.18);
+  --line:#8b4513; --node:#cfa046;
 
-  --edu:#4682b4; --work:#cd853f; --res:#228b22; --award:#8b0000; --other:#6a5acd;
+  --edu:#2c6a9e; --work:#b87a36; --res:#1e7a1e; --award:#7c2d12; --other:#5b4db1;
 }
 @media (prefers-color-scheme: dark){
   .sx-timeline-root{
-    --bg:#2b2b2b; --fg:#f5deb3; --muted:#c0c0c0; --border:#4b4b4b; --hair:#4b4b4b;
-    --card:#3e3e3e; --shadow: 0 4px 8px rgba(0,0,0,.5);
-    --line:#8b4513; --node:#daa520;
+    --bg:#2b2b2b; --fg:#f5deb3; --muted:#e4d4a5;
+    --border:#4b4b4b; --hair:#534b3c;
+    --card:#3c3a34; --shadow:0 6px 18px rgba(0,0,0,.55);
+    --line:#8b4513; --node:#d6a83d;
   }
 }
+html.dark .sx-timeline-root,
+:root[data-theme="dark"] .sx-timeline-root,
+body.dark .sx-timeline-root{
+  --bg:#2b2b2b; --fg:#f5deb3; --muted:#e4d4a5;
+  --border:#4b4b4b; --hair:#534b3c;
+  --card:#3c3a34; --shadow:0 6px 18px rgba(0,0,0,.55);
+  --line:#8b4513; --node:#d6a83d;
+}
 
-/* ----- Layout ----- */
+/* ----- Layout & Title ----- */
 .sx-timeline-wrap{max-width:1000px;margin:0 auto;padding:0 1rem}
-.sx-tl-head{display:flex;justify-content:center;margin:.25rem 0 1rem 0}
-.sx-tl-title{font-family:'Pirata One', cursive; font-size:2rem; color:var(--fg); text-shadow: 2px 2px var(--line);}
+.sx-tl-head{display:flex;justify-content:center;margin:.25rem 0 1.2rem 0}
+.sx-tl-title{
+  font-family:'Pirata One', cursive; font-size:2.1rem; color:var(--fg);
+  text-shadow:2px 2px 0 rgba(0,0,0,.06), 0 0 18px rgba(139,69,19,.25);
+  letter-spacing:.02em
+}
 
-/* Timeline stem with curvy arrows */
+/* ----- River-like main stem (wavy + vignette top/bottom) ----- */
 .sx-tl{position:relative;list-style:none;margin:0;padding:0}
 .sx-tl::before{
+  /* soft vertical gradient with fade on top & bottom */
   content:""; position:absolute; left:50%; top:0; transform:translateX(-50%);
-  width:4px; height:100%; background:var(--line);
-  background-image: repeating-linear-gradient(to bottom, var(--line), var(--line) 10px, transparent 10px, transparent 20px);
+  width:10px; height:100%;
+  background:linear-gradient(to bottom, transparent 0%, var(--line) 10%, var(--line) 90%, transparent 100%);
+  border-radius:10px; filter:blur(.2px) saturate(.9) opacity(.9);
+  z-index:0;
 }
-.sx-tl-item::before{
-  content:""; position:absolute; width:50px; height:50px; background:transparent;
-  border: 2px solid var(--line); border-radius:50%; top:50%; transform:translateY(-50%);
-  left:calc(50% - 25px); z-index:1;
+.sx-tl::after{
+  /* subtle wavy overlay (SVG data URI), also faded at ends via mask */
+  content:""; position:absolute; left:50%; top:0; transform:translateX(-50%);
+  width:8px; height:100%;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='1200' viewBox='0 0 8 1200'%3E%3Cpath d='M4,0 C2,60 6,120 4,180 C2,240 6,300 4,360 C2,420 6,480 4,540 C2,600 6,660 4,720 C2,780 6,840 4,900 C2,960 6,1020 4,1080 C2,1140 6,1200 4,1260' stroke='%238b4513' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round' opacity='0.9'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-size:8px 100%; background-position:center top;
+  -webkit-mask-image:linear-gradient(to bottom, transparent 0, black 8%, black 92%, transparent 100%);
+          mask-image:linear-gradient(to bottom, transparent 0, black 8%, black 92%, transparent 100%);
+  opacity:.9; z-index:0;
 }
-.sx-tl-item:nth-child(odd)::before{clip-path: polygon(0 0, 100% 50%, 0 100%);}
-.sx-tl-item:nth-child(even)::before{clip-path: polygon(100% 0, 0 50%, 100% 100%);}
 
-/* Item */
-.sx-tl-item{position:relative;padding:2rem 0}
-.sx-tl-row{display:grid;grid-template-columns:1fr 24px 1fr;gap:1rem;align-items:center}
-.sx-tl-node{width:20px;height:20px;border-radius:50%;background:var(--node);box-shadow:0 0 0 6px var(--bg);margin:0 auto;z-index:2}
+/* ----- Items & grid ----- */
+.sx-tl-item{
+  position:relative; padding:2.2rem 0;
+  --curve-w: clamp(140px, 22vw, 260px);
+  --curve-h: clamp(70px, 12vw, 130px);
+  --arrow: 10px;
+}
+.sx-tl-row{display:grid;grid-template-columns:1fr 24px 1fr;gap:1.1rem;align-items:center;position:relative;z-index:1}
 
-/* Fancy Card */
+/* Node (coin) on the river */
+.sx-tl-node{
+  width:22px;height:22px;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%, #fff6bf, var(--node));
+  box-shadow:0 0 0 6px var(--bg), 0 2px 6px rgba(0,0,0,.25);
+  margin:0 auto; z-index:3;
+}
+
+/* ----- Curvy connectors with arrowheads (no extra markup) ----- */
+/* LEFT card: quarter-ellipse curve from stem to card */
+.sx-left.sx-tl-item::before{
+  content:""; position:absolute; z-index:1;
+  top:calc(50% - var(--curve-h)/2); left:calc(50% - var(--curve-w));
+  width:var(--curve-w); height:var(--curve-h);
+  border:3px solid transparent; border-top-color:var(--line); border-left-color:var(--line);
+  border-radius:var(--curve-w) var(--curve-h); pointer-events:none;
+  filter:drop-shadow(0 0 1px rgba(0,0,0,.15));
+}
+.sx-left.sx-tl-item::after{
+  /* arrowhead near card edge */
+  content:""; position:absolute; z-index:2;
+  top:calc(50% + var(--curve-h)/2 - var(--arrow));
+  left:calc(50% - var(--curve-w) - var(--arrow) + 6px);
+  width:0;height:0;border:var(--arrow) solid transparent; border-left-color:var(--line);
+  transform:rotate(-18deg);
+}
+/* RIGHT card */
+.sx-right.sx-tl-item::before{
+  content:""; position:absolute; z-index:1;
+  top:calc(50% - var(--curve-h)/2); left:50%;
+  width:var(--curve-w); height:var(--curve-h);
+  border:3px solid transparent; border-top-color:var(--line); border-right-color:var(--line);
+  border-radius:var(--curve-w) var(--curve-h); pointer-events:none;
+  filter:drop-shadow(0 0 1px rgba(0,0,0,.15));
+}
+.sx-right.sx-tl-item::after{
+  content:""; position:absolute; z-index:2;
+  top:calc(50% + var(--curve-h)/2 - var(--arrow));
+  left:calc(50% + var(--curve-w) - 6px);
+  width:0;height:0;border:var(--arrow) solid transparent; border-right-color:var(--line);
+  transform:rotate(18deg);
+}
+
+/* ----- Fancy “treasure-card” look ----- */
 .sx-tl-card{
-  background:var(--card); color:var(--fg); border:2px solid var(--border);
+  background:var(--card);
+  color:var(--fg);
+  border:2px solid var(--border);
   border-left:6px solid var(--accent, var(--other));
-  border-radius:15px; box-shadow:var(--shadow); padding:1.2rem 1.5rem;
-  font-family: 'Cinzel', serif; font-size:1.1rem;
-  background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  padding:1.15rem 1.35rem 1.05rem;
+  font-family:'Cinzel', serif; font-size:1.05rem;
+  background-image:
+    radial-gradient(120px 80px at 10% 12%, rgba(139,69,19,.06), transparent 60%),
+    radial-gradient(160px 110px at 90% 80%, rgba(0,0,0,.05), transparent 55%);
+  position:relative; z-index:2;
 }
-.sx-tl-card h4{margin:.1rem 0 .35rem 0; line-height:1.25; font-family:'Pirata One', cursive; font-size:1.5rem; color:var(--fg);}
-.sx-tl-meta{font-size:.92rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.6rem;margin:.25rem 0}
-.sx-tl-desc{margin:.35rem 0 0 0; line-height:1.6; font-style:italic;}
-.sx-tl-links{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
-.sx-chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--hair);border-radius:999px;padding:.2rem .6rem;font-size:.85rem;background:transparent;color:inherit;text-decoration:none}
+.sx-left .sx-tl-card{grid-column:1; transform:translateX(-8px) rotate(-1.2deg)}
+.sx-right .sx-tl-card{grid-column:3; transform:translateX(8px) rotate(1.1deg)}
+
+.sx-tl-card h4{
+  margin:.05rem 0 .35rem 0; line-height:1.25;
+  font-family:'Pirata One', cursive; font-size:1.55rem; letter-spacing:.02em
+}
+.sx-tl-meta{font-size:.92rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.6rem;margin:.2rem 0}
+.sx-tl-desc{margin:.35rem 0 0 0; line-height:1.6; font-style:italic}
+.sx-tl-links{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.45rem}
+.sx-chip{
+  display:inline-flex;align-items:center;gap:.35rem;
+  border:1px solid var(--hair); border-radius:999px;
+  padding:.22rem .6rem; font-size:.85rem; background:transparent; color:inherit; text-decoration:none
+}
 .sx-chip .fa{font-size:.9em; color:inherit}
 
-/* Alternate sides */
-.sx-left .sx-tl-card{grid-column:1; transform:translateX(-10px) rotate(-2deg);}
-.sx-left .sx-tl-node{grid-column:2}
-.sx-left .sx-spacer{grid-column:3}
-.sx-right .sx-tl-card{grid-column:3; transform:translateX(10px) rotate(2deg);}
-.sx-right .sx-tl-node{grid-column:2}
-.sx-right .sx-spacer{grid-column:1}
+/* ----- Type accents (left border & dot colors) ----- */
+.sx-type-edu { --accent: var(--edu) }
+.sx-type-work{ --accent: var(--work) }
+.sx-type-res { --accent: var(--res)  }
+.sx-type-award{--accent: var(--award)}
+.sx-type-other{--accent: var(--other)}
+.sx-badge{display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--hair);border-radius:.6rem;padding:.12rem .55rem;font-size:.83rem;background:transparent}
+.sx-dot{width:.58rem;height:.58rem;border-radius:999px;background:var(--accent, var(--other))}
 
-/* Types -> accents */
-.sx-type-edu { --accent: var(--edu); }
-.sx-type-work{ --accent: var(--work); }
-.sx-type-res { --accent: var(--res);  }
-.sx-type-award{--accent: var(--award);}
-.sx-type-other{--accent: var(--other);}
-
-/* Badges */
-.sx-badge{display:inline-flex;align-items:center;gap:.4rem;border:1px solid var(--hair);border-radius:.6rem;padding:.15rem .55rem;font-size:.83rem;background:transparent}
-.sx-dot{width:.55rem;height:.55rem;border-radius:999px;background:var(--accent, var(--other))}
-
-/* Responsive: stack */
+/* ----- Responsive (stack) ----- */
 @media (max-width: 860px){
-  .sx-tl::before{left:12px; transform:none}
-  .sx-tl-row{grid-template-columns:24px 1fr; gap:.8rem}
-  .sx-left .sx-tl-card, .sx-right .sx-tl-card{grid-column:2}
+  .sx-tl::before, .sx-tl::after{left:12px; transform:none}
+  .sx-tl-row{grid-template-columns:24px 1fr; gap:.9rem}
+  .sx-left .sx-tl-card, .sx-right .sx-tl-card{grid-column:2; transform:none}
   .sx-left .sx-tl-node, .sx-right .sx-tl-node{grid-column:1;margin-left:0}
   .sx-left .sx-spacer, .sx-right .sx-spacer{display:none}
-}
 
-/* Details wrapper (optional collapse) */
+  /* tighten curves on mobile */
+  .sx-tl-item{ --curve-w: clamp(95px, 42vw, 160px); --curve-h: clamp(60px, 18vw, 110px); }
+  .sx-left.sx-tl-item::before{ left:0; transform:translateX(12px) }
+  .sx-right.sx-tl-item::before{ left:12px }
+}
+  
+/* ----- Optional collapse wrapper styling ----- */
 .sx-collapsible summary{list-style:none; cursor:pointer}
 .sx-collapsible summary::-webkit-details-marker{display:none}
 .sx-collapsible .sx-tl-title{display:inline-flex;align-items:center; gap:.5rem}
 .sx-caret{transition:transform .18s ease; display:inline-block}
 .sx-collapsible[open] .sx-caret{transform:rotate(90deg)}
 </style>
+
 
 <!-- fallback sample data (used if no src set) -->
 <script type="application/json" id="sx-timeline-sample">
