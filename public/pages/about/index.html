@@ -516,7 +516,7 @@ body.dark .sx-timeline-root{
 
  
 .sx-tl-node{
-  width:22px; height:22px; border-radius:50%;
+  width:10px; height:10px; border-radius:50%;
   background:radial-gradient(circle at 30% 30%, #fff3c5, #d3b06d 70%, #a88443);
   box-shadow:0 0 0 6px var(--bg), 0 2px 6px rgba(0,0,0,.25);
   margin:0 auto; z-index:2; transform:translateX(0)
@@ -705,6 +705,8 @@ body.dark .sx-timeline-root{
     root.innerHTML = wrap(`<ol class="sx-tl">${list}</ol>` + svg);
 
     
+    layoutSVG();
+    
     requestAnimationFrame(layoutSVG);
     let t=null; addEventListener('resize', ()=>{ clearTimeout(t); t = setTimeout(layoutSVG, 120); });
     setTimeout(layoutSVG, 500);
@@ -763,8 +765,9 @@ body.dark .sx-timeline-root{
       const xStart = riverX(yMid);
 
       
-      const nodeCenter = (nodeRect.left + nodeRect.right)/2 - r.left;
-      node.style.transform = `translateX(${(xStart - nodeCenter).toFixed(1)}px)`;
+      const nodeCenterX = (nodeRect.left + nodeRect.right)/2 - r.left;
+      const nodeCenterY = (nodeRect.top + nodeRect.bottom)/2 - r.top;
+      node.style.transform = `translate(${(xStart - nodeCenterX).toFixed(1)}px, ${(yMid - nodeCenterY).toFixed(1)}px)`;
 
       
       const corners = [
