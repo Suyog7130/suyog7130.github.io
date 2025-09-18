@@ -1,0 +1,225 @@
+<!-- layouts/shortcodes/timeline.html -->
+{{- $src := .Get "src" -}}
+{{- $title := .Get "title" | default "Timeline" -}}
+{{- $collapse := .Get "collapse" | default "false" -}}
+{{- $open := .Get "open" | default "true" -}}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<section class="sx-timeline-root"
+  data-src="{{ $src }}"
+  data-title="{{ $title }}"
+  data-collapse="{{ $collapse }}"
+  data-open="{{ $open }}">
+  <!-- container will be filled by JS -->
+</section>
+
+<style>
+/* ----- Theme tokens (scoped) ----- */
+.sx-timeline-root{
+  --bg: #fff; --fg:#24292f; --muted:#666; --border:#e5e7eb; --hair:#d0d7de;
+  --card:#fff; --shadow: 0 1px 4px rgba(0,0,0,.08);
+  --line:#d0d7de; --node:#6e7781;
+
+  --edu:#1f6feb; --work:#d97706; --res:#16a34a; --award:#8b5e34; --other:#7c3aed;
+}
+@media (prefers-color-scheme: dark){
+  .sx-timeline-root{
+    --bg:#0d1117; --fg:#c9d1d9; --muted:#9aa4ad; --border:#30363d; --hair:#30363d;
+    --card:#161b22; --shadow: 0 1px 4px rgba(0,0,0,.35);
+    --line:#30363d; --node:#8b949e;
+  }
+}
+html.dark .sx-timeline-root,
+:root[data-theme="dark"] .sx-timeline-root,
+body.dark .sx-timeline-root{
+  --bg:#0d1117; --fg:#c9d1d9; --muted:#9aa4ad; --border:#30363d; --hair:#30363d;
+  --card:#161b22; --shadow: 0 1px 4px rgba(0,0,0,.35);
+  --line:#30363d; --node:#8b949e;
+}
+
+/* ----- Layout ----- */
+.sx-timeline-wrap{max-width:1000px;margin:0 auto;padding:0 1rem}
+.sx-tl-head{display:flex;justify-content:center;margin:.25rem 0 1rem 0}
+.sx-tl-title{font-weight:700;letter-spacing:.2px}
+
+.sx-tl{position:relative;list-style:none;margin:0;padding:0}
+.sx-tl::before{
+  content:""; position:absolute; left:50%; top:0; transform:translateX(-50%);
+  width:2px; height:100%; background:linear-gradient(to bottom, rgba(0,0,0,0), var(--line), rgba(0,0,0,0));
+}
+
+/* Item */
+.sx-tl-item{position:relative;padding:1.25rem 0}
+.sx-tl-row{display:grid;grid-template-columns:1fr 24px 1fr;gap:1rem;align-items:center}
+.sx-tl-node{width:14px;height:14px;border-radius:50%;background:var(--node);box-shadow:0 0 0 4px var(--bg);margin:0 auto}
+
+/* Card */
+.sx-tl-card{
+  background:var(--card); color:var(--fg); border:1px solid var(--border);
+  border-left:4px solid var(--accent, var(--other));
+  border-radius:10px; box-shadow:var(--shadow); padding:.9rem 1rem
+}
+.sx-tl-card h4{margin:.1rem 0 .35rem 0; line-height:1.25}
+.sx-tl-meta{font-size:.92rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.6rem;margin:.25rem 0}
+.sx-tl-desc{margin:.35rem 0 0 0; line-height:1.6}
+.sx-tl-links{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
+.sx-chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--hair);border-radius:999px;padding:.2rem .6rem;font-size:.85rem;background:transparent;color:inherit;text-decoration:none}
+.sx-chip .fa{font-size:.9em; color:inherit}
+
+/* Alternate sides */
+.sx-left .sx-tl-card{grid-column:1}
+.sx-left .sx-tl-node{grid-column:2}
+.sx-left .sx-spacer{grid-column:3}
+.sx-right .sx-tl-card{grid-column:3}
+.sx-right .sx-tl-node{grid-column:2}
+.sx-right .sx-spacer{grid-column:1}
+
+/* Types -> accents */
+.sx-type-edu { --accent: var(--edu); }
+.sx-type-work{ --accent: var(--work); }
+.sx-type-res { --accent: var(--res);  }
+.sx-type-award{--accent: var(--award);}
+.sx-type-other{--accent: var(--other);}
+
+/* Badges */
+.sx-badge{display:inline-flex;align-items:center;gap:.4rem;border:1px solid var(--hair);border-radius:.6rem;padding:.15rem .55rem;font-size:.83rem;background:transparent}
+.sx-dot{width:.55rem;height:.55rem;border-radius:999px;background:var(--accent, var(--other))}
+
+/* Responsive: stack */
+@media (max-width: 860px){
+  .sx-tl::before{left:12px; transform:none}
+  .sx-tl-row{grid-template-columns:24px 1fr; gap:.8rem}
+  .sx-left .sx-tl-card, .sx-right .sx-tl-card{grid-column:2}
+  .sx-left .sx-tl-node, .sx-right .sx-tl-node{grid-column:1;margin-left:0}
+  .sx-left .sx-spacer, .sx-right .sx-spacer{display:none}
+}
+
+/* Details wrapper (optional collapse) */
+.sx-collapsible summary{list-style:none; cursor:pointer}
+.sx-collapsible summary::-webkit-details-marker{display:none}
+.sx-collapsible .sx-tl-title{display:inline-flex;align-items:center; gap:.5rem}
+.sx-caret{transition:transform .18s ease; display:inline-block}
+.sx-collapsible[open] .sx-caret{transform:rotate(90deg)}
+</style>
+
+<!-- fallback sample data (used if no src set) -->
+<script type="application/json" id="sx-timeline-sample">
+[
+  {"title":"PhD in Physics at RESCEU","org":"The University of Tokyo","period":"2023 ~","type":"res","desc":"PhD in Physics at RESCEU","url":"https://www.resceu.s.u-tokyo.ac.jp/top.php"},
+  {"title":"MSc in Physics at ICRR","org":"The University of Tokyo","period":"2021 – 2023","type":"res","desc":"MSc in Physics at ICRR"},
+  {"title":"Project Associate in the Helioseismology lab","org":"TIFR, Mumbai","period":"2020/11 – 2021/04","type":"work","desc":"Project Associate in the Helioseismology lab"},
+  {"title":"BTech in Mechanical Engineering, Design and Manufacturing","org":"IIITDM Kancheepuram, Chennai","period":"2016 – 2020","type":"edu","desc":"BTech in Mechanical Engineering, Design and Manufacturing"},
+  {"title":"High School Graduation, majoring in Science","org":"Montfort School, Mandla","period":"2002 – 2016","type":"edu","desc":"High School Graduation, majoring in Science"}
+]
+</script>
+
+<script>
+(function(){
+  // --- Robust root detection: find the nearest preceding .sx-timeline-root ---
+  function findRoot(){
+    let el = document.currentScript;
+    while(el && (el = el.previousElementSibling)){
+      if(el.classList && el.classList.contains('sx-timeline-root')) return el;
+    }
+    // fallback: global last match
+    const all = document.querySelectorAll('.sx-timeline-root');
+    return all.length ? all[all.length-1] : null;
+  }
+  const root = findRoot();
+  if(!root){ console.warn('[timeline] root not found'); return; }
+
+  const cfg = {
+    src: root.getAttribute('data-src') || "",
+    title: root.getAttribute('data-title') || "Timeline",
+    collapse: (root.getAttribute('data-collapse')||"false").toLowerCase()==="true",
+    open: (root.getAttribute('data-open')||"true").toLowerCase()==="true"
+  };
+
+  function wrap(inner){
+    if(!cfg.collapse){
+      return `<div class="sx-timeline-wrap">
+        <div class="sx-tl-head"><h3 class="sx-tl-title">${cfg.title}</h3></div>
+        ${inner}
+      </div>`;
+    }
+    const openAttr = cfg.open ? " open" : "";
+    return `<div class="sx-timeline-wrap sx-collapsible">
+      <details${openAttr}>
+        <summary><h3 class="sx-tl-title"><span class="sx-caret">▶</span>${cfg.title}</h3></summary>
+        ${inner}
+      </details>
+    </div>`;
+  }
+
+  function sideClass(i){ return (i % 2 === 0) ? "sx-left" : "sx-right"; }
+  function typeClass(t){
+    const k = (t||"").toLowerCase();
+    if(k.startsWith("edu")) return "sx-type-edu";
+    if(k.startsWith("wor")) return "sx-type-work";
+    if(k.startsWith("res")) return "sx-type-res";
+    if(k.startsWith("awa")) return "sx-type-award";
+    return "sx-type-other";
+  }
+  function esc(s){ return String(s||"").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+  function render(items){
+    const list = items.map((it, i) => {
+      const cls = `${sideClass(i)} ${typeClass(it.type)}`;
+      const title = esc(it.title);
+      const org = esc(it.org);
+      const period = esc(it.period);
+      const desc = it.desc ? esc(it.desc) : "";
+      const url = (it.url||"").trim();
+      const titleHtml = url ? `<a href="${url.replace(/"/g,'%22')}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">${title}</a>` : title;
+
+      return `<li class="sx-tl-item ${cls}">
+        <div class="sx-tl-row">
+          <div class="sx-spacer"></div>
+          <div class="sx-tl-node"></div>
+          <div class="sx-spacer"></div>
+
+          <div class="sx-tl-card">
+            <div class="sx-tl-meta">
+              <span class="sx-badge"><span class="sx-dot"></span>${org}</span>
+              <span class="sx-badge"><i class="fa fa-calendar"></i>${period}</span>
+            </div>
+            <h4>${titleHtml}</h4>
+            ${desc ? `<div class="sx-tl-desc">${desc}</div>` : ``}
+          </div>
+        </div>
+      </li>`;
+    }).join("");
+
+    const html = wrap(`<ol class="sx-tl">${list}</ol>`);
+    root.innerHTML = html;
+  }
+
+  async function boot(){
+    if(cfg.src){
+      try{
+        const res = await fetch(new URL(cfg.src, document.baseURI), {cache:'no-cache'});
+        if(!res.ok) throw new Error(res.status);
+        const data = await res.json();
+        render(data);
+        return;
+      }catch(e){
+        console.warn('[timeline] failed to fetch src, falling back to sample', e);
+      }
+    }
+    try{
+      const sample = document.getElementById('sx-timeline-sample');
+      render(JSON.parse(sample.textContent));
+    }catch(e){
+      root.innerHTML = wrap(`<p style="color:var(--muted)">No timeline data.</p>`);
+    }
+  }
+
+  // Run after DOM is ready so sibling search is reliable.
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', boot);
+  }else{
+    boot();
+  }
+})();
+</script>
