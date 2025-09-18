@@ -11,143 +11,103 @@
   data-title="{{ $title }}"
   data-collapse="{{ $collapse }}"
   data-open="{{ $open }}">
-  <!-- container will be filled by JS -->
 </section>
 
 <style>
-/* === Treasure-map Timeline — ONLY CSS === */
-/* Fancy fonts for headings/cards */
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Cinzel:wght@400;600;700&display=swap');
+/* === Treasure-map / sketch timeline (monotone) ===========================
+   Fonts: set your own favorites here (from your fonts page).
+   Example fallback stack below — replace family names as you like.
+===========================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mistral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
-/* ----- Theme tokens (scoped) ----- */
 .sx-timeline-root{
-  --bg:#fdf6e3; --fg:#333; --muted:#5b4a2f;
-  --border:#d9c9a3; --hair:#d7c7a1;
-  --card:#fff8dc; --shadow:0 6px 14px rgba(0,0,0,.18);
-  --line:#8b4513; --node:#cfa046;
+  /* Font variables — swap these to your favorites */
+  --font-title: 'Parisienne', serif;
+  --font-body:  'Lato', 'Mistral', serif;
 
-  --edu:#2c6a9e; --work:#b87a36; --res:#1e7a1e; --award:#7c2d12; --other:#5b4db1;
+  /* Sketch palette (light) */
+  --bg:#fdf6e3;           /* paper */
+  --fg:#2d2a26;           /* ink text */
+  --muted:#6b5b4a;        /* faded ink */
+  --ink:#4b3a2a;          /* line/arrow color (brownish-black) */
+  --sepia:#8b7355;        /* accents */
+  --card:#fff7e3;         /* card parchment */
+  --border:#d7c7a1;
+  --hair:#d7c7a1;
+  --shadow:0 8px 16px rgba(0,0,0,.14);
 }
 @media (prefers-color-scheme: dark){
   .sx-timeline-root{
-    --bg:#2b2b2b; --fg:#f5deb3; --muted:#e4d4a5;
-    --border:#4b4b4b; --hair:#534b3c;
-    --card:#3c3a34; --shadow:0 6px 18px rgba(0,0,0,.55);
-    --line:#8b4513; --node:#d6a83d;
+    --bg:#2b2926; --fg:#f2e6cf; --muted:#d3c7b2; --ink:#a78b6d;
+    --sepia:#b89a75; --card:#3b362f; --border:#5a4e43; --hair:#5a4e43;
+    --shadow:0 10px 22px rgba(0,0,0,.55);
   }
 }
 html.dark .sx-timeline-root,
 :root[data-theme="dark"] .sx-timeline-root,
 body.dark .sx-timeline-root{
-  --bg:#2b2b2b; --fg:#f5deb3; --muted:#e4d4a5;
-  --border:#4b4b4b; --hair:#534b3c;
-  --card:#3c3a34; --shadow:0 6px 18px rgba(0,0,0,.55);
-  --line:#8b4513; --node:#d6a83d;
+  --bg:#2b2926; --fg:#f2e6cf; --muted:#d3c7b2; --ink:#a78b6d;
+  --sepia:#b89a75; --card:#3b362f; --border:#5a4e43; --hair:#5a4e43;
+  --shadow:0 10px 22px rgba(0,0,0,.55);
 }
 
-/* ----- Layout & Title ----- */
+/* --- Basic layout ------------------------------------------------------ */
 .sx-timeline-wrap{max-width:1000px;margin:0 auto;padding:0 1rem}
 .sx-tl-head{display:flex;justify-content:center;margin:.25rem 0 1.2rem 0}
 .sx-tl-title{
-  font-family:'Pirata One', cursive; font-size:2.1rem; color:var(--fg);
-  text-shadow:2px 2px 0 rgba(0,0,0,.06), 0 0 18px rgba(139,69,19,.25);
-  letter-spacing:.02em
-}
-
-/* ----- River-like main stem (wavy + vignette top/bottom) ----- */
-.sx-tl{position:relative;list-style:none;margin:0;padding:0}
-.sx-tl::before{
-  /* soft vertical gradient with fade on top & bottom */
-  content:""; position:absolute; left:50%; top:0; transform:translateX(-50%);
-  width:10px; height:100%;
-  background:linear-gradient(to bottom, transparent 0%, var(--line) 10%, var(--line) 90%, transparent 100%);
-  border-radius:10px; filter:blur(.2px) saturate(.9) opacity(.9);
-  z-index:0;
-}
-.sx-tl::after{
-  /* subtle wavy overlay (SVG data URI), also faded at ends via mask */
-  content:""; position:absolute; left:50%; top:0; transform:translateX(-50%);
-  width:8px; height:100%;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='1200' viewBox='0 0 8 1200'%3E%3Cpath d='M4,0 C2,60 6,120 4,180 C2,240 6,300 4,360 C2,420 6,480 4,540 C2,600 6,660 4,720 C2,780 6,840 4,900 C2,960 6,1020 4,1080 C2,1140 6,1200 4,1260' stroke='%238b4513' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round' opacity='0.9'/%3E%3C/svg%3E");
-  background-repeat:no-repeat; background-size:8px 100%; background-position:center top;
-  -webkit-mask-image:linear-gradient(to bottom, transparent 0, black 8%, black 92%, transparent 100%);
-          mask-image:linear-gradient(to bottom, transparent 0, black 8%, black 92%, transparent 100%);
-  opacity:.9; z-index:0;
-}
-
-/* ----- Items & grid ----- */
-.sx-tl-item{
-  position:relative; padding:2.2rem 0;
-  --curve-w: clamp(140px, 22vw, 260px);
-  --curve-h: clamp(70px, 12vw, 130px);
-  --arrow: 10px;
-}
-.sx-tl-row{display:grid;grid-template-columns:1fr 24px 1fr;gap:1.1rem;align-items:center;position:relative;z-index:1}
-
-/* Node (coin) on the river */
-.sx-tl-node{
-  width:22px;height:22px;border-radius:50%;
-  background:radial-gradient(circle at 30% 30%, #fff6bf, var(--node));
-  box-shadow:0 0 0 6px var(--bg), 0 2px 6px rgba(0,0,0,.25);
-  margin:0 auto; z-index:3;
-}
-
-/* ----- Curvy connectors with arrowheads (no extra markup) ----- */
-/* LEFT card: quarter-ellipse curve from stem to card */
-.sx-left.sx-tl-item::before{
-  content:""; position:absolute; z-index:1;
-  top:calc(50% - var(--curve-h)/2); left:calc(50% - var(--curve-w));
-  width:var(--curve-w); height:var(--curve-h);
-  border:3px solid transparent; border-top-color:var(--line); border-left-color:var(--line);
-  border-radius:var(--curve-w) var(--curve-h); pointer-events:none;
-  filter:drop-shadow(0 0 1px rgba(0,0,0,.15));
-}
-.sx-left.sx-tl-item::after{
-  /* arrowhead near card edge */
-  content:""; position:absolute; z-index:2;
-  top:calc(50% + var(--curve-h)/2 - var(--arrow));
-  left:calc(50% - var(--curve-w) - var(--arrow) + 6px);
-  width:0;height:0;border:var(--arrow) solid transparent; border-left-color:var(--line);
-  transform:rotate(-18deg);
-}
-/* RIGHT card */
-.sx-right.sx-tl-item::before{
-  content:""; position:absolute; z-index:1;
-  top:calc(50% - var(--curve-h)/2); left:50%;
-  width:var(--curve-w); height:var(--curve-h);
-  border:3px solid transparent; border-top-color:var(--line); border-right-color:var(--line);
-  border-radius:var(--curve-w) var(--curve-h); pointer-events:none;
-  filter:drop-shadow(0 0 1px rgba(0,0,0,.15));
-}
-.sx-right.sx-tl-item::after{
-  content:""; position:absolute; z-index:2;
-  top:calc(50% + var(--curve-h)/2 - var(--arrow));
-  left:calc(50% + var(--curve-w) - 6px);
-  width:0;height:0;border:var(--arrow) solid transparent; border-right-color:var(--line);
-  transform:rotate(18deg);
-}
-
-/* ----- Fancy “treasure-card” look ----- */
-.sx-tl-card{
-  background:var(--card);
+  font-family:var(--font-title);
+  font-size:2.1rem;
   color:var(--fg);
+  text-shadow:1px 1px 0 rgba(0,0,0,.05), 0 0 14px rgba(75,58,42,.18);
+  letter-spacing:.01em
+}
+.sx-tl{position:relative;list-style:none;margin:0;padding:0}
+
+/* --- SVG canvas for river & connectors -------------------------------- */
+.sx-svg{
+  position:absolute; inset:0; pointer-events:none; z-index:0;
+  filter:url(#sx-rough); /* sketchy wobble */
+}
+.sx-svg path{ vector-effect:non-scaling-stroke }
+
+/* --- Items ------------------------------------------------------------- */
+.sx-tl-item{position:relative;padding:2.2rem 0}
+.sx-tl-row{
+  display:grid; grid-template-columns:1fr 24px 1fr; gap:1.1rem; align-items:center;
+  position:relative; z-index:1;
+}
+
+/* Node (“stamp”) — we nudge this horizontally to sit on the river */
+.sx-tl-node{
+  width:22px; height:22px; border-radius:50%;
+  background:radial-gradient(circle at 30% 30%, #fff3c5, #d3b06d 70%, #a88443);
+  box-shadow:0 0 0 6px var(--bg), 0 2px 6px rgba(0,0,0,.25);
+  margin:0 auto; z-index:2; transform:translateX(0)
+}
+
+/* Cards (parchment) */
+.sx-tl-card{
+  background:var(--card); color:var(--fg);
   border:2px solid var(--border);
-  border-left:6px solid var(--accent, var(--other));
+  border-left:6px solid var(--sepia);
   border-radius:16px;
   box-shadow:var(--shadow);
-  padding:1.15rem 1.35rem 1.05rem;
-  font-family:'Cinzel', serif; font-size:1.05rem;
-  background-image:
-    radial-gradient(120px 80px at 10% 12%, rgba(139,69,19,.06), transparent 60%),
-    radial-gradient(160px 110px at 90% 80%, rgba(0,0,0,.05), transparent 55%);
+  padding:1.1rem 1.3rem 1rem;
+  font-family:var(--font-body); font-size:1.05rem;
   position:relative; z-index:2;
+  background-image:
+    radial-gradient(140px 90px at 10% 15%, rgba(139,69,19,.07), transparent 60%),
+    radial-gradient(180px 120px at 90% 80%, rgba(0,0,0,.06), transparent 55%);
 }
 .sx-left .sx-tl-card{grid-column:1; transform:translateX(-8px) rotate(-1.2deg)}
 .sx-right .sx-tl-card{grid-column:3; transform:translateX(8px) rotate(1.1deg)}
 
 .sx-tl-card h4{
   margin:.05rem 0 .35rem 0; line-height:1.25;
-  font-family:'Pirata One', cursive; font-size:1.55rem; letter-spacing:.02em
+  font-family:var(--font-title); font-size:1.55rem; letter-spacing:.02em
 }
 .sx-tl-meta{font-size:.92rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.6rem;margin:.2rem 0}
 .sx-tl-desc{margin:.35rem 0 0 0; line-height:1.6; font-style:italic}
@@ -159,30 +119,18 @@ body.dark .sx-timeline-root{
 }
 .sx-chip .fa{font-size:.9em; color:inherit}
 
-/* ----- Type accents (left border & dot colors) ----- */
-.sx-type-edu { --accent: var(--edu) }
-.sx-type-work{ --accent: var(--work) }
-.sx-type-res { --accent: var(--res)  }
-.sx-type-award{--accent: var(--award)}
-.sx-type-other{--accent: var(--other)}
+/* Badges */
 .sx-badge{display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--hair);border-radius:.6rem;padding:.12rem .55rem;font-size:.83rem;background:transparent}
-.sx-dot{width:.58rem;height:.58rem;border-radius:999px;background:var(--accent, var(--other))}
+.sx-dot{width:.58rem;height:.58rem;border-radius:999px;background:var(--sepia)}
 
-/* ----- Responsive (stack) ----- */
+/* Responsive (stack) */
 @media (max-width: 860px){
-  .sx-tl::before, .sx-tl::after{left:12px; transform:none}
   .sx-tl-row{grid-template-columns:24px 1fr; gap:.9rem}
   .sx-left .sx-tl-card, .sx-right .sx-tl-card{grid-column:2; transform:none}
-  .sx-left .sx-tl-node, .sx-right .sx-tl-node{grid-column:1;margin-left:0}
-  .sx-left .sx-spacer, .sx-right .sx-spacer{display:none}
-
-  /* tighten curves on mobile */
-  .sx-tl-item{ --curve-w: clamp(95px, 42vw, 160px); --curve-h: clamp(60px, 18vw, 110px); }
-  .sx-left.sx-tl-item::before{ left:0; transform:translateX(12px) }
-  .sx-right.sx-tl-item::before{ left:12px }
+  .sx-left .sx-tl-node, .sx-right .sx-tl-node{grid-column:1; margin-left:0}
 }
-  
-/* ----- Optional collapse wrapper styling ----- */
+
+/* Optional collapse wrapper */
 .sx-collapsible summary{list-style:none; cursor:pointer}
 .sx-collapsible summary::-webkit-details-marker{display:none}
 .sx-collapsible .sx-tl-title{display:inline-flex;align-items:center; gap:.5rem}
@@ -190,32 +138,28 @@ body.dark .sx-timeline-root{
 .sx-collapsible[open] .sx-caret{transform:rotate(90deg)}
 </style>
 
-
-<!-- fallback sample data (used if no src set) -->
+<!-- Fallback sample data -->
 <script type="application/json" id="sx-timeline-sample">
 [
-  {"title":"PhD in Physics at RESCEU","place":"The University of Tokyo","period":"2023 ~","type":"res","desc":"PhD in Physics at RESCEU","url":"https://www.resceu.s.u-tokyo.ac.jp/top.php"},
-  {"title":"MSc in Physics at ICRR","place":"The University of Tokyo","period":"2021 – 2023","type":"res","desc":"MSc in Physics at ICRR"},
-  {"title":"Project Associate in the Helioseismology lab","place":"TIFR, Mumbai","period":"2020/11 – 2021/04","type":"work","desc":"Project Associate in the Helioseismology lab"},
-  {"title":"BTech in Mechanical Engineering, Design and Manufacturing","place":"IIITDM Kancheepuram, Chennai","period":"2016 – 2020","type":"edu","desc":"BTech in Mechanical Engineering, Design and Manufacturing"},
-  {"title":"High School Graduation, majoring in Science","place":"Montfort School, Mandla","period":"2002 – 2016","type":"edu","desc":"High School Graduation, majoring in Science"}
+  {"title":"PhD in Physics","place":"The University of Tokyo","period":"2023 ~","type":"res","desc":"PhD in Physics at RESCEU","url":"https://www.resceu.s.u-tokyo.ac.jp/top.php"},
+  {"title":"MSc in Physics","place":"The University of Tokyo","period":"2021 ~ 2023","type":"res","desc":"MSc in Physics at ICRR"},
+  {"title":"Project Associate in the Helioseismology lab","place":"TIFR, Mumbai","period":"2020/11 ~ 2021/04","type":"work","desc":"Project Associate in the Helioseismology lab"},
+  {"title":"BTech in Mechanical Engineering, Design and Manufacturing","place":"IIITDM Kancheepuram, Chennai","period":"2016 ~ 2020","type":"edu","desc":"BTech in Mechanical Engineering, Design and Manufacturing"},
+  {"title":"High School Graduation, majoring in Science","place":"Montfort School, Mandla","period":"2002 ~ 2016","type":"edu","desc":"High School Graduation, majoring in Science"}
 ]
 </script>
 
 <script>
 (function(){
-  // --- Robust root detection: find the nearest preceding .sx-timeline-root ---
   function findRoot(){
     let el = document.currentScript;
     while(el && (el = el.previousElementSibling)){
       if(el.classList && el.classList.contains('sx-timeline-root')) return el;
     }
-    // fallback: global last match
     const all = document.querySelectorAll('.sx-timeline-root');
     return all.length ? all[all.length-1] : null;
   }
-  const root = findRoot();
-  if(!root){ console.warn('[timeline] root not found'); return; }
+  const root = findRoot(); if(!root) return;
 
   const cfg = {
     src: root.getAttribute('data-src') || "",
@@ -228,86 +172,200 @@ body.dark .sx-timeline-root{
     if(!cfg.collapse){
       return `<div class="sx-timeline-wrap">
         <div class="sx-tl-head"><h3 class="sx-tl-title">${cfg.title}</h3></div>
-        ${inner}
+        <div class="sx-tl-stage" style="position:relative">${inner}</div>
       </div>`;
     }
     const openAttr = cfg.open ? " open" : "";
     return `<div class="sx-timeline-wrap sx-collapsible">
       <details${openAttr}>
         <summary><h3 class="sx-tl-title"><span class="sx-caret">▶</span>${cfg.title}</h3></summary>
-        ${inner}
+        <div class="sx-tl-stage" style="position:relative">${inner}</div>
       </details>
     </div>`;
   }
 
-  function sideClass(i){ return (i % 2 === 0) ? "sx-left" : "sx-right"; }
-  function typeClass(t){
-    const k = (t||"").toLowerCase();
-    if(k.startsWith("edu")) return "sx-type-edu";
-    if(k.startsWith("wor")) return "sx-type-work";
-    if(k.startsWith("res")) return "sx-type-res";
-    if(k.startsWith("awa")) return "sx-type-award";
-    return "sx-type-other";
-  }
   function esc(s){ return String(s||"").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function sideClass(i){ return (i % 2 === 0) ? "sx-left" : "sx-right"; }
 
   function render(items){
     const list = items.map((it, i) => {
-      const cls = `${sideClass(i)} ${typeClass(it.type)}`;
-      const title = esc(it.title);
-      const place = esc(it.place);
-      const period = esc(it.period);
-      const desc = it.desc ? esc(it.desc) : "";
-      const url = (it.url||"").trim();
+      const title = esc(it.title), place = esc(it.place), period = esc(it.period);
+      const desc = it.desc ? esc(it.desc) : ""; const url = (it.url||"").trim();
       const titleHtml = url ? `<a href="${url.replace(/"/g,'%22')}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">${title}</a>` : title;
-
-      return `<li class="sx-tl-item ${cls}">
+      return `<li class="sx-tl-item ${sideClass(i)}" data-i="${i}">
         <div class="sx-tl-row">
           <div class="sx-spacer"></div>
           <div class="sx-tl-node"></div>
           <div class="sx-spacer"></div>
-
           <div class="sx-tl-card">
-            <h4>${titleHtml}</h4>
             <div class="sx-tl-meta">
               <span class="sx-badge"><i class="fa fa-map-marker"></i>${place}</span>
               <span class="sx-badge"><i class="fa fa-calendar"></i>${period}</span>
             </div>
+            <h4>${titleHtml}</h4>
             ${desc ? `<div class="sx-tl-desc">${desc}</div>` : ``}
           </div>
         </div>
       </li>`;
     }).join("");
 
-    const html = wrap(`<ol class="sx-tl">${list}</ol>`);
-    root.innerHTML = html;
+    // SVG canvas for river & connectors (under the list)
+    const svg = `
+      <svg class="sx-svg" preserveAspectRatio="none">
+        <defs>
+          <!-- Arrowhead -->
+          <marker id="sx-arrow" viewBox="0 0 12 12" refX="10" refY="6"
+                  markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+            <path d="M0,0 L12,6 L0,12 L3.5,6 Z" fill="var(--ink)"></path>
+          </marker>
+          <!-- Sketchy roughness -->
+          <filter id="sx-rough">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" seed="7" stitchTiles="stitch" result="turb"/>
+            <feColorMatrix type="saturate" values="0.12" in="turb" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.6" xChannelSelector="R" yChannelSelector="G"/>
+          </filter>
+          <!-- River gradient (fade top/bottom) -->
+          <linearGradient id="sx-river-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"  stop-color="var(--ink)" stop-opacity="0"/>
+            <stop offset="8%"  stop-color="var(--ink)" stop-opacity=".9"/>
+            <stop offset="92%" stop-color="var(--ink)" stop-opacity=".9"/>
+            <stop offset="100%" stop-color="var(--ink)" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <g class="sx-river"></g>
+        <g class="sx-connectors"></g>
+      </svg>`;
+
+    root.innerHTML = wrap(`<ol class="sx-tl">${list}</ol>` + svg);
+
+    // After DOM paint, layout connectors
+    requestAnimationFrame(layoutSVG);
+    // Also recalc on resize (debounced)
+    let t=null; addEventListener('resize', ()=>{ clearTimeout(t); t = setTimeout(layoutSVG, 120); });
+    // Fonts/images might shift sizes slightly — recalc after a moment
+    setTimeout(layoutSVG, 500);
+  }
+
+  function layoutSVG(){
+    const stage = root.querySelector('.sx-tl-stage');
+    const list = root.querySelector('.sx-tl');
+    const svg  = root.querySelector('.sx-svg');
+    if(!stage || !list || !svg) return;
+
+    // Size the SVG to stage box
+    const r = stage.getBoundingClientRect();
+    svg.setAttribute('viewBox', `0 0 ${r.width} ${r.height}`);
+    svg.setAttribute('width', r.width);
+    svg.setAttribute('height', r.height);
+
+    const riverG = svg.querySelector('.sx-river');
+    const connG  = svg.querySelector('.sx-connectors');
+    riverG.innerHTML = ''; connG.innerHTML = '';
+
+    // Build a meandering river: centerX + A*sin(k*y) curve
+    const A = Math.max(20, Math.min(22, r.width * 0.018));    // amplitude
+    const k = 2 * Math.PI / Math.max(280, Math.min(520, r.height*0.6)); // wavelength
+    const cx = r.width / 2;
+    const steps = Math.max(40, Math.floor(r.height / 18));
+    let d = '';
+    for(let i=0;i<=steps;i++){
+      const y = (i/steps)*r.height;
+      const x = cx + A * Math.sin(k * (y + 40));
+      d += (i===0 ? `M ${x} ${y}` : ` L ${x} ${y}`);
+    }
+    const river = document.createElementNS('http://www.w3.org/2000/svg','path');
+    river.setAttribute('d', d);
+    river.setAttribute('fill','none');
+    river.setAttribute('stroke','url(#sx-river-grad)');
+    river.setAttribute('stroke-width','8');
+    river.setAttribute('stroke-linecap','round');
+    riverG.appendChild(river);
+
+    // Helper: river x at a given y
+    function riverX(y){ return cx + A * Math.sin(k * (y + 40)); }
+
+    // For each item: arrow from river to nearest card corner; nudge node onto river
+    const items = Array.from(root.querySelectorAll('.sx-tl-item'));
+    items.forEach(li=>{
+      const row = li.querySelector('.sx-tl-row');
+      const card = li.querySelector('.sx-tl-card');
+      const node = li.querySelector('.sx-tl-node');
+      if(!row || !card || !node) return;
+
+      const rowRect  = row.getBoundingClientRect();
+      const cardRect = card.getBoundingClientRect();
+      const nodeRect = node.getBoundingClientRect();
+
+      const yMid = (rowRect.top + rowRect.bottom)/2 - r.top;   // local y
+      const xStart = riverX(yMid);                              // river x at this y
+
+      // Node: move horizontally to sit on river
+      const nodeCenter = (nodeRect.left + nodeRect.right)/2 - r.left;
+      node.style.transform = `translateX(${(xStart - nodeCenter).toFixed(1)}px)`;
+
+      // Choose nearest corner of the card to the river point
+      const corners = [
+        {x:cardRect.left  - r.left, y:cardRect.top    - r.top},   // TL
+        {x:cardRect.right - r.left, y:cardRect.top    - r.top},   // TR
+        {x:cardRect.left  - r.left, y:cardRect.bottom - r.top},   // BL
+        {x:cardRect.right - r.left, y:cardRect.bottom - r.top}    // BR
+      ];
+      let best = corners[0], bestd = Infinity;
+      for(const c of corners){
+        const dx = c.x - xStart, dy = c.y - yMid;
+        const dist = dx*dx + dy*dy;
+        if(dist < bestd){ bestd = dist; best = c; }
+      }
+      // Pull the end slightly inward from the corner, so arrowhead sits nicely
+      const pull = 12;
+      const end = {
+        x: best.x + (best.x > xStart ? -pull : pull),
+        y: best.y + (best.y > yMid   ? -pull : pull)
+      };
+
+      // Control point for a gentle curve (quadratic)
+      const ctrl = {
+        x: (xStart + end.x)/2 + (end.x > xStart ? 12 : -12),
+        y: (yMid + end.y)/2 + (end.y > yMid ? -8 : 8)
+      };
+
+      // Draw connector
+      const p = document.createElementNS('http://www.w3.org/2000/svg','path');
+      p.setAttribute('d', `M ${xStart.toFixed(1)} ${yMid.toFixed(1)} Q ${ctrl.x.toFixed(1)} ${ctrl.y.toFixed(1)} ${end.x.toFixed(1)} ${end.y.toFixed(1)}`);
+      p.setAttribute('fill','none');
+      p.setAttribute('stroke','var(--ink)');
+      p.setAttribute('stroke-width','2.5');
+      p.setAttribute('marker-end','url(#sx-arrow)');
+      p.setAttribute('stroke-linecap','round');
+      connG.appendChild(p);
+    });
   }
 
   async function boot(){
+    let items=[];
     if(cfg.src){
       try{
         const res = await fetch(new URL(cfg.src, document.baseURI), {cache:'no-cache'});
         if(!res.ok) throw new Error(res.status);
-        const data = await res.json();
-        render(data);
-        return;
+        items = await res.json();
       }catch(e){
-        console.warn('[timeline] failed to fetch src, falling back to sample', e);
+        console.warn('[timeline] failed to fetch src, using sample', e);
       }
     }
-    try{
-      const sample = document.getElementById('sx-timeline-sample');
-      render(JSON.parse(sample.textContent));
-    }catch(e){
-      root.innerHTML = wrap(`<p style="color:var(--muted)">No timeline data.</p>`);
+    if(!items.length){
+      try{ items = JSON.parse(document.getElementById('sx-timeline-sample').textContent); }
+      catch(e){ items=[]; }
     }
+    // Build list HTML and SVG host
+    const htmlList = items.length ? items : [];
+    if(!htmlList.length){
+      root.innerHTML = `<div class="sx-timeline-wrap"><div class="sx-tl-head"><h3 class="sx-tl-title">${cfg.title}</h3></div><p style="color:var(--muted)">No timeline data.</p></div>`;
+      return;
+    }
+    render(htmlList);
   }
 
-  // Run after DOM is ready so sibling search is reliable.
-  if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', boot);
-  }else{
-    boot();
-  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
+  else boot();
 })();
 </script>
