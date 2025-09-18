@@ -469,15 +469,9 @@ all.forEach(el => {
   --font-body:  'Lato', 'Mistral', serif;
 
    
-  --bg:#fdf6e3;            
-  --fg:#2d2a26;            
-  --muted:#6b5b4a;         
-  --ink:#4b3a2a;           
-  --sepia:#8b7355;         
-  --card:#fff7e3;          
-  --border:#d7c7a1;
-  --hair:#d7c7a1;
-  --shadow:0 8px 16px rgba(0,0,0,.14);
+  --bg:#fdf6e3; --fg:#2d2a26; --muted:#6b5b4a;
+  --ink:#4b3a2a; --sepia:#8b7355; --card:#fff7e3;
+  --border:#d7c7a1; --hair:#d7c7a1; --shadow:0 8px 16px rgba(0,0,0,.14);
 }
 @media (prefers-color-scheme: dark){
   .sx-timeline-root{
@@ -527,6 +521,16 @@ body.dark .sx-timeline-root{
   box-shadow:0 0 0 6px var(--bg), 0 2px 6px rgba(0,0,0,.25);
   margin:0 auto; z-index:2; transform:translateX(0)
 }
+
+ 
+.sx-year-badge{
+  position:absolute; top:-0.9rem; left:50%; transform:translate(-50%,-50%) rotate(-2deg);
+  background:var(--bg); color:var(--fg);
+  border:1px solid var(--hair); border-radius:999px;
+  padding:.15rem .6rem; font-family:var(--font-title); font-size:.95rem; font-weight: 600;
+  box-shadow:0 2px 6px rgba(0,0,0,.08); z-index:3; white-space:nowrap;
+}
+.sx-right .sx-year-badge{ transform:translate(-50%,-50%) rotate(2deg); }
 
  
 .sx-tl-card{
@@ -581,11 +585,11 @@ body.dark .sx-timeline-root{
 
 <script type="application/json" id="sx-timeline-sample">
 [
-  {"title":"PhD in Physics","place":"The University of Tokyo","period":"2023 ~","type":"res","desc":"PhD in Physics at RESCEU","url":"https://www.resceu.s.u-tokyo.ac.jp/top.php"},
-  {"title":"MSc in Physics","place":"The University of Tokyo","period":"2021 ~ 2023","type":"res","desc":"MSc in Physics at ICRR"},
-  {"title":"Project Associate in the Helioseismology lab","place":"TIFR, Mumbai","period":"2020/11 ~ 2021/04","type":"work","desc":"Project Associate in the Helioseismology lab"},
-  {"title":"BTech in Mechanical Engineering, Design and Manufacturing","place":"IIITDM Kancheepuram, Chennai","period":"2016 ~ 2020","type":"edu","desc":"BTech in Mechanical Engineering, Design and Manufacturing"},
-  {"title":"High School Graduation, majoring in Science","place":"Montfort School, Mandla","period":"2002 ~ 2016","type":"edu","desc":"High School Graduation, majoring in Science"}
+  {"title":"PhD in Physics","place":"The University of Tokyo","period":"2023 ~","year":2023,"type":"res","desc":"PhD in Physics at RESCEU","url":"https://www.resceu.s.u-tokyo.ac.jp/top.php"},
+  {"title":"MSc in Physics","place":"The University of Tokyo","period":"2021 ~ 2023","year":2021,"type":"res","desc":"MSc in Physics at ICRR"},
+  {"title":"Project Associate in the Helioseismology lab","place":"TIFR, Mumbai","period":"2020/11 ~ 2021/04","year":2020,"type":"work","desc":"Project Associate in the Helioseismology lab"},
+  {"title":"BTech in Mechanical Engineering, Design and Manufacturing","place":"IIITDM Kancheepuram, Chennai","period":"2016 ~ 2020","year":2016,"type":"edu","desc":"BTech in Mechanical Engineering, Design and Manufacturing"},
+  {"title":"High School Graduation, majoring in Science","place":"Montfort School, Mandla","period":"2002 ~ 2016","year":2002,"type":"edu","desc":"High School Graduation, majoring in Science"}
 ]
 </script>
 
@@ -626,9 +630,15 @@ body.dark .sx-timeline-root{
 
   function esc(s){ return String(s||"").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
   function sideClass(i){ return (i % 2 === 0) ? "sx-left" : "sx-right"; }
+  function extractYear(it){
+    if(it.year) return String(it.year);
+    const m = (it.period||'').match(/\b(20\d{2}|19\d{2})\b/g);
+    return m && m.length ? m[1] : "";
+  }
 
   function render(items){
     const list = items.map((it, i) => {
+      const year = extractYear(it);
       const title = esc(it.title), place = esc(it.place), period = esc(it.period);
       const desc = it.desc ? esc(it.desc) : ""; const url = (it.url||"").trim();
       const titleHtml = url ? `<a href="${url.replace(/"/g,'%22')}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">${title}</a>` : title;
@@ -638,6 +648,7 @@ body.dark .sx-timeline-root{
           <div class="sx-tl-node"></div>
           <div class="sx-spacer"></div>
           <div class="sx-tl-card">
+            ${year ? `<div class="sx-year-badge" aria-label="Year">${year}</div>` : ``}
             <div class="sx-tl-meta">
               <span class="sx-badge"><i class="fa fa-map-marker"></i>${place}</span>
               <span class="sx-badge"><i class="fa fa-calendar"></i>${period}</span>
@@ -680,9 +691,7 @@ body.dark .sx-timeline-root{
 
     
     requestAnimationFrame(layoutSVG);
-    
     let t=null; addEventListener('resize', ()=>{ clearTimeout(t); t = setTimeout(layoutSVG, 120); });
-    
     setTimeout(layoutSVG, 500);
   }
 
@@ -703,8 +712,8 @@ body.dark .sx-timeline-root{
     riverG.innerHTML = ''; connG.innerHTML = '';
 
     
-    const A = Math.max(20, Math.min(22, r.width * 0.018));    
-    const k = 2 * Math.PI / Math.max(280, Math.min(520, r.height*0.6)); 
+    const A = Math.max(8, Math.min(22, r.width * 0.018));
+    const k = 2 * Math.PI / Math.max(280, Math.min(520, r.height*0.6));
     const cx = r.width / 2;
     const steps = Math.max(40, Math.floor(r.height / 18));
     let d = '';
@@ -721,7 +730,6 @@ body.dark .sx-timeline-root{
     river.setAttribute('stroke-linecap','round');
     riverG.appendChild(river);
 
-    
     function riverX(y){ return cx + A * Math.sin(k * (y + 40)); }
 
     
@@ -736,8 +744,8 @@ body.dark .sx-timeline-root{
       const cardRect = card.getBoundingClientRect();
       const nodeRect = node.getBoundingClientRect();
 
-      const yMid = (rowRect.top + rowRect.bottom)/2 - r.top;   
-      const xStart = riverX(yMid);                              
+      const yMid = (rowRect.top + rowRect.bottom)/2 - r.top;
+      const xStart = riverX(yMid);
 
       
       const nodeCenter = (nodeRect.left + nodeRect.right)/2 - r.left;
@@ -769,7 +777,6 @@ body.dark .sx-timeline-root{
         y: (yMid + end.y)/2 + (end.y > yMid ? -8 : 8)
       };
 
-      
       const p = document.createElementNS('http://www.w3.org/2000/svg','path');
       p.setAttribute('d', `M ${xStart.toFixed(1)} ${yMid.toFixed(1)} Q ${ctrl.x.toFixed(1)} ${ctrl.y.toFixed(1)} ${end.x.toFixed(1)} ${end.y.toFixed(1)}`);
       p.setAttribute('fill','none');
@@ -796,13 +803,11 @@ body.dark .sx-timeline-root{
       try{ items = JSON.parse(document.getElementById('sx-timeline-sample').textContent); }
       catch(e){ items=[]; }
     }
-    
-    const htmlList = items.length ? items : [];
-    if(!htmlList.length){
+    if(!items.length){
       root.innerHTML = `<div class="sx-timeline-wrap"><div class="sx-tl-head"><h3 class="sx-tl-title">${cfg.title}</h3></div><p style="color:var(--muted)">No timeline data.</p></div>`;
       return;
     }
-    render(htmlList);
+    render(items);
   }
 
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
