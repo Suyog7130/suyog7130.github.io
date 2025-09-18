@@ -1011,7 +1011,7 @@ function render(){
     const meta = [t.event, t.type, t.modality].filter(Boolean).join(&#39; • &#39;);
     const actions = [
       t.location ? button(t.location, &#39;fa-location-dot&#39;, mapsLink(t.location)) : &#39;&#39;,
-      t.dateLabel ? iconChip(t.dateLabel, &#39;fa-calendar&#39;) : &#39;&#39;,
+      t.dateLabel ? iconChip(t.dateLabel, &#39;fa-calendar-days&#39;) : &#39;&#39;,
       t.slides ? button(&#39;Slides&#39;, &#39;fa-file-lines&#39;, t.slides) : &#39;&#39;,
       t.page ? button(&#39;Page&#39;, &#39;fa-up-right-from-square&#39;, t.page) : &#39;&#39;
     ].filter(Boolean).join(&#39; &#39;);
