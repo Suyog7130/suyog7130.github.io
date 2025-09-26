@@ -1,0 +1,52 @@
+{
+  "basics": {
+    "name": "Suyog Garg",
+    "tagline": "PhD candidate | Gravitational-wave Astrophysics, Computational Methods",
+    "website": "https://suyoggarg.com",
+    "email": "gargsuyog@resceu.s.u-tokyo.ac.jp",
+    "address": "7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033, Japan",
+    "dob": "1998-05-20",
+    "citizenship": "India"
+  },
+  "affiliations": {
+    "current": [
+      "Department of Physics, The University of Tokyo, Bunkyo-ku, Tokyo 113-0033, Japan",
+      "Research Centre for Early Universe (RESCEU), The University of Tokyo, Bunkyo-ku, Tokyo 113-0033, Japan"
+    ],
+    "previous": [
+      "2021-2023: Institute of Cosmic Ray Research (ICRR), Kashiwa-shi, Chiba 277-8582, Japan"
+    ]
+  },
+  "education": [
+    { "degree": "PhD in Physics", "org": "The University of Tokyo, Japan", "years": "2023 - 2026", "advisor": "Kipp Cannon" },
+    { "degree": "MSc in Physics", "org": "The University of Tokyo, Japan", "years": "2021 - 2023", "advisor": "Masatake Ohashi" },
+    { "degree": "BTech (Mechanical Eng., Design & Manufacturing)", "org": "IIITDM Kancheepuram, Chennai", "years": "2016 - 2020" },
+    { "degree": "High School", "org": "Montfort Senior Secondary School, Mandla", "years": "2002 - 2016" }
+  ],
+  "experience": [
+    { "role": "Visiting Research Student", "org": "OzGrav, Monash University, Australia", "when": "Mar & Aug 2025" },
+    { "role": "Google Summer of Code Participant (Astropy)", "org": "Astropy Project", "when": "Jun - Aug 2021" },
+    { "role": "Visiting Student (remote)", "org": "IIT-BHU, Varanasi", "when": "May - Jul 2021" },
+    { "role": "Project Student (remote)", "org": "Massachusetts Institute of Technology, USA", "when": "Dec 2020 - Jun 2021" },
+    { "role": "Visiting Student (remote)", "org": "TIFR, Mumbai", "when": "Nov 2020 - May 2021" },
+    { "role": "Visiting Student", "org": "IUCAA, Pune", "when": "Aug - Oct 2019" },
+    { "role": "Physics Summer Research Intern", "org": "The Institute of Mathematical Sciences, Chennai", "when": "May - Aug 2019" }
+  ],
+  "awards": [
+    "Invited to address 2025 batch of MEXT scholars at Embassy of Japan in India (2025)",
+    "Graduate Research Abroad Program (UTokyo) — visit to Seoul National University (2025)",
+    "ULVAC-Hayashi Seed Funding between MIT and UTokyo — research featured (2024-25)",
+    "Embassy-recommended MEXT Scholarship, Japan (2021-2023; 2023-2026)",
+    "Provisional admission to SOKENDAI Graduate Program (2020)",
+    "Vacations Student Program, IUCAA, Pune (2020)",
+    "CBSE Distinction Certificate (2016)"
+  ],
+  "activities": [
+    "Teaching Assistant, Gravitational-Wave Physics (2023, 2024, 2025)",
+    "Secretary, University of Tokyo Indian Student Association (UTISA) (Jul 2022 - Jun 2023)",
+    "Content writer, BrightBegins.com (Sep - Nov 2020)",
+    "Contributing Editor, Margdarshan Magazine, IIITDM Kancheepuram (Jan 2017 - Apr 2018)",
+    "Social Service Volunteer, VIDHAI (2017 - 2018)"
+  ],
+  "note": "Live life in such a way that life itself has a crush on you! — unknown"
+}
