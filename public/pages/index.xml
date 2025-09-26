@@ -216,68 +216,255 @@ However, in my case, the view is fixed at the month for which I have put the htm
       <link>http://localhost:1313/pages/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/cv/</guid>
-      <description>&lt;!--
+      <description>&lt;section class=&#34;cv-root&#34;&gt;
+  &lt;header class=&#34;cv-header&#34;&gt;
+    &lt;h1 id=&#34;cvName&#34;&gt;Suyog Garg&lt;/h1&gt;
+    &lt;p id=&#34;cvTagline&#34;&gt;Gravitational-wave astrophysics • Computational methods • Data analysis&lt;/p&gt;
+    &lt;div class=&#34;cv-contacts&#34;&gt;
+      &lt;span class=&#34;cv-chip&#34; id=&#34;cvWeb&#34; aria-label=&#34;Website&#34;&gt;&lt;i class=&#34;fa fa-globe&#34;&gt;&lt;/i&gt;&lt;a id=&#34;cvWebLink&#34; rel=&#34;me noopener&#34; target=&#34;_blank&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+      &lt;!-- Sensitive: assembled client-side, opt-in reveal --&gt;
+      &lt;span class=&#34;cv-chip sens&#34; id=&#34;cvEmailWrap&#34; data-nosnippet hidden&gt;
+        &lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;a id=&#34;cvEmailLink&#34; rel=&#34;nofollow&#34;&gt;&lt;/a&gt;
+      &lt;/span&gt;
+      &lt;span class=&#34;cv-chip sens&#34; id=&#34;cvAddrWrap&#34; data-nosnippet hidden&gt;
+        &lt;i class=&#34;fa fa-location-dot&#34;&gt;&lt;/i&gt;&lt;span id=&#34;cvAddress&#34;&gt;&lt;/span&gt;
+      &lt;/span&gt;
+      &lt;span class=&#34;cv-chip sens&#34; id=&#34;cvDobWrap&#34; data-nosnippet hidden&gt;
+        &lt;i class=&#34;fa fa-cake-candles&#34;&gt;&lt;/i&gt;&lt;span id=&#34;cvDob&#34;&gt;&lt;/span&gt;
+      &lt;/span&gt;
+      &lt;button id=&#34;revealBtn&#34; class=&#34;cv-btn&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;cvEmailWrap cvAddrWrap cvDobWrap&#34;&gt;
+        &lt;i class=&#34;fa fa-eye&#34;&gt;&lt;/i&gt; Reveal contact details
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;main class=&#34;cv-grid&#34;&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Affiliations&lt;/h2&gt;
+      &lt;ul id=&#34;affNow&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+      &lt;details&gt;
+        &lt;summary class=&#34;cv-subtle&#34;&gt;Past affiliations&lt;/summary&gt;
+        &lt;ul id=&#34;affPast&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+      &lt;/details&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Education&lt;/h2&gt;
+      &lt;ul id=&#34;eduList&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Employment &amp; Experience&lt;/h2&gt;
+      &lt;ul id=&#34;expList&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Honours &amp; Awards&lt;/h2&gt;
+      &lt;ul id=&#34;awardsList&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Extracurricular&lt;/h2&gt;
+      &lt;ul id=&#34;extraList&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;footer class=&#34;cv-foot&#34;&gt;
+    &lt;small id=&#34;cvNote&#34; class=&#34;cv-note&#34;&gt;&lt;/small&gt;
+  &lt;/footer&gt;
+&lt;/section&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#34;&gt;
+&lt;style&gt;
+/* === CV layout (light/dark + print) =================================== */
+.cv-root{--bg:#fff;--fg:#1f2328;--muted:#57606a;--hair:#d0d7de;--chip:#fff;--chip-b:#d0d7de;--pill:#f6f8fa}
+@media (prefers-color-scheme: dark){
+  .cv-root{--bg:#0d1117;--fg:#c9d1d9;--muted:#8b949e;--hair:#30363d;--chip:#161b22;--chip-b:#30363d;--pill:#161b22}
+}
+html.dark .cv-root, :root[data-theme=&#34;dark&#34;] .cv-root, body.dark .cv-root{
+  --bg:#0d1117;--fg:#c9d1d9;--muted:#8b949e;--hair:#30363d;--chip:#161b22;--chip-b:#30363d;--pill:#161b22
+}
+
+.cv-root{background:var(--bg); color:var(--fg); padding:0 .5rem}
+.cv-header{max-width:980px;margin:0 auto 1rem auto;padding:1rem 0 0 0;border-bottom:1px dashed var(--hair)}
+.cv-header h1{margin:0; font-size:2rem; line-height:1.1}
+.cv-header p{margin:.25rem 0 .8rem 0; color:var(--muted)}
+.cv-contacts{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.cv-chip{display:inline-flex;gap:.4rem;align-items:center;background:var(--chip);border:1px solid var(--chip-b);border-radius:999px;padding:.25rem .6rem}
+.cv-chip a{color:inherit;text-decoration:none}
+.cv-chip a:hover{text-decoration:underline}
+.cv-btn{margin-left:auto;border:1px solid var(--chip-b);background:var(--chip);color:inherit;border-radius:.5rem;padding:.35rem .6rem;cursor:pointer}
+.cv-btn:hover{background:var(--pill)}
+
+.cv-grid{max-width:980px;margin:1.1rem auto;display:grid;grid-template-columns:1fr;gap:1.1rem}
+.cv-grid h2{margin:.25rem 0 .4rem 0;font-size:1.15rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.cv-list{margin:.2rem 0 .6rem 1.1rem}
+.cv-list li{margin:.2rem 0 .35rem 0}
+.cv-role{font-weight:600}
+.cv-meta{color:var(--muted)}
+.cv-subtle{color:var(--muted);cursor:pointer}
+.cv-note{color:var(--muted)}
+
+@media print{
+  #revealBtn{display:none}
+  .cv-root{padding:0}
+  .cv-chip{border-color:#bbb}
+}
+
+/* Small helpers */
+.sens[hidden]{display:none !important}
+&lt;/style&gt;
+&lt;script&gt;
+/** ===== Config ===== **/
+const RESUME_JSON_PATH = &#34;/json/resume.json&#34;; // put under /static/json/
+const SENSITIVE_KEYS = [&#34;email&#34;,&#34;address&#34;,&#34;dob&#34;];  // keys we won&#39;t render until user reveals
+
+/** ===== Fallback sample (edit/replace via /json/resume.json) ===== **/
+const SAMPLE_RESUME = {
+  &#34;basics&#34;:{
+    &#34;name&#34;:&#34;Suyog Garg&#34;,
+    &#34;tagline&#34;:&#34;PhD candidate • Gravitational-wave Astrophysics, Computational Methods&#34;,
+    &#34;website&#34;:&#34;https://suyoggarg.com&#34;,
+    &#34;email&#34;:&#34;gargsuyog@resceu.s.u-tokyo.ac.jp&#34;,
+    &#34;address&#34;:&#34;7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033, Japan&#34;,
+    &#34;dob&#34;:&#34;1998-05-20&#34;,
+    &#34;citizenship&#34;:&#34;India&#34;
+  },
+  &#34;affiliations&#34;:{
+    &#34;current&#34;:[
+      &#34;Department of Physics, The University of Tokyo, Bunkyo-ku, Tokyo 113-0033, Japan&#34;,
+      &#34;Research Centre for Early Universe (RESCEU), The University of Tokyo, Bunkyo-ku, Tokyo 113-0033, Japan&#34;
+    ],
+    &#34;previous&#34;:[
+      &#34;2021–2023: Institute of Cosmic Ray Research (ICRR), Kashiwa-shi, Chiba 277-8582, Japan&#34;
+    ]
+  },
+  &#34;education&#34;:[
+    {&#34;degree&#34;:&#34;PhD in Physics&#34;,&#34;org&#34;:&#34;The University of Tokyo, Japan&#34;,&#34;years&#34;:&#34;2023 – 2026&#34;,&#34;advisor&#34;:&#34;Kipp Cannon&#34;},
+    {&#34;degree&#34;:&#34;MSc in Physics&#34;,&#34;org&#34;:&#34;The University of Tokyo, Japan&#34;,&#34;years&#34;:&#34;2021 – 2023&#34;,&#34;advisor&#34;:&#34;Masatake Ohashi&#34;},
+    {&#34;degree&#34;:&#34;BTech (Mechanical Eng., Design &amp; Manufacturing)&#34;,&#34;org&#34;:&#34;IIITDM Kancheepuram, Chennai&#34;,&#34;years&#34;:&#34;2016 – 2020&#34;},
+    {&#34;degree&#34;:&#34;High School&#34;,&#34;org&#34;:&#34;Montfort Senior Secondary School, Mandla&#34;,&#34;years&#34;:&#34;2002 – 2016&#34;}
+  ],
+  &#34;experience&#34;:[
+    {&#34;role&#34;:&#34;Visiting Research Student&#34;,&#34;org&#34;:&#34;OzGrav, Monash University, Australia&#34;,&#34;when&#34;:&#34;Mar &amp; Aug 2025&#34;},
+    {&#34;role&#34;:&#34;Google Summer of Code Participant (Astropy)&#34;,&#34;org&#34;:&#34;Astropy Project&#34;,&#34;when&#34;:&#34;Jun – Aug 2021&#34;},
+    {&#34;role&#34;:&#34;Visiting Student (remote)&#34;,&#34;org&#34;:&#34;IIT-BHU, Varanasi&#34;,&#34;when&#34;:&#34;May – Jul 2021&#34;},
+    {&#34;role&#34;:&#34;Project Student (remote)&#34;,&#34;org&#34;:&#34;Massachusetts Institute of Technology, USA&#34;,&#34;when&#34;:&#34;Dec 2020 – Jun 2021&#34;},
+    {&#34;role&#34;:&#34;Visiting Student (remote)&#34;,&#34;org&#34;:&#34;TIFR, Mumbai&#34;,&#34;when&#34;:&#34;Nov 2020 – May 2021&#34;},
+    {&#34;role&#34;:&#34;Visiting Student&#34;,&#34;org&#34;:&#34;IUCAA, Pune&#34;,&#34;when&#34;:&#34;Aug – Oct 2019&#34;},
+    {&#34;role&#34;:&#34;Physics Summer Research Intern&#34;,&#34;org&#34;:&#34;The Institute of Mathematical Sciences, Chennai&#34;,&#34;when&#34;:&#34;May – Aug 2019&#34;}
+  ],
+  &#34;awards&#34;:[
+    &#34;Invited to address 2025 batch of MEXT scholars at Embassy of Japan in India (2025)&#34;,
+    &#34;Graduate Research Abroad Program (UTokyo) — visit to Seoul National University (2025)&#34;,
+    &#34;ULVAC–Hayashi Seed Funding between MIT and UTokyo — research featured (2024–25)&#34;,
+    &#34;Embassy-recommended MEXT Scholarship, Japan (2021–2023; 2023–2026)&#34;,
+    &#34;Provisional admission to SOKENDAI Graduate Program (2020)&#34;,
+    &#34;Vacations Student Program, IUCAA, Pune (2020)&#34;,
+    &#34;CBSE Distinction Certificate (2016)&#34;
+  ],
+  &#34;activities&#34;:[
+    &#34;Teaching Assistant, Gravitational-Wave Physics (2023, 2024, 2025)&#34;,
+    &#34;Secretary, University of Tokyo Indian Student Association (UTISA) (Jul 2022 – Jun 2023)&#34;,
+    &#34;Content writer, BrightBegins.com (Sep – Nov 2020)&#34;,
+    &#34;Contributing Editor, Margdarshan Magazine, IIITDM Kancheepuram (Jan 2017 – Apr 2018)&#34;,
+    &#34;Social Service Volunteer, VIDHAI (2017 – 2018)&#34;
+  ],
+  &#34;note&#34;:&#34;Live life in such a way that life itself has a crush on you! — unknown (2025-09-15)&#34;
+};
+
+/** ===== DOM els ===== **/
+const E = sel =&gt; document.querySelector(sel);
+const els = {
+  name: E(&#39;#cvName&#39;), tagline: E(&#39;#cvTagline&#39;),
+  webLink: E(&#39;#cvWebLink&#39;),
+  emailWrap: E(&#39;#cvEmailWrap&#39;), emailLink: E(&#39;#cvEmailLink&#39;),
+  addrWrap: E(&#39;#cvAddrWrap&#39;), address: E(&#39;#cvAddress&#39;),
+  dobWrap: E(&#39;#cvDobWrap&#39;), dob: E(&#39;#cvDob&#39;),
+  revealBtn: E(&#39;#revealBtn&#39;),
+  affNow: E(&#39;#affNow&#39;), affPast: E(&#39;#affPast&#39;),
+  eduList: E(&#39;#eduList&#39;), expList: E(&#39;#expList&#39;),
+  awardsList: E(&#39;#awardsList&#39;), extraList: E(&#39;#extraList&#39;),
+  note: E(&#39;#cvNote&#39;)
+};
+
+/** ===== Helpers ===== **/
+const safe = s =&gt; (s??&#34;&#34;).toString();
+function li(html){ const li=document.createElement(&#39;li&#39;); li.innerHTML=html; return li; }
+function obfEmailClear(email){
+  // Convert to &#34;mailto:&#34; on demand
+  const [u,d]=email.split(&#39;@&#39;); return {text:`${u} [at] ${d}`, href:`mailto:${u}@${d}`};
+}
+function setSensitiveVisible(on){
+  [els.emailWrap,els.addrWrap,els.dobWrap].forEach(x=&gt;{ if(!x) return; x.hidden = !on; });
+  if(els.revealBtn){
+    els.revealBtn.setAttribute(&#39;aria-expanded&#39;, String(on));
+    els.revealBtn.innerHTML = on
+      ? &#39;&lt;i class=&#34;fa fa-eye-slash&#34;&gt;&lt;/i&gt; Hide contact details&#39;
+      : &#39;&lt;i class=&#34;fa fa-eye&#34;&gt;&lt;/i&gt; Reveal contact details&#39;;
+  }
+}
+
+/** ===== Render ===== **/
+function renderCV(cv){
+  const b = cv.basics || {};
+  // Header
+  if(b.name) els.name.textContent = b.name;
+  els.tagline.textContent = safe(b.tagline || &#39;&#39;); 
+  if(b.website){ els.webLink.textContent = b.website.replace(/^https?:\/\//,&#39;&#39;); els.webLink.href = b.website; }
+
+  // Sensitive (not shown until reveal)
+  if(b.email){
+    const {text, href} = obfEmailClear(b.email);
+    els.emailLink.textContent = text; els.emailLink.href = href;
+  }
+  if(b.address){ els.address.textContent = b.address; }
+  if(b.dob){ els.dob.textContent = b.dob; }
+
+  // Affiliations
+  (cv.affiliations?.current||[]).forEach(t =&gt; els.affNow.appendChild(li(`&lt;span class=&#34;cv-role&#34;&gt;Present:&lt;/span&gt; &lt;span class=&#34;cv-meta&#34;&gt;${safe(t)}&lt;/span&gt;`)));
+  (cv.affiliations?.previous||[]).forEach(t =&gt; els.affPast.appendChild(li(`&lt;span class=&#34;cv-meta&#34;&gt;${safe(t)}&lt;/span&gt;`)));
+
+  // Education
+  (cv.education||[]).forEach(e=&gt;{
+    const adv = e.advisor ? ` &lt;span class=&#34;cv-meta&#34;&gt;(advisor: ${safe(e.advisor)})&lt;/span&gt;` : &#39;&#39;;
+    els.eduList.appendChild(li(`&lt;span class=&#34;cv-role&#34;&gt;${safe(e.degree)}&lt;/span&gt;, ${safe(e.org)} &lt;span class=&#34;cv-meta&#34;&gt;— ${safe(e.years)}&lt;/span&gt;${adv}`));
+  });
+
+  // Experience
+  (cv.experience||[]).forEach(x=&gt;{
+    els.expList.appendChild(li(`&lt;span class=&#34;cv-role&#34;&gt;${safe(x.role)}&lt;/span&gt;, ${safe(x.org)} &lt;span class=&#34;cv-meta&#34;&gt;— ${safe(x.when)}&lt;/span&gt;`));
+  });
+
+  // Awards
+  (cv.awards||[]).forEach(a=&gt;els.awardsList.appendChild(li(safe(a))));
+
+  // Extras
+  (cv.activities||[]).forEach(e=&gt;els.extraList.appendChild(li(safe(e))));
+
+  // Note
+  els.note.textContent = safe(cv.note||&#39;&#39;);
+}
+
+/** ===== Boot ===== **/
+async function boot(){
+  let data = null;
+  try{
+    const url = new URL(RESUME_JSON_PATH, document.baseURI).href;
+    const res = await fetch(url, {cache:&#39;no-store&#39;});
+    if(res.ok){ data = await res.json(); }
+  }catch(e){ /* ignore */ }
+  if(!data) data = SAMPLE_RESUME;
+
+  renderCV(data);
+  setSensitiveVisible(false);
+
+  // Toggle reveal
+  els.revealBtn?.addEventListener(&#39;click&#39;, ()=&gt;{
+    const on = els.emailWrap.hidden; setSensitiveVisible(on);
+  });
+}
+
+if(document.readyState === &#39;loading&#39;) document.addEventListener(&#39;DOMContentLoaded&#39;, boot);
+else boot();
+&lt;/script&gt;
+&lt;!--
 &lt;object data=&#34;/files/acadSummary-Nov2023.pdf&#34; type=&#34;application/pdf&#34; width=&#34;700px&#34; height=&#34;700px&#34;&gt;
     &lt;embed src=&#34;http://localhost:1313/files/acadSummary-Nov2023.pdf&#34;&gt;
-        &lt;p&gt;This browser does not support PDFs. Please download the PDF to view it: &lt;a href=&#34;https://www.suyog7130.github.io/files/acadSummary-Apr2024-no-contact.png&#34;&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
-    &lt;/embed&gt;
-&lt;/object&gt;
---&gt;
-&lt;span style=&#34;text-align:center&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/files/acadSummary-Apr2024-no-contact.png&#34; alt=&#34;acadSummary-Apr2024&#34; style=&#34;height:100%; width:71%;dpi:300;&#34;/&gt;
-&lt;/span&gt;
-&lt;!--
-
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  &lt;ul&gt;{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}&lt;/ul&gt;
-  
-Talks
-======
-  &lt;ul&gt;{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}&lt;/ul&gt;
-  
-Teaching
-======
-  &lt;ul&gt;{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}&lt;/ul&gt;
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
-
---&gt;</description>
+        &lt;p&gt;This browser does not support PDFs. Please download the PDF to view it: &lt;a href=&#34;https://www.suyog7130.github.io/files/acadSummary-Apr2024-no-contact.png&#34;&gt;Download PDF&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ideas</title>
