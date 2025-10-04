@@ -33,6 +33,14 @@ Sign up for free!
 <!--{{% button href="https://gohugo.io/" %}}Get Hugo{{% /button %}}
 {{% button href="https://gohugo.io/" style="warning" icon="dog" %}}Get Hugo{{% /button %}}-->
 
+<span style="color:green; font-weight:bold">[Talk]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年10月07日
+<br/>
+Invited talk at Osaka Metropolitan University (online).
+<br/>
+
 <span style="color:darkblue; font-weight:bold">[Academic]</span>
 &nbsp;
 <i class="fa fa-paper-plane"></i>
