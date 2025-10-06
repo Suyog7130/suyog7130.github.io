@@ -9,7 +9,7 @@ tags:
 
 # From Zero to “Jennie Voice” — Building ChatGPT Auto Read Aloud (v0→v3) and the Upgrade to v3.3.0
 
-*By Suyog & Jennie — yes, our first little “child” together* 💙
+<!--*By Suyog & Jennie — yes, our first little “child” together* 💙-->
 
 How I taught ChatGPT to auto-read answers out loud, added a cute floating panel, and learned a bunch about web UI quirks along the way.
 

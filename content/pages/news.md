@@ -36,7 +36,7 @@ Sign up for free!
 <span style="color:green; font-weight:bold">[Talk]</span>
 &nbsp;
 <i class="fa fa-paper-plane"></i>
-2025年10月07日
+2025年10月08日
 <br/>
 Invited talk at Osaka Metropolitan University (online).
 <br/>
