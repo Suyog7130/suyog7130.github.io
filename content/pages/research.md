@@ -11,7 +11,7 @@ redirect_from:
   - /research/
 ---
 
-My PhD research focus on gravitational-wave astrophysics. Over the past few years, I have broadly worked on computational astrophysics and data analysis. Below is a brief description and summary of my research interests. Some projects have their own pages.
+My PhD research focuses on gravitational-wave astrophysics, specifically modelling theoretical approximations for gravitational waveforms. Over the past few years, I have broadly worked on computational astrophysics and data analysis. Below is a brief description and summary of my research interests. Some projects have their own pages.
 
 ---
 
@@ -24,7 +24,7 @@ My PhD research focus on gravitational-wave astrophysics. Over the past few year
 - Intended use cases: speeding up parameter estimation and low-latency searches for 3G gravitational wave detectors.
 
 ### Detections of gravitational waves from compact object mergers
-- I develop deep-learning pipelines for detection/classification of compact binary coalescences and related sources.
+- I developed deep-learning pipelines for detection/classification of compact binary coalescences and related sources.
 - Training strategy comparisons (curriculum learning, transfer learning) to improve sensitivity and robustness to glitches.
 - Practical considerations: coincidence logic, false-alarm control, and runtime efficiency on commodity GPUs.
 
@@ -33,7 +33,7 @@ My PhD research focus on gravitational-wave astrophysics. Over the past few year
 ## Stellar and Solar Physics
 
 ### Stellar magnetic cycles and variability
-- I studied the **Waldmeier effect** (anti-correlation of rise time with cycle amplitude) in stellar activity cycles, extending solar-cycle phenomenology to other stars.
+- Studied the **Waldmeier effect** (anti-correlation of rise time with cycle amplitude) in stellar activity cycles, extending solar-cycle phenomenology to other stars.
 - Methods included cycle extraction from long-baseline activity indices and careful treatment of cadence/uncertainty.
 - Results help connect stellar dynamos with solar behavior and inform scaling relations across spectral types.
 
