@@ -33,6 +33,20 @@ Sign up for free!
 <!--{{% button href="https://gohugo.io/" %}}Get Hugo{{% /button %}}
 {{% button href="https://gohugo.io/" style="warning" icon="dog" %}}Get Hugo{{% /button %}}-->
 
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年10月
+</br>
+Volunteered for the LVK Rapid Response Team level-0 shifter, for the third time! We had [one significant BBH detection](https://gracedb.ligo.org/superevents/S251021u/view/) during my shift.
+
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年10月 ー 2025年11月
+</br>
+Visiting Prof HM Lee and group at Seoul National University, Korea!
+
 <span style="color:green; font-weight:bold">[Talk]</span>
 &nbsp;
 <i class="fa fa-paper-plane"></i>
