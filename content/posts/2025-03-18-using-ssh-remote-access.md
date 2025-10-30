@@ -88,6 +88,7 @@ To download file(s) from the remote server to your local machine, do:
 scp user.name@remote.server.xyz:/home/user.name/*remote-file-path* *local-folder-name*
 ```
 
+---
 
 ## Known Issues and Problems Encountered
 
@@ -103,6 +104,7 @@ client_loop: send disconnect: Broken pipe
 
 - The computer accessing the remote server should have the same public key as the one originally submitted/added to the remote server. Otherwise, the ssh connection request won't work.
 
+---
 
 ## Accessing Remote Servers
 
@@ -121,6 +123,14 @@ ssh suyog.garg@ldas-pcdev12.ligo.caltech.edu
 
 > If the public keys have been properly uploaded there won't be any prompt to type in the password.
 
+
+@2025/10/30 updates
+
+They have suddenly decided to darn use the "Duo" app for 2-step verification. Follow the instructions here for setting this up: https://git.ligo.org/computing/iam/mfa
+
+Then login using `ssh ldas-grid.ligo.caltech.edu` to directly log-in to the whole grid, instead of specifically to `pcdev12` like the past time. This will login to the home directory at `/home/suyog.garg` !
+
+---
 
 ### Accessing IPMU iDark
 
@@ -145,6 +155,7 @@ ssh suyog.garg@idark.ipmu.jp
 
 > Note that the user name is required when accessing the cluster all the time. Otherwise, how does the ssh request know about what access to ping the request to.
 
+---
 
 ### Accessing Einstein and Landau Clusters at Tokyo City University
 
@@ -155,7 +166,7 @@ ssh suyog.garg@idark.ipmu.jp
 ### Accessing TIFR Mumbai Computing Facility
 
 
-
+---
 
 ## References
 
