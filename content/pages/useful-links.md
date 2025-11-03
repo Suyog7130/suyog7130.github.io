@@ -30,6 +30,7 @@ redirect_from: /personal/useful-links/
 * LVK Collaboration [List of All Papers](https://pnp.ligo.org/ppcomm/Papers.html)
 * LVK CBC Waveforms Group [WIKI page](https://wiki.ligo.org/CBC/Waveforms)
 * [soundsofspacetime](https://www.soundsofspacetime.org/the-basics-of-binary-coalescence.html)
+* [A must read Physics paper list](https://pages.jh.edu/~eberti2/posts/must-read-paper-list/)
 
 ### Academics Advice and Help
 
