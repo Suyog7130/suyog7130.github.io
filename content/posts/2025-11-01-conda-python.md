@@ -1,5 +1,11 @@
 ---
 title: "Managing Python Installations with `conda`"
+date: 2025-11-01
+tags:
+    - python
+    - terminal
+    - conda
+    - zsh
 _build:
   render: never
   list: never
