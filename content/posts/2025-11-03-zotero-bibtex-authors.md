@@ -1,10 +1,12 @@
 ---
-title: "Killing the `\@lbibitem` Error in REVTeX and Auto‑Truncating Huge Author Lists from Zotero (Better BibTeX)"
+title: "BibTex, Zotero and REVTex"
 date: 2025-11-03
 tags:
     - zotero
     - bibtex
 ---
+
+## Killing the `\@lbibitem` Error in REVTeX and Auto‑Truncating Huge Author Lists from Zotero (Better BibTeX)
 
 This note documents the exact fixes I used when REVTeX + APS style blew up on a long collaboration paper (Abbott et al. 2016, LIGO/Virgo), and how I automated Better BibTeX (Zotero) to **truncate 100+ authors** at export and/or **prefer the Collaboration name**.
 
