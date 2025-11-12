@@ -15,6 +15,8 @@ The the Zotero chrome connector doesn't always work. This issue arises sporadica
 
 Then any new item can be manually added using the identifier, for example the DOI or the URL of the page. However, BibTex export via Better-BibTex will still require the software download and full library sync. These issues may also be arising due to improper device resources allocation, for instance, when the CPU is busy with some other tasks.
 
+Also see: [https://forums.zotero.org/discussion/72396/zotero-stuck-loading-items-or-just-stops-working](https://forums.zotero.org/discussion/72396/zotero-stuck-loading-items-or-just-stops-working)
+
 ---
 
 - Date: 2025/03/18

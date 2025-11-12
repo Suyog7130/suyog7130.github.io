@@ -130,9 +130,13 @@ They have suddenly decided to darn use the "Duo" app for 2-step verification. Fo
 
 Then login using `ssh ldas-grid.ligo.caltech.edu` to directly log-in to the whole grid, instead of specifically to `pcdev12` like the past time. This will login to the home directory at `/home/suyog.garg` !
 
-Gotta use this now to get to the GPU servers at CIT-LDG:
+@2025/11/12 updates
+
+Gotta use this at every login now to get to the GPU servers at CIT-LDG:
 
 `ssh -J albert.einstein@ssh.igwn.org albert.einstein@ldas-pcdev12.ligo.caltech.edu`
+
+My username is "suyog.garg". The above will prompt a passcode using the DUO app, if the 2-step verification has already been set up. Need to do this every time.
 
 ---
 
