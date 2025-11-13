@@ -15,6 +15,7 @@ open ~/.zshrc
 ```
 
 * Add path to the VS Code application to your PATHS variable.
+
 ```bash
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
@@ -29,7 +30,7 @@ source ~/.zshrc
 
 References:
 
-- https://code.visualstudio.com/docs/setup/mac
+- [https://code.visualstudio.com/docs/setup/mac]()
 
 
 

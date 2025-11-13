@@ -16,7 +16,7 @@ I restructured all my `Python` installation in the system and have now committed
 
 
 
-# Fixing Pandas `pytables` Errors and Making Python/Brew/Conda Play Nicely on macOS
+## Fixing Pandas `pytables` Errors and Making Python/Brew/Conda Play Nicely on macOS
 
 This quick post covers two things that bite many of us on macOS:
 1) Why `pandas.read_hdf()` raises `ImportError: Missing optional dependency 'pytables'` even when you “installed it,” and

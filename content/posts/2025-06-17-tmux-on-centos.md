@@ -9,7 +9,7 @@ tags:
 ---
 
 
-# 🧵 Building `libevent`, `ncurses`, and `tmux` Without `sudo` on a CentOS Server (While Escaping Anaconda)
+## 🧵 Building `libevent`, `ncurses`, and `tmux` Without `sudo` on a CentOS Server (While Escaping Anaconda)
 
 This guide shows how to install `ncurses`, `libevent`, and `tmux` locally under `$HOME`, without `sudo`, and without interference from Anaconda, on older CentOS systems.
 
