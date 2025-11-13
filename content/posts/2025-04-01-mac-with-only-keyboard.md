@@ -14,9 +14,9 @@ iMac when used with bluetooth Apple keyboards and mouse has a faintly annoying p
 - Use the `Tab` to scroll up and down in the command palette.
 - Use the `Space` bar to make the selection click at the desired command.
 
-Some refs for this problem are:
+In a bit more detail:
 
-When your **Apple mouse disconnects** and you’ve only got a **keyboard**, you can still get to **Bluetooth** and reconnect—no clicks needed. This guide is my personal, step‑by‑step checklist for macOS **Sonoma/Ventura**.
+When your **Apple mouse disconnects** and you’ve only got a **keyboard**, you can still get to **Bluetooth** and reconnect, no clicks needed. This guide is my personal, step‑by‑step checklist for macOS **Sonoma/Ventura**.
 
 > Why this exists: Apple’s designs are… quirky. The **Magic Mouse** still can’t be used **while charging** because its port sits on the bottom; pairing or charging often means you’re temporarily mouseless. So let’s master the keyboard‑only path and move on with life.
 
@@ -45,9 +45,12 @@ When your **Apple mouse disconnects** and you’ve only got a **keyboard**, you 
 
 ### 2) Open the Bluetooth pane without a mouse
 - Press **⌘Space**, type **Bluetooth**, hit **Return**. System Settings → **Bluetooth** opens.
-- **Alternate** (works even if search is flaky): press **⌘Space**, type **Terminal**, **Return**, then run:  ```bash
+- **Alternate** (works even if search is flaky): press **⌘Space**, type **Terminal**, **Return**, then run:  
+
+```bash
   open /System/Library/PreferencePanes/Bluetooth.prefPane
-  ```
+```
+  
   This jumps straight to the Bluetooth settings pane.
 
 ### 3) Navigate the pane and connect
@@ -61,7 +64,7 @@ Sometimes the quickest way to bring back Bluetooth is to start **Bluetooth File 
 
 1. **⌘Space** → type **Bluetooth File Exchange** → **Return**.
 
-2. If Bluetooth is Off, macOS shows **Turn Bluetooth On**—press **Return**.
+2. If Bluetooth is Off, macOS shows **Turn Bluetooth On**, press **Return**.
 
 3. Close the window; go back to **System Settings → Bluetooth** and connect.
 
@@ -71,7 +74,7 @@ Sometimes the quickest way to bring back Bluetooth is to start **Bluetooth File 
 
 ### 6) Last‑resort: pair via a cable
 - Plug the **Magic Mouse/Trackpad/Keyboard** into your Mac with its cable. With the device switched **On**, the Mac typically **pairs it automatically**. Unplug after a minute and use it wirelessly.
-- Reminder: the Magic Mouse **cannot be used while charging**—this is by design. Quick top‑ups (a few minutes) usually give enough battery to finish pairing and reconnect.
+- Reminder: the Magic Mouse **cannot be used while charging**, this is by design. Quick top‑ups (a few minutes) usually give enough battery to finish pairing and reconnect.
 
 ---
 
