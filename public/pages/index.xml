@@ -97,6 +97,7 @@ However, in my case, the view is fixed at the month for which I have put the htm
 &lt;li&gt;LVK Collaboration &lt;a href=&#34;https://pnp.ligo.org/ppcomm/Papers.html&#34;&gt;List of All Papers&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;LVK CBC Waveforms Group &lt;a href=&#34;https://wiki.ligo.org/CBC/Waveforms&#34;&gt;WIKI page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.soundsofspacetime.org/the-basics-of-binary-coalescence.html&#34;&gt;soundsofspacetime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.jh.edu/~eberti2/posts/must-read-paper-list/&#34;&gt;A must read Physics paper list&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;academics-advice-and-help&#34;&gt;Academics Advice and Help&lt;/h3&gt;
 &lt;ul&gt;
@@ -296,7 +297,7 @@ html.dark .cv-root, :root[data-theme=&#34;dark&#34;] .cv-root, body.dark .cv-roo
 .cv-role{font-weight:600}
 .cv-meta{color:var(--muted)}
 .cv-subtle{color:var(--muted);cursor:pointer}
-.cv-note{color:var(--muted)}
+.cv-note{color:var(--muted); font-family:mistral;}
 
 @media print{
   #revealBtn{display:none}
@@ -309,7 +310,7 @@ html.dark .cv-root, :root[data-theme=&#34;dark&#34;] .cv-root, body.dark .cv-roo
 &lt;/style&gt;
 &lt;script&gt;
 /** ===== Config ===== **/
-const RESUME_JSON_PATH = &#34;/json/resume.json&#34;; // put under /static/json/
+const RESUME_JSON_PATH = &#34;/files/resume.json&#34;; // put under /static/json/
 const SENSITIVE_KEYS = [&#34;email&#34;,&#34;address&#34;,&#34;dob&#34;];  // keys we won&#39;t render until user reveals
 
 /** ===== Fallback sample (edit/replace via /json/resume.json) ===== **/
@@ -513,9 +514,9 @@ Sign up for free!
 &lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt;
  
 &lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
-2025年10月 ー 2026年02月
+2025年10月
 &lt;/br&gt;
-Serving as a Teaching Assistant for the graduate-level &amp;ldquo;Graviational-Wave Physics&amp;rdquo; Course ! (third time&amp;rsquo;s the charm :)&lt;/p&gt;</description>
+Volunteered for the LVK Rapid Response Team level-0 shifter, for the third time! We had &lt;a href=&#34;https://gracedb.ligo.org/superevents/S251021u/view/&#34;&gt;one significant BBH detection&lt;/a&gt; during my shift.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal</title>
@@ -617,7 +618,7 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
       <link>http://localhost:1313/pages/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pages/research/</guid>
-      <description>&lt;p&gt;My PhD research focus on gravitational-wave astrophysics. Over the past few years, I have broadly worked on computational astrophysics and data analysis. Below is a brief description and summary of my research interests. Some projects have their own pages.&lt;/p&gt;
+      <description>&lt;p&gt;My PhD research focuses on gravitational-wave astrophysics, specifically modelling theoretical approximations for gravitational waveforms. Over the past few years, I have broadly worked on computational astrophysics and data analysis. Below is a brief description and summary of my research interests. Some projects have their own pages.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;gravitational-waves-astrophysics&#34;&gt;Gravitational Waves Astrophysics&lt;/h2&gt;
 &lt;h3 id=&#34;generating-gravitational-waveform-approximations-using-machine-learning-models&#34;&gt;Generating gravitational waveform approximations using machine learning models&lt;/h3&gt;
@@ -629,7 +630,7 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
 &lt;/ul&gt;
 &lt;h3 id=&#34;detections-of-gravitational-waves-from-compact-object-mergers&#34;&gt;Detections of gravitational waves from compact object mergers&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;I develop deep-learning pipelines for detection/classification of compact binary coalescences and related sources.&lt;/li&gt;
+&lt;li&gt;I developed deep-learning pipelines for detection/classification of compact binary coalescences and related sources.&lt;/li&gt;
 &lt;li&gt;Training strategy comparisons (curriculum learning, transfer learning) to improve sensitivity and robustness to glitches.&lt;/li&gt;
 &lt;li&gt;Practical considerations: coincidence logic, false-alarm control, and runtime efficiency on commodity GPUs.&lt;/li&gt;
 &lt;/ul&gt;
@@ -637,7 +638,7 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
 &lt;h2 id=&#34;stellar-and-solar-physics&#34;&gt;Stellar and Solar Physics&lt;/h2&gt;
 &lt;h3 id=&#34;stellar-magnetic-cycles-and-variability&#34;&gt;Stellar magnetic cycles and variability&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;I studied the &lt;strong&gt;Waldmeier effect&lt;/strong&gt; (anti-correlation of rise time with cycle amplitude) in stellar activity cycles, extending solar-cycle phenomenology to other stars.&lt;/li&gt;
+&lt;li&gt;Studied the &lt;strong&gt;Waldmeier effect&lt;/strong&gt; (anti-correlation of rise time with cycle amplitude) in stellar activity cycles, extending solar-cycle phenomenology to other stars.&lt;/li&gt;
 &lt;li&gt;Methods included cycle extraction from long-baseline activity indices and careful treatment of cadence/uncertainty.&lt;/li&gt;
 &lt;li&gt;Results help connect stellar dynamos with solar behavior and inform scaling relations across spectral types.&lt;/li&gt;
 &lt;/ul&gt;

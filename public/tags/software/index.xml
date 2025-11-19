@@ -12,8 +12,17 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Thu, 03 Apr 2025 18:25:31 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making someone co-host on scheduled zoom meeting</title>
+      <link>http://localhost:1313/posts/2025-11-14-zoom-alternate-host/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-11-14-zoom-alternate-host/</guid>
+      <description>&lt;p&gt;When you can’t attend or might be late to a &lt;strong&gt;recurring Zoom meeting&lt;/strong&gt;, the safest way to ensure class or group can begin on time is to let a trusted colleague &lt;strong&gt;start the meeting for you&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Key point:&lt;/strong&gt; In Zoom, a &lt;strong&gt;co‑host&lt;/strong&gt; can help manage a running meeting &lt;strong&gt;but cannot start it&lt;/strong&gt;. For starting the meeting without you, use &lt;strong&gt;Alternative host&lt;/strong&gt; (recommended), or &lt;strong&gt;Host key + Join before host&lt;/strong&gt; (backup), or &lt;strong&gt;Scheduling privilege&lt;/strong&gt; (for ongoing delegation).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>On switching to TexStudio!</title>
       <link>http://localhost:1313/posts/2025-04-03-texstudio/</link>

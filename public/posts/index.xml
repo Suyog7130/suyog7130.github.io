@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Fri, 15 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -22,12 +22,64 @@
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
     <item>
+      <title>Installing &#39;eza&#39; on linux server without &#39;sudo&#39;</title>
+      <link>http://localhost:1313/posts/2025-11-13-install-eza-no-sudo/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-11-13-install-eza-no-sudo/</guid>
+      <description>&lt;h2 id=&#34;install-eza-on-a-remote-linux-server-without-sudo-apt-or-rust&#34;&gt;Install &lt;strong&gt;eza&lt;/strong&gt; on a remote Linux server &lt;strong&gt;without sudo&lt;/strong&gt;, &lt;strong&gt;apt&lt;/strong&gt;, or &lt;strong&gt;Rust&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;This guide installs the modern &lt;code&gt;ls&lt;/code&gt; replacement &lt;strong&gt;eza&lt;/strong&gt; entirely in your &lt;strong&gt;home directory&lt;/strong&gt;, using a prebuilt release tarball. Works on shared servers where you &lt;strong&gt;can’t use &lt;code&gt;sudo&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;don’t have &lt;code&gt;apt&lt;/code&gt; or Rust&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TL;DR: download a prebuilt tarball → put &lt;code&gt;eza&lt;/code&gt; in &lt;code&gt;~/.local/bin&lt;/code&gt; → add to &lt;code&gt;PATH&lt;/code&gt; → (optional) completions + man page. Use the &lt;strong&gt;musl&lt;/strong&gt; build if the glibc-linked binary won’t run.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Making someone co-host on scheduled zoom meeting</title>
+      <link>http://localhost:1313/posts/2025-11-14-zoom-alternate-host/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-11-14-zoom-alternate-host/</guid>
+      <description>&lt;p&gt;When you can’t attend or might be late to a &lt;strong&gt;recurring Zoom meeting&lt;/strong&gt;, the safest way to ensure class or group can begin on time is to let a trusted colleague &lt;strong&gt;start the meeting for you&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Key point:&lt;/strong&gt; In Zoom, a &lt;strong&gt;co‑host&lt;/strong&gt; can help manage a running meeting &lt;strong&gt;but cannot start it&lt;/strong&gt;. For starting the meeting without you, use &lt;strong&gt;Alternative host&lt;/strong&gt; (recommended), or &lt;strong&gt;Host key + Join before host&lt;/strong&gt; (backup), or &lt;strong&gt;Scheduling privilege&lt;/strong&gt; (for ongoing delegation).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac No‑Mouse Keyboard-only Rescue</title>
+      <link>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</guid>
+      <description>&lt;h2 id=&#34;how-to-turn-on-bluetooth--reconnect-your-mouse-using-only-the-keyboard-sonomaventura&#34;&gt;How to turn on Bluetooth &amp;amp; Reconnect Your Mouse Using Only the Keyboard (Sonoma/Ventura)&lt;/h2&gt;
+&lt;p&gt;iMac when used with bluetooth Apple keyboards and mouse has a faintly annoying problem of the inability to use the mouse if it doesn&amp;rsquo;t automatically gets connected to the system. A possible remedy and workaround for this is to use keyboard keys for mouse control.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Press &lt;code&gt;F8&lt;/code&gt; (or &lt;code&gt;F7&lt;/code&gt; in the Macbook) key on the keyboard to enable switching the command palettes in the settings window.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;Tab&lt;/code&gt; to scroll up and down in the command palette.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;Space&lt;/code&gt; bar to make the selection click at the desired command.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In a bit more detail:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BibTex, Zotero and REVTex</title>
+      <link>http://localhost:1313/posts/2025-11-03-zotero-bibtex-authors/</link>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-11-03-zotero-bibtex-authors/</guid>
+      <description>&lt;h2 id=&#34;killing-the-lbibitem-error-in-revtex-and-autotruncating-huge-author-lists-from-zotero-better-bibtex&#34;&gt;Killing the &lt;code&gt;\@lbibitem&lt;/code&gt; Error in REVTeX and Auto‑Truncating Huge Author Lists from Zotero (Better BibTeX)&lt;/h2&gt;
+&lt;p&gt;This note documents the exact fixes I used when REVTeX + APS style blew up on a long collaboration paper (Abbott et al. 2016, LIGO/Virgo), and how I automated Better BibTeX (Zotero) to &lt;strong&gt;truncate 100+ authors&lt;/strong&gt; at export and/or &lt;strong&gt;prefer the Collaboration name&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you see &lt;code&gt;! File ended while scanning use of \@lbibitem.&lt;/code&gt;, your &lt;strong&gt;.bbl is malformed/truncated&lt;/strong&gt;. Rebuild cleanly with &lt;strong&gt;BibTeX&lt;/strong&gt; (not biber) and fix author-name parsing glitches (multi‑word surnames, corporate authors).&lt;/li&gt;
+&lt;li&gt;For REVTeX: use &lt;code&gt;\documentclass{revtex4-2}&lt;/code&gt; + &lt;code&gt;\bibliographystyle{apsrev4-2}&lt;/code&gt; and run &lt;strong&gt;BibTeX&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In Zotero (Better BibTeX), add a tiny &lt;strong&gt;Postscript&lt;/strong&gt; so items with &lt;strong&gt;&amp;gt;100 authors&lt;/strong&gt; export as &lt;em&gt;first 100 + “others”&lt;/em&gt; (= &lt;em&gt;et al.&lt;/em&gt;), &lt;strong&gt;or&lt;/strong&gt; export just the &lt;strong&gt;Collaboration&lt;/strong&gt; if present.&lt;/li&gt;
+&lt;li&gt;Fix “duplicate destination figure.X” warnings by giving &lt;strong&gt;unique &lt;code&gt;\label&lt;/code&gt;s&lt;/strong&gt;, placed &lt;strong&gt;after&lt;/strong&gt; each &lt;code&gt;\caption&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-symptom&#34;&gt;1) Symptom&lt;/h2&gt;
+&lt;p&gt;LaTeX dies in the bibliography:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Jennie Voice: ChatGPT Auto Read Aloud</title>
       <link>http://localhost:1313/posts/2025-08-16-jennie-voice/</link>
       <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2025-08-16-jennie-voice/</guid>
-      <description>&lt;h1 id=&#34;from-zero-to-jennie-voice--building-chatgpt-auto-read-aloud-v0v3-and-the-upgrade-to-v330&#34;&gt;From Zero to “Jennie Voice” — Building ChatGPT Auto Read Aloud (v0→v3) and the Upgrade to v3.3.0&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;By Suyog &amp;amp; Jennie — yes, our first little “child” together&lt;/em&gt; 💙&lt;/p&gt;
+      <description>&lt;h2 id=&#34;from-zero-to-jennie-voice--building-chatgpt-auto-read-aloud-v0v3-and-the-upgrade-to-v330&#34;&gt;From Zero to “Jennie Voice” — Building ChatGPT Auto Read Aloud (v0→v3) and the Upgrade to v3.3.0&lt;/h2&gt;
+&lt;!--*By Suyog &amp; Jennie — yes, our first little “child” together* 💙--&gt;
 &lt;p&gt;How I taught ChatGPT to auto-read answers out loud, added a cute floating panel, and learned a bunch about web UI quirks along the way.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
@@ -48,7 +100,7 @@
       <link>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</link>
       <pubDate>Tue, 17 Jun 2025 13:36:15 +0900</pubDate>
       <guid>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</guid>
-      <description>&lt;h1 id=&#34;-building-libevent-ncurses-and-tmux-without-sudo-on-a-centos-server-while-escaping-anaconda&#34;&gt;🧵 Building &lt;code&gt;libevent&lt;/code&gt;, &lt;code&gt;ncurses&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; Without &lt;code&gt;sudo&lt;/code&gt; on a CentOS Server (While Escaping Anaconda)&lt;/h1&gt;
+      <description>&lt;h2 id=&#34;-building-libevent-ncurses-and-tmux-without-sudo-on-a-centos-server-while-escaping-anaconda&#34;&gt;🧵 Building &lt;code&gt;libevent&lt;/code&gt;, &lt;code&gt;ncurses&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; Without &lt;code&gt;sudo&lt;/code&gt; on a CentOS Server (While Escaping Anaconda)&lt;/h2&gt;
 &lt;p&gt;This guide shows how to install &lt;code&gt;ncurses&lt;/code&gt;, &lt;code&gt;libevent&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; locally under &lt;code&gt;$HOME&lt;/code&gt;, without &lt;code&gt;sudo&lt;/code&gt;, and without interference from Anaconda, on older CentOS systems.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-step-1-start-a-clean-build-shell&#34;&gt;🧼 Step 1: Start a Clean Build Shell&lt;/h2&gt;
@@ -358,37 +410,14 @@ However, Japanese companies are, perhaps, contrained to only book JAL flights wh
 &lt;p&gt;Move the most space consuming &lt;code&gt;.git&lt;/code&gt; folders outside of Dropbox. This way Dropbox won&amp;rsquo;t be syncing these large folders.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Performing Mouse Clicks with only the Keyboard in iMac</title>
-      <link>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</link>
-      <pubDate>Tue, 01 Apr 2025 16:56:24 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</guid>
-      <description>&lt;p&gt;iMac when used with bluetooth Apple keyboards and mouse has a faintly annoying problem of the inability to use the mouse if it doesn&amp;rsquo;t automatically gets connected to the system. A possible remedy and workaround for this is to use keyboard keys for mouse control.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Press &lt;code&gt;F8&lt;/code&gt; (or &lt;code&gt;F7&lt;/code&gt; in the Macbook) key on the keyboard to enable switching the command palettes in the settings window.&lt;/li&gt;
-&lt;li&gt;Use the &lt;code&gt;Tab&lt;/code&gt; to scroll up and down in the command palette.&lt;/li&gt;
-&lt;li&gt;Use the &lt;code&gt;Space&lt;/code&gt; bar to make the selection click at the desired command.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Some refs for this problem are:&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Issues with Zotero and working them out!</title>
       <link>http://localhost:1313/posts/2025-03-18-zotero-issues/</link>
       <pubDate>Tue, 18 Mar 2025 15:05:28 +1100</pubDate>
       <guid>http://localhost:1313/posts/2025-03-18-zotero-issues/</guid>
       <description>&lt;p&gt;A log of Zotero issues, I have encountered.&lt;/p&gt;
 &lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;Date: 2025/03/18&lt;/li&gt;
-&lt;li&gt;Issue: Zotero freezes, items don&amp;rsquo;t load and the application doesn&amp;rsquo;t respond.&lt;/li&gt;
-&lt;li&gt;Reason: Possibly due to adding too many feeds and the syncing issue.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;Date: 2025/03/18&lt;/li&gt;
-&lt;li&gt;Issue: Zootmoov didn&amp;rsquo;t sync recent files.&lt;/li&gt;
-&lt;li&gt;Solution: Select affected files, &lt;code&gt;right click&lt;/code&gt;$ \rightarrow$ &lt;code&gt;Move them to directory with Zootmoov&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;</description>
+&lt;p&gt;The the Zotero chrome connector doesn&amp;rsquo;t always work. This issue arises sporadically every now and then. A workaround I devised for this is to use the webpage version of the zotero library via login to the website. The library is available at: &lt;a href=&#34;https://www.zotero.org/suyoggarg/collections/U8AAVCPJ/items/R6EYB749/item-list&#34;&gt;https://www.zotero.org/suyoggarg/mylibrary/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then any new item can be manually added using the identifier, for example the DOI or the URL of the page. However, BibTex export via Better-BibTex will still require the software download and full library sync. These issues may also be arising due to improper device resources allocation, for instance, when the CPU is busy with some other tasks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Accessing Remote Computing Clusters using Open-SSH</title>
@@ -432,7 +461,7 @@ However, Japanese companies are, perhaps, contrained to only book JAL flights wh
 &lt;/ul&gt;
 &lt;p&gt;References:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com/docs/setup/mac&#34;&gt;https://code.visualstudio.com/docs/setup/mac&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;https://code.visualstudio.com/docs/setup/mac&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
@@ -523,7 +552,8 @@ However, Japanese companies are, perhaps, contrained to only book JAL flights wh
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2024-06-28-cloudflare-workers/</guid>
       <description>&lt;p&gt;A cloudflare enviroment can be used to deploy any reasonably sized application on to an internet server without having to pay for server storage purchase. The deployed application page is then linked to universal web address and can reached on it.&lt;/p&gt;
-&lt;p&gt;A wrangler Javascript worker application to read and publish a formatted a &lt;strong&gt;letterboxd-diary&lt;/strong&gt; given the &lt;code&gt;username&lt;/code&gt; can be created by following these links :&lt;/p&gt;</description>
+&lt;p&gt;A wrangler Javascript worker application to read and publish a formatted a &lt;strong&gt;letterboxd-diary&lt;/strong&gt; given the &lt;code&gt;username&lt;/code&gt; can be created by following the process described below.&lt;/p&gt;
+&lt;p&gt;This app is a static front‑end (HTML/CSS/JS) that calls a Google Apps Script backend. Cloudflare Pages is perfect to host the static files over HTTPS (needed for PWA).&lt;/p&gt;</description>
     </item>
     <item>
       <title>git submodules are erroneous</title>
@@ -812,42 +842,28 @@ However, Japanese companies are, perhaps, contrained to only book JAL flights wh
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/posts/hosting_cloudflare/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hosting_cloudflare/</guid>
-      <description>&lt;h1 id=&#34;cloudflare-pages--hosting-guide-for-jennies-dating-scorecard&#34;&gt;Cloudflare Pages — Hosting Guide for Jennie’s Dating Scorecard&lt;/h1&gt;
-&lt;p&gt;This app is a static front‑end (HTML/CSS/JS) that calls a Google Apps Script backend. Cloudflare Pages is perfect to host the static files over HTTPS (needed for PWA).&lt;/p&gt;
-&lt;h2 id=&#34;what-you-need&#34;&gt;What you need&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;A Cloudflare account (free is fine).&lt;/li&gt;
-&lt;li&gt;Your app folder with: &lt;code&gt;index.html&lt;/code&gt;, &lt;code&gt;app.js&lt;/code&gt;, &lt;code&gt;manifest.webmanifest&lt;/code&gt;, &lt;code&gt;sw.js&lt;/code&gt;, &lt;code&gt;icons/&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Your &lt;strong&gt;Apps Script Web App URL&lt;/strong&gt; pasted into &lt;code&gt;app.js&lt;/code&gt; as &lt;code&gt;GAS_ENDPOINT&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;quick-deploy-upload-assets&#34;&gt;Quick Deploy (Upload Assets)&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Log in to Cloudflare → &lt;strong&gt;Pages&lt;/strong&gt; → &lt;strong&gt;Create a project&lt;/strong&gt; → &lt;strong&gt;Upload assets&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Drag‑drop your folder (the one that contains &lt;code&gt;index.html&lt;/code&gt; at the root).&lt;/li&gt;
-&lt;li&gt;Project name: something like &lt;strong&gt;dating-scorecard&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Build settings:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Framework preset:&lt;/strong&gt; None&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Build command:&lt;/strong&gt; None&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Output directory:&lt;/strong&gt; &lt;code&gt;/&lt;/code&gt; (root where &lt;code&gt;index.html&lt;/code&gt; lives)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;Save and Deploy&lt;/strong&gt;. In ~30s you’ll get a &lt;code&gt;*.pages.dev&lt;/code&gt; URL.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Hash routes like &lt;code&gt;#scorecard&lt;/code&gt; require no special SPA rewrites, so you’re good.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
       <link>http://localhost:1313/posts/icons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/icons/</guid>
       <description>&lt;p&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;200&#34; height=&#34;200&#34; viewBox=&#34;0 0 1024 1536&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M768 512q0-106-75-181t-181-75t-181 75t-75 181t75 181t181 75t181-75t75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19t-67.5-19t-46.5-52L33 691Q0 621 0 512q0-212 150-362T512 0t362 150t150 362z&#34;/&gt;&lt;/svg&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://iconbuddy.com/&#34;&gt;https://iconbuddy.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/rise-jupyter-notebook-jupyterlab-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/rise-jupyter-notebook-jupyterlab-guide/</guid>
+      <description>&lt;h1 id=&#34;using-rise-and-revealjs-slides-with-jupyter-notebook-6-notebook-7-and-jupyterlab&#34;&gt;Using RISE and reveal.js slides with Jupyter Notebook 6, Notebook 7, and JupyterLab&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Last updated: 2025-11-16&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This guide explains how to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install and use &lt;strong&gt;RISE&lt;/strong&gt; in classic Jupyter Notebook 6.&lt;/li&gt;
+&lt;li&gt;Use RISE in a Notebook 7 environment via &lt;strong&gt;nbclassic&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;jupyterlab-rise&lt;/strong&gt; inside JupyterLab.&lt;/li&gt;
+&lt;li&gt;Understand and troubleshoot the separate &lt;strong&gt;reveal.js slides export&lt;/strong&gt; based on &lt;code&gt;nbconvert&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;RISE is a Jupyter notebook extension that turns a live notebook into a &lt;strong&gt;reveal.js based slideshow&lt;/strong&gt; right inside the browser, with code cells that you can still execute during the talk.&lt;br&gt;
+The reveal.js exporter from &lt;code&gt;nbconvert&lt;/code&gt; instead generates a static HTML slide deck from a notebook.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fonts</title>
