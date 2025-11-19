@@ -12,8 +12,71 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Fri, 15 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash</title>
+      <link>http://localhost:1313/tags/bash/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Debugging</title>
+      <link>http://localhost:1313/tags/debugging/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/debugging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software</title>
+      <link>http://localhost:1313/tags/software/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terminal</title>
+      <link>http://localhost:1313/tags/terminal/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/terminal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guide</title>
+      <link>http://localhost:1313/tags/guide/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/guide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Macos</title>
+      <link>http://localhost:1313/tags/macos/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/macos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bibtex</title>
+      <link>http://localhost:1313/tags/bibtex/</link>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bibtex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zotero</title>
+      <link>http://localhost:1313/tags/zotero/</link>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/zotero/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Automation</title>
       <link>http://localhost:1313/tags/automation/</link>
@@ -33,20 +96,6 @@
       <link>http://localhost:1313/tags/tech/</link>
       <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/tech/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Tue, 17 Jun 2025 13:36:15 +0900</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Terminal</title>
-      <link>http://localhost:1313/tags/terminal/</link>
-      <pubDate>Tue, 17 Jun 2025 13:36:15 +0900</pubDate>
-      <guid>http://localhost:1313/tags/terminal/</guid>
       <description></description>
     </item>
     <item>
@@ -78,34 +127,6 @@
       <description></description>
     </item>
     <item>
-      <title>Software</title>
-      <link>http://localhost:1313/tags/software/</link>
-      <pubDate>Thu, 03 Apr 2025 18:25:31 +0900</pubDate>
-      <guid>http://localhost:1313/tags/software/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Debugging</title>
-      <link>http://localhost:1313/tags/debugging/</link>
-      <pubDate>Tue, 18 Mar 2025 15:05:28 +1100</pubDate>
-      <guid>http://localhost:1313/tags/debugging/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Zotero</title>
-      <link>http://localhost:1313/tags/zotero/</link>
-      <pubDate>Tue, 18 Mar 2025 15:05:28 +1100</pubDate>
-      <guid>http://localhost:1313/tags/zotero/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Guide</title>
-      <link>http://localhost:1313/tags/guide/</link>
-      <pubDate>Tue, 18 Mar 2025 12:24:46 +1100</pubDate>
-      <guid>http://localhost:1313/tags/guide/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Ssh</title>
       <link>http://localhost:1313/tags/ssh/</link>
       <pubDate>Tue, 18 Mar 2025 12:24:46 +1100</pubDate>
@@ -117,13 +138,6 @@
       <link>http://localhost:1313/tags/zsh/</link>
       <pubDate>Mon, 17 Mar 2025 18:49:00 +1100</pubDate>
       <guid>http://localhost:1313/tags/zsh/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Bash</title>
-      <link>http://localhost:1313/tags/bash/</link>
-      <pubDate>Fri, 14 Mar 2025 16:27:20 +1100</pubDate>
-      <guid>http://localhost:1313/tags/bash/</guid>
       <description></description>
     </item>
     <item>
@@ -166,13 +180,6 @@
       <link>http://localhost:1313/tags/web-development/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/web-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Macos</title>
-      <link>http://localhost:1313/tags/macos/</link>
-      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/macos/</guid>
       <description></description>
     </item>
     <item>

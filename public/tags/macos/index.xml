@@ -12,8 +12,22 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Fri, 22 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac No‑Mouse Keyboard-only Rescue</title>
+      <link>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</guid>
+      <description>&lt;h2 id=&#34;how-to-turn-on-bluetooth--reconnect-your-mouse-using-only-the-keyboard-sonomaventura&#34;&gt;How to turn on Bluetooth &amp;amp; Reconnect Your Mouse Using Only the Keyboard (Sonoma/Ventura)&lt;/h2&gt;
+&lt;p&gt;iMac when used with bluetooth Apple keyboards and mouse has a faintly annoying problem of the inability to use the mouse if it doesn&amp;rsquo;t automatically gets connected to the system. A possible remedy and workaround for this is to use keyboard keys for mouse control.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Press &lt;code&gt;F8&lt;/code&gt; (or &lt;code&gt;F7&lt;/code&gt; in the Macbook) key on the keyboard to enable switching the command palettes in the settings window.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;Tab&lt;/code&gt; to scroll up and down in the command palette.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;Space&lt;/code&gt; bar to make the selection click at the desired command.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In a bit more detail:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>pdf2jpg via terminal</title>
       <link>http://localhost:1313/posts/2024-03-22-pdf2jpg/</link>

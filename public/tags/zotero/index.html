@@ -244,14 +244,31 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">BibTex, Zotero and REVTex
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Killing the \@lbibitem Error in REVTeX and Auto‑Truncating Huge Author Lists from Zotero (Better BibTeX) This note documents the exact fixes I used when REVTeX &#43; APS style blew up on a long collaboration paper (Abbott et al. 2016, LIGO/Virgo), and how I automated Better BibTeX (Zotero) to truncate 100&#43; authors at export and/or prefer the Collaboration name.
+TL;DR If you see ! File ended while scanning use of \@lbibitem., your .bbl is malformed/truncated. Rebuild cleanly with BibTeX (not biber) and fix author-name parsing glitches (multi‑word surnames, corporate authors). For REVTeX: use \documentclass{revtex4-2} &#43; \bibliographystyle{apsrev4-2} and run BibTeX. In Zotero (Better BibTeX), add a tiny Postscript so items with &gt;100 authors export as first 100 &#43; “others” (= et al.), or export just the Collaboration if present. Fix “duplicate destination figure.X” warnings by giving unique \labels, placed after each \caption. 1) Symptom LaTeX dies in the bibliography:
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-11-03 00:00:00 +0000 UTC'>November 3, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;4 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;785 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to BibTex, Zotero and REVTex" href="http://localhost:1313/posts/2025-11-03-zotero-bibtex-authors/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Issues with Zotero and working them out!
     </h2>
   </header>
   <div class="entry-content">
     <p>A log of Zotero issues, I have encountered.
-Date: 2025/03/18 Issue: Zotero freezes, items don’t load and the application doesn’t respond. Reason: Possibly due to adding too many feeds and the syncing issue. Date: 2025/03/18 Issue: Zootmoov didn’t sync recent files. Solution: Select affected files, right click$ \rightarrow$ Move them to directory with Zootmoov </p>
+The the Zotero chrome connector doesn’t always work. This issue arises sporadically every now and then. A workaround I devised for this is to use the webpage version of the zotero library via login to the website. The library is available at: https://www.zotero.org/suyoggarg/mylibrary/
+Then any new item can be manually added using the identifier, for example the DOI or the URL of the page. However, BibTex export via Better-BibTex will still require the software download and full library sync. These issues may also be arising due to improper device resources allocation, for instance, when the CPU is busy with some other tasks.
+...</p>
   </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-18 15:05:28 +1100 +1100'>March 18, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;54 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-18 15:05:28 +1100 +1100'>March 18, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;159 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
   <a class="entry-link" aria-label="post link to Issues with Zotero and working them out!" href="http://localhost:1313/posts/2025-03-18-zotero-issues/"></a>
 </article>

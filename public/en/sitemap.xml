@@ -5,20 +5,29 @@
     <loc>http://localhost:1313/posts/2021-05-09-terminal-commands/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/automation/</loc>
-    <lastmod>2025-08-15T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/bash/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/chatgpt/</loc>
-    <lastmod>2025-08-15T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/debugging/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-08-16-jennie-voice/</loc>
-    <lastmod>2025-08-15T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/posts/2025-11-13-install-eza-no-sudo/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-11-14-zoom-alternate-host/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/software/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hi"
@@ -36,18 +45,42 @@
                 />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/terminal/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/guide/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/macos/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/bibtex/</loc>
+    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-11-03-zotero-bibtex-authors/</loc>
+    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/zotero/</loc>
+    <lastmod>2025-11-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/automation/</loc>
+    <lastmod>2025-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/chatgpt/</loc>
+    <lastmod>2025-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-08-16-jennie-voice/</loc>
     <lastmod>2025-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tech/</loc>
     <lastmod>2025-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</loc>
-    <lastmod>2025-06-17T13:36:15+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2025-06-17T13:36:15+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/terminal/</loc>
     <lastmod>2025-06-17T13:36:15+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-06-16-flight-pricing/</loc>
@@ -83,34 +116,19 @@
     <loc>http://localhost:1313/posts/2025-04-03-texstudio/</loc>
     <lastmod>2025-04-03T18:25:31+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/software/</loc>
-    <lastmod>2025-04-03T18:25:31+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/pages/personal/resceu-related/</loc>
     <lastmod>2025-04-03T17:44:26+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</loc>
     <lastmod>2025-04-02T18:07:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</loc>
-    <lastmod>2025-04-01T16:56:24+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/pages/interesting-articles/</loc>
     <lastmod>2025-03-19T17:39:59+11:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/debugging/</loc>
-    <lastmod>2025-03-18T15:05:28+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-03-18-zotero-issues/</loc>
     <lastmod>2025-03-18T15:05:28+11:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/zotero/</loc>
-    <lastmod>2025-03-18T15:05:28+11:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2025-03-18-using-ssh-remote-access/</loc>
-    <lastmod>2025-03-18T12:24:46+11:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/guide/</loc>
     <lastmod>2025-03-18T12:24:46+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ssh/</loc>
@@ -124,9 +142,6 @@
   </url><url>
     <loc>http://localhost:1313/pages/useful-links/</loc>
     <lastmod>2025-03-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/bash/</loc>
-    <lastmod>2025-03-14T16:27:20+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</loc>
     <lastmod>2025-03-14T16:27:20+11:00</lastmod>
@@ -179,9 +194,6 @@
     <loc>http://localhost:1313/posts/2024-03-28-git-passphrase/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/macos/</loc>
-    <lastmod>2024-03-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2024-03-22-pdf2jpg/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -212,9 +224,9 @@
     <loc>http://localhost:1313/posts/2025-02-20-paper-writing-tips/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/hosting_cloudflare/</loc>
-  </url><url>
     <loc>http://localhost:1313/posts/icons/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/rise-jupyter-notebook-jupyterlab-guide/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
   </url><url>

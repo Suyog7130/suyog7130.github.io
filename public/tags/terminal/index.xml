@@ -12,14 +12,24 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Tue, 17 Jun 2025 13:36:15 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing &#39;eza&#39; on linux server without &#39;sudo&#39;</title>
+      <link>http://localhost:1313/posts/2025-11-13-install-eza-no-sudo/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-11-13-install-eza-no-sudo/</guid>
+      <description>&lt;h2 id=&#34;install-eza-on-a-remote-linux-server-without-sudo-apt-or-rust&#34;&gt;Install &lt;strong&gt;eza&lt;/strong&gt; on a remote Linux server &lt;strong&gt;without sudo&lt;/strong&gt;, &lt;strong&gt;apt&lt;/strong&gt;, or &lt;strong&gt;Rust&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;This guide installs the modern &lt;code&gt;ls&lt;/code&gt; replacement &lt;strong&gt;eza&lt;/strong&gt; entirely in your &lt;strong&gt;home directory&lt;/strong&gt;, using a prebuilt release tarball. Works on shared servers where you &lt;strong&gt;can’t use &lt;code&gt;sudo&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;don’t have &lt;code&gt;apt&lt;/code&gt; or Rust&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TL;DR: download a prebuilt tarball → put &lt;code&gt;eza&lt;/code&gt; in &lt;code&gt;~/.local/bin&lt;/code&gt; → add to &lt;code&gt;PATH&lt;/code&gt; → (optional) completions + man page. Use the &lt;strong&gt;musl&lt;/strong&gt; build if the glibc-linked binary won’t run.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Installing tmux on CentOS server</title>
       <link>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</link>
       <pubDate>Tue, 17 Jun 2025 13:36:15 +0900</pubDate>
       <guid>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</guid>
-      <description>&lt;h1 id=&#34;-building-libevent-ncurses-and-tmux-without-sudo-on-a-centos-server-while-escaping-anaconda&#34;&gt;🧵 Building &lt;code&gt;libevent&lt;/code&gt;, &lt;code&gt;ncurses&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; Without &lt;code&gt;sudo&lt;/code&gt; on a CentOS Server (While Escaping Anaconda)&lt;/h1&gt;
+      <description>&lt;h2 id=&#34;-building-libevent-ncurses-and-tmux-without-sudo-on-a-centos-server-while-escaping-anaconda&#34;&gt;🧵 Building &lt;code&gt;libevent&lt;/code&gt;, &lt;code&gt;ncurses&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; Without &lt;code&gt;sudo&lt;/code&gt; on a CentOS Server (While Escaping Anaconda)&lt;/h2&gt;
 &lt;p&gt;This guide shows how to install &lt;code&gt;ncurses&lt;/code&gt;, &lt;code&gt;libevent&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; locally under &lt;code&gt;$HOME&lt;/code&gt;, without &lt;code&gt;sudo&lt;/code&gt;, and without interference from Anaconda, on older CentOS systems.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-step-1-start-a-clean-build-shell&#34;&gt;🧼 Step 1: Start a Clean Build Shell&lt;/h2&gt;
@@ -75,7 +85,7 @@
 &lt;/ul&gt;
 &lt;p&gt;References:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com/docs/setup/mac&#34;&gt;https://code.visualstudio.com/docs/setup/mac&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;https://code.visualstudio.com/docs/setup/mac&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
