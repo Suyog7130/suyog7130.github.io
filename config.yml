@@ -23,7 +23,7 @@ minify:
   # minifyOutput: true
 
 languages:
-  en:
+  en:  # looks for files in `content/en/` or `content/`
     languageName: "English"
     weight: 1
     taxonomies:
@@ -83,9 +83,9 @@ languages:
         subtitle: ""
         buttons:
           - name: पृष्ठ
-            url: multi-lingual/hindi/pages
+            url: pages
           - name: ब्लॉग
-            url: multi-lingual/hindi/posts
+            url: posts
 
   ja:
     languageName: "日本語"

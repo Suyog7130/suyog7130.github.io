@@ -12,7 +12,29 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Thu, 03 Apr 2025 18:58:07 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/multilingual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SoftTools</title>
+      <link>http://localhost:1313/multilingual/hindi/teaching/softtools/</link>
+      <pubDate>Thu, 03 Apr 2025 18:58:07 +0900</pubDate>
+      <guid>http://localhost:1313/multilingual/hindi/teaching/softtools/</guid>
+      <description>&lt;p&gt;This document is to store notes about a possible Software Tools I may be interested in running later this year or the next in UTokyo.&lt;/p&gt;
+&lt;p&gt;List of Important Scientific software tools and Packages I have been using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zotero : for Research Papers management.&lt;/li&gt;
+&lt;li&gt;LaTeX : Perhaps, have a demo on some advanced latex tools.&lt;/li&gt;
+&lt;li&gt;Python : Again, introduction to advanced tools and libraries and to proper coding practices.&lt;/li&gt;
+&lt;li&gt;Git / Github : How to do version control??&lt;/li&gt;
+&lt;li&gt;Blender ??&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Notes@ml4astro</title>
+      <link>http://localhost:1313/multilingual/hindi/teaching/ml4astro/notes@ml4astro/</link>
+      <pubDate>Thu, 03 Apr 2025 18:55:47 +0900</pubDate>
+      <guid>http://localhost:1313/multilingual/hindi/teaching/ml4astro/notes@ml4astro/</guid>
+      <description>&lt;h2 id=&#34;notes-for-the-ml4astro-seminar-series&#34;&gt;Notes for the ML4Astro Seminar Series&lt;/h2&gt;</description>
+    </item>
   </channel>
 </rss>
