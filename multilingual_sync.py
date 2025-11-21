@@ -32,7 +32,7 @@ from providers import get_translator, ProviderError
 TEXT_EXTS = {".md", ".markdown", ".html", ".htm"}
 BINARY_COPY_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".pdf", ".mp4", ".mp3"}
 DEFAULT_SRC_LANG = "en"
-DEFAULT_OUTPUT_STYLE = "folders"  # 'folders' => content/<lang>/..., or 'suffix' => foo.ja.md
+DEFAULT_OUTPUT_STYLE = "suffix"  # 'folders' => content/<lang>/..., or 'suffix' => foo.ja.md
 CACHE_DIR = Path(".mlsync")
 CACHE_FILE = CACHE_DIR / "translation_cache.json"
 TRANSLATABLE_FM_KEYS_DEFAULT = ["title", "description", "summary"]
@@ -227,7 +227,7 @@ def out_path_for(file: Path, content_root: Path, lang: str, output_style: str) -
 
 def main():
     ap = argparse.ArgumentParser(description="Sync/translate Hugo content into multilingual folders or suffixed files.")
-    ap.add_argument("--content-dir", default="content", help="Content root (default: content)")
+    ap.add_argument("--content-dir", default="content/", help="Content root (default: content)")
     ap.add_argument("--src-lang", default=DEFAULT_SRC_LANG, help="Source language code (default: en)")
     ap.add_argument("--langs", default="", help="Comma-separated target language codes (e.g., ja,hi,ko)")
     ap.add_argument("--provider", required=True, choices=["openai", "google", "deepl", "hf"], help="Translation backend")
@@ -311,7 +311,7 @@ def main():
         meta = parse_front_matter(fm_type, fm_text)
 
         # Compute a stable translationKey based on path excluding any language prefix in folders mode
-        rel_key = str(src_file.relative_to(Path(args.content_dir))).lstrip("/")
+        rel_key = str(src_file.relative_to(Path(args.content_dir).resolve())).lstrip("/")
         if args.output_style == "folders":
             # when src is under content/en/, strip that prefix for key stability
             rel_parts = src_file.relative_to(Path(args.content_dir)).parts
