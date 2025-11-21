@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing &#39;eza&#39; on linux server without &#39;sudo&#39;</title>
-      <link>http://localhost:1313/posts/2025-11-13-install-eza-no-sudo/</link>
+      <link>http://localhost:1313/en/posts/2025-11-13-install-eza-no-sudo/</link>
       <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025-11-13-install-eza-no-sudo/</guid>
+      <guid>http://localhost:1313/en/posts/2025-11-13-install-eza-no-sudo/</guid>
       <description>&lt;h2 id=&#34;install-eza-on-a-remote-linux-server-without-sudo-apt-or-rust&#34;&gt;Install &lt;strong&gt;eza&lt;/strong&gt; on a remote Linux server &lt;strong&gt;without sudo&lt;/strong&gt;, &lt;strong&gt;apt&lt;/strong&gt;, or &lt;strong&gt;Rust&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;This guide installs the modern &lt;code&gt;ls&lt;/code&gt; replacement &lt;strong&gt;eza&lt;/strong&gt; entirely in your &lt;strong&gt;home directory&lt;/strong&gt;, using a prebuilt release tarball. Works on shared servers where you &lt;strong&gt;can’t use &lt;code&gt;sudo&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;don’t have &lt;code&gt;apt&lt;/code&gt; or Rust&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -26,9 +26,9 @@
     </item>
     <item>
       <title>Installing tmux on CentOS server</title>
-      <link>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</link>
+      <link>http://localhost:1313/en/posts/2025-06-17-tmux-on-centos/</link>
       <pubDate>Tue, 17 Jun 2025 13:36:15 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</guid>
+      <guid>http://localhost:1313/en/posts/2025-06-17-tmux-on-centos/</guid>
       <description>&lt;h2 id=&#34;-building-libevent-ncurses-and-tmux-without-sudo-on-a-centos-server-while-escaping-anaconda&#34;&gt;🧵 Building &lt;code&gt;libevent&lt;/code&gt;, &lt;code&gt;ncurses&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; Without &lt;code&gt;sudo&lt;/code&gt; on a CentOS Server (While Escaping Anaconda)&lt;/h2&gt;
 &lt;p&gt;This guide shows how to install &lt;code&gt;ncurses&lt;/code&gt;, &lt;code&gt;libevent&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; locally under &lt;code&gt;$HOME&lt;/code&gt;, without &lt;code&gt;sudo&lt;/code&gt;, and without interference from Anaconda, on older CentOS systems.&lt;/p&gt;
 &lt;hr&gt;
@@ -48,9 +48,9 @@
     </item>
     <item>
       <title>Customize Linux Terminal!</title>
-      <link>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</link>
+      <link>http://localhost:1313/en/posts/2025-03-14-custom-linux-terminal/</link>
       <pubDate>Fri, 14 Mar 2025 16:27:20 +1100</pubDate>
-      <guid>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</guid>
+      <guid>http://localhost:1313/en/posts/2025-03-14-custom-linux-terminal/</guid>
       <description>&lt;p&gt;A good way to prettify and enhance the outlook of a linux bash terminal is to use &lt;a href=&#34;https://github.com/andresgongora/synth-shell&#34;&gt;synth-shell&lt;/a&gt;. Do:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone --recursive https://github.com/andresgongora/synth-shell.git
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; synth-shell

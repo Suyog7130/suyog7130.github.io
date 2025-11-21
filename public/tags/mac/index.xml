@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On switching to TexStudio!</title>
-      <link>http://localhost:1313/posts/2025-04-03-texstudio/</link>
+      <link>http://localhost:1313/en/posts/2025-04-03-texstudio/</link>
       <pubDate>Thu, 03 Apr 2025 18:25:31 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2025-04-03-texstudio/</guid>
+      <guid>http://localhost:1313/en/posts/2025-04-03-texstudio/</guid>
       <description>&lt;p&gt;For many many year I have been using &lt;a href=&#34;http://www.xm1math.net/texmaker/&#34;&gt;TexMaker&lt;/a&gt; for all my offline LaTeX document creation, compiling and editing needs. A few years back, Overleaf came along with its super ease-of-access approach to online LaTeX document editing and sharing. Overleaf has an edge over other LaTeX software distributions, mainly because of the following reasons:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Overleaf is online, so the document can be accessed from anywhere with Internet.&lt;/li&gt;
@@ -30,9 +30,9 @@
     </item>
     <item>
       <title>How to use Git With Dropbox?</title>
-      <link>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</link>
+      <link>http://localhost:1313/en/posts/2025-04-02-git-with-dropbox/</link>
       <pubDate>Wed, 02 Apr 2025 18:07:51 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</guid>
+      <guid>http://localhost:1313/en/posts/2025-04-02-git-with-dropbox/</guid>
       <description>&lt;p&gt;Problems I have encountered using Dropbox:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Dropbox storage space available for use is really low, and is consumed relatively easily because of the &lt;code&gt;.git&lt;/code&gt; folder.&lt;/li&gt;

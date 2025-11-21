@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working with Cloudflare workers</title>
-      <link>http://localhost:1313/posts/2024-06-28-cloudflare-workers/</link>
+      <link>http://localhost:1313/en/posts/2024-06-28-cloudflare-workers/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-06-28-cloudflare-workers/</guid>
+      <guid>http://localhost:1313/en/posts/2024-06-28-cloudflare-workers/</guid>
       <description>&lt;p&gt;A cloudflare enviroment can be used to deploy any reasonably sized application on to an internet server without having to pay for server storage purchase. The deployed application page is then linked to universal web address and can reached on it.&lt;/p&gt;
 &lt;p&gt;A wrangler Javascript worker application to read and publish a formatted a &lt;strong&gt;letterboxd-diary&lt;/strong&gt; given the &lt;code&gt;username&lt;/code&gt; can be created by following the process described below.&lt;/p&gt;
 &lt;p&gt;This app is a static front‑end (HTML/CSS/JS) that calls a Google Apps Script backend. Cloudflare Pages is perfect to host the static files over HTTPS (needed for PWA).&lt;/p&gt;</description>

@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mac No‑Mouse Keyboard-only Rescue</title>
-      <link>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</link>
+      <link>http://localhost:1313/en/posts/2025-04-01-mac-with-only-keyboard/</link>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</guid>
+      <guid>http://localhost:1313/en/posts/2025-04-01-mac-with-only-keyboard/</guid>
       <description>&lt;h2 id=&#34;how-to-turn-on-bluetooth--reconnect-your-mouse-using-only-the-keyboard-sonomaventura&#34;&gt;How to turn on Bluetooth &amp;amp; Reconnect Your Mouse Using Only the Keyboard (Sonoma/Ventura)&lt;/h2&gt;
 &lt;p&gt;iMac when used with bluetooth Apple keyboards and mouse has a faintly annoying problem of the inability to use the mouse if it doesn&amp;rsquo;t automatically gets connected to the system. A possible remedy and workaround for this is to use keyboard keys for mouse control.&lt;/p&gt;
 &lt;ul&gt;
@@ -30,9 +30,9 @@
     </item>
     <item>
       <title>Accessing Remote Computing Clusters using Open-SSH</title>
-      <link>http://localhost:1313/posts/2025-03-18-using-ssh-remote-access/</link>
+      <link>http://localhost:1313/en/posts/2025-03-18-using-ssh-remote-access/</link>
       <pubDate>Tue, 18 Mar 2025 12:24:46 +1100</pubDate>
-      <guid>http://localhost:1313/posts/2025-03-18-using-ssh-remote-access/</guid>
+      <guid>http://localhost:1313/en/posts/2025-03-18-using-ssh-remote-access/</guid>
       <description>&lt;h2 id=&#34;general-guidelines&#34;&gt;General guidelines&lt;/h2&gt;
 &lt;p&gt;You basically have three entities you want to interlink and provide bidirectional access.&lt;/p&gt;
 &lt;ol&gt;
@@ -48,16 +48,16 @@
     </item>
     <item>
       <title>Guide to Hugo PaperMod Website</title>
-      <link>http://localhost:1313/posts/papermod-website/</link>
+      <link>http://localhost:1313/en/posts/papermod-website/</link>
       <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/papermod-website/</guid>
+      <guid>http://localhost:1313/en/posts/papermod-website/</guid>
       <description></description>
     </item>
     <item>
       <title>How to Manage Your Research Paper Library with Zotero</title>
-      <link>http://localhost:1313/posts/2024-11-28-zotero/</link>
+      <link>http://localhost:1313/en/posts/2024-11-28-zotero/</link>
       <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-11-28-zotero/</guid>
+      <guid>http://localhost:1313/en/posts/2024-11-28-zotero/</guid>
       <description>&lt;p&gt;If you’re a researcher, student, or academic drowning in PDFs and journal articles, Zotero might be the tool you didn’t know you needed. It&amp;rsquo;s a powerful, free, and open-source reference manager that helps you collect, organize, annotate, cite, and share your research materials with ease.&lt;/p&gt;
 &lt;p&gt;In this post, we’ll look at how to set up and optimize Zotero for managing a growing library of research papers, especially PDFs. We&amp;rsquo;ll also explore helpful features and best practices to avoid common pitfalls.&lt;/p&gt;</description>
     </item>
