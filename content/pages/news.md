@@ -36,6 +36,20 @@ Sign up for free!
 <span style="color:darkblue; font-weight:bold">[Academic]</span>
 &nbsp;
 <i class="fa fa-paper-plane"></i>
+2025年11月18日
+</br>
+Presented a [Gravitational Waves Data Analysis tutorial](https://suyoggarg.com/ewha/) at Ewha womans university, Seoul.
+
+<span style="color:green; font-weight:bold">[Paper]</span> 
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2025年11月
+<br/>
+Two new papers up on Arxiv this month!
+
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
 2025年10月
 </br>
 Volunteered for the LVK Rapid Response Team level-0 shifter, for the third time! We had [one significant BBH detection](https://gracedb.ligo.org/superevents/S251021u/view/) during my shift.
