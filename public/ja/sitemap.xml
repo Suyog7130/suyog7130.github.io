@@ -15,10 +15,85 @@
                 />
   </url><url>
     <loc>http://localhost:1313/ja/jacategories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="bn"
+                href="http://localhost:1313/bn/jacategories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ch"
+                href="http://localhost:1313/ch/jacategories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="http://localhost:1313/kr/jacategories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ur"
+                href="http://localhost:1313/ur/jacategories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/jacategories/"
+                />
   </url><url>
     <loc>http://localhost:1313/ja/jaseries/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="bn"
+                href="http://localhost:1313/bn/jaseries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ch"
+                href="http://localhost:1313/ch/jaseries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="http://localhost:1313/kr/jaseries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ur"
+                href="http://localhost:1313/ur/jaseries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/jaseries/"
+                />
   </url><url>
     <loc>http://localhost:1313/ja/jatags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="bn"
+                href="http://localhost:1313/bn/jatags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ch"
+                href="http://localhost:1313/ch/jatags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="http://localhost:1313/kr/jatags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ur"
+                href="http://localhost:1313/ur/jatags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/jatags/"
+                />
   </url><url>
     <loc>http://localhost:1313/ja/multilingual/</loc>
     <xhtml:link
@@ -47,6 +122,26 @@
                 rel="alternate"
                 hreflang="hi"
                 href="http://localhost:1313/hi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="bn"
+                href="http://localhost:1313/bn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ch"
+                href="http://localhost:1313/ch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="http://localhost:1313/kr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ur"
+                href="http://localhost:1313/ur/"
                 />
     <xhtml:link
                 rel="alternate"
