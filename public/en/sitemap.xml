@@ -35,8 +35,28 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="bn"
+                href="http://localhost:1313/bn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ch"
+                href="http://localhost:1313/ch/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="ja"
                 href="http://localhost:1313/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="http://localhost:1313/kr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ur"
+                href="http://localhost:1313/ur/"
                 />
     <xhtml:link
                 rel="alternate"

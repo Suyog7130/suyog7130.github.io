@@ -109,6 +109,94 @@ languages:
         Title: "\U0001F44B スイオグ ガーグ"
         Content: 〜ウェブサイトへようこそ
 
+  ch:
+    languageName: "中文"
+    languagedirection: ltr
+    weight: 3
+    title: Suyog Garg
+    taxonomies:
+      category: JAcategories
+      tag: JAtags
+      series: JAseries
+    menu:
+      main:
+        - name: JATags
+          url: jatags
+          weight: 10
+    # custom params for each language should be under [langcode].parms - hugo v0.120.0
+    params:
+      profileMode:
+        enabled: false
+      homeInfoParams:
+        Title: "\U0001F44B 良辰 葛"
+        Content: 歡迎參觀我的網站〜
+
+  kr:
+    languageName: "한굴"
+    languagedirection: ltr
+    weight: 3
+    title: Suyog Garg
+    taxonomies:
+      category: JAcategories
+      tag: JAtags
+      series: JAseries
+    menu:
+      main:
+        - name: JATags
+          url: jatags
+          weight: 10
+    # custom params for each language should be under [langcode].parms - hugo v0.120.0
+    params:
+      profileMode:
+        enabled: false
+      homeInfoParams:
+        Title: "\U0001F44B 수요그 가르그"
+        Content: 저의 웹사이트에 오신 것을 환영합니다〜
+
+  bn:
+    languageName: "বাংলা"
+    languagedirection: ltr
+    weight: 3
+    title: Suyog Garg
+    taxonomies:
+      category: JAcategories
+      tag: JAtags
+      series: JAseries
+    menu:
+      main:
+        - name: JATags
+          url: jatags
+          weight: 10
+    # custom params for each language should be under [langcode].parms - hugo v0.120.0
+    params:
+      profileMode:
+        enabled: false
+      homeInfoParams:
+        Title: "\U0001F44B সুযোগ গর্গ"
+        Content: আমার ওয়েবসাইটে স্বাগতম〜
+
+  ur:
+    languageName: "اردو"
+    languagedirection: rtl
+    weight: 3
+    title: Suyog Garg
+    taxonomies:
+      category: JAcategories
+      tag: JAtags
+      series: JAseries
+    menu:
+      main:
+        - name: JATags
+          url: jatags
+          weight: 10
+    # custom params for each language should be under [langcode].parms - hugo v0.120.0
+    params:
+      profileMode:
+        enabled: false
+      homeInfoParams:
+        Title: " سویوگ گرگ "
+        Content: میری ویب سائٹ پر خوش آمدید〜
+
 outputs:
   home:
     - HTML

@@ -14,7 +14,27 @@
   </sitemap>
   
   <sitemap>
+    <loc>http://localhost:1313/bn/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/ch/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
     <loc>http://localhost:1313/ja/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/kr/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/ur/sitemap.xml</loc>
     
   </sitemap>
   
