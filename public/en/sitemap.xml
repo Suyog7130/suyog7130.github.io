@@ -98,13 +98,28 @@
     <loc>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</loc>
     <lastmod>2025-04-11T15:01:20+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/</loc>
+    <loc>http://localhost:1313/multilingual/</loc>
+    <lastmod>2025-04-03T18:58:07+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/multilingual/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/multilingual/hindi/teaching/softtools/</loc>
     <lastmod>2025-04-03T18:58:07+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/teaching/softtools/</loc>
-    <lastmod>2025-04-03T18:58:07+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pages/teaching/ml4astro/notes@ml4astro/</loc>
+    <loc>http://localhost:1313/multilingual/hindi/teaching/ml4astro/notes@ml4astro/</loc>
     <lastmod>2025-04-03T18:55:47+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/latex/</loc>
@@ -115,6 +130,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/2025-04-03-texstudio/</loc>
     <lastmod>2025-04-03T18:25:31+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pages/</loc>
+    <lastmod>2025-04-03T17:44:26+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/personal/resceu-related/</loc>
     <lastmod>2025-04-03T17:44:26+09:00</lastmod>
@@ -157,9 +175,6 @@
   </url><url>
     <loc>http://localhost:1313/pages/personal/conferences/</loc>
     <lastmod>2025-03-03T21:10:16+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/multilingual/</loc>
-    <lastmod>2025-02-25T23:54:49+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/papermod-website/</loc>
     <lastmod>2025-01-17T00:00:00+00:00</lastmod>
@@ -232,11 +247,26 @@
   </url><url>
     <loc>http://localhost:1313/pages/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/archives-hi/</loc>
+    <loc>http://localhost:1313/multilingual/hindi/archives-hi/</loc>
   </url><url>
-    <loc>http://localhost:1313/archives-ja/</loc>
+    <loc>http://localhost:1313/multilingual/hindi/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>http://localhost:1313/multilingual/japanese/archives-ja/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/japanese/archives-ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/archives-ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/multilingual/japanese/archives-ja/"
+                />
   </url><url>
     <loc>http://localhost:1313/pages/personal/books/</loc>
   </url><url>
@@ -262,9 +292,34 @@
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/search-hi/</loc>
+    <loc>http://localhost:1313/multilingual/hindi/search-hi/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/hindi/search-hi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/multilingual/hindi/search-hi/"
+                />
   </url><url>
-    <loc>http://localhost:1313/search-ja/</loc>
+    <loc>http://localhost:1313/multilingual/japanese/search-ja/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/japanese/search-ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/search-ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/multilingual/japanese/search-ja/"
+                />
   </url><url>
     <loc>http://localhost:1313/series/</loc>
   </url><url>

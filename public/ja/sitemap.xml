@@ -2,11 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/cv/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/hindi/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/cv/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ja/jacategories/</loc>
   </url><url>
     <loc>http://localhost:1313/ja/jaseries/</loc>
   </url><url>
     <loc>http://localhost:1313/ja/jatags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/multilingual/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/"
+                />
   </url><url>
     <loc>http://localhost:1313/ja/</loc>
     <xhtml:link
@@ -23,6 +52,116 @@
                 rel="alternate"
                 hreflang="ja"
                 href="http://localhost:1313/ja/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/ideas/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/hindi/ideas/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/ideas/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/news/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/hindi/news/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/news/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/archives-ja/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/japanese/archives-ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/archives-ja/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/archives/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/tips/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/hindi/tips/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/tips/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/hindi/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/search/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/search-hi/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/hindi/search-hi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/search-hi/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/search-ja/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/japanese/search-ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/search-ja/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/personal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/hindi/personal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/personal/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ja/multilingual/japanese/writings/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/multilingual/hindi/writings/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/multilingual/japanese/writings/"
                 />
   </url>
 </urlset>
