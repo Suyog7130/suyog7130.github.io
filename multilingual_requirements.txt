@@ -1,0 +1,9 @@
+# Core
+pyyaml
+tomlkit
+# Providers (choose what you need)
+openai>=1.0.0
+google-cloud-translate==2.0.1
+deepl
+transformers
+sentencepiece
