@@ -16,18 +16,18 @@
     <atom:link href="http://localhost:1313/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making someone co-host on scheduled zoom meeting</title>
-      <link>http://localhost:1313/posts/2025-11-14-zoom-alternate-host/</link>
+      <link>http://localhost:1313/en/posts/2025-11-14-zoom-alternate-host/</link>
       <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025-11-14-zoom-alternate-host/</guid>
+      <guid>http://localhost:1313/en/posts/2025-11-14-zoom-alternate-host/</guid>
       <description>&lt;p&gt;When you can’t attend or might be late to a &lt;strong&gt;recurring Zoom meeting&lt;/strong&gt;, the safest way to ensure class or group can begin on time is to let a trusted colleague &lt;strong&gt;start the meeting for you&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Key point:&lt;/strong&gt; In Zoom, a &lt;strong&gt;co‑host&lt;/strong&gt; can help manage a running meeting &lt;strong&gt;but cannot start it&lt;/strong&gt;. For starting the meeting without you, use &lt;strong&gt;Alternative host&lt;/strong&gt; (recommended), or &lt;strong&gt;Host key + Join before host&lt;/strong&gt; (backup), or &lt;strong&gt;Scheduling privilege&lt;/strong&gt; (for ongoing delegation).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Issues with Zotero and working them out!</title>
-      <link>http://localhost:1313/posts/2025-03-18-zotero-issues/</link>
+      <link>http://localhost:1313/en/posts/2025-03-18-zotero-issues/</link>
       <pubDate>Tue, 18 Mar 2025 15:05:28 +1100</pubDate>
-      <guid>http://localhost:1313/posts/2025-03-18-zotero-issues/</guid>
+      <guid>http://localhost:1313/en/posts/2025-03-18-zotero-issues/</guid>
       <description>&lt;p&gt;A log of Zotero issues, I have encountered.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;The the Zotero chrome connector doesn&amp;rsquo;t always work. This issue arises sporadically every now and then. A workaround I devised for this is to use the webpage version of the zotero library via login to the website. The library is available at: &lt;a href=&#34;https://www.zotero.org/suyoggarg/collections/U8AAVCPJ/items/R6EYB749/item-list&#34;&gt;https://www.zotero.org/suyoggarg/mylibrary/&lt;/a&gt;&lt;/p&gt;

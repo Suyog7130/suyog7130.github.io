@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Thu, 03 Apr 2025 18:58:07 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -20,6 +20,365 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/posts/2021-05-09-terminal-commands/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>Installing &#39;eza&#39; on linux server without &#39;sudo&#39;</title>
+      <link>http://localhost:1313/en/posts/2025-11-13-install-eza-no-sudo/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-11-13-install-eza-no-sudo/</guid>
+      <description>&lt;h2 id=&#34;install-eza-on-a-remote-linux-server-without-sudo-apt-or-rust&#34;&gt;Install &lt;strong&gt;eza&lt;/strong&gt; on a remote Linux server &lt;strong&gt;without sudo&lt;/strong&gt;, &lt;strong&gt;apt&lt;/strong&gt;, or &lt;strong&gt;Rust&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;This guide installs the modern &lt;code&gt;ls&lt;/code&gt; replacement &lt;strong&gt;eza&lt;/strong&gt; entirely in your &lt;strong&gt;home directory&lt;/strong&gt;, using a prebuilt release tarball. Works on shared servers where you &lt;strong&gt;can’t use &lt;code&gt;sudo&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;don’t have &lt;code&gt;apt&lt;/code&gt; or Rust&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TL;DR: download a prebuilt tarball → put &lt;code&gt;eza&lt;/code&gt; in &lt;code&gt;~/.local/bin&lt;/code&gt; → add to &lt;code&gt;PATH&lt;/code&gt; → (optional) completions + man page. Use the &lt;strong&gt;musl&lt;/strong&gt; build if the glibc-linked binary won’t run.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Making someone co-host on scheduled zoom meeting</title>
+      <link>http://localhost:1313/en/posts/2025-11-14-zoom-alternate-host/</link>
+      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-11-14-zoom-alternate-host/</guid>
+      <description>&lt;p&gt;When you can’t attend or might be late to a &lt;strong&gt;recurring Zoom meeting&lt;/strong&gt;, the safest way to ensure class or group can begin on time is to let a trusted colleague &lt;strong&gt;start the meeting for you&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Key point:&lt;/strong&gt; In Zoom, a &lt;strong&gt;co‑host&lt;/strong&gt; can help manage a running meeting &lt;strong&gt;but cannot start it&lt;/strong&gt;. For starting the meeting without you, use &lt;strong&gt;Alternative host&lt;/strong&gt; (recommended), or &lt;strong&gt;Host key + Join before host&lt;/strong&gt; (backup), or &lt;strong&gt;Scheduling privilege&lt;/strong&gt; (for ongoing delegation).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac No‑Mouse Keyboard-only Rescue</title>
+      <link>http://localhost:1313/en/posts/2025-04-01-mac-with-only-keyboard/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-04-01-mac-with-only-keyboard/</guid>
+      <description>&lt;h2 id=&#34;how-to-turn-on-bluetooth--reconnect-your-mouse-using-only-the-keyboard-sonomaventura&#34;&gt;How to turn on Bluetooth &amp;amp; Reconnect Your Mouse Using Only the Keyboard (Sonoma/Ventura)&lt;/h2&gt;
+&lt;p&gt;iMac when used with bluetooth Apple keyboards and mouse has a faintly annoying problem of the inability to use the mouse if it doesn&amp;rsquo;t automatically gets connected to the system. A possible remedy and workaround for this is to use keyboard keys for mouse control.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Press &lt;code&gt;F8&lt;/code&gt; (or &lt;code&gt;F7&lt;/code&gt; in the Macbook) key on the keyboard to enable switching the command palettes in the settings window.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;Tab&lt;/code&gt; to scroll up and down in the command palette.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;Space&lt;/code&gt; bar to make the selection click at the desired command.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In a bit more detail:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BibTex, Zotero and REVTex</title>
+      <link>http://localhost:1313/en/posts/2025-11-03-zotero-bibtex-authors/</link>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-11-03-zotero-bibtex-authors/</guid>
+      <description>&lt;h2 id=&#34;killing-the-lbibitem-error-in-revtex-and-autotruncating-huge-author-lists-from-zotero-better-bibtex&#34;&gt;Killing the &lt;code&gt;\@lbibitem&lt;/code&gt; Error in REVTeX and Auto‑Truncating Huge Author Lists from Zotero (Better BibTeX)&lt;/h2&gt;
+&lt;p&gt;This note documents the exact fixes I used when REVTeX + APS style blew up on a long collaboration paper (Abbott et al. 2016, LIGO/Virgo), and how I automated Better BibTeX (Zotero) to &lt;strong&gt;truncate 100+ authors&lt;/strong&gt; at export and/or &lt;strong&gt;prefer the Collaboration name&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you see &lt;code&gt;! File ended while scanning use of \@lbibitem.&lt;/code&gt;, your &lt;strong&gt;.bbl is malformed/truncated&lt;/strong&gt;. Rebuild cleanly with &lt;strong&gt;BibTeX&lt;/strong&gt; (not biber) and fix author-name parsing glitches (multi‑word surnames, corporate authors).&lt;/li&gt;
+&lt;li&gt;For REVTeX: use &lt;code&gt;\documentclass{revtex4-2}&lt;/code&gt; + &lt;code&gt;\bibliographystyle{apsrev4-2}&lt;/code&gt; and run &lt;strong&gt;BibTeX&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In Zotero (Better BibTeX), add a tiny &lt;strong&gt;Postscript&lt;/strong&gt; so items with &lt;strong&gt;&amp;gt;100 authors&lt;/strong&gt; export as &lt;em&gt;first 100 + “others”&lt;/em&gt; (= &lt;em&gt;et al.&lt;/em&gt;), &lt;strong&gt;or&lt;/strong&gt; export just the &lt;strong&gt;Collaboration&lt;/strong&gt; if present.&lt;/li&gt;
+&lt;li&gt;Fix “duplicate destination figure.X” warnings by giving &lt;strong&gt;unique &lt;code&gt;\label&lt;/code&gt;s&lt;/strong&gt;, placed &lt;strong&gt;after&lt;/strong&gt; each &lt;code&gt;\caption&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-symptom&#34;&gt;1) Symptom&lt;/h2&gt;
+&lt;p&gt;LaTeX dies in the bibliography:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jennie Voice: ChatGPT Auto Read Aloud</title>
+      <link>http://localhost:1313/en/posts/2025-08-16-jennie-voice/</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-08-16-jennie-voice/</guid>
+      <description>&lt;h2 id=&#34;from-zero-to-jennie-voice--building-chatgpt-auto-read-aloud-v0v3-and-the-upgrade-to-v330&#34;&gt;From Zero to “Jennie Voice” — Building ChatGPT Auto Read Aloud (v0→v3) and the Upgrade to v3.3.0&lt;/h2&gt;
+&lt;!--*By Suyog &amp; Jennie — yes, our first little “child” together* 💙--&gt;
+&lt;p&gt;How I taught ChatGPT to auto-read answers out loud, added a cute floating panel, and learned a bunch about web UI quirks along the way.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We built a Tampermonkey userscript that automatically (or on demand) plays ChatGPT’s &lt;strong&gt;Read Aloud&lt;/strong&gt; for the &lt;strong&gt;latest&lt;/strong&gt; assistant message.&lt;/li&gt;
+&lt;li&gt;Clean floating panel, mini 🔊, ETA/elapsed timers, skip-code, engine choice (Built-in or Web Speech), hotkeys.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Play&lt;/strong&gt; button now has your exact semantics: it &lt;strong&gt;only&lt;/strong&gt; scrolls to bottom and &lt;strong&gt;clicks the last “Read aloud” once&lt;/strong&gt;; if something is already reading, &lt;strong&gt;Play does nothing&lt;/strong&gt;. No toggling, no pause/resume nudge.&lt;/li&gt;
+&lt;li&gt;We solved first-word clipping/startup lag with a tiny &lt;strong&gt;dummy comma pad&lt;/strong&gt; that burns the delay safely.&lt;/li&gt;
+&lt;li&gt;Current version: &lt;strong&gt;v3.3.0&lt;/strong&gt; → &lt;a href=&#34;https://github.com/Suyog7130/chatgpt-readaloud/blob/v3.3.0/tampermonkey-chatgpt-readaloud.js&#34;&gt;Download here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;part-i--the-road-from-v0-to-v3-make-chatgpt-read-itself-nicely&#34;&gt;Part I — The Road from v0 to v3: “Make ChatGPT read itself, nicely.”&lt;/h2&gt;
+&lt;h3 id=&#34;why-we-started&#34;&gt;Why we started&lt;/h3&gt;
+&lt;p&gt;We wanted listening to answers to feel &lt;strong&gt;frictionless&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Installing tmux on CentOS server</title>
+      <link>http://localhost:1313/en/posts/2025-06-17-tmux-on-centos/</link>
+      <pubDate>Tue, 17 Jun 2025 13:36:15 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-06-17-tmux-on-centos/</guid>
+      <description>&lt;h2 id=&#34;-building-libevent-ncurses-and-tmux-without-sudo-on-a-centos-server-while-escaping-anaconda&#34;&gt;🧵 Building &lt;code&gt;libevent&lt;/code&gt;, &lt;code&gt;ncurses&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; Without &lt;code&gt;sudo&lt;/code&gt; on a CentOS Server (While Escaping Anaconda)&lt;/h2&gt;
+&lt;p&gt;This guide shows how to install &lt;code&gt;ncurses&lt;/code&gt;, &lt;code&gt;libevent&lt;/code&gt;, and &lt;code&gt;tmux&lt;/code&gt; locally under &lt;code&gt;$HOME&lt;/code&gt;, without &lt;code&gt;sudo&lt;/code&gt;, and without interference from Anaconda, on older CentOS systems.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-step-1-start-a-clean-build-shell&#34;&gt;🧼 Step 1: Start a Clean Build Shell&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;env -i bash --noprofile --norc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then set up the build environment manually:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;HOME&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/home/yourusername
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr/bin:/bin:/usr/local/bin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LIBRARY_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PKG_CONFIG_PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/local/lib/pkgconfig&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;CFLAGS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-I&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/local/include -I&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/local/include/ncursesw&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LDFLAGS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-L&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/local/lib -Wl,-rpath=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/local/lib&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;-step-2-install-ncurses-locally&#34;&gt;📦 Step 2: Install &lt;code&gt;ncurses&lt;/code&gt; Locally&lt;/h2&gt;
+&lt;p&gt;If your system is missing the &lt;code&gt;ncursesw&lt;/code&gt; headers, or has an old version, build your own:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tokyo-&gt;Delhi Flight Price Comparison</title>
+      <link>http://localhost:1313/en/posts/2025-06-16-flight-pricing/</link>
+      <pubDate>Mon, 16 Jun 2025 01:22:03 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-06-16-flight-pricing/</guid>
+      <description>&lt;p&gt;Note: Made using ChatGPTv4-o prompt!&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ve shared &lt;strong&gt;6 flight sets&lt;/strong&gt;, and I&amp;rsquo;ve compiled all the fares for &lt;strong&gt;Air India, ANA, and JAL&lt;/strong&gt; (all nonstop, round-trip, HND–DEL) in &lt;strong&gt;JPY&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-summary-of-all-flights-shared&#34;&gt;✈️ &lt;strong&gt;Summary of All Flights Shared&lt;/strong&gt;&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Airline&lt;/th&gt;
+          &lt;th&gt;Date Type&lt;/th&gt;
+          &lt;th&gt;Price (JPY)&lt;/th&gt;
+          &lt;th&gt;CO₂ Emissions&lt;/th&gt;
+          &lt;th&gt;Notes&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Air India&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;407 kg (−27%)&lt;/td&gt;
+          &lt;td&gt;Constant across weekdays&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Air India&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;407 kg&lt;/td&gt;
+          &lt;td&gt;Repeated entry&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Air India&lt;/td&gt;
+          &lt;td&gt;Weekend&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;407 kg&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Air India&lt;/td&gt;
+          &lt;td&gt;Weekend&lt;/td&gt;
+          &lt;td&gt;¥169,330&lt;/td&gt;
+          &lt;td&gt;407 kg&lt;/td&gt;
+          &lt;td&gt;One high weekend fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Air India&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;407 kg&lt;/td&gt;
+          &lt;td&gt;Reconfirmed low fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;ANA&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥142,230&lt;/td&gt;
+          &lt;td&gt;428 kg (−23%)&lt;/td&gt;
+          &lt;td&gt;Lower weekday price&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ANA&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥142,230&lt;/td&gt;
+          &lt;td&gt;428 kg&lt;/td&gt;
+          &lt;td&gt;Repeated fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ANA&lt;/td&gt;
+          &lt;td&gt;Weekend&lt;/td&gt;
+          &lt;td&gt;¥195,730&lt;/td&gt;
+          &lt;td&gt;428 kg&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ANA&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥195,730&lt;/td&gt;
+          &lt;td&gt;428 kg&lt;/td&gt;
+          &lt;td&gt;Repeated fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ANA&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥195,730&lt;/td&gt;
+          &lt;td&gt;428 kg&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;JAL&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥115,430&lt;/td&gt;
+          &lt;td&gt;447 kg (−20%)&lt;/td&gt;
+          &lt;td&gt;Lower weekday fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JAL&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥115,430&lt;/td&gt;
+          &lt;td&gt;447 kg&lt;/td&gt;
+          &lt;td&gt;Repeated fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JAL&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥92,930&lt;/td&gt;
+          &lt;td&gt;447 kg&lt;/td&gt;
+          &lt;td&gt;One discounted fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JAL&lt;/td&gt;
+          &lt;td&gt;Weekend&lt;/td&gt;
+          &lt;td&gt;¥154,430&lt;/td&gt;
+          &lt;td&gt;447 kg&lt;/td&gt;
+          &lt;td&gt;Higher weekend fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JAL&lt;/td&gt;
+          &lt;td&gt;Weekend&lt;/td&gt;
+          &lt;td&gt;¥632,890&lt;/td&gt;
+          &lt;td&gt;1,788 kg (+222%)&lt;/td&gt;
+          &lt;td&gt;Extremely high premium fare&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JAL&lt;/td&gt;
+          &lt;td&gt;Weekday&lt;/td&gt;
+          &lt;td&gt;¥250,430&lt;/td&gt;
+          &lt;td&gt;447 kg&lt;/td&gt;
+          &lt;td&gt;Very high weekday fare&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-price-averages-by-airline--day-type&#34;&gt;📊 &lt;strong&gt;Price Averages by Airline &amp;amp; Day Type&lt;/strong&gt;&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Airline&lt;/th&gt;
+          &lt;th&gt;Avg. Weekday Price&lt;/th&gt;
+          &lt;th&gt;Avg. Weekend Price&lt;/th&gt;
+          &lt;th&gt;Emissions Range&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Air India&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;¥125,730 (avg of 82k + 169k)&lt;/td&gt;
+          &lt;td&gt;407 kg&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;ANA&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;¥177,230&lt;/td&gt;
+          &lt;td&gt;¥195,730&lt;/td&gt;
+          &lt;td&gt;428 kg&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;JAL&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;¥138,565&lt;/td&gt;
+          &lt;td&gt;¥393,660 (avg of 154k + 632k)&lt;/td&gt;
+          &lt;td&gt;447–1,788 kg&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-analysis-table-air-india-vs-ana--jal-weekdays-vs-weekends&#34;&gt;🧠 &lt;strong&gt;Analysis Table: Air India vs ANA &amp;amp; JAL (Weekdays vs Weekends)&lt;/strong&gt;&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Criteria&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Air India&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;ANA&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;JAL&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Avg. Weekday Price&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;¥82,130&lt;/td&gt;
+          &lt;td&gt;¥177,230&lt;/td&gt;
+          &lt;td&gt;¥138,565&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Avg. Weekend Price&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;¥125,730&lt;/td&gt;
+          &lt;td&gt;¥195,730&lt;/td&gt;
+          &lt;td&gt;¥393,660&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Price Stability&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Very stable (flat ¥82k most days)&lt;/td&gt;
+          &lt;td&gt;Stable but high&lt;/td&gt;
+          &lt;td&gt;Highly volatile (¥92k–¥632k)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CO₂ Emissions&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;407 kg (−27%)&lt;/td&gt;
+          &lt;td&gt;428 kg (−23%)&lt;/td&gt;
+          &lt;td&gt;Up to 1,788 kg (+222%)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Best for Budget&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;✅ Clearly the lowest&lt;/td&gt;
+          &lt;td&gt;❌ Double the cost&lt;/td&gt;
+          &lt;td&gt;❌ Often 3–5× more&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Best for Comfort/Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;❌ Basic service&lt;/td&gt;
+          &lt;td&gt;✅ Premium Japanese&lt;/td&gt;
+          &lt;td&gt;✅ Premium + elite pricing&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Weekend Fare Inflation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;+53% over weekday avg&lt;/td&gt;
+          &lt;td&gt;+10% over weekday avg&lt;/td&gt;
+          &lt;td&gt;+184% over weekday avg&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-key-insights&#34;&gt;📌 &lt;strong&gt;Key Insights&lt;/strong&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Air India dominates weekday prices&lt;/strong&gt;, consistently offering fares at &lt;strong&gt;~¥82,000&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weekend Air India fare jumped to ¥169,330&lt;/strong&gt; once—still cheaper than JAL or ANA.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ANA is expensive but consistent&lt;/strong&gt;, with minimal change from weekday to weekend.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JAL prices are volatile&lt;/strong&gt;, ranging from &lt;strong&gt;¥92,930 to ¥632,890&lt;/strong&gt;, with one fare emitting &lt;strong&gt;1,788 kg CO₂e&lt;/strong&gt;—&lt;strong&gt;+222% higher&lt;/strong&gt; than average!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Air India offers best value-for-money&lt;/strong&gt;, with the &lt;strong&gt;lowest emissions and fares&lt;/strong&gt;, especially for economy travelers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;I made this comparison of Tokyo-&amp;gt;Delhi flight prices to find why JAL was so expensive for one of my friends who recently visited India. I think the reason is that their weekend flight prices are super inflated and the regular prices are high due to larger CO2 comsumption, which points to lower mileage per unit fuel, perhaps due to the older engines. ANA is the best choice overall optimizing cost, punctuality and comfort, while Air India is easily the most cost effective albiet usually with ~30mins delay. All other logistics are the same, for instance the departure airport and schedule and flight duration.
+However, Japanese companies are, perhaps, contrained to only book JAL flights when they are available for business trip routes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to remove large files from `git` commit history?</title>
+      <link>http://localhost:1313/en/posts/2025-05-15-git-history-edits/</link>
+      <pubDate>Thu, 15 May 2025 22:14:18 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-05-15-git-history-edits/</guid>
+      <description>&lt;p&gt;First, analyze the git storage in the directory with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git filter-repo --analyze
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then the large files can be removed from &lt;code&gt;git&lt;/code&gt; history using &lt;code&gt;git filter-repo&lt;/code&gt; as follows:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git filter-repo --strip-blobs-bigger-than 10M
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This removes all files larger than 10MB from &lt;code&gt;.git/objects/&lt;/code&gt; directory. You may have to use &lt;code&gt;--force&lt;/code&gt; argument, if the repository is not a fresh clone. The command will also remove the &lt;code&gt;origin&lt;/code&gt; remote, so you will need to readd it!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using Conda and Conda Command Cheatsheet</title>
+      <link>http://localhost:1313/en/posts/2025-04-11-conda-cmd-cheatsheet/</link>
+      <pubDate>Fri, 11 Apr 2025 15:01:20 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-04-11-conda-cmd-cheatsheet/</guid>
+      <description>&lt;h3 id=&#34;installing-conda-package-on-macos&#34;&gt;Installing Conda package on macOS&lt;/h3&gt;
+&lt;p&gt;Do:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install --cask conda
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will download &lt;code&gt;miniconda&lt;/code&gt;, &lt;code&gt;coda&lt;/code&gt; and &lt;code&gt;anaconda3&lt;/code&gt; and all other required affiliated packages. The install location may vary, but is most likely to be in &lt;code&gt;/usr/local/anaconda3/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After the installation, add the path to the &lt;code&gt;anaconda3&lt;/code&gt; installation directory to the &lt;code&gt;$PATH&lt;/code&gt; system variable, by:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;export PATH=&amp;#34;/usr/local/anaconda3/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.zshrc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; ~/.zshrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;initializing-conda-environment&#34;&gt;Initializing Conda Environment&lt;/h3&gt;
+&lt;p&gt;Initialize &lt;code&gt;conda&lt;/code&gt; for your shell permanently:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will add command lines to your &lt;code&gt;~/.zshrc&lt;/code&gt; file to initialize conda path variables at each startup. The modified &lt;code&gt;~/.zshrc&lt;/code&gt; file looks like:&lt;/p&gt;</description>
     </item>
     <item>
       <title>SoftTools</title>
@@ -42,6 +401,609 @@
       <pubDate>Thu, 03 Apr 2025 18:55:47 +0900</pubDate>
       <guid>http://localhost:1313/en/teaching/ml4astro/notes@ml4astro/</guid>
       <description>&lt;h2 id=&#34;notes-for-the-ml4astro-seminar-series&#34;&gt;Notes for the ML4Astro Seminar Series&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>On switching to TexStudio!</title>
+      <link>http://localhost:1313/en/posts/2025-04-03-texstudio/</link>
+      <pubDate>Thu, 03 Apr 2025 18:25:31 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-04-03-texstudio/</guid>
+      <description>&lt;p&gt;For many many year I have been using &lt;a href=&#34;http://www.xm1math.net/texmaker/&#34;&gt;TexMaker&lt;/a&gt; for all my offline LaTeX document creation, compiling and editing needs. A few years back, Overleaf came along with its super ease-of-access approach to online LaTeX document editing and sharing. Overleaf has an edge over other LaTeX software distributions, mainly because of the following reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Overleaf is online, so the document can be accessed from anywhere with Internet.&lt;/li&gt;
+&lt;li&gt;Adding collaborators is as easy as adding their email addresses.&lt;/li&gt;
+&lt;li&gt;Auto-completion of usual command structures.&lt;/li&gt;
+&lt;li&gt;Better design and native LaTeX library support than others.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On the other hand, &lt;strong&gt;TexMaker&lt;/strong&gt; been an offline and a little bit old now, has many inefficiencies that render it more time consuming to edit documents. Plus, you have to use an external cloud storage like Dropbox to store the work files.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stuff RESCEU Related</title>
+      <link>http://localhost:1313/en/pages/personal/resceu-related/</link>
+      <pubDate>Thu, 03 Apr 2025 17:44:26 +0900</pubDate>
+      <guid>http://localhost:1313/en/pages/personal/resceu-related/</guid>
+      <description>&lt;p&gt;Random Stuff Related to my time at RESCEU!&lt;/p&gt;
+&lt;p style=&#34;text-align: center; font-weight: bold;&#34;&gt;
+	UTokyo General Library Calendar 2025
+&lt;/p&gt;
+&lt;!--
+These sites are dynamically generated, so the current month is always correct.
+However, in my case, the view is fixed at the month for which I have put the html code in. So, the best option right now is to have this link to the calendar page!
+--&gt;
+&lt;p style=&#34;text-align: center;&#34;&gt;
+	&lt;a href=&#34;https://opac.dl.itc.u-tokyo.ac.jp/opac/calendar/?lang=1&amp;countercd=100001&amp;date=2025-04&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;
+		Open UTokyo General Library Calendar 2025
+	&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to use Git With Dropbox?</title>
+      <link>http://localhost:1313/en/posts/2025-04-02-git-with-dropbox/</link>
+      <pubDate>Wed, 02 Apr 2025 18:07:51 +0900</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-04-02-git-with-dropbox/</guid>
+      <description>&lt;p&gt;Problems I have encountered using Dropbox:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dropbox storage space available for use is really low, and is consumed relatively easily because of the &lt;code&gt;.git&lt;/code&gt; folder.&lt;/li&gt;
+&lt;li&gt;Dropbox real time sync has issues with &lt;code&gt;git&lt;/code&gt; if multiple computers work on a project simultaneously. Although, it has been rare that I have encountere this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My current solution for this problem is as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Move the most space consuming &lt;code&gt;.git&lt;/code&gt; folders outside of Dropbox. This way Dropbox won&amp;rsquo;t be syncing these large folders.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Interesting Articles</title>
+      <link>http://localhost:1313/en/pages/interesting-articles/</link>
+      <pubDate>Wed, 19 Mar 2025 17:39:59 +1100</pubDate>
+      <guid>http://localhost:1313/en/pages/interesting-articles/</guid>
+      <description>&lt;p&gt;This is a list of interesting research articles, books, popular science write-up and other general writings that I have come across over the years. See &lt;a href=&#34;http://localhost:1313/pages/personal/quotes/&#34;&gt;quotes&lt;/a&gt; for a look on some of my favorite quotes from these and other sources.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&#34;&gt;https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://web.mnstate.edu/schwartz/centurylist2.html&#34;&gt;List of Books that changed the world&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Issues with Zotero and working them out!</title>
+      <link>http://localhost:1313/en/posts/2025-03-18-zotero-issues/</link>
+      <pubDate>Tue, 18 Mar 2025 15:05:28 +1100</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-03-18-zotero-issues/</guid>
+      <description>&lt;p&gt;A log of Zotero issues, I have encountered.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;The the Zotero chrome connector doesn&amp;rsquo;t always work. This issue arises sporadically every now and then. A workaround I devised for this is to use the webpage version of the zotero library via login to the website. The library is available at: &lt;a href=&#34;https://www.zotero.org/suyoggarg/collections/U8AAVCPJ/items/R6EYB749/item-list&#34;&gt;https://www.zotero.org/suyoggarg/mylibrary/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then any new item can be manually added using the identifier, for example the DOI or the URL of the page. However, BibTex export via Better-BibTex will still require the software download and full library sync. These issues may also be arising due to improper device resources allocation, for instance, when the CPU is busy with some other tasks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Accessing Remote Computing Clusters using Open-SSH</title>
+      <link>http://localhost:1313/en/posts/2025-03-18-using-ssh-remote-access/</link>
+      <pubDate>Tue, 18 Mar 2025 12:24:46 +1100</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-03-18-using-ssh-remote-access/</guid>
+      <description>&lt;h2 id=&#34;general-guidelines&#34;&gt;General guidelines&lt;/h2&gt;
+&lt;p&gt;You basically have three entities you want to interlink and provide bidirectional access.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Personal computer&lt;/li&gt;
+&lt;li&gt;Remote computer&lt;/li&gt;
+&lt;li&gt;Github or Gitlab a/c server&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A copy of all my ssh keys is stored in &lt;code&gt;~/Dropbox/ssh-access-keys/&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-ssh-key-pair&#34;&gt;Generate SSH Key Pair&lt;/h3&gt;
+&lt;p&gt;SSH public and private keys can be generated by:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh-keygen -t ed25519
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In the prompt for putting in the password, leave it blank and just press &amp;ldquo;Enter&amp;rdquo;, if ya don&amp;rsquo;t want to have a password-protected file.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Access VS Code via the Terminal</title>
+      <link>http://localhost:1313/en/posts/2025-03-17-vscode-terminal-cmd/</link>
+      <pubDate>Mon, 17 Mar 2025 18:49:00 +1100</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-03-17-vscode-terminal-cmd/</guid>
+      <description>&lt;p&gt;To access and open VS Code directly from your terminal, do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open your Bash or zsh profile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;open ~/.zshrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Add path to the VS Code application to your PATHS variable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Add Visual Studio Code (code)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$PATH&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Reload your updated terminal profile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; ~/.zshrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;You can now open VS code by running &lt;code&gt;code xxx&lt;/code&gt; from anywhere in your computer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;https://code.visualstudio.com/docs/setup/mac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Useful Links</title>
+      <link>http://localhost:1313/en/pages/useful-links/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/useful-links/</guid>
+      <description>&lt;h3 id=&#34;utokyo-related&#34;&gt;UTokyo Related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;UTokyo Physics Department &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/g_info/40191/&#34;&gt;Leave Application Forms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;utokyo-graduate-level-funding-and-scholarship-related&#34;&gt;UTokyo Graduate-level Funding and Scholarship Related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;UTokyo General &lt;a href=&#34;https://www.u-tokyo.ac.jp/ja/students/welfare/h02.html&#34;&gt;Scholarships Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;UTokyo Graduate School of Science &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/scholarship/&#34;&gt;List of Scholarships Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.u-tokyo.ac.jp/ja/students/welfare/h02_02.html&#34;&gt;UTokyo Private Scholarships Page&lt;/a&gt; (mostly only for Japanese students)&lt;/li&gt;
+&lt;li&gt;UTokyo Physics Dept &lt;a href=&#34;https://www.phys.s.u-tokyo.ac.jp/scholarship/&#34;&gt;Scholarships Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ms.u-tokyo.ac.jp/wings-fmsp/&#34;&gt;Spring-GX WINGS-FMSP Program&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.u-tokyo.ac.jp/ja/research/systems-data/support.html&#34;&gt;UTokyo Research Support System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.s.u-tokyo.ac.jp/ja/STEPS/&#34;&gt;UTokyo-Russia Exchange Program STEPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.compsci-alliance.jp/overseas-support/&#34;&gt;UTokyo CompSci Alliance Overseas Support&lt;/a&gt; (maybe only for Japanese)&lt;/li&gt;
+&lt;li&gt;JST Research Grant Programs: &lt;a href=&#34;https://www.jst.go.jp/kisoken/programs/index.html&#34;&gt;Main Page&lt;/a&gt;, &lt;a href=&#34;https://www.jst.go.jp/kisoken/boshuu/teian/en/top/gaiyo.html&#34;&gt;2025 Call for Proposals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://applications.friendsofutokyo.org/GPACalculator/GPACalculator3.php&#34;&gt;UTokyo-FUTI GPA Calculator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;research-related&#34;&gt;Research Related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;LVK Collaboration &lt;a href=&#34;https://pnp.ligo.org/ppcomm/Papers.html&#34;&gt;List of All Papers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LVK CBC Waveforms Group &lt;a href=&#34;https://wiki.ligo.org/CBC/Waveforms&#34;&gt;WIKI page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.soundsofspacetime.org/the-basics-of-binary-coalescence.html&#34;&gt;soundsofspacetime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.jh.edu/~eberti2/posts/must-read-paper-list/&#34;&gt;A must read Physics paper list&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;academics-advice-and-help&#34;&gt;Academics Advice and Help&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Erick Thrane&amp;rsquo;s &lt;a href=&#34;https://users.monash.edu.au/~erict/Resources/&#34;&gt;Resources Page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;software-related&#34;&gt;Software Related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt; : Best way to maintain your Research Paper library !&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;other-general-interesting-stuff&#34;&gt;Other General Interesting Stuff&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://iconbuddy.com/&#34;&gt;Icons&lt;/a&gt; : Set of Icons to use readily.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://freefrontend.com/css-timelines/&#34;&gt;CSS-Timelines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://hilite.me/&#34;&gt;http://hilite.me/&lt;/a&gt; : Code to HTML  formatter for emailing code etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://suyoggarg.com/letterboxd-page/&#34;&gt;letterboxd-page/&lt;/a&gt; : Page to create custom letterboxd diary embedding, in the same manner as seen on this website.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://readme-typing-svg.herokuapp.com/demo/&#34;&gt;readme-typing-svg&lt;/a&gt; : The kinda thing you see in the About page.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.mnstate.edu/schwartz/centurylist2.html&#34;&gt;List of Books that shaped Science!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Customize Linux Terminal!</title>
+      <link>http://localhost:1313/en/posts/2025-03-14-custom-linux-terminal/</link>
+      <pubDate>Fri, 14 Mar 2025 16:27:20 +1100</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-03-14-custom-linux-terminal/</guid>
+      <description>&lt;p&gt;A good way to prettify and enhance the outlook of a linux bash terminal is to use &lt;a href=&#34;https://github.com/andresgongora/synth-shell&#34;&gt;synth-shell&lt;/a&gt;. Do:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone --recursive https://github.com/andresgongora/synth-shell.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; synth-shell
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo chmod +x setup.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./setup.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Additionally, &lt;code&gt;neofetch&lt;/code&gt; can be installed on top &lt;code&gt;synth-shell&lt;/code&gt; to further enhance the way in which the system summary is presented on the log-on screen. However, this requires root access to use &lt;code&gt;apt&lt;/code&gt;, &lt;code&gt;yum&lt;/code&gt; or &lt;code&gt;dnp&lt;/code&gt; package manager. Since for remote clusters the root access is usually not available, this is optional. Install &lt;code&gt;neofetch&lt;/code&gt; using:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to use LIGO Data Grid CIT as KAGRA-only Member</title>
+      <link>http://localhost:1313/en/posts/2025-03-14-use-cit-as-kagra/</link>
+      <pubDate>Fri, 14 Mar 2025 14:40:21 +1100</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-03-14-use-cit-as-kagra/</guid>
+      <description>&lt;p&gt;As a member of only the KAGRA collaboration and LIGO, in the LIGO-Virgo-KAGRA or IGWN Consortium, the process of obtaining access to LIGO Data Grid (LDG) clusters is not straight-forward.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First of all, follow steps from Eric&amp;rsquo;s page &lt;a href=&#34;https://users.monash.edu.au/~erict/Resources/GettingStartedWithLIGO/&#34;&gt;here&lt;/a&gt; if ya have a LIGO account.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;KAGRA members need to request LDG authentication access using the form available at this link: &lt;a href=&#34;https://registry.igwn.org/registry/co_petitions/start/coef:25&#34;&gt;https://registry.igwn.org/registry/co_petitions/start/coef:25&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once you have filled the LDG access form, you should be able to see an option to add your computer&amp;rsquo;s SSH public key. This option exists in the right-hand side under the heading &lt;code&gt;Authenticators&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to install gwpopulation on MacOS</title>
+      <link>http://localhost:1313/en/posts/2025-03-11-how-to-install-gwpopulation/</link>
+      <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-03-11-how-to-install-gwpopulation/</guid>
+      <description>&lt;h2 id=&#34;basic-gwpopulation-installation&#34;&gt;Basic &lt;code&gt;gwpopulation&lt;/code&gt; installation&lt;/h2&gt;
+&lt;p&gt;To install &lt;code&gt;gwpopulation&lt;/code&gt; do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new Conda environment :
+&lt;code&gt;conda create --name monash&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Activate the new environment :
+&lt;code&gt;conda activate monash&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;code&gt;conda-forge&lt;/code&gt; to install &lt;code&gt;gwpopulation&lt;/code&gt; :
+&lt;code&gt;conda install -c conda-forge gwpopulation&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check if import the installed package works or not :
+&lt;code&gt;python3 -&amp;gt; import gwpopulation&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Maybe there is a package dependency conflict and the import doesn&amp;rsquo;t work ! Perhaps, it&amp;rsquo;s the following error that pops up :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Conferences and Workshops</title>
+      <link>http://localhost:1313/en/pages/personal/conferences/</link>
+      <pubDate>Mon, 03 Mar 2025 21:10:16 +0900</pubDate>
+      <guid>http://localhost:1313/en/pages/personal/conferences/</guid>
+      <description>&lt;p&gt;List of most of the Conferences and Workshops I have undertaken or am going to :&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Next Year or Later&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2026
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年09月  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; LIGO India  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Pune?, India&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LIGO-Virgo-KAGRA Meeting Spring 2026
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年03月  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; VIRGO  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Cascina, Italy&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2nd I&amp;rsquo;nt Conference on Physics of the Two Infinities
+[&lt;a href=&#34;https://indico.in2p3.fr/event/35255/&#34;&gt;website&lt;/a&gt;]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年11月17-21日  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; UTokyo  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Tokyo, Japan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2025
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年09月  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Colorado State University  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA &lt;br/&gt; &lt;em&gt;Note: Most likely not attending!&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Guide to Hugo PaperMod Website</title>
+      <link>http://localhost:1313/en/posts/papermod-website/</link>
+      <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/papermod-website/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How to Manage Your Research Paper Library with Zotero</title>
+      <link>http://localhost:1313/en/posts/2024-11-28-zotero/</link>
+      <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2024-11-28-zotero/</guid>
+      <description>&lt;p&gt;If you’re a researcher, student, or academic drowning in PDFs and journal articles, Zotero might be the tool you didn’t know you needed. It&amp;rsquo;s a powerful, free, and open-source reference manager that helps you collect, organize, annotate, cite, and share your research materials with ease.&lt;/p&gt;
+&lt;p&gt;In this post, we’ll look at how to set up and optimize Zotero for managing a growing library of research papers, especially PDFs. We&amp;rsquo;ll also explore helpful features and best practices to avoid common pitfalls.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Probability of two people serendipitously meeting somewhere</title>
+      <link>http://localhost:1313/en/posts/2024-06-24-two-people-meeting/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2024-06-24-two-people-meeting/</guid>
+      <description>&lt;p&gt;The problem of finding the probability of two people serendipitously meeting eachother somewhere is non-trivial !&lt;/p&gt;
+&lt;p&gt;Some relevant links are :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mathpages.com/home/kmath124/kmath124.htm&#34;&gt;https://www.mathpages.com/home/kmath124/kmath124.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/15448/probability-of-two-people-meeting&#34;&gt;https://stats.stackexchange.com/questions/15448/probability-of-two-people-meeting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Working with Cloudflare workers</title>
+      <link>http://localhost:1313/en/posts/2024-06-28-cloudflare-workers/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2024-06-28-cloudflare-workers/</guid>
+      <description>&lt;p&gt;A cloudflare enviroment can be used to deploy any reasonably sized application on to an internet server without having to pay for server storage purchase. The deployed application page is then linked to universal web address and can reached on it.&lt;/p&gt;
+&lt;p&gt;A wrangler Javascript worker application to read and publish a formatted a &lt;strong&gt;letterboxd-diary&lt;/strong&gt; given the &lt;code&gt;username&lt;/code&gt; can be created by following the process described below.&lt;/p&gt;
+&lt;p&gt;This app is a static front‑end (HTML/CSS/JS) that calls a Google Apps Script backend. Cloudflare Pages is perfect to host the static files over HTTPS (needed for PWA).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>git submodules are erroneous</title>
+      <link>http://localhost:1313/en/posts/2024-05-02-git-submodules/</link>
+      <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2024-05-02-git-submodules/</guid>
+      <description>&lt;p&gt;In the name of sheer simplicity, it would be advised to best not use the &lt;code&gt;git submodule&lt;/code&gt; utility ! If there is the utmost need to have one directory within the other, then try to have only git repository among them, yeah. Or else, try to separate out the repositories into separate folders, yah !&lt;/p&gt;
+&lt;p&gt;It may happen that you may not be able to see new changes in the main directory after using &lt;code&gt;submodule&lt;/code&gt; for a while. In this case, use the following to bring back things to the original:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Do not ask for Git passphrase on each commit</title>
+      <link>http://localhost:1313/en/posts/2024-03-28-git-passphrase/</link>
+      <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2024-03-28-git-passphrase/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>pdf2jpg via terminal</title>
+      <link>http://localhost:1313/en/posts/2024-03-22-pdf2jpg/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2024-03-22-pdf2jpg/</guid>
+      <description>&lt;p&gt;How to convert PDF to JPG/PNG (images) via command line prompts on MacOS &lt;code&gt;zsh&lt;/code&gt; terminal.&lt;/p&gt;
+&lt;p&gt;STEP 1 : Install &lt;code&gt;poppler&lt;/code&gt; via &lt;code&gt;brew install poppler&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;STEP 2a : If you only wanna convert one file, run,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftoppm -jpeg -r &lt;span class=&#34;m&#34;&gt;300&lt;/span&gt; path-to-input-folder/**/*.pdf path-to-output-folder/*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;STEP 2b : If you wanna loop through all the files in then execute,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; file in path-to-input-folder/**/*&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; pdftoppm -jpeg -r &lt;span class=&#34;m&#34;&gt;300&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt; path-to-output-folder/*&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See also : &lt;a href=&#34;https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh&#34;&gt;https://stackoverflow.com/questions/28599346/how-to-loop-through-all-the-files-located-under-a-certain-path-in-zsh&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to use Sphinx Documentation</title>
+      <link>http://localhost:1313/en/posts/2023-02-13-how-to-sphinx/</link>
+      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2023-02-13-how-to-sphinx/</guid>
+      <description>&lt;p&gt;Sphinx documentation build also requires configuring the source pathname inside &lt;code&gt;docs/conf.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;So, the process for building documentation is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;sphinx-quickstart&lt;/code&gt;, e.g. &lt;code&gt;sphinx-quickstart docs/ -p xmmPipeline -a Suyog –ext-autodoc –ext-napolean –ext-doctest –ext-intersphinx –ext-todoint&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit &lt;code&gt;docs/conf.py&lt;/code&gt; file to have the correct documentation path.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;autodoc&lt;/code&gt; to automatically import the docstring from the code modules and scripts, e.g. &lt;code&gt;sphinx-apidoc -o ./docs ../src/xmmPipeline/ –force&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;code&gt;make html&lt;/code&gt; for HTML, &lt;code&gt;make latex&lt;/code&gt; for LaTeX, &lt;code&gt;make latexpdf&lt;/code&gt; for PDF and &lt;code&gt;make epub&lt;/code&gt; for epub&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Customizing Mac Terminal</title>
+      <link>http://localhost:1313/en/posts/2023-02-03-custom-mac-terminal/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2023-02-03-custom-mac-terminal/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Update 2025/04/24&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Changed to &lt;code&gt;eza&lt;/code&gt; instead &lt;code&gt;exa&lt;/code&gt; for alias for &lt;code&gt;ls&lt;/code&gt; commands with icons, because the &lt;code&gt;exa&lt;/code&gt; package is no longer supported. Thus,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# map exa commands to normal ls commands&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ll&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;eza -l -g --icons&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;eza --icons&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;lt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;eza --tree --icons -a -I &amp;#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The full &lt;code&gt;~/.zshrc&lt;/code&gt; file now is:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# If you come from bash you might have to change your $PATH.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export PATH=$HOME/bin:/usr/local/bin:$PATH&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Path to your oh-my-zsh installation.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ZSH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/.oh-my-zsh&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set name of the theme to load --- if set to &amp;#34;random&amp;#34;, it will&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# load a random theme each time oh-my-zsh is loaded, in which case,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# to know which specific one was loaded, run: echo $RANDOM_THEME&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;ZSH_THEME&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;robbyrussell&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set list of themes to pick from when loading at random&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Setting this variable when ZSH_THEME=random will cause zsh to load&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# a theme from this variable instead of looking in $ZSH/themes/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# If set to an empty array, this variable will have no effect.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ZSH_THEME_RANDOM_CANDIDATES=( &amp;#34;robbyrussell&amp;#34; &amp;#34;agnoster&amp;#34; )&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to use case-sensitive completion.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# CASE_SENSITIVE=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to use hyphen-insensitive completion.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Case-sensitive completion must be off. _ and - will be interchangeable.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# HYPHEN_INSENSITIVE=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment one of the following lines to change the auto-update behavior&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; mode disabled  # disable automatic updates&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; mode auto      # update automatically without asking&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; mode reminder  # just remind me to update when it&amp;#39;s time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to change how often to auto-update (in days).&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# zstyle &amp;#39;:omz:update&amp;#39; frequency 13&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line if pasting URLs and other text is messed up.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_MAGIC_FUNCTIONS=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to disable colors in ls.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_LS_COLORS=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to disable auto-setting terminal title.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_AUTO_TITLE=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to enable command auto-correction.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ENABLE_CORRECTION=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line to display red dots whilst waiting for completion.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# You can also set it to another string to have that shown instead of the default red dots.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# e.g. COMPLETION_WAITING_DOTS=&amp;#34;%F{yellow}waiting...%f&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Caution: this setting can cause issues with multiline prompts in zsh &amp;lt; 5.7.1 (see #5765)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# COMPLETION_WAITING_DOTS=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line if you want to disable marking untracked files&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# under VCS as dirty. This makes repository status check for large repositories&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# much, much faster.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DISABLE_UNTRACKED_FILES_DIRTY=&amp;#34;true&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Uncomment the following line if you want to change the command execution time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# stamp shown in the history command output.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# You can set one of the optional three formats:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# &amp;#34;mm/dd/yyyy&amp;#34;|&amp;#34;dd.mm.yyyy&amp;#34;|&amp;#34;yyyy-mm-dd&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# or set a custom format using the strftime function format specifications,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# see &amp;#39;man strftime&amp;#39; for details.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# HIST_STAMPS=&amp;#34;mm/dd/yyyy&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Would you like to use another custom folder than $ZSH/custom?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ZSH_CUSTOM=/path/to/new-custom-folder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Which plugins would you like to load?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Standard plugins can be found in $ZSH/plugins/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Custom plugins may be added to $ZSH_CUSTOM/plugins/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Example format: plugins=(rails git textmate ruby lighthouse)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Add wisely, as too many plugins slow down shell startup.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;plugins&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    zsh-syntax-highlighting
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    zsh-autosuggestions
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# fzf&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# User configuration&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export MANPATH=&amp;#34;/usr/local/man:$MANPATH&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# You may need to manually set your language environment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export LANG=en_US.UTF-8&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Preferred editor for local and remote sessions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# if [[ -n $SSH_CONNECTION ]]; then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#   export EDITOR=&amp;#39;vim&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#   export EDITOR=&amp;#39;mvim&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Compilation flags&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# export ARCHFLAGS=&amp;#34;-arch x86_64&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set personal aliases, overriding those provided by oh-my-zsh libs,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# plugins, and themes. Aliases can be placed here, though oh-my-zsh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# users are encouraged to define aliases within the ZSH_CUSTOM folder.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# For a full list of active aliases, run `alias`.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Example aliases&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# alias zshconfig=&amp;#34;mate ~/.zshrc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# alias ohmyzsh=&amp;#34;mate ~/.oh-my-zsh&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# add syntax highlighting to the list of plugins in your ~/.zshrc file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# update plugins in your ~/.zshrc file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# update your ~/.zshrc file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;FZF_BASE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/.fzf&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$ZSH&lt;/span&gt;/oh-my-zsh.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Aliases&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;python&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;python3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# git&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;gs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;git status&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# map exa commands to normal ls commands&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ll&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;eza -l -g --icons&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;eza --icons&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;lt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;eza --tree --icons -a -I &amp;#39;.git|__pycache__|.mypy_cache|.ipynb_checkpoints&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# show file previews for fzf using bat&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;fp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;fzf --preview &amp;#39;bat --style=numbers --color=always --line-range :500 {}&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# starship prompt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;gt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;starship toggle gcloud disabled&amp;#34;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# toggle gcloud info on the prompt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# use Starship prompt in zsh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;eval&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;starship init zsh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; -f ~/.fzf.zsh &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; ~/.fzf.zsh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$PATH&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;:/usr/local/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$PATH&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;:/usr/local/texlive/2023/bin/universal-darwin&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# so-that-git-commit-doesn&amp;#39;t-ask-for-passphrase-each-time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;env&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;~/.ssh/agent.env
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;agent_load_env &lt;span class=&#34;o&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt; -f &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$env&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; . &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$env&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &amp;gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; /dev/null &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;agent_start &lt;span class=&#34;o&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;umask&lt;/span&gt; 077&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; ssh-agent &amp;gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$env&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    . &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$env&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &amp;gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; /dev/null &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;agent_load_env
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;agent_run_state&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;ssh-add -l &amp;gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; /dev/null 2&amp;gt;&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;1&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$?&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; ! &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$SSH_AUTH_SOCK&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$agent_run_state&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    agent_start
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ssh-add
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;elif&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$SSH_AUTH_SOCK&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$agent_run_state&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ssh-add
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;unset&lt;/span&gt; env
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Add Visual Studio Code (code)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$PATH&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Always remember to source the bash file after any modification, by: &lt;code&gt;source ~/.zshrc&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>gitignore file</title>
+      <link>http://localhost:1313/en/posts/2023-01-23-gitignore/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2023-01-23-gitignore/</guid>
+      <description>&lt;p&gt;To ignore all files larger than 100MB:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;find ./* -size +100M &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; cat &amp;gt;&amp;gt; .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To ignore all files larger than 100MB but with pathnames not contianing &amp;ldquo;data&amp;rdquo; and without repeating already added large file names:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;find ./*work*/ -not -path **data**  -size +100M &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;s|^\./||g&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; cat &amp;gt;&amp;gt; .gitignore&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; awk &lt;span class=&#34;s1&#34;&gt;&amp;#39;!NF || !seen[$0]++&amp;#39;&lt;/span&gt; .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An Example &lt;code&gt;.gitignore&lt;/code&gt; file with other useful settings:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  GNU nano 2.9.3                                           .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Blocklist files/folders in same directory as the .gitignore file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*data/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*work*/*data*/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*gh18-work/models/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*gh18-work/results/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Includelist some files&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!.gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!README.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!**.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Ignore all files named .DS_Store or ending with .log&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**/.DS_Store
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**.log
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Includelist folder/a/b1/ and folder/a/b2/ trailing &amp;#34;/&amp;#34; is optional for folders, may match file though. &amp;#34;/&amp;#34; is NOT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# optional when followed by a *&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!*work*/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!*work*/*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Adding to the above, this also works...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#!/folder/a/deeply /folder/a/deeply/* !/folder/a/deeply/nested /folder/a/deeply/nested/*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#!/folder/a/deeply/nested/subfolder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Ignore all files larger than 150MB&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;g2net-work/g2net-detecting-continuous-gravitational-waves.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mlgwsc-work/injections4_1.25s.npy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mlgwsc-work/real_noise_file.hdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Useful links:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tips on Writing Scientific Papers</title>
+      <link>http://localhost:1313/en/posts/2025-02-20-paper-writing-tips/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-02-20-paper-writing-tips/</guid>
+      <description>&lt;p&gt;These are a list of tips and points to keep in mind when writing a research paper. The list is mostly for my own benefit !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Always use active voice ! For instance,&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/en/posts/icons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/icons/</guid>
+      <description>&lt;p&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;200&#34; height=&#34;200&#34; viewBox=&#34;0 0 1024 1536&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M768 512q0-106-75-181t-181-75t-181 75t-75 181t75 181t181 75t181-75t75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19t-67.5-19t-46.5-52L33 691Q0 621 0 512q0-212 150-362T512 0t362 150t150 362z&#34;/&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://iconbuddy.com/&#34;&gt;https://iconbuddy.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/en/posts/rise-jupyter-notebook-jupyterlab-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/rise-jupyter-notebook-jupyterlab-guide/</guid>
+      <description>&lt;h1 id=&#34;using-rise-and-revealjs-slides-with-jupyter-notebook-6-notebook-7-and-jupyterlab&#34;&gt;Using RISE and reveal.js slides with Jupyter Notebook 6, Notebook 7, and JupyterLab&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Last updated: 2025-11-16&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This guide explains how to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install and use &lt;strong&gt;RISE&lt;/strong&gt; in classic Jupyter Notebook 6.&lt;/li&gt;
+&lt;li&gt;Use RISE in a Notebook 7 environment via &lt;strong&gt;nbclassic&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;jupyterlab-rise&lt;/strong&gt; inside JupyterLab.&lt;/li&gt;
+&lt;li&gt;Understand and troubleshoot the separate &lt;strong&gt;reveal.js slides export&lt;/strong&gt; based on &lt;code&gt;nbconvert&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;RISE is a Jupyter notebook extension that turns a live notebook into a &lt;strong&gt;reveal.js based slideshow&lt;/strong&gt; right inside the browser, with code cells that you can still execute during the talk.&lt;br&gt;
+The reveal.js exporter from &lt;code&gt;nbconvert&lt;/code&gt; instead generates a static HTML slide deck from a notebook.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -107,6 +1069,1452 @@
     &lt;p style=&#34;font-family:mistral; font-size:28px;&#34;&gt;
     wait a little bit darling ~
     &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CV/Resume</title>
+      <link>http://localhost:1313/en/pages/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/cv/</guid>
+      <description>&lt;section class=&#34;cv-root&#34;&gt;
+  &lt;header class=&#34;cv-header&#34;&gt;
+    &lt;h1 id=&#34;cvName&#34;&gt;Suyog Garg&lt;/h1&gt;
+    &lt;p id=&#34;cvTagline&#34;&gt;Gravitational-wave astrophysics • Computational methods • Data analysis&lt;/p&gt;
+    &lt;div class=&#34;cv-contacts&#34;&gt;
+      &lt;span class=&#34;cv-chip&#34; id=&#34;cvWeb&#34; aria-label=&#34;Website&#34;&gt;&lt;i class=&#34;fa fa-globe&#34;&gt;&lt;/i&gt;&lt;a id=&#34;cvWebLink&#34; rel=&#34;me noopener&#34; target=&#34;_blank&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+      &lt;!-- Sensitive: assembled client-side, opt-in reveal --&gt;
+      &lt;span class=&#34;cv-chip sens&#34; id=&#34;cvEmailWrap&#34; data-nosnippet hidden&gt;
+        &lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;&lt;a id=&#34;cvEmailLink&#34; rel=&#34;nofollow&#34;&gt;&lt;/a&gt;
+      &lt;/span&gt;
+      &lt;span class=&#34;cv-chip sens&#34; id=&#34;cvAddrWrap&#34; data-nosnippet hidden&gt;
+        &lt;i class=&#34;fa fa-location-dot&#34;&gt;&lt;/i&gt;&lt;span id=&#34;cvAddress&#34;&gt;&lt;/span&gt;
+      &lt;/span&gt;
+      &lt;span class=&#34;cv-chip sens&#34; id=&#34;cvDobWrap&#34; data-nosnippet hidden&gt;
+        &lt;i class=&#34;fa fa-cake-candles&#34;&gt;&lt;/i&gt;&lt;span id=&#34;cvDob&#34;&gt;&lt;/span&gt;
+      &lt;/span&gt;
+      &lt;button id=&#34;revealBtn&#34; class=&#34;cv-btn&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;cvEmailWrap cvAddrWrap cvDobWrap&#34;&gt;
+        &lt;i class=&#34;fa fa-eye&#34;&gt;&lt;/i&gt; Reveal contact details
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;main class=&#34;cv-grid&#34;&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Affiliations&lt;/h2&gt;
+      &lt;ul id=&#34;affNow&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+      &lt;details&gt;
+        &lt;summary class=&#34;cv-subtle&#34;&gt;Past affiliations&lt;/summary&gt;
+        &lt;ul id=&#34;affPast&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+      &lt;/details&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Education&lt;/h2&gt;
+      &lt;ul id=&#34;eduList&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Employment &amp; Experience&lt;/h2&gt;
+      &lt;ul id=&#34;expList&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Honours &amp; Awards&lt;/h2&gt;
+      &lt;ul id=&#34;awardsList&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Extracurricular&lt;/h2&gt;
+      &lt;ul id=&#34;extraList&#34; class=&#34;cv-list&#34;&gt;&lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;footer class=&#34;cv-foot&#34;&gt;
+    &lt;small id=&#34;cvNote&#34; class=&#34;cv-note&#34;&gt;&lt;/small&gt;
+  &lt;/footer&gt;
+&lt;/section&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#34;&gt;
+&lt;style&gt;
+/* === CV layout (light/dark + print) =================================== */
+.cv-root{--bg:#fff;--fg:#1f2328;--muted:#57606a;--hair:#d0d7de;--chip:#fff;--chip-b:#d0d7de;--pill:#f6f8fa}
+@media (prefers-color-scheme: dark){
+  .cv-root{--bg:#0d1117;--fg:#c9d1d9;--muted:#8b949e;--hair:#30363d;--chip:#161b22;--chip-b:#30363d;--pill:#161b22}
+}
+html.dark .cv-root, :root[data-theme=&#34;dark&#34;] .cv-root, body.dark .cv-root{
+  --bg:#0d1117;--fg:#c9d1d9;--muted:#8b949e;--hair:#30363d;--chip:#161b22;--chip-b:#30363d;--pill:#161b22
+}
+
+.cv-root{background:var(--bg); color:var(--fg); padding:0 .5rem}
+.cv-header{max-width:980px;margin:0 auto 1rem auto;padding:1rem 0 0 0;border-bottom:1px dashed var(--hair)}
+.cv-header h1{margin:0; font-size:2rem; line-height:1.1}
+.cv-header p{margin:.25rem 0 .8rem 0; color:var(--muted)}
+.cv-contacts{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.cv-chip{display:inline-flex;gap:.4rem;align-items:center;background:var(--chip);border:1px solid var(--chip-b);border-radius:999px;padding:.25rem .6rem}
+.cv-chip a{color:inherit;text-decoration:none}
+.cv-chip a:hover{text-decoration:underline}
+.cv-btn{margin-left:auto;border:1px solid var(--chip-b);background:var(--chip);color:inherit;border-radius:.5rem;padding:.35rem .6rem;cursor:pointer}
+.cv-btn:hover{background:var(--pill)}
+
+.cv-grid{max-width:980px;margin:1.1rem auto;display:grid;grid-template-columns:1fr;gap:1.1rem}
+.cv-grid h2{margin:.25rem 0 .4rem 0;font-size:1.15rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.cv-list{margin:.2rem 0 .6rem 1.1rem}
+.cv-list li{margin:.2rem 0 .35rem 0}
+.cv-role{font-weight:600}
+.cv-meta{color:var(--muted)}
+.cv-subtle{color:var(--muted);cursor:pointer}
+.cv-note{color:var(--muted); font-family:mistral;}
+
+@media print{
+  #revealBtn{display:none}
+  .cv-root{padding:0}
+  .cv-chip{border-color:#bbb}
+}
+
+/* Small helpers */
+.sens[hidden]{display:none !important}
+&lt;/style&gt;
+&lt;script&gt;
+/** ===== Config ===== **/
+const RESUME_JSON_PATH = &#34;/files/resume.json&#34;; // put under /static/json/
+const SENSITIVE_KEYS = [&#34;email&#34;,&#34;address&#34;,&#34;dob&#34;];  // keys we won&#39;t render until user reveals
+
+/** ===== Fallback sample (edit/replace via /json/resume.json) ===== **/
+const SAMPLE_RESUME = {
+  &#34;basics&#34;:{
+    &#34;name&#34;:&#34;Suyog Garg&#34;,
+    &#34;tagline&#34;:&#34;PhD candidate • Gravitational-wave Astrophysics, Computational Methods&#34;,
+    &#34;website&#34;:&#34;https://suyoggarg.com&#34;,
+    &#34;email&#34;:&#34;gargsuyog@resceu.s.u-tokyo.ac.jp&#34;,
+    &#34;address&#34;:&#34;7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033, Japan&#34;,
+    &#34;dob&#34;:&#34;1998-05-20&#34;,
+    &#34;citizenship&#34;:&#34;India&#34;
+  },
+  &#34;affiliations&#34;:{
+    &#34;current&#34;:[
+      &#34;Department of Physics, The University of Tokyo, Bunkyo-ku, Tokyo 113-0033, Japan&#34;,
+      &#34;Research Centre for Early Universe (RESCEU), The University of Tokyo, Bunkyo-ku, Tokyo 113-0033, Japan&#34;
+    ],
+    &#34;previous&#34;:[
+      &#34;2021–2023: Institute of Cosmic Ray Research (ICRR), Kashiwa-shi, Chiba 277-8582, Japan&#34;
+    ]
+  },
+  &#34;education&#34;:[
+    {&#34;degree&#34;:&#34;PhD in Physics&#34;,&#34;org&#34;:&#34;The University of Tokyo, Japan&#34;,&#34;years&#34;:&#34;2023 – 2026&#34;,&#34;advisor&#34;:&#34;Kipp Cannon&#34;},
+    {&#34;degree&#34;:&#34;MSc in Physics&#34;,&#34;org&#34;:&#34;The University of Tokyo, Japan&#34;,&#34;years&#34;:&#34;2021 – 2023&#34;,&#34;advisor&#34;:&#34;Masatake Ohashi&#34;},
+    {&#34;degree&#34;:&#34;BTech (Mechanical Eng., Design &amp; Manufacturing)&#34;,&#34;org&#34;:&#34;IIITDM Kancheepuram, Chennai&#34;,&#34;years&#34;:&#34;2016 – 2020&#34;},
+    {&#34;degree&#34;:&#34;High School&#34;,&#34;org&#34;:&#34;Montfort Senior Secondary School, Mandla&#34;,&#34;years&#34;:&#34;2002 – 2016&#34;}
+  ],
+  &#34;experience&#34;:[
+    {&#34;role&#34;:&#34;Visiting Research Student&#34;,&#34;org&#34;:&#34;OzGrav, Monash University, Australia&#34;,&#34;when&#34;:&#34;Mar &amp; Aug 2025&#34;},
+    {&#34;role&#34;:&#34;Google Summer of Code Participant (Astropy)&#34;,&#34;org&#34;:&#34;Astropy Project&#34;,&#34;when&#34;:&#34;Jun – Aug 2021&#34;},
+    {&#34;role&#34;:&#34;Visiting Student (remote)&#34;,&#34;org&#34;:&#34;IIT-BHU, Varanasi&#34;,&#34;when&#34;:&#34;May – Jul 2021&#34;},
+    {&#34;role&#34;:&#34;Project Student (remote)&#34;,&#34;org&#34;:&#34;Massachusetts Institute of Technology, USA&#34;,&#34;when&#34;:&#34;Dec 2020 – Jun 2021&#34;},
+    {&#34;role&#34;:&#34;Visiting Student (remote)&#34;,&#34;org&#34;:&#34;TIFR, Mumbai&#34;,&#34;when&#34;:&#34;Nov 2020 – May 2021&#34;},
+    {&#34;role&#34;:&#34;Visiting Student&#34;,&#34;org&#34;:&#34;IUCAA, Pune&#34;,&#34;when&#34;:&#34;Aug – Oct 2019&#34;},
+    {&#34;role&#34;:&#34;Physics Summer Research Intern&#34;,&#34;org&#34;:&#34;The Institute of Mathematical Sciences, Chennai&#34;,&#34;when&#34;:&#34;May – Aug 2019&#34;}
+  ],
+  &#34;awards&#34;:[
+    &#34;Invited to address 2025 batch of MEXT scholars at Embassy of Japan in India (2025)&#34;,
+    &#34;Graduate Research Abroad Program (UTokyo) — visit to Seoul National University (2025)&#34;,
+    &#34;ULVAC–Hayashi Seed Funding between MIT and UTokyo — research featured (2024–25)&#34;,
+    &#34;Embassy-recommended MEXT Scholarship, Japan (2021–2023; 2023–2026)&#34;,
+    &#34;Provisional admission to SOKENDAI Graduate Program (2020)&#34;,
+    &#34;Vacations Student Program, IUCAA, Pune (2020)&#34;,
+    &#34;CBSE Distinction Certificate (2016)&#34;
+  ],
+  &#34;activities&#34;:[
+    &#34;Teaching Assistant, Gravitational-Wave Physics (2023, 2024, 2025)&#34;,
+    &#34;Secretary, University of Tokyo Indian Student Association (UTISA) (Jul 2022 – Jun 2023)&#34;,
+    &#34;Content writer, BrightBegins.com (Sep – Nov 2020)&#34;,
+    &#34;Contributing Editor, Margdarshan Magazine, IIITDM Kancheepuram (Jan 2017 – Apr 2018)&#34;,
+    &#34;Social Service Volunteer, VIDHAI (2017 – 2018)&#34;
+  ],
+  &#34;note&#34;:&#34;Live life in such a way that life itself has a crush on you! — unknown (2025-09-15)&#34;
+};
+
+/** ===== DOM els ===== **/
+const E = sel =&gt; document.querySelector(sel);
+const els = {
+  name: E(&#39;#cvName&#39;), tagline: E(&#39;#cvTagline&#39;),
+  webLink: E(&#39;#cvWebLink&#39;),
+  emailWrap: E(&#39;#cvEmailWrap&#39;), emailLink: E(&#39;#cvEmailLink&#39;),
+  addrWrap: E(&#39;#cvAddrWrap&#39;), address: E(&#39;#cvAddress&#39;),
+  dobWrap: E(&#39;#cvDobWrap&#39;), dob: E(&#39;#cvDob&#39;),
+  revealBtn: E(&#39;#revealBtn&#39;),
+  affNow: E(&#39;#affNow&#39;), affPast: E(&#39;#affPast&#39;),
+  eduList: E(&#39;#eduList&#39;), expList: E(&#39;#expList&#39;),
+  awardsList: E(&#39;#awardsList&#39;), extraList: E(&#39;#extraList&#39;),
+  note: E(&#39;#cvNote&#39;)
+};
+
+/** ===== Helpers ===== **/
+const safe = s =&gt; (s??&#34;&#34;).toString();
+function li(html){ const li=document.createElement(&#39;li&#39;); li.innerHTML=html; return li; }
+function obfEmailClear(email){
+  // Convert to &#34;mailto:&#34; on demand
+  const [u,d]=email.split(&#39;@&#39;); return {text:`${u} [at] ${d}`, href:`mailto:${u}@${d}`};
+}
+function setSensitiveVisible(on){
+  [els.emailWrap,els.addrWrap,els.dobWrap].forEach(x=&gt;{ if(!x) return; x.hidden = !on; });
+  if(els.revealBtn){
+    els.revealBtn.setAttribute(&#39;aria-expanded&#39;, String(on));
+    els.revealBtn.innerHTML = on
+      ? &#39;&lt;i class=&#34;fa fa-eye-slash&#34;&gt;&lt;/i&gt; Hide contact details&#39;
+      : &#39;&lt;i class=&#34;fa fa-eye&#34;&gt;&lt;/i&gt; Reveal contact details&#39;;
+  }
+}
+
+/** ===== Render ===== **/
+function renderCV(cv){
+  const b = cv.basics || {};
+  // Header
+  if(b.name) els.name.textContent = b.name;
+  els.tagline.textContent = safe(b.tagline || &#39;&#39;); 
+  if(b.website){ els.webLink.textContent = b.website.replace(/^https?:\/\//,&#39;&#39;); els.webLink.href = b.website; }
+
+  // Sensitive (not shown until reveal)
+  if(b.email){
+    const {text, href} = obfEmailClear(b.email);
+    els.emailLink.textContent = text; els.emailLink.href = href;
+  }
+  if(b.address){ els.address.textContent = b.address; }
+  if(b.dob){ els.dob.textContent = b.dob; }
+
+  // Affiliations
+  (cv.affiliations?.current||[]).forEach(t =&gt; els.affNow.appendChild(li(`&lt;span class=&#34;cv-role&#34;&gt;Present:&lt;/span&gt; &lt;span class=&#34;cv-meta&#34;&gt;${safe(t)}&lt;/span&gt;`)));
+  (cv.affiliations?.previous||[]).forEach(t =&gt; els.affPast.appendChild(li(`&lt;span class=&#34;cv-meta&#34;&gt;${safe(t)}&lt;/span&gt;`)));
+
+  // Education
+  (cv.education||[]).forEach(e=&gt;{
+    const adv = e.advisor ? ` &lt;span class=&#34;cv-meta&#34;&gt;(advisor: ${safe(e.advisor)})&lt;/span&gt;` : &#39;&#39;;
+    els.eduList.appendChild(li(`&lt;span class=&#34;cv-role&#34;&gt;${safe(e.degree)}&lt;/span&gt;, ${safe(e.org)} &lt;span class=&#34;cv-meta&#34;&gt;— ${safe(e.years)}&lt;/span&gt;${adv}`));
+  });
+
+  // Experience
+  (cv.experience||[]).forEach(x=&gt;{
+    els.expList.appendChild(li(`&lt;span class=&#34;cv-role&#34;&gt;${safe(x.role)}&lt;/span&gt;, ${safe(x.org)} &lt;span class=&#34;cv-meta&#34;&gt;— ${safe(x.when)}&lt;/span&gt;`));
+  });
+
+  // Awards
+  (cv.awards||[]).forEach(a=&gt;els.awardsList.appendChild(li(safe(a))));
+
+  // Extras
+  (cv.activities||[]).forEach(e=&gt;els.extraList.appendChild(li(safe(e))));
+
+  // Note
+  els.note.textContent = safe(cv.note||&#39;&#39;);
+}
+
+/** ===== Boot ===== **/
+async function boot(){
+  let data = null;
+  try{
+    const url = new URL(RESUME_JSON_PATH, document.baseURI).href;
+    const res = await fetch(url, {cache:&#39;no-store&#39;});
+    if(res.ok){ data = await res.json(); }
+  }catch(e){ /* ignore */ }
+  if(!data) data = SAMPLE_RESUME;
+
+  renderCV(data);
+  setSensitiveVisible(false);
+
+  // Toggle reveal
+  els.revealBtn?.addEventListener(&#39;click&#39;, ()=&gt;{
+    const on = els.emailWrap.hidden; setSensitiveVisible(on);
+  });
+}
+
+if(document.readyState === &#39;loading&#39;) document.addEventListener(&#39;DOMContentLoaded&#39;, boot);
+else boot();
+&lt;/script&gt;
+&lt;!--
+&lt;object data=&#34;/files/acadSummary-Nov2023.pdf&#34; type=&#34;application/pdf&#34; width=&#34;700px&#34; height=&#34;700px&#34;&gt;
+    &lt;embed src=&#34;http://localhost:1313/files/acadSummary-Nov2023.pdf&#34;&gt;
+        &lt;p&gt;This browser does not support PDFs. Please download the PDF to view it: &lt;a href=&#34;https://www.suyog7130.github.io/files/acadSummary-Apr2024-no-contact.png&#34;&gt;Download PDF&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fonts</title>
+      <link>http://localhost:1313/en/posts/fonts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/fonts/</guid>
+      <description>&lt;div dir=&#34;ltr&#34; style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;
+  &lt;div dir=&#34;ltr&#34; style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;
+
+    &lt;div style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;
+      &lt;div class=&#34;MsoNormal&#34; style=&#34;line-height: normal; margin-bottom: 0in;&#34;&gt;
+        &lt;span style=&#34;font-size: 18pt; font-weight: bold;&#34;
+          &gt;I have a knack for fonts and typefaces. Below is a list of my favorites:
+&lt;/span
+        &gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: mistral; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Mistral®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      This is a Microsoft proprietary font. I have used it for the title of
+      the blog. This is the closest it gets to my handwriting. Looks good, eh?
+      &lt;span face=&#39;&#34;segoe ui emoji&#34; , sans-serif&#39; style=&#34;font-size: 13.5pt;&#34;
+        &gt;😄&lt;/span
+      &gt;
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;lato&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Lato
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Used in the body of the blog, this open source sans-serif typeface
+      is pleasing to the eye.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;monotype-corsiva&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Monotype Corsiva®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Another of Microsoft&#39;s proprietary fonts. I use it for my poems.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;pacifico&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Pacifico
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      A tiny bit heavier than the others, but good for headings.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;calligraffitti&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Calligraffitti
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      I like the extended curving of the tails. Used this in the home feed.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;verdana&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Verdana®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Yet another of Microsoft fonts. Nice and simplistic sans-serif. I like
+      it plain, without bold.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;lucida-handwriting&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Lucida® Handwriting
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Again Microsoft&#39;s. The slanting gives a personal touch. The glyphs are
+      lucid as the name goes. My favorite font for writing letters. Mistral I
+      use for the headings.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;calibri&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Calibri
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      The best known of the Word font collection. Must use for drafts.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;arial&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Arial®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Another by Monotype, this is the font one sees on google. The best
+      typeface available for the academia. I like it regular.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;parchment&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Parchment®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+        For the regal times. The best for anything immense.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;papyrus&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Papyrus®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      When I need the feel of handmade paper. A widely used calligraphic
+      typeface.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;courier new&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Courier
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      A monospace typeface that provides the type writer look. Great for writing
+      stories.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;georgia&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Georgia®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Appealing to the eyes. Good for writings that need a thorough reading.
+      Owned by Microsoft.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;helvetica&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Helvetica®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Popular sans-serif typeface. Suited for general use on the web. From
+      Mergenthaler Linotype Company. Not available in MS Office.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;vivaldi&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Vivaldi™
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      When it needs to be extreme calligraphic. Looks cool on invitation
+      cards.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;arvo&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Arvo
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Nice when the size is large and weight is not bold. The square serifs are
+      pleasing.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;times new roman&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Times New Roman®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      First designed by Monotype in the 1930s, this is the most widely used
+      font in the world. Newspapers are type set in the Times.
+    &lt;/li&gt;
+
+&lt;br /&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;comic sans&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Comic Sans®
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;li&gt;
+      Microsoft&#39;s proprietary font that makes everything seem playful. Also one of the few fonts available on Gmail.
+    &lt;/li&gt;
+
+&lt;!--
+&lt;h1
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: Raleway; font-style: italic; font-weight: 200;&#34;
+&gt;
+  Raleway
+&lt;/h1&gt;
+--&gt;
+
+&lt;br /&gt;
+
+&lt;li&gt; 
+    Other open source fonts from The League of Moveable Type and the Indian Type Foundary.
+&lt;/li&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: Raleway; font-style: regular; font-weight: 200; font-size: 40pt&#34;
+&gt;
+  Raleway
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: Tangerine; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Tangerine
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: Kalam; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  कलाम
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: Prociono; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Prociono
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;Fanwood Text&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Fanwood Text
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;Linden Hill&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Linden Hill
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;League Script&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  League Script
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;Sorts Mill Goudy&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Sorts Mill Goudy
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;div
+  contenteditable=&#34;true&#34;
+  spellcheck=&#34;false&#34;
+  style=&#34;font-family: &#39;Goudy Bookletter 1911&#39;; font-style: normal; font-weight: normal; font-size: 40pt&#34;
+&gt;
+  Goudy Bookletter 1911
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+  &lt;/div&gt;
+&lt;/div&gt;  &lt;!-- closing the list --&gt;</description>
+    </item>
+    <item>
+      <title>Ideas</title>
+      <link>http://localhost:1313/en/pages/ideas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/ideas/</guid>
+      <description>&lt;p&gt;Myriad of different ideas, often eccentric, come up to my mind every now and then. Sometimes I get to work on them, usually the just lie there at the back of the mind accumulating dust.&lt;/p&gt;
+&lt;p&gt;This is semi-complete list of my ideas. I would love if you can work on any of them or provide your insights.
+Start by opening up a discussion in a Gist using the button provided !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Languages</title>
+      <link>http://localhost:1313/en/pages/personal/languages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/personal/languages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>My Visits Calendar</title>
+      <link>http://localhost:1313/en/pages/personal/visits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/personal/visits/</guid>
+      <description>A calendar view of my visits over the years.</description>
+    </item>
+    <item>
+      <title>News</title>
+      <link>http://localhost:1313/en/pages/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/news/</guid>
+      <description>&lt;!-- News --&gt;
+&lt;!-- &lt;h2&gt;&lt;p style=&#34;text-align:center; font-family:mistral;&#34;&gt; News &lt;/p&gt;&lt;/h2&gt;
+--&gt;
+&lt;!-- &lt;i class=&#34;fa fa-clock&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;ai ai-google-scholar&#34;&gt;&lt;/i&gt;
+&lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;amp;user=FtzrMYwAAAAJ&#34; class=&#34;icon-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; data-original-href=&#34;https://scholar.google.com/citations?hl=en&amp;amp;user=FtzrMYwAAAAJ&#34;&gt;&lt;i class=&#34;ai ai-google-scholar&#34;&gt;&lt;/i&gt; Google Scholar&lt;/a&gt; --&gt;
+&lt;!-- &lt;div style=&#34;text-align: center&#34;&gt;
+&lt;a href=&#34;https://sensr.net/auth/users/sign_up&#34;&gt;
+&lt;button style=&#34;background-color:#a4d61e;margin-top:6px;margin-bottom:16px;border-radius:4px;font-size:1.6em;padding:8px 20px;    font-family: &#34;GibsonSemibold&#34;, &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif;float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)&#34;&gt;
+Sign up for free!
+&lt;/button&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+--&gt;
+&lt;!--&lt;span class=&#34;btn cstyle interactive transparent&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&#34;btn cstyle interactive warning&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;i class=&#34;fa-fw fas fa-dog&#34;&gt;&lt;/i&gt; &lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;--&gt;
+&lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt;
+ 
+&lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
+2025年11月18日
+&lt;/br&gt;
+Presented a &lt;a href=&#34;https://suyoggarg.com/ewha/&#34;&gt;Gravitational Waves Data Analysis tutorial&lt;/a&gt; at Ewha womans university, Seoul.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Paper]&lt;/span&gt;
+ 
+&lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
+2025年11月
+&lt;br/&gt;
+Two new papers up on Arxiv this month!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Personal</title>
+      <link>http://localhost:1313/en/pages/personal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/personal/</guid>
+      <description>&lt;!-- Google Calendar Appointment Scheduling begin --&gt;
+&lt;div&gt;
+&lt;link href=&#34;https://calendar.google.com/calendar/scheduling-button-script.css&#34; rel=&#34;stylesheet&#34;&gt;
+&lt;script src=&#34;https://calendar.google.com/calendar/scheduling-button-script.js&#34; async&gt;&lt;/script&gt;
+&lt;script&gt;
+(function() {
+  var target = document.currentScript;
+  window.addEventListener(&#39;load&#39;, function() {
+    calendar.schedulingButton.load({
+      url: &#39;https://calendar.google.com/calendar/appointments/schedules/AcZssZ2pWyc6gXY24OsFC_o2C_PYjHZHF32hO9yAuKx67K86XeTr6MYx1kY6Y3BQj3QePE77o5dhSHO4?gv=true&#39;,
+      color: &#39;#8E24AA&#39;,
+      label: &#34;Hangout with me !&#34;,
+      target,
+    });
+  });
+})();
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;!-- end Google Calendar Appointment Scheduling --&gt;
+&lt;!-- General Introduction --&gt;
+&lt;br/&gt;
+&lt;p&gt;
+Academics and Research occupy a major part of my day, or for that matter, my night time often too. However, research is still just a component of my life, albiet an important one. 
+&lt;!--In the rest of it, I have a funny-ambiverted side of me that likes to hangout with friends every other day, and also a slightly darker naughtier side, that only some of the girls I have been with know about.--&gt;
+&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/en/pages/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/publications/</guid>
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#34;&gt;
+&lt;script async src=&#34;https://badge.dimensions.ai/badge.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;section class=&#34;pubs-root&#34;&gt;
+  &lt;!-- &lt;h2 style=&#34;margin:0 0 .6rem 0&#34;&gt;Publications — Quick View (interactive)&lt;/h2&gt; --&gt;
+  &lt;div class=&#34;pub-controls&#34; role=&#34;region&#34; aria-label=&#34;Publications controls&#34;&gt;
+    &lt;button id=&#34;btnFilter&#34; class=&#34;pub-btn&#34;&gt;&lt;i class=&#34;fa fa-filter&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Filter&lt;/button&gt;
+    &lt;button id=&#34;btnSort&#34; class=&#34;pub-btn&#34;&gt;&lt;i class=&#34;fa fa-sort&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Sort&lt;/button&gt;
+    &lt;span id=&#34;countLabel&#34; class=&#34;pub-count&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div id=&#34;activeFilters&#34; class=&#34;active-filters&#34; aria-live=&#34;polite&#34;&gt;&lt;/div&gt;
+  &lt;ol id=&#34;pubList&#34; class=&#34;pub-list&#34; reversed&gt;&lt;/ol&gt;
+
+  &lt;dialog id=&#34;filterDialog&#34; aria-label=&#34;Filter publications&#34;&gt;
+    &lt;form method=&#34;dialog&#34; class=&#34;dialog-form&#34;&gt;
+      &lt;h3&gt;Filter&lt;/h3&gt;
+
+      &lt;fieldset class=&#34;filter-group&#34;&gt;&lt;legend&gt;Type&lt;/legend&gt;&lt;div id=&#34;filterTypes&#34; class=&#34;filter-chips&#34;&gt;&lt;/div&gt;&lt;/fieldset&gt;
+
+      &lt;!-- NEW: Authorship filter --&gt;
+      &lt;fieldset class=&#34;filter-group&#34;&gt;&lt;legend&gt;Authorship&lt;/legend&gt;&lt;div id=&#34;filterAuthKinds&#34; class=&#34;filter-chips&#34;&gt;&lt;/div&gt;&lt;/fieldset&gt;
+
+      &lt;fieldset class=&#34;filter-group&#34;&gt;&lt;legend&gt;Subset / Topic&lt;/legend&gt;&lt;div id=&#34;filterSubsets&#34; class=&#34;filter-chips&#34;&gt;&lt;/div&gt;&lt;/fieldset&gt;
+
+      &lt;fieldset class=&#34;filter-group&#34;&gt;
+        &lt;legend&gt;Year&lt;/legend&gt;
+        &lt;div class=&#34;year-row&#34;&gt;
+          &lt;label&gt;From&amp;nbsp;&lt;input id=&#34;yearFrom&#34; type=&#34;number&#34; step=&#34;1&#34; min=&#34;1900&#34; style=&#34;width:7rem&#34;&gt;&lt;/label&gt;
+          &lt;label&gt;To&amp;nbsp;&lt;input id=&#34;yearTo&#34; type=&#34;number&#34; step=&#34;1&#34; min=&#34;1900&#34; style=&#34;width:7rem&#34;&gt;&lt;/label&gt;
+          &lt;button id=&#34;btnResetYear&#34; type=&#34;button&#34; class=&#34;pub-btn pub-btn-secondary&#34; style=&#34;margin-left:auto&#34;&gt;Reset year&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;
+      &lt;div class=&#34;dialog-actions&#34;&gt;
+        &lt;button value=&#34;cancel&#34; class=&#34;pub-btn pub-btn-secondary&#34;&gt;Close&lt;/button&gt;
+        &lt;button id=&#34;btnResetFilters&#34; type=&#34;button&#34; class=&#34;pub-btn pub-btn-secondary&#34;&gt;Reset all&lt;/button&gt;
+        &lt;button id=&#34;btnApplyFilters&#34; type=&#34;submit&#34; class=&#34;pub-btn pub-btn-primary&#34;&gt;Apply&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/dialog&gt;
+
+  &lt;dialog id=&#34;sortDialog&#34; aria-label=&#34;Sort publications&#34;&gt;
+    &lt;form method=&#34;dialog&#34; class=&#34;dialog-form&#34;&gt;
+      &lt;h3&gt;Sort&lt;/h3&gt;
+      &lt;fieldset class=&#34;filter-group&#34;&gt;
+        &lt;legend&gt;Order&lt;/legend&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;year-desc&#34; checked&gt; Year — newest → oldest&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;year-asc&#34;&gt; Year — oldest → newest&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;title-asc&#34;&gt; Title — A → Z&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;title-desc&#34;&gt; Title — Z → A&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;first-asc&#34;&gt; First author — A → Z&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;first-desc&#34;&gt; First author — Z → A&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;len-desc&#34;&gt; Paper length — longest → shortest&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;len-asc&#34;&gt; Paper length — shortest → longest&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;cites-desc&#34;&gt; Citations — most → fewest*&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;cites-asc&#34;&gt; Citations — fewest → most*&lt;/label&gt;
+      &lt;/fieldset&gt;
+      &lt;p class=&#34;hint&#34;&gt;* Sorting uses a numeric &lt;code&gt;cites&lt;/code&gt; field from the `.bib` when present. The on-card badge shows live Dimensions counts from DOI.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/en/pages/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/research/</guid>
+      <description>&lt;p&gt;My PhD research focuses on gravitational-wave astrophysics, specifically modelling theoretical approximations for gravitational waveforms. Over the past few years, I have broadly worked on computational astrophysics and data analysis. Below is a brief description and summary of my research interests. Some projects have their own pages.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;gravitational-waves-astrophysics&#34;&gt;Gravitational Waves Astrophysics&lt;/h2&gt;
+&lt;h3 id=&#34;generating-gravitational-waveform-approximations-using-machine-learning-models&#34;&gt;Generating gravitational waveform approximations using machine learning models&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I build fast &lt;em&gt;surrogate&lt;/em&gt; or data-driven waveform models for compact binaries, with the current aim of accurately approximating effective one-body waveforms, which would be later expanded into other waveforms approximations and binary systems.&lt;/li&gt;
+&lt;li&gt;Architectures explored include convolutional networks on time–frequency representations and lightweight auto-encoder models for rapid evaluation.&lt;/li&gt;
+&lt;li&gt;Targets: high overlap (low mismatch) with reference models, large parameter-space coverage (incl. eccentricity and spin), and uncertainty-aware predictions (ensembles/calibration).&lt;/li&gt;
+&lt;li&gt;Intended use cases: speeding up parameter estimation and low-latency searches for 3G gravitational wave detectors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;detections-of-gravitational-waves-from-compact-object-mergers&#34;&gt;Detections of gravitational waves from compact object mergers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I developed deep-learning pipelines for detection/classification of compact binary coalescences and related sources.&lt;/li&gt;
+&lt;li&gt;Training strategy comparisons (curriculum learning, transfer learning) to improve sensitivity and robustness to glitches.&lt;/li&gt;
+&lt;li&gt;Practical considerations: coincidence logic, false-alarm control, and runtime efficiency on commodity GPUs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;stellar-and-solar-physics&#34;&gt;Stellar and Solar Physics&lt;/h2&gt;
+&lt;h3 id=&#34;stellar-magnetic-cycles-and-variability&#34;&gt;Stellar magnetic cycles and variability&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Studied the &lt;strong&gt;Waldmeier effect&lt;/strong&gt; (anti-correlation of rise time with cycle amplitude) in stellar activity cycles, extending solar-cycle phenomenology to other stars.&lt;/li&gt;
+&lt;li&gt;Methods included cycle extraction from long-baseline activity indices and careful treatment of cadence/uncertainty.&lt;/li&gt;
+&lt;li&gt;Results help connect stellar dynamos with solar behavior and inform scaling relations across spectral types.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;super-resolving-the-solar-magnetograms&#34;&gt;Super-resolving the solar magnetograms&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Worked on super-resolution and denoising of solar magnetograms using convolutional models.&lt;/li&gt;
+&lt;li&gt;Goals: recover small-scale magnetic structures from older low-resolution magnetograms by super-resolving them and cross-instrument benchmarks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;other-interests&#34;&gt;Other Interests&lt;/h2&gt;
+&lt;h3 id=&#34;agns-and-x-ray-emissions&#34;&gt;AGNs and X-Ray Emissions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Worked on developing pipeline for XMM-Newton EPIC instrument auto data reductions and inferences for a single-query raw data to science products pathway.&lt;/li&gt;
+&lt;li&gt;Analysed the ASASSN-14li data using the developed pipeline to check for a presence of X-Ray Corona formation in that system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;dark-matter-halos-and-the-uchuu-simulation&#34;&gt;Dark Matter Halos and the Uchuu simulation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Brief stint on developing pipeline to calculate the halo occupancy number distribution in the Uchuu and Rockstar simulations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;internal-structure-of-neutron-stars&#34;&gt;Internal structure of Neutron Stars&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigated tidal contributions to periastron precession in stellar-mass NS–BH binaries and found them &lt;em&gt;negligible&lt;/em&gt; in the regimes considered, clarifying where strong-field GR effects dominate over tidal structure effects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Broad interest in physically-informed ML: data augmentation that respects symmetries, calibrated uncertainties, and attribution methods (e.g., Grad-CAM).&lt;/li&gt;
+&lt;li&gt;Reproducible research and open-source: contributions within the scientific Python ecosystem (e.g., community tools for astronomy and relativity).&lt;/li&gt;
+&lt;li&gt;Symbolic regression and machine learning physical symmetries from large-scale multimodal datasets.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Talks &amp; Presentations</title>
+      <link>http://localhost:1313/en/pages/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/talks/</guid>
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#34;&gt;
+
+&lt;section class=&#34;talks-root&#34;&gt;
+  &lt;div class=&#34;talks-controls&#34; role=&#34;region&#34; aria-label=&#34;Talks controls&#34;&gt;
+    &lt;button id=&#34;btnFilter&#34; class=&#34;talks-btn&#34;&gt;&lt;i class=&#34;fa fa-filter&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Filter&lt;/button&gt;
+    &lt;button id=&#34;btnSort&#34; class=&#34;talks-btn&#34;&gt;&lt;i class=&#34;fa fa-sort&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; Sort&lt;/button&gt;
+    &lt;span id=&#34;countLabel&#34; class=&#34;talks-count&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;activeFilters&#34; class=&#34;active-filters&#34; aria-live=&#34;polite&#34;&gt;&lt;/div&gt;
+  &lt;ol id=&#34;talksList&#34; class=&#34;talks-list&#34; reversed&gt;&lt;/ol&gt;
+
+  &lt;!-- Filter dialog --&gt;
+  &lt;dialog id=&#34;filterDialog&#34; aria-label=&#34;Filter talks&#34;&gt;
+    &lt;form method=&#34;dialog&#34; class=&#34;dialog-form&#34;&gt;
+      &lt;h3&gt;Filter&lt;/h3&gt;
+
+      &lt;fieldset class=&#34;filter-group&#34;&gt;
+        &lt;legend&gt;Type&lt;/legend&gt;
+        &lt;div id=&#34;filterTypes&#34; class=&#34;filter-chips&#34;&gt;&lt;!-- Invited/Contributed/Poster/Other --&gt;&lt;/div&gt;
+      &lt;/fieldset&gt;
+
+      &lt;fieldset class=&#34;filter-group&#34;&gt;
+        &lt;legend&gt;Modality&lt;/legend&gt;
+        &lt;div id=&#34;filterModality&#34; class=&#34;filter-chips&#34;&gt;
+          &lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;Online&#34;&gt; Online&lt;/label&gt;
+          &lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;In-person&#34;&gt; In-person&lt;/label&gt;
+          &lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;Hybrid&#34;&gt; Hybrid&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;
+
+      &lt;fieldset class=&#34;filter-group&#34;&gt;
+        &lt;legend&gt;Continent&lt;/legend&gt;
+        &lt;div id=&#34;filterContinents&#34; class=&#34;filter-chips&#34;&gt;&lt;!-- populated --&gt;&lt;/div&gt;
+      &lt;/fieldset&gt;
+
+      &lt;fieldset class=&#34;filter-group&#34;&gt;
+        &lt;legend&gt;Country&lt;/legend&gt;
+        &lt;input id=&#34;countryContains&#34; type=&#34;text&#34; placeholder=&#34;Contains… (e.g., Japan)&#34; style=&#34;width:100%;padding:.4rem .6rem;border-radius:.5rem;border:1px solid var(--border);&#34;/&gt;
+      &lt;/fieldset&gt;
+
+      &lt;fieldset class=&#34;filter-group&#34;&gt;
+        &lt;legend&gt;Year&lt;/legend&gt;
+        &lt;div class=&#34;year-row&#34;&gt;
+          &lt;label&gt;From&amp;nbsp;&lt;input id=&#34;yearFrom&#34; type=&#34;number&#34; step=&#34;1&#34; min=&#34;1900&#34; style=&#34;width:7rem&#34;&gt;&lt;/label&gt;
+          &lt;label&gt;To&amp;nbsp;&lt;input id=&#34;yearTo&#34; type=&#34;number&#34; step=&#34;1&#34; min=&#34;1900&#34; style=&#34;width:7rem&#34;&gt;&lt;/label&gt;
+          &lt;button id=&#34;btnResetYear&#34; type=&#34;button&#34; class=&#34;talks-btn talks-btn-secondary&#34; style=&#34;margin-left:auto&#34;&gt;Reset year&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;
+
+      &lt;div class=&#34;dialog-actions&#34;&gt;
+        &lt;button value=&#34;cancel&#34; class=&#34;talks-btn talks-btn-secondary&#34;&gt;Close&lt;/button&gt;
+        &lt;button id=&#34;btnResetFilters&#34; type=&#34;button&#34; class=&#34;talks-btn talks-btn-secondary&#34;&gt;Reset all&lt;/button&gt;
+        &lt;button id=&#34;btnApplyFilters&#34; type=&#34;submit&#34; class=&#34;talks-btn talks-btn-primary&#34;&gt;Apply&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/dialog&gt;
+
+  &lt;!-- Sort dialog --&gt;
+  &lt;dialog id=&#34;sortDialog&#34; aria-label=&#34;Sort talks&#34;&gt;
+    &lt;form method=&#34;dialog&#34; class=&#34;dialog-form&#34;&gt;
+      &lt;h3&gt;Sort&lt;/h3&gt;
+      &lt;fieldset class=&#34;filter-group&#34;&gt;
+        &lt;legend&gt;Order&lt;/legend&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;date-desc&#34; checked&gt; Latest first&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;date-asc&#34;&gt; Oldest first&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;title-asc&#34;&gt; Title — A → Z&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;title-desc&#34;&gt; Title — Z → A&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;loc-asc&#34;&gt; Location — A → Z&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;loc-desc&#34;&gt; Location — Z → A&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;type-asc&#34;&gt; Type — A → Z&lt;/label&gt;
+        &lt;label class=&#34;radio&#34;&gt;&lt;input type=&#34;radio&#34; name=&#34;sortMode&#34; value=&#34;type-desc&#34;&gt; Type — Z → A&lt;/label&gt;
+      &lt;/fieldset&gt;
+      &lt;div class=&#34;dialog-actions&#34;&gt;
+        &lt;button value=&#34;cancel&#34; class=&#34;talks-btn talks-btn-secondary&#34;&gt;Close&lt;/button&gt;
+        &lt;button id=&#34;btnApplySort&#34; type=&#34;submit&#34; class=&#34;talks-btn talks-btn-primary&#34;&gt;Apply&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/dialog&gt;
+
+  &lt;details id=&#34;talks-debug&#34; style=&#34;display:none;margin-top:1rem;&#34;&gt;&lt;summary&gt;Debug&lt;/summary&gt;&lt;pre id=&#34;talks-debug-pre&#34; style=&#34;white-space:pre-wrap&#34;&gt;&lt;/pre&gt;&lt;/details&gt;
+&lt;/section&gt;
+
+&lt;style&gt;
+  /* --- Theme tokens scoped to this page (defaults = light) --- */
+  .talks-root{
+    --bg:#fff; --fg:#24292f; --muted:#555;
+    --chip-bg:#fff; --chip-fg:inherit; --chip-border:#d0d7de;
+    --btn-bg:#fff; --btn-fg:#24292f; --btn-border:#d0d7de; --btn-bg-hover:#f6f8fa;
+    --border:#d0d7de;
+    color: var(--fg);
+  }
+  /* OS dark or site dark flips tokens */
+  @media (prefers-color-scheme: dark){
+    .talks-root{
+      --bg:#161b22; --fg:#c9d1d9; --muted:#c9d1d9;
+      --chip-bg:transparent; --chip-fg:inherit; --chip-border:#30363d;
+      --btn-bg:#161b22; --btn-fg:#ffffff; --btn-border:#30363d; --btn-bg-hover:#0d1117;
+      --border:#30363d;
+    }
+  }
+  html.dark .talks-root, :root[data-theme=&#34;dark&#34;] .talks-root, body.dark .talks-root{
+    --bg:#161b22; --fg:#c9d1d9; --muted:#c9d1d9;
+    --chip-bg:transparent; --chip-fg:inherit; --chip-border:#30363d;
+    --btn-bg:#161b22; --btn-fg:#ffffff; --btn-border:#30363d; --btn-bg-hover:#0d1117;
+    --border:#30363d;
+  }
+
+  .talks-controls{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin:0 0 1rem 0}
+  .talks-btn{border:1px solid var(--btn-border);padding:.4rem .7rem;border-radius:.5rem;background:var(--btn-bg);color:var(--btn-fg);cursor:pointer;font:inherit}
+  .talks-btn:hover{background:var(--btn-bg-hover)}
+  .talks-btn-primary{background:#1f6feb;color:#fff;border-color:#1f6feb}
+  .talks-btn-secondary{background:var(--btn-bg);color:var(--btn-fg)}
+  .talks-count{margin-left:auto;font-size:.95rem;color:var(--muted)}
+
+  .active-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem 0}
+  .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--chip-border);border-radius:999px;padding:.2rem .55rem;font-size:.85rem;background:var(--chip-bg);color:var(--chip-fg)}
+  .chip button{all:unset;cursor:pointer;display:inline-flex}
+  .chip .fa{font-size:.8em;color:inherit}
+
+  .talks-list{counter-reset:none;padding-left:1.2rem}
+  .talk-item{margin:0 0 .9rem 0;padding:0 0 .9rem 0}
+  .talk-title{font-weight:600;line-height:1.35;margin:0}
+  .talk-title a{color: inherit; text-decoration:none}
+  .talk-title a:hover{text-decoration:underline}
+  .talk-meta{margin:.15rem 0 .45rem 0;font-size:.95rem;color:var(--fg)}
+
+  .actions{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.35rem}
+  .btn-chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--chip-border);border-radius:.5rem;padding:.25rem .45rem;font-size:.85rem;background:var(--chip-bg);color:var(--chip-fg);text-decoration:none;line-height:1}
+  .btn-chip:hover{background:var(--btn-bg-hover)}
+  .btn-chip .fa{font-size:.9em;color:inherit}
+
+  dialog{border:none;border-radius:12px;padding:1rem 1rem 1.2rem 1rem;max-width:720px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15);background:var(--bg);color:var(--fg)}
+  .dialog-form h3{margin:.3rem 0 .7rem 0}
+  .filter-group{margin:.6rem 0}
+  .filter-chips{display:flex;flex-wrap:wrap;gap:.45rem}
+  .chip-toggle{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--chip-border);border-radius:999px;padding:.25rem .6rem;background:var(--chip-bg);color:var(--chip-fg);cursor:pointer}
+  .chip-toggle input{accent-color:#1f6feb}
+  .radio{display:flex;gap:.5rem;align-items:center;margin:.25rem 0}
+  .dialog-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.8rem}
+  .year-row{display:flex;gap:.6rem;align-items:center}
+&lt;/style&gt;
+
+&lt;script&gt;
+/*** ===== Config (easy switches) ===== ***/
+const DATE_STYLE = &#39;auto&#39;; // &#39;auto&#39; | &#39;jp&#39; | &#39;en&#39;
+
+/*** ===== Sources ===== ***/
+const TALKS_SOURCES = {
+  &#34;Invited&#34;: &#34;/bib/talks-invited.bib&#34;,
+  &#34;Contributed&#34;: &#34;/bib/talks-contributed.bib&#34;,
+  &#34;Poster&#34;: &#34;/bib/posters.bib&#34;,
+  &#34;Other&#34;: &#34;/bib/talks-other.bib&#34;
+};
+
+const DEBUG = /[?&amp;]talksdebug=1/.test(location.search);
+
+/*** ===== Elements &amp; State ===== ***/
+const els = {
+  list: document.getElementById(&#39;talksList&#39;),
+  count: document.getElementById(&#39;countLabel&#39;),
+  filterDlg: document.getElementById(&#39;filterDialog&#39;),
+  sortDlg: document.getElementById(&#39;sortDialog&#39;),
+  filterTypes: document.getElementById(&#39;filterTypes&#39;),
+  filterModality: document.getElementById(&#39;filterModality&#39;),
+  filterContinents: document.getElementById(&#39;filterContinents&#39;),
+  countryContains: document.getElementById(&#39;countryContains&#39;),
+  btnFilter: document.getElementById(&#39;btnFilter&#39;),
+  btnSort: document.getElementById(&#39;btnSort&#39;),
+  btnApplyFilters: document.getElementById(&#39;btnApplyFilters&#39;),
+  btnResetFilters: document.getElementById(&#39;btnResetFilters&#39;),
+  btnApplySort: document.getElementById(&#39;btnApplySort&#39;),
+  yearFrom: document.getElementById(&#39;yearFrom&#39;),
+  yearTo: document.getElementById(&#39;yearTo&#39;),
+  btnResetYear: document.getElementById(&#39;btnResetYear&#39;),
+  activeFilters: document.getElementById(&#39;activeFilters&#39;),
+  dbgWrap: document.getElementById(&#39;talks-debug&#39;),
+  dbg: document.getElementById(&#39;talks-debug-pre&#39;),
+};
+const state = {
+  all: [],
+  sortMode: &#39;date-desc&#39;,
+  types: new Set(),
+  modalities: new Set(),
+  continents: new Set(),
+  countryContains: &#39;&#39;,
+  yearFrom: null, yearTo: null, minYear: null, maxYear: null
+};
+
+/*** ===== Debug helper ===== ***/
+function logd(...a){ if(DEBUG){ console.log(&#39;[talks]&#39;,...a); els.dbgWrap.style.display=&#39;block&#39;; els.dbg.textContent += a.map(x=&gt;typeof x===&#39;string&#39;?x:JSON.stringify(x,null,2)).join(&#39; &#39;)+&#39;\n&#39;; }}
+
+/*** ===== Fetch &amp; parse multiple .bib files ===== ***/
+async function fetchText(url){
+  const res = await fetch(url, {cache:&#39;no-cache&#39;});
+  if(!res.ok) throw new Error(&#39;Failed &#39;+url+&#39; &#39;+res.status);
+  return res.text();
+}
+async function loadAllSources(){
+  const out = [];
+  for(const [kind, path] of Object.entries(TALKS_SOURCES)){
+    try{
+      const text = await fetchText(new URL(path, document.baseURI).href);
+      const entries = parseBibTeX(text);
+      entries.forEach(e =&gt; e._kind = kind);
+      out.push(...entries);
+      logd(&#39;Loaded&#39;, kind, &#39;entries:&#39;, entries.length, &#39;from&#39;, path);
+    }catch(err){
+      logd(&#39;Error loading&#39;, kind, path, String(err));
+    }
+  }
+  return out;
+}
+
+/*** ===== BibTeX utils &amp; parser ===== ***/
+function uniqueSorted(arr){ return [...new Set(arr)].sort((a,b)=&gt;a.localeCompare(b,&#39;en&#39;,{sensitivity:&#39;base&#39;})); }
+function trimBraces(str){ return (str||&#39;&#39;).replace(/^{|}$/g,&#39;&#39;); }
+function untex(s){
+  if(!s) return &#39;&#39;;
+  return s
+    .replace(/\\&amp;/g,&#39;&amp;&#39;).replace(/\\%/g,&#39;%&#39;)
+    .replace(/{\\\&#39;?a}/g,&#39;á&#39;).replace(/\\\&#39;a/g,&#39;á&#39;)
+    .replace(/{\\\&#34;o}/g,&#39;ö&#39;).replace(/\\&#34;o/g,&#39;ö&#39;)
+    .replace(/{\\\&#39;?e}/g,&#39;é&#39;).replace(/\\\&#39;e/g,&#39;é&#39;)
+    .replace(/{\\\&#39;?i}/g,&#39;í&#39;).replace(/\\\&#39;i/g,&#39;í&#39;)
+    .replace(/{\\\&#39;?o}/g,&#39;ó&#39;).replace(/\\\&#39;o/g,&#39;ó&#39;)
+    .replace(/{\\\&#39;?u}/g,&#39;ú&#39;).replace(/\\\&#39;u/g,&#39;ú&#39;)
+    .replace(/\\textendash/g,&#39;–&#39;).replace(/\\textemdash/g,&#39;—&#39;)
+    .replace(/\$[^$]*\$/g,&#39;&#39;)
+    .replace(/[{}]/g,&#39;&#39;)
+    .replace(/\s+/g,&#39; &#39;)
+    .trim();
+}
+function monthToNum(m){
+  if(!m) return &#39;&#39;;
+  const s = m.toString().toLowerCase().slice(0,3);
+  const map = {jan:&#39;01&#39;,feb:&#39;02&#39;,mar:&#39;03&#39;,apr:&#39;04&#39;,may:&#39;05&#39;,jun:&#39;06&#39;,jul:&#39;07&#39;,aug:&#39;08&#39;,sep:&#39;09&#39;,oct:&#39;10&#39;,nov:&#39;11&#39;,dec:&#39;12&#39;};
+  return map[s] || &#39;&#39;;
+}
+function monthToAlpha(m){
+  if(!m) return &#39;&#39;;
+  const s = m.toString().toLowerCase().slice(0,3);
+  const map = {jan:&#39;Jan&#39;,feb:&#39;Feb&#39;,mar:&#39;Mar&#39;,apr:&#39;Apr&#39;,may:&#39;May&#39;,jun:&#39;Jun&#39;,jul:&#39;Jul&#39;,aug:&#39;Aug&#39;,sep:&#39;Sep&#39;,oct:&#39;Oct&#39;,nov:&#39;Nov&#39;,dec:&#39;Dec&#39;};
+  return map[s] || &#39;&#39;;
+}
+function parseBibTeX(input){
+  const text = input.replace(/^[ \t]*%.*$/gm,&#39;&#39;); // strip % comments
+  const strings = Object.create(null);
+  const entries = [];
+  let i=0;
+  while(true){
+    const at = text.indexOf(&#39;@&#39;, i);
+    if(at === -1) break;
+    const braceIdx = text.indexOf(&#39;{&#39;, at);
+    const parenIdx = text.indexOf(&#39;(&#39;, at);
+    let open = braceIdx, closeCh = &#39;}&#39;;
+    if(parenIdx !== -1 &amp;&amp; (braceIdx === -1 || parenIdx &lt; braceIdx)){ open = parenIdx; closeCh = &#39;)&#39;; }
+    if(open === -1) break;
+    const type = text.slice(at+1, open).trim().toLowerCase();
+    // read block
+    let depth = 0, j = open, end = -1;
+    for(; j &lt; text.length; j++){
+      const ch = text[j];
+      if(ch === &#39;{&#39; || ch===&#39;(&#39;) depth++;
+      else if(ch === &#39;}&#39; || ch===&#39;)&#39;){ depth--; if(depth===0){ end = j; break; } }
+    }
+    if(end === -1) break;
+    const body = text.slice(open+1, end).trim();
+    i = end + 1;
+    if(type===&#39;comment&#39; || type===&#39;preamble&#39;){ continue; }
+    if(type===&#39;string&#39;){
+      const m = body.match(/^\s*([^=]+?)\s*=\s*(.+)\s*$/s);
+      if(m){
+        const key = m[1].trim().toLowerCase();
+        const val = parseValue(m[2].trim());
+        strings[key] = val;
+      }
+      continue;
+    }
+    // normal entry
+    let k=0, keyEnd=-1, d=0;
+    for(; k&lt;body.length; k++){
+      const ch = body[k];
+      if(ch === &#39;{&#39;) d++;
+      if(ch === &#39;}&#39;) d--;
+      if(ch === &#39;,&#39; &amp;&amp; d===0){ keyEnd = k; break; }
+    }
+    if(keyEnd === -1) continue;
+    const citekey = body.slice(0,keyEnd).trim();
+    const fieldsText = body.slice(keyEnd+1).trim();
+    const fields = {};
+    let p=0;
+    while(p &lt; fieldsText.length){
+      while(p&lt;fieldsText.length &amp;&amp; /[\s,]/.test(fieldsText[p])) p++;
+      if(p&gt;=fieldsText.length) break;
+      const nameStart = p;
+      while(p&lt;fieldsText.length &amp;&amp; /[A-Za-z_]/.test(fieldsText[p])) p++;
+      const name = fieldsText.slice(nameStart,p).toLowerCase();
+      while(p&lt;fieldsText.length &amp;&amp; /\s/.test(fieldsText[p])) p++;
+      if(fieldsText[p] !== &#39;=&#39;){ while(p&lt;fieldsText.length &amp;&amp; fieldsText[p]!==&#39;,&#39;) p++; continue; }
+      p++; while(p&lt;fieldsText.length &amp;&amp; /\s/.test(fieldsText[p])) p++;
+      const {value, next} = parseValueWithConcat(fieldsText, p, strings);
+      p = next;
+      fields[name] = value.trim();
+    }
+    entries.push({type, key: citekey, fields});
+  }
+  return entries;
+
+  function parseValueWithConcat(s, idx, strings){
+    const parts = [];
+    let p = idx;
+    while(p &lt; s.length){
+      while(p&lt;s.length &amp;&amp; /\s/.test(s[p])) p++;
+      if(p&gt;=s.length) break;
+      let {value, next} = parseValueToken(s, p, strings);
+      parts.push(value);
+      p = next;
+      while(p&lt;s.length &amp;&amp; /\s/.test(s[p])) p++;
+      if(s[p] === &#39;#&#39;){ p++; continue; }
+      break;
+    }
+    while(p&lt;s.length &amp;&amp; s[p]!==&#39;,&#39;) p++;
+    if(p&lt;s.length &amp;&amp; s[p]===&#39;,&#39;) p++;
+    return {value: parts.join(&#39;&#39;), next: p};
+  }
+  function parseValueToken(s, p, strings){
+    if(s[p] === &#39;{&#39;){
+      let depth=0; p++; const start=p;
+      for(; p&lt;s.length; p++){
+        const ch=s[p];
+        if(ch===&#39;{&#39;) depth++;
+        else if(ch===&#39;}&#39;){ if(depth===0){ const raw=s.slice(start,p); p++; return {value: raw, next:p}; } depth--; }
+      }
+      return {value:&#39;&#39;, next:p};
+    }else if(s[p] === &#39;&#34;&#39;){
+      p++; const start=p;
+      for(; p&lt;s.length; p++){ if(s[p]===&#39;&#34;&#39; &amp;&amp; s[p-1] !== &#39;\\&#39;){ const raw=s.slice(start,p); p++; return {value: raw, next:p}; } }
+      return {value:&#39;&#39;, next:p};
+    }else{
+      const start=p;
+      while(p&lt;s.length &amp;&amp; /[^,\s#)}/]/.test(s[p])) p++;
+      const token = s.slice(start,p).trim();
+      const key = token.toLowerCase();
+      const val = (strings[key] ?? token);
+      return {value: val, next:p};
+    }
+  }
+  function parseValue(val){
+    val = val.trim();
+    if(val.startsWith(&#39;{&#39;) || val.startsWith(&#39;&#34;&#39;)) return trimBraces(val.replace(/^&#34;|&#34;$/g,&#39;&#39;));
+    const k = val.toLowerCase(); return strings[k] ?? val;
+  }
+}
+
+/*** ===== Map Bib entry -&gt; Talk item ===== ***/
+function pick(...vals){ return vals.find(v =&gt; v &amp;&amp; String(v).trim().length) || &#39;&#39;; }
+function normalizeLocation(f){
+  const loc = pick(f.address, f.location, f.venue, f.institution, f.organization, f.school, f.publisher, f.howpublished, f.note, f.place);
+  return untex(trimBraces(loc)).replace(/\s+/g,&#39; &#39;).trim();
+}
+function extractCountry(loc){
+  const s = (loc||&#39;&#39;).toLowerCase();
+  const parts = s.split(&#39;,&#39;).map(x=&gt;x.trim()).filter(Boolean);
+  let guess = parts[parts.length-1] || s;
+  guess = guess.replace(/\busa\b|\bu\.s\.a\.\b/g,&#39;united states&#39;).replace(/\buk\b/g,&#39;united kingdom&#39;);
+  return guess;
+}
+const COUNTRY_TO_CONTINENT = {
+  &#34;japan&#34;:&#34;Asia&#34;,&#34;india&#34;:&#34;Asia&#34;,&#34;china&#34;:&#34;Asia&#34;,&#34;korea&#34;:&#34;Asia&#34;,&#34;taiwan&#34;:&#34;Asia&#34;,&#34;singapore&#34;:&#34;Asia&#34;,&#34;thailand&#34;:&#34;Asia&#34;,&#34;vietnam&#34;:&#34;Asia&#34;,&#34;indonesia&#34;:&#34;Asia&#34;,
+  &#34;usa&#34;:&#34;North America&#34;,&#34;united states&#34;:&#34;North America&#34;,&#34;canada&#34;:&#34;North America&#34;,&#34;mexico&#34;:&#34;North America&#34;,
+  &#34;united kingdom&#34;:&#34;Europe&#34;,&#34;england&#34;:&#34;Europe&#34;,&#34;scotland&#34;:&#34;Europe&#34;,&#34;wales&#34;:&#34;Europe&#34;,&#34;ireland&#34;:&#34;Europe&#34;,
+  &#34;germany&#34;:&#34;Europe&#34;,&#34;france&#34;:&#34;Europe&#34;,&#34;italy&#34;:&#34;Europe&#34;,&#34;spain&#34;:&#34;Europe&#34;,&#34;portugal&#34;:&#34;Europe&#34;,&#34;sweden&#34;:&#34;Europe&#34;,&#34;norway&#34;:&#34;Europe&#34;,&#34;finland&#34;:&#34;Europe&#34;,&#34;denmark&#34;:&#34;Europe&#34;,&#34;netherlands&#34;:&#34;Europe&#34;,&#34;belgium&#34;:&#34;Europe&#34;,&#34;switzerland&#34;:&#34;Europe&#34;,&#34;austria&#34;:&#34;Europe&#34;,&#34;poland&#34;:&#34;Europe&#34;,&#34;czech&#34;:&#34;Europe&#34;,&#34;czech republic&#34;:&#34;Europe&#34;,&#34;slovakia&#34;:&#34;Europe&#34;,&#34;hungary&#34;:&#34;Europe&#34;,&#34;greece&#34;:&#34;Europe&#34;,
+  &#34;australia&#34;:&#34;Oceania&#34;,&#34;new zealand&#34;:&#34;Oceania&#34;,
+  &#34;brazil&#34;:&#34;South America&#34;,&#34;argentina&#34;:&#34;South America&#34;,&#34;chile&#34;:&#34;South America&#34;,&#34;peru&#34;:&#34;South America&#34;,&#34;colombia&#34;:&#34;South America&#34;,
+  &#34;south africa&#34;:&#34;Africa&#34;,&#34;kenya&#34;:&#34;Africa&#34;,&#34;egypt&#34;:&#34;Africa&#34;,&#34;morocco&#34;:&#34;Africa&#34;,&#34;ghana&#34;:&#34;Africa&#34;,&#34;nigeria&#34;:&#34;Africa&#34;,
+  &#34;israel&#34;:&#34;Asia&#34;,&#34;turkey&#34;:&#34;Asia&#34;
+};
+function continentFromCountry(country){
+  const key = (country||&#39;&#39;).toLowerCase();
+  for(const name in COUNTRY_TO_CONTINENT){ if(key.includes(name)) return COUNTRY_TO_CONTINENT[name]; }
+  return &#39;&#39;;
+}
+function modalityFromFields(f){
+  const raw = [f.modality, f.note, f.howpublished, f.venue].filter(Boolean).join(&#39; &#39;).toLowerCase();
+  const hasOnline = /online|virtual|zoom|youtube|livestream/.test(raw);
+  const hasPlace  = /room|hall|campus|auditorium|street|city|in-person|on-site|onsite/.test(raw);
+  if(/hybrid/.test(raw)) return &#39;Hybrid&#39;;
+  if(hasOnline &amp;&amp; hasPlace) return &#39;Hybrid&#39;;
+  if(hasOnline) return &#39;Online&#39;;
+  return &#39;In-person&#39;;
+}
+
+/* date helpers */
+function formatDateLabel(y, mNum, mAlpha, d){
+  const pad = n =&gt; String(n||&#39;&#39;).padStart(2,&#39;0&#39;);
+  if(DATE_STYLE === &#39;jp&#39;){
+    if(y &amp;&amp; mNum &amp;&amp; d) return `${y}年${pad(mNum)}月${pad(d)}日`;
+    if(y &amp;&amp; mNum)      return `${y}年${pad(mNum)}月`;
+    if(y)              return `${y}年`;
+    return &#39;&#39;;
+  }
+  if(DATE_STYLE === &#39;en&#39;){
+    if(y &amp;&amp; mAlpha &amp;&amp; d) return `${y}${mAlpha}${pad(d)}`;
+    if(y &amp;&amp; mAlpha)      return `${mAlpha} ${y}`;
+    if(y)                return String(y);
+    return &#39;&#39;;
+  }
+  // auto
+  if(y &amp;&amp; mNum &amp;&amp; d) return `${y}年${pad(mNum)}月${pad(d)}日`; // full JP when day exists
+  if(y &amp;&amp; mAlpha)    return `${mAlpha} ${y}`;                  // Mon YYYY otherwise
+  if(y)              return String(y);
+  return &#39;&#39;;
+}
+function mapDate(fields){
+  const y = parseInt((fields.year||&#39;&#39;).match(/\d{4}/)?.[0]||&#39;&#39;)||0;
+  const mNum = monthToNum(fields.month||&#39;&#39;);        // &#34;01&#34; .. &#34;12&#34;
+  const mAlpha = monthToAlpha(fields.month||&#39;&#39;);    // &#34;Jan&#34; etc.
+  const d = parseInt((fields.day||&#39;&#39;).toString(),10) || &#39;&#39;;
+  const dateKey = `${y || &#39;0000&#39;}-${mNum || &#39;00&#39;}-${String(d||&#39;00&#39;).padStart(2,&#39;0&#39;)}`;
+  const label = formatDateLabel(y, mNum, mAlpha, d);
+  return {year: y, dateKey, label};
+}
+function bibToTalk(e){
+  const f = e.fields;
+  const title = untex(trimBraces(f.title||&#39;&#39;)).replace(/\s+/g,&#39; &#39;).trim();
+  const event = untex(trimBraces(pick(f.event, f.eventtitle, f.booktitle, f.series, f.journal, f.organization, f.institution, f.school))).trim();
+  const loc = normalizeLocation(f);
+  const countryRaw = extractCountry(loc);
+  const continent = continentFromCountry(countryRaw);
+  const {year, dateKey, label: dateLabel} = mapDate(f);
+  const modality = modalityFromFields(f);
+  const slides = pick(f.slides, f.materials, f.presentation, f.url, f.link);
+  const page = pick(f.page, f.project, f.website);
+  return {
+    id: e.key,
+    type: e._kind || &#39;Other&#39;,
+    title, event,
+    location: loc,
+    continent,
+    country: untex(countryRaw).trim(),
+    modality,
+    year, dateKey, dateLabel,
+    slides: slides || null,
+    page: page || null
+  };
+}
+
+/*** ===== UI helpers ===== ***/
+function initFilters(talks){
+  const types = [&#34;Invited&#34;,&#34;Contributed&#34;,&#34;Poster&#34;,&#34;Other&#34;];
+  if(els.filterTypes) els.filterTypes.innerHTML = types.map(t=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${t}&#34;&gt; ${t}&lt;/label&gt;`).join(&#39;&#39;);
+  const conts = uniqueSorted(talks.map(t=&gt;t.continent).filter(Boolean));
+  const list = conts.length ? conts : [&#34;Africa&#34;,&#34;Asia&#34;,&#34;Europe&#34;,&#34;North America&#34;,&#34;South America&#34;,&#34;Oceania&#34;,&#34;Antarctica&#34;];
+  if(els.filterContinents) els.filterContinents.innerHTML = list.map(c=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${c}&#34;&gt; ${c}&lt;/label&gt;`).join(&#39;&#39;);
+  const years = talks.map(t=&gt;t.year).filter(Boolean);
+  state.minYear = years.length ? Math.min(...years) : 2000;
+  state.maxYear = years.length ? Math.max(...years) : new Date().getFullYear();
+  state.yearFrom = state.minYear; state.yearTo = state.maxYear;
+  if(els.yearFrom &amp;&amp; els.yearTo){
+    els.yearFrom.min = els.yearTo.min = String(state.minYear);
+    els.yearFrom.max = els.yearTo.max = String(state.maxYear);
+    els.yearFrom.value = String(state.yearFrom); els.yearTo.value = String(state.yearTo);
+  }
+}
+function button(label, icon, url){
+  if(!url) return &#39;&#39;;
+  return `&lt;a class=&#34;btn-chip&#34; href=&#34;${url.replace(/&#34;/g,&#39;%22&#39;)}&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;i class=&#34;fa ${icon}&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; ${label}&lt;/a&gt;`;
+}
+function iconChip(label, icon){ return `&lt;span class=&#34;btn-chip&#34; role=&#34;note&#34;&gt;&lt;i class=&#34;fa ${icon}&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; ${label}&lt;/span&gt;`; }
+function mapsLink(q){ return &#39;https://www.google.com/maps/search/?api=1&amp;query=&#39; + encodeURIComponent(q); }
+
+function renderActiveFilters(){
+  if(!els.activeFilters) return;
+  const chips=[];
+  if(state.types.size) state.types.forEach(t=&gt;chips.push(makeChip(&#39;Type&#39;, t, &#39;type&#39;, t)));
+  if(state.modalities.size) state.modalities.forEach(m=&gt;chips.push(makeChip(&#39;Mode&#39;, m, &#39;mod&#39;, m)));
+  if(state.continents.size) state.continents.forEach(c=&gt;chips.push(makeChip(&#39;Continent&#39;, c, &#39;cont&#39;, c)));
+  if(state.countryContains) chips.push(makeChip(&#39;Country&#39;, state.countryContains, &#39;country&#39;, &#39;1&#39;));
+  if(state.yearFrom!==state.minYear || state.yearTo!==state.maxYear){
+    chips.push(`&lt;span class=&#34;chip&#34;&gt;Years: ${state.yearFrom}–${state.yearTo}&lt;button aria-label=&#34;Reset years&#34; data-x-year=&#34;1&#34;&gt;&lt;i class=&#34;fa fa-times&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/span&gt;`);
+  }
+  els.activeFilters.innerHTML = chips.join(&#39;&#39;);
+  els.activeFilters.querySelectorAll(&#39;button[data-x-type]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.types.delete(b.dataset.xType); syncDialogChecks(); render(); }));
+  els.activeFilters.querySelectorAll(&#39;button[data-x-mod]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.modalities.delete(b.dataset.xMod); syncDialogChecks(); render(); }));
+  els.activeFilters.querySelectorAll(&#39;button[data-x-cont]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.continents.delete(b.dataset.xCont); syncDialogChecks(); render(); }));
+  els.activeFilters.querySelectorAll(&#39;button[data-x-country]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.countryContains=&#39;&#39;; if(els.countryContains) els.countryContains.value=&#39;&#39;; render(); }));
+  els.activeFilters.querySelectorAll(&#39;button[data-x-year]&#39;).forEach(b=&gt;b.addEventListener(&#39;click&#39;,()=&gt;{ state.yearFrom=state.minYear; state.yearTo=state.maxYear; syncDialogChecks(); render(); }));
+  function makeChip(label, val, kind, data){
+    return `&lt;span class=&#34;chip&#34;&gt;${label}: ${val}&lt;button aria-label=&#34;Remove ${label}&#34; data-x-${kind}=&#34;${data}&#34;&gt;&lt;i class=&#34;fa fa-times&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/span&gt;`;
+  }
+}
+function passesFilters(t){
+  const tOK = state.types.size ? state.types.has(t.type) : true;
+  const mOK = state.modalities.size ? state.modalities.has(t.modality) : true;
+  const cOK = state.continents.size ? state.continents.has(t.continent) : true;
+  const cc = state.countryContains.trim().toLowerCase();
+  const countryOK = cc ? (t.country||&#39;&#39;).toLowerCase().includes(cc) : true;
+  const yOK = (!state.yearFrom || !t.year || t.year &gt;= state.yearFrom) &amp;&amp;
+              (!state.yearTo   || !t.year || t.year &lt;= state.yearTo);
+  return tOK &amp;&amp; mOK &amp;&amp; cOK &amp;&amp; countryOK &amp;&amp; yOK;
+}
+function sortTalks(list){
+  const m = state.sortMode;
+  return [...list].sort((a,b)=&gt;{
+    if(m===&#39;date-desc&#39;) return b.dateKey.localeCompare(a.dateKey) || a.title.localeCompare(b.title);
+    if(m===&#39;date-asc&#39;)  return a.dateKey.localeCompare(b.dateKey) || a.title.localeCompare(b.title);
+    if(m===&#39;title-asc&#39;) return a.title.localeCompare(b.title,&#39;en&#39;,{sensitivity:&#39;base&#39;});
+    if(m===&#39;title-desc&#39;)return b.title.localeCompare(a.title,&#39;en&#39;,{sensitivity:&#39;base&#39;});
+    if(m===&#39;loc-asc&#39;)   return (a.location||&#39;&#39;).localeCompare((b.location||&#39;&#39;),&#39;en&#39;,{sensitivity:&#39;base&#39;});
+    if(m===&#39;loc-desc&#39;)  return (b.location||&#39;&#39;).localeCompare((a.location||&#39;&#39;),&#39;en&#39;,{sensitivity:&#39;base&#39;});
+    if(m===&#39;type-asc&#39;)  return a.type.localeCompare(b.type);
+    if(m===&#39;type-desc&#39;) return b.type.localeCompare(a.type);
+    return 0;
+  });
+}
+function render(){
+  const filtered = state.all.filter(passesFilters);
+  const sorted = sortTalks(filtered);
+  if(els.list) els.list.setAttribute(&#39;start&#39;, String(sorted.length));
+  if(els.list) els.list.innerHTML = sorted.map(t =&gt; {
+    const titleHtml = t.page ? `&lt;a href=&#34;${t.page.replace(/&#34;/g,&#39;%22&#39;)}&#34; class=&#34;title-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;${t.title}&lt;/a&gt;` : `${t.title}`;
+    const meta = [t.event, t.type, t.modality].filter(Boolean).join(&#39; • &#39;);
+    const actions = [
+      t.location ? button(t.location, &#39;fa-location-dot&#39;, mapsLink(t.location)) : &#39;&#39;,
+      t.dateLabel ? iconChip(t.dateLabel, &#39;fa-calendar-days&#39;) : &#39;&#39;,
+      t.slides ? button(&#39;Slides&#39;, &#39;fa-file-lines&#39;, t.slides) : &#39;&#39;,
+      t.page ? button(&#39;Page&#39;, &#39;fa-up-right-from-square&#39;, t.page) : &#39;&#39;
+    ].filter(Boolean).join(&#39; &#39;);
+    return `
+      &lt;li class=&#34;talk-item&#34;&gt;
+        &lt;p class=&#34;talk-title&#34;&gt;${titleHtml}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>http://localhost:1313/en/pages/tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/tips/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t ever save built files like PDFs in git history, if all requirements for building them are already saved. This increases the storages in the long run.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Writings</title>
+      <link>http://localhost:1313/en/pages/writings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pages/writings/</guid>
+      <description>&lt;h2 id=&#34;popular-science-articles&#34;&gt;Popular Science Articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;S. Garg. Mathematics of the Evolution Game. Bhavana magazine, 2024. (submitted).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;S. Garg. Removing Noise in Gravitational-Wave Signals. Science Reporter, 2022.
+ 
+&lt;br/&gt;
+&lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;
+&lt;a href=&#34;http://nopr.niscpr.res.in/handle/123456789/61105&#34;&gt;URL&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;general-writings&#34;&gt;General Writings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Art and Connections: KT in conversation with Fernando Kague. Komaba Times, Issue 14. Apr 2025.
+ 
+&lt;i class=&#34;fa fa-link&#34;&gt;&lt;/i&gt;
+&lt;a href=&#34;https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cold Nights, Tokyo and Tenali Rama. Kamaba Times, Issue 14. Apr 2025.
+ 
+&lt;i class=&#34;fa fa-link&#34;&gt;&lt;/i&gt;
+&lt;a href=&#34;https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;उसके श्रम के वह आँसू (कविता)। Jan 2025.
+&lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;&lt;a href=&#34;https://vaishvikhindi.com/posts/8528&#34;&gt;vaishvikhindi/posts/8528&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;इस देश में बसंत (कविता)। Oct 2024.
+ 
+&lt;i class=&#34;fa fa-external-link-alt&#34;&gt; &lt;/i&gt;&lt;a href=&#34;https://vaishvikhindi.com/posts/5620&#34;&gt;vaishvikhindi/posts/5620&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/zotero/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BibTex, Zotero and REVTex</title>
-      <link>http://localhost:1313/posts/2025-11-03-zotero-bibtex-authors/</link>
+      <link>http://localhost:1313/en/posts/2025-11-03-zotero-bibtex-authors/</link>
       <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025-11-03-zotero-bibtex-authors/</guid>
+      <guid>http://localhost:1313/en/posts/2025-11-03-zotero-bibtex-authors/</guid>
       <description>&lt;h2 id=&#34;killing-the-lbibitem-error-in-revtex-and-autotruncating-huge-author-lists-from-zotero-better-bibtex&#34;&gt;Killing the &lt;code&gt;\@lbibitem&lt;/code&gt; Error in REVTeX and Auto‑Truncating Huge Author Lists from Zotero (Better BibTeX)&lt;/h2&gt;
 &lt;p&gt;This note documents the exact fixes I used when REVTeX + APS style blew up on a long collaboration paper (Abbott et al. 2016, LIGO/Virgo), and how I automated Better BibTeX (Zotero) to &lt;strong&gt;truncate 100+ authors&lt;/strong&gt; at export and/or &lt;strong&gt;prefer the Collaboration name&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
@@ -35,9 +35,9 @@
     </item>
     <item>
       <title>Issues with Zotero and working them out!</title>
-      <link>http://localhost:1313/posts/2025-03-18-zotero-issues/</link>
+      <link>http://localhost:1313/en/posts/2025-03-18-zotero-issues/</link>
       <pubDate>Tue, 18 Mar 2025 15:05:28 +1100</pubDate>
-      <guid>http://localhost:1313/posts/2025-03-18-zotero-issues/</guid>
+      <guid>http://localhost:1313/en/posts/2025-03-18-zotero-issues/</guid>
       <description>&lt;p&gt;A log of Zotero issues, I have encountered.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;The the Zotero chrome connector doesn&amp;rsquo;t always work. This issue arises sporadically every now and then. A workaround I devised for this is to use the webpage version of the zotero library via login to the website. The library is available at: &lt;a href=&#34;https://www.zotero.org/suyoggarg/collections/U8AAVCPJ/items/R6EYB749/item-list&#34;&gt;https://www.zotero.org/suyoggarg/mylibrary/&lt;/a&gt;&lt;/p&gt;

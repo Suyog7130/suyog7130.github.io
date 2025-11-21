@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mac No‑Mouse Keyboard-only Rescue</title>
-      <link>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</link>
+      <link>http://localhost:1313/en/posts/2025-04-01-mac-with-only-keyboard/</link>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</guid>
+      <guid>http://localhost:1313/en/posts/2025-04-01-mac-with-only-keyboard/</guid>
       <description>&lt;h2 id=&#34;how-to-turn-on-bluetooth--reconnect-your-mouse-using-only-the-keyboard-sonomaventura&#34;&gt;How to turn on Bluetooth &amp;amp; Reconnect Your Mouse Using Only the Keyboard (Sonoma/Ventura)&lt;/h2&gt;
 &lt;p&gt;iMac when used with bluetooth Apple keyboards and mouse has a faintly annoying problem of the inability to use the mouse if it doesn&amp;rsquo;t automatically gets connected to the system. A possible remedy and workaround for this is to use keyboard keys for mouse control.&lt;/p&gt;
 &lt;ul&gt;
@@ -30,9 +30,9 @@
     </item>
     <item>
       <title>pdf2jpg via terminal</title>
-      <link>http://localhost:1313/posts/2024-03-22-pdf2jpg/</link>
+      <link>http://localhost:1313/en/posts/2024-03-22-pdf2jpg/</link>
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-03-22-pdf2jpg/</guid>
+      <guid>http://localhost:1313/en/posts/2024-03-22-pdf2jpg/</guid>
       <description>&lt;p&gt;How to convert PDF to JPG/PNG (images) via command line prompts on MacOS &lt;code&gt;zsh&lt;/code&gt; terminal.&lt;/p&gt;
 &lt;p&gt;STEP 1 : Install &lt;code&gt;poppler&lt;/code&gt; via &lt;code&gt;brew install poppler&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;STEP 2a : If you only wanna convert one file, run,&lt;/p&gt;

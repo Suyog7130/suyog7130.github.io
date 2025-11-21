@@ -16,18 +16,18 @@
     <atom:link href="http://localhost:1313/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making someone co-host on scheduled zoom meeting</title>
-      <link>http://localhost:1313/posts/2025-11-14-zoom-alternate-host/</link>
+      <link>http://localhost:1313/en/posts/2025-11-14-zoom-alternate-host/</link>
       <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025-11-14-zoom-alternate-host/</guid>
+      <guid>http://localhost:1313/en/posts/2025-11-14-zoom-alternate-host/</guid>
       <description>&lt;p&gt;When you can’t attend or might be late to a &lt;strong&gt;recurring Zoom meeting&lt;/strong&gt;, the safest way to ensure class or group can begin on time is to let a trusted colleague &lt;strong&gt;start the meeting for you&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Key point:&lt;/strong&gt; In Zoom, a &lt;strong&gt;co‑host&lt;/strong&gt; can help manage a running meeting &lt;strong&gt;but cannot start it&lt;/strong&gt;. For starting the meeting without you, use &lt;strong&gt;Alternative host&lt;/strong&gt; (recommended), or &lt;strong&gt;Host key + Join before host&lt;/strong&gt; (backup), or &lt;strong&gt;Scheduling privilege&lt;/strong&gt; (for ongoing delegation).&lt;/p&gt;</description>
     </item>
     <item>
       <title>On switching to TexStudio!</title>
-      <link>http://localhost:1313/posts/2025-04-03-texstudio/</link>
+      <link>http://localhost:1313/en/posts/2025-04-03-texstudio/</link>
       <pubDate>Thu, 03 Apr 2025 18:25:31 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2025-04-03-texstudio/</guid>
+      <guid>http://localhost:1313/en/posts/2025-04-03-texstudio/</guid>
       <description>&lt;p&gt;For many many year I have been using &lt;a href=&#34;http://www.xm1math.net/texmaker/&#34;&gt;TexMaker&lt;/a&gt; for all my offline LaTeX document creation, compiling and editing needs. A few years back, Overleaf came along with its super ease-of-access approach to online LaTeX document editing and sharing. Overleaf has an edge over other LaTeX software distributions, mainly because of the following reasons:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Overleaf is online, so the document can be accessed from anywhere with Internet.&lt;/li&gt;
@@ -39,9 +39,9 @@
     </item>
     <item>
       <title>How to install gwpopulation on MacOS</title>
-      <link>http://localhost:1313/posts/2025-03-11-how-to-install-gwpopulation/</link>
+      <link>http://localhost:1313/en/posts/2025-03-11-how-to-install-gwpopulation/</link>
       <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025-03-11-how-to-install-gwpopulation/</guid>
+      <guid>http://localhost:1313/en/posts/2025-03-11-how-to-install-gwpopulation/</guid>
       <description>&lt;h2 id=&#34;basic-gwpopulation-installation&#34;&gt;Basic &lt;code&gt;gwpopulation&lt;/code&gt; installation&lt;/h2&gt;
 &lt;p&gt;To install &lt;code&gt;gwpopulation&lt;/code&gt; do:&lt;/p&gt;
 &lt;ul&gt;
@@ -66,16 +66,16 @@
     </item>
     <item>
       <title>Guide to Hugo PaperMod Website</title>
-      <link>http://localhost:1313/posts/papermod-website/</link>
+      <link>http://localhost:1313/en/posts/papermod-website/</link>
       <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/papermod-website/</guid>
+      <guid>http://localhost:1313/en/posts/papermod-website/</guid>
       <description></description>
     </item>
     <item>
       <title>How to Manage Your Research Paper Library with Zotero</title>
-      <link>http://localhost:1313/posts/2024-11-28-zotero/</link>
+      <link>http://localhost:1313/en/posts/2024-11-28-zotero/</link>
       <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-11-28-zotero/</guid>
+      <guid>http://localhost:1313/en/posts/2024-11-28-zotero/</guid>
       <description>&lt;p&gt;If you’re a researcher, student, or academic drowning in PDFs and journal articles, Zotero might be the tool you didn’t know you needed. It&amp;rsquo;s a powerful, free, and open-source reference manager that helps you collect, organize, annotate, cite, and share your research materials with ease.&lt;/p&gt;
 &lt;p&gt;In this post, we’ll look at how to set up and optimize Zotero for managing a growing library of research papers, especially PDFs. We&amp;rsquo;ll also explore helpful features and best practices to avoid common pitfalls.&lt;/p&gt;</description>
     </item>

@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/conda/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Conda and Conda Command Cheatsheet</title>
-      <link>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</link>
+      <link>http://localhost:1313/en/posts/2025-04-11-conda-cmd-cheatsheet/</link>
       <pubDate>Fri, 11 Apr 2025 15:01:20 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</guid>
+      <guid>http://localhost:1313/en/posts/2025-04-11-conda-cmd-cheatsheet/</guid>
       <description>&lt;h3 id=&#34;installing-conda-package-on-macos&#34;&gt;Installing Conda package on macOS&lt;/h3&gt;
 &lt;p&gt;Do:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install --cask conda

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/2021-05-09-terminal-commands/</loc>
+    <loc>http://localhost:1313/en/posts/2021-05-09-terminal-commands/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/bash/</loc>
@@ -11,16 +11,16 @@
     <loc>http://localhost:1313/tags/debugging/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-11-13-install-eza-no-sudo/</loc>
+    <loc>http://localhost:1313/en/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/posts/2025-11-13-install-eza-no-sudo/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-11-14-zoom-alternate-host/</loc>
-    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/en/posts/2025-11-14-zoom-alternate-host/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/software/</loc>
@@ -73,7 +73,7 @@
     <loc>http://localhost:1313/tags/guide/</loc>
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-04-01-mac-with-only-keyboard/</loc>
+    <loc>http://localhost:1313/en/posts/2025-04-01-mac-with-only-keyboard/</loc>
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/macos/</loc>
@@ -82,7 +82,7 @@
     <loc>http://localhost:1313/tags/bibtex/</loc>
     <lastmod>2025-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-11-03-zotero-bibtex-authors/</loc>
+    <loc>http://localhost:1313/en/posts/2025-11-03-zotero-bibtex-authors/</loc>
     <lastmod>2025-11-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/zotero/</loc>
@@ -94,52 +94,34 @@
     <loc>http://localhost:1313/tags/chatgpt/</loc>
     <lastmod>2025-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-08-16-jennie-voice/</loc>
+    <loc>http://localhost:1313/en/posts/2025-08-16-jennie-voice/</loc>
     <lastmod>2025-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tech/</loc>
     <lastmod>2025-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-06-17-tmux-on-centos/</loc>
+    <loc>http://localhost:1313/en/posts/2025-06-17-tmux-on-centos/</loc>
     <lastmod>2025-06-17T13:36:15+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-06-16-flight-pricing/</loc>
+    <loc>http://localhost:1313/en/posts/2025-06-16-flight-pricing/</loc>
     <lastmod>2025-06-16T01:22:03+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2025-05-15T22:14:18+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-05-15-git-history-edits/</loc>
+    <loc>http://localhost:1313/en/posts/2025-05-15-git-history-edits/</loc>
     <lastmod>2025-05-15T22:14:18+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/conda/</loc>
     <lastmod>2025-04-11T15:01:20+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-04-11-conda-cmd-cheatsheet/</loc>
+    <loc>http://localhost:1313/en/posts/2025-04-11-conda-cmd-cheatsheet/</loc>
     <lastmod>2025-04-11T15:01:20+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/multilingual/</loc>
-    <lastmod>2025-04-03T18:58:07+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/multilingual/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/multilingual/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/multilingual/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/multilingual/hindi/teaching/softtools/</loc>
+    <loc>http://localhost:1313/en/teaching/softtools/</loc>
     <lastmod>2025-04-03T18:58:07+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/multilingual/hindi/teaching/ml4astro/notes@ml4astro/</loc>
+    <loc>http://localhost:1313/en/teaching/ml4astro/notes@ml4astro/</loc>
     <lastmod>2025-04-03T18:55:47+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/latex/</loc>
@@ -148,61 +130,58 @@
     <loc>http://localhost:1313/tags/mac/</loc>
     <lastmod>2025-04-03T18:25:31+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-04-03-texstudio/</loc>
+    <loc>http://localhost:1313/en/posts/2025-04-03-texstudio/</loc>
     <lastmod>2025-04-03T18:25:31+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/</loc>
+    <loc>http://localhost:1313/en/pages/personal/resceu-related/</loc>
     <lastmod>2025-04-03T17:44:26+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/personal/resceu-related/</loc>
-    <lastmod>2025-04-03T17:44:26+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</loc>
+    <loc>http://localhost:1313/en/posts/2025-04-02-git-with-dropbox/</loc>
     <lastmod>2025-04-02T18:07:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/interesting-articles/</loc>
+    <loc>http://localhost:1313/en/pages/interesting-articles/</loc>
     <lastmod>2025-03-19T17:39:59+11:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-03-18-zotero-issues/</loc>
+    <loc>http://localhost:1313/en/posts/2025-03-18-zotero-issues/</loc>
     <lastmod>2025-03-18T15:05:28+11:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-03-18-using-ssh-remote-access/</loc>
+    <loc>http://localhost:1313/en/posts/2025-03-18-using-ssh-remote-access/</loc>
     <lastmod>2025-03-18T12:24:46+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ssh/</loc>
     <lastmod>2025-03-18T12:24:46+11:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-03-17-vscode-terminal-cmd/</loc>
+    <loc>http://localhost:1313/en/posts/2025-03-17-vscode-terminal-cmd/</loc>
     <lastmod>2025-03-17T18:49:00+11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/zsh/</loc>
     <lastmod>2025-03-17T18:49:00+11:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/useful-links/</loc>
+    <loc>http://localhost:1313/en/pages/useful-links/</loc>
     <lastmod>2025-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-03-14-custom-linux-terminal/</loc>
+    <loc>http://localhost:1313/en/posts/2025-03-14-custom-linux-terminal/</loc>
     <lastmod>2025-03-14T16:27:20+11:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-03-14-use-cit-as-kagra/</loc>
+    <loc>http://localhost:1313/en/posts/2025-03-14-use-cit-as-kagra/</loc>
     <lastmod>2025-03-14T14:40:21+11:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-03-11-how-to-install-gwpopulation/</loc>
+    <loc>http://localhost:1313/en/posts/2025-03-11-how-to-install-gwpopulation/</loc>
     <lastmod>2025-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/research/</loc>
     <lastmod>2025-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/personal/conferences/</loc>
+    <loc>http://localhost:1313/en/pages/personal/conferences/</loc>
     <lastmod>2025-03-03T21:10:16+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/papermod-website/</loc>
+    <loc>http://localhost:1313/en/posts/papermod-website/</loc>
     <lastmod>2025-01-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-11-28-zotero/</loc>
+    <loc>http://localhost:1313/en/posts/2024-11-28-zotero/</loc>
     <lastmod>2024-11-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/javascript/</loc>
@@ -214,28 +193,28 @@
     <loc>http://localhost:1313/tags/probability/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-06-24-two-people-meeting/</loc>
+    <loc>http://localhost:1313/en/posts/2024-06-24-two-people-meeting/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/web-development/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-06-28-cloudflare-workers/</loc>
+    <loc>http://localhost:1313/en/posts/2024-06-28-cloudflare-workers/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-05-02-git-submodules/</loc>
+    <loc>http://localhost:1313/en/posts/2024-05-02-git-submodules/</loc>
     <lastmod>2024-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-03-28-git-passphrase/</loc>
+    <loc>http://localhost:1313/en/posts/2024-03-28-git-passphrase/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-03-22-pdf2jpg/</loc>
+    <loc>http://localhost:1313/en/posts/2024-03-22-pdf2jpg/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/documentation/</loc>
     <lastmod>2023-02-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023-02-13-how-to-sphinx/</loc>
+    <loc>http://localhost:1313/en/posts/2023-02-13-how-to-sphinx/</loc>
     <lastmod>2023-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/python/</loc>
@@ -244,7 +223,7 @@
     <loc>http://localhost:1313/tags/sphinx/</loc>
     <lastmod>2023-02-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023-02-03-custom-mac-terminal/</loc>
+    <loc>http://localhost:1313/en/posts/2023-02-03-custom-mac-terminal/</loc>
     <lastmod>2023-02-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/advice/</loc>
@@ -253,100 +232,52 @@
     <loc>http://localhost:1313/tags/command/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023-01-23-gitignore/</loc>
+    <loc>http://localhost:1313/en/posts/2023-01-23-gitignore/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-02-20-paper-writing-tips/</loc>
+    <loc>http://localhost:1313/en/posts/2025-02-20-paper-writing-tips/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/icons/</loc>
+    <loc>http://localhost:1313/en/posts/icons/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/rise-jupyter-notebook-jupyterlab-guide/</loc>
+    <loc>http://localhost:1313/en/posts/rise-jupyter-notebook-jupyterlab-guide/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:1313/en/projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/about/</loc>
+    <loc>http://localhost:1313/en/pages/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/multilingual/hindi/archives-hi/</loc>
+    <loc>http://localhost:1313/en/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/multilingual/hindi/archives/</loc>
-  </url><url>
-    <loc>http://localhost:1313/multilingual/japanese/archives-ja/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/multilingual/japanese/archives-ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/multilingual/japanese/archives-ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/multilingual/japanese/archives-ja/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pages/personal/books/</loc>
+    <loc>http://localhost:1313/en/pages/personal/books/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/cv/</loc>
+    <loc>http://localhost:1313/en/pages/cv/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/fonts/</loc>
+    <loc>http://localhost:1313/en/posts/fonts/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/ideas/</loc>
+    <loc>http://localhost:1313/en/pages/ideas/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/personal/languages/</loc>
+    <loc>http://localhost:1313/en/pages/personal/languages/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/personal/visits/</loc>
+    <loc>http://localhost:1313/en/pages/personal/visits/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/news/</loc>
+    <loc>http://localhost:1313/en/pages/news/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/personal/</loc>
+    <loc>http://localhost:1313/en/pages/personal/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/publications/</loc>
+    <loc>http://localhost:1313/en/pages/publications/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/research/</loc>
+    <loc>http://localhost:1313/en/pages/research/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/multilingual/hindi/search-hi/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/multilingual/hindi/search-hi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/multilingual/hindi/search-hi/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/multilingual/japanese/search-ja/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/multilingual/japanese/search-ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/multilingual/japanese/search-ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/multilingual/japanese/search-ja/"
-                />
+    <loc>http://localhost:1313/en/search/</loc>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/talks/</loc>
+    <loc>http://localhost:1313/en/pages/talks/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/tips/</loc>
+    <loc>http://localhost:1313/en/pages/tips/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/writings/</loc>
+    <loc>http://localhost:1313/en/pages/writings/</loc>
   </url>
 </urlset>

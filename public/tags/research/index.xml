@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to install gwpopulation on MacOS</title>
-      <link>http://localhost:1313/posts/2025-03-11-how-to-install-gwpopulation/</link>
+      <link>http://localhost:1313/en/posts/2025-03-11-how-to-install-gwpopulation/</link>
       <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025-03-11-how-to-install-gwpopulation/</guid>
+      <guid>http://localhost:1313/en/posts/2025-03-11-how-to-install-gwpopulation/</guid>
       <description>&lt;h2 id=&#34;basic-gwpopulation-installation&#34;&gt;Basic &lt;code&gt;gwpopulation&lt;/code&gt; installation&lt;/h2&gt;
 &lt;p&gt;To install &lt;code&gt;gwpopulation&lt;/code&gt; do:&lt;/p&gt;
 &lt;ul&gt;

@@ -16,9 +16,9 @@
     <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to remove large files from `git` commit history?</title>
-      <link>http://localhost:1313/posts/2025-05-15-git-history-edits/</link>
+      <link>http://localhost:1313/en/posts/2025-05-15-git-history-edits/</link>
       <pubDate>Thu, 15 May 2025 22:14:18 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2025-05-15-git-history-edits/</guid>
+      <guid>http://localhost:1313/en/posts/2025-05-15-git-history-edits/</guid>
       <description>&lt;p&gt;First, analyze the git storage in the directory with:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git filter-repo --analyze
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then the large files can be removed from &lt;code&gt;git&lt;/code&gt; history using &lt;code&gt;git filter-repo&lt;/code&gt; as follows:&lt;/p&gt;
@@ -27,9 +27,9 @@
     </item>
     <item>
       <title>How to use Git With Dropbox?</title>
-      <link>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</link>
+      <link>http://localhost:1313/en/posts/2025-04-02-git-with-dropbox/</link>
       <pubDate>Wed, 02 Apr 2025 18:07:51 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2025-04-02-git-with-dropbox/</guid>
+      <guid>http://localhost:1313/en/posts/2025-04-02-git-with-dropbox/</guid>
       <description>&lt;p&gt;Problems I have encountered using Dropbox:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Dropbox storage space available for use is really low, and is consumed relatively easily because of the &lt;code&gt;.git&lt;/code&gt; folder.&lt;/li&gt;
@@ -42,24 +42,24 @@
     </item>
     <item>
       <title>git submodules are erroneous</title>
-      <link>http://localhost:1313/posts/2024-05-02-git-submodules/</link>
+      <link>http://localhost:1313/en/posts/2024-05-02-git-submodules/</link>
       <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-05-02-git-submodules/</guid>
+      <guid>http://localhost:1313/en/posts/2024-05-02-git-submodules/</guid>
       <description>&lt;p&gt;In the name of sheer simplicity, it would be advised to best not use the &lt;code&gt;git submodule&lt;/code&gt; utility ! If there is the utmost need to have one directory within the other, then try to have only git repository among them, yeah. Or else, try to separate out the repositories into separate folders, yah !&lt;/p&gt;
 &lt;p&gt;It may happen that you may not be able to see new changes in the main directory after using &lt;code&gt;submodule&lt;/code&gt; for a while. In this case, use the following to bring back things to the original:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Do not ask for Git passphrase on each commit</title>
-      <link>http://localhost:1313/posts/2024-03-28-git-passphrase/</link>
+      <link>http://localhost:1313/en/posts/2024-03-28-git-passphrase/</link>
       <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024-03-28-git-passphrase/</guid>
+      <guid>http://localhost:1313/en/posts/2024-03-28-git-passphrase/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
     <item>
       <title>Customizing Mac Terminal</title>
-      <link>http://localhost:1313/posts/2023-02-03-custom-mac-terminal/</link>
+      <link>http://localhost:1313/en/posts/2023-02-03-custom-mac-terminal/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-02-03-custom-mac-terminal/</guid>
+      <guid>http://localhost:1313/en/posts/2023-02-03-custom-mac-terminal/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Update 2025/04/24&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Changed to &lt;code&gt;eza&lt;/code&gt; instead &lt;code&gt;exa&lt;/code&gt; for alias for &lt;code&gt;ls&lt;/code&gt; commands with icons, because the &lt;code&gt;exa&lt;/code&gt; package is no longer supported. Thus,&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# map exa commands to normal ls commands&lt;/span&gt;
@@ -241,9 +241,9 @@
     </item>
     <item>
       <title>gitignore file</title>
-      <link>http://localhost:1313/posts/2023-01-23-gitignore/</link>
+      <link>http://localhost:1313/en/posts/2023-01-23-gitignore/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-01-23-gitignore/</guid>
+      <guid>http://localhost:1313/en/posts/2023-01-23-gitignore/</guid>
       <description>&lt;p&gt;To ignore all files larger than 100MB:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;find ./* -size +100M &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; cat &amp;gt;&amp;gt; .gitignore
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To ignore all files larger than 100MB but with pathnames not contianing &amp;ldquo;data&amp;rdquo; and without repeating already added large file names:&lt;/p&gt;
