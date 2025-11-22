@@ -175,27 +175,27 @@ languages:
         Title: "\U0001F44B সুযোগ গর্গ"
         Content: আমার ওয়েবসাইটে স্বাগতম〜
 
-  ur:
-    languageName: "اردو"
-    languagedirection: rtl
-    weight: 3
-    title: Suyog Garg
-    taxonomies:
-      category: JAcategories
-      tag: JAtags
-      series: JAseries
-    menu:
-      main:
-        - name: JATags
-          url: jatags
-          weight: 10
-    # custom params for each language should be under [langcode].parms - hugo v0.120.0
-    params:
-      profileMode:
-        enabled: false
-      homeInfoParams:
-        Title: " سویوگ گرگ "
-        Content: میری ویب سائٹ پر خوش آمدید〜
+  # ur:
+  #   languageName: "اردو"
+  #   languagedirection: rtl
+  #   weight: 3
+  #   title: Suyog Garg
+  #   taxonomies:
+  #     category: JAcategories
+  #     tag: JAtags
+  #     series: JAseries
+  #   menu:
+  #     main:
+  #       - name: JATags
+  #         url: jatags
+  #         weight: 10
+  #   # custom params for each language should be under [langcode].parms - hugo v0.120.0
+  #   params:
+  #     profileMode:
+  #       enabled: false
+  #     homeInfoParams:
+  #       Title: " سویوگ گرگ "
+  #       Content: میری ویب سائٹ پر خوش آمدید〜
 
 outputs:
   home:
