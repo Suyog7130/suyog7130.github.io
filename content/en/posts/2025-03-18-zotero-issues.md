@@ -17,6 +17,13 @@ Then any new item can be manually added using the identifier, for example the DO
 
 Also see: [https://forums.zotero.org/discussion/72396/zotero-stuck-loading-items-or-just-stops-working](https://forums.zotero.org/discussion/72396/zotero-stuck-loading-items-or-just-stops-working)
 
+--
+
+Date: 2025/11/27
+
+when using zotore connector, if the full-author list is not loaded, e.g. on IOP page, 
+then the connector only catches the short authors listed on the page.
+
 ---
 
 - Date: 2025/03/18
