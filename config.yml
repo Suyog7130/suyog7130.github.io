@@ -261,34 +261,34 @@ params:
       #   content: "I have started my PhD at the University of Tokyo."
     buttons:
       - name: About
-        url: pages/about
+        url: en/pages/about
         weight: 1
       - name: News
-        url: pages/news
+        url: en/pages/news
         weight: 2
       - name: Publications
-        url: pages/publications
+        url: en/pages/publications
         weight: 3
       - name: Talks
-        url: pages/talks
+        url: en/pages/talks
         weight: 4
       - name: Research
-        url: pages/research
+        url: en/pages/research
         weight: 5
       - name: Posts
-        url: posts
+        url: en/posts
         weight: 6
       - name: Pages
-        url: pages
+        url: en/pages
         weight: 9
       - name: CV
-        url: pages/cv
+        url: en/pages/cv
         weight: 7
       - name: Writings
-        url: pages/writings
+        url: en/pages/writings
         weight: 8
       - name: Personal
-        url: pages/personal
+        url: en/pages/personal
         weight: 10
 
   homeInfoParams:

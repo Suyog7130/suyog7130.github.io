@@ -50,11 +50,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ur"
-                href="http://localhost:1313/ur/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="hi"
                 href="http://localhost:1313/hi/"
                 />

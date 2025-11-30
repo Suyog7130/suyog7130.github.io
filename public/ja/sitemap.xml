@@ -32,11 +32,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ur"
-                href="http://localhost:1313/ur/jacategories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ja"
                 href="http://localhost:1313/ja/jacategories/"
                 />
@@ -61,11 +56,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ur"
-                href="http://localhost:1313/ur/jaseries/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ja"
                 href="http://localhost:1313/ja/jaseries/"
                 />
@@ -85,11 +75,6 @@
                 rel="alternate"
                 hreflang="kr"
                 href="http://localhost:1313/kr/jatags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ur"
-                href="http://localhost:1313/ur/jatags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -122,11 +107,6 @@
                 rel="alternate"
                 hreflang="kr"
                 href="http://localhost:1313/kr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ur"
-                href="http://localhost:1313/ur/"
                 />
     <xhtml:link
                 rel="alternate"
