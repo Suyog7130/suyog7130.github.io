@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <!-- Google Calendar Appointment Scheduling begin -->
-<div>
+<!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 <script>
@@ -16,15 +16,16 @@ redirect_from:
   var target = document.currentScript;
   window.addEventListener('load', function() {
     calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2pWyc6gXY24OsFC_o2C_PYjHZHF32hO9yAuKx67K86XeTr6MYx1kY6Y3BQj3QePE77o5dhSHO4?gv=true',
+      url: 'https://calendar.google.com/calendar/appointments/AcZssZ3BZbBW7ZanCobZO7d1-DAumX4gKQeLPuuYcw8=?gv=true',
       color: '#8E24AA',
-      label: "Hangout with me !",
+      label: "Book Appointment with Suyog!",
       target,
     });
   });
 })();
 </script>
-</div>
+<br/>
+<!-- end Google Calendar Appointment Scheduling -->
 <!-- end Google Calendar Appointment Scheduling -->
 
 
