@@ -103,16 +103,6 @@
                 />
   </url><url>
     <loc>http://localhost:1313/hi/hi/personal/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/ja/personal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/hi/personal/"
-                />
   </url><url>
     <loc>http://localhost:1313/hi/hi/news/</loc>
     <xhtml:link

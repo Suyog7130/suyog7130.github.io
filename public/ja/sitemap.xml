@@ -164,18 +164,6 @@
                 href="http://localhost:1313/ja/ja/search/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ja/ja/personal/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/hi/personal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/ja/personal/"
-                />
-  </url><url>
     <loc>http://localhost:1313/ja/ja/writings/</loc>
     <xhtml:link
                 rel="alternate"
