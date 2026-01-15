@@ -2,18 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ja/ja/cv/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/hi/cv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/ja/cv/"
-                />
-  </url><url>
     <loc>http://localhost:1313/ja/jacategories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -35,8 +23,6 @@
                 hreflang="ja"
                 href="http://localhost:1313/ja/jacategories/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/ja/ja/</loc>
   </url><url>
     <loc>http://localhost:1313/ja/jaseries/</loc>
     <xhtml:link
@@ -112,68 +98,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="http://localhost:1313/ja/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/ja/ja/ideas/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/hi/ideas/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/ja/ideas/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/ja/ja/news/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/hi/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/ja/news/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/ja/ja/archives/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ja/ja/tips/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/hi/tips/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/ja/tips/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/ja/ja/search/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/hi/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/ja/search/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/ja/ja/writings/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="hi"
-                href="http://localhost:1313/hi/hi/writings/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/ja/writings/"
                 />
   </url>
 </urlset>
