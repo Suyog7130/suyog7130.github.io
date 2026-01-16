@@ -109,19 +109,19 @@ languages:
         Title: "\U0001F44B スイオグ ガーグ"
         Content: 〜ウェブサイトへようこそ
 
-  ch:
+  zh:
     languageName: "中文"
     languagedirection: ltr
     weight: 3
     title: Suyog Garg
     taxonomies:
-      category: JAcategories
-      tag: JAtags
-      series: JAseries
+      category: ZHcategories
+      tag: ZHtags
+      series: ZHseries
     menu:
       main:
-        - name: JATags
-          url: jatags
+        - name: ZHTags
+          url: zhtags
           weight: 10
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
@@ -137,13 +137,13 @@ languages:
     weight: 3
     title: Suyog Garg
     taxonomies:
-      category: JAcategories
-      tag: JAtags
-      series: JAseries
+      category: KRcategories
+      tag: KRtags
+      series: KRseries
     menu:
       main:
-        - name: JATags
-          url: jatags
+        - name: KRTags
+          url: krtags
           weight: 10
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
@@ -159,13 +159,13 @@ languages:
     weight: 3
     title: Suyog Garg
     taxonomies:
-      category: JAcategories
-      tag: JAtags
-      series: JAseries
+      category: BNcategories
+      tag: BNtags
+      series: BNseries
     menu:
       main:
-        - name: JATags
-          url: jatags
+        - name: BNTags
+          url: bntags
           weight: 10
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
@@ -181,13 +181,13 @@ languages:
   #   weight: 3
   #   title: Suyog Garg
   #   taxonomies:
-  #     category: JAcategories
-  #     tag: JAtags
-  #     series: JAseries
+  #     category: URcategories
+  #     tag: URtags
+  #     series: URseries
   #   menu:
   #     main:
-  #       - name: JATags
-  #         url: jatags
+  #       - name: URTags
+  #         url: urtags
   #         weight: 10
   #   # custom params for each language should be under [langcode].parms - hugo v0.120.0
   #   params:

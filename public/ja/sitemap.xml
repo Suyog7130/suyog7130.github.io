@@ -2,75 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ja/jacategories/</loc>
+    <loc>http://localhost:1313/ja/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/archives/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="bn"
-                href="http://localhost:1313/bn/jacategories/"
+                href="http://localhost:1313/bn/archives/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ch"
-                href="http://localhost:1313/ch/jacategories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="http://localhost:1313/kr/jacategories/"
+                hreflang="zh"
+                href="http://localhost:1313/zh/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/jacategories/"
+                href="http://localhost:1313/ja/archives/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ja/ja/</loc>
+    <loc>http://localhost:1313/ja/jacategories/</loc>
   </url><url>
     <loc>http://localhost:1313/ja/jaseries/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="bn"
-                href="http://localhost:1313/bn/jaseries/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ch"
-                href="http://localhost:1313/ch/jaseries/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="http://localhost:1313/kr/jaseries/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/jaseries/"
-                />
   </url><url>
     <loc>http://localhost:1313/ja/jatags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ja/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hi"
+                href="http://localhost:1313/hi/search/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="bn"
-                href="http://localhost:1313/bn/jatags/"
+                href="http://localhost:1313/bn/search/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ch"
-                href="http://localhost:1313/ch/jatags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="http://localhost:1313/kr/jatags/"
+                hreflang="zh"
+                href="http://localhost:1313/zh/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/jatags/"
+                href="http://localhost:1313/ja/search/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/ja/ja/search/</loc>
   </url><url>
     <loc>http://localhost:1313/ja/</loc>
     <xhtml:link
@@ -90,13 +80,13 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ch"
-                href="http://localhost:1313/ch/"
+                hreflang="kr"
+                href="http://localhost:1313/kr/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="kr"
-                href="http://localhost:1313/kr/"
+                hreflang="zh"
+                href="http://localhost:1313/zh/"
                 />
     <xhtml:link
                 rel="alternate"
