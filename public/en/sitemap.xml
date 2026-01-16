@@ -23,6 +23,9 @@
     <loc>http://localhost:1313/en/posts/2025-11-14-zoom-alternate-host/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/en/posts/</loc>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/software/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -127,6 +130,9 @@
   </url><url>
     <loc>http://localhost:1313/en/posts/2025-04-03-texstudio/</loc>
     <lastmod>2025-04-03T18:25:31+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/pages/</loc>
+    <lastmod>2025-04-03T17:44:26+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/pages/personal/resceu-related/</loc>
     <lastmod>2025-04-03T17:44:26+09:00</lastmod>
@@ -237,8 +243,6 @@
   </url><url>
     <loc>http://localhost:1313/en/posts/rise-jupyter-notebook-jupyterlab-guide/</loc>
   </url><url>
-    <loc>http://localhost:1313/en/projects/</loc>
-  </url><url>
     <loc>http://localhost:1313/en/pages/about/</loc>
   </url><url>
     <loc>http://localhost:1313/en/archives/</loc>
@@ -260,6 +264,8 @@
     <loc>http://localhost:1313/en/pages/news/</loc>
   </url><url>
     <loc>http://localhost:1313/en/pages/personal/</loc>
+  </url><url>
+    <loc>http://localhost:1313/en/projects/</loc>
   </url><url>
     <loc>http://localhost:1313/en/pages/publications/</loc>
   </url><url>

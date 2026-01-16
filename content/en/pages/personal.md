@@ -238,7 +238,7 @@ Sign up for free!
 
 ### Useful links
 
-Find a list of some useful links, webpages etc. here : [useful-links](/pages/useful-links.html)
+Find a list of some useful links, webpages etc. here : [useful-links](en/pages/useful-links.html)
 
 
 
