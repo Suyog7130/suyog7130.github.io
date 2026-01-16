@@ -596,7 +596,12 @@ async function boot(){
       els.count.textContent = 'Showing 0 of 0';
       return;
     }
-    initFilters(state.all); syncDialogChecks(); render();
+    initFilters(state.all);
+
+    // Set default filter: only show Journal, Other, Preprint
+    state.types = new Set(['Journal', 'Other', 'Preprint']);
+
+    syncDialogChecks(); render();
   }catch(err){
     logd('BOOT ERROR:', String(err));
     els.list.innerHTML = `<li class="pub-item"><em>Could not load publications.bib.</em><br><small>${String(err)}</small></li>`;

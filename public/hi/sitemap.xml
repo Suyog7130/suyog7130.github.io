@@ -4,9 +4,13 @@
   <url>
     <loc>http://localhost:1313/hi/hicategories/</loc>
   </url><url>
+    <loc>http://localhost:1313/hi/hi/</loc>
+  </url><url>
     <loc>http://localhost:1313/hi/hiseries/</loc>
   </url><url>
     <loc>http://localhost:1313/hi/hitags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hi/hi/search/</loc>
   </url><url>
     <loc>http://localhost:1313/hi/</loc>
     <xhtml:link
