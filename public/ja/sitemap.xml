@@ -24,6 +24,8 @@
                 href="http://localhost:1313/ja/jacategories/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ja/ja/</loc>
+  </url><url>
     <loc>http://localhost:1313/ja/jaseries/</loc>
     <xhtml:link
                 rel="alternate"
@@ -67,6 +69,8 @@
                 hreflang="ja"
                 href="http://localhost:1313/ja/jatags/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/ja/ja/search/</loc>
   </url><url>
     <loc>http://localhost:1313/ja/</loc>
     <xhtml:link
