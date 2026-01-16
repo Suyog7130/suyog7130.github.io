@@ -1,1 +1,0 @@
-This page contains a list of my academic and personal projects.

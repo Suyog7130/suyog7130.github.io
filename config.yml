@@ -224,6 +224,7 @@ params:
   ShowWordCount: true
   ShowToc: true
   hideTags: false
+  uglyURLs: true
   # comments: false
   images: [""]
 
