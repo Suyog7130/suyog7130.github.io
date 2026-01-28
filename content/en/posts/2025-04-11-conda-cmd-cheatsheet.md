@@ -99,6 +99,16 @@ conda install --name ENV_NAME -c conda-forge PKG_NAME
 where, `-c conda-forge` denotes the conda channel to use for the download.
 
 
+### Edit global list of default channels
+
+Usually most of the packages that I am interested in are only available in `conda-forge`. This channel can be added to the list of default channels via the following. If this is done, then we don't have to use: `-c conda-forge`:
+
+```
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+```
+
+---
 
 
 
