@@ -124,19 +124,45 @@ ssh suyog.garg@ldas-pcdev12.ligo.caltech.edu
 > If the public keys have been properly uploaded there won't be any prompt to type in the password.
 
 
-@2025/10/30 updates
+**@2025/10/30 updates**
 
 They have suddenly decided to darn use the "Duo" app for 2-step verification. Follow the instructions here for setting this up: https://git.ligo.org/computing/iam/mfa
 
 Then login using `ssh ldas-grid.ligo.caltech.edu` to directly log-in to the whole grid, instead of specifically to `pcdev12` like the past time. This will login to the home directory at `/home/suyog.garg` !
 
-@2025/11/12 updates
+**@2025/11/12 updates**
 
 Gotta use this at every login now to get to the GPU servers at CIT-LDG:
 
 `ssh -J albert.einstein@ssh.igwn.org albert.einstein@ldas-pcdev12.ligo.caltech.edu`
 
 My username is "suyog.garg". The above will prompt a passcode using the DUO app, if the 2-step verification has already been set up. Need to do this every time.
+
+**Use ssh jump connection on VS code**
+
+To jump from a login server within a computing cluster to the work server, update your `ssh` configuration file to have the proper host and jump connection names. Additional option for enabling command prompt keyboard interation during the ssh connection request needs to be defined in the configuration file. Without this the Duo app security code input prompt won't be asked.
+
+- Open the command palatte in VS code and navigate to "Remote ssh config file"
+- Then edit the host name and other connection details.
+
+Example of my `ssh` configuration file is:
+
+```
+Host ssh.igwn.org
+  HostName ssh.igwn.org
+  User suyog.garg
+  # ... other settings
+  PreferredAuthentications keyboard-interactive,publickey
+  PubkeyAuthentication yes
+
+Host ldas-pcdev12.ligo.caltech.edu
+  HostName ldas-pcdev12.ligo.caltech.edu
+  User suyog.garg
+  # ... other settings
+  PreferredAuthentications keyboard-interactive,publickey
+  PubkeyAuthentication yes
+  ProxyJump ssh.igwn.org
+```
 
 ---
 
