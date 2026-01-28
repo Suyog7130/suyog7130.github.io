@@ -164,6 +164,9 @@ Host ldas-pcdev12.ligo.caltech.edu
   ProxyJump ssh.igwn.org
 ```
 
+> Note that the ProxyJump line should always come after the InteractiveKeyboard option has been set. Otherwise the connection will terminate prematuarely.
+
+
 ---
 
 ### Accessing IPMU iDark
@@ -191,7 +194,26 @@ ssh suyog.garg@idark.ipmu.jp
 
 ---
 
+
 ### Accessing Einstein and Landau Clusters at Tokyo City University
+
+Add the following ProxyJump connection to the ssh configuration file as follows:
+
+```
+Host einstein.sv.yc.tcu.ac.jp
+  HostName einstein.sv.yc.tcu.ac.jp
+  ForwardX11Trusted yes
+  Port 1022
+  LocalForward 8008 localhost:8088
+  User suyog
+
+Host landau.sv.yc.tcu.ac.jp
+  HostName landau.sv.yc.tcu.ac.jp
+  ForwardX11Trusted yes
+  LocalForward 8088 localhost:8888
+  ProxyJump einstein.sv.yc.tcu.ac.jp
+  User suyog
+```
 
 
 ### Accessing RESCEU BBC Cluster
