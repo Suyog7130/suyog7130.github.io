@@ -172,6 +172,8 @@ alias lt="eza --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoi
 
 alias lid="eza --icons -d */"
 alias lin="eza --icons --sort newest"
+alias lidn="eza --icons -d */ --sort newest"
+alias lind="eza --icons --sort newest -d */"
 alias lf="eza --icons *.py --sort newest"
 alias lld="eza -l -g --icons -d */"
 alias llin="eza -l -g --icons --sort newest"
