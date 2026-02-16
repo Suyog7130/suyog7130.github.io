@@ -24,12 +24,12 @@ hideTags: true
 - Art and Connections: KT in conversation with Fernando Kague. Komaba Times, Issue 14. Apr 2025.
 &nbsp;
 <i class="fa fa-link"></i>
-<a href="https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf">Link</a> 
+<a href="https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf#page=17">Link</a> 
 
 - Cold Nights, Tokyo and Tenali Rama. Kamaba Times, Issue 14. Apr 2025.
 &nbsp;
 <i class="fa fa-link"></i>
-<a href="https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf">Link</a> 
+<a href="https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf#page=19">Link</a> 
 
 - उसके श्रम के वह आँसू (कविता)। Jan 2025. 
 <i class="fa fa-external-link-alt">&nbsp;</i>[vaishvikhindi/posts/8528](https://vaishvikhindi.com/posts/8528)

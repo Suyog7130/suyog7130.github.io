@@ -155,6 +155,31 @@ alias gs="git status"
 
 ---
 
-Also see:
+
+### Some further modifications
+
+The following custom commands can also be added to the `~/.bashrc` file.
+
+```bash
+# git aliases
+alias gs="git status"
+alias gb="git branch"
+
+# ls aliases via li
+alias ll="eza -l -g --icons"
+alias li="eza --icons"
+alias lt="eza --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
+
+alias lid="eza --icons -d */"
+alias lin="eza --icons --sort newest"
+alias lf="eza --icons *.py --sort newest"
+alias lld="eza -l -g --icons -d */"
+alias llin="eza -l -g --icons --sort newest"
+alias llf="eza -l -g --icons *.py --sort newest"
+```
+
+---
+
+### Also see:
 
 - https://www.linuxfordevices.com/tutorials/linux/beautify-bash-shell
