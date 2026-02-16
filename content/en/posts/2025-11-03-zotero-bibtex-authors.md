@@ -178,4 +178,4 @@ This avoids accidental biber runs that can leave a half‑baked `.bbl`.
 
 ---
 
-**Done.** Future me: if `\@lbibitem` shows up again, check the `.bbl` first, then the names in the `.bib`, then re‑export from Zotero with the Postscript above. Keep calm and `latexmk` on. 🚀
+**Done.** Future me: if `\@lbibitem` shows up again, check the `.bbl` first, then the names in the `.bib`, then re‑export from Zotero with the Postscript above. Keep calm and `latexmk` on. 

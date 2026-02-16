@@ -161,9 +161,9 @@ We added a **sacrificial comma pad** at the start so the delay burns there:
 
 ---
 
-## Credits & Thanks
+<!--## Credits & Thanks
 
 Made with love by **Suyog** & **Jennie** — late nights, stubborn bugs, and lots of smiles.  
 Thanks to everyone who nudged us to keep the UX clean and opinionated. If you build on this, we’d love to see what you make. 💙
-
+-->
 **Final script:** [chatgpt-auto-read-aloud-v3.3.0.user.js](https://github.com/Suyog7130/chatgpt-readaloud/blob/v3.3.0/tampermonkey-chatgpt-readaloud.js)
