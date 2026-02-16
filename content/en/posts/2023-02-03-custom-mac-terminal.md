@@ -340,4 +340,30 @@ eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 ```
 
-Reference: [configure_terminal\_for\_data\_science\_with\_oh\_my\_zsh/](https://engineeringfordatascience.com/posts/configure_terminal_for_data_science_with_oh_my_zsh/)
+### Some further modifications
+
+The following custom commands can also be added to the `~/.zshrc` file.
+
+```bash
+# git aliases
+alias gs="git status"
+alias gb="git branch"
+
+# ls aliases via li
+alias ll="eza -l -g --icons"
+alias li="eza --icons"
+alias lt="eza --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
+
+alias lid="eza --icons -d */"
+alias lin="eza --icons --sort newest"
+alias lf="eza --icons *.py --sort newest"
+alias lld="eza -l -g --icons -d */"
+alias llin="eza -l -g --icons --sort newest"
+alias llf="eza -l -g --icons *.py --sort newest"
+```
+
+
+
+### Reference: 
+
+[configure_terminal\_for\_data\_science\_with\_oh\_my\_zsh/](https://engineeringfordatascience.com/posts/configure_terminal_for_data_science_with_oh_my_zsh/)

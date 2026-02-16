@@ -51,3 +51,35 @@ du -h d 1 | sort -hu
 
 Ref : https://www.linuxteck.com/9-basic-du-command-in-linux-with-examples/
 
+
+### Custom git and `ls` aliases
+
+These customization commands have been put in the `~/.zshrc` or the bash script at `~/.bashrc`, and enable more efficient git status checks etc.
+
+
+```bash
+# git aliases
+alias gs="git status"
+alias gb="git branch"
+
+# ls aliases via li
+alias ll="eza -l -g --icons"
+alias li="eza --icons"
+alias lt="eza --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
+
+alias lid="eza --icons -d */"
+alias lin="eza --icons --sort newest"
+alias lf="eza --icons *.py --sort newest"
+alias lld="eza -l -g --icons -d */"
+alias llin="eza -l -g --icons --sort newest"
+alias llf="eza -l -g --icons *.py --sort newest"
+```
+
+> **Note**: `lf` if used for python files, instead of `lpy`, b'cuz the latter is a bit cumbersome to type out fast.
+
+> **Note**: Remember to source the bashrc file after any modifications.
+
+> **Notes**: use `eza` on a macos system if `exa` is decrepit.
+
+
+---
