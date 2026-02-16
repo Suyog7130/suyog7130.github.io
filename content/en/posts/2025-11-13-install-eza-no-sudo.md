@@ -181,3 +181,97 @@ sed -i.bak '/eza -al/d;/eza -l/d;/eza --tree/d' ~/.bashrc ~/.zshrc 2>/dev/null |
 ```bash
 mkdir -p ~/.local/bin && cd /tmp && curl -L -o eza.tgz https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-musl.tar.gz && tar -xzf eza.tgz && chmod +x eza && mv -f eza ~/.local/bin/ && echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && . ~/.bashrc && ~/.local/bin/eza --version
 ```
+
+
+---
+
+
+# Fixing missing `eza` icons in VS Code Remote, installing Hack Nerd Font without sudo (Linux)
+
+If `eza` works but you see **no icons**, it usually means your **terminal font does not include Nerd Font glyphs**. Even if you download Hack Nerd Font onto the **remote Linux server**, the **VS Code integrated terminal still renders fonts locally** (on your laptop), not on the server. So the real fix is: install the Nerd Font on the **local machine running VS Code**, then tell VS Code to use it… and only then `eza --icons` will show pretty icons~
+
+That said, here’s the no-sudo, user-home installation method (useful if you also run a GUI terminal on that Linux machine, or you want the fonts present there for completeness).
+
+---
+
+## 1) Download Hack Nerd Font using `curl -fLo` (no sudo)
+
+Use the user font directory. On Linux, the standard path is:
+
+- `~/.local/share/fonts/` (recommended)
+- If you already used `~/.local/share/font/`, it may work sometimes, but `fonts` is the conventional directory.
+
+```bash
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+
+# Download Hack Nerd Font zip (pick one release URL)
+curl -fLo Hack.zip \
+  https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.zip
+
+unzip -o Hack.zip -d HackNerdFont
+rm -f Hack.zip
+```
+
+After unzipping, you should see a bunch of `.ttf` files inside `~/.local/share/fonts/HackNerdFont/`.
+
+---
+
+## 2) Refresh the font cache (so the system can “see” the new fonts)
+
+Most servers already have `fontconfig` installed. If so:
+
+```bash
+fc-cache -f -v ~/.local/share/fonts
+```
+
+If `fc-cache` is missing and you cannot install it (no sudo), that’s fine. In VS Code Remote, this server-side cache refresh will not fix icons by itself anyway, because the terminal font is chosen on your local machine.
+
+---
+
+## 3) Tell VS Code to use Hack Nerd Font (this is the key step)
+
+Because you are using **VS Code Remote**, you must configure the font on the **local VS Code UI**:
+
+1. Install **Hack Nerd Font** on your **local computer** (macOS/Windows/Linux desktop).
+2. In VS Code, open Settings (JSON) and set:
+
+```json
+{
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono, Hack Nerd Font, monospace"
+}
+```
+
+3. Close all terminals, then reopen a new terminal tab.
+
+---
+
+## 4) Refresh the terminal so the new font loads
+
+Any of these work:
+
+* In VS Code integrated terminal: **Kill Terminal** (trash icon) → open a **New Terminal**
+* Command Palette: **Developer: Reload Window**
+* Or simply restart VS Code
+
+Once the font is active, run:
+
+```bash
+eza --icons=auto
+# or your alias that includes --icons
+```
+
+If icons still don’t show, it’s almost always because VS Code is still using a non-Nerd font. Double-check the font name matches what your OS installed (sometimes it appears as “Hack Nerd Font” vs “Hack Nerd Font Mono”).
+
+---
+
+## Tiny sanity test
+
+```bash
+# See if your shell can locate eza and print icons option help
+command -v eza && eza --help | grep -i icons
+```
+
+If the font is correct, icons appear immediately after the VS Code terminal reload… no server reboot needed~
+
+---
