@@ -33,6 +33,14 @@ Sign up for free!
 <!--{{% button href="https://gohugo.io/" %}}Get Hugo{{% /button %}}
 {{% button href="https://gohugo.io/" style="warning" icon="dog" %}}Get Hugo{{% /button %}}-->
 
+
+<span style="color:darkblue; font-weight:bold">[Academic]</span>
+&nbsp;
+<i class="fa fa-paper-plane"></i>
+2026年02月18-28日
+</br>
+Visited Prof. Otto's GW group at CUHK, Hong Kong.
+
 <span style="color:darkblue; font-weight:bold">[Academic]</span>
 &nbsp;
 <i class="fa fa-paper-plane"></i>
