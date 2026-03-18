@@ -104,6 +104,10 @@ client_loop: send disconnect: Broken pipe
 
 - The computer accessing the remote server should have the same public key as the one originally submitted/added to the remote server. Otherwise, the ssh connection request won't work.
 
+- `ssh` "connect timeout` setting may be set to too short a value, e.g. 15 secs, by default on vs-code.
+
+> Use `nvidia-smi` to check current processing running on the GPU.
+
 ---
 
 ## Accessing Remote Servers
@@ -167,6 +171,22 @@ Host ldas-pcdev12.ligo.caltech.edu
 > Note that the ProxyJump line should always come after the InteractiveKeyboard option has been set. Otherwise the connection will terminate prematuarely.
 
 
+**Connection to other CIT compute nodes**
+
+All CIT-LDG compute nodes are connected to eachother and share storage. More than one nodes on the cluster have GPUs, so if one of the nodes, for instance pcdev12 becomes unavilable due to overuse, other nodes with GPU can be alternatively utilized. For example, to use connect to pcdev13, add the following to `~/.ssh/config` file and follow the same connection procedure as pcdev12:
+
+```
+Host ldas-pcdev13.ligo.caltech.edu
+  HostName ldas-pcdev13.ligo.caltech.edu
+  User suyog.garg
+  # ... other settings
+  PreferredAuthentications keyboard-interactive,publickey
+  PubkeyAuthentication yes
+  ProxyJump ssh.igwn.org
+```
+
+See: [https://computing.docs.ligo.org/guide/computing-centres/cit/](https://computing.docs.ligo.org/guide/computing-centres/cit/)
+
 ---
 
 ### Accessing IPMU iDark
@@ -216,7 +236,15 @@ Host landau.sv.yc.tcu.ac.jp
 ```
 
 
-### Accessing RESCEU BBC Cluster
+### Accessing RESCEU BBC cluster
+
+### Accessing RESCEU Kambai cluster
+
+
+### Accessing UTokyo "SoS VPN" connection based clusters
+
+- nekoya
+- other personal computers
 
 
 ### Accessing TIFR Mumbai Computing Facility
