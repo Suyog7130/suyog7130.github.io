@@ -23,6 +23,36 @@ echo 'export PATH="/usr/local/anaconda3/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
+### Installing Conda package on Linux server / remote cluster
+
+It's best to install the "miniconda" essential-only distribution, since the IDE, Jupyter-notebook, Spyder etc. will likely not be needed on a remote server / cluster! Do:
+
+```bash
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+
+Test installation with `conda list`. This should show a list of installed packages.
+
+See: https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
+
+Some older systems like the CentOS-based IPMU-GPU server may give out the following error, upon running the bash script:
+
+```
+Installer requires GLIBC >=2.28, but system has 2.17.
+```
+
+The ideal solution in this case is to install an older compatible version of conda instead of the latest one! Do:
+
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-py39_22.11.1-1-Linux-x86_64.sh
+bash Miniconda3-py39_22.11.1-1-Linux-x86_64.sh
+```
+
+This will install an older compatible version of the "conda" package. Do `source ~/.bashrc` to have the `conda` command available to the terminal. `conda list` should then work seamlessly!
+
+
 ### Initializing Conda Environment
 
 Initialize `conda` for your shell permanently:
