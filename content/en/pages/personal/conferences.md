@@ -10,30 +10,62 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 <details>
 <summary>Next Year or Later</summary>
 
-- LIGO-Virgo-KAGRA Meeting Fall 2026
-<br/><i class="fa fa-calendar-alt"></i> 2026年09月 &nbsp;•&nbsp;
-<i class="fa fa-university"></i> LIGO India &nbsp;•&nbsp;
-<i class="fa fa-map-marked-alt"></i> Pune?, India
+</details>
 
-- LIGO-Virgo-KAGRA Meeting Spring 2026
+- [LIGO-Virgo-KAGRA Meeting Fall 2026](https://web.iucaa.in/ws/~lvk2026pune/index.html)
+<span style="font-weight: bold; color: green;">[Registered]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年09月21–25 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> LIGO India &nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> IUCAA, Pune, India
+
+- [IAIFI Summer Workshop](https://iaifi.org/summer-workshop)
+<span style="font-weight: bold; color: red;">[Not Registered]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年08月10–14 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> MIT
+<i class="fa fa-map-marked-alt"></i> Boston, MA, USA
+
+- [A3net](https://cd3.ipmu.jp/a3n_Aug2026/)
+<span style="font-weight: bold; color: green;">[Registered]</span><span style="font-weight: bold; color: green;">[Going]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年08月24–28 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> National Taiwan University
+<i class="fa fa-map-marked-alt"></i> Taipei, Taiwan
+
+
+- [I'nt Conference on Machine Learning Physics](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/)
+<span style="font-weight: bold; color: green;">[Registered]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年07月13–15 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> KyotoU &nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> Naha, Okinawa, JAPAN
+
+- [ICML 2026](https://icml.cc/)
+<br/><i class="fa fa-calendar-alt"></i> 2026年07月06–11 &nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> Seoul, Korea
+
+- [<s>KAGRA I'nt Workshop 14</s>](https://indico.ego-gw.it/event/1040/)
+<br/><i class="fa fa-calendar-alt"></i> 2026年05月15–16 &nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> Perugia, Italy
+
+
+<details>
+<summary>Past</summary>
+
+- <s>LIGO-Virgo-KAGRA Meeting Spring 2026</s>
 <br/><i class="fa fa-calendar-alt"></i> 2026年03月 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> VIRGO &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Cascina, Italy
 
-</details>
-
-- 2nd I'nt Conference on Physics of the Two Infinities
+- <s>2nd I'nt Conference on Physics of the Two Infinities</s>
 [[website](https://indico.in2p3.fr/event/35255/)]
 <br/><i class="fa fa-calendar-alt"></i> 2025年11月17-21日 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> UTokyo &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Tokyo, Japan
 
-- LIGO-Virgo-KAGRA Meeting Fall 2025
+- <s>LIGO-Virgo-KAGRA Meeting Fall 2025</s>
 <br/><i class="fa fa-calendar-alt"></i> 2025年09月 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> Colorado State University &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Fort Collins, CO, USA <br/> *Note: Most likely not attending!*
 
-- AstroAI Asian Network (A$^3$ Net)
+- <s>AstroAI Asian Network (A$^3$ Net)</s>
 [[website](https://cd3.ipmu.jp/a3n/)]
 <br/><i class="fa fa-calendar-alt"></i> 2025年08月18-22日 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> KIAS &nbsp;•&nbsp;
@@ -66,8 +98,6 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 <i class="fa fa-university"></i> UTokyo &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Tokyo, Japan
 
-<details>
-<summary>Past</summary>
 
 - LIGO-Virgo-KAGRA Meeting Spring 2025
 <br/><i class="fa fa-calendar-alt"></i> 2025年03月24-28日 &nbsp;•&nbsp;
