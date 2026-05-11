@@ -13,35 +13,52 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 </details>
 
 - [LIGO-Virgo-KAGRA Meeting Fall 2026](https://web.iucaa.in/ws/~lvk2026pune/index.html)
-<span style="font-weight: bold; color: green;">[Registered]</span>
+<span style="font-weight: bold; color: seagreen;">[Registered]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年09月21–25 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> LIGO India &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> IUCAA, Pune, India
 
-- [IAIFI Summer Workshop](https://iaifi.org/summer-workshop)
-<span style="font-weight: bold; color: red;">[Not Registered]</span>
-<br/><i class="fa fa-calendar-alt"></i> 2026年08月10–14 &nbsp;•&nbsp;
-<i class="fa fa-university"></i> MIT
-<i class="fa fa-map-marked-alt"></i> Boston, MA, USA
-
 - [A3net](https://cd3.ipmu.jp/a3n_Aug2026/)
-<span style="font-weight: bold; color: green;">[Registered]</span><span style="font-weight: bold; color: green;">[Going]</span>
+<span style="font-weight: bold; color: seagreen;">[Registered]</span>
+<span style="font-weight: bold; color: green;">[Going]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年08月24–28 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> National Taiwan University
 <i class="fa fa-map-marked-alt"></i> Taipei, Taiwan
 
+- [IAIFI Summer Workshop](https://iaifi.org/summer-workshop)
+<span style="font-weight: bold; color: tomato;">[Not-registered]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年08月10–14 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> MIT
+<i class="fa fa-map-marked-alt"></i> Boston, MA, USA
 
 - [I'nt Conference on Machine Learning Physics](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/)
-<span style="font-weight: bold; color: green;">[Registered]</span>
+<span style="font-weight: bold; color: seagreen;">[Registered]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年07月13–15 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> KyotoU &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Naha, Okinawa, JAPAN
 
 - [ICML 2026](https://icml.cc/)
+<span style="font-weight: bold; color: tomato;">[Not-registered]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年07月06–11 &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Seoul, Korea
 
+- [Cool Stars 23](https://coolstars23.github.io/index.html)
+<span style="font-weight: bold; color: seagreen;">[Registered]</span>
+<span style="font-weight: bold; color: green;">[Going]</span>
+<span style="font-weight: bold; color: green;">[Poster]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年06月15–19 &nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> TOC Ariake, Tokyo
+
+- [APRIM 2026](https://aprim2026.org/)
+<span style="font-weight: bold; color: seagreen;">[Registered]</span>
+<span style="font-weight: bold; color: green;">[Going]</span>
+<span style="font-weight: bold; color: green;">[Talk]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年05月04–09 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> HKU &nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> HongKong
+
 - [<s>KAGRA I'nt Workshop 14</s>](https://indico.ego-gw.it/event/1040/)
+<span style="font-weight: bold; color: red;">[Not-going]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年05月15–16 &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Perugia, Italy
 
