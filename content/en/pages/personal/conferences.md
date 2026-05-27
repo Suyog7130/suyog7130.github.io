@@ -12,29 +12,36 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 
 </details>
 
+- KIW-15, Shanghai
+
 - [LIGO-Virgo-KAGRA Meeting Fall 2026](https://web.iucaa.in/ws/~lvk2026pune/index.html)
 <span style="font-weight: bold; color: seagreen;">[Registered]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年09月21–25 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> LIGO India &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> IUCAA, Pune, India
 
+- KAGRA F2F, Osaka
+
 - [A3net](https://cd3.ipmu.jp/a3n_Aug2026/)
 <span style="font-weight: bold; color: seagreen;">[Registered]</span>
 <span style="font-weight: bold; color: green;">[Going]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年08月24–28 &nbsp;•&nbsp;
-<i class="fa fa-university"></i> National Taiwan University
+<i class="fa fa-university"></i> National Taiwan University 
+&nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Taipei, Taiwan
 
 - [IAIFI Summer Workshop](https://iaifi.org/summer-workshop)
 <span style="font-weight: bold; color: tomato;">[Not-registered]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年08月10–14 &nbsp;•&nbsp;
-<i class="fa fa-university"></i> MIT
+<i class="fa fa-university"></i> MIT 
+&nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Boston, MA, USA
 
 - [I'nt Conference on Machine Learning Physics](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/)
 <span style="font-weight: bold; color: seagreen;">[Registered]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年07月13–15 &nbsp;•&nbsp;
-<i class="fa fa-university"></i> KyotoU &nbsp;•&nbsp;
+<i class="fa fa-university"></i> KyotoU 
+&nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Naha, Okinawa, JAPAN
 
 - [ICML 2026](https://icml.cc/)

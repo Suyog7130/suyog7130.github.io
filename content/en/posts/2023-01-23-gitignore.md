@@ -55,6 +55,73 @@ g2net-work/g2net-detecting-continuous-gravitational-waves.zip
 mlgwsc-work/injections4_1.25s.npy
 mlgwsc-work/real_noise_file.hdf
 
+
+# ==========================================
+# LaTeX Core Auxiliary Files
+# ==========================================
+*.aux
+**/*.aux
+*.log
+*.out
+**/*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.xdv
+*.dvi
+
+# ==========================================
+# Bibliography (BibTeX / Biber)
+# ==========================================
+*.bbl
+*.bcf
+*.blg
+*-blx.bib
+*.run.xml
+*.brf
+
+# ==========================================
+# Beamer Presentation Temp Files (if applicable)
+# ==========================================
+*.nav
+*.snm
+*.vrb
+
+# ==========================================
+# Output Documents
+# ==========================================
+# Note: Comment these out if you want to track final compiled PDFs
+*.pdf
+**/*.pdf
+
+# ==========================================
+# Python & Data Scripts
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# ==========================================
+# OS Specific & Editor Temp Files
+# ==========================================
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# IDEs and Text Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
 ```
 
 Useful links:

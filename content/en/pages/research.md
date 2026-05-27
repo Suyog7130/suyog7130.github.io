@@ -19,17 +19,15 @@ My PhD research focuses on gravitational-wave astrophysics, specifically modelli
 
 ### Generating gravitational waveform approximations using machine learning models
 
-
-
 - I build fast *surrogate* or data-driven waveform models for compact binaries, with the current aim of accurately approximating effective one-body waveforms, which would be later expanded into other waveforms approximations and binary systems.
 - Architectures explored include convolutional networks on time–frequency representations and lightweight auto-encoder models for rapid evaluation.
-- Targets: high overlap (low mismatch) with reference waveforms, large parameter-space coverage (incl. eccentricity and spin), and orders-of-magnitude better speed.
+- Goals: high overlap (low mismatch) with target waveforms, large parameter-space coverage (incl. eccentricity and spin), orders-of-magnitude better waveform generation speed over native implementation.
 - Intended use cases: speeding up parameter estimation, tests of gravity with novel waveforms, data analysis from 3G gravitational wave detectors.
 
 ### Detections of gravitational waves from compact object mergers
 
 - I developed deep-learning pipelines for detection/classification of compact binary coalescences and related sources.
-- Training strategy comparisons (curriculum learning, transfer learning) to improve sensitivity and robustness to glitches.
+- Also compared different training strategies (curriculum learning, transfer learning) to improve sensitivity and robustness to glitches.
 
 ---
 
@@ -67,6 +65,6 @@ My PhD research focuses on gravitational-wave astrophysics, specifically modelli
 
 ### Machine Learning
 
-- Broad interest in physically-informed ML: data augmentation that respects symmetries, calibrated uncertainties, and attribution methods (e.g., Grad-CAM).
-- Reproducible research and open-source: contributions within the scientific Python ecosystem (e.g., community tools for astronomy and relativity).
+- Broadly interested in physically-informed neural networks and their applications in astrophysical sciences and data analysis.
+- Reproducible and open-source software development: contributions within the scientific Python ecosystem (e.g., Astropy) and novel software releases.
 - Symbolic regression and machine learning physical symmetries from large-scale multimodal datasets.

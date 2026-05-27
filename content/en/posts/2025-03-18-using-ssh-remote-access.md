@@ -187,6 +187,11 @@ Host ldas-pcdev13.ligo.caltech.edu
 
 See: [https://computing.docs.ligo.org/guide/computing-centres/cit/](https://computing.docs.ligo.org/guide/computing-centres/cit/)
 
+**Running jobs via HTCondor**
+
+Get a tag for your jobs using:
+https://ldas-gridmon.ligo.caltech.edu/ldg_accounting/user
+
 ---
 
 ### Accessing IPMU iDark
