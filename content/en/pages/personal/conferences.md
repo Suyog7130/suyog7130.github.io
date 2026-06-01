@@ -12,6 +12,8 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 
 </details>
 
+- NeurIPS, xx
+
 - KIW-15, Shanghai
 
 - [LIGO-Virgo-KAGRA Meeting Fall 2026](https://web.iucaa.in/ws/~lvk2026pune/index.html)
@@ -32,22 +34,30 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 
 - [IAIFI Summer Workshop](https://iaifi.org/summer-workshop)
 <span style="font-weight: bold; color: tomato;">[Not-registered]</span>
+<span style="font-weight: bold; color: tomato;">[cannot??]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年08月10–14 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> MIT 
 &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Boston, MA, USA
 
-- [I'nt Conference on Machine Learning Physics](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/)
+- [ICGAC16](https://tianqin.sysu.edu.cn/en/ICGAC16-home)
+<span style="font-weight: bold; color: green;">[Invited]</span>
 <span style="font-weight: bold; color: seagreen;">[Registered]</span>
+<span style="font-weight: bold; color: seagreen;">[Going?]</span>
+<span style="font-weight: bold; color: green;">[Talk]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年08月10–14 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> MIT 
+&nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> Boston, MA, USA
+
+- [MLPhysics conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/)
+<span style="font-weight: bold; color: seagreen;">[Registered]</span>
+<span style="font-weight: bold; color: green;">[going?]</span>
+<span style="font-weight: bold; color: green;">[Poster]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年07月13–15 &nbsp;•&nbsp;
 <i class="fa fa-university"></i> KyotoU 
 &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Naha, Okinawa, JAPAN
-
-- [ICML 2026](https://icml.cc/)
-<span style="font-weight: bold; color: tomato;">[Not-registered]</span>
-<br/><i class="fa fa-calendar-alt"></i> 2026年07月06–11 &nbsp;•&nbsp;
-<i class="fa fa-map-marked-alt"></i> Seoul, Korea
 
 - [Cool Stars 23](https://coolstars23.github.io/index.html)
 <span style="font-weight: bold; color: seagreen;">[Registered]</span>
@@ -55,6 +65,14 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 <span style="font-weight: bold; color: green;">[Poster]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年06月15–19 &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> TOC Ariake, Tokyo
+
+- [<s>ICML 2026</s>](https://icml.cc/)
+<span style="font-weight: bold; color: tomato;">[not-registered]</span><span style="font-weight: bold; color: red;">[missed]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年07月06–11 &nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> Seoul, Korea
+
+<details>
+<summary>Past</summary>
 
 - [APRIM 2026](https://aprim2026.org/)
 <span style="font-weight: bold; color: seagreen;">[Registered]</span>
@@ -69,9 +87,6 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 <br/><i class="fa fa-calendar-alt"></i> 2026年05月15–16 &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Perugia, Italy
 
-
-<details>
-<summary>Past</summary>
 
 - <s>LIGO-Virgo-KAGRA Meeting Spring 2026</s>
 <br/><i class="fa fa-calendar-alt"></i> 2026年03月 &nbsp;•&nbsp;
