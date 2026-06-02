@@ -9,7 +9,7 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
     <lastBuildDate>Fri, 11 Apr 2025 15:01:20 +0900</lastBuildDate>
@@ -26,10 +26,8 @@
 &lt;p&gt;After the installation, add the path to the &lt;code&gt;anaconda3&lt;/code&gt; installation directory to the &lt;code&gt;$PATH&lt;/code&gt; system variable, by:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;export PATH=&amp;#34;/usr/local/anaconda3/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.zshrc
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; ~/.zshrc
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;initializing-conda-environment&#34;&gt;Initializing Conda Environment&lt;/h3&gt;
-&lt;p&gt;Initialize &lt;code&gt;conda&lt;/code&gt; for your shell permanently:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda init
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will add command lines to your &lt;code&gt;~/.zshrc&lt;/code&gt; file to initialize conda path variables at each startup. The modified &lt;code&gt;~/.zshrc&lt;/code&gt; file looks like:&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;installing-conda-package-on-linux-server--remote-cluster&#34;&gt;Installing Conda package on Linux server / remote cluster&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s best to install the &amp;ldquo;miniconda&amp;rdquo; essential-only distribution, since the IDE, Jupyter-notebook, Spyder etc. will likely not be needed on a remote server / cluster! Do:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

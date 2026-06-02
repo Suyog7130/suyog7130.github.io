@@ -9,11 +9,19 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Thu, 03 Apr 2025 18:25:31 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use backslash  in JIS keyboard layout</title>
+      <link>http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/</guid>
+      <description>&lt;h1 id=&#34;how-to-fix-the-annoying-mac-yen--key-to-type-a-backslash--in-google-chrome&#34;&gt;How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\) in Google Chrome&lt;/h1&gt;
+&lt;p&gt;If you use a physical Japanese (JIS) hardware keyboard layout on a modern Mac, you have likely run into a frustrating quirk: even if you change your macOS text settings to output a backslash (&lt;code&gt;\&lt;/code&gt;) instead of a Yen sign (&lt;code&gt;¥&lt;/code&gt;), &lt;strong&gt;Google Chrome, VS Code, and Slack will completely ignore your system settings.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>On switching to TexStudio!</title>
       <link>http://localhost:1313/en/posts/2025-04-03-texstudio/</link>
