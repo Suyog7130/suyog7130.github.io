@@ -9,10 +9,10 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -20,6 +20,14 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/posts/2021-05-09-terminal-commands/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    <item>
+      <title>How to use backslash  in JIS keyboard layout</title>
+      <link>http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/</guid>
+      <description>&lt;h1 id=&#34;how-to-fix-the-annoying-mac-yen--key-to-type-a-backslash--in-google-chrome&#34;&gt;How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\) in Google Chrome&lt;/h1&gt;
+&lt;p&gt;If you use a physical Japanese (JIS) hardware keyboard layout on a modern Mac, you have likely run into a frustrating quirk: even if you change your macOS text settings to output a backslash (&lt;code&gt;\&lt;/code&gt;) instead of a Yen sign (&lt;code&gt;¥&lt;/code&gt;), &lt;strong&gt;Google Chrome, VS Code, and Slack will completely ignore your system settings.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing &#39;eza&#39; on linux server without &#39;sudo&#39;</title>
@@ -375,10 +383,8 @@ However, Japanese companies are, perhaps, contrained to only book JAL flights wh
 &lt;p&gt;After the installation, add the path to the &lt;code&gt;anaconda3&lt;/code&gt; installation directory to the &lt;code&gt;$PATH&lt;/code&gt; system variable, by:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;export PATH=&amp;#34;/usr/local/anaconda3/bin:$PATH&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.zshrc
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; ~/.zshrc
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;initializing-conda-environment&#34;&gt;Initializing Conda Environment&lt;/h3&gt;
-&lt;p&gt;Initialize &lt;code&gt;conda&lt;/code&gt; for your shell permanently:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda init
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will add command lines to your &lt;code&gt;~/.zshrc&lt;/code&gt; file to initialize conda path variables at each startup. The modified &lt;code&gt;~/.zshrc&lt;/code&gt; file looks like:&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;installing-conda-package-on-linux-server--remote-cluster&#34;&gt;Installing Conda package on Linux server / remote cluster&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s best to install the &amp;ldquo;miniconda&amp;rdquo; essential-only distribution, since the IDE, Jupyter-notebook, Spyder etc. will likely not be needed on a remote server / cluster! Do:&lt;/p&gt;</description>
     </item>
     <item>
       <title>SoftTools</title>
@@ -630,34 +636,41 @@ However, in my case, the view is fixed at the month for which I have put the htm
       <description>&lt;p&gt;List of most of the Conferences and Workshops I have undertaken or am going to :&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;Next Year or Later&lt;/summary&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2026
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年09月  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; LIGO India  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Pune?, India&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;LIGO-Virgo-KAGRA Meeting Spring 2026
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年03月  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; VIRGO  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Cascina, Italy&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/details&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;2nd I&amp;rsquo;nt Conference on Physics of the Two Infinities
-[&lt;a href=&#34;https://indico.in2p3.fr/event/35255/&#34;&gt;website&lt;/a&gt;]
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年11月17-21日  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; UTokyo  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Tokyo, Japan&lt;/p&gt;
+&lt;p&gt;NeurIPS, xx&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;LIGO-Virgo-KAGRA Meeting Fall 2025
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年09月  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Colorado State University  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA &lt;br/&gt; &lt;em&gt;Note: Most likely not attending!&lt;/em&gt;&lt;/p&gt;</description>
+&lt;p&gt;KIW-15, Shanghai&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://web.iucaa.in/ws/~lvk2026pune/index.html&#34;&gt;LIGO-Virgo-KAGRA Meeting Fall 2026&lt;/a&gt;
+&lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Registered]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年09月21–25  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; LIGO India  • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; IUCAA, Pune, India&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;KAGRA F2F, Osaka&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cd3.ipmu.jp/a3n_Aug2026/&#34;&gt;A3net&lt;/a&gt;
+&lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Registered]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: green;&#34;&gt;[Going]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年08月24–28  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; National Taiwan University
+ • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Taipei, Taiwan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://iaifi.org/summer-workshop&#34;&gt;IAIFI Summer Workshop&lt;/a&gt;
+&lt;span style=&#34;font-weight: bold; color: tomato;&#34;&gt;[Not-registered]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: tomato;&#34;&gt;[cannot??]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年08月10–14  • 
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; MIT
+ • 
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Boston, MA, USA&lt;/p&gt;</description>
     </item>
     <item>
       <title>Guide to Hugo PaperMod Website</title>
@@ -968,6 +981,73 @@ However, in my case, the view is fixed at the month for which I have put the htm
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;g2net-work/g2net-detecting-continuous-gravitational-waves.zip
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mlgwsc-work/injections4_1.25s.npy
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mlgwsc-work/real_noise_file.hdf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# LaTeX Core Auxiliary Files&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.aux
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**/*.aux
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.log
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.out
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**/*.out
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.toc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.lof
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.lot
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.fls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.fdb_latexmk
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.synctex.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.synctex&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;busy&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.xdv
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.dvi
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Bibliography (BibTeX / Biber)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.bbl
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.bcf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.blg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*-blx.bib
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.run.xml
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.brf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Beamer Presentation Temp Files (if applicable)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.nav
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.snm
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.vrb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Output Documents&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Note: Comment these out if you want to track final compiled PDFs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**/*.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Python &amp;amp; Data Scripts&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;__pycache__/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.py&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;cod&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*&lt;span class=&#34;nv&#34;&gt;$py&lt;/span&gt;.class
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.ipynb_checkpoints/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# OS Specific &amp;amp; Editor Temp Files&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ==========================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.DS_Store
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**/.DS_Store
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.AppleDouble
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.LSOverride
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Icon
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# IDEs and Text Editors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.vscode/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.idea/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.swp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*.swo
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*~
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Useful links:&lt;/p&gt;</description>
     </item>
     <item>
@@ -979,6 +1059,56 @@ However, in my case, the view is fixed at the month for which I have put the htm
 &lt;ul&gt;
 &lt;li&gt;Always use active voice ! For instance,&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/en/posts/2026-05-14-overleaf-community-ed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-05-14-overleaf-community-ed/</guid>
+      <description>&lt;h1 id=&#34;running-overleaf-toolkit-on-macos-apple-silicon-the-missing-guide&#34;&gt;Running Overleaf Toolkit on macOS Apple Silicon: The Missing Guide&lt;/h1&gt;
+&lt;p&gt;If you have ever tried to host a local instance of Overleaf Community Edition using the official &lt;a href=&#34;https://github.com&#34;&gt;Overleaf Toolkit&lt;/a&gt; on an Apple Silicon Mac (M1/M2/M3/M4), you have likely run into a wall of cryptic container crashes.&lt;/p&gt;
+&lt;p&gt;The Overleaf Toolkit is built natively for Linux. When deployed on macOS via Docker Desktop, differences in the &lt;code&gt;sed&lt;/code&gt; utility, cloud storage interactions, and x86 hardware virtualization layers create a perfect storm of errors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/en/posts/2026-05-19-latex-for-physics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-05-19-latex-for-physics/</guid>
+      <description>&lt;h1 id=&#34;the-ultimate-latex-stack-for-astrophysics-phds&#34;&gt;The Ultimate LaTeX Stack for Astrophysics PhDs&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A comprehensive guide and printable cheatsheet for &lt;code&gt;siunitx&lt;/code&gt;, &lt;code&gt;physics2&lt;/code&gt;, &lt;code&gt;acronym&lt;/code&gt;, and advanced paper write-ups.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-recommended-preamble-setup&#34;&gt;🚀 Recommended Preamble Setup&lt;/h2&gt;
+&lt;p&gt;Copy and paste this snippet into your &lt;code&gt;.tex&lt;/code&gt; root or &lt;code&gt;.sty&lt;/code&gt; file. It configures the modular packages, overrides command conflicts, and defines standard astronomy constants (including the stubborn CGS units the community refuses to drop).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Core Math &amp;amp; Layout 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;mathtools&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Extends amsmath, improves spacing 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;bm&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; True bold formatting for vectors/tensors (&lt;span class=&#34;k&#34;&gt;\bm&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\alpha&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;) 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;microtype&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Subtle typographic adjustments to fix text &amp;#34;rivers&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- The Physics Stack
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;siunitx&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;        &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Numbers, units, and ranges 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;physics2&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Modern, bug-free physics shorthand 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usephysicsmodule&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;ab, braket, diagmatrix&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Load specific modules
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Specialized Tools ---
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;[printonlyused]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;acronym&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;% Jargon tracking and glossary linking
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;[capitalise]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;cleveref&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;   &lt;span class=&#34;c&#34;&gt;% Automated smart referencing (e.g., &amp;#34;Eq. (1)&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;mhchem&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;          &lt;span class=&#34;c&#34;&gt;% Flawless isotope and reaction formatting
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;booktabs&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;        &lt;span class=&#34;c&#34;&gt;% Professional-grade table lines (\toprule, etc.)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Astro-Specific Unit Declarations
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\parsec&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;pc&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\lightyear&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;ly&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Msol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;M&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar mass 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Rsol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;R&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar radius 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Lsol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;L&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar luminosity 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\year&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;yr&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\erg&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;erg&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; CGS energy unit 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\gauss&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;G&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; CGS magnetic field strength
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;-expanded-printable-cheatsheet&#34;&gt;🖨️ Expanded Printable Cheatsheet&lt;/h2&gt;
+&lt;h3 id=&#34;1-siunitx-quantities-ranges--formats&#34;&gt;1. &lt;code&gt;siunitx&lt;/code&gt; (Quantities, Ranges &amp;amp; Formats)&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Tip: If &lt;code&gt;\qty&lt;/code&gt; conflicts with bracket modules, use &lt;code&gt;\quantity&lt;/code&gt; explicitly.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -1760,15 +1890,15 @@ Sign up for free!
 &lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt;
  
 &lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
-2025年11月18日
+2026年02月18-28日
 &lt;/br&gt;
-Presented a &lt;a href=&#34;https://suyoggarg.com/ewha/&#34;&gt;Gravitational Waves Data Analysis tutorial&lt;/a&gt; at Ewha womans university, Seoul.&lt;/p&gt;
-&lt;p&gt;&lt;span style=&#34;color:green; font-weight:bold&#34;&gt;[Paper]&lt;/span&gt;
+Visited Prof. Otto&amp;rsquo;s GW group at CUHK, Hong Kong.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt;
  
 &lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
-2025年11月
-&lt;br/&gt;
-Two new papers up on Arxiv this month!&lt;/p&gt;</description>
+2025年11月18日
+&lt;/br&gt;
+Presented a &lt;a href=&#34;https://suyoggarg.com/ewha/&#34;&gt;Gravitational Waves Data Analysis tutorial&lt;/a&gt; at Ewha womans university, Seoul.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal</title>
@@ -1878,33 +2008,32 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
 &lt;ul&gt;
 &lt;li&gt;I build fast &lt;em&gt;surrogate&lt;/em&gt; or data-driven waveform models for compact binaries, with the current aim of accurately approximating effective one-body waveforms, which would be later expanded into other waveforms approximations and binary systems.&lt;/li&gt;
 &lt;li&gt;Architectures explored include convolutional networks on time–frequency representations and lightweight auto-encoder models for rapid evaluation.&lt;/li&gt;
-&lt;li&gt;Targets: high overlap (low mismatch) with reference models, large parameter-space coverage (incl. eccentricity and spin), and uncertainty-aware predictions (ensembles/calibration).&lt;/li&gt;
-&lt;li&gt;Intended use cases: speeding up parameter estimation and low-latency searches for 3G gravitational wave detectors.&lt;/li&gt;
+&lt;li&gt;Goals: high overlap (low mismatch) with target waveforms, large parameter-space coverage (incl. eccentricity and spin), orders-of-magnitude better waveform generation speed over native implementation.&lt;/li&gt;
+&lt;li&gt;Intended use cases: speeding up parameter estimation, tests of gravity with novel waveforms, data analysis from 3G gravitational wave detectors.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;detections-of-gravitational-waves-from-compact-object-mergers&#34;&gt;Detections of gravitational waves from compact object mergers&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;I developed deep-learning pipelines for detection/classification of compact binary coalescences and related sources.&lt;/li&gt;
-&lt;li&gt;Training strategy comparisons (curriculum learning, transfer learning) to improve sensitivity and robustness to glitches.&lt;/li&gt;
-&lt;li&gt;Practical considerations: coincidence logic, false-alarm control, and runtime efficiency on commodity GPUs.&lt;/li&gt;
+&lt;li&gt;Also compared different training strategies (curriculum learning, transfer learning) to improve sensitivity and robustness to glitches.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;stellar-and-solar-physics&#34;&gt;Stellar and Solar Physics&lt;/h2&gt;
 &lt;h3 id=&#34;stellar-magnetic-cycles-and-variability&#34;&gt;Stellar magnetic cycles and variability&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Studied the &lt;strong&gt;Waldmeier effect&lt;/strong&gt; (anti-correlation of rise time with cycle amplitude) in stellar activity cycles, extending solar-cycle phenomenology to other stars.&lt;/li&gt;
-&lt;li&gt;Methods included cycle extraction from long-baseline activity indices and careful treatment of cadence/uncertainty.&lt;/li&gt;
-&lt;li&gt;Results help connect stellar dynamos with solar behavior and inform scaling relations across spectral types.&lt;/li&gt;
+&lt;li&gt;Studied the &lt;strong&gt;Waldmeier effect&lt;/strong&gt; (anti-correlation of rise time with cycle amplitude) in stellar activity cycles, extending solar-cycle variability studies to other stars.&lt;/li&gt;
+&lt;li&gt;Methods included cycle identification, smoothing and function fits to probe long-term amplitude variations and correlations between stellar properties.&lt;/li&gt;
+&lt;li&gt;Results aid in constraining solar dynamo model behaviors from the point of view of other Sun-like stars.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;super-resolving-the-solar-magnetograms&#34;&gt;Super-resolving the solar magnetograms&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Worked on super-resolution and denoising of solar magnetograms using convolutional models.&lt;/li&gt;
-&lt;li&gt;Goals: recover small-scale magnetic structures from older low-resolution magnetograms by super-resolving them and cross-instrument benchmarks.&lt;/li&gt;
+&lt;li&gt;Goals: recover small-scale magnetic structures from older low-resolution magnetograms by super-resolving the the low-resolution images.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;other-interests&#34;&gt;Other Interests&lt;/h2&gt;
 &lt;h3 id=&#34;agns-and-x-ray-emissions&#34;&gt;AGNs and X-Ray Emissions&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Worked on developing pipeline for XMM-Newton EPIC instrument auto data reductions and inferences for a single-query raw data to science products pathway.&lt;/li&gt;
+&lt;li&gt;Worked on developing pipeline for XMM-Newton EPIC instrument auto data reductions and inferences for a single query raw data to science products pathway.&lt;/li&gt;
 &lt;li&gt;Analysed the ASASSN-14li data using the developed pipeline to check for a presence of X-Ray Corona formation in that system.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;dark-matter-halos-and-the-uchuu-simulation&#34;&gt;Dark Matter Halos and the Uchuu simulation&lt;/h3&gt;
@@ -1913,12 +2042,12 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
 &lt;/ul&gt;
 &lt;h3 id=&#34;internal-structure-of-neutron-stars&#34;&gt;Internal structure of Neutron Stars&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Investigated tidal contributions to periastron precession in stellar-mass NS–BH binaries and found them &lt;em&gt;negligible&lt;/em&gt; in the regimes considered, clarifying where strong-field GR effects dominate over tidal structure effects.&lt;/li&gt;
+&lt;li&gt;Investigated tidal contributions to periastron precession in stellar-mass NS – BH binaries and found them &lt;em&gt;negligible&lt;/em&gt; in the regimes considered, clarifying where strong-field GR effects dominate over tidal structure effects.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Broad interest in physically-informed ML: data augmentation that respects symmetries, calibrated uncertainties, and attribution methods (e.g., Grad-CAM).&lt;/li&gt;
-&lt;li&gt;Reproducible research and open-source: contributions within the scientific Python ecosystem (e.g., community tools for astronomy and relativity).&lt;/li&gt;
+&lt;li&gt;Broadly interested in physically-informed neural networks and their applications in astrophysical sciences and data analysis.&lt;/li&gt;
+&lt;li&gt;Reproducible and open-source software development: contributions within the scientific Python ecosystem (e.g., Astropy) and novel software releases.&lt;/li&gt;
 &lt;li&gt;Symbolic regression and machine learning physical symmetries from large-scale multimodal datasets.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
@@ -2076,10 +2205,11 @@ const DATE_STYLE = &#39;auto&#39;; // &#39;auto&#39; | &#39;jp&#39; | &#39;en&#3
 
 /*** ===== Sources ===== ***/
 const TALKS_SOURCES = {
-  &#34;Invited&#34;: &#34;/bib/talks-invited.bib&#34;,
+  &#34;Invited: Conference&#34;: &#34;/bib/talks-invited-conference.bib&#34;,
+  &#34;Invited: Seminars&#34;: &#34;/bib/talks-invited-seminar.bib&#34;,
   &#34;Contributed&#34;: &#34;/bib/talks-contributed.bib&#34;,
   &#34;Poster&#34;: &#34;/bib/posters.bib&#34;,
-  &#34;Other&#34;: &#34;/bib/talks-other.bib&#34;
+  &#34;Other&#34;: &#34;/bib/talks-other.bib&#34;,
 };
 
 const DEBUG = /[?&amp;]talksdebug=1/.test(location.search);
@@ -2465,9 +2595,15 @@ function render(){
       <link>http://localhost:1313/en/pages/tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/pages/tips/</guid>
-      <description>&lt;ul&gt;
+      <description>&lt;p&gt;This is a list of some general tips related to various subjects that I have found to be extremely useful over the years. The lists serves the main purpose of a reminder to myself.&lt;/p&gt;
+&lt;h2 id=&#34;git-related&#34;&gt;&lt;code&gt;git&lt;/code&gt; related&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;Don&amp;rsquo;t ever save built files like PDFs in git history, if all requirements for building them are already saved. This increases the storages in the long run.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+&lt;h2 id=&#34;vscode-for-latex-document-compilation&#34;&gt;VSCode for LaTeX document compilation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Customize &lt;code&gt;syncTex&lt;/code&gt; commands to have 1) PDF &amp;ndash;&amp;gt; cursor work on double click, 2) cursor and PDF to scroll to label location upon click,&lt;/p&gt;</description>
     </item>
     <item>
       <title>Writings</title>
@@ -2493,13 +2629,13 @@ function render(){
 &lt;p&gt;Art and Connections: KT in conversation with Fernando Kague. Komaba Times, Issue 14. Apr 2025.
  
 &lt;i class=&#34;fa fa-link&#34;&gt;&lt;/i&gt;
-&lt;a href=&#34;https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf#page=17&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Cold Nights, Tokyo and Tenali Rama. Kamaba Times, Issue 14. Apr 2025.
  
 &lt;i class=&#34;fa fa-link&#34;&gt;&lt;/i&gt;
-&lt;a href=&#34;https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://peak.c.u-tokyo.ac.jp/vcms_lf/KomabaTimes14_DigitalEdition.pdf#page=19&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;उसके श्रम के वह आँसू (कविता)। Jan 2025.
