@@ -24,7 +24,7 @@ showTOC: false
 
       <fieldset class="filter-group">
         <legend>Type</legend>
-        <div id="filterTypes" class="filter-chips"><!-- Invited/Contributed/Poster/Other --></div>
+        <div id="filterTypes" class="filter-chips"><!-- Invited/Contributed/Poster/Other/etc --></div>
       </fieldset>
 
       <fieldset class="filter-group">
@@ -154,8 +154,8 @@ const DATE_STYLE = 'auto'; // 'auto' | 'jp' | 'en'
 
 /*** ===== Sources ===== ***/
 const TALKS_SOURCES = {
-  "Invited: Conference": "/bib/talks-invited-conference.bib",
-  "Invited: Seminars": "/bib/talks-invited-seminar.bib",
+  "Invited-Conference": "/bib/talks-invited-conference.bib",
+  "Invited-Seminar": "/bib/talks-invited-seminar.bib",
   "Contributed": "/bib/talks-contributed.bib",
   "Poster": "/bib/posters.bib",
   "Other": "/bib/talks-other.bib",
@@ -456,7 +456,7 @@ function bibToTalk(e){
 
 /*** ===== UI helpers ===== ***/
 function initFilters(talks){
-  const types = ["Invited","Contributed","Poster","Other"];
+  const types = TALKS_SOURCES ? Object.keys(TALKS_SOURCES) : uniqueSorted(talks.map(t=>t.type).filter(Boolean));
   if(els.filterTypes) els.filterTypes.innerHTML = types.map(t=>`<label class="chip-toggle"><input type="checkbox" value="${t}"> ${t}</label>`).join('');
   const conts = uniqueSorted(talks.map(t=>t.continent).filter(Boolean));
   const list = conts.length ? conts : ["Africa","Asia","Europe","North America","South America","Oceania","Antarctica"];
