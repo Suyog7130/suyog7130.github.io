@@ -14,7 +14,18 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 
 - NeurIPS, xx
 
-- KIW-15, Shanghai
+- [18th Asian Conference in Machine Learning](https://www.acml-conf.org/2026/)
+<span style="font-weight: bold; color: seagreen;">[conf-dealine:2026/06/20]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年12月01-04 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> ?? 
+&nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> ??
+
+- KAGRA F2F and KIW, Shanghai
+<br/><i class="fa fa-calendar-alt"></i> 2026年12月15-17,18-19 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> ShanghaiTech 
+&nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> Shanghai, China
 
 - [LIGO-Virgo-KAGRA Meeting Fall 2026](https://web.iucaa.in/ws/~lvk2026pune/index.html)
 <span style="font-weight: bold; color: seagreen;">[Registered]</span>
@@ -23,6 +34,10 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 <i class="fa fa-map-marked-alt"></i> IUCAA, Pune, India
 
 - KAGRA F2F, Osaka
+<br/><i class="fa fa-calendar-alt"></i> 2026年08月26-28 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> OMU 
+&nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> Osaka, Japan
 
 - [A3net](https://cd3.ipmu.jp/a3n_Aug2026/)
 <span style="font-weight: bold; color: seagreen;">[Registered]</span>
@@ -31,6 +46,15 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 <i class="fa fa-university"></i> National Taiwan University 
 &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> Taipei, Taiwan
+
+- [RIKEN AI & Maths Symposium](https://pri.riken.jp/symposium/ai4math.html)
+<span style="font-weight: bold; color: seagreen;">[Registered]</span>
+<span style="font-weight: bold; color: seagreen;">[Going]</span>
+<span style="font-weight: bold; color: green;">[Poster]</span>
+<br/><i class="fa fa-calendar-alt"></i> 2026年08月18-12 &nbsp;•&nbsp;
+<i class="fa fa-university"></i> RIKEN Tokyo Liaison office 
+&nbsp;•&nbsp;
+<i class="fa fa-map-marked-alt"></i> Tokyo, Japan
 
 - [IAIFI Summer Workshop](https://iaifi.org/summer-workshop)
 <span style="font-weight: bold; color: tomato;">[Not-registered]</span>
@@ -46,9 +70,9 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 <span style="font-weight: bold; color: seagreen;">[Going?]</span>
 <span style="font-weight: bold; color: green;">[Talk]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年08月10–14 &nbsp;•&nbsp;
-<i class="fa fa-university"></i> MIT 
+<i class="fa fa-university"></i> SYSU 
 &nbsp;•&nbsp;
-<i class="fa fa-map-marked-alt"></i> Boston, MA, USA
+<i class="fa fa-map-marked-alt"></i> Shenzhen, China
 
 - [MLPhysics conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/)
 <span style="font-weight: bold; color: seagreen;">[Registered]</span>
@@ -61,7 +85,7 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 
 - [Cool Stars 23](https://coolstars23.github.io/index.html)
 <span style="font-weight: bold; color: seagreen;">[Registered]</span>
-<span style="font-weight: bold; color: green;">[Going]</span>
+<span style="font-weight: bold; color: red;">[Going->NA]</span>
 <span style="font-weight: bold; color: green;">[Poster]</span>
 <br/><i class="fa fa-calendar-alt"></i> 2026年06月15–19 &nbsp;•&nbsp;
 <i class="fa fa-map-marked-alt"></i> TOC Ariake, Tokyo
