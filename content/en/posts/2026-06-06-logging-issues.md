@@ -7,9 +7,9 @@ tags:
     - logging
 ---
 
-# Mastering Python Logging: Introspection, Namespace Invisibility, and "Rogue" Frameworks
+<!--# Mastering Python Logging: Introspection, Namespace Invisibility, and "Rogue" Frameworks-->
 
-**NOTE:** Based on Google Gemini outputs! 
+**Disclaimer:** Based on Google Gemini outputs! 
 
 When building complex, multi-module Python projects, especially in data science, deep learning, or physics, managing console output is a nightmare. You are often caught in a binary trap: either you turn debugging off and see *nothing*, or you turn it on and get drowned in a wall of `INFO` and `DEBUG` noise from third-party libraries and internal modules.
 

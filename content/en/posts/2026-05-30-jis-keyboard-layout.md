@@ -7,8 +7,10 @@ tags:
     - keyboard
     - terminal
 ---
+<!--
+# How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\\) in Google Chrome-->
 
-# How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\\) in Google Chrome
+**Disclaimer:** Made with Google Gemini-Pro prompts
 
 If you use a physical Japanese (JIS) hardware keyboard layout on a modern Mac, you have likely run into a frustrating quirk: even if you change your macOS text settings to output a backslash (`\`) instead of a Yen sign (`¥`), **Google Chrome, VS Code, and Slack will completely ignore your system settings.** 
 
