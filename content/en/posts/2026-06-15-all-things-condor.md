@@ -1,6 +1,6 @@
 ---
 author: "Suyog Garg"
-title: "All about running jobs on Condor"
+title: "All about running jobs on HTCondor"
 date: "2026-06-15"
 tags:
     - condor
@@ -12,8 +12,7 @@ tags:
 
 **Disclaimer:** Based on Google Gemini-Pro prompts! 
 
-
-# Demystifying HTCondor for Astrophysics: Scaling Parameter Estimation Without Losing Your Sanity
+<!-- # Demystifying HTCondor for Astrophysics: Scaling Parameter Estimation Without Losing Your Sanity-->
 
 If you are a PhD student or researcher working in gravitational-wave astronomy, machine learning, or high-performance data analysis, you will eventually find yourself submitting jobs to a massive compute cluster like the LIGO Data Grid (LDG) or a local university cluster. At the heart of these environments sits **HTCondor**—a workload management system designed for High-Throughput Computing (HTC).
 
@@ -155,7 +154,16 @@ To understand why, we have to look at how data flows under the hood in both para
 
 #### Architectural Breakdown
 
-[ STRATEGY A: Python Multiprocessing (npool=8) ]Main Process (Tracks Swarm)|-- (Pickle Data) --> Worker 1 (Copy of Model in RAM) --> Eval 1|-- (Pickle Data) --> Worker 2 (Copy of Model in RAM) --> Eval 2|-- (Pickle Data) --> Worker 3 (Copy of Model in RAM) --> Eval 3* Deep Bottleneck: Constant serialization/deserialization over OS pipes.* Massive RAM Waste: 8 workers * 500MB Model = 4GB redundant RAM footprint.[ STRATEGY B: Vectorized PyTorch Threading (npool=1 + torch.set_num_threads(8)) ]Main Process (Sends 1 Single Matrix Tensor of ALL particles)|vPyTorch C++ Backend Engine (MKL / OpenMP / ATen)|-- Core 1 Matrix Math Sub-Task \|-- Core 2 Matrix Math Sub-Task  |-- Zero Copying!|-- Core 3 Matrix Math Sub-Task  |-- Shares same physical memory pointers.|-- Core 4 Matrix Math Sub-Task /   -- Bypasses Python GIL completely.
+[ STRATEGY A: Python Multiprocessing (npool=8) ]Main Process (Tracks Swarm)|
+-- (Pickle Data) --> Worker 1 (Copy of Model in RAM) --> Eval 1|
+-- (Pickle Data) --> Worker 2 (Copy of Model in RAM) --> Eval 2|
+-- (Pickle Data) --> Worker 3 (Copy of Model in RAM) --> Eval 3* Deep Bottleneck: Constant serialization/deserialization over OS pipes.
+* Massive RAM Waste: 8 workers * 500MB Model = 4GB redundant RAM footprint.
+
+[ STRATEGY B: Vectorized PyTorch Threading (npool=1 + torch.set_num_threads(8)) ]
+Main Process (Sends 1 Single Matrix Tensor of ALL particles)|vPyTorch C++ Backend Engine (MKL / OpenMP / ATen)|
+-- Core 1 Matrix Math Sub-Task \|-- Core 2 Matrix Math Sub-Task  |-- Zero Copying!|-- Core 3 Matrix Math Sub-Task  |-- Shares same physical memory pointers.|-- Core 4 Matrix Math Sub-Task /   
+-- Bypasses Python GIL completely.
 
 
 #### The "Pickle Tax" and Core Contention
