@@ -1,9 +1,23 @@
-# The Ultimate LaTeX Stack for Astrophysics PhDs
+---
+author: "Suyog Garg"
+title: "LaTeX for Astrophysics PhDs"
+date: "2026-05-19"
+tags:
+    - latex
+    - cheatsheet
+    - guide
+---
+
+**Disclaimer:** Based on ChatGPT 5.5-Pro prompts!
+
+<!--# The Ultimate LaTeX Stack for Astrophysics PhDs-->
+
 > A comprehensive guide and printable cheatsheet for `siunitx`, `physics2`, `acronym`, and advanced paper write-ups.
 
 ---
 
-## 🚀 Recommended Preamble Setup
+## Recommended Preamble Setup
+
 Copy and paste this snippet into your `.tex` root or `.sty` file. It configures the modular packages, overrides command conflicts, and defines standard astronomy constants (including the stubborn CGS units the community refuses to drop).
 
 ```latex
@@ -36,9 +50,10 @@ Copy and paste this snippet into your `.tex` root or `.sty` file. It configures 
 
 ---
 
-## 🖨️ Expanded Printable Cheatsheet
+## Expanded Printable Cheatsheet
 
 ### 1. `siunitx` (Quantities, Ranges & Formats)
+
 *Tip: If `\qty` conflicts with bracket modules, use `\quantity` explicitly.*
 
 
@@ -57,6 +72,7 @@ Copy and paste this snippet into your `.tex` root or `.sty` file. It configures 
 ---
 
 ### 2. Calculus, Integrals & Brackets (`physics2`)
+
 *Calculus shortcuts in `physics2` require loading the standard engine tools. Always use `\diff` or `\dd` setups for proper spacing around differential operators.*
 
 
@@ -74,6 +90,7 @@ Copy and paste this snippet into your `.tex` root or `.sty` file. It configures 
 ---
 
 ### 3. Bra-Ket Vector Notation (`physics2`)
+
 *Requires `\usephysicsmodule{braket}`.*
 
 
@@ -89,8 +106,10 @@ Copy and paste this snippet into your `.tex` root or `.sty` file. It configures 
 ### 4. `acronym` (Jargon Automation)
 
 **Preamble/Setup Definition Block:**
+
 ```latex
-\(\begin{acronym}[SMBH] \% Option sets the width margin to match the longest key     \acro{AGN}{Active Galactic Nucleus}     \acro{CMB}{Cosmic Microwave Background}     \acro{ISM}{Interstellar Medium}     \acro{SMBH}{Supermassive Black Hole} \end{acronym} \%\%\)MAGIT_PARSER_PROTECT%%```
+\(\begin{acronym}[SMBH] \% Option sets the width margin to match the longest key     \acro{AGN}{Active Galactic Nucleus}     \acro{CMB}{Cosmic Microwave Background}     \acro{ISM}{Interstellar Medium}     \acro{SMBH}{Supermassive Black Hole} \end{acronym} \%\%\)MAGIT_PARSER_PROTECT%%
+```
 
 **Document Body Usage Rules:**
 
@@ -105,26 +124,34 @@ Copy and paste this snippet into your `.tex` root or `.sty` file. It configures 
 
 ---
 
-## 🛠️ Essential Thesis Packages for Astrophysics Write-ups
+## Essential Thesis Packages for Astrophysics Write-ups
 
 ### `cleveref` (Smart cross-referencing)
+
 Stop manually typing `Figure~\ref{...}`. If you shift a table to an appendix, `cleveref` changes the text word automatically.
+
 *   `\cref{fig:m87}` $\rightarrow$ `fig. 1`
 *   `\Cref{fig:m87}` $\rightarrow$ `Figure 1` (Capitalized automatically at the start of a sentence)
 *   `\cref{eq:rad,eq:conv,eq:cond}` $\rightarrow$ `eqs. (1) to (3)` (Automated grouping/sorting)
 
 ### `mhchem` (Nucleosynthesis & Astrochemistry)
+
 Perfect for stellar interiors, chemical evolution, and dust modeling.
+
 *   `\ce{^12C(\alpha, \gamma)^16O}` $\rightarrow$ $^{12}\text{C}(\alpha, \gamma)^{16}\text{O}$
 *   `\ce{H2O}` $\rightarrow$ $\text{H}_2\text{O}$
 *   `\ce{Fe+}` $\rightarrow$ $\text{Fe}^+$
 
 ### `booktabs` (High-Impact Data Tables)
+
 Standard LaTeX tables look cheap due to grid layouts. Clear tables use clean spacing.
+
 *   **Rule:** Never use vertical rules (`|`). Use the clear boundary dividers.
+
 ```latex
 \(\begin{table}[ht] \centering \begin{tabular}{lcc}     \toprule\)
     Cluster Name & Redshift (\(z\)) & Mass (\(\unit{\Msol}\)) \\
     \midrule
     Abell 1689   & 0.183          & \(1.5 \times 10^{15}\) \\
-    Bullet Cl.   & 0.296          & \(2.1 \times 10^{15}\) \(\\     \bottomrule \end{tabular} \end{table} \%\%\)MAGIT_PARSER_PROTECT%%```
+    Bullet Cl.   & 0.296          & \(2.1 \times 10^{15}\) \(\\     \bottomrule \end{tabular} \end{table} \%\%\)MAGIT_PARSER_PROTECT%%
+```
