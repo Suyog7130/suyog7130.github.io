@@ -187,15 +187,190 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 
 </details>
 
-<!--<i class="fa fa-book-reader"></i> LIGO-Virgo-KAGRA Meeting-->
-<!--&nbsp;&nbsp;&nbsp;<i class="fa fa-tag"></i> International-->
 
 
-<!--
-<div style="table {width: 30%;}">
-|   |   |   |   |
-|---|---|---|---|
-| <i class="fa fa-calendar-alt"></i> 2025/03/24-28 | <i class="fa fa-book-reader"></i> LIGO-Virgo-KAGRA Meeting  | <i class="fa fa-university"></i> Monash University | <i class="fa fa-map-marked-alt"></i> Melbourne, Australia | 
-| 2025/03/24-28 | LIGO-Virgo-KAGRA Meeting  | Monash University | Melbourne, Australia |
-|   |   |   |   |   |
-</div>-->
+
+<style>
+.conf-list{
+  display:grid;
+  gap:.85rem;
+  margin:1rem 0;
+}
+
+.conf-card{
+  border:1px solid var(--conf-border,#d0d7de);
+  border-radius:14px;
+  padding:.85rem 1rem;
+  background:var(--conf-bg,#fff);
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+.conf-title{
+  font-weight:700;
+  font-size:1.03rem;
+  margin-bottom:.35rem;
+}
+
+.conf-title a{
+  text-decoration:none;
+}
+
+.conf-title a:hover{
+  text-decoration:underline;
+}
+
+.conf-tags{
+  display:inline-flex;
+  flex-wrap:wrap;
+  gap:.3rem;
+  margin-left:.35rem;
+  vertical-align:middle;
+}
+
+.conf-tag{
+  display:inline-flex;
+  align-items:center;
+  border-radius:999px;
+  padding:.12rem .48rem;
+  font-size:.78rem;
+  font-weight:700;
+  border:1px solid currentColor;
+  line-height:1.25;
+}
+
+.conf-tag.invited,
+.conf-tag.talk,
+.conf-tag.poster{ color:#238636; }
+
+.conf-tag.registered,
+.conf-tag.maybe{ color:#2e8b57; }
+
+.conf-tag.no,
+.conf-tag.missed{ color:#cf222e; }
+
+.conf-tag.notreg{ color:#e5532d; }
+
+.conf-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem .7rem;
+  margin-top:.45rem;
+  color:var(--conf-muted,#57606a);
+  font-size:.93rem;
+}
+
+.conf-meta span{
+  display:inline-flex;
+  align-items:center;
+  gap:.28rem;
+}
+
+.conf-meta .fa{
+  opacity:.78;
+}
+
+@media (prefers-color-scheme: dark){
+  #confList{
+    --conf-bg:#161b22;
+    --conf-border:#30363d;
+    --conf-muted:#c9d1d9;
+  }
+
+  .conf-card{
+    box-shadow:0 2px 10px rgba(0,0,0,.32);
+  }
+
+  .conf-tag{
+    color:inherit !important;
+    opacity:.95;
+  }
+}
+</style>
+
+
+<div id="confList" class="conf-list"></div>
+
+<script type="text/plain" id="confData">
+# title | url | tags | date | institution | location | options
+
+ICGAC16 | https://tianqin.sysu.edu.cn/en/ICGAC16-home | Invited:invited; Registered:registered; Going?:maybe; Talk:talk | 2026年08月10–14 | SYSU | Shenzhen, China |
+
+MLPhysics conference | https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/ | Registered:registered; Going?:maybe; Poster:poster | 2026年07月13–15 | KyotoU | Naha, Okinawa, Japan |
+
+Cool Stars 23 | https://coolstars23.github.io/index.html | Registered:registered; Going → NA:no; Poster:poster | 2026年06月15–19 | | TOC Ariake, Tokyo |
+
+ICML 2026 | https://icml.cc/ | Not registered:notreg; Missed:missed | 2026年07月06–11 | | Seoul, Korea | strike
+</script>
+
+
+<script>
+(function(){
+  const dataEl = document.getElementById("confData");
+  const listEl = document.getElementById("confList");
+  if(!dataEl || !listEl) return;
+
+  function esc(s){
+    return String(s || "").replace(/[&<>"']/g, c => ({
+      "&":"&amp;",
+      "<":"&lt;",
+      ">":"&gt;",
+      '"':"&quot;",
+      "'":"&#39;"
+    }[c]));
+  }
+
+  function splitRow(line){
+    return line.split("|").map(x => x.trim());
+  }
+
+  function parseTags(raw){
+    return String(raw || "")
+      .split(";")
+      .map(x => x.trim())
+      .filter(Boolean)
+      .map(t => {
+        const parts = t.split(":");
+        return {
+          label: (parts[0] || "").trim(),
+          cls: (parts[1] || "maybe").trim().toLowerCase()
+        };
+      });
+  }
+
+  function render(){
+    const rows = dataEl.textContent
+      .split(/\r?\n/)
+      .map(x => x.trim())
+      .filter(x => x && !x.startsWith("#"));
+
+    const html = rows.map(line => {
+      const [title, url, tagsRaw, date, institution, location, options] = splitRow(line);
+      const strike = String(options || "").toLowerCase().includes("strike");
+      const titleText = strike ? `<s>${esc(title)}</s>` : esc(title);
+      const tags = parseTags(tagsRaw).map(t =>
+        `<span class="conf-tag ${esc(t.cls)}">${esc(t.label)}</span>`
+      ).join("");
+
+      const meta = [
+        date ? `<span><i class="fa fa-calendar-alt"></i> ${esc(date)}</span>` : "",
+        institution ? `<span><i class="fa fa-university"></i> ${esc(institution)}</span>` : "",
+        location ? `<span><i class="fa fa-map-marked-alt"></i> ${esc(location)}</span>` : ""
+      ].filter(Boolean).join("");
+
+      return `
+        <div class="conf-card">
+          <div class="conf-title">
+            <a href="${esc(url)}" target="_blank" rel="noopener">${titleText}</a>
+            <span class="conf-tags">${tags}</span>
+          </div>
+          <div class="conf-meta">${meta}</div>
+        </div>
+      `;
+    }).join("");
+
+    listEl.innerHTML = html;
+  }
+
+  render();
+})();
+</script>
