@@ -12,8 +12,19 @@
     <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Thu, 13 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>`timg` for Terminal image rendering</title>
+      <link>http://localhost:1313/en/posts/2026-06-16-timg-related/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-06-16-timg-related/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on Google Gemini-Pro prompts!&lt;/p&gt;
+&lt;!--
+# Rendering Images Directly in Your Terminal: The Complete Guide to `timg` on Remote Servers
+--&gt;
+&lt;p&gt;As researchers, data scientists, and developers working on remote HPC clusters or cloud servers, we live in the terminal. But dealing with visual data—like checking a training loss plot, verifying a generated image, or inspecting a corner plot from an MCMC run—usually forces us out of our flow.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Installing &#39;eza&#39; on linux server without &#39;sudo&#39;</title>
       <link>http://localhost:1313/en/posts/2025-11-13-install-eza-no-sudo/</link>

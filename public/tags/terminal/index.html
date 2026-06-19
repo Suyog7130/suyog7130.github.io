@@ -256,14 +256,30 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">`timg` for Terminal image rendering
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Disclaimer: Based on Google Gemini-Pro prompts!
+As researchers, data scientists, and developers working on remote HPC clusters or cloud servers, we live in the terminal. But dealing with visual data—like checking a training loss plot, verifying a generated image, or inspecting a corner plot from an MCMC run—usually forces us out of our flow.
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2026-06-16 00:00:00 +0000 UTC'>June 16, 2026</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;4 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;848 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to `timg` for Terminal image rendering" href="http://localhost:1313/en/posts/2026-06-16-timg-related/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">How to use backslash  in JIS keyboard layout
     </h2>
   </header>
   <div class="entry-content">
-    <p>How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\) in Google Chrome If you use a physical Japanese (JIS) hardware keyboard layout on a modern Mac, you have likely run into a frustrating quirk: even if you change your macOS text settings to output a backslash (\) instead of a Yen sign (¥), Google Chrome, VS Code, and Slack will completely ignore your system settings.
+    <p> Disclaimer: Made with Google Gemini-Pro prompts
+If you use a physical Japanese (JIS) hardware keyboard layout on a modern Mac, you have likely run into a frustrating quirk: even if you change your macOS text settings to output a backslash (\) instead of a Yen sign (¥), Google Chrome, VS Code, and Slack will completely ignore your system settings.
 ...</p>
   </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2026-05-30 00:00:00 +0000 UTC'>May 30, 2026</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;4 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;705 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2026-05-30 00:00:00 +0000 UTC'>May 30, 2026</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;4 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;694 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
   <a class="entry-link" aria-label="post link to How to use backslash  in JIS keyboard layout" href="http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/"></a>
 </article>
@@ -285,6 +301,22 @@ TL;DR: download a prebuilt tarball → put eza in ~/.local/bin → add to PATH �
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Managing Python Installations with `conda`
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I restructured all my Python installation in the system and have now committed to use only Anaconda conda environments to manage my Pythons. Below are some steps I followed to clean my directories!
+Fixing Pandas pytables Errors and Making Python/Brew/Conda Play Nicely on macOS This quick post covers two things that bite many of us on macOS:
+Why pandas.read_hdf() raises ImportError: Missing optional dependency &#39;pytables&#39; even when you “installed it,” and A clean ~/.zshrc setup so python/python3 point to Homebrew globally but automatically switch to your conda environment’s Python when an env is active. Bonus: pip always targets the same interpreter you’re using. 1) pandas.read_hdf says “Missing optional dependency ‘pytables’” — even though you installed it Symptom ImportError: Missing optional dependency &#39;pytables&#39;. Use pip or conda to install pytables. Root cause (it’s an environment mix‑up) Your script is running with Homebrew’s Python (check the path: /opt/homebrew/.../site-packages/pandas/...), but you installed tables (PyTables) in a conda environment. Pandas is being imported from the wrong interpreter’s site‑packages, so it can’t find tables there.
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-11-01 00:00:00 +0000 UTC'>November 1, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;10 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;2028 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to Managing Python Installations with `conda`" href="http://localhost:1313/en/posts/2025-11-01-conda-python/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Installing tmux on CentOS server
     </h2>
   </header>
@@ -297,37 +329,6 @@ export HOME=/home/yourusername export PATH=/usr/bin:/bin:/usr/local/bin export L
   <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-06-17 13:36:15 +0900 JST'>June 17, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;359 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
 </footer>
   <a class="entry-link" aria-label="post link to Installing tmux on CentOS server" href="http://localhost:1313/en/posts/2025-06-17-tmux-on-centos/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to use Git With Dropbox?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Problems I have encountered using Dropbox:
-Dropbox storage space available for use is really low, and is consumed relatively easily because of the .git folder. Dropbox real time sync has issues with git if multiple computers work on a project simultaneously. Although, it has been rare that I have encountere this. My current solution for this problem is as follows:
-Move the most space consuming .git folders outside of Dropbox. This way Dropbox won’t be syncing these large folders.
-...</p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-04-02 18:07:51 +0900 JST'>April 2, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;2 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;413 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to How to use Git With Dropbox?" href="http://localhost:1313/en/posts/2025-04-02-git-with-dropbox/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Access VS Code via the Terminal
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>To access and open VS Code directly from your terminal, do the following:
-Open your Bash or zsh profile. open ~/.zshrc Add path to the VS Code application to your PATHS variable. # Add Visual Studio Code (code) export PATH=&#34;$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&#34; Reload your updated terminal profile. source ~/.zshrc You can now open VS code by running code xxx from anywhere in your computer. References:
-https://code.visualstudio.com/docs/setup/mac </p>
-  </div>
-  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-03-17 18:49:00 +1100 +1100'>March 17, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;1 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;66 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
-</footer>
-  <a class="entry-link" aria-label="post link to Access VS Code via the Terminal" href="http://localhost:1313/en/posts/2025-03-17-vscode-terminal-cmd/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

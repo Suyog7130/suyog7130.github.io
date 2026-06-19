@@ -12,13 +12,83 @@
     <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>http://localhost:1313/tags/git/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Github</title>
+      <link>http://localhost:1313/tags/github/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terminal</title>
+      <link>http://localhost:1313/tags/terminal/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/terminal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Versioning</title>
+      <link>http://localhost:1313/tags/versioning/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/versioning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cluster</title>
+      <link>http://localhost:1313/tags/cluster/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cluster/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Condor</title>
+      <link>http://localhost:1313/tags/condor/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/condor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hpc</title>
+      <link>http://localhost:1313/tags/hpc/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hpc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pe</title>
+      <link>http://localhost:1313/tags/pe/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pe/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Keyboard</title>
       <link>http://localhost:1313/tags/keyboard/</link>
       <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/keyboard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logging</title>
+      <link>http://localhost:1313/tags/logging/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/logging/</guid>
       <description></description>
     </item>
     <item>
@@ -29,10 +99,38 @@
       <description></description>
     </item>
     <item>
-      <title>Terminal</title>
-      <link>http://localhost:1313/tags/terminal/</link>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/terminal/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cheatsheet</title>
+      <link>http://localhost:1313/tags/cheatsheet/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cheatsheet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guide</title>
+      <link>http://localhost:1313/tags/guide/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/guide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Latex</title>
+      <link>http://localhost:1313/tags/latex/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/latex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Overleaf</title>
+      <link>http://localhost:1313/tags/overleaf/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/overleaf/</guid>
       <description></description>
     </item>
     <item>
@@ -50,24 +148,10 @@
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Software</title>
       <link>http://localhost:1313/tags/software/</link>
       <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/software/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Guide</title>
-      <link>http://localhost:1313/tags/guide/</link>
-      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/guide/</guid>
       <description></description>
     </item>
     <item>
@@ -92,6 +176,20 @@
       <description></description>
     </item>
     <item>
+      <title>Conda</title>
+      <link>http://localhost:1313/tags/conda/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/conda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zsh</title>
+      <link>http://localhost:1313/tags/zsh/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/zsh/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Automation</title>
       <link>http://localhost:1313/tags/automation/</link>
       <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
@@ -113,38 +211,10 @@
       <description></description>
     </item>
     <item>
-      <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
-      <pubDate>Thu, 15 May 2025 22:14:18 +0900</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Conda</title>
-      <link>http://localhost:1313/tags/conda/</link>
-      <pubDate>Fri, 11 Apr 2025 15:01:20 +0900</pubDate>
-      <guid>http://localhost:1313/tags/conda/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Latex</title>
-      <link>http://localhost:1313/tags/latex/</link>
-      <pubDate>Thu, 03 Apr 2025 18:25:31 +0900</pubDate>
-      <guid>http://localhost:1313/tags/latex/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Ssh</title>
       <link>http://localhost:1313/tags/ssh/</link>
       <pubDate>Tue, 18 Mar 2025 12:24:46 +1100</pubDate>
       <guid>http://localhost:1313/tags/ssh/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Zsh</title>
-      <link>http://localhost:1313/tags/zsh/</link>
-      <pubDate>Mon, 17 Mar 2025 18:49:00 +1100</pubDate>
-      <guid>http://localhost:1313/tags/zsh/</guid>
       <description></description>
     </item>
     <item>
@@ -194,13 +264,6 @@
       <link>http://localhost:1313/tags/documentation/</link>
       <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/documentation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
-      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>

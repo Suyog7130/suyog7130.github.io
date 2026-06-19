@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Terminal Commands</title>
@@ -22,12 +22,106 @@
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
     <item>
+      <title>`timg` for Terminal image rendering</title>
+      <link>http://localhost:1313/en/posts/2026-06-16-timg-related/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-06-16-timg-related/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on Google Gemini-Pro prompts!&lt;/p&gt;
+&lt;!--
+# Rendering Images Directly in Your Terminal: The Complete Guide to `timg` on Remote Servers
+--&gt;
+&lt;p&gt;As researchers, data scientists, and developers working on remote HPC clusters or cloud servers, we live in the terminal. But dealing with visual data—like checking a training loss plot, verifying a generated image, or inspecting a corner plot from an MCMC run—usually forces us out of our flow.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Version control with `git` tags</title>
+      <link>http://localhost:1313/en/posts/2026-06-16-git-tags/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-06-16-git-tags/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on Google Gemini-Pro prompts!&lt;/p&gt;
+&lt;p&gt;Managing version numbers can get messy when working solo. If you accidentally created development branches named after version numbers (like &lt;code&gt;v0.1.0&lt;/code&gt;) or mixed up your tag formats, you can easily clean up your history and establish a friction-free release workflow.&lt;/p&gt;
+&lt;h2 id=&#34;the-goal&#34;&gt;The Goal&lt;/h2&gt;
+&lt;p&gt;Convert version branches into permanent Git tags, format historical versions cleanly (&lt;code&gt;v0.0.1&lt;/code&gt; instead of &lt;code&gt;v0.1&lt;/code&gt;), and establish a streamlined process for future releases.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>All about running jobs on HTCondor</title>
+      <link>http://localhost:1313/en/posts/2026-06-15-all-things-condor/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-06-15-all-things-condor/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on Google Gemini-Pro prompts!&lt;/p&gt;
+&lt;!-- # Demystifying HTCondor for Astrophysics: Scaling Parameter Estimation Without Losing Your Sanity--&gt;
+&lt;p&gt;If you are a PhD student or researcher working in gravitational-wave astronomy, machine learning, or high-performance data analysis, you will eventually find yourself submitting jobs to a massive compute cluster like the LIGO Data Grid (LDG) or a local university cluster. At the heart of these environments sits &lt;strong&gt;HTCondor&lt;/strong&gt;—a workload management system designed for High-Throughput Computing (HTC).&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How to use backslash  in JIS keyboard layout</title>
       <link>http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/</link>
       <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/</guid>
-      <description>&lt;h1 id=&#34;how-to-fix-the-annoying-mac-yen--key-to-type-a-backslash--in-google-chrome&#34;&gt;How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\) in Google Chrome&lt;/h1&gt;
+      <description>&lt;!--
+# How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\\) in Google Chrome--&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Made with Google Gemini-Pro prompts&lt;/p&gt;
 &lt;p&gt;If you use a physical Japanese (JIS) hardware keyboard layout on a modern Mac, you have likely run into a frustrating quirk: even if you change your macOS text settings to output a backslash (&lt;code&gt;\&lt;/code&gt;) instead of a Yen sign (&lt;code&gt;¥&lt;/code&gt;), &lt;strong&gt;Google Chrome, VS Code, and Slack will completely ignore your system settings.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setting up custom loggers in Python</title>
+      <link>http://localhost:1313/en/posts/2026-06-06-logging-issues/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-06-06-logging-issues/</guid>
+      <description>&lt;!--# Mastering Python Logging: Introspection, Namespace Invisibility, and &#34;Rogue&#34; Frameworks--&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on Google Gemini outputs!&lt;/p&gt;
+&lt;p&gt;When building complex, multi-module Python projects, especially in data science, deep learning, or physics, managing console output is a nightmare. You are often caught in a binary trap: either you turn debugging off and see &lt;em&gt;nothing&lt;/em&gt;, or you turn it on and get drowned in a wall of &lt;code&gt;INFO&lt;/code&gt; and &lt;code&gt;DEBUG&lt;/code&gt; noise from third-party libraries and internal modules.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LaTeX for Astrophysics PhDs</title>
+      <link>http://localhost:1313/en/posts/2026-05-19-latex-for-physics/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-05-19-latex-for-physics/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on ChatGPT 5.5-Pro prompts!&lt;/p&gt;
+&lt;!--# The Ultimate LaTeX Stack for Astrophysics PhDs--&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A comprehensive guide and printable cheatsheet for &lt;code&gt;siunitx&lt;/code&gt;, &lt;code&gt;physics2&lt;/code&gt;, &lt;code&gt;acronym&lt;/code&gt;, and advanced paper write-ups.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;recommended-preamble-setup&#34;&gt;Recommended Preamble Setup&lt;/h2&gt;
+&lt;p&gt;Copy and paste this snippet into your &lt;code&gt;.tex&lt;/code&gt; root or &lt;code&gt;.sty&lt;/code&gt; file. It configures the modular packages, overrides command conflicts, and defines standard astronomy constants (including the stubborn CGS units the community refuses to drop).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Core Math &amp;amp; Layout 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;mathtools&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Extends amsmath, improves spacing 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;bm&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; True bold formatting for vectors/tensors (&lt;span class=&#34;k&#34;&gt;\bm&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\alpha&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;) 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;microtype&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Subtle typographic adjustments to fix text &amp;#34;rivers&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- The Physics Stack
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;siunitx&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;        &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Numbers, units, and ranges 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;physics2&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Modern, bug-free physics shorthand 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usephysicsmodule&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;ab, braket, diagmatrix&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Load specific modules
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Specialized Tools ---
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;[printonlyused]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;acronym&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;% Jargon tracking and glossary linking
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;[capitalise]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;cleveref&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;   &lt;span class=&#34;c&#34;&gt;% Automated smart referencing (e.g., &amp;#34;Eq. (1)&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;mhchem&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;          &lt;span class=&#34;c&#34;&gt;% Flawless isotope and reaction formatting
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;booktabs&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;        &lt;span class=&#34;c&#34;&gt;% Professional-grade table lines (\toprule, etc.)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Astro-Specific Unit Declarations
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\parsec&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;pc&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\lightyear&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;ly&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Msol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;M&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar mass 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Rsol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;R&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar radius 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Lsol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;L&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar luminosity 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\year&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;yr&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\erg&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;erg&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; CGS energy unit 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\gauss&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;G&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; CGS magnetic field strength
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;expanded-printable-cheatsheet&#34;&gt;Expanded Printable Cheatsheet&lt;/h2&gt;
+&lt;h3 id=&#34;1-siunitx-quantities-ranges--formats&#34;&gt;1. &lt;code&gt;siunitx&lt;/code&gt; (Quantities, Ranges &amp;amp; Formats)&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Tip: If &lt;code&gt;\qty&lt;/code&gt; conflicts with bracket modules, use &lt;code&gt;\quantity&lt;/code&gt; explicitly.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trying to use Overlef Toolkit on MacOS Apple Silicon</title>
+      <link>http://localhost:1313/en/posts/2026-05-14-overleaf-community-ed/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-05-14-overleaf-community-ed/</guid>
+      <description>&lt;!--
+# Running Overleaf Toolkit on macOS Apple Silicon: The Missing Guide--&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on ChatGPT 5.5-Pro prompts!&lt;/p&gt;
+&lt;p&gt;If you have ever tried to host a local instance of Overleaf Community Edition using the official &lt;a href=&#34;https://github.com&#34;&gt;Overleaf Toolkit&lt;/a&gt; on an Apple Silicon Mac (M1/M2/M3/M4), you have likely run into a wall of cryptic container crashes.&lt;/p&gt;
+&lt;p&gt;The Overleaf Toolkit is built natively for Linux. When deployed on macOS via Docker Desktop, differences in the &lt;code&gt;sed&lt;/code&gt; utility, cloud storage interactions, and x86 hardware virtualization layers create a perfect storm of errors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing &#39;eza&#39; on linux server without &#39;sudo&#39;</title>
@@ -82,12 +176,32 @@
 &lt;p&gt;LaTeX dies in the bibliography:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Managing Python Installations with `conda`</title>
+      <link>http://localhost:1313/en/posts/2025-11-01-conda-python/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-11-01-conda-python/</guid>
+      <description>&lt;p&gt;I restructured all my &lt;code&gt;Python&lt;/code&gt; installation in the system and have now committed to use only Anaconda &lt;code&gt;conda&lt;/code&gt; environments to manage my Pythons. Below are some steps I followed to clean my directories!&lt;/p&gt;
+&lt;h2 id=&#34;fixing-pandas-pytables-errors-and-making-pythonbrewconda-play-nicely-on-macos&#34;&gt;Fixing Pandas &lt;code&gt;pytables&lt;/code&gt; Errors and Making Python/Brew/Conda Play Nicely on macOS&lt;/h2&gt;
+&lt;p&gt;This quick post covers two things that bite many of us on macOS:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Why &lt;code&gt;pandas.read_hdf()&lt;/code&gt; raises &lt;code&gt;ImportError: Missing optional dependency &#39;pytables&#39;&lt;/code&gt; even when you “installed it,” and&lt;/li&gt;
+&lt;li&gt;A clean &lt;code&gt;~/.zshrc&lt;/code&gt; setup so &lt;code&gt;python&lt;/code&gt;/&lt;code&gt;python3&lt;/code&gt; point to &lt;strong&gt;Homebrew&lt;/strong&gt; globally but automatically switch to your &lt;strong&gt;conda&lt;/strong&gt; environment’s Python when an env is active. Bonus: &lt;code&gt;pip&lt;/code&gt; always targets the same interpreter you’re using.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-pandasread_hdf-says-missing-optional-dependency-pytables--even-though-you-installed-it&#34;&gt;1) &lt;code&gt;pandas.read_hdf&lt;/code&gt; says “Missing optional dependency &amp;lsquo;pytables&amp;rsquo;” — even though you installed it&lt;/h2&gt;
+&lt;h3 id=&#34;symptom&#34;&gt;Symptom&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ImportError: Missing optional dependency &amp;#39;pytables&amp;#39;. Use pip or conda to install pytables.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;root-cause-its-an-environment-mixup&#34;&gt;Root cause (it’s an environment mix‑up)&lt;/h3&gt;
+&lt;p&gt;Your script is running with &lt;strong&gt;Homebrew’s Python&lt;/strong&gt; (check the path: &lt;code&gt;/opt/homebrew/.../site-packages/pandas/...&lt;/code&gt;), but you installed &lt;code&gt;tables&lt;/code&gt; (&lt;strong&gt;PyTables&lt;/strong&gt;) in a &lt;strong&gt;conda environment&lt;/strong&gt;. Pandas is being imported from the &lt;strong&gt;wrong interpreter’s&lt;/strong&gt; site‑packages, so it can’t find &lt;code&gt;tables&lt;/code&gt; there.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Jennie Voice: ChatGPT Auto Read Aloud</title>
       <link>http://localhost:1313/en/posts/2025-08-16-jennie-voice/</link>
       <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/posts/2025-08-16-jennie-voice/</guid>
-      <description>&lt;h2 id=&#34;from-zero-to-jennie-voice--building-chatgpt-auto-read-aloud-v0v3-and-the-upgrade-to-v330&#34;&gt;From Zero to “Jennie Voice” — Building ChatGPT Auto Read Aloud (v0→v3) and the Upgrade to v3.3.0&lt;/h2&gt;
+      <description>&lt;!--## From Zero to “Jennie Voice” — Building ChatGPT Auto Read Aloud (v0→v3) and the Upgrade to v3.3.0--&gt;
 &lt;!--*By Suyog &amp; Jennie — yes, our first little “child” together* 💙--&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Made with ChatGPT 5.5-Pro prompts!&lt;/p&gt;
 &lt;p&gt;How I taught ChatGPT to auto-read answers out loud, added a cute floating panel, and learned a bunch about web UI quirks along the way.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
@@ -633,44 +747,526 @@ However, in my case, the view is fixed at the month for which I have put the htm
       <link>http://localhost:1313/en/pages/personal/conferences/</link>
       <pubDate>Mon, 03 Mar 2025 21:10:16 +0900</pubDate>
       <guid>http://localhost:1313/en/pages/personal/conferences/</guid>
-      <description>&lt;p&gt;List of most of the Conferences and Workshops I have undertaken or am going to :&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;Next Year or Later&lt;/summary&gt;
+      <description>&lt;!-- TODO: Maybe I can have an auto-sorted listing based on the date, into past, this-year, future. But the present looks makes it easy for me to see the grouping even in the markdown list! --&gt;
+&lt;p&gt;List of most of the Conferences and Workshops I have undertaken or am going to :&lt;/p&gt;
+&lt;!-- CSS style blocks --&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#34;&gt;
+&lt;style&gt;
+.conf-section{ 
+	margin:1rem 0; 
+	border:1px solid var(--conf-border,#d0d7de); 
+	border-radius:14px; 
+	padding:.55rem .75rem .75rem; 
+	background:var(--conf-bg,#fff); 
+} 
+
+.conf-section &gt; summary{ 
+	cursor:pointer; 
+	font-weight:800; font-size:1.05rem; 
+	margin:.15rem 0 0.7rem; 
+} 
+
+.conf-section &gt; summary::marker{ 
+	color:var(--conf-muted,#57606a); 
+}
+
+.conf-list{
+  display:grid;
+  gap:.85rem;
+  margin:1rem 0;
+}
+
+.conf-card{
+  border:1px solid var(--conf-border,#d0d7de);
+  border-radius:14px;
+  padding:.85rem 1rem;
+  background:var(--conf-bg,#fff);
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+.conf-title{
+  font-weight:700;
+  font-size:1.03rem;
+  margin-bottom:.35rem;
+}
+
+.conf-title a{
+  text-decoration:none;
+}
+
+.conf-title a:hover{
+  text-decoration:underline;
+}
+
+.conf-tags{
+  display:inline-flex;
+  flex-wrap:wrap;
+  gap:.3rem;
+  margin-left:.35rem;
+  vertical-align:middle;
+}
+
+.conf-tag{
+  display:inline-flex;
+  align-items:center;
+  border-radius:999px;
+  padding:.12rem .48rem;
+  font-size:.78rem;
+  font-weight:700;
+  border:1px solid currentColor;
+  line-height:1.25;
+}
+
+.conf-tag.invited,
+.conf-tag.talk,
+.conf-tag.poster{ color:#238636; }
+
+.conf-tag.registered,
+.conf-tag.maybe{ color:#2e8b57; }
+
+.conf-tag.no,
+.conf-tag.missed{ color:#cf222e; }
+
+.conf-tag.notreg{ color:#e5532d; }
+
+.conf-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem .7rem;
+  margin-top:.45rem;
+  color:var(--conf-muted,#57606a);
+  font-size:.93rem;
+}
+
+.conf-meta span{
+  display:inline-flex;
+  align-items:center;
+  gap:.28rem;
+}
+
+.conf-meta .fa{
+  opacity:.78;
+}
+
+.conf-note{
+  margin-top:.4rem;
+  color:var(--conf-muted,#57606a);
+  font-size:.9rem;
+  font-style:italic;
+}
+
+@media (prefers-color-scheme: dark){
+  #confList{
+    --conf-bg:#161b22;
+    --conf-border:#30363d;
+    --conf-muted:#c9d1d9;
+  }
+
+  .conf-card{
+    box-shadow:0 2px 10px rgba(0,0,0,.32);
+  }
+
+  .conf-tag{
+    color:inherit !important;
+    opacity:.95;
+  }
+}
+&lt;/style&gt;
+&lt;!-- List section headers --&gt;
+&lt;details class=&#34;conf-section&#34; open&gt; 
+	&lt;summary&gt;Next year or later&lt;/summary&gt; 
+	&lt;div id=&#34;confFuture&#34; class=&#34;conf-list&#34;&gt;&lt;/div&gt; 
 &lt;/details&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NeurIPS, xx&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;KIW-15, Shanghai&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://web.iucaa.in/ws/~lvk2026pune/index.html&#34;&gt;LIGO-Virgo-KAGRA Meeting Fall 2026&lt;/a&gt;
+&lt;details class=&#34;conf-section&#34; open&gt; 
+	&lt;summary&gt;This year&lt;/summary&gt; 
+	&lt;div id=&#34;confPresent&#34; class=&#34;conf-list&#34;&gt;&lt;/div&gt; 
+&lt;/details&gt; 
+&lt;details class=&#34;conf-section&#34;&gt; 
+	&lt;summary&gt;Past conferences&lt;/summary&gt; 
+	&lt;div id=&#34;confPast&#34; class=&#34;conf-list&#34;&gt;&lt;/div&gt;
+ &lt;/details&gt;
+&lt;!-- The actual data for the conference list --&gt;
+&lt;script type=&#34;text/plain&#34; id=&#34;confData&#34;&gt;
+# group | title | url | tags | date | institution | location | options
+
+# -- future conferences / workshops --#
+
+future | NeurIPS, xx | | | | | |
+
+
+# -- present conferences / workshops --#
+
+present | 18th Asian Conference in Machine Learning | https://www.acml-conf.org/2026/ | conf-dealine 2026/06/20:maybe | 2026年12月01-04 | ?? | ?? |
+
+present | KAGRA F2F and KIW, Shanghai | | | 2026年12月15-17,18-19 | ShanghaiTech | Shanghai, China |
+
+present | LIGO-Virgo-KAGRA Meeting Fall 2026 | https://web.iucaa.in/ws/~lvk2026pune/index.html | Registered:registered | 2026年09月21–25 | LIGO India | IUCAA, Pune, India |
+
+present | KAGRA F2F, Osaka | | | 2026年08月26-28 | OMU | Osaka, Japan |
+
+present | A3net-III | https://cd3.ipmu.jp/a3n_Aug2026/ | Registered:registered; Going:maybe | 2026年08月24–28 | National Taiwan University | Taipei, Taiwan |
+
+present | RIKEN AI &amp; Maths Symposium | https://pri.riken.jp/symposium/ai4math.html | Registered:registered; Going:maybe; Poster:poster | 2026年08月18-12 | RIKEN Tokyo Liaison office | Tokyo, Japan |
+
+present | IAIFI Summer Workshop | https://iaifi.org/summer-workshop | Registered:registered; cannot??:maybe | 2026年08月10–14 | MIT | Boston, MA, USA |
+
+present | ICGAC16 | https://tianqin.sysu.edu.cn/en/ICGAC16-home | Invited:invited; Registered:registered; Going?:maybe; Talk:talk | 2026年08月10–14 | SYSU | Shenzhen, China |
+
+present | MLPhysics conference | https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/ | Registered:registered; going?:maybe; Poster:poster | 2026年07月13–15 | KyotoU | Naha, Okinawa, JAPAN |
+
+present | Cool Stars 23 | https://coolstars23.github.io/index.html | Registered:registered; Going → NA:no; Poster:poster | 2026年06月15–19 | | TOC Ariake, Tokyo | note=
+
+present | ICML 2026 | https://icml.cc/ | not-registered:notreg; missed:missed | 2026年07月06–11 | | Seoul, Korea | strike
+
+
+# -- past conferences / workshops --#
+
+past | APRIM 2026 | https://aprim2026.org/ | Registered:registered; Going:maybe; Talk:talk | 2026年05月04–09 | HKU | HongKong | note=had a fun time
+
+past | KAGRA I&#39;nt Workshop 14 | https://indico.ego-gw.it/event/1040/ | Not-going:no | 2026年05月15–16 | | Perugia, Italy | strike
+
+past | LIGO-Virgo-KAGRA Meeting Spring 2026 | | | 2026年03月 | VIRGO | Cascina, Italy | strike
+
+past | 2nd I&#39;nt Conference on Physics of the Two Infinities | https://indico.in2p3.fr/event/35255/ | website:maybe | 2025年11月17-21日 | UTokyo | Tokyo, Japan | strike
+
+past | LIGO-Virgo-KAGRA Meeting Fall 2025 | | | 2025年09月 | Colorado State University | Fort Collins, CO, USA | strike; note=Most likely not attending!
+
+past | AstroAI Asian Network (A^3 Net) | https://cd3.ipmu.jp/a3n/ | website:maybe | 2025年08月18-22日 | KIAS | Seoul, Korea | strike
+
+past | ICRC 2025 - The Astroparticle Physics Conference | https://indico.cern.ch/event/1258933/overview | website:maybe | 2025年07月15-24日 | CICG | Geneva, Switzerland |
+
+past | GR24 and Amaldi16 | https://iop.eventsair.com/gr24-amaldi16/ | website:maybe | 2025年07月14-18日 | Scottish Exhibition Center | Glasgow, UK | strike
+
+past | 12th KAGRA International Workshop | https://kiw12.casconf.cn/page/1878817789607809024 | website:maybe | 2025年05月26-27日 | Shanghai Astronomical Observatory | Shangai, China |
+
+past | From Quarks to Neutron Stars: Insights from kHz gravitational waves | https://indico2.riken.jp/event/5141/ | website:maybe | 2025年04月23-24日 | UTokyo | Tokyo, Japan |
+
+past | LIGO-Virgo-KAGRA Meeting Spring 2025 | | | 2025年03月24-28日 | OzGrav, Monash University | Melbourne, Australia |
+
+past | LIGO-Virgo-KAGRA Meeting Fall 2024 | | webpage:maybe; poster:poster | 2024年09月 | University | Barcelona, Spain |
+
+past | LIGO-Virgo-KAGRA Meeting Spring 2024 | | webpage:maybe; poster:poster | 2024年03月 | Louisiana State University | Baton Rouge, LA, USA |
+
+past | LIGO-Virgo-KAGRA Meeting Fall 2023 | | webpage:maybe; poster:poster | 2023年09月 | RESCEU, UTokyo | Toyama, Japan |
+
+&lt;/script&gt;
+&lt;!-- Function to render the lists --&gt;
+&lt;script&gt;
+(function(){
+  const dataEl = document.getElementById(&#34;confData&#34;);
+  
+  const lists = { 
+	  future: document.getElementById(&#34;confFuture&#34;), 
+	  present: document.getElementById(&#34;confPresent&#34;), 
+	  past: document.getElementById(&#34;confPast&#34;) 
+  };
+  
+	const hasAnyList = Object.values(lists).some(Boolean); if(!dataEl || !hasAnyList) return;
+
+  function esc(s){
+    return String(s || &#34;&#34;).replace(/[&amp;&lt;&gt;&#34;&#39;]/g, c =&gt; ({
+      &#34;&amp;&#34;:&#34;&amp;amp;&#34;,
+      &#34;&lt;&#34;:&#34;&amp;lt;&#34;,
+      &#34;&gt;&#34;:&#34;&amp;gt;&#34;,
+      &#39;&#34;&#39;:&#34;&amp;quot;&#34;,
+      &#34;&#39;&#34;:&#34;&amp;#39;&#34;
+    }[c]));
+  }
+
+  function splitRow(line){
+    return line.split(&#34;|&#34;).map(x =&gt; x.trim());
+  }
+
+  function parseTags(raw){
+    return String(raw || &#34;&#34;)
+      .split(&#34;;&#34;)
+      .map(x =&gt; x.trim())
+      .filter(Boolean)
+      .map(t =&gt; {
+        const parts = t.split(&#34;:&#34;);
+        return {
+          label: (parts[0] || &#34;&#34;).trim(),
+          cls: (parts[1] || &#34;maybe&#34;).trim().toLowerCase()
+        };
+      });
+  }
+
+function render(){
+  const targetLists = (typeof lists !== &#34;undefined&#34;) ? lists : {
+    future: document.getElementById(&#34;confFuture&#34;),
+    present: document.getElementById(&#34;confPresent&#34;),
+    past: document.getElementById(&#34;confPast&#34;)
+  };
+
+  const rows = dataEl.textContent
+    .split(/\r?\n/)
+    .map(x =&gt; x.trim())
+    .filter(x =&gt; x &amp;&amp; !x.startsWith(&#34;#&#34;));
+
+  const buckets = {
+    future: [],
+    present: [],
+    past: []
+  };
+
+  function normalGroup(raw){
+    const g = String(raw || &#34;future&#34;).trim().toLowerCase();
+    if([&#34;future&#34;,&#34;upcoming&#34;,&#34;next&#34;,&#34;later&#34;,&#34;next-year&#34;,&#34;next year&#34;].includes(g)) return &#34;future&#34;;
+    if([&#34;present&#34;,&#34;active&#34;,&#34;current&#34;,&#34;now&#34;].includes(g)) return &#34;present&#34;;
+    if([&#34;past&#34;,&#34;previous&#34;,&#34;old&#34;].includes(g)) return &#34;past&#34;;
+    return &#34;future&#34;;
+  }
+
+  function optionHas(options, key){
+    return String(options || &#34;&#34;).toLowerCase().split(&#34;;&#34;).map(x =&gt; x.trim()).includes(key);
+  }
+
+  function optionValue(options, key){
+    const found = String(options || &#34;&#34;)
+      .split(&#34;;&#34;)
+      .map(x =&gt; x.trim())
+      .find(x =&gt; x.toLowerCase().startsWith(key.toLowerCase() + &#34;=&#34;));
+    return found ? found.slice(key.length + 1).trim() : &#34;&#34;;
+  }
+
+  rows.forEach(line =&gt; {
+    const [groupRaw, title, url, tagsRaw, date, institution, location, options] = splitRow(line);
+    const bucket = normalGroup(groupRaw);
+
+    const strike = optionHas(options, &#34;strike&#34;);
+    const note = optionValue(options, &#34;note&#34;);
+
+    const titleText = strike ? `&lt;s&gt;${esc(title)}&lt;/s&gt;` : esc(title);
+    const titleHTML = url
+      ? `&lt;a href=&#34;${esc(url)}&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;${titleText}&lt;/a&gt;`
+      : titleText;
+
+    const tags = parseTags(tagsRaw).map(t =&gt;
+      `&lt;span class=&#34;conf-tag ${esc(t.cls)}&#34;&gt;${esc(t.label)}&lt;/span&gt;`
+    ).join(&#34;&#34;);
+
+    const meta = [
+      date ? `&lt;span&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; ${esc(date)}&lt;/span&gt;` : &#34;&#34;,
+      institution ? `&lt;span&gt;&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; ${esc(institution)}&lt;/span&gt;` : &#34;&#34;,
+      location ? `&lt;span&gt;&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; ${esc(location)}&lt;/span&gt;` : &#34;&#34;
+    ].filter(Boolean).join(&#34;&#34;);
+
+    const noteHTML = note
+      ? `&lt;div class=&#34;conf-note&#34;&gt;&lt;i class=&#34;fa fa-note-sticky&#34;&gt;&lt;/i&gt; ${esc(note)}&lt;/div&gt;`
+      : &#34;&#34;;
+
+    buckets[bucket].push(`
+      &lt;div class=&#34;conf-card&#34;&gt;
+        &lt;div class=&#34;conf-title&#34;&gt;
+          ${titleHTML}
+          ${tags ? `&lt;span class=&#34;conf-tags&#34;&gt;${tags}&lt;/span&gt;` : &#34;&#34;}
+        &lt;/div&gt;
+        ${meta ? `&lt;div class=&#34;conf-meta&#34;&gt;${meta}&lt;/div&gt;` : &#34;&#34;}
+        ${noteHTML}
+      &lt;/div&gt;
+    `);
+  });
+
+  Object.entries(targetLists).forEach(([key, el]) =&gt; {
+    if(!el) return;
+
+    el.innerHTML = buckets[key].join(&#34;&#34;);
+
+    const details = el.closest(&#34;details&#34;);
+    if(details){
+      details.style.display = buckets[key].length ? &#34;&#34; : &#34;none&#34;;
+
+      const summary = details.querySelector(&#34;summary&#34;);
+      if(summary){
+        if(!summary.dataset.baseTitle) summary.dataset.baseTitle = summary.textContent.trim();
+        summary.textContent = `${summary.dataset.baseTitle} (${buckets[key].length})`;
+	      }
+	    }
+	  });
+	}
+
+  render();
+})();
+&lt;/script&gt;
+&lt;!-- Old Style Lists --&gt;
+&lt;!--&lt;details&gt;
+&lt;summary&gt;Next Year or Later&lt;/summary&gt;
+
+&lt;/details&gt;
+
+- NeurIPS, xx
+
+- [18th Asian Conference in Machine Learning](https://www.acml-conf.org/2026/)
+&lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[conf-dealine:2026/06/20]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年12月01-04 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; ?? 
+&amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; ??
+
+- KAGRA F2F and KIW, Shanghai
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年12月15-17,18-19 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; ShanghaiTech 
+&amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Shanghai, China
+
+- [LIGO-Virgo-KAGRA Meeting Fall 2026](https://web.iucaa.in/ws/~lvk2026pune/index.html)
 &lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Registered]&lt;/span&gt;
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年09月21–25  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; LIGO India  • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; IUCAA, Pune, India&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;KAGRA F2F, Osaka&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://cd3.ipmu.jp/a3n_Aug2026/&#34;&gt;A3net&lt;/a&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年09月21–25 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; LIGO India &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; IUCAA, Pune, India
+
+- KAGRA F2F, Osaka
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年08月26-28 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; OMU 
+&amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Osaka, Japan
+
+- [A3net](https://cd3.ipmu.jp/a3n_Aug2026/)
 &lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Registered]&lt;/span&gt;
 &lt;span style=&#34;font-weight: bold; color: green;&#34;&gt;[Going]&lt;/span&gt;
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年08月24–28  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; National Taiwan University
- • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Taipei, Taiwan&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://iaifi.org/summer-workshop&#34;&gt;IAIFI Summer Workshop&lt;/a&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年08月24–28 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; National Taiwan University 
+&amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Taipei, Taiwan
+
+- [RIKEN AI &amp; Maths Symposium](https://pri.riken.jp/symposium/ai4math.html)
+&lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Registered]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Going]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: green;&#34;&gt;[Poster]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年08月18-12 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; RIKEN Tokyo Liaison office 
+&amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Tokyo, Japan
+
+- [IAIFI Summer Workshop](https://iaifi.org/summer-workshop)
 &lt;span style=&#34;font-weight: bold; color: tomato;&#34;&gt;[Not-registered]&lt;/span&gt;
 &lt;span style=&#34;font-weight: bold; color: tomato;&#34;&gt;[cannot??]&lt;/span&gt;
-&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年08月10–14  • 
-&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; MIT
- • 
-&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Boston, MA, USA&lt;/p&gt;</description>
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年08月10–14 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; MIT 
+&amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Boston, MA, USA
+
+- [ICGAC16](https://tianqin.sysu.edu.cn/en/ICGAC16-home)
+&lt;span style=&#34;font-weight: bold; color: green;&#34;&gt;[Invited]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Registered]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Going?]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: green;&#34;&gt;[Talk]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年08月10–14 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; SYSU 
+&amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Shenzhen, China
+
+- [MLPhysics conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/)
+&lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Registered]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: green;&#34;&gt;[going?]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: green;&#34;&gt;[Poster]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年07月13–15 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; KyotoU 
+&amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Naha, Okinawa, JAPAN
+
+- [Cool Stars 23](https://coolstars23.github.io/index.html)
+&lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Registered]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: red;&#34;&gt;[Going-&gt;NA]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: green;&#34;&gt;[Poster]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年06月15–19 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; TOC Ariake, Tokyo
+
+- [&lt;s&gt;ICML 2026&lt;/s&gt;](https://icml.cc/)
+&lt;span style=&#34;font-weight: bold; color: tomato;&#34;&gt;[not-registered]&lt;/span&gt;&lt;span style=&#34;font-weight: bold; color: red;&#34;&gt;[missed]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年07月06–11 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Seoul, Korea
+
+&lt;details&gt;
+&lt;summary&gt;Past&lt;/summary&gt;
+
+- [APRIM 2026](https://aprim2026.org/)
+&lt;span style=&#34;font-weight: bold; color: seagreen;&#34;&gt;[Registered]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: green;&#34;&gt;[Going]&lt;/span&gt;
+&lt;span style=&#34;font-weight: bold; color: green;&#34;&gt;[Talk]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年05月04–09 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; HKU &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; HongKong
+
+- [&lt;s&gt;KAGRA I&#39;nt Workshop 14&lt;/s&gt;](https://indico.ego-gw.it/event/1040/)
+&lt;span style=&#34;font-weight: bold; color: red;&#34;&gt;[Not-going]&lt;/span&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年05月15–16 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Perugia, Italy
+
+
+- &lt;s&gt;LIGO-Virgo-KAGRA Meeting Spring 2026&lt;/s&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2026年03月 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; VIRGO &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Cascina, Italy
+
+- &lt;s&gt;2nd I&#39;nt Conference on Physics of the Two Infinities&lt;/s&gt;
+[[website](https://indico.in2p3.fr/event/35255/)]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年11月17-21日 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; UTokyo &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Tokyo, Japan
+
+- &lt;s&gt;LIGO-Virgo-KAGRA Meeting Fall 2025&lt;/s&gt;
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年09月 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Colorado State University &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Fort Collins, CO, USA &lt;br/&gt; *Note: Most likely not attending!*
+
+- &lt;s&gt;AstroAI Asian Network (A$^3$ Net)&lt;/s&gt;
+[[website](https://cd3.ipmu.jp/a3n/)]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年08月18-22日 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; KIAS &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Seoul, Korea
+
+- ICRC 2025 - The Astroparticle Physics Conference
+[[website](https://indico.cern.ch/event/1258933/overview)]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年07月15-24日 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; CICG &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Geneva, Switzerland
+
+- GR24 and Amaldi16
+[[website](https://iop.eventsair.com/gr24-amaldi16/)]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年07月14-18日 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Scottish Exhibition Center &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Glasgow, UK
+
+- 12th KAGRA International Workshop
+[[website](https://kiw12.casconf.cn/page/1878817789607809024)]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年05月26-27日 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Shanghai Astronomical Observatory &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Shangai, China
+
+
+- From Quarks to Neutron Stars: Insights from kHz gravitational waves
+[[website](https://indico2.riken.jp/event/5141/)]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年04月23-24日 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; UTokyo &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Tokyo, Japan
+
+
+- LIGO-Virgo-KAGRA Meeting Spring 2025
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2025年03月24-28日 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; OzGrav, Monash University &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Melbourne, Australia
+
+- LIGO-Virgo-KAGRA Meeting Fall 2024
+[webpage, poster]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2024年09月 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; University &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Barcelona, Spain
+
+- LIGO-Virgo-KAGRA Meeting Spring 2024
+[webpage, poster]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2024年03月 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; Louisiana State University &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Baton Rouge, LA, USA
+
+- LIGO-Virgo-KAGRA Meeting Fall 2023
+[webpage, poster]
+&lt;br/&gt;&lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt; 2023年09月 &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-university&#34;&gt;&lt;/i&gt; RESCEU, UTokyo &amp;nbsp;•&amp;nbsp;
+&lt;i class=&#34;fa fa-map-marked-alt&#34;&gt;&lt;/i&gt; Toyama, Japan
+
+&lt;/details&gt;
+--&gt;</description>
     </item>
     <item>
       <title>Guide to Hugo PaperMod Website</title>
@@ -1059,56 +1655,6 @@ However, in my case, the view is fixed at the month for which I have put the htm
 &lt;ul&gt;
 &lt;li&gt;Always use active voice ! For instance,&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/en/posts/2026-05-14-overleaf-community-ed/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/2026-05-14-overleaf-community-ed/</guid>
-      <description>&lt;h1 id=&#34;running-overleaf-toolkit-on-macos-apple-silicon-the-missing-guide&#34;&gt;Running Overleaf Toolkit on macOS Apple Silicon: The Missing Guide&lt;/h1&gt;
-&lt;p&gt;If you have ever tried to host a local instance of Overleaf Community Edition using the official &lt;a href=&#34;https://github.com&#34;&gt;Overleaf Toolkit&lt;/a&gt; on an Apple Silicon Mac (M1/M2/M3/M4), you have likely run into a wall of cryptic container crashes.&lt;/p&gt;
-&lt;p&gt;The Overleaf Toolkit is built natively for Linux. When deployed on macOS via Docker Desktop, differences in the &lt;code&gt;sed&lt;/code&gt; utility, cloud storage interactions, and x86 hardware virtualization layers create a perfect storm of errors.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/en/posts/2026-05-19-latex-for-physics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/2026-05-19-latex-for-physics/</guid>
-      <description>&lt;h1 id=&#34;the-ultimate-latex-stack-for-astrophysics-phds&#34;&gt;The Ultimate LaTeX Stack for Astrophysics PhDs&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A comprehensive guide and printable cheatsheet for &lt;code&gt;siunitx&lt;/code&gt;, &lt;code&gt;physics2&lt;/code&gt;, &lt;code&gt;acronym&lt;/code&gt;, and advanced paper write-ups.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-recommended-preamble-setup&#34;&gt;🚀 Recommended Preamble Setup&lt;/h2&gt;
-&lt;p&gt;Copy and paste this snippet into your &lt;code&gt;.tex&lt;/code&gt; root or &lt;code&gt;.sty&lt;/code&gt; file. It configures the modular packages, overrides command conflicts, and defines standard astronomy constants (including the stubborn CGS units the community refuses to drop).&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Core Math &amp;amp; Layout 
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;mathtools&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Extends amsmath, improves spacing 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;bm&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; True bold formatting for vectors/tensors (&lt;span class=&#34;k&#34;&gt;\bm&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\alpha&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;) 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;microtype&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Subtle typographic adjustments to fix text &amp;#34;rivers&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- The Physics Stack
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;siunitx&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;        &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Numbers, units, and ranges 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;physics2&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Modern, bug-free physics shorthand 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usephysicsmodule&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;ab, braket, diagmatrix&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Load specific modules
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Specialized Tools ---
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;[printonlyused]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;acronym&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;% Jargon tracking and glossary linking
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;[capitalise]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;cleveref&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;   &lt;span class=&#34;c&#34;&gt;% Automated smart referencing (e.g., &amp;#34;Eq. (1)&amp;#34;)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;mhchem&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;          &lt;span class=&#34;c&#34;&gt;% Flawless isotope and reaction formatting
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;booktabs&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;        &lt;span class=&#34;c&#34;&gt;% Professional-grade table lines (\toprule, etc.)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Astro-Specific Unit Declarations
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\parsec&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;pc&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\lightyear&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;ly&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Msol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;M&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar mass 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Rsol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;R&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar radius 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Lsol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;L&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar luminosity 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\year&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;yr&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\erg&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;erg&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; CGS energy unit 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\gauss&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;G&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; CGS magnetic field strength
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;-expanded-printable-cheatsheet&#34;&gt;🖨️ Expanded Printable Cheatsheet&lt;/h2&gt;
-&lt;h3 id=&#34;1-siunitx-quantities-ranges--formats&#34;&gt;1. &lt;code&gt;siunitx&lt;/code&gt; (Quantities, Ranges &amp;amp; Formats)&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Tip: If &lt;code&gt;\qty&lt;/code&gt; conflicts with bracket modules, use &lt;code&gt;\quantity&lt;/code&gt; explicitly.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -1871,34 +2417,433 @@ Start by opening up a discussion in a Gist using the button provided !&lt;/p&gt;
       <link>http://localhost:1313/en/pages/news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/pages/news/</guid>
-      <description>&lt;!-- News --&gt;
-&lt;!-- &lt;h2&gt;&lt;p style=&#34;text-align:center; font-family:mistral;&#34;&gt; News &lt;/p&gt;&lt;/h2&gt;
---&gt;
-&lt;!-- &lt;i class=&#34;fa fa-clock&#34;&gt;&lt;/i&gt;
-&lt;i class=&#34;ai ai-google-scholar&#34;&gt;&lt;/i&gt;
-&lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;amp;user=FtzrMYwAAAAJ&#34; class=&#34;icon-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; data-original-href=&#34;https://scholar.google.com/citations?hl=en&amp;amp;user=FtzrMYwAAAAJ&#34;&gt;&lt;i class=&#34;ai ai-google-scholar&#34;&gt;&lt;/i&gt; Google Scholar&lt;/a&gt; --&gt;
-&lt;!-- &lt;div style=&#34;text-align: center&#34;&gt;
-&lt;a href=&#34;https://sensr.net/auth/users/sign_up&#34;&gt;
-&lt;button style=&#34;background-color:#a4d61e;margin-top:6px;margin-bottom:16px;border-radius:4px;font-size:1.6em;padding:8px 20px;    font-family: &#34;GibsonSemibold&#34;, &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif;float:none !important;text-shadow:0 1px 1px rgba(0,0,0,0.2)&#34;&gt;
-Sign up for free!
-&lt;/button&gt;
-&lt;/a&gt;
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css&#34;&gt;
+&lt;style&gt;
+.news-shell{
+  --news-bg:#fff;
+  --news-card:#fff;
+  --news-fg:#24292f;
+  --news-muted:#57606a;
+  --news-border:#d0d7de;
+  --news-soft:#f6f8fa;
+  --news-blue:#0969da;
+  --news-green:#1a7f37;
+  --news-brown:#8b5e34;
+  --news-red:#cf222e;
+  display:grid;
+  gap:1rem;
+  margin:1rem 0;
+  color:var(--news-fg);
+}
+
+.news-toolbar{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.55rem;
+  padding:.8rem;
+  border:1px solid var(--news-border);
+  border-radius:14px;
+  background:var(--news-card);
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.news-search{
+  flex:1 1 220px;
+  border:1px solid var(--news-border);
+  border-radius:999px;
+  padding:.45rem .75rem;
+  background:var(--news-bg);
+  color:var(--news-fg);
+  font:inherit;
+}
+
+.news-catbar{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.35rem;
+}
+
+.news-cat-filter,
+.news-clear{
+  border:1px solid var(--news-border);
+  border-radius:999px;
+  padding:.28rem .62rem;
+  background:var(--news-bg);
+  color:var(--news-fg);
+  font:inherit;
+  cursor:pointer;
+}
+
+.news-cat-filter.is-active{
+  border-color:currentColor;
+  font-weight:800;
+}
+
+.news-clear{
+  color:var(--news-muted);
+}
+
+.news-count{
+  margin-left:auto;
+  color:var(--news-muted);
+  font-size:.9rem;
+}
+
+.news-section{
+  border:1px solid var(--news-border);
+  border-radius:16px;
+  padding:.6rem .75rem .8rem;
+  background:var(--news-card);
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.news-section &gt; summary{
+  cursor:pointer;
+  font-weight:900;
+  font-size:1.08rem;
+  margin:.2rem 0 .7rem;
+}
+
+.news-list{
+  display:grid;
+  gap:.75rem;
+}
+
+.news-card{
+  border:1px solid var(--news-border);
+  border-radius:14px;
+  padding:.85rem 1rem;
+  background:linear-gradient(180deg, var(--news-card), var(--news-soft));
+  box-shadow:0 2px 8px rgba(0,0,0,.045);
+}
+
+.news-head{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.45rem .6rem;
+  margin-bottom:.35rem;
+}
+
+.news-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:.3rem;
+  border:1px solid currentColor;
+  border-radius:999px;
+  padding:.12rem .5rem;
+  font-size:.78rem;
+  font-weight:900;
+  line-height:1.25;
+}
+
+.news-tag.academic{color:var(--news-blue)}
+.news-tag.paper,
+.news-tag.talk,
+.news-tag.poster{color:var(--news-green)}
+.news-tag.award,
+.news-tag.honour,
+.news-tag.career{color:var(--news-brown)}
+.news-tag.part-time{color:var(--news-blue)}
+.news-tag.other{color:var(--news-muted)}
+
+.news-date{
+  display:inline-flex;
+  align-items:center;
+  gap:.3rem;
+  color:var(--news-muted);
+  font-size:.9rem;
+}
+
+.news-year{
+  margin-left:auto;
+  color:var(--news-muted);
+  font-size:.82rem;
+  border:1px dashed var(--news-border);
+  border-radius:999px;
+  padding:.08rem .45rem;
+}
+
+.news-text{
+  line-height:1.65;
+}
+
+.news-text a{
+  text-decoration:none;
+  font-weight:700;
+}
+
+.news-text a:hover{
+  text-decoration:underline;
+}
+
+.news-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem;
+  margin-top:.45rem;
+}
+
+.news-link-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:.35rem;
+  border:1px solid var(--news-border);
+  border-radius:999px;
+  padding:.22rem .58rem;
+  font-size:.86rem;
+  text-decoration:none;
+  color:inherit;
+  background:var(--news-bg);
+}
+
+.news-empty{
+  color:var(--news-muted);
+  font-style:italic;
+  margin:.4rem 0;
+}
+
+@media (prefers-color-scheme: dark){
+  .news-shell{
+    --news-bg:#0d1117;
+    --news-card:#161b22;
+    --news-fg:#c9d1d9;
+    --news-muted:#8b949e;
+    --news-border:#30363d;
+    --news-soft:#0d1117;
+  }
+
+  .news-card,
+  .news-section,
+  .news-toolbar{
+    box-shadow:0 2px 10px rgba(0,0,0,.28);
+  }
+
+  .news-tag{
+    color:inherit !important;
+    opacity:.95;
+  }
+}
+&lt;/style&gt;
+&lt;!-- Section Headings --&gt;
+&lt;div class=&#34;news-shell&#34;&gt;
+  &lt;div class=&#34;news-toolbar&#34;&gt;
+    &lt;input id=&#34;newsSearch&#34; class=&#34;news-search&#34; type=&#34;search&#34; placeholder=&#34;Search news...&#34; aria-label=&#34;Search news&#34;&gt;
+    &lt;div id=&#34;newsCatbar&#34; class=&#34;news-catbar&#34;&gt;&lt;/div&gt;
+    &lt;button id=&#34;newsClear&#34; class=&#34;news-clear&#34; type=&#34;button&#34;&gt;Clear&lt;/button&gt;
+    &lt;span id=&#34;newsCount&#34; class=&#34;news-count&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;details class=&#34;news-section&#34; open&gt;
+    &lt;summary&gt;Recent News&lt;/summary&gt;
+    &lt;div id=&#34;newsRecent&#34; class=&#34;news-list&#34;&gt;&lt;/div&gt;
+  &lt;/details&gt;
+  &lt;details class=&#34;news-section&#34;&gt;
+    &lt;summary&gt;Older News&lt;/summary&gt;
+    &lt;div id=&#34;newsOlder&#34; class=&#34;news-list&#34;&gt;&lt;/div&gt;
+  &lt;/details&gt;
 &lt;/div&gt;
---&gt;
-&lt;!--&lt;span class=&#34;btn cstyle interactive transparent&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&#34;btn cstyle interactive warning&#34;&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;i class=&#34;fa-fw fas fa-dog&#34;&gt;&lt;/i&gt; &lt;span class=&#34;title&#34;&gt;Get Hugo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;--&gt;
-&lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt;
- 
-&lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
-2026年02月18-28日
-&lt;/br&gt;
-Visited Prof. Otto&amp;rsquo;s GW group at CUHK, Hong Kong.&lt;/p&gt;
-&lt;p&gt;&lt;span style=&#34;color:darkblue; font-weight:bold&#34;&gt;[Academic]&lt;/span&gt;
- 
-&lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;
-2025年11月18日
-&lt;/br&gt;
-Presented a &lt;a href=&#34;https://suyoggarg.com/ewha/&#34;&gt;Gravitational Waves Data Analysis tutorial&lt;/a&gt; at Ewha womans university, Seoul.&lt;/p&gt;</description>
+&lt;!-- Actual Data --&gt;
+&lt;script type=&#34;text/plain&#34; id=&#34;newsData&#34;&gt;
+# group | category | date | text | links
+
+recent | Paper | 2026年06月12日 | PhD paper accepted in PRD |
+recent |  Talk | 2026年05月xx日 | Joined [APRIM](https://aprim2026.org/) in Hong Kong for a talk |
+recent | Academic | 2026年02月18-28日 | Visited Prof. Otto&#39;s GW group at CUHK, Hong Kong. |
+recent | Academic | 2025年11月18日 | Presented a [Gravitational Waves Data Analysis tutorial](https://suyoggarg.com/ewha/) at Ewha Womans University, Seoul. |
+recent | Paper | 2025年11月 | Two new papers up on Arxiv this month! |
+
+older | Academic | 2025年10月 | Volunteered for the LVK Rapid Response Team level-0 shifter, for the third time! We had [one significant BBH detection](https://gracedb.ligo.org/superevents/S251021u/view/) during my shift. |
+older | Academic | 2025年10月 ー 2025年11月 | Visiting Prof HM Lee and group at Seoul National University, Korea! |
+older | Talk | 2025年10月08日 | Invited talk at Osaka Metropolitan University (online). |
+older | Academic | 2025年10月 ー 2026年02月 | Serving as a Teaching Assistant for the graduate-level &#34;Gravitational-Wave Physics&#34; Course! (third time&#39;s the charm :) |
+older | Honour | 2025年09月11日 | I am addressing the incoming batch of embassy-recommended MEXT scholars at the Embassy of Japan in India (online). |
+older | Talk | 2025年09月05日 | Presented a talk at the RESCEU Summer School, Hirono, Fukushima. |
+older | Academic | 2025年09月02-03日 | Hosting Deep Chatterjee @ MIT at RESCEU |
+older | Academic | 2025年08月06-30日 | Visited Paul Lasky and Eric Thrane&#39;s group at OzGrav, Monash university, Melbourne (again ;) |
+older | Award | 2025年08月 | Selected for the graduate research abroad (GRASP) program by the University of Tokyo for trip to Korea later this year! |
+older | Poster | 2025年07月15-25日 | Presenting a Poster at the ICRC 2025 in Geneva, Swizz! |
+older | Talk | 2024年08月02日 | Spoke at the KAGRA International Workshop 12 in Shanghai, China! |
+older | Poster | 2025年03月24-28日 | Presenting a Poster at the LVK Meeting in Monash university, Melbourne. |
+older | Academic | 2025年03月08-29日 | Visited Paul Lasky and Eric Thrane&#39;s group at OzGrav, Monash university, Melbourne. |
+older | Academic | 2025年01月 ー 2025年09月 | Enrolled in the MITx Statistics and Data Science MicroMasters Programs. Crediting four courses in the Methods track. |
+
+
+older | Academic | 2024年10月 ー 2025年02月 | I serve as a Teaching Assistant for the Graduate-level &#34;Gravitational-Wave Physics&#34; Course! (once again :) |
+older | Talk | 2024年08月02日 | Gave an invited talk at the &#34;Eccentric Seminar&#34; at Tokyo City University | slides:fa-file-pdf:https://www.dropbox.com/scl/fi/pamxd525b7lg1o9vjiaxs/eccentric-seminar-240802-talk-v1.pdf?rlkey=slz51bn7jgyfgpzu6io3b0b95&amp;dl=0
+older | Talk | 2024年07月06日 | Presentation at the Department of Physics Open House for prospective International student at UTokyo | slides:fa-file-pdf:https://www.dropbox.com/scl/fi/m49tb46fregudg8s8rmua/UTokyo-Phys-Dept-Open-House-240706.pdf?rlkey=jnzbhoxyq8kyc7r1ng9mg3rvh&amp;dl=0
+older | Talk | 2024年06月20日 | Gave a talk at RESCEU-UTAP Thursday Seminar | slides:fa-file-pdf:https://www.dropbox.com/scl/fi/d7rvscuzuf3462wbtirog/thurs-seminar-240620-talk.pdf?rlkey=pxnfixmqqaplledvruua56du6&amp;dl=0
+older | Academic | 2024年04月〜 | I will be hosting the RESCEU-UTAP Thursday seminars starting next term! |
+older | Poster | 2024年03月11ー14日 | I will be participating in the [LVK collaboration meeting](https://www.lsu.edu/physics/lvkmeeting/index.php) at Louisiana State Univesity, Baton Rouge. |
+older | Academic | 2024年01月16ー28日 | Visited Prof Gopu&#39;s lab in the Department of Astronomy at TIFR, Mumbai! |
+older | Academic | 2023年12月〜 | I am be one of the [reviewers](https://git.ligo.org/waveforms/reviews/nrtidalv3/-/wikis/home#review-checks-and-review-documentation) for the [NRTidalv3](https://dcc.ligo.org/G2302143) waveform model! My contributions will be on _Time Domain Behavior_ and _Documentation_. |
+older | Part-time | 2023年12月07ー15日 | Serving as a part-time worker during the RESCEU-NBIA workshop in the Hongo campus! |
+older | Talk | 2023年12月07ー15日 | I plan to submit present a talk on X-Ray Observations in the [RESCEU-NBIA GW Workshop](https://indico2.cns.s.u-tokyo.ac.jp/event/286/overview), at UTokyo, Hongo campus! |
+older | Talk | 2023年12月04ー06日 | Have a talk at the [Gakujutsu-Henkaku Conference](https://multimessenger.jp/en/events/annualconf-1/) in Gero Onsen Sumeikan, Gifu! |
+older | Poster | 2023年11月13ー18日 | I will present a Poster in the [MLPhys Conference](https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys/) at YITP, Kyoto University. |
+older | Part-time | 2023年11月06ー09日 | Tomonokai Junior High School Program at Mitaka! |
+older | Talk | 2023年10月31日 | I have a contributed talk at the [RESCEU Symposium](https://www.resceu.s.u-tokyo.ac.jp/symposium/resceu_sympo2023/), UTokyo, Hongo. |
+older | Academic | 2023年10月ー2024年02月 | I serve as a Teaching Assistant for the Graduate-level &#34;Gravitational-Wave Physics&#34; Course! (my first TAship :) |
+older | Career | 2023年10月01日 | Started PhD with Kipp-san at [RESCEU](https://www.resceu.s.u-tokyo.ac.jp/top.php), The University of Tokyo |
+&lt;/script&gt;
+&lt;!-- Scripts --&gt;
+&lt;script&gt;
+(function(){
+  const dataEl = document.getElementById(&#34;newsData&#34;);
+  const recentEl = document.getElementById(&#34;newsRecent&#34;);
+  const olderEl = document.getElementById(&#34;newsOlder&#34;);
+  const searchEl = document.getElementById(&#34;newsSearch&#34;);
+  const catbarEl = document.getElementById(&#34;newsCatbar&#34;);
+  const clearEl = document.getElementById(&#34;newsClear&#34;);
+  const countEl = document.getElementById(&#34;newsCount&#34;);
+
+  if(!dataEl || !recentEl || !olderEl) return;
+
+  const state = {
+    q:&#34;&#34;,
+    cats:new Set()
+  };
+
+  function esc(s){
+    return String(s || &#34;&#34;).replace(/[&amp;&lt;&gt;&#34;&#39;]/g, c =&gt; ({
+      &#34;&amp;&#34;:&#34;&amp;amp;&#34;,
+      &#34;&lt;&#34;:&#34;&amp;lt;&#34;,
+      &#34;&gt;&#34;:&#34;&amp;gt;&#34;,
+      &#39;&#34;&#39;:&#34;&amp;quot;&#34;,
+      &#34;&#39;&#34;:&#34;&amp;#39;&#34;
+    }[c]));
+  }
+
+  function splitRow(line){
+    return line.split(&#34;|&#34;).map(x =&gt; x.trim());
+  }
+
+  function catClass(cat){
+    const k = String(cat || &#34;&#34;).toLowerCase();
+    if(k.includes(&#34;academic&#34;)) return &#34;academic&#34;;
+    if(k.includes(&#34;paper&#34;)) return &#34;paper&#34;;
+    if(k.includes(&#34;talk&#34;)) return &#34;talk&#34;;
+    if(k.includes(&#34;poster&#34;)) return &#34;poster&#34;;
+    if(k.includes(&#34;award&#34;)) return &#34;award&#34;;
+    if(k.includes(&#34;honour&#34;) || k.includes(&#34;honor&#34;)) return &#34;honour&#34;;
+    if(k.includes(&#34;career&#34;)) return &#34;career&#34;;
+    if(k.includes(&#34;part&#34;)) return &#34;part-time&#34;;
+    return &#34;other&#34;;
+  }
+
+  function normalGroup(raw){
+    const g = String(raw || &#34;recent&#34;).toLowerCase();
+    if([&#34;older&#34;,&#34;old&#34;,&#34;past&#34;,&#34;previous&#34;].includes(g)) return &#34;older&#34;;
+    return &#34;recent&#34;;
+  }
+
+  function yearFromDate(date){
+    const m = String(date || &#34;&#34;).match(/(19|20)\d{2}/);
+    return m ? m[0] : &#34;&#34;;
+  }
+
+  function mdInline(text){
+    const parts = [];
+    let last = 0;
+    const rx = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g;
+    let m;
+
+    while((m = rx.exec(text || &#34;&#34;))){
+      parts.push(esc(text.slice(last, m.index)));
+      parts.push(`&lt;a href=&#34;${esc(m[2])}&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;${esc(m[1])}&lt;/a&gt;`);
+      last = rx.lastIndex;
+    }
+    parts.push(esc(String(text || &#34;&#34;).slice(last)));
+
+    return parts.join(&#34;&#34;)
+      .replace(/_([^_]+)_/g, &#34;&lt;em&gt;$1&lt;/em&gt;&#34;);
+  }
+
+  function parseLinks(raw){
+    return String(raw || &#34;&#34;)
+      .split(&#34;;&#34;)
+      .map(x =&gt; x.trim())
+      .filter(Boolean)
+      .map(x =&gt; {
+        const parts = x.split(&#34;:&#34;);
+        const label = parts.shift() || &#34;link&#34;;
+        const icon = parts.shift() || &#34;fa-up-right-from-square&#34;;
+        const url = parts.join(&#34;:&#34;);
+        return {label, icon, url};
+      })
+      .filter(x =&gt; x.url);
+  }
+
+  function loadRows(){
+    return dataEl.textContent
+      .split(/\r?\n/)
+      .map(x =&gt; x.trim())
+      .filter(x =&gt; x &amp;&amp; !x.startsWith(&#34;#&#34;))
+      .map(line =&gt; {
+        const cols = splitRow(line);
+        return {
+          group: normalGroup(cols[0]),
+          cat: cols[1] || &#34;Other&#34;,
+          date: cols[2] || &#34;&#34;,
+          text: cols[3] || &#34;&#34;,
+          links: parseLinks(cols.slice(4).join(&#34; | &#34;)),
+          year: yearFromDate(cols[2] || &#34;&#34;)
+        };
+      })
+      .filter(x =&gt; x.text);
+  }
+
+  const allItems = loadRows();
+
+  function buildCatbar(){
+    const cats = [...new Set(allItems.map(x =&gt; x.cat))].sort((a,b) =&gt; a.localeCompare(b));
+    catbarEl.innerHTML = cats.map(cat =&gt; {
+      const n = allItems.filter(x =&gt; x.cat === cat).length;
+      return `&lt;button class=&#34;news-cat-filter ${catClass(cat)}&#34; type=&#34;button&#34; data-cat=&#34;${esc(cat)}&#34;&gt;${esc(cat)} (${n})&lt;/button&gt;`;
+    }).join(&#34;&#34;);
+
+    catbarEl.querySelectorAll(&#34;button&#34;).forEach(btn =&gt; {
+      btn.addEventListener(&#34;click&#34;, () =&gt; {
+        const cat = btn.dataset.cat;
+        if(state.cats.has(cat)) state.cats.delete(cat);
+        else state.cats.add(cat);
+        render();
+      });
+    });
+  }
+
+  function passes(item){
+    const q = state.q.trim().toLowerCase();
+    const catOK = !state.cats.size || state.cats.has(item.cat);
+    const textBlob = `${item.cat} ${item.date} ${item.text}`.toLowerCase();
+    const qOK = !q || textBlob.includes(q);
+    return catOK &amp;&amp; qOK;
+  }
+
+  function card(item){
+    const links = item.links.map(l =&gt;
+      `&lt;a class=&#34;news-link-chip&#34; href=&#34;${esc(l.url)}&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;i class=&#34;fa ${esc(l.icon)}&#34;&gt;&lt;/i&gt;${esc(l.label)}&lt;/a&gt;`
+    ).join(&#34;&#34;);
+
+    return `
+      &lt;article class=&#34;news-card&#34;&gt;
+        &lt;div class=&#34;news-head&#34;&gt;
+          &lt;span class=&#34;news-tag ${catClass(item.cat)}&#34;&gt;${esc(item.cat)}&lt;/span&gt;
+          &lt;span class=&#34;news-date&#34;&gt;&lt;i class=&#34;fa fa-paper-plane&#34;&gt;&lt;/i&gt;${esc(item.date)}&lt;/span&gt;
+          ${item.year ? `&lt;span class=&#34;news-year&#34;&gt;${esc(item.year)}&lt;/span&gt;` : &#34;&#34;}
+        &lt;/div&gt;
+        &lt;div class=&#34;news-text&#34;&gt;${mdInline(item.text)}&lt;/div&gt;
+        ${links ? `&lt;div class=&#34;news-links&#34;&gt;${links}&lt;/div&gt;` : &#34;&#34;}
+      &lt;/article&gt;
+    `;
+  }
+
+  function render(){
+    const visible = allItems.filter(passes);
+    const recent = visible.filter(x =&gt; x.group === &#34;recent&#34;);
+    const older = visible.filter(x =&gt; x.group === &#34;older&#34;);
+
+    recentEl.innerHTML = recent.map(card).join(&#34;&#34;) || `&lt;p class=&#34;news-empty&#34;&gt;No recent news matching this filter.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal</title>
@@ -2075,7 +3020,7 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
 
       &lt;fieldset class=&#34;filter-group&#34;&gt;
         &lt;legend&gt;Type&lt;/legend&gt;
-        &lt;div id=&#34;filterTypes&#34; class=&#34;filter-chips&#34;&gt;&lt;!-- Invited/Contributed/Poster/Other --&gt;&lt;/div&gt;
+        &lt;div id=&#34;filterTypes&#34; class=&#34;filter-chips&#34;&gt;&lt;!-- Invited/Contributed/Poster/Other/etc --&gt;&lt;/div&gt;
       &lt;/fieldset&gt;
 
       &lt;fieldset class=&#34;filter-group&#34;&gt;
@@ -2205,8 +3150,8 @@ const DATE_STYLE = &#39;auto&#39;; // &#39;auto&#39; | &#39;jp&#39; | &#39;en&#3
 
 /*** ===== Sources ===== ***/
 const TALKS_SOURCES = {
-  &#34;Invited: Conference&#34;: &#34;/bib/talks-invited-conference.bib&#34;,
-  &#34;Invited: Seminars&#34;: &#34;/bib/talks-invited-seminar.bib&#34;,
+  &#34;Invited-Conference&#34;: &#34;/bib/talks-invited-conference.bib&#34;,
+  &#34;Invited-Seminar&#34;: &#34;/bib/talks-invited-seminar.bib&#34;,
   &#34;Contributed&#34;: &#34;/bib/talks-contributed.bib&#34;,
   &#34;Poster&#34;: &#34;/bib/posters.bib&#34;,
   &#34;Other&#34;: &#34;/bib/talks-other.bib&#34;,
@@ -2507,7 +3452,7 @@ function bibToTalk(e){
 
 /*** ===== UI helpers ===== ***/
 function initFilters(talks){
-  const types = [&#34;Invited&#34;,&#34;Contributed&#34;,&#34;Poster&#34;,&#34;Other&#34;];
+  const types = TALKS_SOURCES ? Object.keys(TALKS_SOURCES) : uniqueSorted(talks.map(t=&gt;t.type).filter(Boolean));
   if(els.filterTypes) els.filterTypes.innerHTML = types.map(t=&gt;`&lt;label class=&#34;chip-toggle&#34;&gt;&lt;input type=&#34;checkbox&#34; value=&#34;${t}&#34;&gt; ${t}&lt;/label&gt;`).join(&#39;&#39;);
   const conts = uniqueSorted(talks.map(t=&gt;t.continent).filter(Boolean));
   const list = conts.length ? conts : [&#34;Africa&#34;,&#34;Asia&#34;,&#34;Europe&#34;,&#34;North America&#34;,&#34;South America&#34;,&#34;Oceania&#34;,&#34;Antarctica&#34;];

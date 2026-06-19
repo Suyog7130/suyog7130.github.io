@@ -12,8 +12,18 @@
     <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Thu, 15 May 2025 22:14:18 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Version control with `git` tags</title>
+      <link>http://localhost:1313/en/posts/2026-06-16-git-tags/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-06-16-git-tags/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on Google Gemini-Pro prompts!&lt;/p&gt;
+&lt;p&gt;Managing version numbers can get messy when working solo. If you accidentally created development branches named after version numbers (like &lt;code&gt;v0.1.0&lt;/code&gt;) or mixed up your tag formats, you can easily clean up your history and establish a friction-free release workflow.&lt;/p&gt;
+&lt;h2 id=&#34;the-goal&#34;&gt;The Goal&lt;/h2&gt;
+&lt;p&gt;Convert version branches into permanent Git tags, format historical versions cleanly (&lt;code&gt;v0.0.1&lt;/code&gt; instead of &lt;code&gt;v0.1&lt;/code&gt;), and establish a streamlined process for future releases.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to remove large files from `git` commit history?</title>
       <link>http://localhost:1313/en/posts/2025-05-15-git-history-edits/</link>

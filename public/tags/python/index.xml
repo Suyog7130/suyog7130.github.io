@@ -12,8 +12,36 @@
     <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Mon, 13 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up custom loggers in Python</title>
+      <link>http://localhost:1313/en/posts/2026-06-06-logging-issues/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-06-06-logging-issues/</guid>
+      <description>&lt;!--# Mastering Python Logging: Introspection, Namespace Invisibility, and &#34;Rogue&#34; Frameworks--&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on Google Gemini outputs!&lt;/p&gt;
+&lt;p&gt;When building complex, multi-module Python projects, especially in data science, deep learning, or physics, managing console output is a nightmare. You are often caught in a binary trap: either you turn debugging off and see &lt;em&gt;nothing&lt;/em&gt;, or you turn it on and get drowned in a wall of &lt;code&gt;INFO&lt;/code&gt; and &lt;code&gt;DEBUG&lt;/code&gt; noise from third-party libraries and internal modules.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Managing Python Installations with `conda`</title>
+      <link>http://localhost:1313/en/posts/2025-11-01-conda-python/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-11-01-conda-python/</guid>
+      <description>&lt;p&gt;I restructured all my &lt;code&gt;Python&lt;/code&gt; installation in the system and have now committed to use only Anaconda &lt;code&gt;conda&lt;/code&gt; environments to manage my Pythons. Below are some steps I followed to clean my directories!&lt;/p&gt;
+&lt;h2 id=&#34;fixing-pandas-pytables-errors-and-making-pythonbrewconda-play-nicely-on-macos&#34;&gt;Fixing Pandas &lt;code&gt;pytables&lt;/code&gt; Errors and Making Python/Brew/Conda Play Nicely on macOS&lt;/h2&gt;
+&lt;p&gt;This quick post covers two things that bite many of us on macOS:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Why &lt;code&gt;pandas.read_hdf()&lt;/code&gt; raises &lt;code&gt;ImportError: Missing optional dependency &#39;pytables&#39;&lt;/code&gt; even when you “installed it,” and&lt;/li&gt;
+&lt;li&gt;A clean &lt;code&gt;~/.zshrc&lt;/code&gt; setup so &lt;code&gt;python&lt;/code&gt;/&lt;code&gt;python3&lt;/code&gt; point to &lt;strong&gt;Homebrew&lt;/strong&gt; globally but automatically switch to your &lt;strong&gt;conda&lt;/strong&gt; environment’s Python when an env is active. Bonus: &lt;code&gt;pip&lt;/code&gt; always targets the same interpreter you’re using.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-pandasread_hdf-says-missing-optional-dependency-pytables--even-though-you-installed-it&#34;&gt;1) &lt;code&gt;pandas.read_hdf&lt;/code&gt; says “Missing optional dependency &amp;lsquo;pytables&amp;rsquo;” — even though you installed it&lt;/h2&gt;
+&lt;h3 id=&#34;symptom&#34;&gt;Symptom&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ImportError: Missing optional dependency &amp;#39;pytables&amp;#39;. Use pip or conda to install pytables.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;root-cause-its-an-environment-mixup&#34;&gt;Root cause (it’s an environment mix‑up)&lt;/h3&gt;
+&lt;p&gt;Your script is running with &lt;strong&gt;Homebrew’s Python&lt;/strong&gt; (check the path: &lt;code&gt;/opt/homebrew/.../site-packages/pandas/...&lt;/code&gt;), but you installed &lt;code&gt;tables&lt;/code&gt; (&lt;strong&gt;PyTables&lt;/strong&gt;) in a &lt;strong&gt;conda environment&lt;/strong&gt;. Pandas is being imported from the &lt;strong&gt;wrong interpreter’s&lt;/strong&gt; site‑packages, so it can’t find &lt;code&gt;tables&lt;/code&gt; there.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to use Sphinx Documentation</title>
       <link>http://localhost:1313/en/posts/2023-02-13-how-to-sphinx/</link>
