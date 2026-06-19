@@ -19,7 +19,9 @@
       <link>http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/</link>
       <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/</guid>
-      <description>&lt;h1 id=&#34;how-to-fix-the-annoying-mac-yen--key-to-type-a-backslash--in-google-chrome&#34;&gt;How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\) in Google Chrome&lt;/h1&gt;
+      <description>&lt;!--
+# How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\\) in Google Chrome--&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Made with Google Gemini-Pro prompts&lt;/p&gt;
 &lt;p&gt;If you use a physical Japanese (JIS) hardware keyboard layout on a modern Mac, you have likely run into a frustrating quirk: even if you change your macOS text settings to output a backslash (&lt;code&gt;\&lt;/code&gt;) instead of a Yen sign (&lt;code&gt;¥&lt;/code&gt;), &lt;strong&gt;Google Chrome, VS Code, and Slack will completely ignore your system settings.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>

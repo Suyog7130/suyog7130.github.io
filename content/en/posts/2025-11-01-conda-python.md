@@ -6,10 +6,6 @@ tags:
     - terminal
     - conda
     - zsh
-_build:
-  render: never
-  list: never
-  publishResources: false
 ---
 
 I restructured all my `Python` installation in the system and have now committed to use only Anaconda `conda` environments to manage my Pythons. Below are some steps I followed to clean my directories!

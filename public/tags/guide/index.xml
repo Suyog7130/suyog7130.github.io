@@ -12,8 +12,50 @@
     <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LaTeX for Astrophysics PhDs</title>
+      <link>http://localhost:1313/en/posts/2026-05-19-latex-for-physics/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-05-19-latex-for-physics/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on ChatGPT 5.5-Pro prompts!&lt;/p&gt;
+&lt;!--# The Ultimate LaTeX Stack for Astrophysics PhDs--&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A comprehensive guide and printable cheatsheet for &lt;code&gt;siunitx&lt;/code&gt;, &lt;code&gt;physics2&lt;/code&gt;, &lt;code&gt;acronym&lt;/code&gt;, and advanced paper write-ups.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;recommended-preamble-setup&#34;&gt;Recommended Preamble Setup&lt;/h2&gt;
+&lt;p&gt;Copy and paste this snippet into your &lt;code&gt;.tex&lt;/code&gt; root or &lt;code&gt;.sty&lt;/code&gt; file. It configures the modular packages, overrides command conflicts, and defines standard astronomy constants (including the stubborn CGS units the community refuses to drop).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Core Math &amp;amp; Layout 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;mathtools&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Extends amsmath, improves spacing 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;bm&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;              &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; True bold formatting for vectors/tensors (&lt;span class=&#34;k&#34;&gt;\bm&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\alpha&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;) 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;microtype&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Subtle typographic adjustments to fix text &amp;#34;rivers&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- The Physics Stack
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;siunitx&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;        &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Numbers, units, and ranges 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;physics2&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;       &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Modern, bug-free physics shorthand 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\usephysicsmodule&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;ab, braket, diagmatrix&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Load specific modules
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Specialized Tools ---
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;[printonlyused]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;acronym&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;% Jargon tracking and glossary linking
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;[capitalise]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;cleveref&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;   &lt;span class=&#34;c&#34;&gt;% Automated smart referencing (e.g., &amp;#34;Eq. (1)&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;mhchem&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;          &lt;span class=&#34;c&#34;&gt;% Flawless isotope and reaction formatting
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\usepackage&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;booktabs&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;        &lt;span class=&#34;c&#34;&gt;% Professional-grade table lines (\toprule, etc.)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% --- Astro-Specific Unit Declarations
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\parsec&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;pc&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\lightyear&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;ly&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Msol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;M&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar mass 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Rsol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;R&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar radius 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\Lsol&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;L&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\odot&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; Solar luminosity 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\year&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;yr&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\erg&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;erg&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; CGS energy unit 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\DeclareSIUnit\gauss&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;G&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;      &lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt; CGS magnetic field strength
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;expanded-printable-cheatsheet&#34;&gt;Expanded Printable Cheatsheet&lt;/h2&gt;
+&lt;h3 id=&#34;1-siunitx-quantities-ranges--formats&#34;&gt;1. &lt;code&gt;siunitx&lt;/code&gt; (Quantities, Ranges &amp;amp; Formats)&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Tip: If &lt;code&gt;\qty&lt;/code&gt; conflicts with bracket modules, use &lt;code&gt;\quantity&lt;/code&gt; explicitly.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mac No‑Mouse Keyboard-only Rescue</title>
       <link>http://localhost:1313/en/posts/2025-04-01-mac-with-only-keyboard/</link>

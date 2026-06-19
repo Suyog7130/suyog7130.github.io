@@ -12,14 +12,27 @@
     <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>`timg` for Terminal image rendering</title>
+      <link>http://localhost:1313/en/posts/2026-06-16-timg-related/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-06-16-timg-related/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on Google Gemini-Pro prompts!&lt;/p&gt;
+&lt;!--
+# Rendering Images Directly in Your Terminal: The Complete Guide to `timg` on Remote Servers
+--&gt;
+&lt;p&gt;As researchers, data scientists, and developers working on remote HPC clusters or cloud servers, we live in the terminal. But dealing with visual data—like checking a training loss plot, verifying a generated image, or inspecting a corner plot from an MCMC run—usually forces us out of our flow.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to use backslash  in JIS keyboard layout</title>
       <link>http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/</link>
       <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/posts/2026-05-30-jis-keyboard-layout/</guid>
-      <description>&lt;h1 id=&#34;how-to-fix-the-annoying-mac-yen--key-to-type-a-backslash--in-google-chrome&#34;&gt;How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\) in Google Chrome&lt;/h1&gt;
+      <description>&lt;!--
+# How to Fix the Annoying Mac Yen (¥) Key to Type a Backslash (\\) in Google Chrome--&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Made with Google Gemini-Pro prompts&lt;/p&gt;
 &lt;p&gt;If you use a physical Japanese (JIS) hardware keyboard layout on a modern Mac, you have likely run into a frustrating quirk: even if you change your macOS text settings to output a backslash (&lt;code&gt;\&lt;/code&gt;) instead of a Yen sign (&lt;code&gt;¥&lt;/code&gt;), &lt;strong&gt;Google Chrome, VS Code, and Slack will completely ignore your system settings.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -31,6 +44,25 @@
 &lt;p&gt;This guide installs the modern &lt;code&gt;ls&lt;/code&gt; replacement &lt;strong&gt;eza&lt;/strong&gt; entirely in your &lt;strong&gt;home directory&lt;/strong&gt;, using a prebuilt release tarball. Works on shared servers where you &lt;strong&gt;can’t use &lt;code&gt;sudo&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;don’t have &lt;code&gt;apt&lt;/code&gt; or Rust&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;TL;DR: download a prebuilt tarball → put &lt;code&gt;eza&lt;/code&gt; in &lt;code&gt;~/.local/bin&lt;/code&gt; → add to &lt;code&gt;PATH&lt;/code&gt; → (optional) completions + man page. Use the &lt;strong&gt;musl&lt;/strong&gt; build if the glibc-linked binary won’t run.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Managing Python Installations with `conda`</title>
+      <link>http://localhost:1313/en/posts/2025-11-01-conda-python/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2025-11-01-conda-python/</guid>
+      <description>&lt;p&gt;I restructured all my &lt;code&gt;Python&lt;/code&gt; installation in the system and have now committed to use only Anaconda &lt;code&gt;conda&lt;/code&gt; environments to manage my Pythons. Below are some steps I followed to clean my directories!&lt;/p&gt;
+&lt;h2 id=&#34;fixing-pandas-pytables-errors-and-making-pythonbrewconda-play-nicely-on-macos&#34;&gt;Fixing Pandas &lt;code&gt;pytables&lt;/code&gt; Errors and Making Python/Brew/Conda Play Nicely on macOS&lt;/h2&gt;
+&lt;p&gt;This quick post covers two things that bite many of us on macOS:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Why &lt;code&gt;pandas.read_hdf()&lt;/code&gt; raises &lt;code&gt;ImportError: Missing optional dependency &#39;pytables&#39;&lt;/code&gt; even when you “installed it,” and&lt;/li&gt;
+&lt;li&gt;A clean &lt;code&gt;~/.zshrc&lt;/code&gt; setup so &lt;code&gt;python&lt;/code&gt;/&lt;code&gt;python3&lt;/code&gt; point to &lt;strong&gt;Homebrew&lt;/strong&gt; globally but automatically switch to your &lt;strong&gt;conda&lt;/strong&gt; environment’s Python when an env is active. Bonus: &lt;code&gt;pip&lt;/code&gt; always targets the same interpreter you’re using.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-pandasread_hdf-says-missing-optional-dependency-pytables--even-though-you-installed-it&#34;&gt;1) &lt;code&gt;pandas.read_hdf&lt;/code&gt; says “Missing optional dependency &amp;lsquo;pytables&amp;rsquo;” — even though you installed it&lt;/h2&gt;
+&lt;h3 id=&#34;symptom&#34;&gt;Symptom&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ImportError: Missing optional dependency &amp;#39;pytables&amp;#39;. Use pip or conda to install pytables.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;root-cause-its-an-environment-mixup&#34;&gt;Root cause (it’s an environment mix‑up)&lt;/h3&gt;
+&lt;p&gt;Your script is running with &lt;strong&gt;Homebrew’s Python&lt;/strong&gt; (check the path: &lt;code&gt;/opt/homebrew/.../site-packages/pandas/...&lt;/code&gt;), but you installed &lt;code&gt;tables&lt;/code&gt; (&lt;strong&gt;PyTables&lt;/strong&gt;) in a &lt;strong&gt;conda environment&lt;/strong&gt;. Pandas is being imported from the &lt;strong&gt;wrong interpreter’s&lt;/strong&gt; site‑packages, so it can’t find &lt;code&gt;tables&lt;/code&gt; there.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing tmux on CentOS server</title>

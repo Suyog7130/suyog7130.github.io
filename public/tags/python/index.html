@@ -256,6 +256,37 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Setting up custom loggers in Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Disclaimer: Based on Google Gemini outputs!
+When building complex, multi-module Python projects, especially in data science, deep learning, or physics, managing console output is a nightmare. You are often caught in a binary trap: either you turn debugging off and see nothing, or you turn it on and get drowned in a wall of INFO and DEBUG noise from third-party libraries and internal modules.
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2026-05-30 00:00:00 +0000 UTC'>May 30, 2026</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;6 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;1085 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to Setting up custom loggers in Python" href="http://localhost:1313/en/posts/2026-06-06-logging-issues/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Managing Python Installations with `conda`
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I restructured all my Python installation in the system and have now committed to use only Anaconda conda environments to manage my Pythons. Below are some steps I followed to clean my directories!
+Fixing Pandas pytables Errors and Making Python/Brew/Conda Play Nicely on macOS This quick post covers two things that bite many of us on macOS:
+Why pandas.read_hdf() raises ImportError: Missing optional dependency &#39;pytables&#39; even when you “installed it,” and A clean ~/.zshrc setup so python/python3 point to Homebrew globally but automatically switch to your conda environment’s Python when an env is active. Bonus: pip always targets the same interpreter you’re using. 1) pandas.read_hdf says “Missing optional dependency ‘pytables’” — even though you installed it Symptom ImportError: Missing optional dependency &#39;pytables&#39;. Use pip or conda to install pytables. Root cause (it’s an environment mix‑up) Your script is running with Homebrew’s Python (check the path: /opt/homebrew/.../site-packages/pandas/...), but you installed tables (PyTables) in a conda environment. Pandas is being imported from the wrong interpreter’s site‑packages, so it can’t find tables there.
+...</p>
+  </div>
+  <footer class="entry-footer"><a><i class='fa fa-calendar'></i></a>&nbsp;<span title='2025-11-01 00:00:00 +0000 UTC'>November 1, 2025</span>&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-clock'></i></a>&nbsp;10 min&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-keyboard'></i></a>&nbsp;2028 words&nbsp;&nbsp;•&nbsp;&nbsp;<a><i class='fa fa-pen'></i></a>&nbsp;Suyog Garg
+</footer>
+  <a class="entry-link" aria-label="post link to Managing Python Installations with `conda`" href="http://localhost:1313/en/posts/2025-11-01-conda-python/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">How to use Sphinx Documentation
     </h2>
   </header>

@@ -31,3 +31,13 @@ This is a list of some general tips related to various subjects that I have foun
 
 - Add `% !TeX root = ../main.tex` to your content files in latex to make Overleaf or local latex editor know that they are linked to a root file.
 
+## General
+
+- Try to publish open-access articles, if the university funds allows. Always, update the article version on ArXiv, in any case.
+
+
+
+
+
+
+<!-- end of file -->
