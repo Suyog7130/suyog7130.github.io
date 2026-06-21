@@ -162,12 +162,14 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 
 # -- future conferences / workshops --#
 
-future | NeurIPS, xx | | | | | |
+future | xx, xx | | | | | |
 
 
 # -- present conferences / workshops --#
 
-present | 18th Asian Conference in Machine Learning | https://www.acml-conf.org/2026/ | conf-dealine 2026/06/20:maybe | 2026年12月01-04 | ?? | ?? |
+present | NeurIPS 2026 | https://neurips.cc/ | submitting?:maybe; | 2026年12月06-08 | | Sydney, Australia |
+
+present | Asian Conference in Machine Learning (ACML 2026) | https://www.acml-conf.org/2026/ | Submitted:registered; going?:maybe; Poster?:poster | 2026年12月01-04 | | Melbourne, Australia |
 
 present | KAGRA F2F and KIW, Shanghai | | | 2026年12月15-17,18-19 | ShanghaiTech | Shanghai, China |
 
@@ -175,7 +177,7 @@ present | LIGO-Virgo-KAGRA Meeting Fall 2026 | https://web.iucaa.in/ws/~lvk2026p
 
 present | KAGRA F2F, Osaka | | | 2026年08月26-28 | OMU | Osaka, Japan |
 
-present | A3net-III | https://cd3.ipmu.jp/a3n_Aug2026/ | Registered:registered; Going:maybe | 2026年08月24–28 | National Taiwan University | Taipei, Taiwan |
+present | A3net-III | https://cd3.ipmu.jp/a3n_Aug2026/ | Registered:registered; Going:maybe; Funded:yes | 2026年08月24–28 | National Taiwan University | Taipei, Taiwan |
 
 present | RIKEN AI & Maths Symposium | https://pri.riken.jp/symposium/ai4math.html | Registered:registered; Going:maybe; Poster:poster | 2026年08月18-12 | RIKEN Tokyo Liaison office | Tokyo, Japan |
 
