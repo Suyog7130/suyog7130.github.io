@@ -365,6 +365,19 @@ alias llf="eza -l -g --icons *.py --sort newest"
 ```
 
 
+### Aliases for custom `git log`
+
+
+```bash
+# Beautiful Compact Git Log
+alias glog="git log --graph --color=always --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %%%an%%%' | awk -F'%' '\$2==\"Suyog Garg\" {printf \"%s\033[1;35m<\$2>\033[0m\n\", \$1, \$2} \$2!=\"\" && \$2!=\"Suyog Garg\" {printf \"%s\033[1;34m<\$2>\033[0m\n\", \$1, \$2} \$2==\"\" {print}' | less -R"
+
+# Beautiful Full Detail Git Log
+alias gloglog="git log --color=always --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%C(auto)%h%d%nDate:   %Cgreen%ad%Creset%nMessage: %C(bold yellow)%B%Creset%%%an%%%' | awk -F'%' '\$2==\"Suyog Garg\" {printf \"%s\033[1;35mAuthor: <\$2>\033[0m\n\n\", \$1, \$2} \$2!=\"\" && \$2!=\"Suyog Garg\" {printf \"%s\033[1;34mAuthor: <\$2>\033[0m\n\n\", \$1, \$2} \$2==\"\" {print}' | less -R"
+alias glogf="gloglog"
+alias git-full="gloglog"
+```
+
 
 ### Reference: 
 
