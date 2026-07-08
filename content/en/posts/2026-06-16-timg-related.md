@@ -235,6 +235,28 @@ timg -p sixel your_data_corner_plot.png
 
 No more configuration latency, no more file streaming lag—just fast, clean visual diagnostics directly inside your shell workflow.
 
+---
+
+## Color-Based Transparency in Images on the terminal using ImageMagick
+
+Best if your image has a solid, uniform background (e.g., pure white) that you want to completely erase.
+
+Install it: 
+
+Use your package manager (e.g., `brew install imagemagick` on macOS, or `sudo apt install imagemagick` on Ubuntu/Debian).
+
+> Note, our earlier `timg` installation should already have installed `imagemagick` as a dependency, so the `convert` command should be already available!
+
+Run it:
+
+```bash
+convert input.png -transparent white output.png
+```
+
+Tip: If the background isn't purely uniform, add a fuzz factor to grab near-colors (e.g., `-fuzz 10%`)
+
+---
+
 ## Conclusion
 
 `timg` eliminates the friction of remote data visualization. By spending five minutes setting up your `~/.bashrc` locales and configuring Sixel mapping, you can instantly turn your remote terminal into an interactive workbench.
