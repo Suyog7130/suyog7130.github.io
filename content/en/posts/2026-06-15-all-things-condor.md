@@ -89,18 +89,23 @@ queue 100
 When running parameter estimation loops paired with PyTorch or intensive samplers, watch out for these four common failure scenarios:
 
 ### Pitfall 1: The Network File System (NFS) Sync Lag
+
 * **The Symptom:** Your jobs fail instantly on random worker nodes with `No such file or directory (errno 2)` targeting your `.out` or `.err` path, even though the directory exists on your login machine.
 * **The Cause:** Compute clusters use a distributed Network File System (NFS). When you create a new directory (like `logs/`) on the login machine, it takes a few moments to sync out to the worker nodes. If a node picks up your job before its NFS cache refreshes, it crashes because it cannot open the output text stream.
 * **The Solution:** Avoid absolute network home paths for streaming outputs, or utilize the `should_transfer_files` syntax. By declaring your outputs relative to the temporary workspace:
+
   ```condor
   output = inference_$(Cluster)_$(Process).out
   ```
+  
   HTCondor will stream the logs to the worker node's physical local drive (`/var/lib/condor/execute/...`), completely bypassing network file system latency. The files are then safely packaged and transferred back to your home folder upon successful completion.
 
 ### Pitfall 2: Lost Executable Permissions (`errno 13: Permission Denied`)
+
 * **The Symptom:** Your job enters the `Held` state immediately with `Failed to execute ... (errno=13: 'Permission denied')`.
 * **The Cause:** If you edit your shell script (`.sh`) using an external IDE like VS Code or move files across directories, the file system can strip out the binary execution bit (`-rw-r----` instead of `-rwxr-xr-x`).
 * **The Solution:** You must explicitly restore execution permissions in your terminal before running a submission:
+
   ```bash
   chmod +x /path/to/your/condor-run-inference.sh
   ```
@@ -143,6 +148,8 @@ When running parameter estimation loops paired with PyTorch or intensive sampler
 | `condor_history -limit 10 -af ClusterId MemoryUsage DiskUsage_RAW` | Review resource metrics for your last 10 completed runs. |
 | `condor_qedit -constraint 'JobStatus==5' Output '"/fixed/path.out"'` | Mass-edit parameters for held jobs directly in the active queue. |
 | `condor_rm -all` | Instantly kill all of your active and idle jobs. |
+| `condor_hold -constraint "JobStatus==1"` | Put all idle jobs on hold. |
+| `condor_release -all` | Release all held jobs |
 
 By mastering file routing, keeping your resource requests aligned with actual usage metrics, and leveraging native PyTorch threading over messy Python multiprocessing pools, you can run large-scale inference and sampling jobs reliably without dealing with constant node evictions. 
 
