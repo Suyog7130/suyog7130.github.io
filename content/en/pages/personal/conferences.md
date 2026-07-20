@@ -85,11 +85,13 @@ List of most of the Conferences and Workshops I have undertaken or am going to :
 .conf-tag.poster{ color:#238636; }
 
 .conf-tag.registered,
-.conf-tag.maybe{ color:#2e8b57; }
+.conf-tag.yes,
+.conf-tag.going{ color:#2e8b57; }
 
 .conf-tag.no,
 .conf-tag.missed{ color:#cf222e; }
 
+.conf-tag.maybe,
 .conf-tag.notreg{ color:#e5532d; }
 
 .conf-meta{
@@ -173,26 +175,25 @@ present | Asian Conference in Machine Learning (ACML 2026) | https://www.acml-co
 
 present | KAGRA F2F and KIW, Shanghai | | | 2026年12月15-17,18-19 | ShanghaiTech | Shanghai, China |
 
-present | LIGO-Virgo-KAGRA Meeting Fall 2026 | https://web.iucaa.in/ws/~lvk2026pune/index.html | Registered:registered | 2026年09月21–25 | LIGO India | IUCAA, Pune, India |
+present | LIGO-Virgo-KAGRA Meeting Fall 2026 | https://web.iucaa.in/ws/~lvk2026pune/index.html | Registered:registered; Going:yes | 2026年09月21–25 | LIGO India | IUCAA, Pune, India |
 
 present | KAGRA F2F, Osaka | | | 2026年08月26-28 | OMU | Osaka, Japan |
 
-present | A3net-III | https://cd3.ipmu.jp/a3n_Aug2026/ | Registered:registered; Going:maybe; Funded:yes | 2026年08月24–28 | National Taiwan University | Taipei, Taiwan |
+present | A3net-III | https://cd3.ipmu.jp/a3n_Aug2026/ | Registered:registered; Going:yes; Funded:yes | 2026年08月24–28 | National Taiwan University | Taipei, Taiwan |
 
 present | RIKEN AI & Maths Symposium | https://pri.riken.jp/symposium/ai4math.html | Registered:registered; Going:maybe; Poster:poster | 2026年08月18-12 | RIKEN Tokyo Liaison office | Tokyo, Japan |
 
-present | IAIFI Summer Workshop | https://iaifi.org/summer-workshop | Registered:registered; cannot??:maybe | 2026年08月10–14 | MIT | Boston, MA, USA |
+present | IAIFI Summer Workshop | https://iaifi.org/summer-workshop | Registered:registered; cannot??:no | 2026年08月10–14 | MIT | Boston, MA, USA | strike; note=schedule conflict
 
-present | ICGAC16 | https://tianqin.sysu.edu.cn/en/ICGAC16-home | Invited:invited; Registered:registered; Going?:maybe; Talk:talk | 2026年08月10–14 | SYSU | Shenzhen, China |
-
-present | MLPhysics conference | https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/ | Registered:registered; going?:maybe; Poster:poster | 2026年07月13–15 | KyotoU | Naha, Okinawa, JAPAN |
-
-present | Cool Stars 23 | https://coolstars23.github.io/index.html | Registered:registered; Going → NA:no; Poster:poster | 2026年06月15–19 | | TOC Ariake, Tokyo | note=
-
-present | ICML 2026 | https://icml.cc/ | not-registered:notreg; missed:missed | 2026年07月06–11 | | Seoul, Korea | strike
-
+present | ICGAC16 | https://tianqin.sysu.edu.cn/en/ICGAC16-home | Invited:invited; Registered:registered; Going:yes; Talk:talk | 2026年08月10–14 | SYSU | Shenzhen, China |
 
 # -- past conferences / workshops --#
+
+past | MLPhysics conference | https://mlphys.scphys.kyoto-u.ac.jp/ic_mlphys2026/ | Registered:registered; going?:no; Poster:poster | 2026年07月13–15 | KyotoU | Naha, Okinawa, JAPAN | strike
+
+past | Cool Stars 23 | https://coolstars23.github.io/index.html | Registered:registered; Going → NA:no; Poster:poster | 2026年06月15–19 | | TOC Ariake, Tokyo | strike; note=
+
+past | ICML 2026 | https://icml.cc/ | not-registered:notreg; missed:missed | 2026年07月06–11 | | Seoul, Korea | strike
 
 past | APRIM 2026 | https://aprim2026.org/ | Registered:registered; Going:maybe; Talk:talk | 2026年05月04–09 | HKU | HongKong | note=had a fun time
 
