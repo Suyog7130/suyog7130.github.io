@@ -66,15 +66,16 @@ Author: <Suyog Garg>                     <-- (In Bold Magenta!)
 Don't type these massive strings manually! Open your terminal profile configuration file (like `~/.zshrc` or `~/.bash_profile`) and drop these two aliases at the very bottom:
 
 ```bash
+
 # Beautiful Compact Git Log
 alias glog="git log --graph --color=always --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %%%an%%%' | awk -F'%' '\$2==\"Suyog Garg\" {printf \"%s\033[1;35m<%s>\033[0m\n\", \$1, \$2} \$2!=\"\" && \$2!=\"Suyog Garg\" {printf \"%s\033[1;34m<%s>\033[0m\n\", \$1, \$2} \$2==\"\" {print}' | less -R"
 
 # Beautiful Full Detail Git Log
-alias gloglog="git log --color=always --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%C(auto)%h%d%nDate:   %Cgreen%ad%Creset%nMessage: %C(bold yellow)%B%Creset Author: <%an>%n' | sed 's/Author: <Suyog Garg>/\x1b[1;35mAuthor: <Suyog Garg>\x1b[0m/' | sed '/Author: <Suyog Garg>/! s/Author: <\(.*\)>/\x1b[1;34mAuthor: <\1>\x1b[0m/' | less -R"
+alias gloglog="git log --color=always --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%C(auto)%h%d%nDate:   %Cgreen%ad%Creset%nMessage: %C(bold yellow)%B%Creset%%%an%%%' | awk -F'%' '\$2==\"Suyog Garg\" {printf \"%s\033[1;35mAuthor: <%s>\033[0m\n\n\", \$1, \$2} \$2!=\"\" && \$2!=\"Suyog Garg\" {printf \"%s\033[1;34mAuthor: <%s>\033[0m\n\n\", \$1, \$2} \$2==\"\" {print}' | less -R"
 
-alias glf="gloglog"
 alias glogf="gloglog"
 alias git-full="gloglog"
+alias glf="gloglog"
 ```
 
 Run `source ~/.zshrc` to reload your terminal, and enjoy your beautiful new workflow!
