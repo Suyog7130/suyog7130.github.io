@@ -240,10 +240,27 @@ Host landau.sv.yc.tcu.ac.jp
   User suyog
 ```
 
+---
 
-### Accessing RESCEU BBC cluster
+### Accessing to UTokyo based clusters
 
-### Accessing RESCEU Kambai cluster
+#### Connecting to UTokyo VPN service
+
+The University of Tokyo VPN server is available at: `vpn1.adm.u-tokyo.ac.jp`
+
+You can log-in with your UTokyo 10-digit ID number with `@utac.u-tokyo.ac.jp` domain name, and the corresponding password.
+
+More details for UTokyo VPN are available here: https://utelecon.adm.u-tokyo.ac.jp/utokyo_vpn/
+
+> NOTE: UTokyo VPN and the School-of-Science VPN are two different services.
+
+#### Accessing RESCEU BBC cluster
+
+Connect to the server via: `ssh suyog.garg@resceubbc.resceu.s.u-tokyo.ac.jp`
+
+#### Accessing RESCEU Kambai cluster
+
+I do not seem to have an account on the RESCEU-Kambai cluster.
 
 
 ### Accessing UTokyo "SoS VPN" connection based clusters
@@ -251,8 +268,11 @@ Host landau.sv.yc.tcu.ac.jp
 - nekoya
 - other personal computers
 
+---
 
 ### Accessing TIFR Mumbai Computing Facility
+
+I seem to have lost or forgotten the login creditials for this account or my account on the server was removed.
 
 
 ---
