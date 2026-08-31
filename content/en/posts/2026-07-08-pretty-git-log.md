@@ -80,6 +80,15 @@ alias glf="gloglog"
 
 Run `source ~/.zshrc` to reload your terminal, and enjoy your beautiful new workflow!
 
+## Some other features
+
+To allow the git paper environment to show non-ASCII characters:
+
+```bash
+# To allow git pager to show japanese characters!
+export LESSCHARSET=utf-8
+```
+
 ***
 
-**P.S.** Yes, I am officially declaring **"Prettyfication"** a legal tech neologism. Coding is an art, and making our command line interfaces beautiful is essential engineering work. Spread the word!
+**P.S.** Yes, I am officially declaring **"Prettyfication"** a legal tech neologism. Spread the word!

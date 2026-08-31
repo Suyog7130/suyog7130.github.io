@@ -9,11 +9,21 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
-    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prettify git log</title>
+      <link>http://localhost:1313/en/posts/2026-07-08-pretty-git-log/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-07-08-pretty-git-log/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on Google Gemini-Pro prompts!&lt;/p&gt;
+&lt;!--# Level Up Your Git Workflow: How to Beautify Your Git Log--&gt;
+&lt;p&gt;Let’s face it—the default &lt;code&gt;git log&lt;/code&gt; output is a massive wall of plain text that is painful to scan. When you are working with a team, tracking down who did what and when can feel like reading a raw terminal dump.&lt;/p&gt;
+&lt;p&gt;Today, we are going to fix that. We will transform your Git log into an interactive, beautifully structured, and color-coded masterpiece tailored specifically for your terminal workspace.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Version control with `git` tags</title>
       <link>http://localhost:1313/en/posts/2026-06-16-git-tags/</link>
