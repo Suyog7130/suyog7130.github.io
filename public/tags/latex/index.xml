@@ -9,7 +9,7 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
     <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
@@ -22,7 +22,8 @@
       <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on ChatGPT 5.5-Pro prompts!&lt;/p&gt;
 &lt;!--# The Ultimate LaTeX Stack for Astrophysics PhDs--&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A comprehensive guide and printable cheatsheet for &lt;code&gt;siunitx&lt;/code&gt;, &lt;code&gt;physics2&lt;/code&gt;, &lt;code&gt;acronym&lt;/code&gt;, and advanced paper write-ups.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;A comprehensive guide and printable cheatsheet for &lt;code&gt;siunitx&lt;/code&gt;, &lt;code&gt;physics2&lt;/code&gt;, &lt;code&gt;acronym&lt;/code&gt;, and advanced paper write-ups.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;recommended-preamble-setup&#34;&gt;Recommended Preamble Setup&lt;/h2&gt;
 &lt;p&gt;Copy and paste this snippet into your &lt;code&gt;.tex&lt;/code&gt; root or &lt;code&gt;.sty&lt;/code&gt; file. It configures the modular packages, overrides command conflicts, and defines standard astronomy constants (including the stubborn CGS units the community refuses to drop).&lt;/p&gt;
