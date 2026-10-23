@@ -31,6 +31,13 @@ redirect_from:
 
 <!-- General Introduction -->
 <br/>
+
+<p>
+My research and other interests are broad and indiscriminate. And so are my hobbies and experiences, ranging from dabbling in cutting-edge Machine Learning research to masquerading as a wannabe writer. You can find more about these on this website.
+Much earlier than any of this, I spent my first 18 years of life living in a quaint little town called <a href="https://mandla.nic.in/en/">Mandla</a> in the heart of India, amidst a pleasant life full of stories, warm summers, trees, and books.
+</p>
+
+
 <p>
 Academics and Research occupy a major part of my day, or for that matter, my night time often too. However, research is still just a component of my life, albiet an important one. 
 
