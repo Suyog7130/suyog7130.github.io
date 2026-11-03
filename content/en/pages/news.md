@@ -251,12 +251,15 @@ redirect_from:
 <script type="text/plain" id="newsData">
 # group | category | date | text | links
 
+recent | Paper | 2026年10月 | New paper published in PRD|
+recent | Academic | 2026年09月18日 | Got a PhD!
 recent | Paper | 2026年06月12日 | PhD paper accepted in PRD |
 recent |  Talk | 2026年05月xx日 | Joined [APRIM](https://aprim2026.org/) in Hong Kong for a talk |
 recent | Academic | 2026年02月18-28日 | Visited Prof. Otto's GW group at CUHK, Hong Kong. |
-recent | Academic | 2025年11月18日 | Presented a [Gravitational Waves Data Analysis tutorial](https://suyoggarg.com/ewha/) at Ewha Womans University, Seoul. |
-recent | Paper | 2025年11月 | Two new papers up on Arxiv this month! |
 
+older | Academic | 2025年11月18日 | Presented a [Gravitational Waves Data Analysis tutorial](https://suyoggarg.com/ewha/) at Ewha Womans University, Seoul. |
+
+older | Paper | 2025年11月 | Two new papers up on Arxiv this month! |
 older | Academic | 2025年10月 | Volunteered for the LVK Rapid Response Team level-0 shifter, for the third time! We had [one significant BBH detection](https://gracedb.ligo.org/superevents/S251021u/view/) during my shift. |
 older | Academic | 2025年10月 ー 2025年11月 | Visiting Prof HM Lee and group at Seoul National University, Korea! |
 older | Talk | 2025年10月08日 | Invited talk at Osaka Metropolitan University (online). |
