@@ -11,7 +11,9 @@ redirect_from:
   - /research/
 ---
 
-My PhD research focuses on gravitational-wave astrophysics, specifically modelling theoretical approximations for gravitational waveforms. Over the past few years, I have broadly worked on computational astrophysics and data analysis. Below is a brief description and summary of my research interests. Some projects have their own pages.
+My research expertise primarily focuses on gravitational-wave astrophysics, specifically modelling theoretical waveform model approximations using machine-learing methods and parameter estimation of compact binary sources. Over the past several years, I have also been interested in problems in computational astrophysics and data analysis, for instance low-latency search of LIGO-Virgo-KAGRA gravitational-wave mergers, sky-localization, and noise-reduction techniques; and astrophysics with future space-based gravitational-wave detectors like LISA.
+On a broader context, I am generally interested in the computational methods and data-analysis techniques for solar physics and astronomy, including data-reduction methods, time-domain analysis, large-scale hydrodynamical simulations and numerical methods. 
+Below is a brief description and summary of my some of my key papers and other research interests. Some projects have their own pages.
 
 ---
 
