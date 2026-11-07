@@ -13,20 +13,20 @@ redirect_from:
 
 My research expertise primarily focuses on gravitational-wave astrophysics, specifically modelling theoretical waveform model approximations using machine-learing methods and parameter estimation of compact binary sources. Over the past several years, I have also been interested in problems in computational astrophysics and data analysis, for instance low-latency search of LIGO-Virgo-KAGRA gravitational-wave mergers, sky-localization, and noise-reduction techniques; and astrophysics with future space-based gravitational-wave detectors like LISA.
 On a broader context, I am generally interested in the computational methods and data-analysis techniques for solar physics and astronomy, including data-reduction methods, time-domain analysis, large-scale hydrodynamical simulations and numerical methods. 
+
 Below is a brief description and summary of my some of my key papers and other research interests. Some projects have their own pages.
 
 ---
 
-## Gravitational Waves Astrophysics
+## Gravitational-Waves Astrophysics
 
-### Generating gravitational waveform approximations using machine learning models
-
+### Gravitational waveform modelling and parameter estimation
 - I build fast *surrogate* or data-driven waveform models for compact binaries, with the current aim of accurately approximating effective one-body waveforms, which would be later expanded into other waveforms approximations and binary systems.
 - Architectures explored include convolutional networks on time–frequency representations and lightweight auto-encoder models for rapid evaluation.
 - Goals: high overlap (low mismatch) with target waveforms, large parameter-space coverage (incl. eccentricity and spin), orders-of-magnitude better waveform generation speed over native implementation.
 - Intended use cases: speeding up parameter estimation, tests of gravity with novel waveforms, data analysis from 3G gravitational wave detectors.
 
-### Detections of gravitational waves from compact object mergers
+### Detection of gravitational-wave signals in noisy detector data
 
 - I developed deep-learning pipelines for detection/classification of compact binary coalescences and related sources.
 - Also compared different training strategies (curriculum learning, transfer learning) to improve sensitivity and robustness to glitches.
@@ -50,23 +50,23 @@ Below is a brief description and summary of my some of my key papers and other r
 
 ## Other Interests
 
-### AGNs and X-Ray Emissions
+### Active Galactic Nuclei and X-Ray Emissions
 
 - Worked on developing pipeline for XMM-Newton EPIC instrument auto data reductions and inferences for a single query raw data to science products pathway.
 - Analysed the ASASSN-14li data using the developed pipeline to check for a presence of X-Ray Corona formation in that system.
 
 
-### Dark Matter Halos and the Uchuu simulation
-
-- Brief stint on developing pipeline to calculate the halo occupancy number distribution in the Uchuu and Rockstar simulations.
-
-
-### Internal structure of Neutron Stars
+### Neutron Star Internal Structure
 
 - Investigated tidal contributions to periastron precession in stellar-mass NS – BH binaries and found them *negligible* in the regimes considered, clarifying where strong-field GR effects dominate over tidal structure effects.
 
-### Machine Learning
+### Machine Learning Theory
 
 - Broadly interested in physically-informed neural networks and their applications in astrophysical sciences and data analysis.
 - Reproducible and open-source software development: contributions within the scientific Python ecosystem (e.g., Astropy) and novel software releases.
 - Symbolic regression and machine learning physical symmetries from large-scale multimodal datasets.
+
+
+### Dark Matter Halos and the Uchuu simulation
+
+- Brief stint on developing pipeline to calculate the halo occupancy number distribution in the Uchuu and Rockstar simulations.
