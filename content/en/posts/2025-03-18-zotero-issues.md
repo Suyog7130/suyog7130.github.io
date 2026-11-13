@@ -76,6 +76,8 @@ if (Translator.BetterBibTeX) {
 
 ```
 
+_However, on second thoughts, it is better to have these arxiv papers as normal text, as usual bold title for journal articles to indicate peer-reviewed papers. For papers accepted after a peer-review, but yet to be fully published and available online, it would be okay to manually put the title in bold in the bibliography_
+
 > Have also removed the following fields from been exported in the BibTex entry: abstract, file, keywords
 
 --
