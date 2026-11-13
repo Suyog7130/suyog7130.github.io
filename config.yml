@@ -343,6 +343,9 @@ params:
     - name: researchgate
       title: My ResearchGate Profile
       url: "https://www.researchgate.net/profile/Suyog-Garg-2"
+    - name: inspirehep
+      title: My InspireHEP Profile
+      url: "https://inspirehep.net/authors/2970730"
     # - name: cv-acad
     #  title: Read my Resume / CV
     #  url: "pages/cv"
