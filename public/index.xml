@@ -9,7 +9,7 @@
       <url>http://localhost:1313/</url>
       <link>http://localhost:1313/</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en</language>
     <copyright>Suyog Garg</copyright>
     <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate>
@@ -98,8 +98,7 @@
       <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Based on ChatGPT 5.5-Pro prompts!&lt;/p&gt;
 &lt;!--# The Ultimate LaTeX Stack for Astrophysics PhDs--&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A comprehensive guide and printable cheatsheet for &lt;code&gt;siunitx&lt;/code&gt;, &lt;code&gt;physics2&lt;/code&gt;, &lt;code&gt;acronym&lt;/code&gt;, and advanced paper write-ups.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A comprehensive guide and printable cheatsheet for &lt;code&gt;siunitx&lt;/code&gt;, &lt;code&gt;physics2&lt;/code&gt;, &lt;code&gt;acronym&lt;/code&gt;, and advanced paper write-ups.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;recommended-preamble-setup&#34;&gt;Recommended Preamble Setup&lt;/h2&gt;
 &lt;p&gt;Copy and paste this snippet into your &lt;code&gt;.tex&lt;/code&gt; root or &lt;code&gt;.sty&lt;/code&gt; file. It configures the modular packages, overrides command conflicts, and defines standard astronomy constants (including the stubborn CGS units the community refuses to drop).&lt;/p&gt;
@@ -2687,12 +2686,15 @@ Start by opening up a discussion in a Gist using the button provided !&lt;/p&gt;
 &lt;script type=&#34;text/plain&#34; id=&#34;newsData&#34;&gt;
 # group | category | date | text | links
 
+recent | Paper | 2026年10月 | New paper published in PRD|
+recent | Academic | 2026年09月18日 | Got a PhD!
 recent | Paper | 2026年06月12日 | PhD paper accepted in PRD |
 recent |  Talk | 2026年05月xx日 | Joined [APRIM](https://aprim2026.org/) in Hong Kong for a talk |
 recent | Academic | 2026年02月18-28日 | Visited Prof. Otto&#39;s GW group at CUHK, Hong Kong. |
-recent | Academic | 2025年11月18日 | Presented a [Gravitational Waves Data Analysis tutorial](https://suyoggarg.com/ewha/) at Ewha Womans University, Seoul. |
-recent | Paper | 2025年11月 | Two new papers up on Arxiv this month! |
 
+older | Academic | 2025年11月18日 | Presented a [Gravitational Waves Data Analysis tutorial](https://suyoggarg.com/ewha/) at Ewha Womans University, Seoul. |
+
+older | Paper | 2025年11月 | Two new papers up on Arxiv this month! |
 older | Academic | 2025年10月 | Volunteered for the LVK Rapid Response Team level-0 shifter, for the third time! We had [one significant BBH detection](https://gracedb.ligo.org/superevents/S251021u/view/) during my shift. |
 older | Academic | 2025年10月 ー 2025年11月 | Visiting Prof HM Lee and group at Seoul National University, Korea! |
 older | Talk | 2025年10月08日 | Invited talk at Osaka Metropolitan University (online). |
@@ -2913,8 +2915,8 @@ older | Career | 2023年10月01日 | Started PhD with Kipp-san at [RESCEU](https
 &lt;!-- General Introduction --&gt;
 &lt;br/&gt;
 &lt;p&gt;
-Academics and Research occupy a major part of my day, or for that matter, my night time often too. However, research is still just a component of my life, albiet an important one. 
-&lt;!--In the rest of it, I have a funny-ambiverted side of me that likes to hangout with friends every other day, and also a slightly darker naughtier side, that only some of the girls I have been with know about.--&gt;
+My research and other interests are broad and indiscriminate. And so are my hobbies and experiences, ranging from dabbling in cutting-edge Machine Learning research to masquerading as a wannabe writer. You can find more about these on this website.
+Much earlier than any of this, I spent my first 18 years of life living in a quaint little town called &lt;a href=&#34;https://mandla.nic.in/en/&#34;&gt;Mandla&lt;/a&gt; in the heart of India, amidst a pleasant life full of stories, warm summers, trees, and books.
 &lt;/p&gt;</description>
     </item>
     <item>
@@ -2986,55 +2988,8 @@ Academics and Research occupy a major part of my day, or for that matter, my nig
       <link>http://localhost:1313/en/pages/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/pages/research/</guid>
-      <description>&lt;p&gt;My PhD research focuses on gravitational-wave astrophysics, specifically modelling theoretical approximations for gravitational waveforms. Over the past few years, I have broadly worked on computational astrophysics and data analysis. Below is a brief description and summary of my research interests. Some projects have their own pages.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;gravitational-waves-astrophysics&#34;&gt;Gravitational Waves Astrophysics&lt;/h2&gt;
-&lt;h3 id=&#34;generating-gravitational-waveform-approximations-using-machine-learning-models&#34;&gt;Generating gravitational waveform approximations using machine learning models&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;I build fast &lt;em&gt;surrogate&lt;/em&gt; or data-driven waveform models for compact binaries, with the current aim of accurately approximating effective one-body waveforms, which would be later expanded into other waveforms approximations and binary systems.&lt;/li&gt;
-&lt;li&gt;Architectures explored include convolutional networks on time–frequency representations and lightweight auto-encoder models for rapid evaluation.&lt;/li&gt;
-&lt;li&gt;Goals: high overlap (low mismatch) with target waveforms, large parameter-space coverage (incl. eccentricity and spin), orders-of-magnitude better waveform generation speed over native implementation.&lt;/li&gt;
-&lt;li&gt;Intended use cases: speeding up parameter estimation, tests of gravity with novel waveforms, data analysis from 3G gravitational wave detectors.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;detections-of-gravitational-waves-from-compact-object-mergers&#34;&gt;Detections of gravitational waves from compact object mergers&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;I developed deep-learning pipelines for detection/classification of compact binary coalescences and related sources.&lt;/li&gt;
-&lt;li&gt;Also compared different training strategies (curriculum learning, transfer learning) to improve sensitivity and robustness to glitches.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;stellar-and-solar-physics&#34;&gt;Stellar and Solar Physics&lt;/h2&gt;
-&lt;h3 id=&#34;stellar-magnetic-cycles-and-variability&#34;&gt;Stellar magnetic cycles and variability&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Studied the &lt;strong&gt;Waldmeier effect&lt;/strong&gt; (anti-correlation of rise time with cycle amplitude) in stellar activity cycles, extending solar-cycle variability studies to other stars.&lt;/li&gt;
-&lt;li&gt;Methods included cycle identification, smoothing and function fits to probe long-term amplitude variations and correlations between stellar properties.&lt;/li&gt;
-&lt;li&gt;Results aid in constraining solar dynamo model behaviors from the point of view of other Sun-like stars.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;super-resolving-the-solar-magnetograms&#34;&gt;Super-resolving the solar magnetograms&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Worked on super-resolution and denoising of solar magnetograms using convolutional models.&lt;/li&gt;
-&lt;li&gt;Goals: recover small-scale magnetic structures from older low-resolution magnetograms by super-resolving the the low-resolution images.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;other-interests&#34;&gt;Other Interests&lt;/h2&gt;
-&lt;h3 id=&#34;agns-and-x-ray-emissions&#34;&gt;AGNs and X-Ray Emissions&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Worked on developing pipeline for XMM-Newton EPIC instrument auto data reductions and inferences for a single query raw data to science products pathway.&lt;/li&gt;
-&lt;li&gt;Analysed the ASASSN-14li data using the developed pipeline to check for a presence of X-Ray Corona formation in that system.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;dark-matter-halos-and-the-uchuu-simulation&#34;&gt;Dark Matter Halos and the Uchuu simulation&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Brief stint on developing pipeline to calculate the halo occupancy number distribution in the Uchuu and Rockstar simulations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;internal-structure-of-neutron-stars&#34;&gt;Internal structure of Neutron Stars&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Investigated tidal contributions to periastron precession in stellar-mass NS – BH binaries and found them &lt;em&gt;negligible&lt;/em&gt; in the regimes considered, clarifying where strong-field GR effects dominate over tidal structure effects.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Broadly interested in physically-informed neural networks and their applications in astrophysical sciences and data analysis.&lt;/li&gt;
-&lt;li&gt;Reproducible and open-source software development: contributions within the scientific Python ecosystem (e.g., Astropy) and novel software releases.&lt;/li&gt;
-&lt;li&gt;Symbolic regression and machine learning physical symmetries from large-scale multimodal datasets.&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;My research expertise primarily focuses on gravitational-wave astrophysics, specifically modelling theoretical waveform model approximations using machine-learing methods and parameter estimation of compact binary sources. Over the past several years, I have also been interested in problems in computational astrophysics and data analysis, for instance low-latency search of LIGO-Virgo-KAGRA gravitational-wave mergers, sky-localization, and noise-reduction techniques; and astrophysics with future space-based gravitational-wave detectors like LISA.
+On a broader context, I am generally interested in the computational methods and data-analysis techniques for solar physics and astronomy, including data-reduction methods, time-domain analysis, large-scale hydrodynamical simulations and numerical methods.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Talks &amp; Presentations</title>

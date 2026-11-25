@@ -79,6 +79,36 @@ if (Translator.BetterBibTeX) {
 _However, on second thoughts, it is better to have these arxiv papers as normal text, as usual bold title for journal articles to indicate peer-reviewed papers. For papers accepted after a peer-review, but yet to be fully published and available online, it would be okay to manually put the title in bold in the bibliography_
 
 > Have also removed the following fields from been exported in the BibTex entry: abstract, file, keywords
+ 
+--
+
+**Merge volume and number field in the journal class exports**
+
+```bash
+if (Translator.BetterBibTeX) {
+  // --- Rule : Merge Volume with Number OR Issue ---
+  // Only proceed if a volume exists
+  if (tex.has.volume) {
+    let targetField = null;
+
+    // Check if 'number' exists, otherwise check if 'issue' exists
+    if (tex.has.number) {
+      targetField = 'number';
+    } else if (tex.has.issue) {
+      targetField = 'issue';
+    }
+
+    // If we found either field, merge it and remove the original
+    if (targetField) {
+      tex.has.volume.value = tex.has.volume.value + '{\\textendash}' + tex.has[targetField].value;
+      tex.remove(targetField);
+    }
+  }
+}
+```
+
+->  This doesnt' always work!
+
 
 --
 
